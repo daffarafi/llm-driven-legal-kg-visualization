@@ -1,0 +1,50 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+
+# Next.js
+frontend/.next/
+frontend/out/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environments / secrets
+.env
+.conda/
+
+# IDE
+.vscode/
+.idea/
+.cursor/
+.windsurf/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Agent/AI files
+AGENTS.md
+CLAUDE.md
+.agents/
+.agent/
+_agents/
+_agent/
+
+# Misc
+*.log
+.cache/

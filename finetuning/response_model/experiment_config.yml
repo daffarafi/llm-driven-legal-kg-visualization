@@ -1,0 +1,60 @@
+# ============================================================
+# Response Model - Experiment Config
+# ============================================================
+# Mirrors query_model/experiment_config.yml with adapted params
+# for longer sequence generation (NL responses vs Cypher queries)
+
+# --- Shared hyperparameters ---
+fine_tune_hyperparam_1: &hyperparam_1
+  r: 16
+  lora_alpha: 16
+  lora_dropout: 0.1
+  target_modules:
+    - "q_proj"
+    - "k_proj"
+    - "v_proj"
+    - "o_proj"
+    - "gate_proj"
+    - "up_proj"
+    - "down_proj"
+  load_in_8bit: true
+  max_seq_length: 4096          # longer than query model (jawaban NL lebih panjang)
+  num_train_epochs: 4
+  per_device_train_batch_size: 2  # smaller batch (longer sequences)
+  gradient_accumulation_steps: 8
+  warmup_steps: 20
+  learning_rate: 2.0e-5
+  optim: "adamw_8bit"
+  weight_decay: 0.01
+  lr_scheduler_type: "cosine"
+  logging_steps: 5
+  save_strategy: "epoch"
+  use_gradient_checkpointing: "unsloth"
+
+# --- Column mapping (same as query model) ---
+column_mapping_config_1: &col_map_1
+  context_col: "context"
+  question_col: "question"
+  response_col: "response"
+
+# --- Experiment 1: Google Sheets data source ---
+experiment_1:
+  model_name: "Qwen/Qwen3-4b"
+  framework: "unsloth"
+  spreadsheet_id: "${GOOGLE_SPREADSHEET_ID}"
+  train_sheet: "response_training_data"
+  validation_sheet: "response_validation_data"
+  prompt_sheet: "prompt_template"
+  <<: *hyperparam_1
+  <<: *col_map_1
+
+# --- Experiment 2: Local CSV data source ---
+experiment_2:
+  model_name: "Qwen/Qwen3-4b"
+  framework: "unsloth"
+  datasets_path: "finetuning/response_model/data"
+  train_filename: "training_data.csv"
+  validation_filename: "validation_data.csv"
+  prompt_filename: "prompt_template.csv"
+  <<: *hyperparam_1
+  <<: *col_map_1

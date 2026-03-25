@@ -1,0 +1,19 @@
+# Fase 1: PDF Extraction & Parsing
+PyMuPDF>=1.24.0
+paddleocr>=2.7.0
+paddlepaddle>=2.6.0
+tiktoken>=0.7.0
+pyyaml>=6.0
+python-dotenv>=1.0.0
+tqdm>=4.66.0
+
+# Fase 2: LLM Extraction
+google-generativeai>=0.8.0
+scikit-learn>=1.5.0
+
+# Fase 3: Embedding & Neo4j
+neo4j>=5.20.0
+
+# Notebooks
+jupyter>=1.0.0
+ipykernel>=6.29.0

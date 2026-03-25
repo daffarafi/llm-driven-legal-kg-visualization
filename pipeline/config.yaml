@@ -1,0 +1,45 @@
+# Pipeline Configuration
+paths:
+  raw_dir: "data/raw"
+  extracted_dir: "data/extracted"
+  parsed_dir: "data/parsed"
+  chunks_dir: "data/chunks"
+  triples_dir: "data/triples"
+  validated_dir: "data/validated"
+  deduped_dir: "data/deduped"
+  embedded_dir: "data/embedded"
+
+# PDF Extraction
+extraction:
+  ocr_dpi: 300
+  scanned_threshold: 50  # karakter minimum untuk dianggap digital
+
+# Chunking (Rompis 2025)
+chunking:
+  min_tokens: 400
+  max_tokens: 800
+  overlap_tokens: 100
+  encoding: "cl100k_base"
+
+# LLM Extraction
+llm:
+  model: "gemini-2.5-flash"
+  batch_size: 10
+  temperature: 0.1
+  max_retries: 3
+
+# Embedding
+embedding:
+  model: "text-embedding-004"
+  batch_size: 100
+  dimensions: 768
+
+# Neo4j
+neo4j:
+  uri: "bolt://localhost:7687"
+  user: "neo4j"
+  password: "password"
+
+# Deduplication
+deduplication:
+  similarity_threshold: 0.85
