@@ -3,6 +3,8 @@
 import os
 from dotenv import load_dotenv
 
+# In production (Railway), env vars are set in the dashboard — no .env file needed.
+# Locally, load from .env two levels up.
 load_dotenv(os.path.join(os.path.dirname(__file__), "..", "..", ".env"))
 
 
@@ -20,10 +22,14 @@ class Settings:
     LLM_API_KEY: str = os.getenv("LLM_API_KEY", "not-needed")
     LLM_MODEL_NAME: str = os.getenv("LLM_MODEL_NAME", "")
 
-    # CORS
+    # CORS — configurable via env var (comma-separated)
     CORS_ORIGINS: list[str] = [
-        "http://localhost:3000",
-        "http://127.0.0.1:3000",
+        o.strip()
+        for o in os.getenv(
+            "CORS_ORIGINS",
+            "http://localhost:3000,http://127.0.0.1:3000"
+        ).split(",")
+        if o.strip()
     ]
 
 
