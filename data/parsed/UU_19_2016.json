@@ -1,0 +1,987 @@
+{
+  "document_id": "UU_19_2016",
+  "total_components": 57,
+  "component_types": {
+    "HURUF": 13,
+    "ANGKA": 17,
+    "PASAL": 14,
+    "AYAT": 13
+  },
+  "components": [
+    {
+      "component_id": "UU_19_2016__HURUF_b",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "bahwa berdasarkan pertimbangan sebagaimana\ndimaksud dalam huruf a, perlu membentuk Undang_\nUndang tentang perubahan atas Undang_Undang Nomor\n11 Tahun 2008 tentang Informasi dan Transaksi\nElektronik;\nMengingat : 1. Pasal 5 ayat (l), pasal 20, pasal 25A, pasal 2gD ayat (1),\nPasal 28E ayat (21, pasal 28E ayat (3), pasal 28F, pasal\n28G ayat (1), pasal 28J ayat (2), dan pasal 33 ayat (2)\nUndang-Undang Dasar Negara Republik Indonesia Tahun\n1945;",
+      "page_range": [
+        1,
+        1
+      ],
+      "parent_id": null,
+      "children": [
+        "UU_19_2016__ANGKA_2",
+        "UU_19_2016__ANGKA_1",
+        "UU_19_2016__ANGKA_1__HURUF_b",
+        "UU_19_2016__ANGKA_3",
+        "UU_19_2016__ANGKA_7",
+        "UU_19_2016__ANGKA_8",
+        "UU_19_2016__ANGKA_9",
+        "UU_19_2016__ANGKA_13",
+        "UU_19_2016__ANGKA_19",
+        "UU_19_2016__ANGKA_20",
+        "UU_19_2016__ANGKA_21",
+        "UU_19_2016__ANGKA_22",
+        "UU_19_2016__ANGKA_23"
+      ],
+      "references": [
+        {
+          "type": "MERUJUK_DOKUMEN",
+          "pattern_name": "UU_REF",
+          "source_component": "UU_19_2016__HURUF_b",
+          "source_text": "Undang_Undang Nomor\n11 Tahun 2008",
+          "match_position": 121,
+          "target_doc_id": "UU_11_2008",
+          "target_number": "11",
+          "target_year": "2008"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_19_2016__ANGKA_2",
+      "component_type": "ANGKA",
+      "number": "2",
+      "title": null,
+      "content": "Undang-Undang Nomor l l Tahun 200g tentang Informasi.\ndan Transaksi Elektronik (Lembaran Negara Republik\nIndonesia Tahun 2O08 Nomor Sg, Tambahan Lembaran\nNegara Republik Indonesia Nomor 4g43);\nDengan\nq,D\nPRES IDEN\nREPUBLIK INDONESIA Dengan Persetujuan Bersama\nDEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA\ndan\nMEMUTUSKAN:\nMenetapkan : UNDANG-UNDANG TENTANG PERUBAHAN ATAS UNDANG-\nUNDANG NOMOR 11 TAHUN 2OO8 TENTANG INFORMASI\nDAN TRANSAKSI ELEKTRONIK,\nPasal I\nBeberapa ketentuan dalam Undang-Undang Nomor l1 Tahun\n2008 tentang Informasi dan Transaksi Elektronik (Lembaran\nNegara Republik Indonesia Tahun 2008 Nomor 58, Tambahan\nLembaran Negara Republik Indonesia Nomor 4843) diubah\nsebagai berikut:",
+      "page_range": [
+        1,
+        2
+      ],
+      "parent_id": "UU_19_2016__HURUF_b",
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_DOKUMEN",
+          "pattern_name": "UU_REF",
+          "source_component": "UU_19_2016__ANGKA_2",
+          "source_text": "Undang-Undang Nomor l1 Tahun\n2008",
+          "match_position": 481,
+          "target_doc_id": "UU_11_2008",
+          "target_number": "11",
+          "target_year": "2008"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_19_2016__ANGKA_1",
+      "component_type": "ANGKA",
+      "number": "1",
+      "title": null,
+      "content": "Di antara angka 6 dan angka 7 Pasal 1 disisipkan 1 (satu)\nangka, yakni angka 6a sehingga Pasal 1 berbunyi sebagai\nberikut:\nPasal I\nDalam Undang-Undang ini yang dimaksud dengan:",
+      "page_range": [
+        2,
+        2
+      ],
+      "parent_id": "UU_19_2016__HURUF_b",
+      "children": []
+    },
+    {
+      "component_id": "UU_19_2016__ANGKA_1__HURUF_b",
+      "component_type": "ANGKA",
+      "number": "1",
+      "title": null,
+      "content": "Informasi Elektronik adalah satu atau sekumpulan\ndata elektronik, termasuk tetapi tidak terbatas pada\ntulisan, suara, gambar, peta, rancangan, foto,\nelectronic data interchange (EDI), surat elektronik\n(electronic maill, telegram, teleks, telecopy atau\nsejenisnya, huruf, tanda, angka, Kode Akses, simbol,\natau perforasi yang telah diolah yang memiliki arti\natau dapat dipahami oleh orang yang mampu\nmemahaminya.\n2, Transaksi Elektronik adalah perbuatan hukum yang\ndilakukan dengan menggunakan Komputer, jaringan\nKomputer, dan/atau media elektronik lainnya.",
+      "page_range": [
+        2,
+        2
+      ],
+      "parent_id": "UU_19_2016__HURUF_b",
+      "children": []
+    },
+    {
+      "component_id": "UU_19_2016__ANGKA_3",
+      "component_type": "ANGKA",
+      "number": "3",
+      "title": null,
+      "content": "Teknologi .\n3.\n4.\n5.\n6.\nPRES IDEN\nREPUBLIK INDONESIA Teknologi Informasi adalah suatu teknik untuk\nmengumpulkan, menyiapkan, menyimpan,\nmemproses, mengumumkan, menganalisis,\ndan/ atau menyebarkan informasi.\nDokumen Elektronik adalah setiap Informasi\nElektronik yang dibuat, diteruskan, dikirimkan,\nditerima, atau disimpan dalam bentuk analog,\ndigital, elektromagnetik, optikal, atau sejenisnya,\nyang dapat dilihat, ditampilkan, dan/atau didengar\nmelalui Komputer atau Sistem Elektronik, termasuk\ntetapi tidak terbatas pada tulisan, suara, gambar,\npeta, rancangan, foto atau sejenisnya, huruf, tanda,\nangka, Kode Akses, simbol atau perforasi yang\nmemiliki makna atau arti atau dapat dipahami oleh\norang yang mampu memahaminya.\nSistem Elektronik adalah serangkaian perangkat dan\nprosedur elektronik yang berfungsi mempersiapkan,\nmengumpulkan,\nmengolah,\nmenganalisis,\nmenyimpan, menampilkan, mengumumkan,\nmengirimkan, dan/atau menyebarkan Informasi\nElektronik.\nPenyelenggaraan Sistem Elektronik adalah\npemanfaatan Sistem Elektronik oleh penyelenggara\nnegara, Orang, Badan Usaha, dan/ atau masyarakat.\nPenyelenggara Sistem Elektronik adalah setiap\nOrang, penyelenggara negara, Badan Usaha, dan\nmasyarakat yang menyediakan, mengelola,\ndan/ atau mengoperasikan Sistem Elektronik, baik\nsecara sendiri-sendiri maupun bersama-sama\nkepada pengguna Sistem Elektronik untuk\nkeperluan dirinya dan/atau keperluan pihak lain.",
+      "page_range": [
+        2,
+        3
+      ],
+      "parent_id": "UU_19_2016__HURUF_b",
+      "children": []
+    },
+    {
+      "component_id": "UU_19_2016__ANGKA_7",
+      "component_type": "ANGKA",
+      "number": "7",
+      "title": null,
+      "content": "Jaringan Sistem Elektronik adalah terhubungnya\ndua Sistem Elektronik atau lebih, yang bersifat\ntertutup ataupun terbuka.",
+      "page_range": [
+        3,
+        3
+      ],
+      "parent_id": "UU_19_2016__HURUF_b",
+      "children": []
+    },
+    {
+      "component_id": "UU_19_2016__ANGKA_8",
+      "component_type": "ANGKA",
+      "number": "8",
+      "title": null,
+      "content": "Agen Elektronik adalah perangkat dari suatu Sistem\nElektronik yang dibuat untuk melakukan suatu\ntindakan terhadap suatu Informasi Elektronik\ntertentu secara otomatis yang diselenggarakan oleh\nOrang.\n6a.",
+      "page_range": [
+        3,
+        3
+      ],
+      "parent_id": "UU_19_2016__HURUF_b",
+      "children": []
+    },
+    {
+      "component_id": "UU_19_2016__ANGKA_9",
+      "component_type": "ANGKA",
+      "number": "9",
+      "title": null,
+      "content": "Sertifikat .\n9.\n10.\n11.\n12.\nPRESIDEN\nREPUBLIK INDONESIA Sertifikat Elektronik adalah sertifikat yang bersifat\nelektronik yang memuat Tanda Tangan Elektronik\ndan identitas yang menunjukkan status subjek\nhukum para pihak dalam Transaksi Elektronik yang\ndikeluarkan oleh Penyelenggara Sertifikasi\nElektronik.\nPenyelenggara Sertifikasi Elektronik adalah badan\nhukum yang berfungsi sebagai pihak yang layak\ndipercaya, yang memberikan dan mengaudit\nSertifikat Elektronik.\nLembaga Sertifikasi Keandalan adalah lembaga\nindependen yang dibentuk oleh profesional yang\ndiakui, disahkan, dan diawasi oleh Pemerintah\ndengan kewenangan mengaudit dan mengeluarkan\nsertifikat keandalan dalam Transaksi Elektronik.\nTanda Tangan Elektronik adalah tanda tangan yang\nterdiri atas Informasi Elektronik yang dilekatkan,\nterasosiasi atau terkait dengan Informasi Elektronik\nlainnya yang digunakan sebagai alat verifikasi dan\nautentikasi.",
+      "page_range": [
+        3,
+        4
+      ],
+      "parent_id": "UU_19_2016__HURUF_b",
+      "children": []
+    },
+    {
+      "component_id": "UU_19_2016__ANGKA_13",
+      "component_type": "ANGKA",
+      "number": "13",
+      "title": null,
+      "content": "Penanda Tangan adalah subjek hukum yang\nterasosiasikan atau terkait dengan Tanda Tangan\nElektronik.\nKomputer adalah alat untuk memproses data\nelektronik, magnetik, optik, atau sistem yang\nmelaksanakan fungsi logika, aritmatika, dan\npenyimpanan.\nAkses adalah kegiatan melakukan interaksi dengan\nSistem Elektronik yang berdiri sendiri atau dalam\njaringan.\nKode Akses adalah angka, huruf, simbol, karakter\nlainnya atau kombinasi di antaranya, yang\nmerupakan kunci untuk dapat mengakses Komputer\ndan/ atau Sistem Elektronik lainnya.\nKontrak Elektronik adalah perjanjian para pihak\nyang dibuat melalui Sistem Elektronik.\nPengirim adalah subjek hukum yang mengirimkan\nInformasi Elektronik dan/ atau Dokumen Elektronik.\n14.\n15.\n16.\nt7.\n18.",
+      "page_range": [
+        4,
+        4
+      ],
+      "parent_id": "UU_19_2016__HURUF_b",
+      "children": []
+    },
+    {
+      "component_id": "UU_19_2016__ANGKA_19",
+      "component_type": "ANGKA",
+      "number": "19",
+      "title": null,
+      "content": "Penerima .\n2.\n3.\nFRESIDEN\nREPUBLIK INDONESIA 19. Penerima adalah subjek hukum yang menerima\nInformasi Elektronik dan/atau Dokumen Elektronik\ndari Pengirim.",
+      "page_range": [
+        4,
+        5
+      ],
+      "parent_id": "UU_19_2016__HURUF_b",
+      "children": []
+    },
+    {
+      "component_id": "UU_19_2016__ANGKA_20",
+      "component_type": "ANGKA",
+      "number": "20",
+      "title": null,
+      "content": "Nama Domain adalah alamat internet penyelenggara\nnegara, Orang, Badan Usaha, dan/atau masyarakat,\nyang dapat digunakan dalam berkomunikasi melalui\ninternet, yang berupa kode atau susunan karakter\nyang bersifat unik untuk menunjukkan lokasi\ntertentu dalam internet.",
+      "page_range": [
+        5,
+        5
+      ],
+      "parent_id": "UU_19_2016__HURUF_b",
+      "children": []
+    },
+    {
+      "component_id": "UU_19_2016__ANGKA_21",
+      "component_type": "ANGKA",
+      "number": "21",
+      "title": null,
+      "content": "Orang adalah orang perseorangan, baik warga\nnegara Indonesia, warga negara asing, maupun\nbadan hukum.",
+      "page_range": [
+        5,
+        5
+      ],
+      "parent_id": "UU_19_2016__HURUF_b",
+      "children": []
+    },
+    {
+      "component_id": "UU_19_2016__ANGKA_22",
+      "component_type": "ANGKA",
+      "number": "22",
+      "title": null,
+      "content": "Badan Usaha adalah perusahaan perseorangan atau\nperusahaan persekutuan, baik yang berbadan\nhukum maupun yang tidak berbadan hukum.",
+      "page_range": [
+        5,
+        5
+      ],
+      "parent_id": "UU_19_2016__HURUF_b",
+      "children": []
+    },
+    {
+      "component_id": "UU_19_2016__ANGKA_23",
+      "component_type": "ANGKA",
+      "number": "23",
+      "title": null,
+      "content": "Pemerintah adalah Menteri atau pejabat lainnya\nyang ditunjuk oleh Presiden.\nKetentuan Pasal 5 tetap dengan perubahan penjelasan\nayat (1) dan ayat (2) sehingga penjelasan Pasal 5 menjadi\nsebagaimana ditetapkan dalam penjelasan pasal demi\npasal Undang-Undang ini.\nKetentuan Pasal 26 ditambah 3 (tiga) ayat, yakni ayat (3),\nayat (4), dan ayat (5) sehingga Pasal 26 berbunyi sebagai\nberikut:",
+      "page_range": [
+        5,
+        5
+      ],
+      "parent_id": "UU_19_2016__HURUF_b",
+      "children": [],
+      "references": [
+        {
+          "type": "MENGUBAH_PASAL",
+          "pattern_name": "AMEND_UBAH",
+          "source_component": "UU_19_2016__ANGKA_23",
+          "source_text": "Ketentuan Pasal 5 tetap dengan perubahan",
+          "match_position": 76,
+          "target_article": "Pasal 5"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_19_2016__PASAL_26",
+      "component_type": "PASAL",
+      "number": "26",
+      "title": null,
+      "content": "Kecuali ditentukan lain oleh peraturan perundang-\nundangan, penggunaan setiap informasi melalui\nmedia elektronik yang menyangkut data pribadi\nseseorang harus dilakukan atas persetujuan Orang\nyang bersangkutan.\nSetiap Orang yang dilanggar haknya sebagaimana\ndimaksud pada ayat (1) dapat mengajukan gugatan\natas kerugian yang ditimbulkan berdasarkan\nUndang-Undang ini.\n(l)\n(21",
+      "page_range": [
+        5,
+        5
+      ],
+      "parent_id": null,
+      "children": [
+        "UU_19_2016__AYAT_3",
+        "UU_19_2016__AYAT_5",
+        "UU_19_2016__AYAT_3__PASAL_26"
+      ]
+    },
+    {
+      "component_id": "UU_19_2016__AYAT_3",
+      "component_type": "AYAT",
+      "number": "3",
+      "title": null,
+      "content": "Setiap.\n4.\n5.\nPRES IDEN\nREPUBLIK INDONESIA (3) Setiap Penyelenggara Sistem Elektronik wajib\nmenghapus Informasi Elektronik dan/atau\nDokumen Elektronik yang tidak relevan yang berada\ndi bawah kendalinya atas permintaan Orang yang\nbersangkutan berdasarkan penetapan pengadilan.\n(41 Setiap Penyelenggara Sistem Elektronik wajib\nmenyediakan mekanisme penghapusan Informasi\nElektronik dan/ atau Dokumen Elektronik yang\nsudah tidak relevan sesuai dengan ketentuan\nperaturan perundang-undangan.",
+      "page_range": [
+        5,
+        6
+      ],
+      "parent_id": "UU_19_2016__PASAL_26",
+      "children": []
+    },
+    {
+      "component_id": "UU_19_2016__AYAT_5",
+      "component_type": "AYAT",
+      "number": "5",
+      "title": null,
+      "content": "Ketentuan mengenai tata. cara penghapusan\nInformasi Elektronik dan/atau Dokumen Elektronik\nsebagaimana dimaksud pada ayat (3) dan ayat (41\ndiatur dalam peraturan pemerintah.\nKetentuan Pasal 27 tetap dengan perubahan penjelasan\nayat (1), ayat (3), dan ayat (4) sehingga penjelasan Pasal\n27 menjadi sebagaimana ditetapkan dalam penjelasan\npasal demi pasal Undang-Undang ini.\nKetentuan ayat (3) dan ayat (4) Pasal 31 diubah sehingga\nPasal 31 berbunyi sebagai berikut:\nPasal 3 1\n(l) Setiap Orang dengan sengaja dan tanpa hak atau\nmelawan hukum melakukan intersepsi atau\npenyadapan atas Informasi Elektronik dan/atau\nDokumen Elektronik dalam suatu Komputer\ndan/atau Sistem Elektronik tertentu milik Orang\nlain.\n(21 Setiap Orang dengan sengaja dan tanpa hak atau\nmelawan hukum melakukan intersepsi atas\ntransmisi Informasi Elektronik dan/atau Dokumen\nElektronik yang tidak bersifat publik dari, ke, dan di\ndalam suatu Komputer dan/atau Sistem Elektronik\ntertentu milik Orang lain, baik yang tidak\nmenyebabkan perubahan apa pun maupun yang\nmenyebabkan adanya perubahan, penghilangan,\ndan/atau penghentian Informasi Elektronik\ndan/atau Dokumen Elektronik yang sedang\nditransmisikan.",
+      "page_range": [
+        6,
+        6
+      ],
+      "parent_id": "UU_19_2016__PASAL_26",
+      "children": [],
+      "references": [
+        {
+          "type": "MENGUBAH_PASAL",
+          "pattern_name": "AMEND_UBAH",
+          "source_component": "UU_19_2016__AYAT_5",
+          "source_text": "Ketentuan Pasal 27 tetap dengan perubahan",
+          "match_position": 174,
+          "target_article": "Pasal 27"
+        },
+        {
+          "type": "MENGUBAH_PASAL",
+          "pattern_name": "AMEND_UBAH",
+          "source_component": "UU_19_2016__AYAT_5",
+          "source_text": "Pasal 31 diubah",
+          "match_position": 405,
+          "target_article": "Pasal 31"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_19_2016__AYAT_3__PASAL_26",
+      "component_type": "AYAT",
+      "number": "3",
+      "title": null,
+      "content": "Ketentuan .\nPRESIDEN\nREPU BLIK INDONESIA (3) Ketentuan sebagaimana dimaksud pada ayat (l) dan\nayal (21 tidak berlaku terhadap intersepsi atau\npenyadapan yang dilakukan dalam rangka\npenegakan hukum atas permintaan kepolisian,\nkejaksaan, atau institusi lainnya yang\nkewenangannya ditetapkan berdasarkan undang-\nundang.\n(41 Ketentuan lebih lanjut mengenai tata cara intersepsi\nsebagaimana dimaksud pada ayat (3) diatur dengan\nundang-undang.",
+      "page_range": [
+        6,
+        7
+      ],
+      "parent_id": "UU_19_2016__PASAL_26",
+      "children": [
+        "UU_19_2016__ANGKA_6"
+      ]
+    },
+    {
+      "component_id": "UU_19_2016__ANGKA_6",
+      "component_type": "ANGKA",
+      "number": "6",
+      "title": null,
+      "content": "Di antara ayat (2) dan ayat (3) Pasal 4O disisipkan 2 (dua)\nayat, yakni ayat (2al dan ayat (2b); ketentuan ayat (6)\nPasal 40 diubah; serta penjelasan ayat (1) pasal 4O\ndiubah sehingga Pasal 4O berbunyi sebagai berikut:",
+      "page_range": [
+        7,
+        7
+      ],
+      "parent_id": "UU_19_2016__AYAT_3__PASAL_26",
+      "children": [],
+      "references": [
+        {
+          "type": "MENGUBAH_PASAL",
+          "pattern_name": "AMEND_UBAH",
+          "source_component": "UU_19_2016__ANGKA_6",
+          "source_text": "Pasal 40 diubah",
+          "match_position": 116,
+          "target_article": "Pasal 40"
+        },
+        {
+          "type": "MENGUBAH_PASAL",
+          "pattern_name": "AMEND_UBAH",
+          "source_component": "UU_19_2016__ANGKA_6",
+          "source_text": "pasal 4O\ndiubah",
+          "match_position": 159,
+          "target_article": "Pasal 4O"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_19_2016__PASAL_40",
+      "component_type": "PASAL",
+      "number": "40",
+      "title": null,
+      "content": "",
+      "page_range": [
+        7,
+        7
+      ],
+      "parent_id": null,
+      "children": [
+        "UU_19_2016__AYAT_1",
+        "UU_19_2016__AYAT_3__PASAL_40",
+        "UU_19_2016__AYAT_4",
+        "UU_19_2016__AYAT_5__PASAL_40",
+        "UU_19_2016__AYAT_3__PASAL_40",
+        "UU_19_2016__AYAT_6",
+        "UU_19_2016__AYAT_8"
+      ]
+    },
+    {
+      "component_id": "UU_19_2016__AYAT_1",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Pemerintah memfasilitasi pemanfaatan Teknologi\nInformasi dan Transaksi Elektronik sesuai dengan\nketentuan peraturan perundang-undangan.\n(21 Pemerintah melindungi kepentingan umum dari\nsegala jenis\ngangguan sebagai akibat\npenyalahgunaan Informasi Elektronik dan Transaksi\nElektronik yang mengganggu ketertiban umum,\nsesuai dengan ketentuan peraturan perundang-\nundangan.\n(2a) Pemerintah wajib melakukan pencegahan\npenyebarluasan dan penggunaan Informasi\nElektronik dan/ atau Dokumen Elektronik yang\nmemiliki muatan yang dilarang sesuai dengan\nketentuan peraturan perundang-undangan.\n(2b) Dalam melakukan pencegahan s6lagaimana\ndimaksud pada ayat (2a), Pemerintah berwenang\nmelakukan pemutusan akses\ndan/atau\nmemerintahkan kepada Penyelenggara Sistem\nElektronik untuk melakukan pemutusan akses\nterhadap Informasi Elektronik dan/ atau Dokumen\nElektronik yang memiliki muatan yang melanggar\nhukum.",
+      "page_range": [
+        7,
+        7
+      ],
+      "parent_id": "UU_19_2016__PASAL_40",
+      "children": []
+    },
+    {
+      "component_id": "UU_19_2016__AYAT_3__PASAL_40",
+      "component_type": "AYAT",
+      "number": "3",
+      "title": null,
+      "content": "Pemerintah\n,l't*?' *\\'\ng.*)\n-r,,$r><€\nPRESIDEN\nREPUBLIK INDONESIA (3) Pemerintah menetapkan instansi atau institusi yang\nmemiliki . data elektronik strategis yang wajib\ndilindungi.",
+      "page_range": [
+        7,
+        8
+      ],
+      "parent_id": "UU_19_2016__PASAL_40",
+      "children": []
+    },
+    {
+      "component_id": "UU_19_2016__AYAT_4",
+      "component_type": "AYAT",
+      "number": "4",
+      "title": null,
+      "content": "Instansi atau institusi sebagaimana dimaksud pada\nayat (3) harus membuat Dokumen Elektronik dal\nrekam\ncadang\nelektroniknya\nserta\nmenghubungkannya ke pusat data tertentu untuk\nkepentingan pengamanan data.",
+      "page_range": [
+        8,
+        8
+      ],
+      "parent_id": "UU_19_2016__PASAL_40",
+      "children": []
+    },
+    {
+      "component_id": "UU_19_2016__AYAT_5__PASAL_40",
+      "component_type": "AYAT",
+      "number": "5",
+      "title": null,
+      "content": "Instansi atau institusi lain selain diatur pada ayat",
+      "page_range": [
+        8,
+        8
+      ],
+      "parent_id": "UU_19_2016__PASAL_40",
+      "children": []
+    },
+    {
+      "component_id": "UU_19_2016__AYAT_3__PASAL_40",
+      "component_type": "AYAT",
+      "number": "3",
+      "title": null,
+      "content": "membuat Dokumen Elektronik dan rekam cadang\nelektroniknya sesuai dengan keperluan perlindungan\ndata yang dimilikinya.",
+      "page_range": [
+        8,
+        8
+      ],
+      "parent_id": "UU_19_2016__PASAL_40",
+      "children": []
+    },
+    {
+      "component_id": "UU_19_2016__AYAT_6",
+      "component_type": "AYAT",
+      "number": "6",
+      "title": null,
+      "content": "Ketentuan lebih lanjut mengenai peran Pemerintah\nsebagaimana dimaksud pada ayat (1), ayat (21, ayat\n(2a1, ayat (2b), dan ayat (3) diatur dalam peraturan\npemerintah.",
+      "page_range": [
+        8,
+        8
+      ],
+      "parent_id": "UU_19_2016__PASAL_40",
+      "children": [
+        "UU_19_2016__ANGKA_7__AYAT_6"
+      ]
+    },
+    {
+      "component_id": "UU_19_2016__ANGKA_7__AYAT_6",
+      "component_type": "ANGKA",
+      "number": "7",
+      "title": null,
+      "content": "Ketentuan ayat (2), ayat (3), ayat (5), ayat (6), ayat (71,\ndan ayat (8) Pasal 43 diubah; di antara ayat (7) dan ayat",
+      "page_range": [
+        8,
+        8
+      ],
+      "parent_id": "UU_19_2016__AYAT_6",
+      "children": [],
+      "references": [
+        {
+          "type": "MENGUBAH_PASAL",
+          "pattern_name": "AMEND_UBAH",
+          "source_component": "UU_19_2016__ANGKA_7__AYAT_6",
+          "source_text": "Pasal 43 diubah",
+          "match_position": 73,
+          "target_article": "Pasal 43"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_19_2016__AYAT_8",
+      "component_type": "AYAT",
+      "number": "8",
+      "title": null,
+      "content": "Pasal 43 disisipkan 1 (satu) ayat, yakni ayat (7a); serta\npenjelasan ayat (1) Pasal 43 diubah sehingga pasal 43\nberbunyi sebagai berikut:",
+      "page_range": [
+        8,
+        8
+      ],
+      "parent_id": "UU_19_2016__PASAL_40",
+      "children": [],
+      "references": [
+        {
+          "type": "MENGUBAH_PASAL",
+          "pattern_name": "AMEND_UBAH",
+          "source_component": "UU_19_2016__AYAT_8",
+          "source_text": "Pasal 43 diubah",
+          "match_position": 78,
+          "target_article": "Pasal 43"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_19_2016__PASAL_43",
+      "component_type": "PASAL",
+      "number": "43",
+      "title": null,
+      "content": "",
+      "page_range": [
+        8,
+        8
+      ],
+      "parent_id": null,
+      "children": [
+        "UU_19_2016__AYAT_1__PASAL_43",
+        "UU_19_2016__AYAT_3__PASAL_43"
+      ]
+    },
+    {
+      "component_id": "UU_19_2016__AYAT_1__PASAL_43",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Selain Penyidik Pejabat Polisi Negara Republik\nIndonesia, Pejabat Pegawai Negeri Sipit tertentu di\nlingkungan Pemerintah yang lingkup tugas dan\ntanggung jawabnya di bidang Teknologi Informasi\ndan Transaksi Elektronik diberi wewenang khusus\nsebagai penyidik sebagaimana dimaksud dalam\nUndang-Undang tentang Hukum Acara pidana\nuntuk melakukan penyidikan tindak pidana di\nbidang Teknologi Informasi dan Transaksi\nElektronik.\n12) Penyidikan di bidang Teknologi Informasi dan\nTransaksi Elektronik sebagaimana dimaksud pada\nayat (1) dilakukan dengan memperhatikan\nperlindungan terhadap privasi, kerahasiaan,\nkelancaran layanan publik, dan integritas atau\nkeutuhan data sesuai dengan ketentuan peraturan\nperundang-undangan.",
+      "page_range": [
+        8,
+        8
+      ],
+      "parent_id": "UU_19_2016__PASAL_43",
+      "children": []
+    },
+    {
+      "component_id": "UU_19_2016__AYAT_3__PASAL_43",
+      "component_type": "AYAT",
+      "number": "3",
+      "title": null,
+      "content": "Penggeledahan .\n(3)\nPRESIDEN\nREPUBLIK INDONESIA Penggeledahan dan/ atau penyitaan terhadap Sistem\nElektronik yang terkait dengan dugaan tindak\npidana di bidang Teknologi Informasi dan Transaksi\nElektronik dilakukan sesuai dengan ketentuan\nhukum acara pidana.\nDalam melakukan penggeledahan dan/atau\npenyitaan sebagaimana dimaksud pada ayat (3),\npenyidik wajib menjaga terpeliharanya kepentingan\npelayanan umum.\nPenyidik Pegawai Negeri Sipil sebagaimana\ndimaksud pada ayat (1) berwenang:",
+      "page_range": [
+        8,
+        9
+      ],
+      "parent_id": "UU_19_2016__PASAL_43",
+      "children": [
+        "UU_19_2016__HURUF_a",
+        "UU_19_2016__HURUF_b__PASAL_43",
+        "UU_19_2016__HURUF_c",
+        "UU_19_2016__HURUF_d",
+        "UU_19_2016__HURUF_e",
+        "UU_19_2016__HURUF_g",
+        "UU_19_2016__HURUF_g__PASAL_43",
+        "UU_19_2016__HURUF_h",
+        "UU_19_2016__HURUF_k"
+      ]
+    },
+    {
+      "component_id": "UU_19_2016__HURUF_a",
+      "component_type": "HURUF",
+      "number": "a",
+      "title": null,
+      "content": "menerima laporan atau pengaduan dari\nseseorang tentang adanya tindak pidana di\nbidang. Teknologi Informasi dan Transaksi\nElektronik;",
+      "page_range": [
+        9,
+        9
+      ],
+      "parent_id": "UU_19_2016__AYAT_3__PASAL_43",
+      "children": []
+    },
+    {
+      "component_id": "UU_19_2016__HURUF_b__PASAL_43",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "memanggil setiap Orang atau pihak lainnya\nuntuk didengar dan diperiksa sebagai tersangka\natau saksi sehubungan dengan adanya dugaan\ntindak pidana di bidang Teknologi Informasi\ndan Transaksi Elektronik;",
+      "page_range": [
+        9,
+        9
+      ],
+      "parent_id": "UU_19_2016__AYAT_3__PASAL_43",
+      "children": []
+    },
+    {
+      "component_id": "UU_19_2016__HURUF_c",
+      "component_type": "HURUF",
+      "number": "c",
+      "title": null,
+      "content": "melakukan pemeriksaan atas kebenaran\nlaporan atau keterangan berkenaan dengan\ntindak pidana di bidang Teknologi Informasi\ndan Transaksi Elektronik;",
+      "page_range": [
+        9,
+        9
+      ],
+      "parent_id": "UU_19_2016__AYAT_3__PASAL_43",
+      "children": []
+    },
+    {
+      "component_id": "UU_19_2016__HURUF_d",
+      "component_type": "HURUF",
+      "number": "d",
+      "title": null,
+      "content": "melakukan pemeriksaan terhadap Orang\ndan/atau Badan Usaha yang patut diduga\nmelakukan tindak pidana di bidang Teknologi\nInformasi dan Transaksi Elektronik;",
+      "page_range": [
+        9,
+        9
+      ],
+      "parent_id": "UU_19_2016__AYAT_3__PASAL_43",
+      "children": []
+    },
+    {
+      "component_id": "UU_19_2016__HURUF_e",
+      "component_type": "HURUF",
+      "number": "e",
+      "title": null,
+      "content": "melakukan pemeriksaan terhadap alat\ndan/atau sarana yang berkaitan dengan\nkegiatan Teknologi Informasi yang diduga\ndigunakan untuk melakukan tindak pidana di\nbidang Teknologi Informasi dan Transaksi\nElektronik;\nf.\nmelakukan penggeledahan terhadap tempat\ntertentu yang diduga digunakan sebagai tempat\nuntuk melakukan tindak pidana di bidang\nTeknologi Informasi dan Transaksi Elektronik;\n(4)\n(s)",
+      "page_range": [
+        9,
+        9
+      ],
+      "parent_id": "UU_19_2016__AYAT_3__PASAL_43",
+      "children": []
+    },
+    {
+      "component_id": "UU_19_2016__HURUF_g",
+      "component_type": "HURUF",
+      "number": "g",
+      "title": null,
+      "content": "melakukan\n(6)\n(7)\nPRESIDEN\nREPUBLIK INDONESIA",
+      "page_range": [
+        9,
+        10
+      ],
+      "parent_id": "UU_19_2016__AYAT_3__PASAL_43",
+      "children": []
+    },
+    {
+      "component_id": "UU_19_2016__HURUF_g__PASAL_43",
+      "component_type": "HURUF",
+      "number": "g",
+      "title": null,
+      "content": "melakukan penyegelan dan penyitaan terhadap\nalat dan/atau sarana kegiatan Teknologi\nInformasi yang diduga digunakan secara\nmenyimpang dari ketentuan peraturan\nperundang-undangan;",
+      "page_range": [
+        10,
+        10
+      ],
+      "parent_id": "UU_19_2016__AYAT_3__PASAL_43",
+      "children": []
+    },
+    {
+      "component_id": "UU_19_2016__HURUF_h",
+      "component_type": "HURUF",
+      "number": "h",
+      "title": null,
+      "content": "membuat suatu data dan/atau Sistem\nElektronik yang terkait tindak pidana di bidang\nTeknologi Informasi dan Transaksi Elektronik\nagar tidak dapat diakses;\ni.\nmeminta informasi yang terdapat di dalam\nSistem Elektronik atau informasi yang\ndihasilkan oleh Sistem Elektronik kepada\nPenyelenggara Sistem Elektronik yang terkait\ndengan tindak pidana di bidang Teknologi\nInformasi dan Transaksi Elektronik;\nj.\nmeminta bantuan ahli yang diperlukan dalam\npenyidikan terhadap tindak pidana di bidang\nTeknologi Informasi dan Transaksi Elektronik;\ndan/atau",
+      "page_range": [
+        10,
+        10
+      ],
+      "parent_id": "UU_19_2016__AYAT_3__PASAL_43",
+      "children": []
+    },
+    {
+      "component_id": "UU_19_2016__HURUF_k",
+      "component_type": "HURUF",
+      "number": "k",
+      "title": null,
+      "content": "mengadakan penghentian penyidikan tindak\npidana di bidang Teknologi Informasi dan\nTransaksi Elektronik sesuai dengan ketentuan\nhukum acara pidana.\nPenangkapan dan penahanan terhadap pelaku\ntindak pidana di bidang Teknologi Informasi dan\nTransaksi Elektronik dilakukan sesuai dengan\nketentuan hukum acara pidana\nPenyidik Pejabat Pegawai Negeri Sipil sebagaimana\ndimaksud pada ayat (l) dalam melaksanakan\ntugasnya memberitahukan dimulainya penyidikan\nkepada Penuntut Umum melalui Penyidik Pejabat\nPolisi Negara Republik Indonesia.\nDalam hal penyidikan sudah selesai, Penyidik\nPejabat Pegawai Negeri Sipil sebagaimana dimaksud\npada ayat (1) menyampaikan hasil penyidikannya\nkepada Penuntut Umum melalui Penyidik Pejabat\nPolisi Negara Republik Indonesia.\nDalam rangka mengungkap tindak pidana Informasi\nElektronik dan Transaksi Elektronik, penyidik dapat\nberkerja sama dengan penyidik negara lain untuk\nberbagi informasi dan alat bukti sesuai dengan\nketentuan peraturan perundang-undangan.\n(7a)\n(8)",
+      "page_range": [
+        10,
+        10
+      ],
+      "parent_id": "UU_19_2016__AYAT_3__PASAL_43",
+      "children": [
+        "UU_19_2016__ANGKA_8__HURUF_k",
+        "UU_19_2016__ANGKA_8__HURUF_k"
+      ]
+    },
+    {
+      "component_id": "UU_19_2016__ANGKA_8__HURUF_k",
+      "component_type": "ANGKA",
+      "number": "8",
+      "title": null,
+      "content": "Ketentuan .\nPRESIDEN\nREPUBLIK INDONESIA",
+      "page_range": [
+        10,
+        11
+      ],
+      "parent_id": "UU_19_2016__HURUF_k",
+      "children": []
+    },
+    {
+      "component_id": "UU_19_2016__ANGKA_8__HURUF_k",
+      "component_type": "ANGKA",
+      "number": "8",
+      "title": null,
+      "content": "Ketentuan Pasal 45 diubah serta di antara Pasal 45\nPasal 46 disisipkan 2 (dua) pasal, yakni Pasal 45A\nPasal 45B sehingga berbunyi sebagai berikut:",
+      "page_range": [
+        11,
+        11
+      ],
+      "parent_id": "UU_19_2016__HURUF_k",
+      "children": [],
+      "references": [
+        {
+          "type": "MENGUBAH_PASAL",
+          "pattern_name": "AMEND_UBAH",
+          "source_component": "UU_19_2016__ANGKA_8__HURUF_k",
+          "source_text": "Ketentuan Pasal 45 diubah",
+          "match_position": 0,
+          "target_article": "Pasal 45"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_19_2016__PASAL_45",
+      "component_type": "PASAL",
+      "number": "45",
+      "title": null,
+      "content": "Setiap Orang yang dengan sengaja dan tanpa hak\nmendistribusikan dan/atau mentransmisikan\ndan/ atau membuat dapat diaksesnya Informasi\nElektronik dan/atau Dokumen Elektronik yang\nmemiliki muatan yang melanggar kesusilaan\nsebagaimana dimaksud dalam Pasal 27 ayat (ll\ndipidana dengan pidana penjara paling lama 6\n(enam) tahun dan/ atau denda paling banyak\nRp 1.000.000.000,00 (satu miliar rupiah).\nSetiap Orang yang dengan sengaja dan tanpa hak\nmendistribusikan dan/atau mentransmisikan\ndan/atau membuat dapat diaksesnya Informasi\nElektronik dan/atau Dokumen Elektronik yang\nmemiliki muatan perjudian sebagaimana dimaLsud\ndalam Pasal 27 ayat (2) dipidana dengan pidana\npenjara paling lama 6 (enam) tahun dan/atau denda\npaling banyak Rp1.000.000.000,00 (satu miliar\nrupiah).\nSetiap Orang yang dengan sengaja dan tanpa hak\nmendistribusikan dan/atau mentransmisikan\ndan/atau membuat dapat diaksesnya Informasi\nElektronik dan/atau Dokumen Elektronik yang\nmemiliki muatan penghinaan dan/atau pencemaran\nnama baik sebagaimana dimaksud dalam Pasal 27\nayat (3) dipidana dengan pidana penjara paling lama\n4 (empat) tahun dan/atau denda paling banyak\nRp750.000.000,00 (tujuh ratus lima puluh juta\nrupiah).\nSetiap Orang yang dengan sengaja dan tanpa hak\nmendistribusikan dan/atau mentransmisikan\ndan/ atau membuat dapat diaksesnya Informasi\nElektronik dan/ atau Dokumen Elektronik yang\nmemiliki muatan pemerasan dan/atau\npengancaman sebagaimana dimaksud dalam Pasal\n27 ayat (4) dipidana dengan pidana penjara paling\nlama 6 (enam) tahun dan/atau denda paling banyak\nRp 1.000.000.000,00 (satu miliar rupiah).\ndan\ndan\n(1)\n(21\n(3)\n(4)",
+      "page_range": [
+        11,
+        11
+      ],
+      "parent_id": null,
+      "children": [
+        "UU_19_2016__AYAT_5__PASAL_45"
+      ],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_19_2016__PASAL_45",
+          "source_text": "sebagaimana dimaksud dalam Pasal 27",
+          "match_position": 220,
+          "target_article": "Pasal 27"
+        },
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_19_2016__PASAL_45",
+          "source_text": "sebagaimana dimaksud dalam Pasal 27",
+          "match_position": 1005,
+          "target_article": "Pasal 27"
+        },
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_19_2016__PASAL_45",
+          "source_text": "sebagaimana dimaksud dalam Pasal\n27",
+          "match_position": 1419,
+          "target_article": "Pasal 27"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_19_2016__AYAT_5__PASAL_45",
+      "component_type": "AYAT",
+      "number": "5",
+      "title": null,
+      "content": "Ketentuan\nPRESIDEN\nREPUBLIK INDONESIA\n_t2\nKetentuan sebagaimana dimaksud pada ayat (3)\nmerupakan delik aduan.",
+      "page_range": [
+        11,
+        12
+      ],
+      "parent_id": "UU_19_2016__PASAL_45",
+      "children": []
+    },
+    {
+      "component_id": "UU_19_2016__PASAL_45A",
+      "component_type": "PASAL",
+      "number": "45A",
+      "title": null,
+      "content": "Setiap Orang yang dengan sengaja dan tanpa hak\nmenyebarkan berita bohong dan menyesatkan yang\nmengakibatkan kerugian konsumen dalam\nTransaksi Elektronik sebagaimana dimaksud dalam\nPasal 28 ayat (1) dipidana dengan pidana penjara\npaling lama 6 (enam) tahun dan/atau denda paling\nbanyak Rp 1.000. 000.000,00 (satu miliar rupiah).\nSetiap Orang yang dengan sengaja dan tanpa hak\nmenyebarkan informasi yang ditujukan untuk\nmenimbulkan rasa kebencian atau permusuhan\nindividu dan/atau kelompok masyarakat tertentu\nberdasarkan atas suku, agama, ras, dan\nantargolongan (SARA) sebagaimana dimaksud dalam\nPasal 28 ayat (21 dipidana dengan pidana penjara\npaling lama 6 (enam) tahun dan/ atau denda paling\nbanyak Rp 1. 000.O00. 000,00 (satu miliar rupiah).",
+      "page_range": [
+        12,
+        12
+      ],
+      "parent_id": null,
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_19_2016__PASAL_45A",
+          "source_text": "sebagaimana dimaksud dalam\nPasal 28",
+          "match_position": 153,
+          "target_article": "Pasal 28"
+        },
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_19_2016__PASAL_45A",
+          "source_text": "sebagaimana dimaksud dalam\nPasal 28",
+          "match_position": 568,
+          "target_article": "Pasal 28"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_19_2016__PASAL_458",
+      "component_type": "PASAL",
+      "number": "458",
+      "title": null,
+      "content": "Setiap Orang yang dengan sengaja dan tanpa hak\nmengirimkan Informasi Elektronik dan/atau Dokumen\nElektronik yang berisi ancaman kekerasan atau\nmenakut-nakuti yang ditujukan secara pribadi\nsebagaimana dimaksud dalam Pasal 29 dipidana dengan\npidana penjara paling lama 4 (empat) tahun dan/ atau\ndenda paling banyak Rp750.000.000,00 (tujuh ratus lima\npuluh juta rupiah).\nPasal II\nUndang-Undang ini mulai berlaku pada tanggal diundangkan.\n(s)\n(1)\n(21\nAgar\nPRES IDEN\nREPUBLIK INDONESIA\nAgar setiap orang mengetahuinya, memerintahkan\npengundangan Undang-Undang ini dengan penempatannya\ndalam Lembaran Negara Republik Indonesia.\nDisahkan di Jakarta\npada tanggal 25 November 2016\nPRESIDEN REPUBLIK INDONESIA,\nttd\nJOKO WIDODO\nDiundangkan di Jakarta\npada tan[gal 25 November 2016\nMENTERI HUKUM DAN HAKASASI MANUSIA\nREPUBLIK INDONESIA,\nttd\nYASONNA H. LAOLY\nLEMBARAN NEGARA REPUBLIK INDONESIA TAHUN 2016 NOMOR 251\nSalinan sesuai dengan aslinya\nKEMENTERIAN SEKRETARIAT NEGARA\nREPUBLIK INDONESIA\nDeputi Bidang Perekonomian,\n<um dan Perundang-undangan,\nDjaman\nqD\nFRESIDEN\n]\nREPUBLIK INDONESIA\nATAS\nUNDANG-UNDANG REPUBLIK INDONESIA\nNOMOR 19 TAHUN 2016\nTENTANG\nPERUBAHAN ATAS UNDANG-UNDANG\nNOMOR 11 TAHUN 2OO8\nTENTANG INFORMASI DAN TRANSAKSI ELEKTRONIK\nI. UMUM\nBahwa kemerdekaan menyatakan pikiran dan kebebasan berpendapat\nserta hak memperoleh informasi melalui penggunaan dan pemanfaatan\nTeknologi Informasi dan komunikasi ditqiukan untuk memajukan\nkesejahteraan umum, dan mencerdaskan kehidupan bangsa serta\nmemberikan rasa aman, keadilan, dan kepastian hukum bagi pengguna dan\nPenyelenggara Sistem Elektronik.\nDalam kehidupan bermasyarakat, berbangsa, dan bernegara, hak dan\nkebebasan melalui penggunaan dan pemanfaatan Teknologi Informasi\ntersebut dilakukan dengan mempertimbangkan pembatasan yang ditetapkan\ndengan undang-undang dengan maksud semata-mata untuk menjamin\npengakuan serta penghormatan atas hak dan kebebasan orang lain dan\nuntuk memenuhi tuntutan yang adil sesuai dengan pertimbangan moral,\nnilai-nilai agama, keamanan, dan ketertiban umum dalam suatu masyarakat\ndemokratis.\nUndang-Undang Nomor 11 Tahun 2008 tentang Informasi dan\nTransaksi Elektronik (UU ITE) adalah undang-undang pertama di bidang\nTeknologi Informasi dan Transaksi Elektronik sebagai produk legislasi yang\nsangat dibutuhkan dan telah menjadi pionir yang meletakkan dasar\npengaturan di bidang pemanfaatan Teknologi Informasi dan Transaksi\nElektronik. Akan tetapi, dalam kenyataannya, perjalanan implementasi dari\nUU ITE mengalami persoalan-persoalan.\nPertama, terhadap Undang-Undang ini telah diajukan beberapa kali\nuji materiil di Mahkamah Konstitusi dengan Putusan Mahkamah Konstitusi\nNomor 50 / PUU-VI / 2008, Nomor 2 I PUU -VII I 2009, Nomor S / PUU-UII / 20 I O,\ndan Nomor 20IPUU-X.IV /2016.\nBerdasarkan\nPRES IDEI{\nREPUBLIK INDONESIA Berdasarkan Putusan Mahkamah Konstitusi Nomor SO/PUU-VII2OOS\ndan Nomor 2/PUU-VII|2OO9, tindak pidana penghinaan dan pencemaran\nnama baik dalam bidang Informasi Elektronik dan Transaksi Elektronik\nbukan semata-mata sebagai tindak pidana umum, melainkan sebagai delik\naduan. Penegasan mengenai delik aduan dimaksudkan agar selaras dengan\nasas'kepastian hukum dan rasa keadilan masyarakat.\nBerdasarkan Putusan Mahkamah Konstitusi Nomor s/PUU-Vfil I 2OLO,\nMahkamah Konstitusi berpendapat bahwa kegiatan dan kewenangan\npenyadapan merupakan hal yang sangat sensitif karena di satu sisi\nmerupakan pembatasan hak asasi manusia, tetapi di sisi lain memiliki aspek\nkepentingan hukum. Oleh karena itu, pengaturan (regutation) mengenai\nlegalitas penyadapan harus dibentuk dan diformulasikan secara tepat sesuai\ndengan Undang-Undang Dasar Negara Republik Indonesia Tahun 1945. Di\nsamping itu, Mahkamah berpendapat bahwa karena penyadapan merupakan\npelanggaran atas hak asasi manusia sebagaimana ditegaskan dalam Pasal\n28J ayat (2) Undang-Undang Dasar Negara Republik Indonesia Tahun 1945,\nsangat wajar dan sudah sepatutnya jika negara ingin menyimpangi hak\nprivasi warga negara tersebut, negara harrrslah menyimpanginya dalam\nbentuk undang-undang dan bukan dalam bentuk peraturan pemerintah.\nSelain itu, berdasarkan Putusan Mahkamah Konstitusi Nomor\n20lPUU-xrv l2oL6, Mahkamah Konstitusi berpendapat bahwa untuk\nmencegah terjadinya perbedaan penafsiran terhadap Pasal 5 ayat (1) dan\nayat (21 UU ITE, Mahkamah menegaskan bahwa setiap intersepsi harus\ndilakukan secara sah, terlebih lagi dalam rangka penegakan hukum. Oleh\nkarena itu, Mahkamah dalam amar putusannya menambahkan kata atau\nfrasa \"khususnya\" terhadap frasa \"Informasi Elektronik dan/atau Dokumen\nElektronik\". Agar tidak terjadi penafsiran bahwa putusan tersebut akan\nmempersempit makna atau arti yang terdapat di dalam Pasal 5 ayat (1) dan\nayat (2) UU ITE, untuk memberikan kepastian hukum keberadaan Informasi\nElektronik dan/atau Dokumen Elektronik sebagai alat bukti perlu dipertegas\nkembali dalam Penjelasan Pasal 5 UU ITE.\nKedua, ketentuan mengenai penggeledahan, penyitaan, penangkapan,\ndan penahanan yang diatur dalam UU ITE menimbulkan permasalahln bagi\npenyidik karena tindak pidana di bidang Teknologi Informasi dan Transaksi\nElektronik begitu cepat dan pelaku dapat dengan mudah mengaburkan\nperbuatan atau alat bukti kejahatan.\nKetiga . .\nPRES IDEN\nREPUBLIK INDONESIA Ketiga, karakteristik virtualitas ruang siber memungkinkan konten\nilegal seperti Informasi dan/atau Dokumen Elektronik yang memiliki muatan\nyang melanggar kesusilaan, perjudian, penghinaan atau pencemaran nama\nbaik, pemerasan dan/ atau pengancaman, penyebaran berita bohong dan\nmenyesatkan sehingga mengakibatkan kerugian konsumen dalam Transaksi\nElektronik, serta perbuatan menyebarkan kebencian atau permusuhan\nberdasarkan suku, agama, ras, dan golongan, dan pengiriman ancaman\nkekerasan atau menakut-nakuti yang ditujukan secara pribadi dapat\ndiakses, didistribusikan, ditransmisikan, disalin, disimpan untuk\ndidiseminasi kembali dari mana saja dan kapan saja. Dalam rangka\nmelindungi kepentingan umum dari segala jenis gangguan sebagai akibat\npenyalahgunaan Informasi Elektronik dan Transaksi Elektronik, diperlukan\npenegasan peran Pemerintah dalam mencegah penyebarluasan konten ilegal\ndengan melakukan tindakan pemutusan akses terhadap Informasi\nElektronik dan/ atau Dokumen Elektronik yang memiliki muatan yang\nmelanggar hukum agar tidak dapat diakses dari yurisdiksi Indonesia serta\ndibutuhkan kewenangan bagi penyidik untuk meminta informasi yang\nterdapat dalam Penyelenggara Sistem Elektronik untuk kepentingan\npenegakan hukum tindak pidana di bidang Teknologi Informasi dan\nTransaksi Elektronik.\nKeempat, penggunaan setiap informasi melalui media atau Sistem\nElektronik yang menyangkut data pribadi seseorang harus dilakukan atas\npersetujuan Orang yang bersangkutan. Untuk itu, dibutuhkan jaminan\npemenuhan perlindungan diri pribadi dengan mewajibkan setiap\nPenyelenggara Sistem Elektronik untuk menghapus Informasi Elektronik\ndan/ atau Dokumen Elektronik yang tidak relevan yang berada di bawah\nkendalinya atas permintaan Orang yang bersangkutan berdasarkan\npenetapan pengadilan.\nBerdasarkan pertimbangan tersebut, perlu membentuk Undang-\nUndang tentang Perubahan atas Undang-Undang Nomor 1l Tahun 2008\ntentang Informasi dan Transaksi Elektronik yang menegaskan kembali\nketentuan keberadaan Informasi Elektronik dan/atau Dokumen Elektronik\ndalam Penjelasan Pasal 5, menambah ketentuan kewajiban penghapusan\nInformasi Elektronik dan/ atau Dokumen Elektronik yang tidak relevan\ndalam Pasal 26, mengubah ketentuan Pasal 31 ayat (41 mengenai\npendelegasian penJrusunan tata cara intersepsi ke dalam unding-unilang,\nmenambah peran Pemerintah dalam melakukan pencegahan penyebarluasan\ndan penggunaan Informasi Elektronik dan/atau Dokumen Elektronik yang\nmemiliki muatan yang dilarang dalam Pasal 40, mengubah beberapa\nketentuan mengenai penyidikan yang terkait dengan dugaah tindak pidana\ndi bidang Teknologi Informasi dan Transaksi Elektronik dahm Pasal 43, dan\nmenambah penjelasan Pasal 27 ayat (1), ayat (3), dan ayat (4) agar lebih\nharmonis dengan sistem hukum pidana materiil yang diatur di Indonesia.\nII, PASAL. . .\nPRES IDEN\nREPUBLIK INDONESIA II. PASAL DEMI PASAL\nPasal I\nAngka 1",
+      "page_range": [
+        12,
+        17
+      ],
+      "parent_id": null,
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_DOKUMEN",
+          "pattern_name": "UU_REF",
+          "source_component": "UU_19_2016__PASAL_458",
+          "source_text": "Undang-Undang Nomor 11 Tahun 2008",
+          "match_position": 2078,
+          "target_doc_id": "UU_11_2008",
+          "target_number": "11",
+          "target_year": "2008"
+        },
+        {
+          "type": "MERUJUK_DOKUMEN",
+          "pattern_name": "UU_REF",
+          "source_component": "UU_19_2016__PASAL_458",
+          "source_text": "Undang-Undang Nomor 1l Tahun 2008",
+          "match_position": 7118,
+          "target_doc_id": "UU_11_2008",
+          "target_number": "11",
+          "target_year": "2008"
+        },
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_19_2016__PASAL_458",
+          "source_text": "sebagaimana dimaksud dalam Pasal 29",
+          "match_position": 188,
+          "target_article": "Pasal 29"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_19_2016__PASAL_1",
+      "component_type": "PASAL",
+      "number": "1",
+      "title": null,
+      "content": "Cukup jelas.\nAngka2",
+      "page_range": [
+        17,
+        17
+      ],
+      "parent_id": null,
+      "children": []
+    },
+    {
+      "component_id": "UU_19_2016__PASAL_5",
+      "component_type": "PASAL",
+      "number": "5",
+      "title": null,
+      "content": "Ayat (1)\nBahwa keberadaan Informasi Elektronik dan/ atau\nDokumen Elektronik mengikat dan diakui sebagai alat\nbukti yang sah untuk memberikan kepastian hukum\nterhadap Penyelenggaraan Sistem Elektronik dan\nTransaksi Elektronik, terutama dalam pembuktian dan\nhal yang berkaitan dengan perbuatan hukum yang\ndilakukan melalui Sistem Elektronik.\nAyat (2)\nKhusus untuk Informasi Elektronik dan/atau Dokumen\nElektronik berupa hasil intersepsi atau penyadapan\natau perekaman yang merupakan b\"gian dari\npenyadapan harus dilakukan dalam rangka penegakan\nhukum atas permintaan kepolisian, kejaksaan,\ndan/ atau institusi lainnya yang kewenangannya\nditetapkan berdasarkan undang-undang.\nAyat (3)\nCukup jelas.\nAyat (4)\nHurufa\nSurat yang menurut undang-undang harus dibuat\ntertulis meliputi tetapi tidak terbatas pada surat\nberharga, surat yang berharga, dan surat yang\ndigunakan dalam proses penegakan hukum acara\nperdata, pidana, dan administrasi negara.\nHuruf b\nCukup jelas.\nAngka 3\nPRES IDEN\nREPUBLIK INDONESIA Angka 3",
+      "page_range": [
+        17,
+        18
+      ],
+      "parent_id": null,
+      "children": []
+    },
+    {
+      "component_id": "UU_19_2016__PASAL_26",
+      "component_type": "PASAL",
+      "number": "26",
+      "title": null,
+      "content": "Ayat (l)\nDalam pemanfaatan Teknologi Informasi, perlindungan\ndata pribadi merupakan salah satu bagian dari hak\npribadi (piuacg nqfus). Hak pribadi mengandung\npengertian sebagai berikut:",
+      "page_range": [
+        18,
+        18
+      ],
+      "parent_id": null,
+      "children": [
+        "UU_19_2016__HURUF_a__PASAL_26",
+        "UU_19_2016__HURUF_b__PASAL_26",
+        "UU_19_2016__HURUF_c__PASAL_26"
+      ]
+    },
+    {
+      "component_id": "UU_19_2016__HURUF_a__PASAL_26",
+      "component_type": "HURUF",
+      "number": "a",
+      "title": null,
+      "content": "Hak pribadi merupalan hak untuk menikmati\nkehidupan pribadi dan bebas dari segala macam\ngangguan.",
+      "page_range": [
+        18,
+        18
+      ],
+      "parent_id": "UU_19_2016__PASAL_26",
+      "children": []
+    },
+    {
+      "component_id": "UU_19_2016__HURUF_b__PASAL_26",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "Hak pribadi merupakan hak untuk dapat\nberkomunikasi dengan Orang lain tanpa tindakan\nmemata-matai.",
+      "page_range": [
+        18,
+        18
+      ],
+      "parent_id": "UU_19_2016__PASAL_26",
+      "children": []
+    },
+    {
+      "component_id": "UU_19_2016__HURUF_c__PASAL_26",
+      "component_type": "HURUF",
+      "number": "c",
+      "title": null,
+      "content": "Hak pribadi merupakan hak untuk mengawasi akses\ninformasi tentang kehidupan pribadi dan data\nseseorang.\nAyat (2)\nCukup jelas.\nAyat (3)\nCukup jelas.\nAyat (4)\nCukup jelas.\nAyat (s)\nCukup jelas.\nAngka 4\nPasal27\nAyat (1)\nYang dimaksud dengan \"mendiskibusikan\" adalah\nmengirimkan dan/atau menyebarkan Informasi\nElektronik dan/ atau Dokumen Elektronik kepada\nbanyak Orang atau berbagai pihak melalui Sistem\nElektronik.\nYang dimaksud dengan \"mentransmisikan\" adalah\nmengirimkan Informasi Elektronik dan/ atau Dokumen\nElektronik yang ditujukan kepada satu pihak lain\nmelalui Sistem Elektronik.\nYang dimaksud dengan \"membuat dapat diakses\"\nadalah semua perbuatan lain selain mendistribusikan\ndan mentransmisikan melalui Sistem Elektronik yang\nmenyebabkan Informasi Elektronik dan/atau Dokumen\nElektronik dapat diketahui pihak lain atau publik.\nAyat (2)\nPRES IDEN\nREPUBLIK INDONESIA Ayat (2)\nCukup jelas.\nAyat (3)\nKetentuan pada ayat ini mengacu pada ketentuan\npencemaran nama baik dan/ atau fitnah yang diatur\ndalam Kitab Undang-Undang Hukum Pidana (KUHP).\nAyat (4)\nKetentuan pada ayat ini mengacu pada ketentuan\npemerasan dan/ atau pengancaman yang diatur dalam\nKitab Undang-Undang Hukum Pidana (KUHP).\nAngka 5",
+      "page_range": [
+        18,
+        19
+      ],
+      "parent_id": "UU_19_2016__PASAL_26",
+      "children": []
+    },
+    {
+      "component_id": "UU_19_2016__PASAL_31",
+      "component_type": "PASAL",
+      "number": "31",
+      "title": null,
+      "content": "Ayat (r)\nYang dimaksud dengan \"intersepsi atau penyadapan\"\nadalah kegiatan untuk mendengarkan, merekam,\nmembelokkan, mengu.bah, menghambat, dan/atau\nmencatat transmisi Informasi Elektronik dan/atau\nDokumen Elektronik yang tidak bersifat publik, baik\nmenggunakan jaringan kabel komunikasi maupun\njaringan nirkabel, seperti pancaran elektromagnetis atau\nradio frekuensi.\nAyat (2)\nCukup jelas.\nAyat (3)\nCukup jelas.\nAyat (4)\nCukup jelas.\nAngka 6",
+      "page_range": [
+        19,
+        19
+      ],
+      "parent_id": null,
+      "children": []
+    },
+    {
+      "component_id": "UU_19_2016__PASAL_40",
+      "component_type": "PASAL",
+      "number": "40",
+      "title": null,
+      "content": "Ayat (1)\nFasilitasi pemanfaatan Teknologi Informasi, termasuk\ntata kelola Teknologi Informasi dan Transaksi Elektronik\nyang aman, beretika, cerdas, kreatif, produktif, dan\ninovatif. Ketentuan ini termasuk memfasilitasi\nmasyarakat luas, instansi pemerintah, dan pelaku\nusaha dalam mengembangkan produk dan jasa\nTeknologi Informasi dan komunikasi.\nAyat (2)\nPRESIDEN\nREPUBLIK INDONESIA Ayat (2)\nCukup jelas.\nAyat (2a)\nCukup jelas.\nAyat (2b)\nCukup jelas.\nAyat (3)\nCukup jelas.\nAyat (a)\nCukup jelas.\nAyat (s)\nCukup jelas.\nAyat (6)\nCukup jelas.\nAngka 7",
+      "page_range": [
+        19,
+        20
+      ],
+      "parent_id": null,
+      "children": []
+    },
+    {
+      "component_id": "UU_19_2016__PASAL_43",
+      "component_type": "PASAL",
+      "number": "43",
+      "title": null,
+      "content": "Ayat (l)\nYang dimaksud dengan \"Pejabat Pegawai Negeri Sipil\ntertentu\" adalah Pejabat Pegawai Negeri Sipil\nkementerian yang menyelenggarakan urusan\npemerintahan di bidang komunikasi dan informatika\nyang telah memenuhi persyaratan berdasarkan\nketentuan peraturan perundang-undangan.\nAyat (2)\nCukup jelas.\nAyat (s)\nCukup jelas.\nAyat (41\nCukup jelas.\nAyat (5)\nHuruf a\nCukup jelas.\nHuruf b\nCukup jelas.\nHuruf c\nCukup jelas.\nHuruf d .\nPRESIDEN\nREPU BLIK INDONESIA Hurufd\nCukup jelas.\nHuruf e\nCukup jelas.\nHuruf f\nCukup jelas.\nHuruf g\nCukup jelas.\nHuruf h\nCukup jelas.\nHuruf i\nCukup jelas.\nHurufj\nYang dimaksud dengan \"ahli\" adalah seseorang\nyang memiliki keahlian khusus di bidang Teknologi\nInformasi yang dapat dipertanggungjawabkan\nsecara akademis maupun praktis mengenai\npengetahuannya tersebut.\nHuruf k\nCukup jelas.\nAyat (6)\nCukup jelas.\nAyat (7)\nCukup jelas.\nAyat (7a)\nCukup jelas.\nAyat (8)\nCukup jelas.\nAngka 8",
+      "page_range": [
+        20,
+        21
+      ],
+      "parent_id": null,
+      "children": []
+    },
+    {
+      "component_id": "UU_19_2016__PASAL_45",
+      "component_type": "PASAL",
+      "number": "45",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        21,
+        21
+      ],
+      "parent_id": null,
+      "children": []
+    },
+    {
+      "component_id": "UU_19_2016__PASAL_45A",
+      "component_type": "PASAL",
+      "number": "45A",
+      "title": null,
+      "content": "Cukup jelas.\nPasal 45El\nKetentuan dalam Pasal ini termasuk juga di dalamnya\nperundungan di dunia siber (cgber bullyingl yang\nmengandung unsur ancaman kekerasan atau menakut-\nnakuti dan mengakibatkan kekerasan fisik, psikis,\ndan/ atau kerugian materiil.",
+      "page_range": [
+        21,
+        21
+      ],
+      "parent_id": null,
+      "children": []
+    }
+  ],
+  "reference_summary": {
+    "total_references": 18,
+    "by_type": {
+      "MERUJUK_DOKUMEN": 4,
+      "MENGUBAH_PASAL": 8,
+      "MERUJUK_PASAL": 6
+    }
+  }
+}

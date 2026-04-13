@@ -73,7 +73,7 @@ def deduplicate_entities(
             continue
         
         # Pick canonical: longest label, most content
-        canonical = max(group_nodes, key=lambda n: (len(n.get("label", "")), len(n.get("content", ""))))
+        canonical = max(group_nodes, key=lambda n: (len(n.get("label") or ""), len(n.get("content") or "")))
         
         # Merge provenance from all duplicates
         all_sources = set()

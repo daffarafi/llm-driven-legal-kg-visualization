@@ -709,7 +709,17 @@
         9
       ],
       "parent_id": "UU_11_2008__BAGIAN_Kesatu",
-      "children": []
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_11_2008__PASAL_14",
+          "source_text": "sebagaimana dimaksud\ndalam Pasal 13",
+          "match_position": 37,
+          "target_article": "Pasal 13"
+        }
+      ]
     },
     {
       "component_id": "UU_11_2008__BAGIAN_Kedua",
@@ -1151,7 +1161,17 @@
         17
       ],
       "parent_id": "UU_11_2008__PASAL_34",
-      "children": []
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_11_2008__HURUF_a__PASAL_34",
+          "source_text": "sebagaimana dimaksud dalam\nPasal 27",
+          "match_position": 123,
+          "target_article": "Pasal 27"
+        }
+      ]
     },
     {
       "component_id": "UU_11_2008__HURUF_b__PASAL_34",
@@ -1164,7 +1184,17 @@
         17
       ],
       "parent_id": "UU_11_2008__PASAL_34",
-      "children": []
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_11_2008__HURUF_b__PASAL_34",
+          "source_text": "sebagaimana dimaksud dalam Pasal 27",
+          "match_position": 165,
+          "target_article": "Pasal 27"
+        }
+      ]
     },
     {
       "component_id": "UU_11_2008__PASAL_35",
@@ -1190,7 +1220,17 @@
         17
       ],
       "parent_id": "UU_11_2008__BAB_VII",
-      "children": []
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_11_2008__PASAL_36",
+          "source_text": "sebagaimana dimaksud dalam\nPasal 27",
+          "match_position": 81,
+          "target_article": "Pasal 27"
+        }
+      ]
     },
     {
       "component_id": "UU_11_2008__PASAL_37",
@@ -1203,7 +1243,17 @@
         17
       ],
       "parent_id": "UU_11_2008__BAB_VII",
-      "children": []
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_11_2008__PASAL_37",
+          "source_text": "sebagaimana dimaksud dalam Pasal 27",
+          "match_position": 62,
+          "target_article": "Pasal 27"
+        }
+      ]
     },
     {
       "component_id": "UU_11_2008__BAB_VIII",
@@ -1500,7 +1550,17 @@
         21
       ],
       "parent_id": "UU_11_2008__BAB_X",
-      "children": []
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_11_2008__PASAL_44",
+          "source_text": "sebagaimana dimaksud dalam Pasal 1",
+          "match_position": 281,
+          "target_article": "Pasal 1"
+        }
+      ]
     },
     {
       "component_id": "UU_11_2008__BAB_XI",
@@ -1538,6 +1598,16 @@
       "children": [
         "UU_11_2008__AYAT_4__PASAL_45",
         "UU_11_2008__AYAT_2__PASAL_45"
+      ],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_11_2008__PASAL_45",
+          "source_text": "sebagaimana\ndimaksud dalam Pasal 27",
+          "match_position": 37,
+          "target_article": "Pasal 27"
+        }
       ]
     },
     {
@@ -1564,7 +1634,25 @@
         22
       ],
       "parent_id": "UU_11_2008__PASAL_45",
-      "children": []
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_11_2008__AYAT_2__PASAL_45",
+          "source_text": "sebagaimana\ndimaksud dalam Pasal 28",
+          "match_position": 72,
+          "target_article": "Pasal 28"
+        },
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_11_2008__AYAT_2__PASAL_45",
+          "source_text": "sebagaimana\ndimaksud dalam Pasal 29",
+          "match_position": 296,
+          "target_article": "Pasal 29"
+        }
+      ]
     },
     {
       "component_id": "UU_11_2008__PASAL_46",
@@ -1577,7 +1665,33 @@
         22
       ],
       "parent_id": "UU_11_2008__BAB_XI",
-      "children": []
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_11_2008__PASAL_46",
+          "source_text": "sebagaimana\ndimaksud dalam Pasal 30",
+          "match_position": 37,
+          "target_article": "Pasal 30"
+        },
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_11_2008__PASAL_46",
+          "source_text": "sebagaimana\ndimaksud dalam Pasal 30",
+          "match_position": 249,
+          "target_article": "Pasal 30"
+        },
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_11_2008__PASAL_46",
+          "source_text": "sebagaimana\ndimaksud dalam Pasal 30",
+          "match_position": 463,
+          "target_article": "Pasal 30"
+        }
+      ]
     },
     {
       "component_id": "UU_11_2008__PASAL_47",
@@ -1590,7 +1704,17 @@
         22
       ],
       "parent_id": "UU_11_2008__BAB_XI",
-      "children": []
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_11_2008__PASAL_47",
+          "source_text": "sebagaimana dimaksud\ndalam Pasal 31",
+          "match_position": 33,
+          "target_article": "Pasal 31"
+        }
+      ]
     },
     {
       "component_id": "UU_11_2008__PASAL_48",
@@ -1605,6 +1729,16 @@
       "parent_id": "UU_11_2008__BAB_XI",
       "children": [
         "UU_11_2008__AYAT_2__PASAL_48"
+      ],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_11_2008__PASAL_48",
+          "source_text": "sebagaimana\ndimaksud dalam Pasal 32",
+          "match_position": 37,
+          "target_article": "Pasal 32"
+        }
       ]
     },
     {
@@ -1618,7 +1752,25 @@
         23
       ],
       "parent_id": "UU_11_2008__PASAL_48",
-      "children": []
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_11_2008__AYAT_2__PASAL_48",
+          "source_text": "sebagaimana\ndimaksud dalam Pasal 32",
+          "match_position": 72,
+          "target_article": "Pasal 32"
+        },
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_11_2008__AYAT_2__PASAL_48",
+          "source_text": "sebagaimana\ndimaksud dalam Pasal 32",
+          "match_position": 286,
+          "target_article": "Pasal 32"
+        }
+      ]
     },
     {
       "component_id": "UU_11_2008__PASAL_49",
@@ -1631,7 +1783,17 @@
         23
       ],
       "parent_id": "UU_11_2008__BAB_XI",
-      "children": []
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_11_2008__PASAL_49",
+          "source_text": "sebagaimana dimaksud\ndalam Pasal 33",
+          "match_position": 33,
+          "target_article": "Pasal 33"
+        }
+      ]
     },
     {
       "component_id": "UU_11_2008__PASAL_50",
@@ -1644,7 +1806,17 @@
         23
       ],
       "parent_id": "UU_11_2008__BAB_XI",
-      "children": []
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_11_2008__PASAL_50",
+          "source_text": "sebagaimana dimaksud\ndalam Pasal 34",
+          "match_position": 33,
+          "target_article": "Pasal 34"
+        }
+      ]
     },
     {
       "component_id": "UU_11_2008__PASAL_51",
@@ -1657,7 +1829,25 @@
         23
       ],
       "parent_id": "UU_11_2008__BAB_XI",
-      "children": []
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_11_2008__PASAL_51",
+          "source_text": "sebagaimana\ndimaksud dalam Pasal 35",
+          "match_position": 37,
+          "target_article": "Pasal 35"
+        },
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_11_2008__PASAL_51",
+          "source_text": "sebagaimana\ndimaksud dalam Pasal 36",
+          "match_position": 250,
+          "target_article": "Pasal 36"
+        }
+      ]
     },
     {
       "component_id": "UU_11_2008__PASAL_52",
@@ -1672,6 +1862,16 @@
       "parent_id": "UU_11_2008__BAB_XI",
       "children": [
         "UU_11_2008__AYAT_2__PASAL_52"
+      ],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_11_2008__PASAL_52",
+          "source_text": "sebagaimana dimaksud dalam\nPasal 27",
+          "match_position": 28,
+          "target_article": "Pasal 27"
+        }
       ]
     },
     {
@@ -1685,7 +1885,33 @@
         24
       ],
       "parent_id": "UU_11_2008__PASAL_52",
-      "children": []
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_11_2008__AYAT_2__PASAL_52",
+          "source_text": "sebagaimana dimaksud dalam Pasal\n30",
+          "match_position": 59,
+          "target_article": "Pasal 30"
+        },
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_11_2008__AYAT_2__PASAL_52",
+          "source_text": "sebagaimana dimaksud dalam Pasal\n30",
+          "match_position": 364,
+          "target_article": "Pasal 30"
+        },
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_11_2008__AYAT_2__PASAL_52",
+          "source_text": "sebagaimana dimaksud dalam\nPasal 27",
+          "match_position": 829,
+          "target_article": "Pasal 27"
+        }
+      ]
     },
     {
       "component_id": "UU_11_2008__BAB_XII",
@@ -1869,7 +2095,23 @@
         38
       ],
       "parent_id": "UU_11_2008__PASAL_24__BAB_XIII",
-      "children": []
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_11_2008__HURUF_b__BAB_XIII",
+          "source_text": "sebagaimana dimaksud\ndalam Pasal 27",
+          "match_position": 2477,
+          "target_article": "Pasal 27"
+        }
+      ]
     }
-  ]
+  ],
+  "reference_summary": {
+    "total_references": 25,
+    "by_type": {
+      "MERUJUK_PASAL": 25
+    }
+  }
 }

@@ -1,0 +1,210 @@
+[
+  {
+    "doc_id": "UU_11_2008",
+    "filename": "UU Nomor 11 Tahun 2008.pdf",
+    "type": "UU",
+    "number": "11",
+    "year": 2008,
+    "title": "Informasi dan Transaksi Elektronik",
+    "short_name": "UU ITE",
+    "status": "berlaku (telah diamandemen)",
+    "relations": [
+      {
+        "target_doc_id": "UU_19_2016",
+        "type": "DIAMANDEMEN_OLEH",
+        "description": "Perubahan Pertama atas UU 11/2008 tentang ITE"
+      },
+      {
+        "target_doc_id": "PP_71_2019",
+        "type": "DITURUNKAN_KE",
+        "description": "PP pelaksanaan PSTE"
+      },
+      {
+        "target_doc_id": "PP_80_2019",
+        "type": "DITURUNKAN_KE",
+        "description": "PP perdagangan melalui sistem elektronik"
+      },
+      {
+        "target_doc_id": "PP_82_2012",
+        "type": "DITURUNKAN_KE",
+        "description": "PP PSTE lama (telah dicabut)"
+      },
+      {
+        "target_doc_id": "UU_36_1999",
+        "type": "MERUJUK",
+        "description": "Merujuk UU Telekomunikasi"
+      }
+    ]
+  },
+  {
+    "doc_id": "UU_19_2016",
+    "filename": "UU Nomor  19 Tahun 2016.pdf",
+    "type": "UU",
+    "number": "19",
+    "year": 2016,
+    "title": "Perubahan atas Undang-Undang Nomor 11 Tahun 2008 tentang Informasi dan Transaksi Elektronik",
+    "short_name": "Perubahan UU ITE",
+    "status": "berlaku",
+    "relations": [
+      {
+        "target_doc_id": "UU_11_2008",
+        "type": "MENGAMANDEMEN",
+        "description": "Mengubah beberapa pasal UU 11/2008 (Pasal 1, 26, 27, 28, 29, 31, 36, 40, 43, 45)"
+      }
+    ],
+    "amended_articles": [
+      {"article": "Pasal 1", "action": "MENGUBAH", "description": "Perubahan definisi"},
+      {"article": "Pasal 26", "action": "MENGUBAH", "description": "Hak penghapusan data (right to be forgotten)"},
+      {"article": "Pasal 27", "action": "MENGUBAH", "description": "Perubahan delik pencemaran nama baik menjadi delik aduan"},
+      {"article": "Pasal 28", "action": "MENGUBAH", "description": "Perubahan ketentuan penyebaran informasi"},
+      {"article": "Pasal 29", "action": "MENGUBAH", "description": "Perubahan ketentuan ancaman kekerasan"},
+      {"article": "Pasal 31", "action": "MENGUBAH", "description": "Perubahan ketentuan intersepsi"},
+      {"article": "Pasal 36", "action": "MENGUBAH", "description": "Perubahan ketentuan merugikan orang lain"},
+      {"article": "Pasal 40", "action": "MENGUBAH", "description": "Perluasan peran pemerintah"},
+      {"article": "Pasal 43", "action": "MENGUBAH", "description": "Perluasan kewenangan penyidik"},
+      {"article": "Pasal 45", "action": "MENGUBAH", "description": "Perubahan sanksi pidana"},
+      {"article": "Pasal 45A", "action": "MENYISIPKAN", "description": "Sisipan pasal baru tentang sanksi Pasal 28"},
+      {"article": "Pasal 45B", "action": "MENYISIPKAN", "description": "Sisipan pasal baru tentang sanksi Pasal 29"}
+    ]
+  },
+  {
+    "doc_id": "UU_27_2022",
+    "filename": "UU Nomor 27 Tahun 2022.pdf",
+    "type": "UU",
+    "number": "27",
+    "year": 2022,
+    "title": "Pelindungan Data Pribadi",
+    "short_name": "UU PDP",
+    "status": "berlaku",
+    "relations": [
+      {
+        "target_doc_id": "UU_11_2008",
+        "type": "MERUJUK",
+        "description": "Merujuk UU ITE terkait definisi informasi/dokumen elektronik"
+      }
+    ]
+  },
+  {
+    "doc_id": "UU_36_1999",
+    "filename": "UU Nomor 36 Tahun 1999.pdf",
+    "type": "UU",
+    "number": "36",
+    "year": 1999,
+    "title": "Telekomunikasi",
+    "short_name": "UU Telekomunikasi",
+    "status": "berlaku",
+    "relations": []
+  },
+  {
+    "doc_id": "PP_71_2019",
+    "filename": "PP Nomor 71 Tahun 2019.pdf",
+    "type": "PP",
+    "number": "71",
+    "year": 2019,
+    "title": "Penyelenggaraan Sistem dan Transaksi Elektronik",
+    "short_name": "PP PSTE",
+    "status": "berlaku",
+    "relations": [
+      {
+        "target_doc_id": "UU_11_2008",
+        "type": "DITURUNKAN_DARI",
+        "description": "Melaksanakan ketentuan UU ITE"
+      },
+      {
+        "target_doc_id": "PP_82_2012",
+        "type": "MENCABUT",
+        "description": "Mencabut dan menggantikan PP 82/2012"
+      }
+    ]
+  },
+  {
+    "doc_id": "PP_80_2019",
+    "filename": "PP Nomor 80 Tahun 2019.pdf",
+    "type": "PP",
+    "number": "80",
+    "year": 2019,
+    "title": "Perdagangan Melalui Sistem Elektronik",
+    "short_name": "PP PMSE",
+    "status": "berlaku",
+    "relations": [
+      {
+        "target_doc_id": "UU_11_2008",
+        "type": "MERUJUK",
+        "description": "Merujuk UU ITE terkait sistem elektronik"
+      }
+    ]
+  },
+  {
+    "doc_id": "PP_82_2012",
+    "filename": "PP Nomor 82 Tahun 2012.pdf",
+    "type": "PP",
+    "number": "82",
+    "year": 2012,
+    "title": "Penyelenggaraan Sistem dan Transaksi Elektronik",
+    "short_name": "PP PSTE (dicabut)",
+    "status": "dicabut oleh PP 71/2019",
+    "relations": [
+      {
+        "target_doc_id": "UU_11_2008",
+        "type": "DITURUNKAN_DARI",
+        "description": "Melaksanakan ketentuan UU ITE (versi lama)"
+      },
+      {
+        "target_doc_id": "PP_71_2019",
+        "type": "DICABUT_OLEH",
+        "description": "Dicabut dan digantikan oleh PP 71/2019"
+      }
+    ]
+  },
+  {
+    "doc_id": "Perpres_95_2018",
+    "filename": "Perpres Nomor 95 Tahun 2018.pdf",
+    "type": "Perpres",
+    "number": "95",
+    "year": 2018,
+    "title": "Sistem Pemerintahan Berbasis Elektronik",
+    "short_name": "Perpres SPBE",
+    "status": "berlaku (telah diamandemen)",
+    "relations": [
+      {
+        "target_doc_id": "Perpres_132_2022",
+        "type": "DIAMANDEMEN_OLEH",
+        "description": "Arsitektur SPBE Nasional (turunan Pasal 9 ayat 4 dan Pasal 74)"
+      }
+    ]
+  },
+  {
+    "doc_id": "Perpres_132_2022",
+    "filename": "Perpres Nomor 132 Tahun 2022.pdf",
+    "type": "Perpres",
+    "number": "132",
+    "year": 2022,
+    "title": "Arsitektur Sistem Pemerintahan Berbasis Elektronik Nasional",
+    "short_name": "Perpres Arsitektur SPBE",
+    "status": "berlaku",
+    "relations": [
+      {
+        "target_doc_id": "Perpres_95_2018",
+        "type": "DITURUNKAN_DARI",
+        "description": "Melaksanakan Pasal 9 ayat 4 dan Pasal 74 Perpres 95/2018"
+      }
+    ]
+  },
+  {
+    "doc_id": "Permen_Kominfo_5_2017",
+    "filename": "Permen Kominfo Nomor 5 Tahun 2017.pdf",
+    "type": "Permen",
+    "number": "5",
+    "year": 2017,
+    "title": "Perubahan Keempat atas Peraturan Menteri Komunikasi dan Informatika Nomor 26/PER/M.KOMINFO/5/2007 tentang Pengamanan Pemanfaatan Jaringan Telekomunikasi Berbasis Protokol Internet",
+    "short_name": "Permen Pengamanan Jaringan IP",
+    "status": "berlaku",
+    "relations": [
+      {
+        "target_doc_id": "UU_36_1999",
+        "type": "MERUJUK",
+        "description": "Merujuk UU Telekomunikasi"
+      }
+    ]
+  }
+]

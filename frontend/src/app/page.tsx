@@ -2,18 +2,34 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { Network, MessageSquare, BarChart3, ArrowRight, Database, GitBranch } from "lucide-react";
+import {
+  Network,
+  MessageSquare,
+  BarChart3,
+  ArrowRight,
+  Database,
+  GitBranch,
+  Scale,
+  FileText,
+} from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { getStats } from "@/lib/api";
-import type { StatsData } from "@/lib/types";
+import { getStats, getDocuments } from "@/lib/api";
+import type { StatsData, Regulation } from "@/lib/types";
 
 export default function HomePage() {
   const [stats, setStats] = useState<StatsData | null>(null);
+  const [docCount, setDocCount] = useState<number>(0);
 
   useEffect(() => {
     getStats()
       .then((data) => setStats(data as StatsData))
+      .catch(() => {});
+    getDocuments()
+      .then((data) => {
+        const d = data as { regulations?: Regulation[] };
+        setDocCount(d.regulations?.length || 0);
+      })
       .catch(() => {});
   }, []);
 
@@ -31,8 +47,9 @@ export default function HomePage() {
             Visualization
           </h1>
           <p className="text-lg text-muted-foreground max-w-[600px] mb-8">
-            Eksplorasi interaktif Knowledge Graph hukum Indonesia. 
-            Tanya jawab dengan AI, jelajahi graf, dan navigasi dokumen hukum.
+            Eksplorasi interaktif Knowledge Graph multi-dokumen hukum Indonesia.
+            Meliputi {docCount > 0 ? `${docCount} peraturan` : "klaster peraturan"} ITE & Perlindungan Data Pribadi
+            dengan pelacakan amandemen dan relasi antar-dokumen.
           </p>
           <div className="flex gap-3">
             <Link href="/explore">
@@ -51,7 +68,7 @@ export default function HomePage() {
 
       {/* Stats */}
       <section className="max-w-[1000px] mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
           <Card className="bg-card/50 border-border/40">
             <CardHeader className="pb-2">
               <CardTitle className="text-sm text-muted-foreground flex items-center gap-2">
@@ -59,7 +76,7 @@ export default function HomePage() {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-3xl font-bold">{stats?.total_nodes ?? "—"}</p>
+              <p className="text-3xl font-bold">{stats?.total_nodes?.toLocaleString() ?? "—"}</p>
             </CardContent>
           </Card>
           <Card className="bg-card/50 border-border/40">
@@ -69,7 +86,17 @@ export default function HomePage() {
               </CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-3xl font-bold">{stats?.total_edges ?? "—"}</p>
+              <p className="text-3xl font-bold">{stats?.total_edges?.toLocaleString() ?? "—"}</p>
+            </CardContent>
+          </Card>
+          <Card className="bg-card/50 border-border/40">
+            <CardHeader className="pb-2">
+              <CardTitle className="text-sm text-muted-foreground flex items-center gap-2">
+                <Scale className="h-4 w-4 text-cyan-500" /> Peraturan
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-3xl font-bold">{docCount || "—"}</p>
             </CardContent>
           </Card>
           <Card className="bg-card/50 border-border/40">
@@ -86,28 +113,35 @@ export default function HomePage() {
 
         {/* Feature cards */}
         <h2 className="text-2xl font-bold mb-6">Fitur</h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {[
             {
               href: "/explore",
               icon: Network,
               title: "KG Explorer",
-              desc: "Jelajahi Knowledge Graph secara visual — klik node, filter tipe, expand subgraph.",
+              desc: "Jelajahi Knowledge Graph visual — filter tipe node, warnai berdasarkan dokumen sumber.",
               color: "text-amber-500",
             },
             {
               href: "/qa",
               icon: MessageSquare,
               title: "QA Panel",
-              desc: "Tanya jawab hukum Indonesia — AI generate Cypher, eksekusi di KG, jawab dalam bahasa Indonesia.",
+              desc: "Tanya jawab multi-dokumen — AI generate Cypher, eksekusi di KG, jawab dalam bahasa Indonesia.",
               color: "text-blue-500",
             },
             {
               href: "/analytics",
               icon: BarChart3,
               title: "Analytics",
-              desc: "Dashboard statistik — distribusi node/edge, top entities, overview Knowledge Graph.",
+              desc: "Dashboard statistik — distribusi node/edge, top entities, overview KG multi-dokumen.",
               color: "text-green-500",
+            },
+            {
+              href: "/document",
+              icon: FileText,
+              title: "Regulasi",
+              desc: "Jelajahi klaster regulasi ITE & PDP — relasi antar-dokumen, amandemen, versi pasal.",
+              color: "text-cyan-500",
             },
           ].map((f) => (
             <Link key={f.href} href={f.href}>

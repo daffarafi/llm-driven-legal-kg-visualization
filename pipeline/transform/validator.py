@@ -22,11 +22,20 @@ from pathlib import Path
 VALID_NODE_TYPES = {
     "UndangUndang", "Bab", "Bagian", "Pasal", "Ayat",
     "EntitasHukum", "PerbuatanHukum", "Sanksi", "KonsepHukum",
+    # Multi-document types
+    "Peraturan", "VersiPasal",
 }
 
 VALID_EDGE_TYPES = {
     "MEMUAT", "MENGATUR", "MENETAPKAN_SANKSI", "BERLAKU_UNTUK",
     "MERUJUK", "MENDEFINISIKAN", "MENIMBANG", "MENGAMANDEMEN", "MENCABUT",
+    # Multi-document edge types
+    "DIAMANDEMEN_OLEH", "DITURUNKAN_KE", "DITURUNKAN_DARI", "DICABUT_OLEH",
+    "MERUJUK_DOKUMEN", "MERUJUK_PASAL",
+    "MENGUBAH_PASAL", "MENGHAPUS_PASAL", "MENYISIPKAN_PASAL",
+    "MEMILIKI_VERSI", "DIAMANDEMEN_MENJADI",
+    # Amendment actions
+    "MENGUBAH", "MENYISIPKAN",
 }
 
 # Allowed edge type constraints: {edge_type: (allowed_source_types, allowed_target_types)}

@@ -19,6 +19,11 @@ class Neo4jService:
         return cls._driver
 
     @classmethod
+    def get_session(cls):
+        """Get a session targeting the configured database."""
+        return cls.get_driver().session(database=settings.NEO4J_DATABASE)
+
+    @classmethod
     def close(cls):
         if cls._driver:
             cls._driver.close()
@@ -31,7 +36,7 @@ class Neo4jService:
     @classmethod
     def get_stats(cls) -> dict:
         """Get KG overview statistics."""
-        with cls.get_driver().session() as s:
+        with cls.get_session() as s:
             # Node counts by label
             node_counts = s.run("""
                 MATCH (n)
@@ -93,12 +98,16 @@ class Neo4jService:
                 id: elementId(n),
                 labels: labels(n),
                 label: n.label,
+                node_type: coalesce(n.node_type, head(labels(n))),
+                source_document_id: n.source_document_id,
                 content: substring(coalesce(n.content, ''), 0, 200)
             }}) AS source_nodes,
             collect(DISTINCT {{
                 id: elementId(m),
                 labels: labels(m),
                 label: m.label,
+                node_type: coalesce(m.node_type, head(labels(m))),
+                source_document_id: m.source_document_id,
                 content: substring(coalesce(m.content, ''), 0, 200)
             }}) AS target_nodes,
             collect(DISTINCT {{
@@ -108,7 +117,7 @@ class Neo4jService:
             }}) AS edges
         """
 
-        with cls.get_driver().session() as s:
+        with cls.get_session() as s:
             result = s.run(query, params).single()
 
         # Merge source and target nodes, deduplicate
@@ -156,7 +165,7 @@ class Neo4jService:
                     source_type: labels(m_in)
                 }) AS incoming
         """
-        with cls.get_driver().session() as s:
+        with cls.get_session() as s:
             result = s.run(query, {"id": node_id}).single()
 
         if not result or not result["n"]:
@@ -221,7 +230,7 @@ class Neo4jService:
                 }}) AS edges
         """.format(depth=min(depth, 3))
 
-        with cls.get_driver().session() as s:
+        with cls.get_session() as s:
             try:
                 result = s.run(query, {"id": node_id, "depth": min(depth, 3)}).single()
             except Exception:
@@ -259,7 +268,7 @@ class Neo4jService:
                    substring(coalesce(n.content, ''), 0, 200) AS content
             LIMIT $limit
         """
-        with cls.get_driver().session() as s:
+        with cls.get_session() as s:
             return s.run(cypher, {"query": query, "limit": limit}).data()
 
     @classmethod
@@ -275,7 +284,42 @@ class Neo4jService:
 
     @classmethod
     def get_document(cls, doc_id: str) -> dict | None:
-        """Get document with its hierarchical structure."""
+        """Get document with its hierarchical structure.
+        
+        Supports both Peraturan (multi-doc) and UndangUndang (legacy) nodes.
+        """
+        # Try Peraturan node first (multi-document)
+        with cls.get_session() as s:
+            reg = s.run("""
+                MATCH (p:Peraturan)
+                WHERE p.id = $id OR toLower(p.label) CONTAINS toLower($id) OR p.short_name = $id
+                OPTIONAL MATCH (e:Entity {source_document_id: p.id})
+                WITH p, collect(DISTINCT {
+                    id: elementId(e),
+                    labels: labels(e),
+                    label: e.label,
+                    node_type: e.node_type,
+                    content: substring(coalesce(e.content, ''), 0, 300)
+                }) AS entities
+                RETURN p, entities
+            """, {"id": doc_id}).single()
+
+        if reg and reg["p"]:
+            doc = dict(reg["p"].items())
+            doc["id"] = doc_id
+            # Group entities by type
+            entities_by_type = {}
+            for e in (reg["entities"] or []):
+                if e and e.get("id"):
+                    nt = e.get("node_type", "Unknown")
+                    entities_by_type.setdefault(nt, []).append(e)
+            return {
+                "document": doc,
+                "entities_by_type": entities_by_type,
+                "total_entities": sum(len(v) for v in entities_by_type.values()),
+            }
+
+        # Fallback to UndangUndang (legacy)
         query = """
             MATCH (u:UndangUndang)
             WHERE elementId(u) = $id OR u.label CONTAINS $id
@@ -301,7 +345,7 @@ class Neo4jService:
                     pasal: pasal.label
                 }) AS ayat_list
         """
-        with cls.get_driver().session() as s:
+        with cls.get_session() as s:
             result = s.run(query, {"id": doc_id}).single()
 
         if not result or not result["u"]:
@@ -324,7 +368,7 @@ class Neo4jService:
     @classmethod
     def execute_cypher(cls, cypher: str) -> list[dict]:
         """Execute a Cypher query and return results."""
-        with cls.get_driver().session() as s:
+        with cls.get_session() as s:
             try:
                 return s.run(cypher).data()
             except Exception as e:

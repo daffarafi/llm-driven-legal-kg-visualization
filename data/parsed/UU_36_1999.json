@@ -1,0 +1,4311 @@
+{
+  "document_id": "UU_36_1999",
+  "total_components": 275,
+  "component_types": {
+    "HURUF": 64,
+    "PASAL": 113,
+    "ANGKA": 9,
+    "BAB": 8,
+    "AYAT": 72,
+    "BAGIAN": 9
+  },
+  "components": [
+    {
+      "component_id": "UU_36_1999__HURUF_a",
+      "component_type": "HURUF",
+      "number": "a",
+      "title": null,
+      "content": "bahwa\ntujuan\npembangunan\nnasional\nadalah\nmewujudkan\nmasyarakat adil dan makmur yang merata meteriil dan spiritual\nberdasarkan Pancasila dan Undang-Undang Dasar 1945;",
+      "page_range": [
+        1,
+        1
+      ],
+      "parent_id": null,
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_b",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "bahwa penyelenggaraan telekomunikasi mempunyai arti strategis\ndalam\nupaya\nmemperkukuh\npersatuan\ndan\nkesatuan\nbangsa,\nmemperlancar kegiatan pemerintahan, mendukung terciptanya tujuan\npemerataan pembangunan dan hasil-hasilnya, serta meningkatkan\nhubungan antar bangsa;",
+      "page_range": [
+        1,
+        1
+      ],
+      "parent_id": null,
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_c",
+      "component_type": "HURUF",
+      "number": "c",
+      "title": null,
+      "content": "bahwa\npengaruh\nglobalisasi\ndan\nperkembangan\nteknologi\ntelekomukasi yang sangat pesat telah mengakibatkan perubahan yang\nmendasar\ndalam penyelenggaraan\ndan\ncara\npandang terhadap\ntelekomunikasi;",
+      "page_range": [
+        1,
+        1
+      ],
+      "parent_id": null,
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_d",
+      "component_type": "HURUF",
+      "number": "d",
+      "title": null,
+      "content": "bahwa segala sesuatu yang berkaitan dengan perubahan mendasar\ndalam penyelenggaraan dan cara pandang terhadap telekomunikasi\ntersebut,\nperlu\ndilakukan\npenataan\ndan\npengaturan\nkembali\npenyelenggaraan telekomunikasi nasional;",
+      "page_range": [
+        1,
+        1
+      ],
+      "parent_id": null,
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_e",
+      "component_type": "HURUF",
+      "number": "e",
+      "title": null,
+      "content": "bahwa\nsehubungan\ndengan\nhal-hal\ntersebut\ndi\natas,\nmaka\nUndang-Undang Nomor 3 Tahun 1989 tentang Telekomunikasi\ndipandang tidak sesuai lagi, sehingga perlu diganti.\nMengingat\n:\nPasal 5 ayat (1), Pasal 20 ayat (1) dan Pasal 33 Undang-Undang Dasar\n1945;\nDengan persetujuan\nDEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA\nMEMUTUSKAN :\nMenetapkan :\nUNDANG-UNDANG TENTANG TELEKOMUNIKASI.\nPRESIDEN\nREPUBLIK INDONESIA BAB I\nKETENTUAN UMUM",
+      "page_range": [
+        1,
+        2
+      ],
+      "parent_id": null,
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_DOKUMEN",
+          "pattern_name": "UU_REF",
+          "source_component": "UU_36_1999__HURUF_e",
+          "source_text": "Undang-Undang Nomor 3 Tahun 1989",
+          "match_position": 55,
+          "target_doc_id": "UU_3_1989",
+          "target_number": "3",
+          "target_year": "1989"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_1",
+      "component_type": "PASAL",
+      "number": "1",
+      "title": null,
+      "content": "Dalam Undang-undang ini yang dimaksud dengan:",
+      "page_range": [
+        2,
+        2
+      ],
+      "parent_id": null,
+      "children": [
+        "UU_36_1999__ANGKA_1",
+        "UU_36_1999__ANGKA_2",
+        "UU_36_1999__ANGKA_3",
+        "UU_36_1999__ANGKA_4",
+        "UU_36_1999__ANGKA_5",
+        "UU_36_1999__ANGKA_6",
+        "UU_36_1999__ANGKA_7",
+        "UU_36_1999__ANGKA_8",
+        "UU_36_1999__ANGKA_9"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__ANGKA_1",
+      "component_type": "ANGKA",
+      "number": "1",
+      "title": null,
+      "content": "Telekomunikasi adalah setiap pemancaran, pengiriman dan atau\npenerimaan dari hasil informasi dalam bentuk tanda-tanda, isyarat,\ntulisan, gambar, suara dan bunyi melalui sistem kawat, optik, radio,\natau sistem elektromagnetik lainnya;",
+      "page_range": [
+        2,
+        2
+      ],
+      "parent_id": "UU_36_1999__PASAL_1",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__ANGKA_2",
+      "component_type": "ANGKA",
+      "number": "2",
+      "title": null,
+      "content": "Alat telekomunikasi adalah setiap alat perlengkapan yang digunakan\ndalam bertelekomunikasi;",
+      "page_range": [
+        2,
+        2
+      ],
+      "parent_id": "UU_36_1999__PASAL_1",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__ANGKA_3",
+      "component_type": "ANGKA",
+      "number": "3",
+      "title": null,
+      "content": "Perangkat telekomunikasi adalah sekelompok alat telekomunikasi\nyang memungkinkan bertelekomunikasi;",
+      "page_range": [
+        2,
+        2
+      ],
+      "parent_id": "UU_36_1999__PASAL_1",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__ANGKA_4",
+      "component_type": "ANGKA",
+      "number": "4",
+      "title": null,
+      "content": "Sarana dan prasarana telekomunikasi adalah segala sesuatu yang\nmemungkinkan dan mendukung berfungsinya telekomunikasi;",
+      "page_range": [
+        2,
+        2
+      ],
+      "parent_id": "UU_36_1999__PASAL_1",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__ANGKA_5",
+      "component_type": "ANGKA",
+      "number": "5",
+      "title": null,
+      "content": "Pemancar radio adalah alat telekomunikasi yang menggunakan dan\nmemancarkan gelombang radio;",
+      "page_range": [
+        2,
+        2
+      ],
+      "parent_id": "UU_36_1999__PASAL_1",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__ANGKA_6",
+      "component_type": "ANGKA",
+      "number": "6",
+      "title": null,
+      "content": "Jaringan\ntelekomunikasi\nadalah\nrangkaian\ntelekomunikasi\ndan\nkelengkapannya yang digunakan dalam bertelekomunikasi;",
+      "page_range": [
+        2,
+        2
+      ],
+      "parent_id": "UU_36_1999__PASAL_1",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__ANGKA_7",
+      "component_type": "ANGKA",
+      "number": "7",
+      "title": null,
+      "content": "Jasa telekomunikasi adalah layanan telekomunikasi untuk memenuhi\nkebutuhan\nbertelekomunikasi\ndengan\nmenggunakan\njaringan\ntelekomunikasi;",
+      "page_range": [
+        2,
+        2
+      ],
+      "parent_id": "UU_36_1999__PASAL_1",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__ANGKA_8",
+      "component_type": "ANGKA",
+      "number": "8",
+      "title": null,
+      "content": "Penyelanggara telekomunikasi adalah perseroan, koperasi, Badan\nUsaha Milik Daerah (BUMD), Badan Usaha Milik Negara (BUMN),\nbadan usaha swasta, instansi pemerintah, dan instansi pertahanan\nkeamanan negara;",
+      "page_range": [
+        2,
+        2
+      ],
+      "parent_id": "UU_36_1999__PASAL_1",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__ANGKA_9",
+      "component_type": "ANGKA",
+      "number": "9",
+      "title": null,
+      "content": "Pelanggan adalah perseorangan, badan hukum, instansi pemerintah\nyang\nmenggunakan\njaringan\ntelekomunikasi\ndan\natau\njasa\ntelekomunikasi berdasarkan kontrak;\n10.Pemakai adalah perseorangan, badan hukum, instansi pemerintah\nyang\nmenggunakan\njaringan\ntelekomunikasi\ndan\natau\njasa\ntelekomunikasi yang tidak berdasarkan kontrak;\n11.Pengguna adalah pelanggan dan pemakai;\n12.Penyelenggaraan telekomunikasi adalah kegiatan penyediaan dan\npelayanan telekomunikasi sehingga memungkinkan terselenggaranya\ntelekomunikasi;\n13.Penyelenggaraan\njaringan\ntelekomunikasi\nadalah\nkegiatan\npenyediaan\ndan\natau\npelayanan\njasa\ntelekomunikasi\nyang\nmemungkinkan terselenggaranya telekomunikasi;\nPRESIDEN\nREPUBLIK INDONESIA 14.Penyelenggaraan jasa telekomunikasi adalah kegiatan penyediaan\ndan\natau\npelayanan\njasa\ntelekomunikasi\nyang\nmemungkinkan\nterselenggaranya telekomunikasi;\n15.Penyelenggaraan telekomunikasi khusus adalah penyelenggaraan\ntelekomunikasi\nyang\nsifat,\nperuntukan,\ndan\npengoperasiannya\nkhusus;\n16.Interkoneksi adalah keterhubungan antar jaringan telekomunikasi\ndari penyelenggara jaringan telekomunikasi yang berbeda;\n17.Menteri\nadalah\nMenteri\nyang\nruang\nlingkup\ntugas\ndan\ntanggungjawabnya di bidang telekomunikasi.",
+      "page_range": [
+        2,
+        3
+      ],
+      "parent_id": "UU_36_1999__PASAL_1",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__BAB_II",
+      "component_type": "BAB",
+      "number": "II",
+      "title": "ASAS DAN TUJUAN",
+      "content": "",
+      "page_range": [
+        3,
+        3
+      ],
+      "parent_id": null,
+      "children": [
+        "UU_36_1999__PASAL_2",
+        "UU_36_1999__PASAL_3"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_2",
+      "component_type": "PASAL",
+      "number": "2",
+      "title": null,
+      "content": "Telekomunikasi diselenggarakan berdasarkan asas manfaat, adil dan\nmerata, kepastian hukum, keamanan, kemitraan, etika dan kepercayaan\npada diri sendiri.",
+      "page_range": [
+        3,
+        3
+      ],
+      "parent_id": "UU_36_1999__BAB_II",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_3",
+      "component_type": "PASAL",
+      "number": "3",
+      "title": null,
+      "content": "Telekomunikasi diselenggarakan dengan tujuan untuk mendukung\npersatuan\ndan\nkesatuan\nbangsa,\nmeningkatkan kesejahteraan dan\nkemakmuran rakyat secara adil dan merata, mendukung kehidupan\nekonomi dan kegiatan pemerintahan, serta meningkatkan hubungan\nantarbangsa.",
+      "page_range": [
+        3,
+        3
+      ],
+      "parent_id": "UU_36_1999__BAB_II",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__BAB_III",
+      "component_type": "BAB",
+      "number": "III",
+      "title": "PEMBINAAN",
+      "content": "",
+      "page_range": [
+        3,
+        3
+      ],
+      "parent_id": null,
+      "children": [
+        "UU_36_1999__PASAL_4",
+        "UU_36_1999__PASAL_6"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_4",
+      "component_type": "PASAL",
+      "number": "4",
+      "title": null,
+      "content": "",
+      "page_range": [
+        3,
+        3
+      ],
+      "parent_id": "UU_36_1999__BAB_III",
+      "children": [
+        "UU_36_1999__AYAT_1",
+        "UU_36_1999__AYAT_2",
+        "UU_36_1999__AYAT_3",
+        "UU_36_1999__AYAT_1__PASAL_4",
+        "UU_36_1999__AYAT_2__PASAL_4",
+        "UU_36_1999__AYAT_3__PASAL_4",
+        "UU_36_1999__AYAT_4",
+        "UU_36_1999__AYAT_5"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_1",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Telekomunikasi dikuasai oleh Negara dan pembinaannya dilakukan\noleh Pemerintah.",
+      "page_range": [
+        3,
+        3
+      ],
+      "parent_id": "UU_36_1999__PASAL_4",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_2",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Pembinaan\ntelekomunikasi\ndiarahkan\nuntuk\nmeningkatkan\npenyelenggaraan telekomunikasi yang meliputi penetapan kebijakan,\npengaturan, pengawasan dan pengendalian.",
+      "page_range": [
+        3,
+        3
+      ],
+      "parent_id": "UU_36_1999__PASAL_4",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_3",
+      "component_type": "AYAT",
+      "number": "3",
+      "title": null,
+      "content": "Dalam\npenetapan\nkebijakan,\npengaturan,\npengawasan\ndan\npengendalian di bidang telekomunikasi, sebagaimana dimaksud pada\nayat\n(2),\ndilakukan\nsecara\nmenyeluruh\ndan\nterpadu\ndengan\nmemperhatikan pemikiran dan pandangan yang berkembang dalam\nmasyarakat serta perkembangan global.\nPRESIDEN\nREPUBLIK INDONESIA Pasal 5",
+      "page_range": [
+        3,
+        4
+      ],
+      "parent_id": "UU_36_1999__PASAL_4",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_1__PASAL_4",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Dalam rangka pelaksanan pembinaan telekomunikasi sebagaimana\ndimaksud dalam Pasal 4, Pemerintahan melibatkan peran serta\nmasyarakat.",
+      "page_range": [
+        4,
+        4
+      ],
+      "parent_id": "UU_36_1999__PASAL_4",
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_36_1999__AYAT_1__PASAL_4",
+          "source_text": "sebagaimana\ndimaksud dalam Pasal 4",
+          "match_position": 49,
+          "target_article": "Pasal 4"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_2__PASAL_4",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Peran serta masyarakat sebagaimana dimaksud pada ayat (1), berupa\npenyampaian pemikiran dan pandangan yang berkembang dalam\nmasyarakat\nmengenai\narah\npengembangan\npertelekomunikasian\ndalam rangka penetapan kebijakan, pengaturan, pengendalian dan\npengawasan di bidang telekomunikasi.",
+      "page_range": [
+        4,
+        4
+      ],
+      "parent_id": "UU_36_1999__PASAL_4",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_3__PASAL_4",
+      "component_type": "AYAT",
+      "number": "3",
+      "title": null,
+      "content": "Pelaksanaan peran serta masyarakat sebagaimana dimaksud pada\nayat (2), diselenggarakan oleh lembaga mandiri yang dibentuk untuk\nmaksud tersebut.",
+      "page_range": [
+        4,
+        4
+      ],
+      "parent_id": "UU_36_1999__PASAL_4",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_4",
+      "component_type": "AYAT",
+      "number": "4",
+      "title": null,
+      "content": "Lembaga sebagaimana dimaksud pada ayat (3) keanggotaannya\nterdiri dari asosiasi yang bergerak di bidang usaha telekomunikasi,\nasosiasi\nprofesi\nkomunikasi,\nasosiasi\nprodusen\nperalatan\ntelekomunikasi, asosiasi pengguna jaringan, dan jasa telekomunikasi\nintelektual di bidang telekomunikasi.",
+      "page_range": [
+        4,
+        4
+      ],
+      "parent_id": "UU_36_1999__PASAL_4",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_5",
+      "component_type": "AYAT",
+      "number": "5",
+      "title": null,
+      "content": "Ketentuan\nmengenai\ntata\ncara\nperan\nserta\nmasyarakat\ndan\npembetulan lembaga sebagaimana dimaksud pada ayat (3) diatur\ndengan Peraturan Pemerintah.",
+      "page_range": [
+        4,
+        4
+      ],
+      "parent_id": "UU_36_1999__PASAL_4",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_6",
+      "component_type": "PASAL",
+      "number": "6",
+      "title": null,
+      "content": "Menteri\nbertindak\nsebagai\npenanggung\njawab\nadministrasi\ntelekomunikasi Indonesia.",
+      "page_range": [
+        4,
+        4
+      ],
+      "parent_id": "UU_36_1999__BAB_III",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__BAB_IV",
+      "component_type": "BAB",
+      "number": "IV",
+      "title": "PENYELENGGARAAN Bagian Pertama",
+      "content": "Umum",
+      "page_range": [
+        4,
+        4
+      ],
+      "parent_id": null,
+      "children": [
+        "UU_36_1999__PASAL_7",
+        "UU_36_1999__BAGIAN_Kedua",
+        "UU_36_1999__BAGIAN_Ketiga",
+        "UU_36_1999__BAGIAN_Keempat",
+        "UU_36_1999__BAGIAN_Kelima",
+        "UU_36_1999__BAGIAN_Keenam",
+        "UU_36_1999__BAGIAN_Ketujuh",
+        "UU_36_1999__BAGIAN_Kesembilan",
+        "UU_36_1999__BAGIAN_Kesepuluh",
+        "UU_36_1999__BAGIAN_Kesebelas"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_7",
+      "component_type": "PASAL",
+      "number": "7",
+      "title": null,
+      "content": "",
+      "page_range": [
+        4,
+        4
+      ],
+      "parent_id": "UU_36_1999__BAB_IV",
+      "children": [
+        "UU_36_1999__AYAT_1__PASAL_7"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_1__PASAL_7",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Penyelenggaraan telekomunikasi meliputi :",
+      "page_range": [
+        4,
+        4
+      ],
+      "parent_id": "UU_36_1999__PASAL_7",
+      "children": [
+        "UU_36_1999__HURUF_a__PASAL_7",
+        "UU_36_1999__HURUF_b__PASAL_7",
+        "UU_36_1999__HURUF_c__PASAL_7",
+        "UU_36_1999__HURUF_a__PASAL_7",
+        "UU_36_1999__HURUF_b__PASAL_7",
+        "UU_36_1999__HURUF_c__PASAL_7",
+        "UU_36_1999__HURUF_d__PASAL_7"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_a__PASAL_7",
+      "component_type": "HURUF",
+      "number": "a",
+      "title": null,
+      "content": "penyelenggaraan jaringan telekomunikasi;",
+      "page_range": [
+        4,
+        4
+      ],
+      "parent_id": "UU_36_1999__AYAT_1__PASAL_7",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_b__PASAL_7",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "penyelenggaraan jasa telekomunikasi;",
+      "page_range": [
+        4,
+        4
+      ],
+      "parent_id": "UU_36_1999__AYAT_1__PASAL_7",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_c__PASAL_7",
+      "component_type": "HURUF",
+      "number": "c",
+      "title": null,
+      "content": "penyelenggaraan telekomunikasi khusus.\nPRESIDEN\nREPUBLIK INDONESIA (2) Dalam\npenyelenggaraan\ntelekomunikasi,\ndiperhatikan\nhal-hal\nsebagai berikut :",
+      "page_range": [
+        4,
+        5
+      ],
+      "parent_id": "UU_36_1999__AYAT_1__PASAL_7",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_a__PASAL_7",
+      "component_type": "HURUF",
+      "number": "a",
+      "title": null,
+      "content": "melindungi kepentingan dan keamanan negara;",
+      "page_range": [
+        5,
+        5
+      ],
+      "parent_id": "UU_36_1999__AYAT_1__PASAL_7",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_b__PASAL_7",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "mengantisipasi perkembangan teknologi dan tuntutan global;",
+      "page_range": [
+        5,
+        5
+      ],
+      "parent_id": "UU_36_1999__AYAT_1__PASAL_7",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_c__PASAL_7",
+      "component_type": "HURUF",
+      "number": "c",
+      "title": null,
+      "content": "dilakukan secara profesional dan dapat dipertanggungjawabkan.",
+      "page_range": [
+        5,
+        5
+      ],
+      "parent_id": "UU_36_1999__AYAT_1__PASAL_7",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_d__PASAL_7",
+      "component_type": "HURUF",
+      "number": "d",
+      "title": null,
+      "content": "peran serta masyarakat.",
+      "page_range": [
+        5,
+        5
+      ],
+      "parent_id": "UU_36_1999__AYAT_1__PASAL_7",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__BAGIAN_Kedua",
+      "component_type": "BAGIAN",
+      "number": "Kedua",
+      "title": "Penyelenggara",
+      "content": "",
+      "page_range": [
+        5,
+        5
+      ],
+      "parent_id": "UU_36_1999__BAB_IV",
+      "children": [
+        "UU_36_1999__PASAL_8",
+        "UU_36_1999__PASAL_9"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_8",
+      "component_type": "PASAL",
+      "number": "8",
+      "title": null,
+      "content": "",
+      "page_range": [
+        5,
+        5
+      ],
+      "parent_id": "UU_36_1999__BAGIAN_Kedua",
+      "children": [
+        "UU_36_1999__AYAT_1__PASAL_8",
+        "UU_36_1999__AYAT_2__PASAL_8",
+        "UU_36_1999__AYAT_3__PASAL_8"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_1__PASAL_8",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Penyelenggaraan jaringan telekomunikasi dan atau penyelenggaraan\njasa telekomunikasi sebagaimana dimaksud dalam Pasal 7 ayat (1)\nhuruf a dan huruf b, dapat dilakukan oleh badan hukum yang\ndidirikan\nuntuk\nmaksud\ntersebut\nberdasarkan\nperaturan\nperundang-undangan yang berlaku, yaitu :",
+      "page_range": [
+        5,
+        5
+      ],
+      "parent_id": "UU_36_1999__PASAL_8",
+      "children": [
+        "UU_36_1999__HURUF_a__PASAL_8",
+        "UU_36_1999__HURUF_b__PASAL_8",
+        "UU_36_1999__HURUF_c__PASAL_8",
+        "UU_36_1999__HURUF_d__PASAL_8"
+      ],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_36_1999__AYAT_1__PASAL_8",
+          "source_text": "sebagaimana dimaksud dalam Pasal 7",
+          "match_position": 85,
+          "target_article": "Pasal 7"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_a__PASAL_8",
+      "component_type": "HURUF",
+      "number": "a",
+      "title": null,
+      "content": "Badan Usaha Milik Negara (BUMN);",
+      "page_range": [
+        5,
+        5
+      ],
+      "parent_id": "UU_36_1999__AYAT_1__PASAL_8",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_b__PASAL_8",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "Badan Usaha Milik Daerah (BUMD);",
+      "page_range": [
+        5,
+        5
+      ],
+      "parent_id": "UU_36_1999__AYAT_1__PASAL_8",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_c__PASAL_8",
+      "component_type": "HURUF",
+      "number": "c",
+      "title": null,
+      "content": "Badan Usaha Swasta; atau",
+      "page_range": [
+        5,
+        5
+      ],
+      "parent_id": "UU_36_1999__AYAT_1__PASAL_8",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_d__PASAL_8",
+      "component_type": "HURUF",
+      "number": "d",
+      "title": null,
+      "content": "koperasi.",
+      "page_range": [
+        5,
+        5
+      ],
+      "parent_id": "UU_36_1999__AYAT_1__PASAL_8",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_2__PASAL_8",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Penyelenggaraan telekomunikasi khusus sebagaimana dimaksud\ndalam Pasal 7 ayat (1) huruf c, dapat dilakukan oleh :",
+      "page_range": [
+        5,
+        5
+      ],
+      "parent_id": "UU_36_1999__PASAL_8",
+      "children": [
+        "UU_36_1999__HURUF_a__PASAL_8",
+        "UU_36_1999__HURUF_b__PASAL_8",
+        "UU_36_1999__HURUF_c__PASAL_8"
+      ],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_36_1999__AYAT_2__PASAL_8",
+          "source_text": "sebagaimana dimaksud\ndalam Pasal 7",
+          "match_position": 38,
+          "target_article": "Pasal 7"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_a__PASAL_8",
+      "component_type": "HURUF",
+      "number": "a",
+      "title": null,
+      "content": "perseorangan;",
+      "page_range": [
+        5,
+        5
+      ],
+      "parent_id": "UU_36_1999__AYAT_2__PASAL_8",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_b__PASAL_8",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "instansi pemerintah;",
+      "page_range": [
+        5,
+        5
+      ],
+      "parent_id": "UU_36_1999__AYAT_2__PASAL_8",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_c__PASAL_8",
+      "component_type": "HURUF",
+      "number": "c",
+      "title": null,
+      "content": "badan hukum selain penyelenggara jaringan telekomunikasi dan\natau penyelenggara jasa telekomunikasi.",
+      "page_range": [
+        5,
+        5
+      ],
+      "parent_id": "UU_36_1999__AYAT_2__PASAL_8",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_3__PASAL_8",
+      "component_type": "AYAT",
+      "number": "3",
+      "title": null,
+      "content": "Ketentuan mengenai penyelenggaraan sebagaimana dimaksud pada\nayat (1) dan ayat (2) diatur dengan Peraturan Pemerintah.",
+      "page_range": [
+        5,
+        5
+      ],
+      "parent_id": "UU_36_1999__PASAL_8",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_9",
+      "component_type": "PASAL",
+      "number": "9",
+      "title": null,
+      "content": "",
+      "page_range": [
+        5,
+        5
+      ],
+      "parent_id": "UU_36_1999__BAGIAN_Kedua",
+      "children": [
+        "UU_36_1999__AYAT_1__PASAL_9",
+        "UU_36_1999__AYAT_2__PASAL_9",
+        "UU_36_1999__AYAT_3__PASAL_9",
+        "UU_36_1999__AYAT_4__PASAL_9",
+        "UU_36_1999__AYAT_5__PASAL_9"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_1__PASAL_9",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Penyelenggara\njaringan\ntelekomunikasi\nsebagaimana\ndimaksud\ndalam Pasal 8 ayat (1) dapat menyelenggarakan jasa telekomunikasi.",
+      "page_range": [
+        5,
+        5
+      ],
+      "parent_id": "UU_36_1999__PASAL_9",
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_36_1999__AYAT_1__PASAL_9",
+          "source_text": "sebagaimana\ndimaksud\ndalam Pasal 8",
+          "match_position": 38,
+          "target_article": "Pasal 8"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_2__PASAL_9",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Penyelenggara jasa telekomunikasi sebagaimana dimaksud dalam\nPasal 8 ayat (1) dalam menyelenggarakan jasa telekomunikasi,\nmenggunakan dan atau menyewa jaringan telekomunikasi milik\npenyelenggara jaringan telekomunikasi.",
+      "page_range": [
+        5,
+        5
+      ],
+      "parent_id": "UU_36_1999__PASAL_9",
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_36_1999__AYAT_2__PASAL_9",
+          "source_text": "sebagaimana dimaksud dalam\nPasal 8",
+          "match_position": 34,
+          "target_article": "Pasal 8"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_3__PASAL_9",
+      "component_type": "AYAT",
+      "number": "3",
+      "title": null,
+      "content": "Penyelenggara telekomunikasi khusus sebagaimana dimaksud dalam\nPasal 8 ayat (2), dapat menyelenggarakan telekomunikasi untuk :\nPRESIDEN\nREPUBLIK INDONESIA a. keperluan sendiri;",
+      "page_range": [
+        5,
+        6
+      ],
+      "parent_id": "UU_36_1999__PASAL_9",
+      "children": [
+        "UU_36_1999__HURUF_b__PASAL_9",
+        "UU_36_1999__HURUF_c__PASAL_9"
+      ],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_36_1999__AYAT_3__PASAL_9",
+          "source_text": "sebagaimana dimaksud dalam\nPasal 8",
+          "match_position": 36,
+          "target_article": "Pasal 8"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_b__PASAL_9",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "keperluan pertahanan keamanan negara;",
+      "page_range": [
+        6,
+        6
+      ],
+      "parent_id": "UU_36_1999__AYAT_3__PASAL_9",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_c__PASAL_9",
+      "component_type": "HURUF",
+      "number": "c",
+      "title": null,
+      "content": "keperluan penyiaran.",
+      "page_range": [
+        6,
+        6
+      ],
+      "parent_id": "UU_36_1999__AYAT_3__PASAL_9",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_4__PASAL_9",
+      "component_type": "AYAT",
+      "number": "4",
+      "title": null,
+      "content": "Penyelenggaraan telekomunikasi khusus sebagaimana dimaksud\npada ayat (3) huruf a, tersendiri dari penyelenggaraan telekomunikasi\nuntuk keperluan :",
+      "page_range": [
+        6,
+        6
+      ],
+      "parent_id": "UU_36_1999__PASAL_9",
+      "children": [
+        "UU_36_1999__HURUF_a__PASAL_9",
+        "UU_36_1999__HURUF_b__PASAL_9",
+        "UU_36_1999__HURUF_c__PASAL_9",
+        "UU_36_1999__HURUF_d__PASAL_9"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_a__PASAL_9",
+      "component_type": "HURUF",
+      "number": "a",
+      "title": null,
+      "content": "perseorangan;",
+      "page_range": [
+        6,
+        6
+      ],
+      "parent_id": "UU_36_1999__AYAT_4__PASAL_9",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_b__PASAL_9",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "instansi pemerintah;",
+      "page_range": [
+        6,
+        6
+      ],
+      "parent_id": "UU_36_1999__AYAT_4__PASAL_9",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_c__PASAL_9",
+      "component_type": "HURUF",
+      "number": "c",
+      "title": null,
+      "content": "dinas khusus;",
+      "page_range": [
+        6,
+        6
+      ],
+      "parent_id": "UU_36_1999__AYAT_4__PASAL_9",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_d__PASAL_9",
+      "component_type": "HURUF",
+      "number": "d",
+      "title": null,
+      "content": "badan hukum.",
+      "page_range": [
+        6,
+        6
+      ],
+      "parent_id": "UU_36_1999__AYAT_4__PASAL_9",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_5__PASAL_9",
+      "component_type": "AYAT",
+      "number": "5",
+      "title": null,
+      "content": "Ketentuan mengenai persyaratan penyelenggaraan telekomunikasi\nsebagaimana dimaksud pada ayat (1), ayat (2), ayat (3) dan ayat (4)\ndiatur dengan Peraturan Pemerintah.",
+      "page_range": [
+        6,
+        6
+      ],
+      "parent_id": "UU_36_1999__PASAL_9",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__BAGIAN_Ketiga",
+      "component_type": "BAGIAN",
+      "number": "Ketiga",
+      "title": "Larangan Praktek Monopoli",
+      "content": "",
+      "page_range": [
+        6,
+        6
+      ],
+      "parent_id": "UU_36_1999__BAB_IV",
+      "children": [
+        "UU_36_1999__PASAL_10"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_10",
+      "component_type": "PASAL",
+      "number": "10",
+      "title": null,
+      "content": "",
+      "page_range": [
+        6,
+        6
+      ],
+      "parent_id": "UU_36_1999__BAGIAN_Ketiga",
+      "children": [
+        "UU_36_1999__AYAT_1__PASAL_10",
+        "UU_36_1999__AYAT_2__PASAL_10"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_1__PASAL_10",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Dalam\npenyelenggaraan\ntelekomunikasi\ndilarang\nmelakukan\nkegiatan yang dapat mengakibatkan terjadiya praktek monopoli dan\npersaingan\nusaha\ntidak\nsehat\ndi\nantara\npenyelenggara\ntelekomunikasi.",
+      "page_range": [
+        6,
+        6
+      ],
+      "parent_id": "UU_36_1999__PASAL_10",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_2__PASAL_10",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Larangan sebagaimana dimaksud pada ayat (1) sesuai dengan\nperaturan perundang-undangan yang berlaku.",
+      "page_range": [
+        6,
+        6
+      ],
+      "parent_id": "UU_36_1999__PASAL_10",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__BAGIAN_Keempat",
+      "component_type": "BAGIAN",
+      "number": "Keempat",
+      "title": "Perizinan",
+      "content": "",
+      "page_range": [
+        6,
+        6
+      ],
+      "parent_id": "UU_36_1999__BAB_IV",
+      "children": [
+        "UU_36_1999__PASAL_11"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_11",
+      "component_type": "PASAL",
+      "number": "11",
+      "title": null,
+      "content": "",
+      "page_range": [
+        6,
+        6
+      ],
+      "parent_id": "UU_36_1999__BAGIAN_Keempat",
+      "children": [
+        "UU_36_1999__AYAT_1__PASAL_11",
+        "UU_36_1999__AYAT_2__PASAL_11"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_1__PASAL_11",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Penyelenggaraan telekomunikasi sebagaimana dalam Pasal 7 dapat\ndiselenggarakan setelah mendapat izin dari Menteri.",
+      "page_range": [
+        6,
+        6
+      ],
+      "parent_id": "UU_36_1999__PASAL_11",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_2__PASAL_11",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Izin\nsebagaimana\ndimaksud\npada\nayat\n(1)\ndiberikan\ndengan\nmemperhatikan :",
+      "page_range": [
+        6,
+        6
+      ],
+      "parent_id": "UU_36_1999__PASAL_11",
+      "children": [
+        "UU_36_1999__HURUF_a__PASAL_11",
+        "UU_36_1999__HURUF_b__PASAL_11",
+        "UU_36_1999__HURUF_c__PASAL_11"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_a__PASAL_11",
+      "component_type": "HURUF",
+      "number": "a",
+      "title": null,
+      "content": "tata cara yang sederhana;",
+      "page_range": [
+        6,
+        6
+      ],
+      "parent_id": "UU_36_1999__AYAT_2__PASAL_11",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_b__PASAL_11",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "proses yang transparan, adil dan tidak diskriminatif; serta",
+      "page_range": [
+        6,
+        6
+      ],
+      "parent_id": "UU_36_1999__AYAT_2__PASAL_11",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_c__PASAL_11",
+      "component_type": "HURUF",
+      "number": "c",
+      "title": null,
+      "content": "penyelesaian dalam waktu yang singkat.\nPRESIDEN\nREPUBLIK INDONESIA (3) Ketentuan\nmengenai\nperizinan\npenyelenggaraan telekomunikasi\nsebagaimana dimaksud pada ayat (1) dan ayat (2) diatur dengan\nPeraturan Pemerintah.",
+      "page_range": [
+        6,
+        7
+      ],
+      "parent_id": "UU_36_1999__AYAT_2__PASAL_11",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__BAGIAN_Kelima",
+      "component_type": "BAGIAN",
+      "number": "Kelima",
+      "title": "Hak dan Kewajiban Penyelenggara dan Masyarakat",
+      "content": "",
+      "page_range": [
+        7,
+        7
+      ],
+      "parent_id": "UU_36_1999__BAB_IV",
+      "children": [
+        "UU_36_1999__PASAL_12",
+        "UU_36_1999__PASAL_13",
+        "UU_36_1999__PASAL_14",
+        "UU_36_1999__PASAL_15",
+        "UU_36_1999__PASAL_16",
+        "UU_36_1999__PASAL_17",
+        "UU_36_1999__PASAL_18",
+        "UU_36_1999__PASAL_20",
+        "UU_36_1999__PASAL_21",
+        "UU_36_1999__PASAL_22"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_12",
+      "component_type": "PASAL",
+      "number": "12",
+      "title": null,
+      "content": "",
+      "page_range": [
+        7,
+        7
+      ],
+      "parent_id": "UU_36_1999__BAGIAN_Kelima",
+      "children": [
+        "UU_36_1999__AYAT_1__PASAL_12",
+        "UU_36_1999__AYAT_2__PASAL_12",
+        "UU_36_1999__AYAT_3__PASAL_12"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_1__PASAL_12",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Dalam rangka pembangunan, pengoperasian, dan atau pemeliharaan\njaringan\ntelekomunikasi,\npenyelenggara\ntelekomunikasi\ndapat\nmemanfaatkan atau melintasi tanah negara dan atau bangunan yang\ndimiliki atau dikuasai Pemerintah.",
+      "page_range": [
+        7,
+        7
+      ],
+      "parent_id": "UU_36_1999__PASAL_12",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_2__PASAL_12",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Pemanfaatan atau pelintasan tanah negara dan atau bangunan\nsebagaimana dimaksud pada ayat (1), berlaku pula terhadap sungai,\ndanau, atau laut, baik permukaan maupun dasar.",
+      "page_range": [
+        7,
+        7
+      ],
+      "parent_id": "UU_36_1999__PASAL_12",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_3__PASAL_12",
+      "component_type": "AYAT",
+      "number": "3",
+      "title": null,
+      "content": "Pembangunan,\npengoperasian\ndan\natau\npemeliharaan\njaringan\ntelekomunikasi sebagaimana dimaksud pada ayat (1), dilaksanakan\nsetelah mendapatkan persetujuan dari instansi pemerintah yang\nbertanggung\njawab\ndengan\nmemperhatikan\nperaturan\nperundang-undangan yang berlaku.",
+      "page_range": [
+        7,
+        7
+      ],
+      "parent_id": "UU_36_1999__PASAL_12",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_13",
+      "component_type": "PASAL",
+      "number": "13",
+      "title": null,
+      "content": "Penyelenggara telekomunikasi dapat memanfaatkan atau melintasi tanah\ndan atau bangunan milik perseorangan untuk tujuan pembangunan,\npengoperasian\natau\npemeliharaan\njaringan\ntelekomunikasi\nsetelah\nterdapat persetujuan di antara para pihak.",
+      "page_range": [
+        7,
+        7
+      ],
+      "parent_id": "UU_36_1999__BAGIAN_Kelima",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_14",
+      "component_type": "PASAL",
+      "number": "14",
+      "title": null,
+      "content": "Setiap pengguna telekomunikasi mempunyai hak yang sama untuk\nmenggunakan jaringan telekomunikasi dan jasa telekomunikasi dengan\nmemperhatikan peraturan perundang-undangan yang berlaku.",
+      "page_range": [
+        7,
+        7
+      ],
+      "parent_id": "UU_36_1999__BAGIAN_Kelima",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_15",
+      "component_type": "PASAL",
+      "number": "15",
+      "title": null,
+      "content": "",
+      "page_range": [
+        7,
+        7
+      ],
+      "parent_id": "UU_36_1999__BAGIAN_Kelima",
+      "children": [
+        "UU_36_1999__AYAT_1__PASAL_15",
+        "UU_36_1999__AYAT_3__PASAL_15"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_1__PASAL_15",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Atas kesalahan dan atau kelalaian penyelenggara telekomunikasi\nyang menimbulkan kerugian, maka pihak-pihak yang dirugikan\nberhak mengajukan tuntutan ganti rugi kepada penyelenggara\ntelekomunikasi.\nPRESIDEN\nREPUBLIK INDONESIA (2) Penyelenggara\ntelekomunikasi\nwajib\nmemberikan\nganti\nrugi\nsebagaimana\ndimaksud\npada\nayat\n(1),\nkecuali\npenyelenggara\ntelekomunikasi dapat membuktikan bahwa kerugian tersebut bukan\ndiakibatkan oleh kesalahan dan atau kelalainnya.",
+      "page_range": [
+        7,
+        8
+      ],
+      "parent_id": "UU_36_1999__PASAL_15",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_3__PASAL_15",
+      "component_type": "AYAT",
+      "number": "3",
+      "title": null,
+      "content": "Ketentuan mengenai tata cara pengajuan dan penyelesaian ganti rugi\nsebagaimana dimaksud pada ayat (1) dan ayat (2) diatur dengan\nPeraturan Pemerintah.",
+      "page_range": [
+        8,
+        8
+      ],
+      "parent_id": "UU_36_1999__PASAL_15",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_16",
+      "component_type": "PASAL",
+      "number": "16",
+      "title": null,
+      "content": "",
+      "page_range": [
+        8,
+        8
+      ],
+      "parent_id": "UU_36_1999__BAGIAN_Kelima",
+      "children": [
+        "UU_36_1999__AYAT_1__PASAL_16",
+        "UU_36_1999__AYAT_2__PASAL_16",
+        "UU_36_1999__AYAT_3__PASAL_16"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_1__PASAL_16",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Setiap\npenyelenggara\njaringan\ntelekomunikasi\ndan\natau\npenyelenggara jasa telekomunikasi wajib memberikan kontribusi\ndalam pelayanan universal.",
+      "page_range": [
+        8,
+        8
+      ],
+      "parent_id": "UU_36_1999__PASAL_16",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_2__PASAL_16",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Kontribusi pelayanan universal sebagaimana dimaksud pada ayat (1)\nberbentuk penyediaan sarana dan prasarana telekomunikasi dan atau\nkompensasi lain.",
+      "page_range": [
+        8,
+        8
+      ],
+      "parent_id": "UU_36_1999__PASAL_16",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_3__PASAL_16",
+      "component_type": "AYAT",
+      "number": "3",
+      "title": null,
+      "content": "Ketentuan kontribusi pelayanan universal sebagaimana dimaksud\npada ayat (2) diatur dengan Peraturan Pemerintah.",
+      "page_range": [
+        8,
+        8
+      ],
+      "parent_id": "UU_36_1999__PASAL_16",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_17",
+      "component_type": "PASAL",
+      "number": "17",
+      "title": null,
+      "content": "Penyelenggaraan jaringan telekomunikasi dan atau penyelenggaraan jasa\ntelekomunikasi\nwajib\nmenyediakan\npelayanan\ntelekomunikasi\nberdasarkan prinsip :",
+      "page_range": [
+        8,
+        8
+      ],
+      "parent_id": "UU_36_1999__BAGIAN_Kelima",
+      "children": [
+        "UU_36_1999__HURUF_a__PASAL_17",
+        "UU_36_1999__HURUF_b__PASAL_17",
+        "UU_36_1999__HURUF_c__PASAL_17"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_a__PASAL_17",
+      "component_type": "HURUF",
+      "number": "a",
+      "title": null,
+      "content": "perlakuan yang sama dan pelayanan yang sebaik-baiknya bagi semua\npengguna;",
+      "page_range": [
+        8,
+        8
+      ],
+      "parent_id": "UU_36_1999__PASAL_17",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_b__PASAL_17",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "peningkatan efisiensi dalam penyelenggaraan telekomunikasi; dan",
+      "page_range": [
+        8,
+        8
+      ],
+      "parent_id": "UU_36_1999__PASAL_17",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_c__PASAL_17",
+      "component_type": "HURUF",
+      "number": "c",
+      "title": null,
+      "content": "pemenuhan standar pelayanan serta standar penyediaan sarana dan\nprasarana.",
+      "page_range": [
+        8,
+        8
+      ],
+      "parent_id": "UU_36_1999__PASAL_17",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_18",
+      "component_type": "PASAL",
+      "number": "18",
+      "title": null,
+      "content": "",
+      "page_range": [
+        8,
+        8
+      ],
+      "parent_id": "UU_36_1999__BAGIAN_Kelima",
+      "children": [
+        "UU_36_1999__AYAT_1__PASAL_18",
+        "UU_36_1999__AYAT_2__PASAL_18",
+        "UU_36_1999__AYAT_3__PASAL_18"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_1__PASAL_18",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Penyelenggara jasa telekomunikasi wajib mencatat/merekam secara\nrinci pemakaian jasa telekomunikasi yang digunakan oleh pengguna\ntelekomunikasi.",
+      "page_range": [
+        8,
+        8
+      ],
+      "parent_id": "UU_36_1999__PASAL_18",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_2__PASAL_18",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Apabila pengguna memerlukan catatan/rekaman pemakaian jasa\ntelekomunikasi sebagaimana dimaksud pada ayat (1), penyelenggara\ntelekomunikasi wajib memberikannya.",
+      "page_range": [
+        8,
+        8
+      ],
+      "parent_id": "UU_36_1999__PASAL_18",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_3__PASAL_18",
+      "component_type": "AYAT",
+      "number": "3",
+      "title": null,
+      "content": "Ketentuan\nmengenai\npencatatan/perekaman\npemakaian\njasa\ntelekomunikasi sebagaimana dimaksud pada ayat (1) diatur dengan\nPeraturan Pemerintah.\nPRESIDEN\nREPUBLIK INDONESIA Pasal 19\nPenyelenggara jaringan telekomunikasi wajib menjamin kebebasan\npenggunanya memilih jaringan telekomunikasi lain untuk pemenuhan\nkebutuhan telekomunikasi.",
+      "page_range": [
+        8,
+        9
+      ],
+      "parent_id": "UU_36_1999__PASAL_18",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_20",
+      "component_type": "PASAL",
+      "number": "20",
+      "title": null,
+      "content": "Setiap penyelenggara telekomunikasi wajib memberikan prioritas untuk\npengiriman, penyaluran dan penyampaian informasi penting yang\nmenyangkut :",
+      "page_range": [
+        9,
+        9
+      ],
+      "parent_id": "UU_36_1999__BAGIAN_Kelima",
+      "children": [
+        "UU_36_1999__HURUF_a__PASAL_20",
+        "UU_36_1999__HURUF_b__PASAL_20",
+        "UU_36_1999__HURUF_c__PASAL_20",
+        "UU_36_1999__HURUF_d__PASAL_20",
+        "UU_36_1999__HURUF_e__PASAL_20"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_a__PASAL_20",
+      "component_type": "HURUF",
+      "number": "a",
+      "title": null,
+      "content": "keamanan negara;",
+      "page_range": [
+        9,
+        9
+      ],
+      "parent_id": "UU_36_1999__PASAL_20",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_b__PASAL_20",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "keselamatan jiwa manusia dan harta benda;",
+      "page_range": [
+        9,
+        9
+      ],
+      "parent_id": "UU_36_1999__PASAL_20",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_c__PASAL_20",
+      "component_type": "HURUF",
+      "number": "c",
+      "title": null,
+      "content": "bencana alam;",
+      "page_range": [
+        9,
+        9
+      ],
+      "parent_id": "UU_36_1999__PASAL_20",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_d__PASAL_20",
+      "component_type": "HURUF",
+      "number": "d",
+      "title": null,
+      "content": "marabahaya; dan atau",
+      "page_range": [
+        9,
+        9
+      ],
+      "parent_id": "UU_36_1999__PASAL_20",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_e__PASAL_20",
+      "component_type": "HURUF",
+      "number": "e",
+      "title": null,
+      "content": "wabah penyakit;",
+      "page_range": [
+        9,
+        9
+      ],
+      "parent_id": "UU_36_1999__PASAL_20",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_21",
+      "component_type": "PASAL",
+      "number": "21",
+      "title": null,
+      "content": "Penyelenggara telekomunikasi dilarang melakukan kegiatan usaha\npenyelenggaraan telekomunikasi yang bertentangan dengan kepentingan\numum, kesusilaan, keamanan atau ketertiban umum.",
+      "page_range": [
+        9,
+        9
+      ],
+      "parent_id": "UU_36_1999__BAGIAN_Kelima",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_22",
+      "component_type": "PASAL",
+      "number": "22",
+      "title": null,
+      "content": "Setiap orang dilarang melakukan perbuatan tanpa hak, tidak sah atau\nmemanipulasi :",
+      "page_range": [
+        9,
+        9
+      ],
+      "parent_id": "UU_36_1999__BAGIAN_Kelima",
+      "children": [
+        "UU_36_1999__HURUF_a__PASAL_22",
+        "UU_36_1999__HURUF_b__PASAL_22",
+        "UU_36_1999__HURUF_c__PASAL_22"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_a__PASAL_22",
+      "component_type": "HURUF",
+      "number": "a",
+      "title": null,
+      "content": "akses ke jaringan telekomunikasi; dan atau",
+      "page_range": [
+        9,
+        9
+      ],
+      "parent_id": "UU_36_1999__PASAL_22",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_b__PASAL_22",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "akses ke jasa telekomunikasi; dan atau",
+      "page_range": [
+        9,
+        9
+      ],
+      "parent_id": "UU_36_1999__PASAL_22",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_c__PASAL_22",
+      "component_type": "HURUF",
+      "number": "c",
+      "title": null,
+      "content": "akses ke jaringan telekomunikasi khusus.",
+      "page_range": [
+        9,
+        9
+      ],
+      "parent_id": "UU_36_1999__PASAL_22",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__BAGIAN_Keenam",
+      "component_type": "BAGIAN",
+      "number": "Keenam",
+      "title": "Penomoran",
+      "content": "",
+      "page_range": [
+        9,
+        9
+      ],
+      "parent_id": "UU_36_1999__BAB_IV",
+      "children": [
+        "UU_36_1999__PASAL_23"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_23",
+      "component_type": "PASAL",
+      "number": "23",
+      "title": null,
+      "content": "(1)\nDalam\npenyelenggaraan\njaringan\ntelekomunikasi\ndan\njasa\ntelekomunikasi ditetapkan dan digunakan sistem penomoran.\n(2)\nSistem\npenomoran\nsebagaimana\ndimaksud\npada\nayat\n(1)\nditetapkan oleh Menteri.\nPRESIDEN\nREPUBLIK INDONESIA Pasal 24\nPermintaan penomoran oleh penyelenggara jaringan telekomunikasi dan\natau penyelenggara jasa telekomunikasi diberikan berdasarkan sistem\npenomoran sebagaimana dimaksud dalam Pasal 23.",
+      "page_range": [
+        9,
+        10
+      ],
+      "parent_id": "UU_36_1999__BAGIAN_Keenam",
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_36_1999__PASAL_23",
+          "source_text": "sebagaimana dimaksud dalam Pasal 23",
+          "match_position": 381,
+          "target_article": "Pasal 23"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__BAGIAN_Ketujuh",
+      "component_type": "BAGIAN",
+      "number": "Ketujuh",
+      "title": "Interkoneksi dan Biaya Hak Penyelenggaraan",
+      "content": "",
+      "page_range": [
+        10,
+        10
+      ],
+      "parent_id": "UU_36_1999__BAB_IV",
+      "children": [
+        "UU_36_1999__PASAL_25",
+        "UU_36_1999__PASAL_26",
+        "UU_36_1999__PASAL_27",
+        "UU_36_1999__PASAL_28"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_25",
+      "component_type": "PASAL",
+      "number": "25",
+      "title": null,
+      "content": "",
+      "page_range": [
+        10,
+        10
+      ],
+      "parent_id": "UU_36_1999__BAGIAN_Ketujuh",
+      "children": [
+        "UU_36_1999__AYAT_1__PASAL_25",
+        "UU_36_1999__AYAT_2__PASAL_25",
+        "UU_36_1999__AYAT_3__PASAL_25",
+        "UU_36_1999__AYAT_4__PASAL_25"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_1__PASAL_25",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Setiap\npenyelenggara\njaringan\ntelekomunikasi\nberhak\nuntuk\nmendapatkan\ninterkoneksi\ndari\npenyelenggara\njaringan\ntelekomunikasi lainnya.",
+      "page_range": [
+        10,
+        10
+      ],
+      "parent_id": "UU_36_1999__PASAL_25",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_2__PASAL_25",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Setiap penyelenggara jaringan telekomunikasi wajib menyediakan\ninterkoneksi\napabila\ndiminta\noleh\npenyelenggara\njaringan\ntelekomunikasi lainnya.",
+      "page_range": [
+        10,
+        10
+      ],
+      "parent_id": "UU_36_1999__PASAL_25",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_3__PASAL_25",
+      "component_type": "AYAT",
+      "number": "3",
+      "title": null,
+      "content": "Pelaksanaan hak dan kewajiban sebagaimana dimaksud pada yat (1)\ndan ayat (2) dilakukan berdasarkan prinsip :",
+      "page_range": [
+        10,
+        10
+      ],
+      "parent_id": "UU_36_1999__PASAL_25",
+      "children": [
+        "UU_36_1999__HURUF_a__PASAL_25",
+        "UU_36_1999__HURUF_b__PASAL_25",
+        "UU_36_1999__HURUF_c__PASAL_25",
+        "UU_36_1999__HURUF_d__PASAL_25"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_a__PASAL_25",
+      "component_type": "HURUF",
+      "number": "a",
+      "title": null,
+      "content": "pemanfaatan sumber daya secara efisien;",
+      "page_range": [
+        10,
+        10
+      ],
+      "parent_id": "UU_36_1999__AYAT_3__PASAL_25",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_b__PASAL_25",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "keserasian sistem dan perangkat telekomunikasi;",
+      "page_range": [
+        10,
+        10
+      ],
+      "parent_id": "UU_36_1999__AYAT_3__PASAL_25",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_c__PASAL_25",
+      "component_type": "HURUF",
+      "number": "c",
+      "title": null,
+      "content": "peningkatan mutu pelayanan; dan",
+      "page_range": [
+        10,
+        10
+      ],
+      "parent_id": "UU_36_1999__AYAT_3__PASAL_25",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_d__PASAL_25",
+      "component_type": "HURUF",
+      "number": "d",
+      "title": null,
+      "content": "persaingan sehat yang tidak saling merugikan.",
+      "page_range": [
+        10,
+        10
+      ],
+      "parent_id": "UU_36_1999__AYAT_3__PASAL_25",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_4__PASAL_25",
+      "component_type": "AYAT",
+      "number": "4",
+      "title": null,
+      "content": "Ketentuan mengenai interkoneksi jaringan telekomunikasi, hak dan\nkewajiban sebagaimana dimaksud pada ayat (1), ayat (2) dan ayat (3)\ndiatur dengan Peraturan Pemerintah.",
+      "page_range": [
+        10,
+        10
+      ],
+      "parent_id": "UU_36_1999__PASAL_25",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_26",
+      "component_type": "PASAL",
+      "number": "26",
+      "title": null,
+      "content": "",
+      "page_range": [
+        10,
+        10
+      ],
+      "parent_id": "UU_36_1999__BAGIAN_Ketujuh",
+      "children": [
+        "UU_36_1999__AYAT_1__PASAL_26",
+        "UU_36_1999__AYAT_2__PASAL_26"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_1__PASAL_26",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Setiap\npenyelenggara\njaringan\ntelekomunikasi\ndan\natau\npenyelenggara jasa telekomunikasi wajib membayar biaya hak\npenyelenggaraan\ntelekomunikasi\nyang\ndiambil\ndari\nprosentase\npendapatan.",
+      "page_range": [
+        10,
+        10
+      ],
+      "parent_id": "UU_36_1999__PASAL_26",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_2__PASAL_26",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Ketentuan mengenai biaya hak penyelenggaraan telekomunikasi\nsebagaimana dimaksud pada ayat (1) diatur dengan Peraturan\nPemerintah.\nPRESIDEN\nREPUBLIK INDONESIA Bagian Kedelapan\nTarif",
+      "page_range": [
+        10,
+        11
+      ],
+      "parent_id": "UU_36_1999__PASAL_26",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_27",
+      "component_type": "PASAL",
+      "number": "27",
+      "title": null,
+      "content": "Susunan tarif penyelenggaraan jaringan telekomunikasi dan atau tarif\npenyelenggaraan\njasa\ntelekomunikasi\ndiatur\ndengan\nPeraturan\nPemerintah.",
+      "page_range": [
+        11,
+        11
+      ],
+      "parent_id": "UU_36_1999__BAGIAN_Ketujuh",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_28",
+      "component_type": "PASAL",
+      "number": "28",
+      "title": null,
+      "content": "Besaran tarif penyelenggaraan jaringan telekomunikasi dan atau jasa\ntelekomunikasi ditetapkan oleh penyelenggara jaringan telekomunikasi\ndan\natau\njasa telekomunikasi dengan berdasarkan formula yang\nditetapkan oleh Pemerintah.",
+      "page_range": [
+        11,
+        11
+      ],
+      "parent_id": "UU_36_1999__BAGIAN_Ketujuh",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__BAGIAN_Kesembilan",
+      "component_type": "BAGIAN",
+      "number": "Kesembilan",
+      "title": "Telekomunikasi Khusus",
+      "content": "",
+      "page_range": [
+        11,
+        11
+      ],
+      "parent_id": "UU_36_1999__BAB_IV",
+      "children": [
+        "UU_36_1999__PASAL_29",
+        "UU_36_1999__PASAL_30",
+        "UU_36_1999__PASAL_31"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_29",
+      "component_type": "PASAL",
+      "number": "29",
+      "title": null,
+      "content": "",
+      "page_range": [
+        11,
+        11
+      ],
+      "parent_id": "UU_36_1999__BAGIAN_Kesembilan",
+      "children": [
+        "UU_36_1999__AYAT_1__PASAL_29",
+        "UU_36_1999__AYAT_2__PASAL_29"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_1__PASAL_29",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Penyelenggaraan telekomunikasi khusus sebagaimana dimaksud\ndalam Pasal 9 ayat (3) huruf a dan huruf b, dilarang disambungkan\nke jaringan penyelenggara telekomunikasi lainnya.",
+      "page_range": [
+        11,
+        11
+      ],
+      "parent_id": "UU_36_1999__PASAL_29",
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_36_1999__AYAT_1__PASAL_29",
+          "source_text": "sebagaimana dimaksud\ndalam Pasal 9",
+          "match_position": 38,
+          "target_article": "Pasal 9"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_2__PASAL_29",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Penyelenggaraan telekomunikasi khusus sebagaimana dimaksud\ndalam Pasal 9 ayat (3) huruf c, dapat disambungkan ke jaringan\npenyelenggara telekomunikasi lainnya sepanjang digunakan untuk\nkeperluan penyiaran.",
+      "page_range": [
+        11,
+        11
+      ],
+      "parent_id": "UU_36_1999__PASAL_29",
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_36_1999__AYAT_2__PASAL_29",
+          "source_text": "sebagaimana dimaksud\ndalam Pasal 9",
+          "match_position": 38,
+          "target_article": "Pasal 9"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_30",
+      "component_type": "PASAL",
+      "number": "30",
+      "title": null,
+      "content": "",
+      "page_range": [
+        11,
+        11
+      ],
+      "parent_id": "UU_36_1999__BAGIAN_Kesembilan",
+      "children": [
+        "UU_36_1999__AYAT_1__PASAL_30",
+        "UU_36_1999__AYAT_2__PASAL_30",
+        "UU_36_1999__AYAT_3__PASAL_30"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_1__PASAL_30",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Dalam hal penyelenggaraan jaringan telekomunikasi dan atau\npenyelenggara jasa telekomunikasi belum dapat menyediakan akses\ndi daerah tertentu, maka penyelenggara telekomunikai khusus\nsebagaimana dimaksud dalam Pasal 9 ayat (3) huruf a, dapat\nmenyelenggarakan\njaringan\ntelekomunikasi\ndan\natau\njasa\ntelekomunikasi dan atau jasa telekomunikasi sebagaimana dimaksud\ndalam Pasal 7 ayat (1) huruf a dan huruf b setelah mendapat izin\nMenteri.",
+      "page_range": [
+        11,
+        11
+      ],
+      "parent_id": "UU_36_1999__PASAL_30",
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_36_1999__AYAT_1__PASAL_30",
+          "source_text": "sebagaimana dimaksud dalam Pasal 9",
+          "match_position": 183,
+          "target_article": "Pasal 9"
+        },
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_36_1999__AYAT_1__PASAL_30",
+          "source_text": "sebagaimana dimaksud\ndalam Pasal 7",
+          "match_position": 341,
+          "target_article": "Pasal 7"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_2__PASAL_30",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Dalam\nhal\npenyelenggara\njaringan\ntelekomunikasi\ndan\natau\npenyelenggara jasa telekomunikasi sudah dapat menyediakan akses\nPRESIDEN\nREPUBLIK INDONESIA di daerah sebagaimana dimaksud pada ayat (1), maka penyelenggara\ntelekomunikasi\nkhusus\ndimaksud\ntetap\ndapat\nmelakukan\npenyelenggaraan\njaringan\ntelekomunikasi\ndan\natau\njasa\ntelekomunikasi.",
+      "page_range": [
+        11,
+        12
+      ],
+      "parent_id": "UU_36_1999__PASAL_30",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_3__PASAL_30",
+      "component_type": "AYAT",
+      "number": "3",
+      "title": null,
+      "content": "Syarat-syarat untuk mendapatkan izin sebagaimana dimaksud pada\nayat (1) diatur dengan Peraturan Pemerintah.",
+      "page_range": [
+        12,
+        12
+      ],
+      "parent_id": "UU_36_1999__PASAL_30",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_31",
+      "component_type": "PASAL",
+      "number": "31",
+      "title": null,
+      "content": "",
+      "page_range": [
+        12,
+        12
+      ],
+      "parent_id": "UU_36_1999__BAGIAN_Kesembilan",
+      "children": [
+        "UU_36_1999__AYAT_1__PASAL_31",
+        "UU_36_1999__AYAT_2__PASAL_31"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_1__PASAL_31",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Dalam\nkeadaan\npenyelenggara\ntelekomunikasi\nkhusus\nuntuk\nkeperluan pertahanan keamanan negara sebagaimana dimaksud\ndalam Pasal 9 ayat (3) huruf b belum atau tidak mampu mendukung\nkegiatannya, penyelenggara telekomunikasi khusus dimaksud dapat\nmenggunakan atau memanfaatkan jaringan telekomunikasi yang\ndimiliki dan atau digunakan oleh penyelenggara telekomunikasi\nlainnya.",
+      "page_range": [
+        12,
+        12
+      ],
+      "parent_id": "UU_36_1999__PASAL_31",
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_36_1999__AYAT_1__PASAL_31",
+          "source_text": "sebagaimana dimaksud\ndalam Pasal 9",
+          "match_position": 93,
+          "target_article": "Pasal 9"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_2__PASAL_31",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Ketentuan lebih lanjut sebagaimana dimaksud pada ayat (1) diatur\ndengan Peraturan Pemerintah.",
+      "page_range": [
+        12,
+        12
+      ],
+      "parent_id": "UU_36_1999__PASAL_31",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__BAGIAN_Kesepuluh",
+      "component_type": "BAGIAN",
+      "number": "Kesepuluh",
+      "title": "Perangkat Telekomunikasi Spektrum, Frekuensi Radio, dan Orbit Satelit",
+      "content": "",
+      "page_range": [
+        12,
+        12
+      ],
+      "parent_id": "UU_36_1999__BAB_IV",
+      "children": [
+        "UU_36_1999__PASAL_32",
+        "UU_36_1999__PASAL_33",
+        "UU_36_1999__PASAL_35",
+        "UU_36_1999__PASAL_36",
+        "UU_36_1999__PASAL_37"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_32",
+      "component_type": "PASAL",
+      "number": "32",
+      "title": null,
+      "content": "",
+      "page_range": [
+        12,
+        12
+      ],
+      "parent_id": "UU_36_1999__BAGIAN_Kesepuluh",
+      "children": [
+        "UU_36_1999__AYAT_1__PASAL_32",
+        "UU_36_1999__AYAT_2__PASAL_32"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_1__PASAL_32",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Perangkat\ntelekomunikasi\nyang\ndiperdagangkan,\ndibuat,dirakit,\ndimasukkan dan atau digunakan di wilayah Republik Indonesia\nwajib memperhatikan persyaratan teknis dan berdasarkan izin sesuai\ndengan peraturan perundang-undangan yang berlaku.",
+      "page_range": [
+        12,
+        12
+      ],
+      "parent_id": "UU_36_1999__PASAL_32",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_2__PASAL_32",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Ketentuan mengenai persyaratan teknis perangkat telekomunikasi\nsebagaimana dimaksud pada ayat (1) diatur dengan Peraturan\nPemerintah.",
+      "page_range": [
+        12,
+        12
+      ],
+      "parent_id": "UU_36_1999__PASAL_32",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_33",
+      "component_type": "PASAL",
+      "number": "33",
+      "title": null,
+      "content": "",
+      "page_range": [
+        12,
+        12
+      ],
+      "parent_id": "UU_36_1999__BAGIAN_Kesepuluh",
+      "children": [
+        "UU_36_1999__AYAT_1__PASAL_33",
+        "UU_36_1999__AYAT_2__PASAL_33",
+        "UU_36_1999__AYAT_3__PASAL_33",
+        "UU_36_1999__AYAT_4__PASAL_33",
+        "UU_36_1999__AYAT_1__PASAL_33",
+        "UU_36_1999__AYAT_2__PASAL_33",
+        "UU_36_1999__AYAT_3__PASAL_33"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_1__PASAL_33",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Penggunaan spektrum frekuensi radio dan orbit satelit wajib\nmendapatkan izin Pemerintah.",
+      "page_range": [
+        12,
+        12
+      ],
+      "parent_id": "UU_36_1999__PASAL_33",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_2__PASAL_33",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Penggunaan spektrum frekuensi radio dan orbit satelit harus sesuai\ndengan peruntukannya dan tidak saling mengganggu.",
+      "page_range": [
+        12,
+        12
+      ],
+      "parent_id": "UU_36_1999__PASAL_33",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_3__PASAL_33",
+      "component_type": "AYAT",
+      "number": "3",
+      "title": null,
+      "content": "Pemerintah melakukan pengawasan dan pengendalian penggunaan\nspektrum frekuensi radio dan orbit satelit.",
+      "page_range": [
+        12,
+        12
+      ],
+      "parent_id": "UU_36_1999__PASAL_33",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_4__PASAL_33",
+      "component_type": "AYAT",
+      "number": "4",
+      "title": null,
+      "content": "Ketentuan penggunaan spektrum frekuensi radio dan orbit satelit\nyang\ndigunakan\ndalam\npenyelenggaraan\ntelekomunikasi\ndiatur\ndengan Peraturan Pemerintah.\nPRESIDEN\nREPUBLIK INDONESIA Pasal 34",
+      "page_range": [
+        12,
+        13
+      ],
+      "parent_id": "UU_36_1999__PASAL_33",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_1__PASAL_33",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Pengguna\nspektrum\nfrekuensi\nradio\nwajib\nmembayar\nbiaya\npenggunaan, frekuensi yang besarannya didasarkan atas penggunaan\njenis dan lebar pita frekuensi.",
+      "page_range": [
+        13,
+        13
+      ],
+      "parent_id": "UU_36_1999__PASAL_33",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_2__PASAL_33",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Penggunaan orbit satelit wajib membayar biaya hak penggunaan\norbit satelit.",
+      "page_range": [
+        13,
+        13
+      ],
+      "parent_id": "UU_36_1999__PASAL_33",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_3__PASAL_33",
+      "component_type": "AYAT",
+      "number": "3",
+      "title": null,
+      "content": "Ketentuan mengenai biaya sebagaimana dimaksud pada ayat (1) dan\nayat (2) diatur dengan Peraturan Pemerintah.",
+      "page_range": [
+        13,
+        13
+      ],
+      "parent_id": "UU_36_1999__PASAL_33",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_35",
+      "component_type": "PASAL",
+      "number": "35",
+      "title": null,
+      "content": "",
+      "page_range": [
+        13,
+        13
+      ],
+      "parent_id": "UU_36_1999__BAGIAN_Kesepuluh",
+      "children": [
+        "UU_36_1999__AYAT_1__PASAL_35",
+        "UU_36_1999__AYAT_2__PASAL_35",
+        "UU_36_1999__AYAT_3__PASAL_35"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_1__PASAL_35",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Perangkat telekomunikasi yang digunakan oleh kapal berbendera\nasing dari dan ke wilayah perairan Indonesia dan atau yang\ndioperasikan\ndi\nwilayah\nperairan\nIndonesia,\ntidak\ndiwajibkan\nmemenuhi persyaratan teknis sebagaimana dimaksud dalam Pasal 32.",
+      "page_range": [
+        13,
+        13
+      ],
+      "parent_id": "UU_36_1999__PASAL_35",
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_36_1999__AYAT_1__PASAL_35",
+          "source_text": "sebagaimana dimaksud dalam Pasal 32",
+          "match_position": 210,
+          "target_article": "Pasal 32"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_2__PASAL_35",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Spektrum frekuensi radio dilarang digunakan oleh kapal berbendera\nasing\nyang\nberada\ndi\nwilayah\nperairan\nIndonesia\ndi\nluar\nperuntukannya, kecuali :",
+      "page_range": [
+        13,
+        13
+      ],
+      "parent_id": "UU_36_1999__PASAL_35",
+      "children": [
+        "UU_36_1999__HURUF_a__PASAL_35",
+        "UU_36_1999__HURUF_b__PASAL_35",
+        "UU_36_1999__HURUF_c__PASAL_35"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_a__PASAL_35",
+      "component_type": "HURUF",
+      "number": "a",
+      "title": null,
+      "content": "untuk kepentingan keamanan negara, keselamatan jiwa manusia\ndan harta benda, bencana alam, keadaan marabahaya, wabah,\nnavigasi dan keamanan lalu lintas pelayaran; atau",
+      "page_range": [
+        13,
+        13
+      ],
+      "parent_id": "UU_36_1999__AYAT_2__PASAL_35",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_b__PASAL_35",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "disambungkan ke jaringan telekomunikasi yang dioperasikan\noleh penyelenggara telekomunikasi; atau",
+      "page_range": [
+        13,
+        13
+      ],
+      "parent_id": "UU_36_1999__AYAT_2__PASAL_35",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_c__PASAL_35",
+      "component_type": "HURUF",
+      "number": "c",
+      "title": null,
+      "content": "merupakan\nbagian\ndari\nsistem\nkomunikasi\nsatelit\nyang\npenggunaannya sesuai dengan ketentuan yang berlaku dalam\npenyelenggaraan telekomunikasi dinas bergerak pelayaran.",
+      "page_range": [
+        13,
+        13
+      ],
+      "parent_id": "UU_36_1999__AYAT_2__PASAL_35",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_3__PASAL_35",
+      "component_type": "AYAT",
+      "number": "3",
+      "title": null,
+      "content": "Ketentuan\nmengenai\npenggunaan\nspektrum\nfrekuensi\nradio\nsebagaimana dimaksud pada ayat (2) diatur dengan Peraturan\nPemerintah.",
+      "page_range": [
+        13,
+        13
+      ],
+      "parent_id": "UU_36_1999__PASAL_35",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_36",
+      "component_type": "PASAL",
+      "number": "36",
+      "title": null,
+      "content": "",
+      "page_range": [
+        13,
+        13
+      ],
+      "parent_id": "UU_36_1999__BAGIAN_Kesepuluh",
+      "children": [
+        "UU_36_1999__AYAT_1__PASAL_36",
+        "UU_36_1999__AYAT_2__PASAL_36",
+        "UU_36_1999__AYAT_3__PASAL_36"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_1__PASAL_36",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Perangkat telekomunikasi yang digunakan oleh pesawat udara sipil\nasing dari dan ke wilayah udara Indonesia diwajibkan memenuhi\npersyaratan teknis sebagaimana dimaksud dalam Pasal 32.",
+      "page_range": [
+        13,
+        13
+      ],
+      "parent_id": "UU_36_1999__PASAL_36",
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_36_1999__AYAT_1__PASAL_36",
+          "source_text": "sebagaimana dimaksud dalam Pasal 32",
+          "match_position": 146,
+          "target_article": "Pasal 32"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_2__PASAL_36",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Spektrum frekuensi radio dilarang digunakan oleh pesawat udara\nsipil\nasing\ndari\ndan\nke\nwilayah\nudara\nIndonesia\ndi\nluar\nperuntukkannya, kecuali :",
+      "page_range": [
+        13,
+        13
+      ],
+      "parent_id": "UU_36_1999__PASAL_36",
+      "children": [
+        "UU_36_1999__HURUF_a__PASAL_36",
+        "UU_36_1999__HURUF_b__PASAL_36",
+        "UU_36_1999__HURUF_c__PASAL_36"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_a__PASAL_36",
+      "component_type": "HURUF",
+      "number": "a",
+      "title": null,
+      "content": "untuk kepentingan keamanan negara, keselamatan jiwa manusia\nPRESIDEN\nREPUBLIK INDONESIA dan harta benda, bencana alam, keadaan marabahaya, wabah,\nnavigasi dan keselamatan lalu lintas penerbangan; atau",
+      "page_range": [
+        13,
+        14
+      ],
+      "parent_id": "UU_36_1999__AYAT_2__PASAL_36",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_b__PASAL_36",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "disambungkan ke jaringan telekomunikasi yang dioperasikan\noleh penyelenggara telekomunikasi; atau",
+      "page_range": [
+        14,
+        14
+      ],
+      "parent_id": "UU_36_1999__AYAT_2__PASAL_36",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_c__PASAL_36",
+      "component_type": "HURUF",
+      "number": "c",
+      "title": null,
+      "content": "merupakan\nbagian\ndari\nsistem\nkomunikasi\nsatelit\nyang\npenggunaannya sesuai dengan ketentuan yang berlaku dalam\npenyelenggaraan telekomunikasi dinas bergerak penerbangan.",
+      "page_range": [
+        14,
+        14
+      ],
+      "parent_id": "UU_36_1999__AYAT_2__PASAL_36",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_3__PASAL_36",
+      "component_type": "AYAT",
+      "number": "3",
+      "title": null,
+      "content": "Ketentuan\nmengenai\npenggunaan\nspektrum\nfrekuensi\nradio\nsebagaimana dimaksud pada ayat (2) diatur dengan Peraturan\nPemerintah.",
+      "page_range": [
+        14,
+        14
+      ],
+      "parent_id": "UU_36_1999__PASAL_36",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_37",
+      "component_type": "PASAL",
+      "number": "37",
+      "title": null,
+      "content": "Pemberian\nizin\npenggunaan\nperangkat\ntelekomunikasi\nyang\nmenggunakan spektrum frekuensi radio untuk perwakilan diplomatik di\nIndonesia dilakukan dengan memperhatikan asas timbal balik.",
+      "page_range": [
+        14,
+        14
+      ],
+      "parent_id": "UU_36_1999__BAGIAN_Kesepuluh",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__BAGIAN_Kesebelas",
+      "component_type": "BAGIAN",
+      "number": "Kesebelas",
+      "title": "Pengamanan Telekomunikasi",
+      "content": "",
+      "page_range": [
+        14,
+        14
+      ],
+      "parent_id": "UU_36_1999__BAB_IV",
+      "children": [
+        "UU_36_1999__PASAL_38",
+        "UU_36_1999__PASAL_39",
+        "UU_36_1999__PASAL_40",
+        "UU_36_1999__PASAL_41",
+        "UU_36_1999__PASAL_42",
+        "UU_36_1999__PASAL_43"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_38",
+      "component_type": "PASAL",
+      "number": "38",
+      "title": null,
+      "content": "Setiap orang dilarang melakukan perbuatan yang dapat menimbulkan\ngangguan\nfisik\ndan\nelektromagnetik\nterhadap\npenyelenggaraan\ntelekomunikasi.",
+      "page_range": [
+        14,
+        14
+      ],
+      "parent_id": "UU_36_1999__BAGIAN_Kesebelas",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_39",
+      "component_type": "PASAL",
+      "number": "39",
+      "title": null,
+      "content": "",
+      "page_range": [
+        14,
+        14
+      ],
+      "parent_id": "UU_36_1999__BAGIAN_Kesebelas",
+      "children": [
+        "UU_36_1999__AYAT_1__PASAL_39",
+        "UU_36_1999__AYAT_2__PASAL_39"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_1__PASAL_39",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Penyelenggara telekomunikasi wajib melakukan pengamanan dan\nperlindungan terhadap instalasi dalam jaringan telekomunikasi yang\ndigunakan untuk penyelenggaraan telekomunikasi.",
+      "page_range": [
+        14,
+        14
+      ],
+      "parent_id": "UU_36_1999__PASAL_39",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_2__PASAL_39",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Ketentuan pengamanan dan perlindungan sebagaimana dimaksud\npada ayat (1) diatur dengan Peraturan Pemerintah.",
+      "page_range": [
+        14,
+        14
+      ],
+      "parent_id": "UU_36_1999__PASAL_39",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_40",
+      "component_type": "PASAL",
+      "number": "40",
+      "title": null,
+      "content": "Setiap orang dilarang melakukan kegiatan penyadapan atas informasi\nyang disalurkan melalui jaringan telekomunikasi dalam bentuk apapun.",
+      "page_range": [
+        14,
+        14
+      ],
+      "parent_id": "UU_36_1999__BAGIAN_Kesebelas",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_41",
+      "component_type": "PASAL",
+      "number": "41",
+      "title": null,
+      "content": "Dalam\nrangka\npembuktian\nkebenaran\npemakaian\nfasilitas\ntelekomunikasi\natas\npermintaan\npengguna\njasa\ntelekomunikas,\nPRESIDEN\nREPUBLIK INDONESIA penyelenggara\njasa\ntelekomunikasi\nwajib\nmelakukan\nperekaman\npemakaian fasilitas telekomunikasi yang digunakan oleh pengguna jasa\ntelekomunikasi dan dapat melakukan perekaman informasi sesuai\ndengan peraturan perundang-undangan yang berlaku.",
+      "page_range": [
+        14,
+        15
+      ],
+      "parent_id": "UU_36_1999__BAGIAN_Kesebelas",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_42",
+      "component_type": "PASAL",
+      "number": "42",
+      "title": null,
+      "content": "",
+      "page_range": [
+        15,
+        15
+      ],
+      "parent_id": "UU_36_1999__BAGIAN_Kesebelas",
+      "children": [
+        "UU_36_1999__AYAT_1__PASAL_42",
+        "UU_36_1999__AYAT_2__PASAL_42",
+        "UU_36_1999__AYAT_3__PASAL_42"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_1__PASAL_42",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Penyelenggara jasa telekomunikasi wajib merahasiakan informasi\nyang dikirim dan atau diterima, oleh pelanggan jasa telekomunikasi\nmelalui jaringan telekomunikasi dan atau jasa telekomunikasi yang\ndiselenggarakannya.",
+      "page_range": [
+        15,
+        15
+      ],
+      "parent_id": "UU_36_1999__PASAL_42",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_2__PASAL_42",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Untuk keperluan proses peradilan pidana, penyelenggara jasa\ntelekomunikasi dapat merekam informasi yang dikirim dan atau\nditerima\noleh\npenyelenggara\njasa\ntelekomunikasi\nserta\ndapat\nmemberikan informasi yang diperlukan atas :",
+      "page_range": [
+        15,
+        15
+      ],
+      "parent_id": "UU_36_1999__PASAL_42",
+      "children": [
+        "UU_36_1999__HURUF_a__PASAL_42",
+        "UU_36_1999__HURUF_b__PASAL_42"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_a__PASAL_42",
+      "component_type": "HURUF",
+      "number": "a",
+      "title": null,
+      "content": "permintaan tertulis Jaksa Agung dan atau Kepala Kepolisian\nRepublik Indonesia untuk tindak pidana tertentu;",
+      "page_range": [
+        15,
+        15
+      ],
+      "parent_id": "UU_36_1999__AYAT_2__PASAL_42",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_b__PASAL_42",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "permintaan penyidik untuk tindak pidana tertentu sesuai dengan\nUndang-undang yang berlaku.",
+      "page_range": [
+        15,
+        15
+      ],
+      "parent_id": "UU_36_1999__AYAT_2__PASAL_42",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_3__PASAL_42",
+      "component_type": "AYAT",
+      "number": "3",
+      "title": null,
+      "content": "Ketentuan mengenai tata cara permintaan dan pemberian rekaman\ninformasi sebagaimana dimaksud pada ayat (2) diatur dengan\nPeraturan Pemerintah.",
+      "page_range": [
+        15,
+        15
+      ],
+      "parent_id": "UU_36_1999__PASAL_42",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_43",
+      "component_type": "PASAL",
+      "number": "43",
+      "title": null,
+      "content": "Pemberian rekaman informasi oleh penyelenggara jasa telekomunikasi\nkepada pengguna jasa telekomunikasi sebagaimana dimaksud dalam\nPasal 41 dan untuk kepentingan proses peradilan pidana sebagaimana\ndimaksud dalam Pasal 42\nayat (2),\ntidak\nmerupakan\npelanggaran\nPasal 40.",
+      "page_range": [
+        15,
+        15
+      ],
+      "parent_id": "UU_36_1999__BAGIAN_Kesebelas",
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_36_1999__PASAL_43",
+          "source_text": "sebagaimana dimaksud dalam\nPasal 41",
+          "match_position": 103,
+          "target_article": "Pasal 41"
+        },
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_36_1999__PASAL_43",
+          "source_text": "sebagaimana\ndimaksud dalam Pasal 42",
+          "match_position": 185,
+          "target_article": "Pasal 42"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__BAB_V",
+      "component_type": "BAB",
+      "number": "V",
+      "title": "PENYIDIKAN",
+      "content": "",
+      "page_range": [
+        15,
+        15
+      ],
+      "parent_id": null,
+      "children": [
+        "UU_36_1999__PASAL_44"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_44",
+      "component_type": "PASAL",
+      "number": "44",
+      "title": null,
+      "content": "",
+      "page_range": [
+        15,
+        15
+      ],
+      "parent_id": "UU_36_1999__BAB_V",
+      "children": [
+        "UU_36_1999__AYAT_1__PASAL_44",
+        "UU_36_1999__AYAT_3__PASAL_44"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_1__PASAL_44",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Selain Penyidik Pejabat Polisi Negara Republik Indonesia, juga\nPejabat Pegawai Negeri Sipil tertentu di lingkungan Departemen\nyang\nlingkup\ntugas\ndan\ntanggung\njawabnya\ndi\nbidang\ntelekomunikasi,\ndiberi\nwewenang\nkhusus\nsebagai\npenyidik\nsebagaimana dimaksud dalam Undang-undang Hukum Acara Pidana\nuntuk\nmelakukan\npenyidikan\ntindak\npidana\ndi\nbidang\ntelekomunikasi.\nPRESIDEN\nREPUBLIK INDONESIA (2) Penyidik Pegawai Negeri Sipil sebagaimana dimaksud pada ayat (1)\nberwenang :",
+      "page_range": [
+        15,
+        16
+      ],
+      "parent_id": "UU_36_1999__PASAL_44",
+      "children": [
+        "UU_36_1999__HURUF_a__PASAL_44",
+        "UU_36_1999__HURUF_b__PASAL_44",
+        "UU_36_1999__HURUF_c__PASAL_44",
+        "UU_36_1999__HURUF_d__PASAL_44",
+        "UU_36_1999__HURUF_e__PASAL_44",
+        "UU_36_1999__HURUF_f",
+        "UU_36_1999__HURUF_g",
+        "UU_36_1999__HURUF_h"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_a__PASAL_44",
+      "component_type": "HURUF",
+      "number": "a",
+      "title": null,
+      "content": "melakukan pemeriksaan atas kebenaran laporan atau keterangan\nberkenaan dengan tindak pidana bidang telekomunikasi;",
+      "page_range": [
+        16,
+        16
+      ],
+      "parent_id": "UU_36_1999__AYAT_1__PASAL_44",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_b__PASAL_44",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "melakukan pemeriksaan terhadap orang dan atau badan hukum\nyang diduga melakukan tindak pidana di bidang telekomunikasi;",
+      "page_range": [
+        16,
+        16
+      ],
+      "parent_id": "UU_36_1999__AYAT_1__PASAL_44",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_c__PASAL_44",
+      "component_type": "HURUF",
+      "number": "c",
+      "title": null,
+      "content": "menghentikan\npenggunaan\nalat\ndan\natau\nperangkat\ntelekomunikasi yang menyimpang dari ketentuan yang berlaku;",
+      "page_range": [
+        16,
+        16
+      ],
+      "parent_id": "UU_36_1999__AYAT_1__PASAL_44",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_d__PASAL_44",
+      "component_type": "HURUF",
+      "number": "d",
+      "title": null,
+      "content": "memanggil orang untuk didengar dan diperiksa sebagai saksi atau\ntersangka;",
+      "page_range": [
+        16,
+        16
+      ],
+      "parent_id": "UU_36_1999__AYAT_1__PASAL_44",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_e__PASAL_44",
+      "component_type": "HURUF",
+      "number": "e",
+      "title": null,
+      "content": "melakukan pemeriksaan alat dan atau perangkat telekomunikasi\nyang diduga digunakan atau diduga berkaitan dengan tindak\npidana di bidang telekomunikasi.",
+      "page_range": [
+        16,
+        16
+      ],
+      "parent_id": "UU_36_1999__AYAT_1__PASAL_44",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_f",
+      "component_type": "HURUF",
+      "number": "f",
+      "title": null,
+      "content": "menggeledah tempat yang digunakan untuk melakukan tindak\npidana di bidang telekomunikasi;",
+      "page_range": [
+        16,
+        16
+      ],
+      "parent_id": "UU_36_1999__AYAT_1__PASAL_44",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_g",
+      "component_type": "HURUF",
+      "number": "g",
+      "title": null,
+      "content": "menyegel dan atau menyita alat dan atau perangkat yang\ndigunakan atau diduga berkaitan dengan tindak pidana di bidang\ntelekomunikasi;",
+      "page_range": [
+        16,
+        16
+      ],
+      "parent_id": "UU_36_1999__AYAT_1__PASAL_44",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_h",
+      "component_type": "HURUF",
+      "number": "h",
+      "title": null,
+      "content": "meminta\nbantuan\nahli\ndalam\nrangka\npelaksanaan\ntugas\npenyidikan tindak pidana di bidang telekomunikasi dan;\ni.\nmengadakan penghentian penyidikan.",
+      "page_range": [
+        16,
+        16
+      ],
+      "parent_id": "UU_36_1999__AYAT_1__PASAL_44",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_3__PASAL_44",
+      "component_type": "AYAT",
+      "number": "3",
+      "title": null,
+      "content": "Kewenangan penyidikan sebagaimana dimaksud pada ayat (2)\ndilaksanakan sesuai dengan ketentuan Undang-undang Hukum Acara\nPidana.",
+      "page_range": [
+        16,
+        16
+      ],
+      "parent_id": "UU_36_1999__PASAL_44",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__BAB_VI",
+      "component_type": "BAB",
+      "number": "VI",
+      "title": "SANKSI ADMINISTRASI",
+      "content": "",
+      "page_range": [
+        16,
+        16
+      ],
+      "parent_id": null,
+      "children": [
+        "UU_36_1999__PASAL_45",
+        "UU_36_1999__PASAL_46"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_45",
+      "component_type": "PASAL",
+      "number": "45",
+      "title": null,
+      "content": "Barang siapa melanggar ketentuan Pasal 16 ayat (1), Pasal 18 ayat (2),\nPasal 19, Pasal 21, Pasal 25 ayat (2), Pasal 26 ayat (1), Pasal 29 ayat (1),\nPasal 29 ayat (2), Pasal 33 ayat (1), Pasal 33 ayat (2), Pasal 34 ayat (1),\natau Pasal 34 ayat (2) dikenai sanksi administrasi.",
+      "page_range": [
+        16,
+        16
+      ],
+      "parent_id": "UU_36_1999__BAB_VI",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_46",
+      "component_type": "PASAL",
+      "number": "46",
+      "title": null,
+      "content": "PRESIDEN\nREPUBLIK INDONESIA (1) Sanksi administrasi sebagaimana dimaksud dalam Pasal 45 berupa\npencabutan izin.",
+      "page_range": [
+        16,
+        17
+      ],
+      "parent_id": "UU_36_1999__BAB_VI",
+      "children": [
+        "UU_36_1999__AYAT_2__PASAL_46"
+      ],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_36_1999__PASAL_46",
+          "source_text": "sebagaimana dimaksud dalam Pasal 45",
+          "match_position": 52,
+          "target_article": "Pasal 45"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_2__PASAL_46",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Pencabutan izin sebagaimana dimaksud pada ayat (1) dilakukan\nsetelah diberi peringatan tertulis.",
+      "page_range": [
+        17,
+        17
+      ],
+      "parent_id": "UU_36_1999__PASAL_46",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__BAB_VII",
+      "component_type": "BAB",
+      "number": "VII",
+      "title": "KETENTUAN PIDANA",
+      "content": "",
+      "page_range": [
+        17,
+        17
+      ],
+      "parent_id": null,
+      "children": [
+        "UU_36_1999__PASAL_47",
+        "UU_36_1999__PASAL_48",
+        "UU_36_1999__PASAL_49",
+        "UU_36_1999__PASAL_50",
+        "UU_36_1999__PASAL_51",
+        "UU_36_1999__PASAL_53",
+        "UU_36_1999__PASAL_54",
+        "UU_36_1999__PASAL_55",
+        "UU_36_1999__PASAL_56",
+        "UU_36_1999__PASAL_58",
+        "UU_36_1999__PASAL_59"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_47",
+      "component_type": "PASAL",
+      "number": "47",
+      "title": null,
+      "content": "Barang siapa yang melanggar ketentuan sebagaimana dimaksud dalam\nPasal 11 ayat (1), dipidana dengan pidana penjara paling lama 6 (enam)\ntahun datau denda paling banyak Rp. 600.000.000,00 (enam ratus juta\nrupiah).",
+      "page_range": [
+        17,
+        17
+      ],
+      "parent_id": "UU_36_1999__BAB_VII",
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_36_1999__PASAL_47",
+          "source_text": "sebagaimana dimaksud dalam\nPasal 11",
+          "match_position": 38,
+          "target_article": "Pasal 11"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_48",
+      "component_type": "PASAL",
+      "number": "48",
+      "title": null,
+      "content": "Penyelenggara jaringan telekomunikasi yang melanggar ketentuan\nsebagaimana dimaksud dalam Pasal 19 dipidana dengan pidana penjara\npaling lama 1 (satu) tahun dan atau denda paling banyak Rp.\n100.000.000,00 (seratus juta rupiah).",
+      "page_range": [
+        17,
+        17
+      ],
+      "parent_id": "UU_36_1999__BAB_VII",
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_36_1999__PASAL_48",
+          "source_text": "sebagaimana dimaksud dalam Pasal 19",
+          "match_position": 63,
+          "target_article": "Pasal 19"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_49",
+      "component_type": "PASAL",
+      "number": "49",
+      "title": null,
+      "content": "Penyelenggara telekomunikasi yang melanggar ketentuan sebagaimana\ndimaksud dalam Pasal 20, dipidana dengan pidana penjara paling lama 2\n(dua) tahun dan atau denda paling banyak Rp. 200.000.000,00 (dua ratus\njuta rupiah).",
+      "page_range": [
+        17,
+        17
+      ],
+      "parent_id": "UU_36_1999__BAB_VII",
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_36_1999__PASAL_49",
+          "source_text": "sebagaimana\ndimaksud dalam Pasal 20",
+          "match_position": 54,
+          "target_article": "Pasal 20"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_50",
+      "component_type": "PASAL",
+      "number": "50",
+      "title": null,
+      "content": "Barang siapa melanggar ketentuan sebagaimana dimaksud dalam Pasal\n22, dipidana dengan pidana penjara paling lama 6 (enam) tahun dan atau\ndenda paling banyak Rp. 600.000.000,00(enam ratus juta rupiah).",
+      "page_range": [
+        17,
+        17
+      ],
+      "parent_id": "UU_36_1999__BAB_VII",
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_36_1999__PASAL_50",
+          "source_text": "sebagaimana dimaksud dalam Pasal\n22",
+          "match_position": 33,
+          "target_article": "Pasal 22"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_51",
+      "component_type": "PASAL",
+      "number": "51",
+      "title": null,
+      "content": "Penyelenggara\ntelekomunikasi\nkhusus\nyang\nmelanggar\nketentuan\nsebagaimana dimaksud dalam Pasal 29 ayat (1) atau Pasal 29 (ayat 2),\ndipidana dengan pidana penjara paling lama 4 (empat) tahun dan atau\ndenda paling banyak Rp. 400.000.000,00 (empat ratus juta rupiah)\nPRESIDEN\nREPUBLIK INDONESIA Pasal 52\nBarang siapa memperdagangkan, membuat, merakit, memasukkan atau\nmenggunakan perangkat telekomunikasi di wilayah Negara Republik\nIndonesia yang tidak sesuai dengan persyaratan teknis sebagaimana\ndimaksud dalam Pasal 32 ayat (1), dipidana dengan pidana paling lama 1\n(satu) tahun dan atau denda paling banyak Rp. 100.000.000,00 (seratus\njuta rupiah).",
+      "page_range": [
+        17,
+        18
+      ],
+      "parent_id": "UU_36_1999__BAB_VII",
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_36_1999__PASAL_51",
+          "source_text": "sebagaimana dimaksud dalam Pasal 29",
+          "match_position": 61,
+          "target_article": "Pasal 29"
+        },
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_36_1999__PASAL_51",
+          "source_text": "sebagaimana\ndimaksud dalam Pasal 32",
+          "match_position": 482,
+          "target_article": "Pasal 32"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_53",
+      "component_type": "PASAL",
+      "number": "53",
+      "title": null,
+      "content": "",
+      "page_range": [
+        18,
+        18
+      ],
+      "parent_id": "UU_36_1999__BAB_VII",
+      "children": [
+        "UU_36_1999__AYAT_1__PASAL_53",
+        "UU_36_1999__AYAT_2__PASAL_53"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_1__PASAL_53",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Barang siapa yang melanggar ketentuan sebagaimana dimaksud\ndalam Pasal 33 ayat (1) atau Pasal 33 ayat (2) dipidana dengan\npidana penjara paling lama 4 (empat) tahun dan atau denda paling\nbanyak Rp. 400.000.000,00 (empat ratus juta rupiah).",
+      "page_range": [
+        18,
+        18
+      ],
+      "parent_id": "UU_36_1999__PASAL_53",
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_36_1999__AYAT_1__PASAL_53",
+          "source_text": "sebagaimana dimaksud\ndalam Pasal 33",
+          "match_position": 38,
+          "target_article": "Pasal 33"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_2__PASAL_53",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "apabila\ntindak\npidana\nsebagaimana\ndimaksud\npada\nayat\n(1)\nmengakibatkan matinya seseorang, dipidana dengan pidana penjara\npaling lama 15 (lima belas) tahun.",
+      "page_range": [
+        18,
+        18
+      ],
+      "parent_id": "UU_36_1999__PASAL_53",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_54",
+      "component_type": "PASAL",
+      "number": "54",
+      "title": null,
+      "content": "Barang siapa yang melanggar ketentuan sebagaimana dimaksud dalam\nPasal 35 ayat (2) atau Pasal 36 ayat (2), dipidana dengan pidana penjara\npaling lama 2 (dua) tahun dan atau denda paling banyak Rp.\n200.000.000,00 (dua ratus juta rupiah).",
+      "page_range": [
+        18,
+        18
+      ],
+      "parent_id": "UU_36_1999__BAB_VII",
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_36_1999__PASAL_54",
+          "source_text": "sebagaimana dimaksud dalam\nPasal 35",
+          "match_position": 38,
+          "target_article": "Pasal 35"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_55",
+      "component_type": "PASAL",
+      "number": "55",
+      "title": null,
+      "content": "Barang siapa yang melanggar ketentuan sebagaimana dimaksud dalam\nPasal 38, dipidana dengan pidana penjara paling lama 6 (enam) tahun\ndan atau denda paling banyak Rp. 600.000.000,00 (enam ratus juta\nrupiah).",
+      "page_range": [
+        18,
+        18
+      ],
+      "parent_id": "UU_36_1999__BAB_VII",
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_36_1999__PASAL_55",
+          "source_text": "sebagaimana dimaksud dalam\nPasal 38",
+          "match_position": 38,
+          "target_article": "Pasal 38"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_56",
+      "component_type": "PASAL",
+      "number": "56",
+      "title": null,
+      "content": "]Barang siapa yang melanggar ketentuan sebagaimana dimaksud dalam\nPasal 40, dipidana dengan pidana penjara paling lama 15 (lima belas)\ntahun.\nPRESIDEN\nREPUBLIK INDONESIA Pasal 57\nPenyelenggara\njasa\ntelekomunikasi\nyang\nmelanggar\nketentuan\nsebagaimana dimaksud dalam Pasal 42 ayat (1), dipidana dengan pidana\npenjara paling lama 2 (dua) tahun dan atau denda paling banyak Rp.\n200.000.000,00 (dua ratus juta rupiah).",
+      "page_range": [
+        18,
+        19
+      ],
+      "parent_id": "UU_36_1999__BAB_VII",
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_36_1999__PASAL_56",
+          "source_text": "sebagaimana dimaksud dalam\nPasal 40",
+          "match_position": 39,
+          "target_article": "Pasal 40"
+        },
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_36_1999__PASAL_56",
+          "source_text": "sebagaimana dimaksud dalam Pasal 42",
+          "match_position": 238,
+          "target_article": "Pasal 42"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_58",
+      "component_type": "PASAL",
+      "number": "58",
+      "title": null,
+      "content": "Alat dan perangkat telekomunikasi yang digunakan dalam tindak pidana\nsebagaimana dimaksud dalam Pasal 17, Pasal 48, Pasal 52 atau Pasal 56\ndirampas untuk negara dan atau dimusnahkan sesuai dengan peraturan\nperundang-undangan yang berlaku.",
+      "page_range": [
+        19,
+        19
+      ],
+      "parent_id": "UU_36_1999__BAB_VII",
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_36_1999__PASAL_58",
+          "source_text": "sebagaimana dimaksud dalam Pasal 17",
+          "match_position": 69,
+          "target_article": "Pasal 17"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_59",
+      "component_type": "PASAL",
+      "number": "59",
+      "title": null,
+      "content": "Perbuatan sebagaimana dimaksud dalam Pasal 47, Pasal 48, Pasal 49,\nPasal 50, Pasal 51, Pasal 52, Pasal 53, Pasal 54, Pasal 55, Pasal 56 dan\nPasal 57 adalah kejahatan.",
+      "page_range": [
+        19,
+        19
+      ],
+      "parent_id": "UU_36_1999__BAB_VII",
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_36_1999__PASAL_59",
+          "source_text": "sebagaimana dimaksud dalam Pasal 47",
+          "match_position": 10,
+          "target_article": "Pasal 47"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__BAB_VIII",
+      "component_type": "BAB",
+      "number": "VIII",
+      "title": "KETENTUAN PERALIHAN",
+      "content": "",
+      "page_range": [
+        19,
+        19
+      ],
+      "parent_id": null,
+      "children": [
+        "UU_36_1999__PASAL_60",
+        "UU_36_1999__PASAL_62"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_60",
+      "component_type": "PASAL",
+      "number": "60",
+      "title": null,
+      "content": "Pasa saat berlakunya Undang-undang ini, penyelenggara telekomunikasi\nsebagaimana dimaksud dalam Undang-undang Nomor 3 Tahun 1989\ntentang Telekomunikasi, tetap dapat menjalankan kegiatannya dengan\nketentuan dalam waktu selambat-lambatnya 1 (satu) tahun sejak\nUndang-undang ini dinyatakan berlaku wajib menyesuaikan dengan\nUndang-undang ini.\nPRESIDEN\nREPUBLIK INDONESIA Pasal 61",
+      "page_range": [
+        19,
+        20
+      ],
+      "parent_id": "UU_36_1999__BAB_VIII",
+      "children": [
+        "UU_36_1999__AYAT_1__PASAL_60",
+        "UU_36_1999__AYAT_2__PASAL_60"
+      ],
+      "references": [
+        {
+          "type": "MERUJUK_DOKUMEN",
+          "pattern_name": "UU_REF",
+          "source_component": "UU_36_1999__PASAL_60",
+          "source_text": "Undang-undang Nomor 3 Tahun 1989",
+          "match_position": 96,
+          "target_doc_id": "UU_3_1989",
+          "target_number": "3",
+          "target_year": "1989"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_1__PASAL_60",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Dengan berlakunya Undang-undang ini, hak-hak tertentu yang telah\ndiberikan oleh Pemerintah kepada Badan Penyelenggara untuk\njangka waktu tertentu berdasarkan Undang-undang Nomor 3 Tahun\n1989 masih berlaku.",
+      "page_range": [
+        20,
+        20
+      ],
+      "parent_id": "UU_36_1999__PASAL_60",
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_DOKUMEN",
+          "pattern_name": "UU_REF",
+          "source_component": "UU_36_1999__AYAT_1__PASAL_60",
+          "source_text": "Undang-undang Nomor 3 Tahun\n1989",
+          "match_position": 158,
+          "target_doc_id": "UU_3_1989",
+          "target_number": "3",
+          "target_year": "1989"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__AYAT_2__PASAL_60",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Jangka waktu hak tertentu sebagaimana dimaksud pada ayat (1),\ndapat dipersingkat sesuai dengan kesepakatan antara Pemerintah dan\nBadan Penyelenggara.",
+      "page_range": [
+        20,
+        20
+      ],
+      "parent_id": "UU_36_1999__PASAL_60",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_62",
+      "component_type": "PASAL",
+      "number": "62",
+      "title": null,
+      "content": "Pada saat Undang-undang ini berlaku, semua peraturan pelaksanaan\nUndang-undang\nNomor\nTahun\ntentang\nTelekomunikasi\n(Lembaran Negara Tahun 1989 Nomor 11, Tambahan Lembaran Negara\nNomor 3391) masih tetap berlaku sepanjang tidak bertentangan dan atau\nbelum diganti dengan peraturan baru berdasarkan Undang-undang ini.",
+      "page_range": [
+        20,
+        20
+      ],
+      "parent_id": "UU_36_1999__BAB_VIII",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__BAB_IX",
+      "component_type": "BAB",
+      "number": "IX",
+      "title": "KETENTUAN PENUTUP",
+      "content": "",
+      "page_range": [
+        20,
+        20
+      ],
+      "parent_id": null,
+      "children": [
+        "UU_36_1999__PASAL_63",
+        "UU_36_1999__PASAL_64",
+        "UU_36_1999__PASAL_1__BAB_IX",
+        "UU_36_1999__PASAL_2__BAB_IX",
+        "UU_36_1999__PASAL_3__BAB_IX",
+        "UU_36_1999__PASAL_4__BAB_IX",
+        "UU_36_1999__PASAL_5",
+        "UU_36_1999__PASAL_6__BAB_IX",
+        "UU_36_1999__PASAL_7__BAB_IX",
+        "UU_36_1999__PASAL_8__BAB_IX",
+        "UU_36_1999__PASAL_9__BAB_IX",
+        "UU_36_1999__PASAL_10__BAB_IX",
+        "UU_36_1999__PASAL_11__BAB_IX",
+        "UU_36_1999__PASAL_12__BAB_IX",
+        "UU_36_1999__PASAL_13__BAB_IX",
+        "UU_36_1999__PASAL_14__BAB_IX",
+        "UU_36_1999__PASAL_15__BAB_IX",
+        "UU_36_1999__PASAL_16__BAB_IX",
+        "UU_36_1999__PASAL_17__BAB_IX",
+        "UU_36_1999__PASAL_18__BAB_IX",
+        "UU_36_1999__PASAL_19",
+        "UU_36_1999__PASAL_20__BAB_IX",
+        "UU_36_1999__PASAL_21__BAB_IX",
+        "UU_36_1999__PASAL_22__BAB_IX",
+        "UU_36_1999__PASAL_23__BAB_IX",
+        "UU_36_1999__PASAL_24",
+        "UU_36_1999__PASAL_25__BAB_IX",
+        "UU_36_1999__PASAL_26__BAB_IX",
+        "UU_36_1999__PASAL_27__BAB_IX",
+        "UU_36_1999__PASAL_29__BAB_IX",
+        "UU_36_1999__PASAL_30__BAB_IX",
+        "UU_36_1999__PASAL_32__BAB_IX",
+        "UU_36_1999__PASAL_33__BAB_IX",
+        "UU_36_1999__PASAL_34",
+        "UU_36_1999__PASAL_35__BAB_IX",
+        "UU_36_1999__PASAL_37__BAB_IX",
+        "UU_36_1999__PASAL_38__BAB_IX",
+        "UU_36_1999__PASAL_40__BAB_IX",
+        "UU_36_1999__PASAL_41__BAB_IX",
+        "UU_36_1999__PASAL_42__BAB_IX",
+        "UU_36_1999__PASAL_44__BAB_IX",
+        "UU_36_1999__PASAL_45__BAB_IX",
+        "UU_36_1999__PASAL_46__BAB_IX",
+        "UU_36_1999__PASAL_47__BAB_IX",
+        "UU_36_1999__PASAL_48__BAB_IX",
+        "UU_36_1999__PASAL_49__BAB_IX",
+        "UU_36_1999__PASAL_50__BAB_IX",
+        "UU_36_1999__PASAL_51__BAB_IX",
+        "UU_36_1999__PASAL_52",
+        "UU_36_1999__PASAL_53__BAB_IX",
+        "UU_36_1999__PASAL_56__BAB_IX",
+        "UU_36_1999__PASAL_57",
+        "UU_36_1999__PASAL_58__BAB_IX",
+        "UU_36_1999__PASAL_59__BAB_IX",
+        "UU_36_1999__PASAL_60__BAB_IX",
+        "UU_36_1999__PASAL_61",
+        "UU_36_1999__PASAL_62__BAB_IX",
+        "UU_36_1999__PASAL_64__BAB_IX"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_63",
+      "component_type": "PASAL",
+      "number": "63",
+      "title": null,
+      "content": "Dengan berlakunya Undang-undang ini, Undang-undang Nomor 3\nTahun 1989 tentang Telekomunikasi dinyatakan tidak berlaku.",
+      "page_range": [
+        20,
+        20
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_DOKUMEN",
+          "pattern_name": "UU_REF",
+          "source_component": "UU_36_1999__PASAL_63",
+          "source_text": "Undang-undang Nomor 3\nTahun 1989",
+          "match_position": 37,
+          "target_doc_id": "UU_3_1989",
+          "target_number": "3",
+          "target_year": "1989"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_64",
+      "component_type": "PASAL",
+      "number": "64",
+      "title": null,
+      "content": "Undang-undang ini mulai berlaku 1 (satu) tahun terhitung sejak tanggal\ndiundangkan.\nPRESIDEN\nREPUBLIK INDONESIA Agar\nsetiap\norang\nmengetahuinya,\nmemerintahkan\npengundangan\nUndang-undang ini dengan penempatannya dalam Lembaran Negara\nRepublik Indonesia.\nDisahkan di Jakarta\npada tanggal 8 September 1999\nttd.\nBACHARUDDIN JUSUF HABIBIE\nDiundangkan di Jakarta\npada tanggal 8 September 1999\nMENTERI NEGARA SEKRETARIS NEGARA\nREPUBLIK INDONESIA,\nttd.\nMULADI\nLEMBARAN NEGARA REPUBLIK INDONESIA TAHUN 1999 NOMOR 154\nPRESIDEN\nREPUBLIK INDONESIA\nATAS\nUNDANG-UNDANG REPUBLIK INDONESIA\nNOMOR 36 TAHUN 1999\nTENTANG\nTELEKOMUNIKASI\nUMUM\nSejak diundangkannya Undang-undang Nomor 3 Tahun 1989 tentang Telekomunikasi,\npembangunan dan penyelenggaraan telekomunikasi telah menunjukkan peningkatan\nperan penting dan strategis dalam menunjang dan mendorong kegiatan perekonomian,\nmemantapkan pertahanan dan keamanan, mencerdaskan kehidupan bangsa, memperlancar\nkegiatan pemerintah, memperkukuh persatuan dan kesatuan bangsa dalam kerangka\nwawasan nusantara, dan memantapkan ketahanan nasional serta meningkatkan hubungan\nantarbangsa.\nPerubahan\nlingkungan\nglobal\ndan\nperkembangan\nteknologi\ntelekomunikasi\nyang\nberlangsung sangat cepat telah mendorong terjadinya perubahan mendasar, melahirkan\nlingkungan\ntelekomunikasi\nyang\nbaru,\ndan\nperubahan\ncara\npandang\ndalam\npenyelenggaraan\ntelekomunikasi,\ntermasuk\nhasil\nkonvergensi\ndengan\ntekhnologi\ninformasi dan penyiaran, sehingga dipandang perlu mengadakan penataan kembali\npenyelenggaraan telekomunikasi nasional.\nPenyesuaian dalam penyelenggaraan telekomunikasi di tingkat nasional sudah merupakan\nkebutuhan\nnyata,\nmengingat\nmeningkatnya\nkemampuan\nsektor\nswasta\ndalam\npenyelenggaraan telekomunikasi, penguasaan teknologi telekomunikasi, dan keunggulan\nkompetitif dalam rangka memenuhi kebutuhan masyarakat.\nPerkembangan teknologi telekomunikasi di tingkat internasional yang diikuti dengan\npeningkatan penggunaannya sebagai salah satu komoditas perdagangan, yang memiliki\nnilai komersial tinggi, telah mendorong terjadinya berbagai kesepakatan multilateral.\nSebagai negara yang aktif dalam membina hubungan antarnegara atas dasar kepentingan\nnasional, keikutsertaan Indonesia dalam berbagai kesepakatan multilateral menimbulkan\nkonsekuensi yang harus dihadapi dan diikuti. Sejak penandatanganan General Agreement\non Trade and Services (GATS) di Marrakesh, Maroko, pada tanggal 15 april 1994, yang\ntelah diratifikasi dengan Undang-undang Nomor 7 Tahun 1994, penyelenggaraan\ntelekomunikasi nasional menjadi bagian yang tidak terpisahkan dari sistem perdagangan\nglobal.\nSesuai dengan prinsip perdagangan global, yang menitikberatkan pada asas perdagangan\nbebas dan tidak diskriminatif, Indonesia harus menyiapkan diri untuk menyesuaikan\npenyelenggaraan telekomunikasi.\nDengan memperhatikan hal-hal tersebut di atas, maka peran Pemerintah dititikberatkan\npada pembinaan yang meliputi penentuan kebijakan, pengaturan, pengawasan, dan\npengendalian dengan mengikutsertakan peran masyarakat.\nPRESIDEN\nREPUBLIK INDONESIA Peningkatan peran masyarakat dalam penyelenggaraan telekomunikasi tidak mengurangi\nprinsip dasar yang terkandung dalam pasal 33 ayat(3) Undang-undang Dasar 1945, yaitu\nbahwa bumi dan air dan kekayaan alam yang terkandung di dalamnya dikuasai oleh\nnegara dan dipergunakan sebesar-besarnya bagi kemakmuran rakyat.\nOleh karena itu,\nhal-hal yang menyangkut pemanfaatan spektrum frekuensi radio dan orbit satelit yang\nmerupakan sumber daya alam yang terbatas dikuasai oleh negara.\nDengan tetap berpijak pada arah dan kebijakan pembangunan nasional serta dengan\nmemperhatikan\nperkembangan\nyang\nberlangsung\nbaik\nsecara\nnasional\nmaupun\ninternasional, terutama di bidang telekomunikasi, norma hukum bagi pembinaan dan\npenyelenggaraan telekomunikasi yang diatur dalam Undang-undang Nomor 3 Tahun 1989\ntentang Telekomunikasi perlu diganti.\nPASAL DEMI PASAL",
+      "page_range": [
+        20,
+        23
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_DOKUMEN",
+          "pattern_name": "UU_REF",
+          "source_component": "UU_36_1999__PASAL_64",
+          "source_text": "Undang-undang Nomor 3 Tahun 1989",
+          "match_position": 643,
+          "target_doc_id": "UU_3_1989",
+          "target_number": "3",
+          "target_year": "1989"
+        },
+        {
+          "type": "MERUJUK_DOKUMEN",
+          "pattern_name": "UU_REF",
+          "source_component": "UU_36_1999__PASAL_64",
+          "source_text": "Undang-undang Nomor 7 Tahun 1994",
+          "match_position": 2446,
+          "target_doc_id": "UU_7_1994",
+          "target_number": "7",
+          "target_year": "1994"
+        },
+        {
+          "type": "MERUJUK_DOKUMEN",
+          "pattern_name": "UU_REF",
+          "source_component": "UU_36_1999__PASAL_64",
+          "source_text": "Undang-undang Nomor 3 Tahun 1989",
+          "match_position": 3793,
+          "target_doc_id": "UU_3_1989",
+          "target_number": "3",
+          "target_year": "1989"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_1__BAB_IX",
+      "component_type": "PASAL",
+      "number": "1",
+      "title": null,
+      "content": "Cukup jelas",
+      "page_range": [
+        23,
+        23
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_2__BAB_IX",
+      "component_type": "PASAL",
+      "number": "2",
+      "title": null,
+      "content": "Penyelenggaraan telekomunikasi memperhatikan dengan sungguh-sungguh asas\npembangunan nasional dengan mengutamakan asas manfaat, asas adil dan merata,\nasas kepastian hukum dan asas kepercayaan pada diri sendiri, serta memperhatikan\npula asas keamanan, kemitraan dan etika.\nAsas\nmanfaat\nberarti\nbahwa\npembangunan\ntelekomunikasi\nkhususnya\npenyelenggaraan telekomunikasi akan lebih berdaya guna dan berhasil guna baik\nsebagai infrastruktur pembangunan, sarana penyelenggaraan pemerintahan, sarana\npendidikan, sarana perhubungan maupun sebagai komoditas ekonomi yang dapat\nlebih meningkatkan kesejahteraan masyarakat lahir dan batin.\nAsas adil dan merata adalah bahwa penyelenggaraan telekomunikasi memberikan\nkesempatan dan perlakuan yang sama kepada semua pihak yang memenuhi syarat\ndan hasil-hasilnya dinikmati oleh masyarakat secara adil dan merata.\nAsas kepastian hukum berarti bahwa pembangunan telekomunikasi khususnya\npenyelenggaraan\ntelekomunikasi\nharus\ndidasarkan\nkepada\nperaturan\nperundang-undangan\nyang\nmenjamin\nkepastian\nhukum\ndan\nmemberikan\nperlindungan hukum baik bagi investor, penyelenggara telekomunikasi, maupun\nkepada pengguna telekomunikasi.\nAsas kepercayaan pada diri sendiri, dilaksanakan dengan memanfaatkan secara\nmaksimal potensi sumber daya nasional secara efisiensi serta penguasaan teknologi\ntelekomunikasi, sehingga dapat meningkatkan kemandirian dan mengurangi\nketergatungan sebagai suatu bangsa dalam menghadapi persaingan global.\nAsas kemitraan mengandung makna bahwa penyelenggaraan telekomunikasi harus\nPRESIDEN\nREPUBLIK INDONESIA dapat mengembangkan iklim yang harmonis, timbal balik, dan sinergi dalam\npenyelenggaraan telekomunikasi.\nAsas\nkeamanan\ndimaksudkan\nagar\npenyelengaraan\ntelekomunikasi\nselalu\nmemperhatikan\nfaktor\nkeamanan\ndalam\nperencanaan,\npembangunan\ndan\npengoperasiannya.\nAsas etika dimaksudkan agar dalam penyelenggaraan\ntelekomunikasi senantiasa\ndialndasi oleh semangat profesionalisme, kejujuran, kesusilaan dan keterbukaan.",
+      "page_range": [
+        23,
+        24
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_3__BAB_IX",
+      "component_type": "PASAL",
+      "number": "3",
+      "title": null,
+      "content": "Tujuan penyelenggaraan telekomunikasi dalam ketentuan ini dapat dicapai, antara\nlain,\nmelalui\nreformasi\ntelekomunikasi\nuntuk\nmeningkatkan\nkinerja\npenyelenggaraan\ntelekomunikasi\ndalam\nrangka\nmenghadapi\nglobalisasi,\nmempersiapkan sektor telekomunikasi memasuki persaingan usaha yang sehat dan\nprofesional dengan regulasi yang transparan, serta membuka lebih banyak\nkesempatan berusaha bagi pengusaha kecil dan menengah.",
+      "page_range": [
+        24,
+        24
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_4__BAB_IX",
+      "component_type": "PASAL",
+      "number": "4",
+      "title": null,
+      "content": "Ayat (1)\nMengingat telekomunikasi merupakan salah satu cabang produksi yang penting\ndan strategis dalam kehidupan nasional, maka penguasaannya dilakukan oleh\nnegara, yang dalam penyelenggaraannya ditujukan untuk sebesar-besarnya bagi\nkepentingan dan kemakmuran rakyat.\nAyat (2)\nFungsi penetapan kebijakan antara lain, perumusan mengenai perencanaan dasar\nstrategis dan perencanaan dasar teknis telekomunikasi nasional.\nFungsi pengaturan mencakup kegiatan yang bersifat umum dan atau teknis\noperasional\nyang\nantara\nlain,\ntercermin\ndalam\npengaturan\nperizinan\ndan\npersyaratan\ndalam\npenyelenggaraan\ntelekomunikasi.\nFungsi\npengendalian\ndilakukan\nberupa\npengarahan\ndan\nbimbingan\nterhadap\npenyelenggaraan\ntelekomunikasi.\nFungsi pengawasan adalah pengawasan terhadap penyelenggaraan telekomunikasi,\ntermasuk pengawasan terhadap penguasaan, pengusahaan, pemasukan, perakitan,\npenggunaan frekuensi dan orbit satelit, serta alat perangkat, sarana dan prasarana\ntelekomunikasi.\nFungsi\npenetapan\nkebijakan,\npengaturan,\npengawasan\ndan\npengendalian\ndilaksanakan oleh Menteri. Sesuai dengan perkembangan keadaan, fungsi\npengaturan, pengawasan dan pengendalian penyelenggaraan telekomunikasi dapat\ndilimpahkan kepada suatu badan regulasi.\nPRESIDEN\nREPUBLIK INDONESIA Dalam rangka efektivitas pembinaan, pemerintah melakukan koordinasi dengan\ninstansi terkait, penyelenggraan telekomunikasi dan mengikut sertakan peran\nmasyarakat.\nAyat (3)\nCukup jelas",
+      "page_range": [
+        24,
+        25
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_5",
+      "component_type": "PASAL",
+      "number": "5",
+      "title": null,
+      "content": "Ayat (1)\nCukup jelas\nAyat (2)\nCukup jelas\nAyat (3)\nCukup jelas\nAyat (4)\nCukup jelas\nAyat (5)\nCukup jelas",
+      "page_range": [
+        25,
+        25
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_6__BAB_IX",
+      "component_type": "PASAL",
+      "number": "6",
+      "title": null,
+      "content": "Sesuai dengan ketentuan Konvensi Telekomunikasi Internasional, yang dimaksud\ndengan\nAdministrasi\nTelekomunikasi\nadalah\nNegara\nyang\ndiwakili\noleh\nPemerintah\nnegara\nyang\nbersangkutan.\nDalam\nhal\nini,\nAdministrasi\nTelekomunikasi melaksanakan hak dan kewajiban Konvensi Telekomunikasi\nInternasional dan peratuaran yang menyertainya.\nAdministrasi Telekomunikasi Indonesia juga melaksanakan hak dan kewajiban\nperaturan\ninternasional\nlainnya\nseperti\nperaturan\nyang\nditetapkan\nIntelsat\n(International Telecomunication Satelit Organization) dan Inmarsal (International\nMaritime\nSatelit\nOrganization)\nserta\nperjanjian\ninternasional\ndi\nbidang\ntelekomunikasi lainnya yang diratifikasi Indonesia.",
+      "page_range": [
+        25,
+        25
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_7__BAB_IX",
+      "component_type": "PASAL",
+      "number": "7",
+      "title": null,
+      "content": "Ayat (1)\nHuruf a\nCukup jelas\nHuruf b\nCukup jelas\nHuruf c\nPenyelenggaraan\ntelekomunikasi\nkhusus\nantara\nlain\nuntuk\nkeperluan\nPRESIDEN\nREPUBLIK INDONESIA meteorologi dan geofisika, televisi siaran, radio siaran, navigasi, penerbangan,\npencairan dan pertolongan kecelakaan, amatir radio, komunikasi radio antar\npenduduk dan penyelenggaraan telekomunikasi khusus instansi pemerintah\ntertentu/swasta.\nAyat (2)\nCukup jelas",
+      "page_range": [
+        25,
+        26
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_8__BAB_IX",
+      "component_type": "PASAL",
+      "number": "8",
+      "title": null,
+      "content": "Ayat (1)\nCukup jelas\nAyat (2)\nCukup jelas\nAyat (3)\nCukup jelas",
+      "page_range": [
+        26,
+        26
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_9__BAB_IX",
+      "component_type": "PASAL",
+      "number": "9",
+      "title": null,
+      "content": "Ayat (1)\nCukup jelas\nAyat (2)\nPenyelenggaraan jasa telekomunikasi yang memerlukan jaringan telekomunikasi\ndapat\nmenggunakan\njaringan\nyang\ndimilikinya\ndan\natau\nmenyewa\ndari\npenyelenggaraan jaringan telekomunikasi lain.\nJaringan telekomunikasi yang disewa pada dasarnya digunakan untuk keperluan\nsendiri, namun apabila disewakan kembali kepada pihak lain, maka yang\nmenyewakan kembali tersebut harus memperoleh izin sebagai penyelenggara\njaringan telekomunikasi.\nAyat (3)\nCukup jelas\nAyat (4)\nHuruf a\nYang\ndimaksud\ndengan\npenyelenggaraan\ntelekomunikasi\nkhusus\nuntuk\nkeperluan perseorangan adalah penyelenggaraan telekomunikasi guna memenuhi\nkebutuhan perseorangan adalah penyelenggaraan telekomunikasi guna memenuhi\nkebutuhan\nperseorangan,\nmisalnya\namatir\nradio\ndan\nkomunikasi\nradio\nantarpenduduk.\nHuruf b\nYang\ndimaksud\ndengan\npenyelenggaraan\ntelekomunikasi\nkhusus\nuntuk\nkeperluan instansi pemerintah adalah penyelenggaraan telekomunikasi untuk\nmendukung pelaksanaan tugas-tugas umum instansi tersebut misalnya, komunikasi\nPRESIDEN\nREPUBLIK INDONESIA departemen atau komunikasi pemerintah daerah.\nHuruf c\nYang dimaksud dengan penyelenggaraan telekomunikasi khusus untuk dinas\nkhusus adalah penyelenggaraan telekomunikasi untuk mendukung kegiatan dinas\nyang bersangkutan antara lain, kegiatan navigasi, penerbangan atau meterologi.\nHuruf d\nYang dimaksud dengan penyelenggaraan telekomunikasi khusus untuk badan\nhukum adalah penyelenggaraan telekomunikasi yang dilakukan oleh Badan Usaha\nMilik Negara (BUMN), Badan Usaha Milik Daerah (BUMD), badan Usaha swasta\natau\nkoperasi\nmisalnya\ntelekomunikasi\npertambangan\natau\ntelekomunikasi\nperkeretaapian.\nAyat (5)\nCukup jelas",
+      "page_range": [
+        26,
+        27
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_10__BAB_IX",
+      "component_type": "PASAL",
+      "number": "10",
+      "title": null,
+      "content": "Ayat (1)\nPasal ini dimaksudkan agar terjadi kompetesi yang sehat antarpenyelenggara\ntelekomunikasi dalam melakukan kegiatannya.\nPeraturan perundang-undangan yang berlaku dimaksud adalah Undang-undnag\nNomor 5 Tahun 1999 tentang Larangan Praktek Monopoli dan Persaingan Usaha\nTidak Sehat serta peraturan pelaksanaannya.\nAyat (2)\nCukup jelas",
+      "page_range": [
+        27,
+        27
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_11__BAB_IX",
+      "component_type": "PASAL",
+      "number": "11",
+      "title": null,
+      "content": "Ayat (1)\nPerizinan\npenyelenggaraan\ntelekomunikasi\ndimaksudkan\nsebagai\nupaya\nPemerintah\ndalam\nrangka\npembinaan\nuntuk\nmendorong\npertumbuhan\npenyelenggaraan telekomunikasi yang sehat.\nPemerintah\nberkewajiban\nuntuk\nmempublikasikan\nsecara\nberkala\natas\ndaerah/wilayah yang terbuka untuk penyelenggaraan jaringan dan atau jasa\ntelekomunikasi.\nPenyelenggaraan telekomunikasi wajib memenuhi persyaratan yang ditetapkan\ndalam perizinan.\nPenyelenggaraan telekomunikasi guna keperluan eksperimen diberi izin khusus\nuntuk jangka waktu tertentu.\nAyat (2)\nCukup jelas\nPRESIDEN\nREPUBLIK INDONESIA Ayat (3)\nCukup jelas",
+      "page_range": [
+        27,
+        28
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_12__BAB_IX",
+      "component_type": "PASAL",
+      "number": "12",
+      "title": null,
+      "content": "Ayat (1)\nYang dimaksud dengan memanfaatkan atau melintasi tanah negara dan atau\nbangunan yang dimiliki/dikuasai oleh Pemerintah adalah kemudahan yang\ndiberikan kepada penyelenggara telekomunikasi.\nAyat (2)\nCukup jelas\nAyat (3)\nYang dimaksud dengan instansi pemerintah adalah instansi yang secara langsung\nmenguasai, memiliki, dan atau menggunakan tanah dan atau bangunan.",
+      "page_range": [
+        28,
+        28
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_13__BAB_IX",
+      "component_type": "PASAL",
+      "number": "13",
+      "title": null,
+      "content": "Yang dimaksud dengan perseorangan adalah orang seorang dan atau badan hukum\nyang secara langsung menguasai, memiliki dan atau menggunakan tanah dan atau\nbangunan yang dimanfaatkan atau dilintasi. Dalam memberi perlindungan hukum\nterhadap milik perseorangan, maka pemanfaatannya harus mendapat persetujuan\npara pihak.",
+      "page_range": [
+        28,
+        28
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_14__BAB_IX",
+      "component_type": "PASAL",
+      "number": "14",
+      "title": null,
+      "content": "Cukup jelas",
+      "page_range": [
+        28,
+        28
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_15__BAB_IX",
+      "component_type": "PASAL",
+      "number": "15",
+      "title": null,
+      "content": "Ayat (1)\nGanti rugi oleh penyelenggara telekomunikasi diberikan kepada pengguna atau\nmasyarakat luas yang dirugikan karena kelalaian atau kesalahan penyelenggara\ntelekomunikasi.\nAyat (2)\nCukup jelas\nAyat (3)\nPenyelesaian ganti rugi dilaksanakan dengan cara melalui mediasi atau arbitrase\natau konsiliasi. Cara-cara tersebut dimaksudkan sebagai upaya bagi para pihak\nuntuk mendapatkan penyelesaian dengan cara tepat. Apabila penyelesaian ganti\nrugi melalui cara tersebut di atas tidak berhasil, maka dapat diselesaikan melalui\npengadilan.",
+      "page_range": [
+        28,
+        28
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_16__BAB_IX",
+      "component_type": "PASAL",
+      "number": "16",
+      "title": null,
+      "content": "Ayat (1)\nKewajiban\npelayanan\nuniversal\n(universal\nservice\nobligation)\nmerupakan\nkewajiban penyediaan jaringan telekomunikasi oleh penyelenggara jaringan\nPRESIDEN\nREPUBLIK INDONESIA telekomunikasi agar kebutuhan masyarakat terutama di daerah terpencil dan atau\nbelum berkembang untuk mendapatkan akses telepon dapat dipenuhi.\nDalam penetapan kewajiban pelayanan universal, pemerintah memperhatikan\nprinsip ketersediaan pelayanan jasa telekomunikasi yang menjangkau daerah\nberpenduduk dengan mutu yang baik dan tarif yang layak.\nKewajiban pelayanan universal terutama untuk wilayah yang secara geografis\nterpencil dan yang secara ekonomi belum berkembang serta membutuhkan biaya\npembangunan tinggi termasuk di daerah perintisan, pedalaman, pinggiran,\nterpencil dan atau daerah yang secara ekonomi kurang menguntungkan.\nKewajiban\nmembangun\nfasilitas\ntelekomunikasi\nuntuk\npelayanan\nunversal\ndibebankan kepada penyelenggara jaringan telekomunikasi telah mendapatkan izin\ndari pemerintah berupa jasa Sambungan langsung Jarak Jauh (SLJJ) dan atau jasa\nsambungan lokal.\nPenyelenggara jaringan telekomunikasi lainnya di luar kedua jenis jasa di atas\ndiwajibkan memberikan kontribusi.\nAyat (2)\nKompensasi lain sebagaimana dimaksud dalam kewajiban pelayanan universal\nadalah kontribusi biaya untuk pembangunan yang dibebankan melalui biaya\ninterkoneksi.\nAyat (3)\nCukup jelas",
+      "page_range": [
+        28,
+        29
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_17__BAB_IX",
+      "component_type": "PASAL",
+      "number": "17",
+      "title": null,
+      "content": "Cukup jelas",
+      "page_range": [
+        29,
+        29
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_18__BAB_IX",
+      "component_type": "PASAL",
+      "number": "18",
+      "title": null,
+      "content": "Ayat (1)\nPencatatan pemakaian jasa telekomunikasi merupakan kewajiban penyelenggara\nyang pelaksanaannya dilakukan secara bertahap dan berlaku hanya untuk\npelayanan jasa telepon Sambungan Langsung Jarak Jauh (SLJJ) dan Sambungan\nLangsung\nInternasional\n(SLI)\nsepanjang\ndiminta\noleh\npengguna\njasa\ntelekomunikasi.\nPerekaman pemakaian jasa telekomunikasi adalah rekaman rincian data tagihan\n(billing), yang digunakan untuk membuktikan pemakaian jasa telekomunikasi.\nAyat (2)\nCukup jelas\nPRESIDEN\nREPUBLIK INDONESIA Ayat (3)\nCukup jelas",
+      "page_range": [
+        29,
+        30
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_19",
+      "component_type": "PASAL",
+      "number": "19",
+      "title": null,
+      "content": "Bila jaringan telekomunikasi terhubung dengan beberapa jaringan lain yang\nmenyelenggarakan jasa yang sama, maka pengguna jaringan tersebut harus dijamin\nkebebasannya untuk memilih salah satu dari jaringan yang terhubung tadi melalui\npenomoran yang ditentukan.\nPada dasarnya pengguna berhak memilih penyelenggara jaringan dan atau jasa\ntelekomunikasi untuk menyalurkan hubungan\ntelekomunikasinya.\nDalam\npelaksanaannya penyelenggara jaringan dan atau jasa telekomunikasi dapat\nmengubah rute hubungan dari pengguna ke jaringan penyelenggara lain tanpa\nsepengetahuan pengguna.\nApabila terjadi, hal di atas bertentangan dengan prinsip persaingan sehat yang\ndapat merugikan baik bagi penyelenggara maupun bagi pengguna.",
+      "page_range": [
+        30,
+        30
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_20__BAB_IX",
+      "component_type": "PASAL",
+      "number": "20",
+      "title": null,
+      "content": "Pengiriman informasi adalah tahap awal dari proses bertelekomunikasi, yang\ndilanjutkan dengan kegiatan penyaluran sebagai proses antara dan diakhiri dengan\nkegiatan penyampaian informasi untuk penerimaan pihak yang dituju. Prioritas\npengiriman, penyaluran dan penyampaian informasi yang akan ditetapkan oleh\npemerintah antara lain lain berita tentang musibah.",
+      "page_range": [
+        30,
+        30
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_21__BAB_IX",
+      "component_type": "PASAL",
+      "number": "21",
+      "title": null,
+      "content": "Penghentian kegiatan usaha penyelenggaraan telekomunikasi dapat dilakukan oleh\npemerintah setelah diperoleh informasi yang patut diduga dengan kuat dan diyakini\nbahwa penyelenggaraan telekomunikasi tersebut melanggar kepentingan umum,\nkesusilaan, keamanan, atau ketertiban umum.",
+      "page_range": [
+        30,
+        30
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_22__BAB_IX",
+      "component_type": "PASAL",
+      "number": "22",
+      "title": null,
+      "content": "Cukup jelas",
+      "page_range": [
+        30,
+        30
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_23__BAB_IX",
+      "component_type": "PASAL",
+      "number": "23",
+      "title": null,
+      "content": "Ayat (1)\nKetentuan ini dimaksudkan agar kebutuhan atas penomoran dari penyelenggara\njaringan dan penyelenggara jasa telekomunikasi serta penggunaannya dapat\ndipenuhi secara adil dan selaras dengan ketentuan internasional.\nNomor adalah rangkaian tanda dalam bentuk angka terdiri atas kode akses dan\nnomor pelanggan yang dipergunakan untuk mengindentifasi suatu alamat pada\njaringan atau pelayanan telekomunikasi.\nPRESIDEN\nREPUBLIK INDONESIA Ayat (2)\nPenomoran adalah sumber daya terbatas dan oleh karena itu sistem penomoran\ndiatur oleh Menteri secara adil. Penomoran pada jaringan telekomunikasi terkait\ndengan teknologi dan ketentuan internasional.",
+      "page_range": [
+        30,
+        31
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_24",
+      "component_type": "PASAL",
+      "number": "24",
+      "title": null,
+      "content": "Cukup jelas",
+      "page_range": [
+        31,
+        31
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_25__BAB_IX",
+      "component_type": "PASAL",
+      "number": "25",
+      "title": null,
+      "content": "Ayat (1)\nCukup jelas\nAyat (2)\nCukup jelas\nAyat (3)\nCukup jelas\nAyat (4)\nCukup jelas",
+      "page_range": [
+        31,
+        31
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_26__BAB_IX",
+      "component_type": "PASAL",
+      "number": "26",
+      "title": null,
+      "content": "Ayat (1)\nBiaya hak penyelenggaraan telekomunikasi adalah kewajiban yang dikenakan\nkepada penyelenggara jaringan dan atau jasa telekomunikasi sebagai kompensasi\natas perizinan yang diperolehnya dalam penyelenggaraan jaringan dan atau jasa\ntelekomunikasi, yang besarnya ditetapkan berdasarkan persentase dari pendapatan\ndan merupakan Pendapatan Negara Bukan Pajak (PNBP) yang disetor ke Kas\nNegara.\nAyat (2)\nCukup jelas",
+      "page_range": [
+        31,
+        31
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_27__BAB_IX",
+      "component_type": "PASAL",
+      "number": "27",
+      "title": null,
+      "content": "Susunan tarif jaringan dan atau jasa telekomunikasi meliputi struktur dan jenis tarif\nditetapkan\noleh\npemerintah.\nBerdasarkan\nstruktur\ndan\njenis\ntersebut,\npenyelenggara jaringan telekomunikasi dan atau jasa telekomunikasi dapat\nmenetapkan besaran tarif.\nStruktur tarif terdiri atas biaya pasang baru (aktivasi), biaya berlangganan bulanan,\nbiaya penggunaan dan biaya jasa tambahan (feature).\nJenis tarif terdiri atas tarif pulsa lokal, tarif pulsa Sambungan Langsung Jarak Jauh\n(SLJJ), tarif Sambungan Langsung Internasional (SLI) dan air time untuk jasa\nsambungan telepon bergerak.\nPRESIDEN\nREPUBLIK INDONESIA Pasal 28\nFormula sebagaimana dimaksud dalam ketentuan ini merupakan pola perhitungan\nuntuk menetapkan besaran tarif.\nFormula tarif terdiri atas formula tarif awal dan formula perubahan.\nDalam menetapkan formula tarif awal, yang harus diperhatikan adalah komponen\nbiaya, sedangkan untuk menetapkan formula besaran tarif perubahan diperhatikan\njuga antara lain faktor inflasi, kemampuan masyarakat dan kesinambungan\npembangunan telekomunikasi.",
+      "page_range": [
+        31,
+        32
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_29__BAB_IX",
+      "component_type": "PASAL",
+      "number": "29",
+      "title": null,
+      "content": "Ayat (1)\nLarangan bagi penyelenggara telekomunikasi khusus untuk disambungkan ke\njaringan penyelenggara telekomunikasi lainnya dimaksudkan untuk memberikan\nkepastian hukumbagi ruang lingkup penyelenggara telekomunikasi khusus yang\nmemang hanya untuk keperluan sendiri.\nAyat (2)\nCukup jelas",
+      "page_range": [
+        32,
+        32
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_30__BAB_IX",
+      "component_type": "PASAL",
+      "number": "30",
+      "title": null,
+      "content": "Ayat (1)\nketentuan\nini\ndimaksudkan\nuntuk\nmengatasi\nmasalah\nkebutuhan\njasa\ntelekomunikasi di suatu daerah yang karena keadaan tertentu belum dapat\ndijangkau oleh jasa telekomunikasi.\nOleh karena itu Undang-undang ini\nmemandang\nperlu\nuntuk\nmemberikan\nkemungkinan\nkepada\npenyelenggara\ntelekomunikasi khusus yang sebenarnya hanya bergerak untuk kepentingan sendiri,\ndapat memberikan pelayanan jasa telekomunikasi kepada masyarakat yang\nbertempat tinggal di daerah tersebut.\nAyat (2)\nPenyelenggara telekomunikasi khusus yang menyelenggarakan jaringan dan atau\njasa telekomunikasi dapat melanjutkan penyelenggaraan jaringan dan atau jasa\ntelekomunikasi dengan pertimbangan investasi yang telah dilakukannya dan\nkesinambungan pelayanan kepada pengguna.\nDalam hal ini penyelenggara telekomunikasi khusus yang bersangkutan wajib\nmemenuhi seluruh ketentuan yang berlaku bagi penyelenggaraan jaringan dan atau\njasa telekomunikasi.\nAyat (3)\nCukup jelas\nPRESIDEN\nREPUBLIK INDONESIA Pasal 31\nAyat (1)\nUntuk keperluan pertahanan keamanan negara, fasilitas telekomunikasi yang\ndimiliki oleh penyelenggara telekomunikasi lainnya dapat dimanfaatkan.\nPenggunaan atau pemanfaatan jaringan telekomunikasi sebagaimana dimaksud\ndalam ayat ini dilakukan sepanjang jaringan telekomunikasi untuk keperluan\npertahanan keamanan negara, yang dalam hal ini oleh Tentara Nasional Indonesia,\ntidak dapat berfungsi atau tidak bersedia.\nDalam hal negara dalam keadaan bahaya ketentuan ayat ini tidak berlaku.\nAyat (2)\nCukup jelas",
+      "page_range": [
+        32,
+        33
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_32__BAB_IX",
+      "component_type": "PASAL",
+      "number": "32",
+      "title": null,
+      "content": "Ayat (1)\nPersyaratan\nteknis\nalat/perangkat\ntelekomunikasi\nmerupakan\nsyarat\nyang\ndiwajibkan terhadap alat/perangkat telekomunikasi agar pada waktu dioperasikan\ntidak saling mengganggu alat/perangkat telekomunikasi lain dan atau jaringan\ntelekomunikasi atau alat/perangkat selain perangkat telekomunikasi.\nPersyaratan teknis dimaksud lebih ditujukan terhadap fungsi alat/perangkat\ntelekomunikasi\nyang\nberupa\nparameter\nelektris/elektronis\nserta\ndengan\nmemperhatikan pula aspek di luar parameter elektris/elektronis sesuai dengan\nketentuan yang berlaku dan aspek lainnya, misalnya lingkungan, keselamatan, dan\nkesehatan.\nUntuk menjamin pemenuhan persyaratan teknis alat/perangkat telekomunikasi,\nsetiap alat atau perangkat telekomunikasi dimaksud harus diuji oleh balai uji yang\ndiakui oleh pemerintah atau instansi yang berwenang.\nKetentuan persyaratan tekhnis memperhatikan standar teknis yang berlaku secara\ninternasional, mempertimbangkan kepentingan masyarakat, dan harus berdasarkan\npada teknologi yang terbuka.\nAyat (2)\nCukup jelas",
+      "page_range": [
+        33,
+        33
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_33__BAB_IX",
+      "component_type": "PASAL",
+      "number": "33",
+      "title": null,
+      "content": "Ayat (1)\nPemberian izin penggunaan spektrum frekuensi radio orbit satelit didasarkan\nkepada ketersediaan spektrum frekuensi radio yang telah dialokasikan untuk\nkeperluan penyelenggaraan telekomunikasi termasuk siaran sesuai peruntukannya.\nPRESIDEN\nREPUBLIK INDONESIA Tabel alokasi frekuensi radio disebarluaskan dan dapat diketahui oleh masyarakat\nsecara transparan.\nApabila ketersediaan spektrum frekuensi radio dan orbit satelit tidak memenuhi\npermintaan atau kebutuhan penyelenggaraan telekomunikasi, maka perolehan\nizinnya antara lain dimungkinkan melalui mekanisme pelelangan.\nAyat (2)\nFrekuensi radio adalah jumlah getaran elektromagnetik untuk 1 (satu) periode,\nsedangkan spektrum frekuensi radio adalah kumpulan frekuensi radio.\nPenggunaan frekuensi radio didasarkan pada ruang, jumlah getaran dan lebar pita,\nyang hanya dapat digunakan oleh 1 (satu) pihak. Penggunaan secara bersamaan\npada ruang, jumlah getaran dan lebar yang sama atau berhimpitan akan saling\nmengganggu.\nFrekuensi dalam telekomunikasi digunakan untuk membawa atau menyalurkan\ninformasi. Dengan demikian agar informasi dapat dibawa atau disalurkan dengan\nbaik tanpa gangguan maka penggunaan frekuensinya harus diatur.\nPengaturan\nfrekuensi antara lain mengenai pengalokasian pita frekuensi dan peruntukannya.\nOrbit satelit adalah suatu lintasan di angkasa yang dilalui oleh suatu pusat masa\nsatelit. Orbit satelit terdiri atas orbit satelit geostasioner, orbit satelit rendah dan\norbit satelit menengah.\nOrbit satelit geostationer adalah suatu lintasan yang dilalui oleh suatu pusat masa\nsatelit yang disebabkan oleh gaya gravitasi bumi yang mempunyai kedudukan tetap\nterhadap bumi.\nOrbit satelit geostationer berada di atas khatulistiwa dengan\nketinggian 36.000 km.\nOrbit satelit rendah dan menengah adalah suatu lintasan yang dilalui oleh suatu\npusat masa satelit yang kedudukannya tidak tetap terhadap bumi. Ketinggian orbit\nsatelit rendah sekitar 1.500 km dan orbit satelit menengah sekitar 11.000 km.\nAyat (3)\nCukup jelas\nAyat (4)\nCukup jelas",
+      "page_range": [
+        33,
+        34
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_34",
+      "component_type": "PASAL",
+      "number": "34",
+      "title": null,
+      "content": "Ayat (1)\nBiaya hak penggunaan spektrum frekuensi radio merupakan kompensasi atas\npenggunaan frekuensi sesuai dengan izin yang diterima.\nDi samping itu, biaya\npenggunaan\nfrekuensi\ndimaksudkan\njuga\nsebagai\nsarana\npengawasan\ndan\nPRESIDEN\nREPUBLIK INDONESIA pengendalian agar frekuensi radio sebagai sumber daya alam terbatas dapat\ndimanfaatkan semaksimal mungkin.\nBesarnya biaya penggunaan frekuensi ditentukan berdasarkan jenis dan lebar pita\nfrekuensi.\nJenis frekuensi akan berpengaruh pada mutu penyelenggaraan,\nsedangkan lebar pita frekuensi akan berpengaruh pada kapasitas/jumlah informasi\nyang dapat dibawa/dikirimkan.\nAyat (2)\nCukup jelas\nAyat (3)\nCukup jelas",
+      "page_range": [
+        34,
+        35
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_35__BAB_IX",
+      "component_type": "PASAL",
+      "number": "35",
+      "title": null,
+      "content": "Ayat (1)\nYang dimaksud dengan wilayah perairan Indonesia adalah wilayah laut teritorial\ntermasuk perairan dalam. Dengan demikian, pengertian ini menjangkau konsepsi\nnegara kepulauan sebagaimana diakui dalam Konversi Perserikatan Bangsa-bangsa\ntentang Hukum Laut Internasional yang selanjutnya telah diratifikasi dengan\nUndang-undang Nomor 17 Tahun 1985.\nKarena kapal berbendara asing tersebut telah dilengkapi dengan perangkat\ntelekomunikasi yang pemasangan dan pengoperasiannya mengikuti ketentuan yang\nberlaku di negaranya, maka ketentuan tentang persyaratan teknis yang ditetapkan\nMenteri tidak dapat diterapkan kepadanya.\nPenggunaan perangkat telekomunikasi tersebut di wilayah perairan Indonesia tetap\nharus mengikuti ketentuan internasional yang berlaku, yakni prinsip tidak saling\nmengganggu dan sesuai dengan peruntukkannya.\nAyat (2)\nLarangan menggunakan spektrum frekuensi radio atau orbit satelit di wilayah\nperairan Indonesia dimaksudkan untuk melindungi keamanan negara dan untuk\nmencegah dirugikannya penyelenggaraan telekomunikasi.\nDinas bergerak pelayaran (maritime mobile service) adalah telekomunikasi antara\nstasiun pantai dan stasiun kapal, antar stasiun kapal, antar stasiun komunikasi\npelengkap di kapal, stasiun kendaraan penyelamat, atau stasiun rambu radio\npenunjuk posisi darurat.\nKetentuan ini hanya berlaku untuk kapal sipil dan tidak berlaku bagi kapal milik\nTentara Nasional Indonesia.\nAyat (3)\nCukup jelas\nPRESIDEN\nREPUBLIK INDONESIA Pasal 36\nAyat (1)\nKetentuan teknis tentang perangkat telekomunikasi yang ditetapkan Pemerintah\ntidak dapatditerapkan kepada pesawat udara asing karena pesawat udara asing\ntersebut mengikuti ketentuan yang berlaku di negaranya.\nPenggunaan perangkat telekomunikasi tersebut tetap harus mengikuti ketentuan\ninternasional yang berlaku, yakni prinsip tidak saling mengganggu dan sesuai\ndengan\nperuntukanya.\nAyat (2)\nLarangan menggunakan spektrum frekuensi radio atau orbit satelit di wilayah\nudara Indonesia dimaksudkan untuk melindungi keamanan negara dan untuk\nmencegah dirugikannya penyelenggaraan telekomunikasi.\nDinas bergerak penerbangan (aeronautical mobile service) adalah telekomunikasi\nantara stasiun penerbangan dan stasiun pesawat udara, antarstasiun pesawat udara\nyang juga dapat mencakup stasiun kendaraan penyelamat, dan stasiun rambu radio\npenunjuk posisi darurat.\nAyat (3)\nCukup jelas.",
+      "page_range": [
+        35,
+        36
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_DOKUMEN",
+          "pattern_name": "UU_REF",
+          "source_component": "UU_36_1999__PASAL_35__BAB_IX",
+          "source_text": "Undang-undang Nomor 17 Tahun 1985",
+          "match_position": 319,
+          "target_doc_id": "UU_17_1985",
+          "target_number": "17",
+          "target_year": "1985"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_37__BAB_IX",
+      "component_type": "PASAL",
+      "number": "37",
+      "title": null,
+      "content": "asas timbal balik yang dimaksudkan dalam pasal ini adalah asas dalam hubungan\ninternasional\nuntuk\nmemberikan\nperlakuan\nyang\nsama\nkepada\nperwakilan\ndiplomatik asing di Indonesia sebagaimana perlakuan yang diberikan kepada\nperwakilan Indonesia di negara yang bersangkutan.",
+      "page_range": [
+        36,
+        36
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_38__BAB_IX",
+      "component_type": "PASAL",
+      "number": "38",
+      "title": null,
+      "content": "Perbuatan\nyang\ndapat\nmenimbulkan\ngangguan\nterhadap\npenyelenggaraan\ntelekomunikasi dapat berupa :",
+      "page_range": [
+        36,
+        36
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": [
+        "UU_36_1999__HURUF_a__BAB_IX",
+        "UU_36_1999__HURUF_b__BAB_IX",
+        "UU_36_1999__HURUF_c__BAB_IX",
+        "UU_36_1999__HURUF_d__BAB_IX",
+        "UU_36_1999__HURUF_e__BAB_IX"
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_a__BAB_IX",
+      "component_type": "HURUF",
+      "number": "a",
+      "title": null,
+      "content": "tindakan fisik yang menimbulkan kerusakan suatu jaringan telekomunikasi\nsehingga jaringan tersebut tidak dapat berfungsi sebagaimana mestinya.",
+      "page_range": [
+        36,
+        36
+      ],
+      "parent_id": "UU_36_1999__PASAL_38__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_b__BAB_IX",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "tindakan fisik yang mengakibatkan hubungan telekomunikasi tidak berjalan\nsebagaimana mestinya;",
+      "page_range": [
+        36,
+        36
+      ],
+      "parent_id": "UU_36_1999__PASAL_38__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_c__BAB_IX",
+      "component_type": "HURUF",
+      "number": "c",
+      "title": null,
+      "content": "penggunaan alat telekomunikasi yang tidak sesuai dengan persyaratan teknis yang\nberlaku;",
+      "page_range": [
+        36,
+        36
+      ],
+      "parent_id": "UU_36_1999__PASAL_38__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_d__BAB_IX",
+      "component_type": "HURUF",
+      "number": "d",
+      "title": null,
+      "content": "penggunaan alat telekomunikasi yang bekerja dengan gelombang radio yang tidak\nsebagaimana\nmestinya\nsehingga\nmenimbulkan\ngangguan\nterhadap\npenyelenggaraan telekomunikasi lainnya; atau",
+      "page_range": [
+        36,
+        36
+      ],
+      "parent_id": "UU_36_1999__PASAL_38__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__HURUF_e__BAB_IX",
+      "component_type": "HURUF",
+      "number": "e",
+      "title": null,
+      "content": "penggunaan alat bukan telekomunikasi yang tidak sebagaimana mestinya sehingga\nmenimbulkan pengaruh teknis yang tidak dikehendaki suatu penyelenggaraan\ntelekomunikasi.\nPRESIDEN\nREPUBLIK INDONESIA Pasal 39\nAyat (1)\nKegiatan\npengamanan\ntelekomunikasi\ndilaksanakan\noleh\npenyelenggara\ntelekomunikasi yang dimulai sejak perencanaan pembangunan sampai dengan\nakhir masa pengoperasian.\nLingkup perencanaan pembangunan termasuk antara lain rancang bangun dan\nrekayasa, yang harus memperhitungkan perlindungan dan pengamanan terhadap\ngangguan elektromagnetis, alam dan lingkungan.\nDalam\nkegiatan\npengamanan\ndan\nperlindungan\ninstalasi\npenyelenggara\nmengikutsertakan masyarakat dan berkoordinasi dengan pihak yang berwenang.\nAyat (2)\nCukup jelas",
+      "page_range": [
+        36,
+        37
+      ],
+      "parent_id": "UU_36_1999__PASAL_38__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_40__BAB_IX",
+      "component_type": "PASAL",
+      "number": "40",
+      "title": null,
+      "content": "Yang dimaksud dengan penyadapan dalam pasal ini adalah kegiatan memasang\nalat atau perangkat tambahan pada jaringan telekomunikasi untuk tujuan\nmendapatkan informasi dengan cara tidak sah.\nPada dasarnya informasi yang\ndimiliki oleh seseorang adalah hak pribadi yang harus dilindungi sehingga\npenyadapan harus dilarang.",
+      "page_range": [
+        37,
+        37
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_41__BAB_IX",
+      "component_type": "PASAL",
+      "number": "41",
+      "title": null,
+      "content": "Rekaman\ninformasi\nantara\nlain\nrekaman\npercakapan\nantar\npihak\nyang\nbertelekomunikasi",
+      "page_range": [
+        37,
+        37
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_42__BAB_IX",
+      "component_type": "PASAL",
+      "number": "42",
+      "title": null,
+      "content": "Ayat (1)\nCukup jelas\nAyat (2)\nYang dimaksud dengan proses peradilan pidana dalam ketentuan ini mencakup\npenyidikan, penuntutan, dan penyidangan.\nHuruf a\nYang dimaksud dengan tindak pidana tertentu adalah tindak pidana yang diancam\ndengan pidana penjara selama 5(lima) tahun ke atas, seumur hidup atau mati.\nHuruf b\nContoh tindak pidana tertentu sesuai dengan Undang-undang yang berlaku ialah\ntindak pidana yang sesuai dengan Undang-undang tentang Narkotika dan tindak\npidana yang sesuai dengan Undang-undang tentang Psikotropika.\nAyat (3)\nCukup jelas\nPRESIDEN\nREPUBLIK INDONESIA Pasal 43\nCukup jelas",
+      "page_range": [
+        37,
+        38
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_44__BAB_IX",
+      "component_type": "PASAL",
+      "number": "44",
+      "title": null,
+      "content": "Ayat (1)\nCukup jelas\nAyat (2)\nCukup jelas\nAyat (3)\nCukup jelas",
+      "page_range": [
+        38,
+        38
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_45__BAB_IX",
+      "component_type": "PASAL",
+      "number": "45",
+      "title": null,
+      "content": "Pengenaan saksi administrasi dalam ketentuan ini dimaksudkan sebagai upaya\npemerintah\ndalam\nrangka\npengawasan\ndan\npengendalian\npenyelenggaraan\ntelekomunikasi.",
+      "page_range": [
+        38,
+        38
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_46__BAB_IX",
+      "component_type": "PASAL",
+      "number": "46",
+      "title": null,
+      "content": "Ayat (1)\nCukup jelas\nAyat (2)\nCukup jelas",
+      "page_range": [
+        38,
+        38
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_47__BAB_IX",
+      "component_type": "PASAL",
+      "number": "47",
+      "title": null,
+      "content": "Cukup jelas",
+      "page_range": [
+        38,
+        38
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_48__BAB_IX",
+      "component_type": "PASAL",
+      "number": "48",
+      "title": null,
+      "content": "Cukup jelas",
+      "page_range": [
+        38,
+        38
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_49__BAB_IX",
+      "component_type": "PASAL",
+      "number": "49",
+      "title": null,
+      "content": "Cukup jelas",
+      "page_range": [
+        38,
+        38
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_50__BAB_IX",
+      "component_type": "PASAL",
+      "number": "50",
+      "title": null,
+      "content": "Cukup jelas",
+      "page_range": [
+        38,
+        38
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_51__BAB_IX",
+      "component_type": "PASAL",
+      "number": "51",
+      "title": null,
+      "content": "Cukup jelas",
+      "page_range": [
+        38,
+        38
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_52",
+      "component_type": "PASAL",
+      "number": "52",
+      "title": null,
+      "content": "Cukup jelas",
+      "page_range": [
+        38,
+        38
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_53__BAB_IX",
+      "component_type": "PASAL",
+      "number": "53",
+      "title": null,
+      "content": "Ayat (1)\nCukup jelas\nAyat (2)\nCukup jelas\nPRESIDEN\nREPUBLIK INDONESIA Pasal 54\nCukup jelas",
+      "page_range": [
+        38,
+        39
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_56__BAB_IX",
+      "component_type": "PASAL",
+      "number": "56",
+      "title": null,
+      "content": "Cukup jelas",
+      "page_range": [
+        39,
+        39
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_57",
+      "component_type": "PASAL",
+      "number": "57",
+      "title": null,
+      "content": "Cukup jelas",
+      "page_range": [
+        39,
+        39
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_58__BAB_IX",
+      "component_type": "PASAL",
+      "number": "58",
+      "title": null,
+      "content": "Cukup jelas",
+      "page_range": [
+        39,
+        39
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_59__BAB_IX",
+      "component_type": "PASAL",
+      "number": "59",
+      "title": null,
+      "content": "Cukup jelas",
+      "page_range": [
+        39,
+        39
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_60__BAB_IX",
+      "component_type": "PASAL",
+      "number": "60",
+      "title": null,
+      "content": "Cukup jelas",
+      "page_range": [
+        39,
+        39
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_61",
+      "component_type": "PASAL",
+      "number": "61",
+      "title": null,
+      "content": "Ayat (1)\nBadan Penyelenggara adalah Badan Penyelenggara sesuai dengan yang dimaksud\ndalam Undang-undang Nomor 3 tahun 1989.\nAyat (2)\nYang\ndimaksud\ndengan\nhal\ntertentu\nadalah\nhak\neksklusive\nuntuk\nmenyelenggarakan jasa telekomunikasi tetap sambungan lokal, Sambungan\nLangsung Jarak Jauh (SLJJ), dan Sambungan Langsung Internasional (SLI) yang\ndiberikan oleh Pemerintah kepada Badan Penyelenggara.\nSejalan dengan jiwa Undang-undang ini yang akan mengakhiri monopoli di bidang\ntelekomunikasi, Pemerintah dapat mempersingkat jangka waktu hak tertentu\ntersebut.\nUntuk mempercepat berakhirnya jangka waktu hak tertentu dilakukan melalui cara\ndan persyaratan yang disepakati bersama, dengan memperhatikan prinsip kejujuran\ndan keadilan serta keterbukaan (fairness), misalnya dengan pemberian kompensasi.",
+      "page_range": [
+        39,
+        39
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_DOKUMEN",
+          "pattern_name": "UU_REF",
+          "source_component": "UU_36_1999__PASAL_61",
+          "source_text": "Undang-undang Nomor 3 tahun 1989",
+          "match_position": 90,
+          "target_doc_id": "UU_3_1989",
+          "target_number": "3",
+          "target_year": "1989"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_62__BAB_IX",
+      "component_type": "PASAL",
+      "number": "62",
+      "title": null,
+      "content": "Cukup jelas\nPRESIDEN\nREPUBLIK INDONESIA Pasal 63\nCukup jelas",
+      "page_range": [
+        39,
+        40
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    },
+    {
+      "component_id": "UU_36_1999__PASAL_64__BAB_IX",
+      "component_type": "PASAL",
+      "number": "64",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        40,
+        40
+      ],
+      "parent_id": "UU_36_1999__BAB_IX",
+      "children": []
+    }
+  ],
+  "reference_summary": {
+    "total_references": 39,
+    "by_type": {
+      "MERUJUK_DOKUMEN": 9,
+      "MERUJUK_PASAL": 30
+    }
+  }
+}

@@ -3,54 +3,133 @@
 import google.generativeai as genai
 from app.config import settings
 
-# KG Schema for system prompt
+# KG Schema for system prompt — auto-extracted from actual Neo4j data
 KG_SCHEMA = """
-Node Types: UndangUndang, Bab, Pasal, Ayat, EntitasHukum, PerbuatanHukum, Sanksi, KonsepHukum
-Relation Types: MEMUAT, MENGATUR, MENETAPKAN_SANKSI, BERLAKU_UNTUK, MERUJUK, MENDEFINISIKAN
-Properties: label, content, uu_number, source_document_id
+## Node Types (with counts)
+| Label | Count | Description |
+|-------|-------|-------------|
+| PerbuatanHukum | 148 | Specific legal actions that are regulated/prohibited |
+| Ayat | 108 | Sub-article within a Pasal (e.g., "Pasal 27 ayat (1)") |
+| EntitasHukum | 67 | Legal subjects/objects (persons, institutions) |
+| Pasal | 54 | Articles in the regulation (e.g., "Pasal 27") |
+| KonsepHukum | 53 | Formally defined legal concepts (e.g., "Informasi Elektronik") |
+| Sanksi | 15 | Penalties/sanctions with full detail |
+| Bab | 13 | Chapters (e.g., "BAB VII PERBUATAN YANG DILARANG") |
+| UndangUndang | 2 | The regulation itself |
 
-Contoh label node:
+## Relationship Types (with counts and directions)
+| Relationship | Typical Pattern | Count |
+|-------------|-----------------|-------|
+| MENGATUR | (Ayat/Pasal) -> (PerbuatanHukum) | 153 |
+| BERLAKU_UNTUK | (Ayat/Pasal) -> (EntitasHukum) | 152 |
+| MERUJUK | (Ayat) -> (Ayat/Pasal), (Pasal) -> (Pasal/Ayat) | 130 |
+| MEMUAT | (UndangUndang) -> (Bab), (Bab) -> (Pasal) | 70 |
+| MENDEFINISIKAN | (Pasal/Ayat) -> (KonsepHukum) | 48 |
+| MENETAPKAN_SANKSI | (Ayat/Pasal) -> (Sanksi) | 18 |
+
+## Node Properties
+All nodes have: id, label, content, source_document_id, embedding
+- label: The display name (e.g., "Pasal 27", "Setiap Orang")
+- content: Description or original text excerpt
+
+## Sample Node Labels
 - UndangUndang: "Undang-Undang tentang Informasi dan Transaksi Elektronik"
-- Bab: "Bab I Ketentuan Umum", "Bab VII Perbuatan Yang Dilarang"
+- Bab: "BAB VII PERBUATAN YANG DILARANG", "BAB XI KETENTUAN PIDANA"
 - Pasal: "Pasal 1", "Pasal 27", "Pasal 45"
-- KonsepHukum: "Informasi Elektronik", "Dokumen Elektronik"
-- EntitasHukum: "Setiap Orang", "Penyelenggara Sistem Elektronik"
-- PerbuatanHukum: "mendistribusikan informasi yang melanggar kesusilaan", "akses ilegal"
-- Sanksi: "pidana penjara paling lama 6 (enam) tahun"
+- Ayat: "Pasal 27 ayat (1)", "Pasal 45 ayat (3)"
+- EntitasHukum: "Setiap Orang", "Penyelenggara Sistem Elektronik", "Pemerintah"
+- PerbuatanHukum: "mendistribusikan dan/atau mentransmisikan ... muatan penghinaan dan/atau pencemaran nama baik"
+- Sanksi: "pidana penjara paling lama 6 (enam) tahun dan/atau denda paling banyak Rp1.000.000.000,00"
+- KonsepHukum: "Informasi Elektronik", "Dokumen Elektronik", "Tanda Tangan Elektronik"
 
-Struktur graf: UndangUndang -[MEMUAT]-> Bab -[MEMUAT]-> Pasal
-Pasal -[MENDEFINISIKAN]-> KonsepHukum/EntitasHukum
-Pasal -[MENGATUR]-> PerbuatanHukum
-Pasal -[MENETAPKAN_SANKSI]-> Sanksi
+## Key Graph Patterns
+1. Hierarchy: (UndangUndang)-[:MEMUAT]->(Bab)-[:MEMUAT]->(Pasal)
+2. Regulation: (Ayat)-[:MENGATUR]->(PerbuatanHukum), (Pasal)-[:MENGATUR]->(PerbuatanHukum)
+3. Sanctions: (Ayat)-[:MENETAPKAN_SANKSI]->(Sanksi)
+4. Cross-ref: (Ayat)-[:MERUJUK]->(Ayat), (Pasal)-[:MERUJUK]->(Pasal)
+5. Definition: (Pasal)-[:MENDEFINISIKAN]->(KonsepHukum)
+6. Applicability: (Ayat)-[:BERLAKU_UNTUK]->(EntitasHukum)
+
+IMPORTANT: Most MENGATUR, BERLAKU_UNTUK, and MENETAPKAN_SANKSI edges originate from Ayat nodes, NOT Pasal.
+When searching for what an article regulates, query BOTH Pasal and Ayat.
 """
 
-QUERY_SYSTEM = f"""Anda adalah asisten yang mengubah pertanyaan hukum Indonesia menjadi Cypher query untuk Neo4j.
-Schema KG:
+QUERY_SYSTEM = f"""You are a Cypher query generator for an Indonesian legal Knowledge Graph in Neo4j.
+Given a user question about Indonesian law, generate a Cypher query to retrieve the relevant data.
+
 {KG_SCHEMA}
 
-PENTING - Rules:
-1. Output HANYA Cypher query mentah. TANPA markdown, TANPA ```, TANPA penjelasan
-2. SELALU gunakan CONTAINS untuk filter label. JANGAN pernah exact match.
-   BENAR: WHERE uu.label CONTAINS 'Informasi' OR uu.label CONTAINS 'Elektronik'
-   SALAH: WHERE uu.label = 'UU ITE'
-3. Gunakan LIMIT 10 di akhir query
-4. Query harus lengkap dan valid (ada MATCH dan RETURN)
+## STRICT OUTPUT RULES
+1. Output ONLY the raw Cypher query. NO markdown, NO ```, NO explanation.
+2. ALWAYS use CONTAINS (case-insensitive matching) for label/content filters. NEVER use exact match (=) on labels.
+3. ALWAYS end with LIMIT 10.
+4. Query must be syntactically valid (balanced parentheses, MATCH + RETURN).
+5. Use toLower() for case-insensitive matching.
 
-Contoh output yang benar:
-- "Pasal apa saja di UU ITE?"
-  MATCH (uu:UndangUndang)-[:MEMUAT]->(b:Bab)-[:MEMUAT]->(p:Pasal) WHERE uu.label CONTAINS 'Elektronik' RETURN p.label, p.content LIMIT 10
+## QUERY PATTERNS
 
-- "Apa sanksi pencemaran nama baik?"
-  MATCH (p:Pasal)-[:MENETAPKAN_SANKSI]->(s:Sanksi) WHERE p.content CONTAINS 'nama baik' OR p.label CONTAINS 'nama baik' RETURN p.label, p.content, s.label, s.content LIMIT 10
+### Pattern 1: What does an article regulate?
+Question: "Apa yang diatur Pasal 27?"
+MATCH (p)-[:MENGATUR]->(ph:PerbuatanHukum) WHERE p.label CONTAINS 'Pasal 27' RETURN p.label AS pasal, ph.label AS perbuatan, ph.content AS detail LIMIT 10
 
-- "Apa itu informasi elektronik?"
-  MATCH (p:Pasal)-[:MENDEFINISIKAN]->(k:KonsepHukum) WHERE k.label CONTAINS 'Informasi Elektronik' RETURN p.label, k.label, k.content LIMIT 10"""
+### Pattern 2a: What is the penalty for something? (INDIRECT — via MERUJUK)
+CRITICAL: In Indonesian law, prohibitions (Pasal 27-37) and sanctions (Pasal 45-52) are in DIFFERENT chapters.
+Sanction articles MERUJUK (cross-reference) back to prohibition articles. You MUST use this pattern:
+Question: "Apa sanksi pencemaran nama baik?"
+MATCH (a)-[:MERUJUK]->(target), (a)-[:MENETAPKAN_SANKSI]->(sk:Sanksi) WHERE toLower(target.label) CONTAINS 'pasal 27' RETURN a.label AS pasal_sanksi, target.label AS pasal_larangan, sk.label AS sanksi LIMIT 10
 
-RESPONSE_SYSTEM = """Anda adalah asisten hukum Indonesia. Jawab pertanyaan pengguna berdasarkan data dari Knowledge Graph.
-Rules:
-1. Sertakan referensi pasal dan UU
-2. Gunakan bahasa Indonesia formal
-3. Jika data tidak cukup, katakan dengan jelas"""
+### Pattern 2b: What is the penalty for something? (by keyword in sanction article)
+Question: "Berapa denda untuk pelanggaran Pasal 30?"
+MATCH (a)-[:MERUJUK]->(target), (a)-[:MENETAPKAN_SANKSI]->(sk:Sanksi) WHERE toLower(target.label) CONTAINS 'pasal 30' RETURN a.label AS pasal_sanksi, target.label AS pasal_larangan, sk.label AS sanksi LIMIT 10
+
+### Pattern 3: What articles are in a chapter?
+Question: "Pasal apa saja di Bab XI?"
+MATCH (b:Bab)-[:MEMUAT]->(p:Pasal) WHERE b.label CONTAINS 'XI' RETURN b.label AS bab, p.label AS pasal, p.content AS isi LIMIT 10
+
+### Pattern 4: What is the definition of a concept?
+Question: "Apa definisi Informasi Elektronik?"
+MATCH (p)-[:MENDEFINISIKAN]->(k:KonsepHukum) WHERE toLower(k.label) CONTAINS 'informasi elektronik' RETURN p.label AS pasal, k.label AS konsep, k.content AS definisi LIMIT 10
+
+### Pattern 5: Who does a provision apply to?
+Question: "Pasal 45 berlaku untuk siapa?"
+MATCH (a)-[:BERLAKU_UNTUK]->(e:EntitasHukum) WHERE a.label CONTAINS 'Pasal 45' RETURN a.label AS pasal_ayat, e.label AS subjek LIMIT 10
+
+### Pattern 6: Cross-reference between articles
+Question: "Pasal apa yang merujuk ke Pasal 27?"
+MATCH (a)-[:MERUJUK]->(target) WHERE target.label CONTAINS 'Pasal 27' RETURN a.label AS sumber, target.label AS tujuan LIMIT 10
+
+### Pattern 7: General keyword search
+Question: "Informasi tentang transaksi elektronik"
+MATCH (n) WHERE toLower(n.label) CONTAINS 'transaksi elektronik' OR toLower(n.content) CONTAINS 'transaksi elektronik' RETURN labels(n) AS tipe, n.label AS label, n.content AS isi LIMIT 10
+
+### Pattern 8: List all prohibited acts
+Question: "Apa saja perbuatan yang dilarang?"
+MATCH (p)-[:MENGATUR]->(ph:PerbuatanHukum) RETURN p.label AS pasal, ph.label AS perbuatan LIMIT 10
+
+## COMMON MISTAKES TO AVOID
+- Do NOT use exact match: WHERE n.label = 'Pasal 27' (WRONG — use CONTAINS)
+- Do NOT forget LIMIT: Always add LIMIT 10
+- Do NOT assume MENGATUR and MENETAPKAN_SANKSI are on the SAME node — they are usually on DIFFERENT nodes connected by MERUJUK
+- Do NOT query only Pasal for sanctions — most MENETAPKAN_SANKSI edges are on Ayat nodes
+- Do NOT use node types that don't exist (e.g., Peraturan, VersiPasal are NOT in this database)
+- When asked about sanctions/penalties, ALWAYS use the MERUJUK pattern (Pattern 2a/2b)"""
+
+RESPONSE_SYSTEM = """You are an Indonesian legal assistant. Answer the user's question based ONLY on the Knowledge Graph data provided.
+
+## Rules
+1. Use ALL the data provided — both "Hasil Cypher Query" and "Hasil Pencarian Keyword" sections.
+2. Include specific references: cite Pasal numbers, Ayat numbers, and exact sanction amounts when available in the data.
+3. When sanction data is provided (e.g., "pidana penjara paling lama 6 tahun dan/atau denda paling banyak Rp1.000.000.000"), quote it EXACTLY — do NOT summarize as just "pidana".
+4. Answer in formal Indonesian (Bahasa Indonesia).
+5. If the data truly does not contain enough information, state this clearly — but check ALL provided data first before saying this.
+6. Structure your answer clearly: start with the direct answer, then provide supporting details.
+
+## Example
+Data: pasal_sanksi: Pasal 45 ayat (1) | pasal_larangan: Pasal 27 ayat (3) | sanksi: pidana penjara paling lama 6 (enam) tahun dan/atau denda paling banyak Rp1.000.000.000,00
+
+Good answer: "Menurut Pasal 45 ayat (1) UU ITE, pelanggaran terhadap Pasal 27 ayat (3) tentang pencemaran nama baik diancam dengan **pidana penjara paling lama 6 (enam) tahun dan/atau denda paling banyak Rp1.000.000.000,00 (satu miliar rupiah)**."
+
+Bad answer: "Sanksi yang ditetapkan adalah pidana tanpa rincian lebih lanjut." (WRONG — the data clearly contains the full penalty details)"""
 
 
 class LLMService:
@@ -70,7 +149,7 @@ class LLMService:
         """Generate Cypher query from natural language question."""
         model = cls._get_model()
 
-        prompt = f"Pertanyaan: {question}\n\nBerikan Cypher query untuk menjawab pertanyaan di atas."
+        prompt = f"Question: {question}\n\nGenerate a Cypher query to answer the above question. Output ONLY the raw query."
 
         try:
             response = model.generate_content(
@@ -83,10 +162,7 @@ class LLMService:
             if not cls._is_valid_cypher(cypher):
                 # Retry with simpler prompt
                 retry_prompt = (
-                    f"Pertanyaan: {question}\n\n"
-                    "Tulis Cypher query SEDERHANA (1-3 baris saja) untuk Neo4j. "
-                    "Langsung tulis MATCH ... RETURN ... LIMIT 10. "
-                    "JANGAN gunakan markdown."
+                    f"Question: {question}\n\nWrite a SIMPLE Cypher query (1-3 lines) for Neo4j. Write MATCH ... RETURN ... LIMIT 10 directly. NO markdown, NO explanation."
                 )
                 response = model.generate_content(
                     [QUERY_SYSTEM, retry_prompt],
@@ -97,6 +173,7 @@ class LLMService:
             return {"cypher": cypher, "status": "ok"}
         except Exception as e:
             return {"cypher": "", "status": "error", "error": str(e)}
+
 
     @staticmethod
     def _is_valid_cypher(query: str) -> bool:
@@ -127,19 +204,26 @@ class LLMService:
     @classmethod
     async def generate_response(cls, question: str, kg_context: str) -> dict:
         """Generate NL response from question + KG context."""
+        import logging
+        logger = logging.getLogger(__name__)
+
         model = cls._get_model()
 
-        prompt = (
-            f"Pertanyaan: {question}\n\n"
-            f"Data dari Knowledge Graph:\n{kg_context}\n\n"
-            f"Jawab pertanyaan berdasarkan data KG di atas."
-        )
+        prompt = f"Question: {question}\n\nKnowledge Graph Data:\n{kg_context}\n\nAnswer the question based on the KG data above. Respond in formal Indonesian (Bahasa Indonesia)."
+
+        logger.info(f"=== RESPONSE PROMPT ({len(prompt)} chars) ===")
+        logger.info(prompt[:2000])
+        logger.info("=== END PROMPT ===")
 
         try:
             response = model.generate_content(
                 [RESPONSE_SYSTEM, prompt],
-                generation_config={"temperature": 0.3, "max_output_tokens": 1024},
+                generation_config={"temperature": 0.3},
             )
-            return {"answer": response.text.strip(), "status": "ok"}
+            answer = response.text.strip()
+            logger.info(f"=== LLM RESPONSE ({len(answer)} chars) ===")
+            logger.info(answer[:500])
+            return {"answer": answer, "status": "ok"}
         except Exception as e:
+            logger.error(f"LLM response error: {e}")
             return {"answer": "", "status": "error", "error": str(e)}

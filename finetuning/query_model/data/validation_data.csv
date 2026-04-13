@@ -1,0 +1,1123 @@
+context,question,response,category
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Pasal mana yang mendefinisikan 'Informasi Elektronik'?,MATCH (p:Pasal)-[:MENDEFINISIKAN]->(kh:KonsepHukum {label: 'Informasi Elektronik'}) RETURN p.label,definisi
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Sebutkan isi dari Pasal 9!,"MATCH (p:Pasal {label: 'Pasal 9'}) RETURN p.label AS pasal, p.content AS isi",hierarki
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Apa hubungan antara Pasal 45 dan Pasal 27?,"MATCH (p1:Pasal {label: 'Pasal 45'})-[r]->(p2:Pasal {label: 'Pasal 27'}) RETURN p1.label AS dari, type(r) AS relasi, p2.label AS ke",relasi
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Pasal mana yang merujuk ke Pasal 27?,"MATCH (p1:Pasal)-[:MERUJUK]->(p2:Pasal {label: 'Pasal 27'}) RETURN p1.label AS pasal_merujuk, p1.content AS isi",relasi
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)","Entitas hukum apa yang berkaitan dengan 'menyediakan informasi yang lengkap dan benar berkaitan dengan syarat kontrak, produsen, dan produk yang ditawarkan melalui Sistem Elektronik'?","MATCH (ph:PerbuatanHukum {label: 'menyediakan informasi yang lengkap dan benar berkaitan dengan syarat kontrak, produsen, dan produk yang ditawarkan melalui Sistem Elektronik'})<-[:MENGATUR]-(p:Pasal)-[:BERLAKU_UNTUK]->(e:EntitasHukum) RETURN DISTINCT e.label",entitas
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)","Entitas ""Pemerintah"" diatur dalam pasal berapa saja?","MATCH (eh:EntitasHukum)<-[:BERLAKU_UNTUK]-(p:Pasal) WHERE eh.label = ""Pemerintah"" RETURN p.label AS Pasal",entitas
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Pasal apa yang berlaku untuk Orang lain yang tidak berhak?,"MATCH (p:Pasal)-[:BERLAKU_UNTUK]->(e:EntitasHukum) WHERE toLower(e.label) CONTAINS toLower('Orang lain yang tidak berhak') RETURN p.label AS pasal, p.content AS isi",entitas
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)","Pasal berapa saja yang mengatur tentang ""melakukan perbuatan hukum""?","MATCH (p:Pasal)-[:MENGATUR]->(ph:PerbuatanHukum) WHERE ph.label = ""melakukan perbuatan hukum"" RETURN p.label AS Pasal",relasi
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Apa hubungan antara Pasal 36 dan Pasal 27?,"MATCH (p1:Pasal {label: 'Pasal 36'})-[r]->(p2:Pasal {label: 'Pasal 27'}) RETURN p1.label AS dari, type(r) AS relasi, p2.label AS ke",relasi
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Sebutkan isi dari Pasal 30!,"MATCH (p:Pasal {label: 'Pasal 30'}) RETURN p.label AS pasal, p.content AS isi",hierarki
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Pasal 4 termasuk dalam bab apa?,MATCH (b:Bab)-[:MEMUAT|MEMILIKI_PASAL]->(p:Pasal {label: 'Pasal 4'}) RETURN b.label AS bab,hierarki
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Apa definisi Orang menurut UU ITE?,"MATCH (p:Pasal)-[:MENDEFINISIKAN]->(k:KonsepHukum) WHERE toLower(k.label) CONTAINS toLower('Orang') RETURN k.label AS konsep, k.content AS definisi, p.label AS pasal",definisi
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Apa kewajiban penyelenggara Tanda Tangan Elektronik menurut UU ITE?,"MATCH (p:Pasal)-[:BERLAKU_UNTUK]->(e:EntitasHukum) WHERE toLower(e.label) CONTAINS toLower('penyelenggara Tanda Tangan Elektronik') RETURN p.label AS pasal, p.content AS kewajiban",entitas
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Pasal 6 termasuk dalam bab apa?,MATCH (b:Bab)-[:MEMUAT|MEMILIKI_PASAL]->(p:Pasal {label: 'Pasal 6'}) RETURN b.label AS bab,hierarki
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Pasal 1 termasuk dalam bab apa?,MATCH (b:Bab)-[:MEMUAT|MEMILIKI_PASAL]->(p:Pasal {label: 'Pasal 1'}) RETURN b.label AS bab,hierarki
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Apa definisi Penyelenggaraan Transaksi Elektronik menurut UU ITE?,"MATCH (p:Pasal)-[:MENDEFINISIKAN]->(k:KonsepHukum) WHERE toLower(k.label) CONTAINS toLower('Penyelenggaraan Transaksi Elektronik') RETURN k.label AS konsep, k.content AS definisi, p.label AS pasal",definisi
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Pasal 14 termasuk dalam bab apa?,MATCH (b:Bab)-[:MEMUAT|MEMILIKI_PASAL]->(p:Pasal {label: 'Pasal 14'}) RETURN b.label AS bab,hierarki
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Apa saja pasal yang terdapat dalam BAB XI KETENTUAN PIDANA?,"MATCH (b {label: 'BAB XI KETENTUAN PIDANA'})-[:MEMUAT|MEMILIKI_PASAL]->(p:Pasal) RETURN p.label AS pasal, p.content AS isi",hierarki
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Pasal 9 termasuk dalam bab apa?,MATCH (b:Bab)-[:MEMUAT|MEMILIKI_PASAL]->(p:Pasal {label: 'Pasal 9'}) RETURN b.label AS bab,hierarki
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)","Jelaskan konsep ""Informasi Elektronik"" berdasarkan pasal yang mendefinisikannya.","MATCH (p:Pasal)-[:MENDEFINISIKAN]->(kh:KonsepHukum) WHERE kh.label = ""Informasi Elektronik"" RETURN p.label AS Pasal, p.content AS DefinisiPasal",definisi
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Pasal 18 termasuk dalam bab apa?,MATCH (b:Bab)-[:MEMUAT|MEMILIKI_PASAL]->(p:Pasal {label: 'Pasal 18'}) RETURN b.label AS bab,hierarki
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Sanksi apa saja yang diatur dalam Pasal 52 ayat (2)?,"MATCH (p:Pasal {label: 'Pasal 52 ayat (2)'})-[:MENETAPKAN_SANKSI]->(s:Sanksi) RETURN s.label AS sanksi, s.content AS detail",sanksi
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Pasal berapa yang mendefinisikan tentang Teknologi Informasi?,"MATCH (p:Pasal)-[:MENDEFINISIKAN]->(k:KonsepHukum) WHERE toLower(k.label) CONTAINS toLower('Teknologi Informasi') RETURN p.label AS pasal, k.label AS konsep",definisi
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Apa sanksi untuk memastikan kebenaran dan keutuhan semua informasi yang terkait dengan Sertifikat Elektronik tersebut?,"MATCH (p:Pasal)-[:MENGATUR]->(ph:PerbuatanHukum) WHERE toLower(ph.label) CONTAINS toLower('memastikan kebenaran dan keutuhan semua informasi yang terkait dengan Sertifikat Elektronik tersebut') MATCH (p)-[:MENETAPKAN_SANKSI]->(s:Sanksi) RETURN p.label AS pasal, ph.label AS perbuatan, s.label AS sanksi",sanksi
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",BAB VI memiliki berapa pasal?,"MATCH (b {label: 'BAB VI'})-[:MEMUAT|MEMILIKI_PASAL]->(p:Pasal) RETURN b.label AS bab, count(p) AS jumlah_pasal",agregasi
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Pasal berapa yang mendefinisikan tentang Komputer?,"MATCH (p:Pasal)-[:MENDEFINISIKAN]->(k:KonsepHukum) WHERE toLower(k.label) CONTAINS toLower('Komputer') RETURN p.label AS pasal, k.label AS konsep",definisi
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Jelaskan definisi dari 'Transaksi Elektronik' dan pasal mana yang memuat definisi tersebut.,"MATCH (p:Pasal)-[:MENDEFINISIKAN]->(kh:KonsepHukum {label: 'Transaksi Elektronik'}) RETURN p.label, kh.content",definisi
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Pasal mana yang merujuk ke Pasal (Bagian Kedua) Ayat (2)?,"MATCH (p1:Pasal)-[:MERUJUK]->(p2:Pasal {label: 'Pasal (Bagian Kedua) Ayat (2)'}) RETURN p1.label AS pasal_merujuk, p1.content AS isi",relasi
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Apa saja pasal yang terdapat dalam Bab V - TRANSAKSI ELEKTRONIK?,"MATCH (b {label: 'Bab V - TRANSAKSI ELEKTRONIK'})-[:MEMUAT|MEMILIKI_PASAL]->(p:Pasal) RETURN p.label AS pasal, p.content AS isi",hierarki
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Pasal 22 termasuk dalam bab apa?,MATCH (b:Bab)-[:MEMUAT|MEMILIKI_PASAL]->(p:Pasal {label: 'Pasal 22'}) RETURN b.label AS bab,hierarki
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Pasal mana yang merujuk ke Pasal 5?,"MATCH (p1:Pasal)-[:MERUJUK]->(p2:Pasal {label: 'Pasal 5'}) RETURN p1.label AS pasal_merujuk, p1.content AS isi",relasi
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Ada berapa pasal yang berlaku untuk 'Badan Usaha'?,MATCH (p:Pasal)-[:BERLAKU_UNTUK]->(e:EntitasHukum {label: 'Badan Usaha'}) RETURN COUNT(p),agregasi
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Pasal berapa yang mendefinisikan tentang Jaringan Sistem Elektronik?,"MATCH (p:Pasal)-[:MENDEFINISIKAN]->(k:KonsepHukum) WHERE toLower(k.label) CONTAINS toLower('Jaringan Sistem Elektronik') RETURN p.label AS pasal, k.label AS konsep",definisi
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Pasal berapa yang mendefinisikan tentang Kode Akses?,"MATCH (p:Pasal)-[:MENDEFINISIKAN]->(k:KonsepHukum) WHERE toLower(k.label) CONTAINS toLower('Kode Akses') RETURN p.label AS pasal, k.label AS konsep",definisi
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)","Pasal berapa yang mengatur tentang ""data pembuatan Tanda Tangan Elektronik terkait hanya kepada Penanda Tangan""?","MATCH (p:Pasal)-[:MENGATUR]->(ph:PerbuatanHukum) WHERE ph.label = ""data pembuatan Tanda Tangan Elektronik terkait hanya kepada Penanda Tangan"" RETURN p.label AS Pasal",relasi
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Pasal berapa yang mendefinisikan tentang Transaksi Elektronik?,"MATCH (p:Pasal)-[:MENDEFINISIKAN]->(k:KonsepHukum) WHERE toLower(k.label) CONTAINS toLower('Transaksi Elektronik') RETURN p.label AS pasal, k.label AS konsep",definisi
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Sebutkan isi dari Pasal 6!,"MATCH (p:Pasal {label: 'Pasal 6'}) RETURN p.label AS pasal, p.content AS isi",hierarki
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Apa saja pasal yang terdapat dalam BAB III?,"MATCH (b {label: 'BAB III'})-[:MEMUAT|MEMILIKI_PASAL]->(p:Pasal) RETURN p.label AS pasal, p.content AS isi",hierarki
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Pasal apa yang berlaku untuk Pengirim?,"MATCH (p:Pasal)-[:BERLAKU_UNTUK]->(e:EntitasHukum) WHERE toLower(e.label) CONTAINS toLower('Pengirim') RETURN p.label AS pasal, p.content AS isi",entitas
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Pasal 23 termasuk dalam bab apa?,MATCH (b:Bab)-[:MEMUAT|MEMILIKI_PASAL]->(p:Pasal {label: 'Pasal 23'}) RETURN b.label AS bab,hierarki
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",BAB XIII memiliki berapa pasal?,"MATCH (b {label: 'BAB XIII'})-[:MEMUAT|MEMILIKI_PASAL]->(p:Pasal) RETURN b.label AS bab, count(p) AS jumlah_pasal",agregasi
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Sebutkan isi dari Pasal 18!,"MATCH (p:Pasal {label: 'Pasal 18'}) RETURN p.label AS pasal, p.content AS isi",hierarki
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Sanksi apa saja yang diatur dalam Pasal 48?,"MATCH (p:Pasal {label: 'Pasal 48'})-[:MENETAPKAN_SANKSI]->(s:Sanksi) RETURN s.label AS sanksi, s.content AS detail",sanksi
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Pasal 24 termasuk dalam bab apa?,MATCH (b:Bab)-[:MEMUAT|MEMILIKI_PASAL]->(p:Pasal {label: 'Pasal 24'}) RETURN b.label AS bab,hierarki
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)","Pasal berapa saja yang menetapkan sanksi 'pidana penjara paling lama 6 (enam) tahun dan/atau denda paling banyak Rp1.000.000.000,00'?","MATCH (p:Pasal)-[:MENETAPKAN_SANKSI]->(s:Sanksi {label: 'pidana penjara paling lama 6 (enam) tahun dan/atau denda paling banyak Rp1.000.000.000,00'}) RETURN p.label",sanksi
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Sebutkan isi dari Pasal 35!,"MATCH (p:Pasal {label: 'Pasal 35'}) RETURN p.label AS pasal, p.content AS isi",hierarki
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Apa kewajiban Badan Usaha menurut UU ITE?,"MATCH (p:Pasal)-[:BERLAKU_UNTUK]->(e:EntitasHukum) WHERE toLower(e.label) CONTAINS toLower('Badan Usaha') RETURN p.label AS pasal, p.content AS kewajiban",entitas
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Perbuatan hukum apa yang diatur dalam Pasal 1?,MATCH (p:Pasal {label: 'Pasal 1'})-[:MENGATUR]->(ph:PerbuatanHukum) RETURN ph.label,relasi
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Apa definisi Tanda Tangan Elektronik menurut UU ITE?,"MATCH (p:Pasal)-[:MENDEFINISIKAN]->(k:KonsepHukum) WHERE toLower(k.label) CONTAINS toLower('Tanda Tangan Elektronik') RETURN k.label AS konsep, k.content AS definisi, p.label AS pasal",definisi
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Pasal 5 termasuk dalam bab apa?,MATCH (b:Bab)-[:MEMUAT|MEMILIKI_PASAL]->(p:Pasal {label: 'Pasal 5'}) RETURN b.label AS bab,hierarki
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Apa kewajiban masyarakat menurut UU ITE?,"MATCH (p:Pasal)-[:BERLAKU_UNTUK]->(e:EntitasHukum) WHERE toLower(e.label) CONTAINS toLower('masyarakat') RETURN p.label AS pasal, p.content AS kewajiban",entitas
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Pasal berapa yang mendefinisikan tentang Akses?,"MATCH (p:Pasal)-[:MENDEFINISIKAN]->(k:KonsepHukum) WHERE toLower(k.label) CONTAINS toLower('Akses') RETURN p.label AS pasal, k.label AS konsep",definisi
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)","Bagaimana ketentuan mengenai ""sertifikasi Transaksi Elektronik"" dan siapa saja yang terkait?","MATCH (ph:PerbuatanHukum)<-[:MENGATUR]-(p:Pasal)-[:BERLAKU_UNTUK]->(eh:EntitasHukum) WHERE ph.label = ""sertifikasi Transaksi Elektronik"" RETURN p.content AS Ketentuan, COLLECT(eh.label) AS EntitasTerkait",multi-hop
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Sanksi apa yang mungkin dikenakan kepada 'Orang' berdasarkan pasal-pasal yang berlaku untuk mereka?,MATCH (e:EntitasHukum {label: 'Orang'})<-[:BERLAKU_UNTUK]-(p:Pasal)-[:MENETAPKAN_SANKSI]->(s:Sanksi) RETURN DISTINCT s.label,sanksi
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Sebutkan isi dari Pasal 3!,"MATCH (p:Pasal {label: 'Pasal 3'}) RETURN p.label AS pasal, p.content AS isi",hierarki
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Sebutkan isi dari Pasal 5 ayat (1)!,"MATCH (p:Pasal {label: 'Pasal 5 ayat (1)'}) RETURN p.label AS pasal, p.content AS isi",hierarki
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Pasal apa yang berlaku untuk Pemberi Kuasa?,"MATCH (p:Pasal)-[:BERLAKU_UNTUK]->(e:EntitasHukum) WHERE toLower(e.label) CONTAINS toLower('Pemberi Kuasa') RETURN p.label AS pasal, p.content AS isi",entitas
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Apa kewajiban Penyelenggara Sertifikasi Elektronik menurut UU ITE?,"MATCH (p:Pasal)-[:BERLAKU_UNTUK]->(e:EntitasHukum) WHERE toLower(e.label) CONTAINS toLower('Penyelenggara Sertifikasi Elektronik') RETURN p.label AS pasal, p.content AS kewajiban",entitas
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Sebutkan isi dari Pasal 45!,"MATCH (p:Pasal {label: 'Pasal 45'}) RETURN p.label AS pasal, p.content AS isi",hierarki
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Entitas hukum apa saja yang diatur oleh Pasal 20?,"MATCH (p:Pasal)-[:BERLAKU_UNTUK]->(eh:EntitasHukum) WHERE p.label = ""Pasal 20"" RETURN eh.label AS EntitasHukum",entitas
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Pasal-pasal apa saja yang dirujuk oleh Pasal 20?,MATCH (p_source:Pasal {label: 'Pasal 20'})-[:MERUJUK]->(p_target:Pasal) RETURN p_target.label,relasi
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Konsep hukum apa yang didefinisikan oleh Pasal 2?,MATCH (p:Pasal {label: 'Pasal 2'})-[:MENDEFINISIKAN]->(kh:KonsepHukum) RETURN kh.label,definisi
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Pasal apa yang berlaku untuk subjek hukum?,"MATCH (p:Pasal)-[:BERLAKU_UNTUK]->(e:EntitasHukum) WHERE toLower(e.label) CONTAINS toLower('subjek hukum') RETURN p.label AS pasal, p.content AS isi",entitas
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Sebutkan isi dari Pasal 21!,"MATCH (p:Pasal {label: 'Pasal 21'}) RETURN p.label AS pasal, p.content AS isi",hierarki
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)",Apa hubungan antara Pasal 52 dan Pasal 27?,"MATCH (p1:Pasal {label: 'Pasal 52'})-[r]->(p2:Pasal {label: 'Pasal 27'}) RETURN p1.label AS dari, type(r) AS relasi, p2.label AS ke",relasi
+"Node Types:
+- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Bab (properties: label, content)
+- Pasal (properties: label, content)
+- Ayat (properties: label, content)
+- EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
+- PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
+- Sanksi (properties: label, content) — hukuman pidana/denda
+- KonsepHukum (properties: label, content) — konsep abstrak/definisi
+
+Relation Types:
+- MEMUAT (UndangUndang → Bab, Bab → Pasal)
+- MENGATUR (Pasal → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal → Sanksi)
+- BERLAKU_UNTUK (Pasal → EntitasHukum)
+- MERUJUK (Pasal → Pasal)
+- MENDEFINISIKAN (Pasal → KonsepHukum)","Apa definisi keadaan memaksa, kesalahan, dan/atau kelalaian pihak pengguna Sistem Elektronik menurut UU ITE?","MATCH (p:Pasal)-[:MENDEFINISIKAN]->(k:KonsepHukum) WHERE toLower(k.label) CONTAINS toLower('keadaan memaksa, kesalahan, dan/atau kelalaian pihak pengguna Sistem Elektronik') RETURN k.label AS konsep, k.content AS definisi, p.label AS pasal",definisi

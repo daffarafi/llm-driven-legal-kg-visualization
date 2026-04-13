@@ -1,0 +1,52 @@
+{
+  "document_id": "Permen_Kominfo_5_2017",
+  "total_chunks": 3,
+  "chunks": [
+    {
+      "chunk_id": "Permen_Kominfo_5_2017__chunk_000",
+      "document_id": "Permen_Kominfo_5_2017",
+      "text": "Peraturan Menteri Komunikasi dan Informatika Nomor\n26/PER/M.KOMINFO/5/2007\ntentang\nPengamanan\nPemanfaatan Jaringan Telekomunikasi Berbasis Protokol\nInternet sebagaimana telah beberapa kali diubah terakhir\ndengan Peraturan Menteri Komunikasi dan Informatika\nNomor\n24/PER/M.KOMINFO/12/2011\ntentang\nPerubahan Ketiga atas Peraturan Menteri Komunikasi\ndan Informatika Nomor 26/PER/M.KOMINFO/5/2007\ntentang\nPengamanan\nPemanfaatan\nJaringan\nTelekomunikasi Berbasis Protokol Internet;\n\nPeraturan Menteri Komunikasi dan Informatika Nomor\n01/PER/M.KOMINFO/01/2010 tentang Penyelenggaraan\nJaringan Telekomunikasi sebagaimana telah beberapa\nkali\ndiubah\nterakhir\ndengan\nPeraturan\nMenteri\nKomunikasi dan Informatika Nomor 7 Tahun 2015\ntentang\nPerubahan\nKedua\natas\nPeraturan\nMenteri\nKomunikasi\ndan\nInformatika\nNomor\n01/PER/M.KOMINFO/01/2010 tentang Penyelenggaraan\nJaringan Telekomunikasi;\n\nPeraturan Menteri Komunikasi dan Informatika Nomor 1\nTahun\ntentang\nOrganisasi\ndan\nTata\nKerja\nKementerian Komunikasi dan Informatika (Berita Negara\nRepublik Indonesia Tahun 2016 Nomor 103);\nMEMUTUSKAN:\nMenetapkan : PERATURAN MENTERI KOMUNIKASI DAN INFORMATIKA\nTENTANG\nPERUBAHAN\nKEEMPAT\nATAS\nPERATURAN\nMENTERI\nKOMUNIKASI\nDAN\nINFORMATIKA\nNOMOR\n26/PER/M.KOMINFO/5/2007\nTENTANG\nPENGAMANAN\nPEMANFAATAN JARINGAN TELEKOMUNIKASI BERBASIS\nPROTOKOL INTERNET.\nPasal I\nBeberapa ketentuan dalam peraturan Menteri Komunikasi\ndan Informatika Nomor 26/PER/M.KOMINFO/5/2007 tentang\nPengamanan Pemanfaatan Jaringan Telekomunikasi Berbasis\nProtokol Internet sebagaimana telah beberapa kali diubah\nterakhir\ndengan\nPeraturan\nMenteri\nKomunikasi\ndan\nInformatika Nomor 24/PER/M.KOMINFO/12/2011 tentang\nPerubahan Ketiga atas Peraturan Menteri Komunikasi dan\nInformatika Nomor 26/PER/M.KOMINFO/5/2007 tentang\nPengamanan Pemanfaatan Jaringan Telekomunikasi Berbasis\nProtokol Internet diubah sebagai berikut:\n1.\nKetentuan angka 12 dan angka 13 Pasal 1, diubah\nsehingga Pasal 1 berbunyi sebagai berikut:",
+      "token_count": 722,
+      "page_range": [
+        3,
+        4
+      ],
+      "parent_component_id": "Permen_Kominfo_5_2017__ANGKA_10",
+      "parent_component_type": "ANGKA",
+      "chunk_index": 0
+    },
+    {
+      "chunk_id": "Permen_Kominfo_5_2017__chunk_001",
+      "document_id": "Permen_Kominfo_5_2017",
+      "text": "Ketiga atas Peraturan Menteri Komunikasi dan\nInformatika Nomor 26/PER/M.KOMINFO/5/2007 tentang\nPengamanan Pemanfaatan Jaringan Telekomunikasi Berbasis\nProtokol Internet diubah sebagai berikut:\n1.\nKetentuan angka 12 dan angka 13 Pasal 1, diubah\nsehingga Pasal 1 berbunyi sebagai berikut:\n\nPasal 1\nDalam Peraturan Menteri ini yang dimaksud dengan:\n1.\nProtokol Internet adalah sekumpulan protokol yang\ndidefinisikan oleh Internet Engineering Task Force\n(IETF).\n2.\nJaringan Berbasis Protokol Internet adalah jaringan\ntelekomunikasi yang digunakan penyelenggaraan\njaringan\ndan\njasa\ntelekomunikasi\ndengan\nmemanfaatkan protokol internet dalam melakukan\nkegiatan telekomunikasi.\n3.\nIndonesia-Security\nIncident\nResponse\nTeam\non\nInternet Infrastructure yang selanjutnya disebut\nID-SIRTII adalah tim yang ditugaskan Menteri untuk\nmembantu\npengawasan\nkeamanan\njaringan\ntelekomunikasi berbasis protokol internet.\n4.\nRekaman Aktivitas Transaksi Koneksi (Log File)\nadalah suatu file yang mencatat akses pengguna\npada saluran akses operator penyelenggara jasa\nakses berdasarkan alamat asal Protokol Internet\n(source), alamat tujuan (destination), jenis protokol\nyang digunakan, port asal (source), port tujuan\n(destination), dan waktu (time stamp) serta durasi\nterjadinya transaksi.\n5.\nMonitoring Jaringan adalah fasilitas pemantau dan\npendeteksi pola (pattern) akses dan transaksi yang\nberpotensi mengganggu atau menyerang jaringan\nuntuk\ntujuan\nmemantau\nkondisi\njaringan,\nmemberikan peringatan dini (early warning) dan\nmelakukan tindakan pencegahan (prevent).\n6.\nPenyelenggara\nAkses\nInternet\n(Internet\nService\nProvider/ISP) adalah penyelenggara jasa multimedia\nyang menyelenggarakan jasa akses internet kepada\nmasyarakat.\n7.\nPenyelenggaraan Jasa Interkoneksi Internet (Network\nAccess\nPoint/NAP)\nadalah\npenyelenggara\njasa\nmultimedia yang menyelenggarakan jasa akses\ndan/atau\nrouting\nkepada\nPenyelenggara\nAkses\nInternet\n(Internet\nService\nProvider/ISP)\nuntuk\nmelakukan koneksi ke jaringan internet global.\n8.\nHot Spot adalah tempat tersedianya akses internet\nuntuk publik yang menggunakan teknologi nirkabel\n(wireless).\n9.\nInternet Exchange Point adalah titik dimana routing\ninternet\nnasional\nberkumpul\nuntuk\nsaling\nberinterkoneksi.\n\nPra Bayar adalah sistem pembayaran diawal periode\npemakaian melalui pembelian nomor perdana dan\npulsa isi ulang (voucher).\n\nWarung Internet yang selanjutnya disebut Warnet\nadalah re-seller dari Penyelenggara Akses Internet\n(Internet Service Provider/ISP) dan memiliki tempat\npenyediaan jasa internet kepada masyarakat.",
+      "token_count": 774,
+      "page_range": [
+        4,
+        5,
+        6
+      ],
+      "parent_component_id": "Permen_Kominfo_5_2017__PASAL_1",
+      "parent_component_type": "PASAL",
+      "chunk_index": 1
+    },
+    {
+      "chunk_id": "Permen_Kominfo_5_2017__chunk_002",
+      "document_id": "Permen_Kominfo_5_2017",
+      "text": "uk\nsaling\nberinterkoneksi.\n\nPra Bayar adalah sistem pembayaran diawal periode\npemakaian melalui pembelian nomor perdana dan\npulsa isi ulang (voucher).\n\nWarung Internet yang selanjutnya disebut Warnet\nadalah re-seller dari Penyelenggara Akses Internet\n(Internet Service Provider/ISP) dan memiliki tempat\npenyediaan jasa internet kepada masyarakat.\n\nMenteri adalah menteri yang menyelenggarakan\nurusan pemerintah di bidang komunikasi dan\ninformatika.\n\nDirektur Jenderal adalah direktur jenderal yang\nruang lingkup tugas dan fungsinya membidangi\naplikasi informatika.\n2.\nKetentuan ayat (2) Pasal 12 diubah sehingga Pasal 12\nberbunyi sebagai berikut:\n\nPasal 12\n(1)\nKetua\ndan\nWakil\nKetua\nKelompok\nPimpinan\nPelaksana/Koordinator\nID-SIRTII\nsebagaimana\ndimaksud dalam Pasal 11 ayat (1) ditetapkan melalui\nseleksi.\n(2)\nSekretaris sebagaimana dimaksud dalam Pasal 11\nayat (2) adalah staf atau pejabat di lingkungan\nDirektorat\nJenderal\nAplikasi\nInformatika\nyang\ndiangkat oleh Direktur Jenderal.\n3.\nKetentuan Pasal 17 diubah sehingga Pasal 17 berbunyi\nsebagai berikut:\n\nPasal 17\nUntuk\nkelancaran\npelaksanaan\ntugas\nID-SIRTII\nsebagaimana dimaksud dalam Pasal 6 ayat (1) dan Pasal\n16 diberikan honorarium yang dibebankan kepada\nanggaran Direktorat Jenderal Aplikasi Informatika yang\nbesarannya\nditetapkan\ndengan\nkeputusan\nDirektur\nJenderal sesuai dengan ketentuan peraturan perundang-\nundangan.\nPasal II\nPeraturan\nMenteri\nini\nmulai\nberlaku\npada\ntanggal\ndiundangkan.\nAgar\nsetiap\norang\nmengetahuinya,\nmemerintahkan\npengundangan Peraturan Menteri ini dengan penempatannya\ndalam Berita Negara Republik Indonesia.\nDitetapkan di Jakarta\npada tanggal 19 Januari 2017\nMENTERI KOMUNIKASI DAN INFORMATIKA\nREPUBLIK INDONESIA,\nttd.\nRUDIANTARA\nDiundangkan di Jakarta\npada tanggal 24 Januari 2017\nDIREKTUR JENDERAL\nPERATURAN PERUNDANG-UNDANGAN\nKEMENTERIAN HUKUM DAN HAK ASASI MANUSIA\nREPUBLIK INDONESIA,\nttd.\nWIDODO EKATJAHJANA\nBERITA NEGARA REPUBLIK INDONESIA TAHUN 2017 NOMOR 164\nSalinan sesuai dengan aslinya\nKementerian Komunikasi dan Informatika\nKepala Biro Hukum,\nBertiana Sari",
+      "token_count": 736,
+      "page_range": [
+        6,
+        7,
+        8
+      ],
+      "parent_component_id": "Permen_Kominfo_5_2017__ANGKA_12__PASAL_1",
+      "parent_component_type": "ANGKA",
+      "chunk_index": 2
+    }
+  ],
+  "stats": {
+    "min_tokens": 722,
+    "max_tokens": 774,
+    "avg_tokens": 744.0
+  }
+}

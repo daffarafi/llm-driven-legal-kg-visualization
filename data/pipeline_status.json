@@ -1,0 +1,92 @@
+{
+  "UU_11_2008": {
+    "step": 9,
+    "step_name": "load_neo4j",
+    "status": "complete",
+    "last_error": null,
+    "updated_at": "2026-04-05T19:01:45.087200",
+    "nodes": 435,
+    "edges": 553
+  },
+  "UU_19_2016": {
+    "step": 9,
+    "step_name": "load_neo4j",
+    "status": "complete",
+    "last_error": null,
+    "updated_at": "2026-04-05T19:08:08.063428",
+    "nodes": 595,
+    "edges": 795
+  },
+  "UU_27_2022": {
+    "step": 9,
+    "step_name": "load_neo4j",
+    "status": "complete",
+    "last_error": null,
+    "updated_at": "2026-04-05T19:21:02.359942",
+    "nodes": 996,
+    "edges": 1513
+  },
+  "UU_36_1999": {
+    "step": 7,
+    "step_name": "deduplicate",
+    "status": "error",
+    "last_error": "TypeError: object of type 'NoneType' has no len()",
+    "updated_at": "2026-04-05T19:32:55.259583",
+    "nodes": 0,
+    "edges": 0
+  },
+  "PP_71_2019": {
+    "step": 7,
+    "step_name": "deduplicate",
+    "status": "error",
+    "last_error": "TypeError: object of type 'NoneType' has no len()",
+    "updated_at": "2026-04-05T19:57:01.263841",
+    "nodes": 0,
+    "edges": 0
+  },
+  "PP_80_2019": {
+    "step": 5,
+    "step_name": "extract_triples",
+    "status": "running",
+    "last_error": null,
+    "updated_at": "2026-04-05T19:57:01.272915",
+    "nodes": 0,
+    "edges": 0
+  },
+  "PP_82_2012": {
+    "step": 3,
+    "step_name": "create_chunks",
+    "status": "running",
+    "last_error": null,
+    "updated_at": "2026-04-05T18:34:09.648017",
+    "nodes": 0,
+    "edges": 0
+  },
+  "Perpres_95_2018": {
+    "step": 3,
+    "step_name": "create_chunks",
+    "status": "running",
+    "last_error": null,
+    "updated_at": "2026-04-05T18:34:09.971091",
+    "nodes": 0,
+    "edges": 0
+  },
+  "Perpres_132_2022": {
+    "step": 3,
+    "step_name": "create_chunks",
+    "status": "running",
+    "last_error": null,
+    "updated_at": "2026-04-05T18:34:10.317298",
+    "nodes": 0,
+    "edges": 0
+  },
+  "Permen_Kominfo_5_2017": {
+    "step": 3,
+    "step_name": "create_chunks",
+    "status": "running",
+    "last_error": null,
+    "updated_at": "2026-04-05T18:34:10.356910",
+    "nodes": 0,
+    "edges": 0
+  }
+}

@@ -1,0 +1,5644 @@
+{
+  "document_id": "UU_27_2022",
+  "total_components": 387,
+  "component_types": {
+    "HURUF": 123,
+    "BAB": 13,
+    "ANGKA": 10,
+    "PASAL": 121,
+    "AYAT": 115,
+    "BAGIAN": 5
+  },
+  "components": [
+    {
+      "component_id": "UU_27_2022__HURUF_a",
+      "component_type": "HURUF",
+      "number": "a",
+      "title": null,
+      "content": "bahwa pelindungan data pribadi merupakan salah satu\nhak asasi manusia yang merupakan bagian dari\npelindungan diri pribadi maka perlu diberikan landasan\nhukum untuk memberikan keamanan atas data pribadi,\nberdasarkan Undang-Undang Dasar Negara Republik\nIndonesia Tahun 1945;",
+      "page_range": [
+        1,
+        1
+      ],
+      "parent_id": null,
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_b",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "bahwa pelindungan data pribadi ditujukan untuk\nmenjamin hak warga negara atas pelindungan diri\npribadi dan menumbuhkan kesadaran masyarakat\nserta menjamin pengakuan dan penghormatan atas\npentingnya pelindungan data pribadi;",
+      "page_range": [
+        1,
+        1
+      ],
+      "parent_id": null,
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_c",
+      "component_type": "HURUF",
+      "number": "c",
+      "title": null,
+      "content": "bahwa pengaturan data pribadi saat ini terdapat di\ndalam beberapa peraturan perundang-undangan maka\nuntuk meningkatkan efektivitas daLam peLaksanaan\npelindungan data pribadi diperlukan pengaturan\n. mengenai pelindungan data pribadi dalam suatu\nundang-undang;",
+      "page_range": [
+        1,
+        1
+      ],
+      "parent_id": null,
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_d",
+      "component_type": "HURUF",
+      "number": "d",
+      "title": null,
+      "content": "bahwa berdasarkan pertimbangan sebagaimana\ndimaksud dalam huruf a, huruf b, dan huruf c, perlu\nmembentuk Undang-Undang tentang Pelindungan Data\nPribadi;\nPasal 5 ayat (l), Pasal 20, Pasal 28G ayat (1), Pasal 28H\nayat (4), dan Pasal 28J Undang-Undang Dasar Negara\nRepublik Indonesia Tahun 1945;\nSK No 016999A\nDengan\nFRESIDEN\nREPUBLIK INDONESIA\nDengan Persetujuan Bersama\nDEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA\ndan\nMenetapkan\nMEMUTUSKAN:\nUNDANG-UNDANG TENTANG PELINDUNGAN DATA\nPRIBADI.",
+      "page_range": [
+        1,
+        2
+      ],
+      "parent_id": null,
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__BAB_I",
+      "component_type": "BAB",
+      "number": "I",
+      "title": "KETENTUAN UMUM Pasal I",
+      "content": "Dalam Undang-Undang ini yang dimaksud dengan:",
+      "page_range": [
+        2,
+        2
+      ],
+      "parent_id": null,
+      "children": [
+        "UU_27_2022__ANGKA_1",
+        "UU_27_2022__ANGKA_2",
+        "UU_27_2022__ANGKA_3",
+        "UU_27_2022__ANGKA_4",
+        "UU_27_2022__ANGKA_5",
+        "UU_27_2022__ANGKA_6",
+        "UU_27_2022__ANGKA_7",
+        "UU_27_2022__ANGKA_9",
+        "UU_27_2022__PASAL_2"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__ANGKA_1",
+      "component_type": "ANGKA",
+      "number": "1",
+      "title": null,
+      "content": "Data Pribadi adalah data tentang ora.ng perseorangan\nyang teridentifikasi atau dapat diidentifikasi secara\ntersendiri atau dikombinasi dengan informasi lainnya\nbaik secara langsung maupun tidak langsung melalui\nsistem elektronik atau nonelektronik.",
+      "page_range": [
+        2,
+        2
+      ],
+      "parent_id": "UU_27_2022__BAB_I",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__ANGKA_2",
+      "component_type": "ANGKA",
+      "number": "2",
+      "title": null,
+      "content": "Pelindungan Data Pribadi adalah keseluruhan upaya\nuntuk melindungi Data Pribadi dalam rangkaian\npemrosesan Data Fribadi guna menjamin hak\nkonstitusional subjek Data Pribadi.",
+      "page_range": [
+        2,
+        2
+      ],
+      "parent_id": "UU_27_2022__BAB_I",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__ANGKA_3",
+      "component_type": "ANGKA",
+      "number": "3",
+      "title": null,
+      "content": "Informasi adalah keterangan, pernyataan, gagasan,\ndan tanda-tanda yang mengandung nilai, makna, dan\npesan, baik data, fakta, maupun penjelasannya yang\ndapat dilihat, didengar, dan dibaca yang disajikan\ndalam berbagai kemasan dan format sesuai dengan\nperkembangan teknologi informasi dan komunikasi\nsecara elektronik ataupun nonelektronik.",
+      "page_range": [
+        2,
+        2
+      ],
+      "parent_id": "UU_27_2022__BAB_I",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__ANGKA_4",
+      "component_type": "ANGKA",
+      "number": "4",
+      "title": null,
+      "content": "Pengendali Data Pribadi adalah setiap orang, badan\npublik, dan organisasi internasional yang bertindak\n. sendiri-sendiri atau bersama-sama dalam menentukan\ntujuan dan melakukan kendali pemrosesan Data\nPribadi.\nSK No 017000 A",
+      "page_range": [
+        2,
+        2
+      ],
+      "parent_id": "UU_27_2022__BAB_I",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__ANGKA_5",
+      "component_type": "ANGKA",
+      "number": "5",
+      "title": null,
+      "content": "Prosesor\nPRESTDEN\nBLIK INDONESIA 5. Prosesor Data Pribadi adalah setiap orang, badan\npublik, dan organisasi internasional yang bertindak\nsendiri-sendiri atau bersama-sama dalam melakukan\npemrosesan Data Pribadi atas nama Pengendali Data\nPribadi.",
+      "page_range": [
+        2,
+        3
+      ],
+      "parent_id": "UU_27_2022__BAB_I",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__ANGKA_6",
+      "component_type": "ANGKA",
+      "number": "6",
+      "title": null,
+      "content": "Subjek Data Pribadi adalah orang perseorangan yang\npada dirinya melekat Data Pribadi.",
+      "page_range": [
+        3,
+        3
+      ],
+      "parent_id": "UU_27_2022__BAB_I",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__ANGKA_7",
+      "component_type": "ANGKA",
+      "number": "7",
+      "title": null,
+      "content": "Setiap Orang adalah orang perseorangan atau\nkorporasi.\nS. Korporasi adalah kumpulan orang dan/ atau kekayaan\nyang terorganisasi baik yang berbadan hukum\nmaupun tidak berbadan hukum.",
+      "page_range": [
+        3,
+        3
+      ],
+      "parent_id": "UU_27_2022__BAB_I",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__ANGKA_9",
+      "component_type": "ANGKA",
+      "number": "9",
+      "title": null,
+      "content": "Badan Publik adalah lembaga eksekutif, legislatif,\nyudikatif, dan badan lain yang fungsi dan tugas\npokoknya berkaitan dengan penyelenggaraan negara,\nyang sebagian atau seluruh dananya bersumber dari\nAnggaran Pendapatan dan Belanja Negara dan/ atau\nAnggaran Pendapatan dan Belanja Daerah, atau\norganisasi nonpemerintah sepanjang sebagian atau\nseluruh dananya bersumber dari Anggaran\nPendapatan dan Belanja Negara dan/ atau Anggaran\n. Pendapatan dan Belanja Daerah, sumbangan\nmasyarakat, dan/atau luar negeri.\n1O. Organisasi Internasional adalah organisasi yang diakui\nsebagai subjek hukum internasional dan mempunyai\nkapasitas untuk membuat perjanjian internasional.\n1 1. Pemerintah Pusat yang selanjutnya disebut\nPemerintah adalah Presiden Republik Indonesia yang\nmemegang kekuasaan pemerintahan Negara Republik\nIndonesia sebagaimana dimaksud dalam Undang-\nUndang Dasar Negara Republik Indonesia Tahun 1945.",
+      "page_range": [
+        3,
+        3
+      ],
+      "parent_id": "UU_27_2022__BAB_I",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_2",
+      "component_type": "PASAL",
+      "number": "2",
+      "title": null,
+      "content": "",
+      "page_range": [
+        3,
+        3
+      ],
+      "parent_id": "UU_27_2022__BAB_I",
+      "children": [
+        "UU_27_2022__AYAT_1",
+        "UU_27_2022__AYAT_2"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_1",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Undang-Undang ini berlaku untuk Setiap Orang,\nBadan Publik, dan Organisasi Internasional yang\nmelakukan perbuatan hukum sebagaimana diatur\ndalam Undang-Undang ini:",
+      "page_range": [
+        3,
+        3
+      ],
+      "parent_id": "UU_27_2022__PASAL_2",
+      "children": [
+        "UU_27_2022__HURUF_a__AYAT_1"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_a__AYAT_1",
+      "component_type": "HURUF",
+      "number": "a",
+      "title": null,
+      "content": "yang berada di wilayah hukum Negara Republik\nIndonesia; dan\nb.diluar...\nSK No 155204A\nFRESIDEN\nREPUBLIK INDONESIA b. di luar rvilayah hukum Negara Republik Indonesia,\nyang memiliki akibat hukum:",
+      "page_range": [
+        3,
+        4
+      ],
+      "parent_id": "UU_27_2022__AYAT_1",
+      "children": [
+        "UU_27_2022__ANGKA_1__AYAT_1",
+        "UU_27_2022__ANGKA_2__AYAT_1"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__ANGKA_1__AYAT_1",
+      "component_type": "ANGKA",
+      "number": "1",
+      "title": null,
+      "content": "di wilayah hukum Negara Republik Indonesia;\ndan/atau",
+      "page_range": [
+        4,
+        4
+      ],
+      "parent_id": "UU_27_2022__HURUF_a__AYAT_1",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__ANGKA_2__AYAT_1",
+      "component_type": "ANGKA",
+      "number": "2",
+      "title": null,
+      "content": "bag Subjek Data Pribadi warga negara\nIndonesia di luar wilayah hukum Negara\nRepublik Indonesia.",
+      "page_range": [
+        4,
+        4
+      ],
+      "parent_id": "UU_27_2022__HURUF_a__AYAT_1",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_2",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Undang-Undang ini tidak berlaku untuk pemrosesan\nData Pribadi oleh orang perseorangan dalam kegiatan\npribadi atau rumah tangga.",
+      "page_range": [
+        4,
+        4
+      ],
+      "parent_id": "UU_27_2022__PASAL_2",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__BAB_II",
+      "component_type": "BAB",
+      "number": "II",
+      "title": "ASAS",
+      "content": "",
+      "page_range": [
+        4,
+        4
+      ],
+      "parent_id": null,
+      "children": [
+        "UU_27_2022__PASAL_3"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_3",
+      "component_type": "PASAL",
+      "number": "3",
+      "title": null,
+      "content": "Undang-Undang ini berasaskan :\na.",
+      "page_range": [
+        4,
+        4
+      ],
+      "parent_id": "UU_27_2022__BAB_II",
+      "children": [
+        "UU_27_2022__HURUF_b__PASAL_3",
+        "UU_27_2022__HURUF_c__PASAL_3",
+        "UU_27_2022__HURUF_d__PASAL_3",
+        "UU_27_2022__HURUF_e",
+        "UU_27_2022__HURUF_f",
+        "UU_27_2022__HURUF_g",
+        "UU_27_2022__HURUF_h"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_b__PASAL_3",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "kepastian hukum;",
+      "page_range": [
+        4,
+        4
+      ],
+      "parent_id": "UU_27_2022__PASAL_3",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_c__PASAL_3",
+      "component_type": "HURUF",
+      "number": "c",
+      "title": null,
+      "content": "kepentingan umum;",
+      "page_range": [
+        4,
+        4
+      ],
+      "parent_id": "UU_27_2022__PASAL_3",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_d__PASAL_3",
+      "component_type": "HURUF",
+      "number": "d",
+      "title": null,
+      "content": "kemanfaatan;",
+      "page_range": [
+        4,
+        4
+      ],
+      "parent_id": "UU_27_2022__PASAL_3",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_e",
+      "component_type": "HURUF",
+      "number": "e",
+      "title": null,
+      "content": "kehati-hatian;",
+      "page_range": [
+        4,
+        4
+      ],
+      "parent_id": "UU_27_2022__PASAL_3",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_f",
+      "component_type": "HURUF",
+      "number": "f",
+      "title": null,
+      "content": "keseimbangan;",
+      "page_range": [
+        4,
+        4
+      ],
+      "parent_id": "UU_27_2022__PASAL_3",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_g",
+      "component_type": "HURUF",
+      "number": "g",
+      "title": null,
+      "content": "pertanggungjawaban; dan",
+      "page_range": [
+        4,
+        4
+      ],
+      "parent_id": "UU_27_2022__PASAL_3",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_h",
+      "component_type": "HURUF",
+      "number": "h",
+      "title": null,
+      "content": "kerahasiaan.",
+      "page_range": [
+        4,
+        4
+      ],
+      "parent_id": "UU_27_2022__PASAL_3",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__BAB_III",
+      "component_type": "BAB",
+      "number": "III",
+      "title": "JENIS DATA PRIBADI",
+      "content": "",
+      "page_range": [
+        4,
+        4
+      ],
+      "parent_id": null,
+      "children": [
+        "UU_27_2022__PASAL_4"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_4",
+      "component_type": "PASAL",
+      "number": "4",
+      "title": null,
+      "content": "(l) Data Pribadi terdiri atas:",
+      "page_range": [
+        4,
+        4
+      ],
+      "parent_id": "UU_27_2022__BAB_III",
+      "children": [
+        "UU_27_2022__HURUF_a__PASAL_4",
+        "UU_27_2022__HURUF_b__PASAL_4",
+        "UU_27_2022__HURUF_b__PASAL_4",
+        "UU_27_2022__HURUF_c__PASAL_4",
+        "UU_27_2022__HURUF_d__PASAL_4",
+        "UU_27_2022__HURUF_e__PASAL_4",
+        "UU_27_2022__HURUF_f__PASAL_4",
+        "UU_27_2022__HURUF_g__PASAL_4",
+        "UU_27_2022__AYAT_3"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_a__PASAL_4",
+      "component_type": "HURUF",
+      "number": "a",
+      "title": null,
+      "content": "Data Pribadi yang bersifat spesifik; dan",
+      "page_range": [
+        4,
+        4
+      ],
+      "parent_id": "UU_27_2022__PASAL_4",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_b__PASAL_4",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "Data Pribadi yang bersifat umum.\nSK No 155205 A\n(2lData...\nPRESIDEN\nREPI.JBLIK INDONESIA l2l Data Pribadi yang bersifat spesifik sebagaimana\ndimaksud pada ayat (l) huruf a meliputi:\n. a. data dan informasi kesehatan;",
+      "page_range": [
+        4,
+        5
+      ],
+      "parent_id": "UU_27_2022__PASAL_4",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_b__PASAL_4",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "data biometrik;",
+      "page_range": [
+        5,
+        5
+      ],
+      "parent_id": "UU_27_2022__PASAL_4",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_c__PASAL_4",
+      "component_type": "HURUF",
+      "number": "c",
+      "title": null,
+      "content": "data genetika;",
+      "page_range": [
+        5,
+        5
+      ],
+      "parent_id": "UU_27_2022__PASAL_4",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_d__PASAL_4",
+      "component_type": "HURUF",
+      "number": "d",
+      "title": null,
+      "content": "catatan kejahatan;",
+      "page_range": [
+        5,
+        5
+      ],
+      "parent_id": "UU_27_2022__PASAL_4",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_e__PASAL_4",
+      "component_type": "HURUF",
+      "number": "e",
+      "title": null,
+      "content": "data anak;",
+      "page_range": [
+        5,
+        5
+      ],
+      "parent_id": "UU_27_2022__PASAL_4",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_f__PASAL_4",
+      "component_type": "HURUF",
+      "number": "f",
+      "title": null,
+      "content": "data ker.rangan pribadi; dan/ atau",
+      "page_range": [
+        5,
+        5
+      ],
+      "parent_id": "UU_27_2022__PASAL_4",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_g__PASAL_4",
+      "component_type": "HURUF",
+      "number": "g",
+      "title": null,
+      "content": "data lainnya sesuai dengan ketentuan peraturan\nperundang-undangan.",
+      "page_range": [
+        5,
+        5
+      ],
+      "parent_id": "UU_27_2022__PASAL_4",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_3",
+      "component_type": "AYAT",
+      "number": "3",
+      "title": null,
+      "content": "Data Pribadi yang bersifat umum sebagaimana\ndimaksud pada ayat (l) huruf b meliputi:",
+      "page_range": [
+        5,
+        5
+      ],
+      "parent_id": "UU_27_2022__PASAL_4",
+      "children": [
+        "UU_27_2022__HURUF_a__AYAT_3",
+        "UU_27_2022__HURUF_b__AYAT_3"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_a__AYAT_3",
+      "component_type": "HURUF",
+      "number": "a",
+      "title": null,
+      "content": "nama lengkap;",
+      "page_range": [
+        5,
+        5
+      ],
+      "parent_id": "UU_27_2022__AYAT_3",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_b__AYAT_3",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "jenis kelamin;\nc.\nd.\ne.\nf.\nagama;\nstatus perkawinan; dan/ atau\nData Pribadi yang dikombinasikan\nmengidentifikasi seseorang.\nuntuk",
+      "page_range": [
+        5,
+        5
+      ],
+      "parent_id": "UU_27_2022__AYAT_3",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__BAB_IV",
+      "component_type": "BAB",
+      "number": "IV",
+      "title": "HAK SUBJEK DATA PRIBADI",
+      "content": "",
+      "page_range": [
+        5,
+        5
+      ],
+      "parent_id": null,
+      "children": [
+        "UU_27_2022__PASAL_5",
+        "UU_27_2022__PASAL_6",
+        "UU_27_2022__PASAL_8",
+        "UU_27_2022__PASAL_9",
+        "UU_27_2022__PASAL_10",
+        "UU_27_2022__PASAL_11",
+        "UU_27_2022__PASAL_12",
+        "UU_27_2022__PASAL_13",
+        "UU_27_2022__PASAL_14",
+        "UU_27_2022__PASAL_15"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_5",
+      "component_type": "PASAL",
+      "number": "5",
+      "title": null,
+      "content": "Subjek Data Pribadi berhak mendapatkan Informasi\ntentang kejelasan identitas, dasar kepentingan hukum,\ntujuan permintaan dan penggu.naan Data Pribadi, dan\nakuntabilitas pihak yang meminta Data Pribadi.",
+      "page_range": [
+        5,
+        5
+      ],
+      "parent_id": "UU_27_2022__BAB_IV",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_6",
+      "component_type": "PASAL",
+      "number": "6",
+      "title": null,
+      "content": "Subjek Data Pribadi berhak melengkapi, memperbarui,\ndan/atau memperbaiki kesalahan dan/atau\nketidakakuratan Data Pribadi tentang dirinya sesuai\ndengan tujuan pemrosesan Data Pribadi.\nSK No 155206 A\nPasal 7. . .\nPRESIDEN\nUBLIK INDONESlA Pasal 7\nSubjek Data Pribadi berhak mendapatkan akses dan\nmemperoleh salinan Data Pribadi tentang dirinya sesuai\ndengan ketentuan peraturan perundang-undangan.",
+      "page_range": [
+        5,
+        6
+      ],
+      "parent_id": "UU_27_2022__BAB_IV",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_8",
+      "component_type": "PASAL",
+      "number": "8",
+      "title": null,
+      "content": "Subjek Data Pribadi berhak untuk mengakhiri\npemrosesan, menghapus, dan/ atau memusnahkan Data\nPribadi tentang dirinya sesuai dengan ketentuan\nperaturan perundang-undangan.",
+      "page_range": [
+        6,
+        6
+      ],
+      "parent_id": "UU_27_2022__BAB_IV",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_9",
+      "component_type": "PASAL",
+      "number": "9",
+      "title": null,
+      "content": "Subjek Data Pribadi berhak menarik kembali persetqjuan\npemrosesan Data Pribadi tentang dirinya yang telah\ndiberikan kepada Pengendali Data Pribadi.",
+      "page_range": [
+        6,
+        6
+      ],
+      "parent_id": "UU_27_2022__BAB_IV",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_10",
+      "component_type": "PASAL",
+      "number": "10",
+      "title": null,
+      "content": "",
+      "page_range": [
+        6,
+        6
+      ],
+      "parent_id": "UU_27_2022__BAB_IV",
+      "children": [
+        "UU_27_2022__AYAT_1__PASAL_10",
+        "UU_27_2022__AYAT_2__PASAL_10"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_1__PASAL_10",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Subjek Data Pribadi berhak untuk mengajukan\nkeberatan atas tindakan pengambilan keputusan yang\nhanya didasarkan pada pemrosesan secara otomatis,\ntermasuk pemrofilan, yang menimbulkan akibat\nhukum atau berdampak signifrkan pada Subjek Data\nPribadi.",
+      "page_range": [
+        6,
+        6
+      ],
+      "parent_id": "UU_27_2022__PASAL_10",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_2__PASAL_10",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Ketentuan lebih lanjut mengenai pengajuan keberatan\natas pemrosesan secara otomatis sebagaimana\ndimaksud pada ayat (l) diatur dalam Peraturan\nPemerintah.",
+      "page_range": [
+        6,
+        6
+      ],
+      "parent_id": "UU_27_2022__PASAL_10",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_11",
+      "component_type": "PASAL",
+      "number": "11",
+      "title": null,
+      "content": "Subjek Data Pribadi berhak menunda atau membatasi\npemrosesan Data Pribadi secara\nsesual\ndengan tujuan pemrosesan Data Pribadi.",
+      "page_range": [
+        6,
+        6
+      ],
+      "parent_id": "UU_27_2022__BAB_IV",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_12",
+      "component_type": "PASAL",
+      "number": "12",
+      "title": null,
+      "content": "(I) Subjek Data Pribadi berhak menggugat dan menerima\nganti rugi atas pelanggaran pemrosesan Data Pribadi\ntentang dirinya sesuai dengan ketentuan peraturan\nperundang-undangan.",
+      "page_range": [
+        6,
+        6
+      ],
+      "parent_id": "UU_27_2022__BAB_IV",
+      "children": [
+        "UU_27_2022__AYAT_2__PASAL_12"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_2__PASAL_12",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Ketentuan\nSK No 155207A\nPRESlDEN\nREPUBLIK INDONES]A (2) Ketentuan lebih lanjut mengenai pelanggaran\npemrosesan Data Pribadi dan tata cara pengenaan\nganti rugi sebagaimana dimaksud pada ayat (1) diatur\ndalam Peraturan Pemerintah.",
+      "page_range": [
+        6,
+        7
+      ],
+      "parent_id": "UU_27_2022__PASAL_12",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_13",
+      "component_type": "PASAL",
+      "number": "13",
+      "title": null,
+      "content": "",
+      "page_range": [
+        7,
+        7
+      ],
+      "parent_id": "UU_27_2022__BAB_IV",
+      "children": [
+        "UU_27_2022__AYAT_1__PASAL_13",
+        "UU_27_2022__AYAT_2__PASAL_13",
+        "UU_27_2022__AYAT_3__PASAL_13"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_1__PASAL_13",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Subjek Data Pribadi berhak mendapatkan dan/atau\nmenggunakan Data Pribadi tentang dirinya dari\nPengendali Data Pribadi dalam bentuk yang sesuai\ndengan struktur dan/ atau format yang lazim\ndigunakan atau dapat dibaca oleh sistem elektronik.",
+      "page_range": [
+        7,
+        7
+      ],
+      "parent_id": "UU_27_2022__PASAL_13",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_2__PASAL_13",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Subjek Data Pribadi berhak\ndan\nData Pribadi tentang dirinya ke\nPengendali Data Pribadi lainnya, sepanjang sistem\nyang digunakan dapat saling berkomunikasi secara\naman sesuai dengan prinsip Pelindungan Data Pribadi\nberdasarkan Undang-Undang ini.",
+      "page_range": [
+        7,
+        7
+      ],
+      "parent_id": "UU_27_2022__PASAL_13",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_3__PASAL_13",
+      "component_type": "AYAT",
+      "number": "3",
+      "title": null,
+      "content": "Ketentuan lebih lanjut mengenai hak Subjek Data\nPribadi untuk menggunakan dan\nData\nPribadi sebagaimana dimaksud pada ayat (2) diatur\ndalam Peraturan Pemerintah.",
+      "page_range": [
+        7,
+        7
+      ],
+      "parent_id": "UU_27_2022__PASAL_13",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_14",
+      "component_type": "PASAL",
+      "number": "14",
+      "title": null,
+      "content": "Pelaksanaan hak Subjek Data Pribadi sebagaimana\ndimaksud dalam Pasal 6 sampai dengan Pasal 11 diajukan\nmelalui permohonan tercatat yang disampaikan secara\nelektronik atau nonelektronik kepada Pengendali Data\nPribadi.",
+      "page_range": [
+        7,
+        7
+      ],
+      "parent_id": "UU_27_2022__BAB_IV",
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_27_2022__PASAL_14",
+          "source_text": "sebagaimana\ndimaksud dalam Pasal 6",
+          "match_position": 36,
+          "target_article": "Pasal 6"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_15",
+      "component_type": "PASAL",
+      "number": "15",
+      "title": null,
+      "content": "",
+      "page_range": [
+        7,
+        7
+      ],
+      "parent_id": "UU_27_2022__BAB_IV",
+      "children": [
+        "UU_27_2022__AYAT_1__PASAL_15",
+        "UU_27_2022__AYAT_2__PASAL_15"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_1__PASAL_15",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Hak-hak Subjek Data Pribadi sebagaimana dimaksud\ndalam Pasal 8, Pasal 9, Pasal 1O ayat (1), Pasal 11, dan\nPasal 13 ayat (1) dan ayat (2) dikecualikan untuk:",
+      "page_range": [
+        7,
+        7
+      ],
+      "parent_id": "UU_27_2022__PASAL_15",
+      "children": [
+        "UU_27_2022__HURUF_a__PASAL_15",
+        "UU_27_2022__HURUF_b__PASAL_15",
+        "UU_27_2022__HURUF_c__PASAL_15"
+      ],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_27_2022__AYAT_1__PASAL_15",
+          "source_text": "sebagaimana dimaksud\ndalam Pasal 8",
+          "match_position": 28,
+          "target_article": "Pasal 8"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_a__PASAL_15",
+      "component_type": "HURUF",
+      "number": "a",
+      "title": null,
+      "content": "kepentingan pertahanan dan keamanan nasional;",
+      "page_range": [
+        7,
+        7
+      ],
+      "parent_id": "UU_27_2022__AYAT_1__PASAL_15",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_b__PASAL_15",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "kepentingan proses penegakan hukum;",
+      "page_range": [
+        7,
+        7
+      ],
+      "parent_id": "UU_27_2022__AYAT_1__PASAL_15",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_c__PASAL_15",
+      "component_type": "HURUF",
+      "number": "c",
+      "title": null,
+      "content": "kepentingan umum dalam rangka penyelenggaraan\nnegara;\nd.kepentingan...\nSK No 155208 A\nPRESIDEN\nREPUELIK INDONESIA d. kepentingan pengawasan sektor jasa keuangan,\nmoneter, sistem pembayaran, dan stabilitas sistem\nkeuangan yang dilakukan dalam rangka\npenyelenggaraan negara; atau\n' e. kepentingan statistik dan penelitian ilmiah.",
+      "page_range": [
+        7,
+        8
+      ],
+      "parent_id": "UU_27_2022__AYAT_1__PASAL_15",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_2__PASAL_15",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Pengecualian sebagaimana dimaksud pada ayat (1)\ndilaksanakan hanya dalam rangka pelaksanaan\nketentuan Undang-Undang.",
+      "page_range": [
+        8,
+        8
+      ],
+      "parent_id": "UU_27_2022__PASAL_15",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__BAB_V",
+      "component_type": "BAB",
+      "number": "V",
+      "title": "PEMROSESAN DATA PRIBADI",
+      "content": "",
+      "page_range": [
+        8,
+        8
+      ],
+      "parent_id": null,
+      "children": [
+        "UU_27_2022__PASAL_16",
+        "UU_27_2022__PASAL_17"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_16",
+      "component_type": "PASAL",
+      "number": "16",
+      "title": null,
+      "content": "",
+      "page_range": [
+        8,
+        8
+      ],
+      "parent_id": "UU_27_2022__BAB_V",
+      "children": [
+        "UU_27_2022__AYAT_1__PASAL_16",
+        "UU_27_2022__AYAT_2__PASAL_16",
+        "UU_27_2022__AYAT_3__PASAL_16"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_1__PASAL_16",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Pemrosesan Data Pribadi meliputi:\n' a. pemerolehan dan pengumpulan;",
+      "page_range": [
+        8,
+        8
+      ],
+      "parent_id": "UU_27_2022__PASAL_16",
+      "children": [
+        "UU_27_2022__HURUF_b__PASAL_16",
+        "UU_27_2022__HURUF_c__PASAL_16",
+        "UU_27_2022__HURUF_d__PASAL_16",
+        "UU_27_2022__HURUF_e__PASAL_16",
+        "UU_27_2022__HURUF_f__PASAL_16"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_b__PASAL_16",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "pengolahan dan penganalisisan;",
+      "page_range": [
+        8,
+        8
+      ],
+      "parent_id": "UU_27_2022__AYAT_1__PASAL_16",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_c__PASAL_16",
+      "component_type": "HURUF",
+      "number": "c",
+      "title": null,
+      "content": "penyimpanan;",
+      "page_range": [
+        8,
+        8
+      ],
+      "parent_id": "UU_27_2022__AYAT_1__PASAL_16",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_d__PASAL_16",
+      "component_type": "HURUF",
+      "number": "d",
+      "title": null,
+      "content": "perbaikan dan pembaruan;",
+      "page_range": [
+        8,
+        8
+      ],
+      "parent_id": "UU_27_2022__AYAT_1__PASAL_16",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_e__PASAL_16",
+      "component_type": "HURUF",
+      "number": "e",
+      "title": null,
+      "content": "penampilan,\npengumuman,\ntransfer,\npenyebarluasan, atau pengungkapan; dan/ atau",
+      "page_range": [
+        8,
+        8
+      ],
+      "parent_id": "UU_27_2022__AYAT_1__PASAL_16",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_f__PASAL_16",
+      "component_type": "HURUF",
+      "number": "f",
+      "title": null,
+      "content": "penghapusan atau pemusnahan.",
+      "page_range": [
+        8,
+        8
+      ],
+      "parent_id": "UU_27_2022__AYAT_1__PASAL_16",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_2__PASAL_16",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Pemrosesan Data Pribadi sebagaimana dimaksud pada\nayat (l) dilakukan sesuai dengan prinsip Pelindungan\nData Pribadi meliputi:\na.\nData Pribadi dilakukan secara\nterbatas dan spesifik, sah secara hukum, dan\ntransparan;",
+      "page_range": [
+        8,
+        8
+      ],
+      "parent_id": "UU_27_2022__PASAL_16",
+      "children": [
+        "UU_27_2022__HURUF_b__PASAL_16",
+        "UU_27_2022__HURUF_c__PASAL_16",
+        "UU_27_2022__HURUF_d__PASAL_16",
+        "UU_27_2022__HURUF_f__PASAL_16",
+        "UU_27_2022__HURUF_g__PASAL_16",
+        "UU_27_2022__HURUF_h__PASAL_16"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_b__PASAL_16",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "pemrosesan Data Pribadi dilakukan sesuai dengan\ntujuannya;",
+      "page_range": [
+        8,
+        8
+      ],
+      "parent_id": "UU_27_2022__AYAT_2__PASAL_16",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_c__PASAL_16",
+      "component_type": "HURUF",
+      "number": "c",
+      "title": null,
+      "content": "pemrosesan Data Pribadi dilakukan dengan\nmenjamin hak Subjek Data Pribadi;",
+      "page_range": [
+        8,
+        8
+      ],
+      "parent_id": "UU_27_2022__AYAT_2__PASAL_16",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_d__PASAL_16",
+      "component_type": "HURUF",
+      "number": "d",
+      "title": null,
+      "content": "pemrosesan Data Pribadi dilakukan secara akurat,\nlengkap, tidak menyesatkan, mutakhir, dan dapat\ndipertan ggungi awabkan ;\nSK No 155209A\ne.pemrosesan...\nPRESIDEN\nBLIK INDONESIA e. pemrosesan Data Pribadi dilakukan dengan\nmelindungi keamanan Data Pribadi dari\npengaksesan yang tidak sah, pengungkapan yang\ntidak sah, pengubahan yar:g tidak sah,\npenghilangan Data Pribadi;",
+      "page_range": [
+        8,
+        9
+      ],
+      "parent_id": "UU_27_2022__AYAT_2__PASAL_16",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_f__PASAL_16",
+      "component_type": "HURUF",
+      "number": "f",
+      "title": null,
+      "content": "pemrosesan Data Pribadi dilakukan dengan\nmemberitahukan tujuan dan aktivitas pemrosesan,\nserta kegagalan Pelindungan Data Pribadi;",
+      "page_range": [
+        9,
+        9
+      ],
+      "parent_id": "UU_27_2022__AYAT_2__PASAL_16",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_g__PASAL_16",
+      "component_type": "HURUF",
+      "number": "g",
+      "title": null,
+      "content": "Data Pribadi dimusnahkan dan/atau dihapus\nsetelah masa retensi beralhir atau berdasarkan\npermintaan Subjek Data Pribadi, kecuali\nditentukan lain oleh peraturan perundang-\nundangan; dan",
+      "page_range": [
+        9,
+        9
+      ],
+      "parent_id": "UU_27_2022__AYAT_2__PASAL_16",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_h__PASAL_16",
+      "component_type": "HURUF",
+      "number": "h",
+      "title": null,
+      "content": "pemrosesan Data Pribadi dilakukan secara\nbertanggung jawab dan dapat dibulrtikan secara\njelas.",
+      "page_range": [
+        9,
+        9
+      ],
+      "parent_id": "UU_27_2022__AYAT_2__PASAL_16",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_3__PASAL_16",
+      "component_type": "AYAT",
+      "number": "3",
+      "title": null,
+      "content": "Ketentuan lebih lanjut mengenai pelaksanaan\npemrosesan Data Pribadi sebagaimana dimaksud pada\nayat (1) diatur dalam Peraturan Pemerintah.",
+      "page_range": [
+        9,
+        9
+      ],
+      "parent_id": "UU_27_2022__PASAL_16",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_17",
+      "component_type": "PASAL",
+      "number": "17",
+      "title": null,
+      "content": "(l) Pemasangan alat pemroses atau pengolah data visual\ndi tempat umum dan/ atau pada fasilitas pelayanan\npublik dilakukan dengan ketentuan:",
+      "page_range": [
+        9,
+        9
+      ],
+      "parent_id": "UU_27_2022__BAB_V",
+      "children": [
+        "UU_27_2022__HURUF_a__PASAL_17",
+        "UU_27_2022__HURUF_b__PASAL_17",
+        "UU_27_2022__HURUF_c__PASAL_17",
+        "UU_27_2022__AYAT_2__PASAL_17",
+        "UU_27_2022__AYAT_1__PASAL_17",
+        "UU_27_2022__AYAT_2__PASAL_17"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_a__PASAL_17",
+      "component_type": "HURUF",
+      "number": "a",
+      "title": null,
+      "content": "untuk tujuan keamanan, pencegahan bencana,\ndan/atau\npengumpulan, analisis, dan pengaturan Informasi\nlalu lintas;",
+      "page_range": [
+        9,
+        9
+      ],
+      "parent_id": "UU_27_2022__PASAL_17",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_b__PASAL_17",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "harus\nInformasi pada area yang\ntelah dipasang alat pemroses atau pengolah data\nvisual; dan",
+      "page_range": [
+        9,
+        9
+      ],
+      "parent_id": "UU_27_2022__PASAL_17",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_c__PASAL_17",
+      "component_type": "HURUF",
+      "number": "c",
+      "title": null,
+      "content": "tidak digunakan untuk\nseseorang.",
+      "page_range": [
+        9,
+        9
+      ],
+      "parent_id": "UU_27_2022__PASAL_17",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_2__PASAL_17",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Ketentuan sebagaimana dimaksud pada ayat (1)\nhuruf b dan huruf c dikecualikan untuk pencegahan\ntindak pidana dan proses penegakan hukum sesuai\ndengan ketentuan peraturan perundang-undangan.\nperusakan, dan/atau\nlalu lintas atau\nSK No 155344A\nPasal 18. . .\nPRESIDEN\nBLIK INDONESIA Pasal 18",
+      "page_range": [
+        9,
+        10
+      ],
+      "parent_id": "UU_27_2022__PASAL_17",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_1__PASAL_17",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Pemrosesan Data Pribadi dapat dilalrukan oleh 2 (dua)\natau lebih Pengendali Data Pribadi.",
+      "page_range": [
+        10,
+        10
+      ],
+      "parent_id": "UU_27_2022__PASAL_17",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_2__PASAL_17",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Dalam hal Pemrosesan Data Pribadi dilakukan oleh\n2 (dua) atau lebih Pengendali Data Pribadi harus\nmemenuhi syarat minimal:",
+      "page_range": [
+        10,
+        10
+      ],
+      "parent_id": "UU_27_2022__PASAL_17",
+      "children": [
+        "UU_27_2022__HURUF_a__PASAL_17",
+        "UU_27_2022__HURUF_b__PASAL_17",
+        "UU_27_2022__HURUF_c__PASAL_17"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_a__PASAL_17",
+      "component_type": "HURUF",
+      "number": "a",
+      "title": null,
+      "content": "terdapat perjanjian antara para Pengendali Data\nPribadi yang memuat peran, tanggung jawab, dan\nhubungan antar-Pengendali Data Pribadi;",
+      "page_range": [
+        10,
+        10
+      ],
+      "parent_id": "UU_27_2022__AYAT_2__PASAL_17",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_b__PASAL_17",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "terdapat tujuan yang saling berkaitan dan cara\npemrosesan Data Pribadi yang ditentukan secara\nbersama; dan",
+      "page_range": [
+        10,
+        10
+      ],
+      "parent_id": "UU_27_2022__AYAT_2__PASAL_17",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_c__PASAL_17",
+      "component_type": "HURUF",
+      "number": "c",
+      "title": null,
+      "content": "terdapat narahubung yang ditunjuk secara\nbersama-sama.",
+      "page_range": [
+        10,
+        10
+      ],
+      "parent_id": "UU_27_2022__AYAT_2__PASAL_17",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__BAB_VI",
+      "component_type": "BAB",
+      "number": "VI",
+      "title": "KEWAJIBAN PENGENDALI DATA PRIBADI DAN PROSESOR DATA PRIBADI DAI,AM PEMROSESAN DATA PRIBADI",
+      "content": "",
+      "page_range": [
+        10,
+        10
+      ],
+      "parent_id": null,
+      "children": [
+        "UU_27_2022__BAGIAN_Kesatu",
+        "UU_27_2022__BAGIAN_Kedua",
+        "UU_27_2022__BAGIAN_Ketiga"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__BAGIAN_Kesatu",
+      "component_type": "BAGIAN",
+      "number": "Kesatu",
+      "title": "Umum",
+      "content": "",
+      "page_range": [
+        10,
+        10
+      ],
+      "parent_id": "UU_27_2022__BAB_VI",
+      "children": [
+        "UU_27_2022__PASAL_19"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_19",
+      "component_type": "PASAL",
+      "number": "19",
+      "title": null,
+      "content": "Pengendali Data Pribadi dan Prosesor Data Pribadi meliputi:",
+      "page_range": [
+        10,
+        10
+      ],
+      "parent_id": "UU_27_2022__BAGIAN_Kesatu",
+      "children": [
+        "UU_27_2022__HURUF_a__PASAL_19",
+        "UU_27_2022__HURUF_b__PASAL_19",
+        "UU_27_2022__HURUF_c__PASAL_19"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_a__PASAL_19",
+      "component_type": "HURUF",
+      "number": "a",
+      "title": null,
+      "content": "Setiap Orang;",
+      "page_range": [
+        10,
+        10
+      ],
+      "parent_id": "UU_27_2022__PASAL_19",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_b__PASAL_19",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "Badan Publik; dan",
+      "page_range": [
+        10,
+        10
+      ],
+      "parent_id": "UU_27_2022__PASAL_19",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_c__PASAL_19",
+      "component_type": "HURUF",
+      "number": "c",
+      "title": null,
+      "content": "Organisasi Internasional.",
+      "page_range": [
+        10,
+        10
+      ],
+      "parent_id": "UU_27_2022__PASAL_19",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__BAGIAN_Kedua",
+      "component_type": "BAGIAN",
+      "number": "Kedua",
+      "title": "Kewajiban Pengendali Data Pribadi",
+      "content": "",
+      "page_range": [
+        10,
+        10
+      ],
+      "parent_id": "UU_27_2022__BAB_VI",
+      "children": [
+        "UU_27_2022__PASAL_20",
+        "UU_27_2022__PASAL_21",
+        "UU_27_2022__PASAL_23",
+        "UU_27_2022__PASAL_24",
+        "UU_27_2022__PASAL_26",
+        "UU_27_2022__PASAL_28",
+        "UU_27_2022__PASAL_29",
+        "UU_27_2022__PASAL_30",
+        "UU_27_2022__PASAL_31",
+        "UU_27_2022__PASAL_32",
+        "UU_27_2022__PASAL_33",
+        "UU_27_2022__PASAL_34",
+        "UU_27_2022__PASAL_35",
+        "UU_27_2022__PASAL_36",
+        "UU_27_2022__PASAL_37",
+        "UU_27_2022__PASAL_38",
+        "UU_27_2022__PASAL_39",
+        "UU_27_2022__PASAL_40",
+        "UU_27_2022__PASAL_41",
+        "UU_27_2022__PASAL_42",
+        "UU_27_2022__PASAL_43",
+        "UU_27_2022__PASAL_44",
+        "UU_27_2022__PASAL_46",
+        "UU_27_2022__PASAL_47",
+        "UU_27_2022__PASAL_48",
+        "UU_27_2022__PASAL_49",
+        "UU_27_2022__PASAL_50"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_20",
+      "component_type": "PASAL",
+      "number": "20",
+      "title": null,
+      "content": "",
+      "page_range": [
+        10,
+        10
+      ],
+      "parent_id": "UU_27_2022__BAGIAN_Kedua",
+      "children": [
+        "UU_27_2022__AYAT_1__PASAL_20",
+        "UU_27_2022__AYAT_2__PASAL_20"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_1__PASAL_20",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Pengendali Data Pribadi wajib memiliki dasar\npemrosesan Data Pribadi.",
+      "page_range": [
+        10,
+        10
+      ],
+      "parent_id": "UU_27_2022__PASAL_20",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_2__PASAL_20",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Dasar...\nSK No l552ll A\nPRESIDEN\nREPUBLIK INDONESIA (2) Dasar pernmsesan Data Pribadi sebagaimana dimaksud\npada ayat (1) meliputi:",
+      "page_range": [
+        10,
+        11
+      ],
+      "parent_id": "UU_27_2022__PASAL_20",
+      "children": [
+        "UU_27_2022__HURUF_a__PASAL_20",
+        "UU_27_2022__HURUF_b__PASAL_20",
+        "UU_27_2022__HURUF_c__PASAL_20",
+        "UU_27_2022__HURUF_d__PASAL_20",
+        "UU_27_2022__HURUF_e__PASAL_20",
+        "UU_27_2022__HURUF_f__PASAL_20"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_a__PASAL_20",
+      "component_type": "HURUF",
+      "number": "a",
+      "title": null,
+      "content": "persetujuan yang sah secara eksplisit dari Subjek\nData Pribadi untuk 1 (sahr) atau beberapa tujuan\ntertentu yang telah disampait<an oleh Pengendali\nData Pribadi kepada Subjek Data Pribadi;",
+      "page_range": [
+        11,
+        11
+      ],
+      "parent_id": "UU_27_2022__AYAT_2__PASAL_20",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_b__PASAL_20",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "pemenuhan kewajiban perjanjian dalam hal Subjek\nData Pribadi merupakan salah satu pihak atau\nuntuk memenuhi permintaan Subjek Data Pribadi\npada saat akan melalrukan pedanjian;",
+      "page_range": [
+        11,
+        11
+      ],
+      "parent_id": "UU_27_2022__AYAT_2__PASAL_20",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_c__PASAL_20",
+      "component_type": "HURUF",
+      "number": "c",
+      "title": null,
+      "content": "pemenuhan kewajiban hukum dari Pengendali Data\nPribadi sesuai dengan ketentuan peraturan\nperundang-undangan;",
+      "page_range": [
+        11,
+        11
+      ],
+      "parent_id": "UU_27_2022__AYAT_2__PASAL_20",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_d__PASAL_20",
+      "component_type": "HURUF",
+      "number": "d",
+      "title": null,
+      "content": "pemenuhan pelindungan kepentingan vital Subjek\nData Pribadi;",
+      "page_range": [
+        11,
+        11
+      ],
+      "parent_id": "UU_27_2022__AYAT_2__PASAL_20",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_e__PASAL_20",
+      "component_type": "HURUF",
+      "number": "e",
+      "title": null,
+      "content": "pelaksanaan tugas dalam rangka kepentJngan\numum, pelayanan publik, atau pelaksanaan\n.\nkewenangan Pengendali Data Pribadi berdasarkan\nperaturan perundang-undangan; dan/atau",
+      "page_range": [
+        11,
+        11
+      ],
+      "parent_id": "UU_27_2022__AYAT_2__PASAL_20",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_f__PASAL_20",
+      "component_type": "HURUF",
+      "number": "f",
+      "title": null,
+      "content": "pemenuhan kepentingan yang sah lainnya dengan\nmemperhatikan tujuan, kebututran, dan\nkeseimbangan kepentingan Pengendali Data Pribadi\ndan hak Subjek Data Pribadi.",
+      "page_range": [
+        11,
+        11
+      ],
+      "parent_id": "UU_27_2022__AYAT_2__PASAL_20",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_21",
+      "component_type": "PASAL",
+      "number": "21",
+      "title": null,
+      "content": "",
+      "page_range": [
+        11,
+        11
+      ],
+      "parent_id": "UU_27_2022__BAGIAN_Kedua",
+      "children": [
+        "UU_27_2022__AYAT_1__PASAL_21",
+        "UU_27_2022__AYAT_2__PASAL_21",
+        "UU_27_2022__AYAT_2__PASAL_21",
+        "UU_27_2022__AYAT_1__PASAL_21",
+        "UU_27_2022__AYAT_2__PASAL_21",
+        "UU_27_2022__AYAT_3__PASAL_21",
+        "UU_27_2022__AYAT_5"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_1__PASAL_21",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Dalam hal pemrosesan Data Pribadi berdasarkan\npersetujuan sebagaimana dimaksud dalam Pasal 2O ayat\n(21 huruf a, Pengendali Data Pribadi wajib\nmenyampaikan Informasi mengenai:",
+      "page_range": [
+        11,
+        11
+      ],
+      "parent_id": "UU_27_2022__PASAL_21",
+      "children": [
+        "UU_27_2022__HURUF_a__PASAL_21",
+        "UU_27_2022__HURUF_b__PASAL_21",
+        "UU_27_2022__HURUF_c__PASAL_21",
+        "UU_27_2022__HURUF_d__PASAL_21",
+        "UU_27_2022__HURUF_e__PASAL_21",
+        "UU_27_2022__HURUF_f__PASAL_21"
+      ],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_27_2022__AYAT_1__PASAL_21",
+          "source_text": "sebagaimana dimaksud dalam Pasal 2O",
+          "match_position": 58,
+          "target_article": "Pasal 2O"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_a__PASAL_21",
+      "component_type": "HURUF",
+      "number": "a",
+      "title": null,
+      "content": "legalitas dari pemrosesan Data Pribadi;",
+      "page_range": [
+        11,
+        11
+      ],
+      "parent_id": "UU_27_2022__AYAT_1__PASAL_21",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_b__PASAL_21",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "tujuan pemrosesan Data Pribadi;",
+      "page_range": [
+        11,
+        11
+      ],
+      "parent_id": "UU_27_2022__AYAT_1__PASAL_21",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_c__PASAL_21",
+      "component_type": "HURUF",
+      "number": "c",
+      "title": null,
+      "content": "jenis dan relevansi Data Pribadi yang akan diproses;",
+      "page_range": [
+        11,
+        11
+      ],
+      "parent_id": "UU_27_2022__AYAT_1__PASAL_21",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_d__PASAL_21",
+      "component_type": "HURUF",
+      "number": "d",
+      "title": null,
+      "content": "jangka waktu retensi dokumen yang memuat Data\nPribadi;",
+      "page_range": [
+        11,
+        11
+      ],
+      "parent_id": "UU_27_2022__AYAT_1__PASAL_21",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_e__PASAL_21",
+      "component_type": "HURUF",
+      "number": "e",
+      "title": null,
+      "content": "rincian mengenai Informasi yang",
+      "page_range": [
+        11,
+        11
+      ],
+      "parent_id": "UU_27_2022__AYAT_1__PASAL_21",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_f__PASAL_21",
+      "component_type": "HURUF",
+      "number": "f",
+      "title": null,
+      "content": "jangka waktu pemrosesan Data Pribadi; dan\nC. hak Subjek Data Pribadi.\nSK No l552l2A",
+      "page_range": [
+        11,
+        11
+      ],
+      "parent_id": "UU_27_2022__AYAT_1__PASAL_21",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_2__PASAL_21",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Dalam\nPRESIEIEN\nREPUBLIK INOONESIA\n-t2-",
+      "page_range": [
+        11,
+        12
+      ],
+      "parent_id": "UU_27_2022__PASAL_21",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_2__PASAL_21",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Dalam hal terdapat perubahan Informasi sebagaimana\ndimaksud pada ayat (1), Pengendali Data Pribadi wajib\n. memberitahukan kepada Subjek Data Pribadi sebelum\nterjadi perubahan Informasi.\nPasa722",
+      "page_range": [
+        12,
+        12
+      ],
+      "parent_id": "UU_27_2022__PASAL_21",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_1__PASAL_21",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Persetujuan pemrosesan Data Pribadi dilakukan\nmelalui persetujuan tertulis atau terekam.",
+      "page_range": [
+        12,
+        12
+      ],
+      "parent_id": "UU_27_2022__PASAL_21",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_2__PASAL_21",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Persetqiuan sebagaimana dimaksud pada ayat (1)\ndapat disampaikan secara elektronik atau\nnonelektronik.",
+      "page_range": [
+        12,
+        12
+      ],
+      "parent_id": "UU_27_2022__PASAL_21",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_3__PASAL_21",
+      "component_type": "AYAT",
+      "number": "3",
+      "title": null,
+      "content": "Persetqjuan sebagaimana dimaksud pada ayat (1)\nmempunyai kekuatan hukum yang sama.\n(4). Dalam hal persetqluan sebagaimana dimaksud pada\nayat (1) memuat tujuan lain, permintaan persetqjuan\nharus memenuhi ketentuan:",
+      "page_range": [
+        12,
+        12
+      ],
+      "parent_id": "UU_27_2022__PASAL_21",
+      "children": [
+        "UU_27_2022__HURUF_a__PASAL_21",
+        "UU_27_2022__HURUF_b__PASAL_21",
+        "UU_27_2022__HURUF_c__PASAL_21"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_a__PASAL_21",
+      "component_type": "HURUF",
+      "number": "a",
+      "title": null,
+      "content": "dapat dibedakan secara jelas dengan hal lainnya;",
+      "page_range": [
+        12,
+        12
+      ],
+      "parent_id": "UU_27_2022__AYAT_3__PASAL_21",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_b__PASAL_21",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "dibuat dengan forrnat yang dapat dipahami dan\nmudah diakses; dan",
+      "page_range": [
+        12,
+        12
+      ],
+      "parent_id": "UU_27_2022__AYAT_3__PASAL_21",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_c__PASAL_21",
+      "component_type": "HURUF",
+      "number": "c",
+      "title": null,
+      "content": "menggunalan bahasa yang sederhana dan jelas.",
+      "page_range": [
+        12,
+        12
+      ],
+      "parent_id": "UU_27_2022__AYAT_3__PASAL_21",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_5",
+      "component_type": "AYAT",
+      "number": "5",
+      "title": null,
+      "content": "Persetqjuan yang tidak memenuhi ketentuan\nsebagaimana dimaksud pada ayat (1) dan ayat (4)\ndinyatakan batal demi hukum.\n'",
+      "page_range": [
+        12,
+        12
+      ],
+      "parent_id": "UU_27_2022__PASAL_21",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_23",
+      "component_type": "PASAL",
+      "number": "23",
+      "title": null,
+      "content": "Klausul perjanjian yang di dalamnya terdapat permintaan\npemrosesan Data Pribadi yang tidak memuat persetqjuan\nyang sah secara eksplisit dari Subjek Data Pribadi\ndinyatakan batal demi hukum.",
+      "page_range": [
+        12,
+        12
+      ],
+      "parent_id": "UU_27_2022__BAGIAN_Kedua",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_24",
+      "component_type": "PASAL",
+      "number": "24",
+      "title": null,
+      "content": "Dalam melakukan pemrosesan Data Pribadi, Pengendali\nData Pribadi wajib menunjukkan bukti persetqjuan yang\ntelah diberikan oleh Subjek Data Pribadi.\nSK No 155213 A\nPasal 25...\nPRESIOEN\nREPUBLIK INDONES]A Pasal 25",
+      "page_range": [
+        12,
+        13
+      ],
+      "parent_id": "UU_27_2022__BAGIAN_Kedua",
+      "children": [
+        "UU_27_2022__AYAT_1__PASAL_24",
+        "UU_27_2022__AYAT_2__PASAL_24"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_1__PASAL_24",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Pemrosesan Data Pribadi anak\nkhusus.",
+      "page_range": [
+        13,
+        13
+      ],
+      "parent_id": "UU_27_2022__PASAL_24",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_2__PASAL_24",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Pemrosesan Data Pribadi anak sebagaimana dimaksud\npada ayat (1) wajib mendapat persetqjuan dari orang\ntua anak dan/ atau wali anak sesuai dengan ketentuan\nperaturan perundang-undangan.",
+      "page_range": [
+        13,
+        13
+      ],
+      "parent_id": "UU_27_2022__PASAL_24",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_26",
+      "component_type": "PASAL",
+      "number": "26",
+      "title": null,
+      "content": "",
+      "page_range": [
+        13,
+        13
+      ],
+      "parent_id": "UU_27_2022__BAGIAN_Kedua",
+      "children": [
+        "UU_27_2022__AYAT_1__PASAL_26",
+        "UU_27_2022__AYAT_2__PASAL_26",
+        "UU_27_2022__AYAT_3__PASAL_26"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_1__PASAL_26",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Pemrosesan Data Pribadi\ndisabilitas\n' diselenggarakan secara khusus.\nsecara\ndisabilitas\ndilakukan",
+      "page_range": [
+        13,
+        13
+      ],
+      "parent_id": "UU_27_2022__PASAL_26",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_2__PASAL_26",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Pemrosesan Data Pribadi penyandang\nsebagaimana dimaksud pada ayat (1)\nmelalui komunikasi dengan\ncara\ntertentu sesuai dengan ketentuan\nundangan.",
+      "page_range": [
+        13,
+        13
+      ],
+      "parent_id": "UU_27_2022__PASAL_26",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_3__PASAL_26",
+      "component_type": "AYAT",
+      "number": "3",
+      "title": null,
+      "content": "Pemrosesalr Data Pribadi penyandang disabilitas\nsebagaimana dimaksud pada ayat (2) wajib mendapat\npersetujuan dari penyandang disabilitas dan/ atau wali\npenyandang disabilitas sesuai dengan ketentuan\nperaturan perundang-undangan.\nPasal2T\nPengendali Data Pribadi wajib melakukan pemrosesan\nData Pribadi secara terbatas dan spesifik, sah secara\nhukum, dan transparan.",
+      "page_range": [
+        13,
+        13
+      ],
+      "parent_id": "UU_27_2022__PASAL_26",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_28",
+      "component_type": "PASAL",
+      "number": "28",
+      "title": null,
+      "content": "Pengendali Data Pribadi wajib melakukan pemrosesan\nData Pribadi sesuai dengan tujuan pemrosesan Data\nPribadi.\n.",
+      "page_range": [
+        13,
+        13
+      ],
+      "parent_id": "UU_27_2022__BAGIAN_Kedua",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_29",
+      "component_type": "PASAL",
+      "number": "29",
+      "title": null,
+      "content": "",
+      "page_range": [
+        13,
+        13
+      ],
+      "parent_id": "UU_27_2022__BAGIAN_Kedua",
+      "children": [
+        "UU_27_2022__AYAT_1__PASAL_29",
+        "UU_27_2022__AYAT_2__PASAL_29"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_1__PASAL_29",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Pengendali Data Pribadi wajib memastikan akurasi,\nkelengkapan, dan konsistensi Data Pribadi sesuai\ndengan ketentuan peraturan perundang-undangan.\nSK No l55214A",
+      "page_range": [
+        13,
+        13
+      ],
+      "parent_id": "UU_27_2022__PASAL_29",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_2__PASAL_29",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Dalam\nPRESIDEN\nREPTIBLIK INDONESlA (2) Dalam memastikan akurasi, kelengkapan, dan\nkonsistensi Data Pribadi sebagaimana dimaksud pada\nayat (l) Pengendali Data Pribadi wajib melakukan\nverifikasi.",
+      "page_range": [
+        13,
+        14
+      ],
+      "parent_id": "UU_27_2022__PASAL_29",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_30",
+      "component_type": "PASAL",
+      "number": "30",
+      "title": null,
+      "content": "",
+      "page_range": [
+        14,
+        14
+      ],
+      "parent_id": "UU_27_2022__BAGIAN_Kedua",
+      "children": [
+        "UU_27_2022__AYAT_1__PASAL_30",
+        "UU_27_2022__AYAT_2__PASAL_30"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_1__PASAL_30",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Pengendali Data Pribadi wajib memperbarui dan/ atau\n' memperbaiki kesalahan dan/atau ketidakakuratan\nData Fribadi paling lambat 3 x 24 (tiga kali dua puluh\nempat) jam terhitung sejak Pengendali Data Pribadi\nmenerima permintaan pembaruan dan/atau\nperbaikan Data Pribadi.",
+      "page_range": [
+        14,
+        14
+      ],
+      "parent_id": "UU_27_2022__PASAL_30",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_2__PASAL_30",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Pengendali Data Pribadi wajib memberitahukan hasil\npembaruan dan/atau perbaikan Data Pribadi kepada\nSubjek Data Pribadi.",
+      "page_range": [
+        14,
+        14
+      ],
+      "parent_id": "UU_27_2022__PASAL_30",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_31",
+      "component_type": "PASAL",
+      "number": "31",
+      "title": null,
+      "content": "Pengendali Data Pribadi wajib melakukan perekaman\nterhadap seluruh kegiatan pemrosesan Data Pribadi.",
+      "page_range": [
+        14,
+        14
+      ],
+      "parent_id": "UU_27_2022__BAGIAN_Kedua",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_32",
+      "component_type": "PASAL",
+      "number": "32",
+      "title": null,
+      "content": "",
+      "page_range": [
+        14,
+        14
+      ],
+      "parent_id": "UU_27_2022__BAGIAN_Kedua",
+      "children": [
+        "UU_27_2022__AYAT_1__PASAL_32",
+        "UU_27_2022__AYAT_2__PASAL_32"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_1__PASAL_32",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Pengendali Data Pribadi wajib memberikan akses\nkepada Subjek Data Pribadi terhadap Data Pribadi\nyang diproses beserta rekam jejak pemrosesan Data\nPribadi sesuai dengan jangka waktu penyimpanan\nData Pribadi.",
+      "page_range": [
+        14,
+        14
+      ],
+      "parent_id": "UU_27_2022__PASAL_32",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_2__PASAL_32",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Akses sebagaimana dimaksud pada ayat (1) diberikan\npaling lambat 3 x 24 (tiga kali dua puluh empat) jam\nterhitung sejak Pengendali Data Pribadi menerima\npermintaan akses.",
+      "page_range": [
+        14,
+        14
+      ],
+      "parent_id": "UU_27_2022__PASAL_32",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_33",
+      "component_type": "PASAL",
+      "number": "33",
+      "title": null,
+      "content": "Pengendali Data Pribadi wajib menolak memberikan akses\nperubahan terhadap Data Fribadi kepada Subjek Data\nPribadi dalam hal:",
+      "page_range": [
+        14,
+        14
+      ],
+      "parent_id": "UU_27_2022__BAGIAN_Kedua",
+      "children": [
+        "UU_27_2022__HURUF_a__PASAL_33",
+        "UU_27_2022__HURUF_b__PASAL_33"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_a__PASAL_33",
+      "component_type": "HURUF",
+      "number": "a",
+      "title": null,
+      "content": "membahayakan keamanan, kesehatan fisik, atau\nkesehatan mental Subjek Data Pribadi dan/ atau orang\nlain;",
+      "page_range": [
+        14,
+        14
+      ],
+      "parent_id": "UU_27_2022__PASAL_33",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_b__PASAL_33",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "berdampak\nSK No 155215 A\nPRESIDEN\nREPUBLIK INDONESIA b. berdampak pada pengungkapan Data Pribadi milik\nc\norang lain; dan/ atau\nbertentangan dengan kepentingan pertahanan dan\nkeamanan nasional.",
+      "page_range": [
+        14,
+        15
+      ],
+      "parent_id": "UU_27_2022__PASAL_33",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_34",
+      "component_type": "PASAL",
+      "number": "34",
+      "title": null,
+      "content": "",
+      "page_range": [
+        15,
+        15
+      ],
+      "parent_id": "UU_27_2022__BAGIAN_Kedua",
+      "children": [
+        "UU_27_2022__AYAT_1__PASAL_34",
+        "UU_27_2022__AYAT_2__PASAL_34",
+        "UU_27_2022__AYAT_3__PASAL_34"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_1__PASAL_34",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Pengendali Data Pribadi wajib melakukan penilaian\ndampak Pelindungan Data Pribadi dalam hal\npemrosesan Data Pribadi memiliki potensi risiko tinggi\nterhadap Subjek Data Pribadi.",
+      "page_range": [
+        15,
+        15
+      ],
+      "parent_id": "UU_27_2022__PASAL_34",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_2__PASAL_34",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Pemrosesan Data Pribadi memiliki potensi risiko tinggi\nsebagaimana dimaksud pada ayat (1) meliputi:",
+      "page_range": [
+        15,
+        15
+      ],
+      "parent_id": "UU_27_2022__PASAL_34",
+      "children": [
+        "UU_27_2022__HURUF_a__PASAL_34",
+        "UU_27_2022__HURUF_b__PASAL_34",
+        "UU_27_2022__HURUF_c__PASAL_34",
+        "UU_27_2022__HURUF_d__PASAL_34",
+        "UU_27_2022__HURUF_e__PASAL_34",
+        "UU_27_2022__HURUF_f__PASAL_34",
+        "UU_27_2022__HURUF_g__PASAL_34"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_a__PASAL_34",
+      "component_type": "HURUF",
+      "number": "a",
+      "title": null,
+      "content": "pengambilan keputusan secara otomatis yang\nmemiliki akibat hukum atau dampak yang\n.\nsignifikan terhadap Subjek Data Pribadi;",
+      "page_range": [
+        15,
+        15
+      ],
+      "parent_id": "UU_27_2022__AYAT_2__PASAL_34",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_b__PASAL_34",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "pemrosesan atas Data Pribadi yang bersifat\nspesifik;",
+      "page_range": [
+        15,
+        15
+      ],
+      "parent_id": "UU_27_2022__AYAT_2__PASAL_34",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_c__PASAL_34",
+      "component_type": "HURUF",
+      "number": "c",
+      "title": null,
+      "content": "pemrosesan Data Pribadi dalam skala besar;",
+      "page_range": [
+        15,
+        15
+      ],
+      "parent_id": "UU_27_2022__AYAT_2__PASAL_34",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_d__PASAL_34",
+      "component_type": "HURUF",
+      "number": "d",
+      "title": null,
+      "content": "pemrosesan Data Pribadi untuk kegiatan evaluasi,\npenskoran, atau pemantauan yang sistematis\nterhadap Subjek Data Pribadi;",
+      "page_range": [
+        15,
+        15
+      ],
+      "parent_id": "UU_27_2022__AYAT_2__PASAL_34",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_e__PASAL_34",
+      "component_type": "HURUF",
+      "number": "e",
+      "title": null,
+      "content": "pemrosesan Data Pribadi untuk kegiatan\npencocokan atau penggabungan sekelompok data;",
+      "page_range": [
+        15,
+        15
+      ],
+      "parent_id": "UU_27_2022__AYAT_2__PASAL_34",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_f__PASAL_34",
+      "component_type": "HURUF",
+      "number": "f",
+      "title": null,
+      "content": "penggunaan teknologi baru dalam pemrosesan\nData Pribadi; dan/ atau",
+      "page_range": [
+        15,
+        15
+      ],
+      "parent_id": "UU_27_2022__AYAT_2__PASAL_34",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_g__PASAL_34",
+      "component_type": "HURUF",
+      "number": "g",
+      "title": null,
+      "content": "pemrosescrn Data Pribadi yang membatasi\npelaksanaan hak Subjek Data Pribadi.",
+      "page_range": [
+        15,
+        15
+      ],
+      "parent_id": "UU_27_2022__AYAT_2__PASAL_34",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_3__PASAL_34",
+      "component_type": "AYAT",
+      "number": "3",
+      "title": null,
+      "content": "Ketentuan lebih lanjut mengenai penilaian dampak\nPelindungan Data Pribadi diatur dalam Peraturan\nPemerintah.",
+      "page_range": [
+        15,
+        15
+      ],
+      "parent_id": "UU_27_2022__PASAL_34",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_35",
+      "component_type": "PASAL",
+      "number": "35",
+      "title": null,
+      "content": "Pengendali Data Pribadi wajib melindungi dan memastikan\nkeamanan Data Pribadi yang diprosesnya, dengan\nmelakukan:",
+      "page_range": [
+        15,
+        15
+      ],
+      "parent_id": "UU_27_2022__BAGIAN_Kedua",
+      "children": [
+        "UU_27_2022__HURUF_a__PASAL_35",
+        "UU_27_2022__HURUF_b__PASAL_35"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_a__PASAL_35",
+      "component_type": "HURUF",
+      "number": "a",
+      "title": null,
+      "content": "pen]rusunan\nSK No 155216A\nPRESIDEN\nREPUBLIK INDONESIA a. penyusunan dan penerapan langkah teknis\n' operasional untuk melindungi Data Pribadi dari\ngangguan pemrosesan Data Pribadi yang bertentangan\ndengan ketentuan peraturan perundang-undangan;\ndan",
+      "page_range": [
+        15,
+        16
+      ],
+      "parent_id": "UU_27_2022__PASAL_35",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_b__PASAL_35",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "penentuan tingkat keamanan Data Pribadi dengan\nmemperhatikan sifat dan risiko dari Data Pribadi yang\nharus dilindungi dalam pemrosesan Data Pribadi.",
+      "page_range": [
+        16,
+        16
+      ],
+      "parent_id": "UU_27_2022__PASAL_35",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_36",
+      "component_type": "PASAL",
+      "number": "36",
+      "title": null,
+      "content": "Dalam melakukan pemrosesan Data Pribadi, Pengendali\nData Pribadi wajib menjaga kerahasiaan Data Pribadi.",
+      "page_range": [
+        16,
+        16
+      ],
+      "parent_id": "UU_27_2022__BAGIAN_Kedua",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_37",
+      "component_type": "PASAL",
+      "number": "37",
+      "title": null,
+      "content": "Pengendali Data Pribadi wajib melakukan pengawasan\nterhadap setiap pihak yang terlibat dalam pemrosesan\nData Pribadi di bawah kendali Pengendali Data Pribadi.",
+      "page_range": [
+        16,
+        16
+      ],
+      "parent_id": "UU_27_2022__BAGIAN_Kedua",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_38",
+      "component_type": "PASAL",
+      "number": "38",
+      "title": null,
+      "content": "Pengendali Data Pribadi wajib melindungi Data Pribadi\ndari pemrosesan yang tidak sah.",
+      "page_range": [
+        16,
+        16
+      ],
+      "parent_id": "UU_27_2022__BAGIAN_Kedua",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_39",
+      "component_type": "PASAL",
+      "number": "39",
+      "title": null,
+      "content": "",
+      "page_range": [
+        16,
+        16
+      ],
+      "parent_id": "UU_27_2022__BAGIAN_Kedua",
+      "children": [
+        "UU_27_2022__AYAT_1__PASAL_39",
+        "UU_27_2022__AYAT_2__PASAL_39",
+        "UU_27_2022__AYAT_3__PASAL_39"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_1__PASAL_39",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Pengendali Data Pribadi wajib mencegah Data Pribadi\ndiakses secara tidak sah.",
+      "page_range": [
+        16,
+        16
+      ],
+      "parent_id": "UU_27_2022__PASAL_39",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_2__PASAL_39",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Pencegahan sebagaimana dimaksud pada ayat (1)\ndilakukan dengan\nsistem keamanan\nterhadap Data Pribadi yang diproses dan/ atau\nmemproses Data Pribadi\nsistem\nelektronik secara andal, aman, dan bertanggung\njawab.",
+      "page_range": [
+        16,
+        16
+      ],
+      "parent_id": "UU_27_2022__PASAL_39",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_3__PASAL_39",
+      "component_type": "AYAT",
+      "number": "3",
+      "title": null,
+      "content": "Pencegahan sebagaimana dimaksud pada ayat (21\ndilakukan sesuai dengan ketentuan peraturan\nperundang-undangan.\nSK No l552l7A\nPasal 40...\nPRESIDEN\nREPUBLIK INDONESIA\n-t7-",
+      "page_range": [
+        16,
+        17
+      ],
+      "parent_id": "UU_27_2022__PASAL_39",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_40",
+      "component_type": "PASAL",
+      "number": "40",
+      "title": null,
+      "content": "",
+      "page_range": [
+        17,
+        17
+      ],
+      "parent_id": "UU_27_2022__BAGIAN_Kedua",
+      "children": [
+        "UU_27_2022__AYAT_1__PASAL_40",
+        "UU_27_2022__AYAT_2__PASAL_40"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_1__PASAL_40",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Pengendali Data Pribadi wajib menghentikan\npemrosesan Data Pribadi dalam hal Subjek Data\nPribadi menarik kembali persetujuan pemrosesan Data\nPribadi.",
+      "page_range": [
+        17,
+        17
+      ],
+      "parent_id": "UU_27_2022__PASAL_40",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_2__PASAL_40",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Penghentian pemrosesan Data Pribadi sebagaimana\ndimaksud pada ayat (1) dilakukan paling lambat 3 x 24\n(tiga kali dua puluh empat) jam terhitung sejak\nPengendali Data Pribadi menerima permintaan\npenarikan kembdi persetqiuan pemrosesan Data\nPribadi.",
+      "page_range": [
+        17,
+        17
+      ],
+      "parent_id": "UU_27_2022__PASAL_40",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_41",
+      "component_type": "PASAL",
+      "number": "41",
+      "title": null,
+      "content": "",
+      "page_range": [
+        17,
+        17
+      ],
+      "parent_id": "UU_27_2022__BAGIAN_Kedua",
+      "children": [
+        "UU_27_2022__AYAT_1__PASAL_41",
+        "UU_27_2022__AYAT_2__PASAL_41",
+        "UU_27_2022__AYAT_3__PASAL_41"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_1__PASAL_41",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Pengendali Data Pribadi wajib melakukan penundaan\ndan pembatasan pemrosesan Data Fribadi baik\nsebagian maupun seluruhnya paling lambat 3 x 24\n(tiga kali dua puluh empat) jam terhitung sejak\nPengendali Data Pribadi menerima permintaan\npenundaan dan pembatasan pemrosesan Data Pribadi.",
+      "page_range": [
+        17,
+        17
+      ],
+      "parent_id": "UU_27_2022__PASAL_41",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_2__PASAL_41",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Penundaan dan pembatasan pemrosesan Data Pribadi\nsebagaimana dimaksud pada ayat (1) dikecualikan\n. dalam hal:\na\nperaturan perundang-\ndilakukan\npenundaan dan\nPribadi;\npemrosesan Data",
+      "page_range": [
+        17,
+        17
+      ],
+      "parent_id": "UU_27_2022__PASAL_41",
+      "children": [
+        "UU_27_2022__HURUF_b__PASAL_41",
+        "UU_27_2022__HURUF_c__PASAL_41"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_b__PASAL_41",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "dapat membahayakan keselamatan pihak lain;\ndan/ata.u",
+      "page_range": [
+        17,
+        17
+      ],
+      "parent_id": "UU_27_2022__AYAT_2__PASAL_41",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_c__PASAL_41",
+      "component_type": "HURUF",
+      "number": "c",
+      "title": null,
+      "content": "Subjek Data Pribadi terikat perjanjian tertulis\ndengan Pengendali Data Pribadi yang tidak\ndilalrukan\ndan\npembatasan pemrosesan Data Pribadi.",
+      "page_range": [
+        17,
+        17
+      ],
+      "parent_id": "UU_27_2022__AYAT_2__PASAL_41",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_3__PASAL_41",
+      "component_type": "AYAT",
+      "number": "3",
+      "title": null,
+      "content": "Pengendali Data Pribadi wajib memberitahukan telah\ndilaksanakan penundaan dan\npembatasan\npemrosesan Data Pribadi kepada Subjek Data Pribadi.",
+      "page_range": [
+        17,
+        17
+      ],
+      "parent_id": "UU_27_2022__PASAL_41",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_42",
+      "component_type": "PASAL",
+      "number": "42",
+      "title": null,
+      "content": "",
+      "page_range": [
+        17,
+        17
+      ],
+      "parent_id": "UU_27_2022__BAGIAN_Kedua",
+      "children": [
+        "UU_27_2022__AYAT_1__PASAL_42",
+        "UU_27_2022__AYAT_2__PASAL_42"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_1__PASAL_42",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Pengendali Data Pribadi wajib mengakhiri pemrosesan\nData Pribadi dalam hal:",
+      "page_range": [
+        17,
+        17
+      ],
+      "parent_id": "UU_27_2022__PASAL_42",
+      "children": [
+        "UU_27_2022__HURUF_a__PASAL_42",
+        "UU_27_2022__HURUF_b__PASAL_42",
+        "UU_27_2022__HURUF_c__PASAL_42"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_a__PASAL_42",
+      "component_type": "HURUF",
+      "number": "a",
+      "title": null,
+      "content": "telah...\nterdapat ketentuan\nundangan yang tidak\nSK No l552l8A\nPRESIDEN\nUBLIK INDONESIA a. telah mencapai masa retensi;",
+      "page_range": [
+        17,
+        18
+      ],
+      "parent_id": "UU_27_2022__AYAT_1__PASAL_42",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_b__PASAL_42",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "tujuan pemrosesan Data Pribadi telah tercapai; atau",
+      "page_range": [
+        18,
+        18
+      ],
+      "parent_id": "UU_27_2022__AYAT_1__PASAL_42",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_c__PASAL_42",
+      "component_type": "HURUF",
+      "number": "c",
+      "title": null,
+      "content": "terdapat permintaan dari Subjek Data Pribadi.",
+      "page_range": [
+        18,
+        18
+      ],
+      "parent_id": "UU_27_2022__AYAT_1__PASAL_42",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_2__PASAL_42",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Pengakhiran pemrosesan Data Pribadi sebagaimana\ndimaksud pada ayat (1) dilakukan sesuai dengan\nketentuan peraturan perundang-undangan.",
+      "page_range": [
+        18,
+        18
+      ],
+      "parent_id": "UU_27_2022__PASAL_42",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_43",
+      "component_type": "PASAL",
+      "number": "43",
+      "title": null,
+      "content": "(l) Pengendali Data Pribadi wajib menghapus Data Pribadi\ndalam hal:",
+      "page_range": [
+        18,
+        18
+      ],
+      "parent_id": "UU_27_2022__BAGIAN_Kedua",
+      "children": [
+        "UU_27_2022__HURUF_a__PASAL_43",
+        "UU_27_2022__HURUF_b__PASAL_43",
+        "UU_27_2022__HURUF_c__PASAL_43",
+        "UU_27_2022__HURUF_d__PASAL_43"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_a__PASAL_43",
+      "component_type": "HURUF",
+      "number": "a",
+      "title": null,
+      "content": "Data Pribadi tidak lagi diperlukan untuk\npencapaian tujuan pemrosesan Data Pribadi;",
+      "page_range": [
+        18,
+        18
+      ],
+      "parent_id": "UU_27_2022__PASAL_43",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_b__PASAL_43",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "Subjek Data Pribadi telah melakukan penarikan\nkembali persetqiuan pemrosesan Data Pribadi;",
+      "page_range": [
+        18,
+        18
+      ],
+      "parent_id": "UU_27_2022__PASAL_43",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_c__PASAL_43",
+      "component_type": "HURUF",
+      "number": "c",
+      "title": null,
+      "content": "terdapat permintaan dari Subjek Data Pribadi; atau",
+      "page_range": [
+        18,
+        18
+      ],
+      "parent_id": "UU_27_2022__PASAL_43",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_d__PASAL_43",
+      "component_type": "HURUF",
+      "number": "d",
+      "title": null,
+      "content": "Data Pribadi diperoleh dan/ atau diproses dengan\ncara melawan hukum.\n(21\nData Pribadi sebagaimana dimaksud\npada ayat (1) dilakukan sesuai dengan ketentuan\nperaturan perundang-undangan.",
+      "page_range": [
+        18,
+        18
+      ],
+      "parent_id": "UU_27_2022__PASAL_43",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_44",
+      "component_type": "PASAL",
+      "number": "44",
+      "title": null,
+      "content": "",
+      "page_range": [
+        18,
+        18
+      ],
+      "parent_id": "UU_27_2022__BAGIAN_Kedua",
+      "children": [
+        "UU_27_2022__AYAT_1__PASAL_44",
+        "UU_27_2022__AYAT_2__PASAL_44"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_1__PASAL_44",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Pengendali Data Pribadi wajib memusnahkan Data\nPribadi dalam hal:",
+      "page_range": [
+        18,
+        18
+      ],
+      "parent_id": "UU_27_2022__PASAL_44",
+      "children": [
+        "UU_27_2022__HURUF_a__PASAL_44",
+        "UU_27_2022__HURUF_c__PASAL_44",
+        "UU_27_2022__HURUF_d__PASAL_44"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_a__PASAL_44",
+      "component_type": "HURUF",
+      "number": "a",
+      "title": null,
+      "content": "telah habis masa retensinya dan berketerangan\ndimusnahkan berdasarkarr jadwal retensi arsip;\n. b. terdapat permintaan dari Subjek Data Pribadi;",
+      "page_range": [
+        18,
+        18
+      ],
+      "parent_id": "UU_27_2022__AYAT_1__PASAL_44",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_c__PASAL_44",
+      "component_type": "HURUF",
+      "number": "c",
+      "title": null,
+      "content": "tidak berkaitan dengan penyelesaian proses\nhukum suatu perkara; dan/ atau",
+      "page_range": [
+        18,
+        18
+      ],
+      "parent_id": "UU_27_2022__AYAT_1__PASAL_44",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_d__PASAL_44",
+      "component_type": "HURUF",
+      "number": "d",
+      "title": null,
+      "content": "Data Pribadi diperoleh dan/ atau diproses dengan\ncara melawan hukum.",
+      "page_range": [
+        18,
+        18
+      ],
+      "parent_id": "UU_27_2022__AYAT_1__PASAL_44",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_2__PASAL_44",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Pemusnahan Data Pribadi sebagaimana dimaksud\npada ayat (1) dilakukan sesuai dengan ketentuan\nperaturan perundang-undangan.\nPasal 45. . .\nSK No l552l9A\nPRES]DEN\nREPUBLIK INDONESIA Pasal 45\nPengendali Data Pribadi wajib memberitahukan\npenghapusan dan/atau pemusnahan Data Pribadi kepada\nSubjek Data Pribadi.",
+      "page_range": [
+        18,
+        19
+      ],
+      "parent_id": "UU_27_2022__PASAL_44",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_46",
+      "component_type": "PASAL",
+      "number": "46",
+      "title": null,
+      "content": "",
+      "page_range": [
+        19,
+        19
+      ],
+      "parent_id": "UU_27_2022__BAGIAN_Kedua",
+      "children": [
+        "UU_27_2022__AYAT_1__PASAL_46",
+        "UU_27_2022__AYAT_2__PASAL_46",
+        "UU_27_2022__AYAT_3__PASAL_46"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_1__PASAL_46",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Dalam hal terjadi kegagalan Pelindungan Data Pribadi,\nPengendali Data Pribadi wajib\npemberitahuan secara tertulis paling lambat 3 x 24\n(tiga kali dua puluh empat) jam kepada:",
+      "page_range": [
+        19,
+        19
+      ],
+      "parent_id": "UU_27_2022__PASAL_46",
+      "children": [
+        "UU_27_2022__HURUF_a__PASAL_46",
+        "UU_27_2022__HURUF_b__PASAL_46"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_a__PASAL_46",
+      "component_type": "HURUF",
+      "number": "a",
+      "title": null,
+      "content": "Subjek Data Pribadi; dan",
+      "page_range": [
+        19,
+        19
+      ],
+      "parent_id": "UU_27_2022__AYAT_1__PASAL_46",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_b__PASAL_46",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "lembaga.",
+      "page_range": [
+        19,
+        19
+      ],
+      "parent_id": "UU_27_2022__AYAT_1__PASAL_46",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_2__PASAL_46",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Pemberitahuan tertulis sebagaimana dimaksud pada\nayat (1) minimal memuat:\nData Pribadi yang terungkap;\nkapan dan bagaimana Data Pribadi terungkap; dan\nupaya penanganan dan pemulihan atas\nterungkapnya Data Pribadi oleh Pengendali Data\nPribadi.",
+      "page_range": [
+        19,
+        19
+      ],
+      "parent_id": "UU_27_2022__PASAL_46",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_3__PASAL_46",
+      "component_type": "AYAT",
+      "number": "3",
+      "title": null,
+      "content": "Dalam hal tertentu, Pengendali Data Pribadi wajib\nmemberitahukan kepada masyarakat mengenai\nkegagalan Pelindungan Data Pribadi.",
+      "page_range": [
+        19,
+        19
+      ],
+      "parent_id": "UU_27_2022__PASAL_46",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_47",
+      "component_type": "PASAL",
+      "number": "47",
+      "title": null,
+      "content": "Pengendali Data Pribadi wajib bertanggung jawab atas\npemrosesan Data Pribadi dan\nmenunjukkan\npertanggungiawaban dalam\nkewajiban\npelaksanaan prinsip Pelindungan Data Pribadi.",
+      "page_range": [
+        19,
+        19
+      ],
+      "parent_id": "UU_27_2022__BAGIAN_Kedua",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_48",
+      "component_type": "PASAL",
+      "number": "48",
+      "title": null,
+      "content": "",
+      "page_range": [
+        19,
+        19
+      ],
+      "parent_id": "UU_27_2022__BAGIAN_Kedua",
+      "children": [
+        "UU_27_2022__AYAT_1__PASAL_48",
+        "UU_27_2022__AYAT_2__PASAL_48",
+        "UU_27_2022__AYAT_3__PASAL_48",
+        "UU_27_2022__AYAT_4",
+        "UU_27_2022__AYAT_5__PASAL_48"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_1__PASAL_48",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Pengendali Data Pribadi berbentuk badan hukum yang\nmelakukan\npenggabungan, pemisahan,\npengambilalihan, peleburan, atau pembubaran badan\nhukum wajib\npemberitahuan\npengalihan Data Pribadi kepada Subjek Data Pribadi.",
+      "page_range": [
+        19,
+        19
+      ],
+      "parent_id": "UU_27_2022__PASAL_48",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_2__PASAL_48",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Pemberitahuan\na.\nb.\nc.\nSK No 155220A\nPRESIDEN\nREPUBLIK INDONES (2) Pemberitahuan pengalihan Data Pribadi sebagaimana\ndimaksud pada ayat (1) dilakukan sebelum dan\nsesudah penggabungan, pemisahan, pengambilalihan,\npeleburan, atau pembubaran badan hukum.",
+      "page_range": [
+        19,
+        20
+      ],
+      "parent_id": "UU_27_2022__PASAL_48",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_3__PASAL_48",
+      "component_type": "AYAT",
+      "number": "3",
+      "title": null,
+      "content": "Dalam hal Pengendali Data Pribadi berbentuk badan\nhukum melakukan pembubaran atau dibubarkan,\npenyimpanan, pentransferan,\npemusnahan Data Pribadi dilalsanakan sesuai dengan\nketentuan peraturan perundang-undangan.",
+      "page_range": [
+        20,
+        20
+      ],
+      "parent_id": "UU_27_2022__PASAL_48",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_4",
+      "component_type": "AYAT",
+      "number": "4",
+      "title": null,
+      "content": "Penyimpanan, pentransferan, penghapusan, atau\npemusnahan Data Pribadi sebagaimana dimaksud\n'pada ayat (3) diberitahukan kepada Subjek Data\nPribadi.",
+      "page_range": [
+        20,
+        20
+      ],
+      "parent_id": "UU_27_2022__PASAL_48",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_5__PASAL_48",
+      "component_type": "AYAT",
+      "number": "5",
+      "title": null,
+      "content": "Ketentuan lebih lanjut mengenai tata cara\npemberitahuan sebagaimana dimaksud pada ayat (l),\nayat (21, dan ayat (4) diatur dalam Peraturan\nPemerintah.",
+      "page_range": [
+        20,
+        20
+      ],
+      "parent_id": "UU_27_2022__PASAL_48",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_49",
+      "component_type": "PASAL",
+      "number": "49",
+      "title": null,
+      "content": "Pengendali Data Pribadi dan/ atau Prosesor Data Pribadi\nwajib melaksanakan perintah lembaga dalam rangka\npenyelenggaraan Pelindungan Data Pribadi sesuai dengan\nUndang-Undang ini.",
+      "page_range": [
+        20,
+        20
+      ],
+      "parent_id": "UU_27_2022__BAGIAN_Kedua",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_50",
+      "component_type": "PASAL",
+      "number": "50",
+      "title": null,
+      "content": "",
+      "page_range": [
+        20,
+        20
+      ],
+      "parent_id": "UU_27_2022__BAGIAN_Kedua",
+      "children": [
+        "UU_27_2022__AYAT_1__PASAL_50",
+        "UU_27_2022__AYAT_2__PASAL_50"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_1__PASAL_50",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Kewajiban Pengendali Data Pribadi sebagaimana\ndimaksud dalam Pasal 30, Pasal 32, Pasal 36, PasaJ42,\nPasal 43 ayat (1) huruf a sampai dengan huruf c,\nPasal 44 ayat (1) huruf b, Pasal 45, dan Pasal 46\nayat (1) huruf a, dikecualikan untuk:\nkepentingan pertahanan dan keamanan nasional'\nkepentingan proses penegakan hukum;\nkepentingan urnum dalam rangka\nnegara; atau",
+      "page_range": [
+        20,
+        20
+      ],
+      "parent_id": "UU_27_2022__PASAL_50",
+      "children": [
+        "UU_27_2022__HURUF_d__PASAL_50"
+      ],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_27_2022__AYAT_1__PASAL_50",
+          "source_text": "sebagaimana\ndimaksud dalam Pasal 30",
+          "match_position": 34,
+          "target_article": "Pasal 30"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_d__PASAL_50",
+      "component_type": "HURUF",
+      "number": "d",
+      "title": null,
+      "content": "kepentingan pengawasan sektor jasa keuangan,\nmoneter, sistem pembayaran, dan stabilitas sistem\nkeuangan yang dilakukan dalam rangka\npenyelenggaraan negara.\n, atau\na.\nb.\nc.\nSK No 155221A",
+      "page_range": [
+        20,
+        20
+      ],
+      "parent_id": "UU_27_2022__AYAT_1__PASAL_50",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_2__PASAL_50",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Pengecualian\nPRESlOEN\nREPUBLIK INDONESIA (2) Pengecualian sebagaimana dimaksud pada ayat (1)\ndilaksanakan hanya dalam rangka pelaksanaan\nketentuan Undang-Undang.",
+      "page_range": [
+        20,
+        21
+      ],
+      "parent_id": "UU_27_2022__PASAL_50",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__BAGIAN_Ketiga",
+      "component_type": "BAGIAN",
+      "number": "Ketiga",
+      "title": "Kewajiban Prosesor Data Pribadi",
+      "content": "",
+      "page_range": [
+        21,
+        21
+      ],
+      "parent_id": "UU_27_2022__BAB_VI",
+      "children": [
+        "UU_27_2022__PASAL_51",
+        "UU_27_2022__PASAL_52",
+        "UU_27_2022__PASAL_53",
+        "UU_27_2022__PASAL_54"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_51",
+      "component_type": "PASAL",
+      "number": "51",
+      "title": null,
+      "content": "",
+      "page_range": [
+        21,
+        21
+      ],
+      "parent_id": "UU_27_2022__BAGIAN_Ketiga",
+      "children": [
+        "UU_27_2022__AYAT_1__PASAL_51",
+        "UU_27_2022__AYAT_2__PASAL_51",
+        "UU_27_2022__AYAT_3__PASAL_51",
+        "UU_27_2022__AYAT_4__PASAL_51",
+        "UU_27_2022__AYAT_5__PASAL_51",
+        "UU_27_2022__AYAT_6"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_1__PASAL_51",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Dalam hal Pengendali Data Pribadi menunjuk Prosesor\nData Pribadi, Prosesor Data Pribadi wajib melakukan\npemrosesan Data Pribadi berdasarkan perintah\nPengendali Data Pribadi.",
+      "page_range": [
+        21,
+        21
+      ],
+      "parent_id": "UU_27_2022__PASAL_51",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_2__PASAL_51",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Pemrosesan Data Pribadi sebagaimana dimaksud pada\nayat (1), dilaksanakan sesuai ketentuan yang diatur\ndalam Undang-Undang ini.",
+      "page_range": [
+        21,
+        21
+      ],
+      "parent_id": "UU_27_2022__PASAL_51",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_3__PASAL_51",
+      "component_type": "AYAT",
+      "number": "3",
+      "title": null,
+      "content": "Pemrosesan Data Pribadi sebagaimana dimaksud pada\nayat (1) termasuk dalam tanggung jawab Pengendali\nData Pribadi.",
+      "page_range": [
+        21,
+        21
+      ],
+      "parent_id": "UU_27_2022__PASAL_51",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_4__PASAL_51",
+      "component_type": "AYAT",
+      "number": "4",
+      "title": null,
+      "content": "Prosesor Data Pribadi dapat melibatkan Prosesor Data\nPribadi lain dalam melakukan pemrosesan Data\nPribadi.",
+      "page_range": [
+        21,
+        21
+      ],
+      "parent_id": "UU_27_2022__PASAL_51",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_5__PASAL_51",
+      "component_type": "AYAT",
+      "number": "5",
+      "title": null,
+      "content": "Prosesor Data Pribadi wajib mendapatkan persetqiuan\ntertulis dari Pengendali Data Pribadi sebelum\nmelibatkan Prosesor Data Pribadi lain sebagaimana\ndimaksud pada ayat (4).",
+      "page_range": [
+        21,
+        21
+      ],
+      "parent_id": "UU_27_2022__PASAL_51",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_6",
+      "component_type": "AYAT",
+      "number": "6",
+      "title": null,
+      "content": "Dalam hal Prosesor Data Pribadi melakukan\npemrosesan Data Pribadi di luar perintah dan tujuan\nyang ditetapkan Pengendali Data Pribadi, pemosesan\nData Pribadi menjadi tanggung jawab Prosesor Data\nPribadi.",
+      "page_range": [
+        21,
+        21
+      ],
+      "parent_id": "UU_27_2022__PASAL_51",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_52",
+      "component_type": "PASAL",
+      "number": "52",
+      "title": null,
+      "content": "Ketentuan mengenai kewajiban Pengendali Data Pribadi\nsebagaimana dimaksud dalam Pasal 29, Pasal 31,\nPasal 35, Pasal 36, Pasal 37, Pasal 38, dan Pasal 39\nberlaku juga terhadap Prosesor Data Pribadi.\nSK No 155348 A\nBagran\nPRESIDEN\nREPUBLIK INDONESIA Bagian Keempat\nPejabat atau Petugas yang Melaksanakan\nFungsi Pelindungan Data Pribadi",
+      "page_range": [
+        21,
+        22
+      ],
+      "parent_id": "UU_27_2022__BAGIAN_Ketiga",
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_27_2022__PASAL_52",
+          "source_text": "sebagaimana dimaksud dalam Pasal 29",
+          "match_position": 53,
+          "target_article": "Pasal 29"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_53",
+      "component_type": "PASAL",
+      "number": "53",
+      "title": null,
+      "content": "",
+      "page_range": [
+        22,
+        22
+      ],
+      "parent_id": "UU_27_2022__BAGIAN_Ketiga",
+      "children": [
+        "UU_27_2022__AYAT_1__PASAL_53",
+        "UU_27_2022__AYAT_2__PASAL_53"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_1__PASAL_53",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Pengendali Data Pribadi dan Prosesor Data Pribadi\nwajib menunjuk pejabat atau petugas yang\nmelaksanakan fungsi Pelindungan Data Pribadi dalam\nhal:",
+      "page_range": [
+        22,
+        22
+      ],
+      "parent_id": "UU_27_2022__PASAL_53",
+      "children": [
+        "UU_27_2022__HURUF_a__PASAL_53",
+        "UU_27_2022__HURUF_b__PASAL_53",
+        "UU_27_2022__HURUF_c__PASAL_53"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_a__PASAL_53",
+      "component_type": "HURUF",
+      "number": "a",
+      "title": null,
+      "content": "pemros(:san Data Pribadi untuk kepentingan\npelayanan publik;",
+      "page_range": [
+        22,
+        22
+      ],
+      "parent_id": "UU_27_2022__AYAT_1__PASAL_53",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_b__PASAL_53",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "kegiatan inti Pengendali Data Pribadi memiliki\nsifat, ruang lingkup, dan/ atau tujuan yang\nmemerlukan pemantauan secara teratur dan\nsistematis atas Data Pribadi dengan skala besar;\n'\ndan",
+      "page_range": [
+        22,
+        22
+      ],
+      "parent_id": "UU_27_2022__AYAT_1__PASAL_53",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_c__PASAL_53",
+      "component_type": "HURUF",
+      "number": "c",
+      "title": null,
+      "content": "kegiatan inti Pengendali Data Pribadi terdiri dari\npemrosesan Data Pribadi dalam skala besar untuk\nData Pribadi yang bersifat spesifik dan/ atau Data\nPribadi yang berkaitan dengan tindak pidana.",
+      "page_range": [
+        22,
+        22
+      ],
+      "parent_id": "UU_27_2022__AYAT_1__PASAL_53",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_2__PASAL_53",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Pejabat atau petugas yang melaksanakan fungsi\nPelindungan Data Pribadi sebagaimana dimaksud\npada ayat (1) ditunjuk berdasarkan profesionalitas,\npengetahuan mengenai hukum, praktik Pelindungan\nData Pribadi, dan kemampuan untuk memenuhi\ntugas-tugasnya.\n(3). Pejabat atau petugas yang melaksanakan fungsi\nPelindungan Data Pribadi sebagaimana dimaksud\npada ayat (2) dapat berasal dari dalam dan/ atau luar\nPengendali Data Pribadi atau Prosesor Data Pribadi.",
+      "page_range": [
+        22,
+        22
+      ],
+      "parent_id": "UU_27_2022__PASAL_53",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_54",
+      "component_type": "PASAL",
+      "number": "54",
+      "title": null,
+      "content": "",
+      "page_range": [
+        22,
+        22
+      ],
+      "parent_id": "UU_27_2022__BAGIAN_Ketiga",
+      "children": [
+        "UU_27_2022__AYAT_1__PASAL_54",
+        "UU_27_2022__AYAT_2__PASAL_54",
+        "UU_27_2022__AYAT_3__PASAL_54"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_1__PASAL_54",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Pejabat atau petugas yang melaksanakan fungsi\nPelindungan Data Pribadi memiliki tugas paling\nsedikit:\nSK No 155223 A\na\nmenginformasikan\nPRESIDEN\nREPUELIK INDONESIA dan memberikan saran kepada\nPengendali Data Pribadi atau Frosesor Data Pribadi\nagar mematuhi ketentuan dalam Undang-Undang\nini;",
+      "page_range": [
+        22,
+        23
+      ],
+      "parent_id": "UU_27_2022__PASAL_54",
+      "children": [
+        "UU_27_2022__HURUF_b__PASAL_54",
+        "UU_27_2022__HURUF_c__PASAL_54",
+        "UU_27_2022__HURUF_d__PASAL_54"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_b__PASAL_54",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "memantau dan memastikan kepatuhan terhadap\nUndang-Undang ini dan kebljakan Pengendali Data\nPribadi atau Prosesor Data Pribadi;",
+      "page_range": [
+        23,
+        23
+      ],
+      "parent_id": "UU_27_2022__AYAT_1__PASAL_54",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_c__PASAL_54",
+      "component_type": "HURUF",
+      "number": "c",
+      "title": null,
+      "content": "memberikan saran mengenai penilaian dampak\nPelindungan Data Pribadi dan memantau kine{a\nPengendali Data Pribadi dan Prosesor Data Pribadi;\ndan",
+      "page_range": [
+        23,
+        23
+      ],
+      "parent_id": "UU_27_2022__AYAT_1__PASAL_54",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_d__PASAL_54",
+      "component_type": "HURUF",
+      "number": "d",
+      "title": null,
+      "content": "berkoordinasi dan bertindak sebagai narahubung\n'\nuntuk isu yang berkaitan dengan pemrosesan Data\nPribadi.",
+      "page_range": [
+        23,
+        23
+      ],
+      "parent_id": "UU_27_2022__AYAT_1__PASAL_54",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_2__PASAL_54",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Dalam melaksanakan tugas sebagaimana dimaksud\npada ayat (l), pejabat atau petugas yang\nmelaksanakan fungsi Pelindungan Data Pribadi\nmemperhatikan risiko terkait pemrosesan Data\nPribadi, dengan mempertimbangkan sifat, ruang\nlingkup, konteks, dan tujuan pemrosesan.",
+      "page_range": [
+        23,
+        23
+      ],
+      "parent_id": "UU_27_2022__PASAL_54",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_3__PASAL_54",
+      "component_type": "AYAT",
+      "number": "3",
+      "title": null,
+      "content": "Ketentuan lebih lanjut mengenai pejabat atau petugas\nyang melaksanakan fungsi Pelindungan Data Pribadi\ndiatur dalam Peraturan Pemerintah.",
+      "page_range": [
+        23,
+        23
+      ],
+      "parent_id": "UU_27_2022__PASAL_54",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__BAB_VII",
+      "component_type": "BAB",
+      "number": "VII",
+      "title": "TRANSFER DATA PRIBADI",
+      "content": "",
+      "page_range": [
+        23,
+        23
+      ],
+      "parent_id": null,
+      "children": [
+        "UU_27_2022__BAGIAN_Kesatu__BAB_VII",
+        "UU_27_2022__BAGIAN_Kedua__BAB_VII"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__BAGIAN_Kesatu__BAB_VII",
+      "component_type": "BAGIAN",
+      "number": "Kesatu",
+      "title": "Transfer Data Pribadi Dalam Wilayah Hukum Negara Republik Indonesia",
+      "content": "",
+      "page_range": [
+        23,
+        23
+      ],
+      "parent_id": "UU_27_2022__BAB_VII",
+      "children": [
+        "UU_27_2022__PASAL_55"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_55",
+      "component_type": "PASAL",
+      "number": "55",
+      "title": null,
+      "content": "",
+      "page_range": [
+        23,
+        23
+      ],
+      "parent_id": "UU_27_2022__BAGIAN_Kesatu__BAB_VII",
+      "children": [
+        "UU_27_2022__AYAT_1__PASAL_55",
+        "UU_27_2022__AYAT_2__PASAL_55"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_1__PASAL_55",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Pengendali Data Pribadi dapat melakukan transfer\n. Data Pribadi kepada Pengendali Data Pribadi lainnya\ndalam wilayah hukum Negara Republik Indonesia.\na.\nSK No 155224A",
+      "page_range": [
+        23,
+        23
+      ],
+      "parent_id": "UU_27_2022__PASAL_55",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_2__PASAL_55",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Pengendali\nPRESIDEN\nREPUBLIK INDONESIA (2) Pengendali Data Pribadi yang melakukan transfer Data\nPribadi dan yang menerima transfer Data Pribadi wajib\nmelakukan Pelindungan Data Pribadi sebagaimana\ndimaksud dalam Undang-Undang ini.",
+      "page_range": [
+        23,
+        24
+      ],
+      "parent_id": "UU_27_2022__PASAL_55",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__BAGIAN_Kedua__BAB_VII",
+      "component_type": "BAGIAN",
+      "number": "Kedua",
+      "title": "Transfer Data Pribadi ke Luar Wilayah Hukum Negara Republik Indonesia",
+      "content": "",
+      "page_range": [
+        24,
+        24
+      ],
+      "parent_id": "UU_27_2022__BAB_VII",
+      "children": [
+        "UU_27_2022__PASAL_56",
+        "UU_27_2022__PASAL_57",
+        "UU_27_2022__PASAL_58",
+        "UU_27_2022__PASAL_59",
+        "UU_27_2022__PASAL_60",
+        "UU_27_2022__PASAL_61"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_56",
+      "component_type": "PASAL",
+      "number": "56",
+      "title": null,
+      "content": "",
+      "page_range": [
+        24,
+        24
+      ],
+      "parent_id": "UU_27_2022__BAGIAN_Kedua__BAB_VII",
+      "children": [
+        "UU_27_2022__AYAT_1__PASAL_56",
+        "UU_27_2022__AYAT_2__PASAL_56",
+        "UU_27_2022__AYAT_3__PASAL_56",
+        "UU_27_2022__AYAT_4__PASAL_56",
+        "UU_27_2022__AYAT_5__PASAL_56"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_1__PASAL_56",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Pengendali Data Pribadi dapat melakukan transfer\nData Pribadi kepada Pengendali Data Pribadi dan/atau\nProsesor Data Pribadi di luar wilayah hukum Negara\nRepublik Indonesia sesuai dengan ketentuan yang\ndiatur dalarn Undang- Undang ini.",
+      "page_range": [
+        24,
+        24
+      ],
+      "parent_id": "UU_27_2022__PASAL_56",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_2__PASAL_56",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Dalam melakukan transfer Data Pribadi sebagaimana\ndimaksud pada ayat (l), Pengendali Data Pribadi wajib\nmemastikan negara tempat kedudukan Pengendali\nData Pribadi dan/ atau Prosesor Data Pribadi yang\n. menerima transfer Data Pribadi memiliki tingkat\nPelindungan Data Pribadi yang setara atau lebih tinggi\ndari yang diatur dalam Undang-Undang ini.",
+      "page_range": [
+        24,
+        24
+      ],
+      "parent_id": "UU_27_2022__PASAL_56",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_3__PASAL_56",
+      "component_type": "AYAT",
+      "number": "3",
+      "title": null,
+      "content": "Dalam hal ketentuan sebagaimana dimaksud pada\nayat (21 tidak terpenuhi, Pengendali Data Pribadi wajib\nmemastikan terdapat Pelindungan Data Pribadi yang\nmemadai dan bersifat mengikat.",
+      "page_range": [
+        24,
+        24
+      ],
+      "parent_id": "UU_27_2022__PASAL_56",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_4__PASAL_56",
+      "component_type": "AYAT",
+      "number": "4",
+      "title": null,
+      "content": "Dalam hal ketentuan sebagaimana dimaksud pada\nayat (21 dan ayat (3) tidak terpenuhi, Pengendali Data\nPribadi wajib mendapatkan persetqiuan Subjek Data\nPribadi.",
+      "page_range": [
+        24,
+        24
+      ],
+      "parent_id": "UU_27_2022__PASAL_56",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_5__PASAL_56",
+      "component_type": "AYAT",
+      "number": "5",
+      "title": null,
+      "content": "Ketentuan lebih lanjut mengenai transfer Data Pribadi\n' diatur dalam Peraturan Pemerintah.\nSK No 155225 A\nBABVIII ...\nPRESIDEN\nREPUBLIK INDONESIA BAB VIII\nSANKSI ADMINISTRATIF",
+      "page_range": [
+        24,
+        25
+      ],
+      "parent_id": "UU_27_2022__PASAL_56",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_57",
+      "component_type": "PASAL",
+      "number": "57",
+      "title": null,
+      "content": "",
+      "page_range": [
+        25,
+        25
+      ],
+      "parent_id": "UU_27_2022__BAGIAN_Kedua__BAB_VII",
+      "children": [
+        "UU_27_2022__AYAT_1__PASAL_57",
+        "UU_27_2022__AYAT_2__PASAL_57",
+        "UU_27_2022__AYAT_3__PASAL_57",
+        "UU_27_2022__AYAT_4__PASAL_57",
+        "UU_27_2022__AYAT_5__PASAL_57"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_1__PASAL_57",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Pelanggaran terhadap ketentuan Pasal 2O ayat (l),\n' Pasal 21, Pasal 24, Pasal 25 ayat (2), Pasal 26ayat(31,\nPasal 27, Pasal 28, Pasal 29, Pasal 30, Pasal 31,\nPasal 32 ayat (1), Pasal 33, Pasal 34 ayat (1), Pasal 35,\nPasal 36, Pasal 37, Pasal 38, Pasal 39 ayat (1),\nPasal 4O ayat (1), Pasal 41 ayat (1) dan ayat (3),\nPasal 42 ayat (1), Pasal 43 ayat (1), Pasal 44 ayat (1),\nPasal 45, Pasal 46 ayat (1) dan ayat (3), Pasal 47,\nPasal 48 ayat (l), Pasal 49, Pasal 51 ayat (1) dan\nayat (5), Pasal 52, Pasal 53 ayat (l), Pasal 55 ayat (21,\ndan Pasal 56 ayat (2) sampai dengan ayat (4) dikenai\nsanksi administratif.",
+      "page_range": [
+        25,
+        25
+      ],
+      "parent_id": "UU_27_2022__PASAL_57",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_2__PASAL_57",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Sanksi administratif sebagaimana dimaksud pada\nayat (l) berupa:",
+      "page_range": [
+        25,
+        25
+      ],
+      "parent_id": "UU_27_2022__PASAL_57",
+      "children": [
+        "UU_27_2022__HURUF_a__PASAL_57",
+        "UU_27_2022__HURUF_b__PASAL_57",
+        "UU_27_2022__HURUF_c__PASAL_57",
+        "UU_27_2022__HURUF_d__PASAL_57"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_a__PASAL_57",
+      "component_type": "HURUF",
+      "number": "a",
+      "title": null,
+      "content": "peringatantertulis;",
+      "page_range": [
+        25,
+        25
+      ],
+      "parent_id": "UU_27_2022__AYAT_2__PASAL_57",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_b__PASAL_57",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "penghentian sementara kegiatan pemrosesan Data\nPribadi;",
+      "page_range": [
+        25,
+        25
+      ],
+      "parent_id": "UU_27_2022__AYAT_2__PASAL_57",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_c__PASAL_57",
+      "component_type": "HURUF",
+      "number": "c",
+      "title": null,
+      "content": "penghapusan atau pemusnahan Data Pribadi;\ndan/atau",
+      "page_range": [
+        25,
+        25
+      ],
+      "parent_id": "UU_27_2022__AYAT_2__PASAL_57",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_d__PASAL_57",
+      "component_type": "HURUF",
+      "number": "d",
+      "title": null,
+      "content": "dendaadministratif.",
+      "page_range": [
+        25,
+        25
+      ],
+      "parent_id": "UU_27_2022__AYAT_2__PASAL_57",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_3__PASAL_57",
+      "component_type": "AYAT",
+      "number": "3",
+      "title": null,
+      "content": "Sanksi administratif berupa denda administratif\nsebagaimana dimaksud pada ayat (2) huruf d paling\ntinggi 2 (dua) persen dari perrdapatan tahunan atau\n. penerimaan tahunan terhadap variabel pelanggaran.",
+      "page_range": [
+        25,
+        25
+      ],
+      "parent_id": "UU_27_2022__PASAL_57",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_4__PASAL_57",
+      "component_type": "AYAT",
+      "number": "4",
+      "title": null,
+      "content": "Penjatuhan sanksi administratif sebagaimana\ndimaksud pada ayat (2) diberikan oleh lembaga.",
+      "page_range": [
+        25,
+        25
+      ],
+      "parent_id": "UU_27_2022__PASAL_57",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_5__PASAL_57",
+      "component_type": "AYAT",
+      "number": "5",
+      "title": null,
+      "content": "Ketentuan lebih lanjut mengenai tata cara pengenaan\nsanksi administratif selagaimana dimaksud pada\nayat (3) diatur dalam Peraturan Pemerintah.\nBAB IX. . .\nSK No 155226A\nFRESIDEN\nUALIK INDONES BAB Ix\nKELEMBAGAAN",
+      "page_range": [
+        25,
+        26
+      ],
+      "parent_id": "UU_27_2022__PASAL_57",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_58",
+      "component_type": "PASAL",
+      "number": "58",
+      "title": null,
+      "content": "",
+      "page_range": [
+        26,
+        26
+      ],
+      "parent_id": "UU_27_2022__BAGIAN_Kedua__BAB_VII",
+      "children": [
+        "UU_27_2022__AYAT_1__PASAL_58",
+        "UU_27_2022__AYAT_2__PASAL_58",
+        "UU_27_2022__AYAT_3__PASAL_58",
+        "UU_27_2022__AYAT_4__PASAL_58",
+        "UU_27_2022__AYAT_5__PASAL_58"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_1__PASAL_58",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Pemerintah berperan dalam\npenyelenggaraan Pelindungan Data Pribadi sesuai\ndengan ketentuan Undang-Undang ini.",
+      "page_range": [
+        26,
+        26
+      ],
+      "parent_id": "UU_27_2022__PASAL_58",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_2__PASAL_58",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Penyelenggaraan Pelindungan Data\nPribadi\nsebagaimana dimaksud pada ayat (1) dilaksanakan\noleh lembaga.",
+      "page_range": [
+        26,
+        26
+      ],
+      "parent_id": "UU_27_2022__PASAL_58",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_3__PASAL_58",
+      "component_type": "AYAT",
+      "number": "3",
+      "title": null,
+      "content": "kmbaga sebagaimana dimaksud pada ayat (21\nditetapkan oleh Presiden.",
+      "page_range": [
+        26,
+        26
+      ],
+      "parent_id": "UU_27_2022__PASAL_58",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_4__PASAL_58",
+      "component_type": "AYAT",
+      "number": "4",
+      "title": null,
+      "content": "lembaga sebagaimana dimaksud pada ayat (21\n' bertanggung jawab kepada Presiden.",
+      "page_range": [
+        26,
+        26
+      ],
+      "parent_id": "UU_27_2022__PASAL_58",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_5__PASAL_58",
+      "component_type": "AYAT",
+      "number": "5",
+      "title": null,
+      "content": "Ketentuan lebih lanjut mengenai lembaga\nsebagaimana dimalsud pada ayat (2) diatur dengan\nPeraturan Presiden.",
+      "page_range": [
+        26,
+        26
+      ],
+      "parent_id": "UU_27_2022__PASAL_58",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_59",
+      "component_type": "PASAL",
+      "number": "59",
+      "title": null,
+      "content": "l,embaga sebagaimana dimaksud dalam Pasal 58 ayat (2)\nmelaksanakan:",
+      "page_range": [
+        26,
+        26
+      ],
+      "parent_id": "UU_27_2022__BAGIAN_Kedua__BAB_VII",
+      "children": [
+        "UU_27_2022__HURUF_a__PASAL_59",
+        "UU_27_2022__HURUF_b__PASAL_59",
+        "UU_27_2022__HURUF_c__PASAL_59",
+        "UU_27_2022__HURUF_d__PASAL_59"
+      ],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_27_2022__PASAL_59",
+          "source_text": "sebagaimana dimaksud dalam Pasal 58",
+          "match_position": 9,
+          "target_article": "Pasal 58"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_a__PASAL_59",
+      "component_type": "HURUF",
+      "number": "a",
+      "title": null,
+      "content": "perumusan dan penetapan kebijakan dan strategi\nPelindungan Data Pribadi yang menjadi panduan bagi\nSubjek Data Pribadi, Pengendali Data Pribadi, dan\n' Prosesor Data Fribadi;",
+      "page_range": [
+        26,
+        26
+      ],
+      "parent_id": "UU_27_2022__PASAL_59",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_b__PASAL_59",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "pengawasan terhadap penyelenggaraan Pelindungan\nData Pribadi;",
+      "page_range": [
+        26,
+        26
+      ],
+      "parent_id": "UU_27_2022__PASAL_59",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_c__PASAL_59",
+      "component_type": "HURUF",
+      "number": "c",
+      "title": null,
+      "content": "penegakan hukum administratif terhadap pelanggaran\nUndang-Undang ini; dan",
+      "page_range": [
+        26,
+        26
+      ],
+      "parent_id": "UU_27_2022__PASAL_59",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_d__PASAL_59",
+      "component_type": "HURUF",
+      "number": "d",
+      "title": null,
+      "content": "fasilitasi penyelesaian sengketa di luar pengadilan.",
+      "page_range": [
+        26,
+        26
+      ],
+      "parent_id": "UU_27_2022__PASAL_59",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_60",
+      "component_type": "PASAL",
+      "number": "60",
+      "title": null,
+      "content": "Lembaga sebagaimana dimaksud dalam Pasal 58 ayat (2)\nberwenang:\na.. merumuskan dan menetapkan kebijakan di bidang\nPelindungan Data Pribadi;\nSK No 155227 A",
+      "page_range": [
+        26,
+        26
+      ],
+      "parent_id": "UU_27_2022__BAGIAN_Kedua__BAB_VII",
+      "children": [
+        "UU_27_2022__HURUF_b__PASAL_60",
+        "UU_27_2022__HURUF_c__PASAL_60",
+        "UU_27_2022__HURUF_d__PASAL_60",
+        "UU_27_2022__HURUF_e__PASAL_60",
+        "UU_27_2022__HURUF_f__PASAL_60",
+        "UU_27_2022__HURUF_g__PASAL_60",
+        "UU_27_2022__HURUF_h__PASAL_60",
+        "UU_27_2022__HURUF_i",
+        "UU_27_2022__HURUF_j",
+        "UU_27_2022__HURUF_k",
+        "UU_27_2022__HURUF_l",
+        "UU_27_2022__HURUF_m",
+        "UU_27_2022__HURUF_n"
+      ],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_27_2022__PASAL_60",
+          "source_text": "sebagaimana dimaksud dalam Pasal 58",
+          "match_position": 8,
+          "target_article": "Pasal 58"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_b__PASAL_60",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "melakukan\nPRESIDEN\nREPUBLIK INDONESIA b. melakukan pengawasan terhadap kepatuhan\nPengendali Data Pribadi;",
+      "page_range": [
+        26,
+        27
+      ],
+      "parent_id": "UU_27_2022__PASAL_60",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_c__PASAL_60",
+      "component_type": "HURUF",
+      "number": "c",
+      "title": null,
+      "content": "menjatuhkan sanksi administratif atas pelanggaran\nPelindungan Data Pribadi yang dilakukan Pengendali\nData Pribadi dan/atau Prosesor Data Pribadi;",
+      "page_range": [
+        27,
+        27
+      ],
+      "parent_id": "UU_27_2022__PASAL_60",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_d__PASAL_60",
+      "component_type": "HURUF",
+      "number": "d",
+      "title": null,
+      "content": "membantu aparat penegak hukum dalam penanganan\ndugaan tindak pidana Data Pribadi sebagaimana\ndimaksud dalam Undang-Undang ini;",
+      "page_range": [
+        27,
+        27
+      ],
+      "parent_id": "UU_27_2022__PASAL_60",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_e__PASAL_60",
+      "component_type": "HURUF",
+      "number": "e",
+      "title": null,
+      "content": "bekerja sama dengan lembaga Pelindungan Data\nPribadi negara lain dalam rangka penyelesaian dugaan\n. pelanggaran Pelindungan Data Pribadi lintas negara;",
+      "page_range": [
+        27,
+        27
+      ],
+      "parent_id": "UU_27_2022__PASAL_60",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_f__PASAL_60",
+      "component_type": "HURUF",
+      "number": "f",
+      "title": null,
+      "content": "melakukan penilaian terhadap pemenuhan\npersyaratan transfer Data Pribadi ke luar wilayah\nhukum Negara Republik Indonesia;",
+      "page_range": [
+        27,
+        27
+      ],
+      "parent_id": "UU_27_2022__PASAL_60",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_g__PASAL_60",
+      "component_type": "HURUF",
+      "number": "g",
+      "title": null,
+      "content": "memberikan perintah dalam rangka tindak lanjut hasil\npengawasan kepada Pengendali Data Pribadi dan/ atau\nProsesor Data Pribadi;",
+      "page_range": [
+        27,
+        27
+      ],
+      "parent_id": "UU_27_2022__PASAL_60",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_h__PASAL_60",
+      "component_type": "HURUF",
+      "number": "h",
+      "title": null,
+      "content": "melakukan publikasi hasil pelaksanaan pengawasan\nPelindungan Data Pribadi sesuai dengan ketentuan\nperaturan perundang-undangan ;",
+      "page_range": [
+        27,
+        27
+      ],
+      "parent_id": "UU_27_2022__PASAL_60",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_i",
+      "component_type": "HURUF",
+      "number": "i",
+      "title": null,
+      "content": "menerima aduan dan/atau laporan tentang dugaan\nterjadinya pelanggaran Pelindungan Data Pribadi;",
+      "page_range": [
+        27,
+        27
+      ],
+      "parent_id": "UU_27_2022__PASAL_60",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_j",
+      "component_type": "HURUF",
+      "number": "j",
+      "title": null,
+      "content": "melakukan\ndan\natas\npengaduan, laporan, dan/atau hasil pengawasan\nterhadap dugaan terjadinya pelanggaran Pelindungan\nData Pribadi;",
+      "page_range": [
+        27,
+        27
+      ],
+      "parent_id": "UU_27_2022__PASAL_60",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_k",
+      "component_type": "HURUF",
+      "number": "k",
+      "title": null,
+      "content": "memanggil dan menghadirkan Setiap Orang dan/ atau\nBadan Publik yang terkait dengan dugaan pelanggaran\nPelindungan Data Pribadi;",
+      "page_range": [
+        27,
+        27
+      ],
+      "parent_id": "UU_27_2022__PASAL_60",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_l",
+      "component_type": "HURUF",
+      "number": "l",
+      "title": null,
+      "content": "meminta keterangan, data, Informasi, dan dokumen\ndari Setiap Orang dan/ atau Badan Publik terkait\ndugaan pelanggaran Pelindungan Data Pribadi;",
+      "page_range": [
+        27,
+        27
+      ],
+      "parent_id": "UU_27_2022__PASAL_60",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_m",
+      "component_type": "HURUF",
+      "number": "m",
+      "title": null,
+      "content": "memanggil dan menghadirkan ahli yang diperlukan\ndalam pemeriksaan dan penelusuran terkait dugaan\npelanggaran Pelindungan Data Pribadi;\nSK No 155228 A",
+      "page_range": [
+        27,
+        27
+      ],
+      "parent_id": "UU_27_2022__PASAL_60",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_n",
+      "component_type": "HURUF",
+      "number": "n",
+      "title": null,
+      "content": "melakukan\nPRESIDEN\nREPUELIK INDONESIA n\nmelakukan pemeriksaan dan penelusuran terhadap\nsistem elektronik, sarana, ruang, dan/ atau tempat\nyang digunakan Pengendali Data Pribadi dan/atau\nProsesor Data Pribadi, termasuk memperoleh akses\nterhadap data dan/atau menunjuk pihak ketiga; dan\nmeminta bantuan hukum kepada kejaksaan dalam\npenyelesaian sengketa Pelindungan Data Pribadi.\no",
+      "page_range": [
+        27,
+        28
+      ],
+      "parent_id": "UU_27_2022__PASAL_60",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_61",
+      "component_type": "PASAL",
+      "number": "61",
+      "title": null,
+      "content": "Ketentuan mengenai tata cara pelaksanaan wewenang\nlembaga sebagaimana dimaksud dalam Pa6al 60 diatur\ndalam Peraturan Pemerintah.",
+      "page_range": [
+        28,
+        28
+      ],
+      "parent_id": "UU_27_2022__BAGIAN_Kedua__BAB_VII",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__BAB_X",
+      "component_type": "BAB",
+      "number": "X",
+      "title": "KERJA SAMA INTERNASIONAL",
+      "content": "",
+      "page_range": [
+        28,
+        28
+      ],
+      "parent_id": null,
+      "children": [
+        "UU_27_2022__PASAL_62"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_62",
+      "component_type": "PASAL",
+      "number": "62",
+      "title": null,
+      "content": "",
+      "page_range": [
+        28,
+        28
+      ],
+      "parent_id": "UU_27_2022__BAB_X",
+      "children": [
+        "UU_27_2022__AYAT_1__PASAL_62",
+        "UU_27_2022__AYAT_2__PASAL_62"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_1__PASAL_62",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Kerja sama internasional dilakukan oleh Pemerintah\ndengan pemerintah negara lain atau Organisasi\nInternasional terkait dengan Pelindungan Data\nPribadi.",
+      "page_range": [
+        28,
+        28
+      ],
+      "parent_id": "UU_27_2022__PASAL_62",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_2__PASAL_62",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Kerja sama internasional dalam rangka pelaksanaan\nUndang-Undang ini dilaksanakan sesuai dengan\nketentuan peraturan perundang-undangan dan\nprinsip hukum internasional.",
+      "page_range": [
+        28,
+        28
+      ],
+      "parent_id": "UU_27_2022__PASAL_62",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__BAB_xI",
+      "component_type": "BAB",
+      "number": "xI",
+      "title": "PARTISIPASI MASYARAKAT",
+      "content": "",
+      "page_range": [
+        28,
+        28
+      ],
+      "parent_id": null,
+      "children": [
+        "UU_27_2022__PASAL_63",
+        "UU_27_2022__PASAL_64"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_63",
+      "component_type": "PASAL",
+      "number": "63",
+      "title": null,
+      "content": "",
+      "page_range": [
+        28,
+        28
+      ],
+      "parent_id": "UU_27_2022__BAB_xI",
+      "children": [
+        "UU_27_2022__AYAT_1__PASAL_63",
+        "UU_27_2022__AYAT_2__PASAL_63"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_1__PASAL_63",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Masyarakat dapat berperan baik secara langsung\nmaupun tidak langsung dalam mendukung\nterselenggaranya Pelindungan Data Pribadi.",
+      "page_range": [
+        28,
+        28
+      ],
+      "parent_id": "UU_27_2022__PASAL_63",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_2__PASAL_63",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Pelaksanaan peran sebagaimana dimaksud pada\nayat (1) dapat dilakukan melalui pendidikan,\npelatihan, advokasi, sssialis4si, dan/ atau pengawasan\nsesuai dengan ketentuan peraturan perundang-\nundangan.\nSK No 155229 A\nBABxII ...\nFRESIDEN\nREPUBLIK INDONESIA BAB xII\nPEI{YELESAI,AN SENGKETA DAN HUKUM ACARA",
+      "page_range": [
+        28,
+        29
+      ],
+      "parent_id": "UU_27_2022__PASAL_63",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_64",
+      "component_type": "PASAL",
+      "number": "64",
+      "title": null,
+      "content": "",
+      "page_range": [
+        29,
+        29
+      ],
+      "parent_id": "UU_27_2022__BAB_xI",
+      "children": [
+        "UU_27_2022__AYAT_1__PASAL_64"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_1__PASAL_64",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Penyelesaian sengketa",
+      "page_range": [
+        29,
+        29
+      ],
+      "parent_id": "UU_27_2022__PASAL_64",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__BAB_XIII",
+      "component_type": "BAB",
+      "number": "XIII",
+      "title": "I,ARANGAN DALAM PENGGUNAAN DATA PRIBADI Data Pribadi",
+      "content": "dilakukan melalui arbitrase, pengadilan, atau lembaga\npenyelesaian sengketa alternatif lainnya sesuai dengan\nketentuan peraturan perundang-undangan.",
+      "page_range": [
+        29,
+        29
+      ],
+      "parent_id": null,
+      "children": [
+        "UU_27_2022__AYAT_2__BAB_XIII",
+        "UU_27_2022__AYAT_3__BAB_XIII",
+        "UU_27_2022__AYAT_4__BAB_XIII",
+        "UU_27_2022__PASAL_65"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_2__BAB_XIII",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Hukum acara yang berlaku dalam penyelesaian\nsengketa dan/ atau proses peradilan Pelindungan Data\nPribadi sebagaimana dimaksud pada ayat (1)\ndilaksanakan berdasarkan hukum acara yang berlaku\nsesuai dengan ketentuan peraturan perundang-\nundangan.",
+      "page_range": [
+        29,
+        29
+      ],
+      "parent_id": "UU_27_2022__BAB_XIII",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_3__BAB_XIII",
+      "component_type": "AYAT",
+      "number": "3",
+      "title": null,
+      "content": "Alat bukti yang sah dalam Undang-Undang ini meliputi:",
+      "page_range": [
+        29,
+        29
+      ],
+      "parent_id": "UU_27_2022__BAB_XIII",
+      "children": [
+        "UU_27_2022__HURUF_a__BAB_XIII",
+        "UU_27_2022__HURUF_b__BAB_XIII"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_a__BAB_XIII",
+      "component_type": "HURUF",
+      "number": "a",
+      "title": null,
+      "content": "alat bukti sebagaimana dimaksud dalam hukum\nacara; dan",
+      "page_range": [
+        29,
+        29
+      ],
+      "parent_id": "UU_27_2022__AYAT_3__BAB_XIII",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_b__BAB_XIII",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "alat bukti lain berupa informasi elelrtronik\ndan/ atau dokumen elektronik sesuai dengan\nketentuan peraturan perundang-undangan.",
+      "page_range": [
+        29,
+        29
+      ],
+      "parent_id": "UU_27_2022__AYAT_3__BAB_XIII",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_4__BAB_XIII",
+      "component_type": "AYAT",
+      "number": "4",
+      "title": null,
+      "content": "Dalam hal diperlukan untuk melindungi Data Pribadi,\nproses persidangan dilakukan secara tertutup.",
+      "page_range": [
+        29,
+        29
+      ],
+      "parent_id": "UU_27_2022__BAB_XIII",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_65",
+      "component_type": "PASAL",
+      "number": "65",
+      "title": null,
+      "content": "",
+      "page_range": [
+        29,
+        29
+      ],
+      "parent_id": "UU_27_2022__BAB_XIII",
+      "children": [
+        "UU_27_2022__AYAT_1__PASAL_65",
+        "UU_27_2022__AYAT_2__PASAL_65",
+        "UU_27_2022__AYAT_3__PASAL_65"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_1__PASAL_65",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Setiap Orang dilarang secara melawan hukum\nmemperoleh atau mengumpulkan Data Pribadi yang\nbukan miliknya dengan maksud untuk\nmenguntungkan diri sendiri atau orang lain yang dapat\nmengakibatkan kerugian Subjek Data Pribadi.",
+      "page_range": [
+        29,
+        29
+      ],
+      "parent_id": "UU_27_2022__PASAL_65",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_2__PASAL_65",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Setiap Orang dilarang secara melawan hukum\nmengungkapkan Data Pribadi yang bukan miliknya.\ndilarang secara melawan hukum\nData Pribadi yang bukan miliknya.\nSK No 155230A",
+      "page_range": [
+        29,
+        29
+      ],
+      "parent_id": "UU_27_2022__PASAL_65",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_3__PASAL_65",
+      "component_type": "AYAT",
+      "number": "3",
+      "title": null,
+      "content": "Setiap Orang\nPasal 66. . .\nPRESIDEN\nREPUBLIK INDONESIA Pasal 66\nSetiap Orang dilarang membuat Data Pribadi palsu atau\nmemalsul<an Data Pribadi dengan maksud r.rntuk\ndiri sendiri atau orang lain yang dapat\nmengakibatkan kerugian bagi orang lain.",
+      "page_range": [
+        29,
+        30
+      ],
+      "parent_id": "UU_27_2022__PASAL_65",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__BAB_XIV",
+      "component_type": "BAB",
+      "number": "XIV",
+      "title": "KETENTUAN PIDANA",
+      "content": "",
+      "page_range": [
+        30,
+        30
+      ],
+      "parent_id": null,
+      "children": [
+        "UU_27_2022__PASAL_67",
+        "UU_27_2022__PASAL_68",
+        "UU_27_2022__PASAL_7O"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_67",
+      "component_type": "PASAL",
+      "number": "67",
+      "title": null,
+      "content": "",
+      "page_range": [
+        30,
+        30
+      ],
+      "parent_id": "UU_27_2022__BAB_XIV",
+      "children": [
+        "UU_27_2022__AYAT_1__PASAL_67",
+        "UU_27_2022__AYAT_2__PASAL_67",
+        "UU_27_2022__AYAT_3__PASAL_67"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_1__PASAL_67",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Setiap Orang yang dengan sengaja dan melawan hukum\nmemperoleh atau mengumpulkan Data Pribadi yang\nbukan mililoeya dengan maksud untuk menguntungkan\ndiri sendiri atau orang lain yang dapat mengakibatkan\nkerugian Subjek Data Pribadi sebagaimana dimaksud\ndalam Pasal 65 ayat (1) dipidana dengan pidana penjara\npaling lama 5 (lima) tahun dan/atau pidana denda\npaling banyak Rp5.000.000.000,00 (lima miliar rupiah).",
+      "page_range": [
+        30,
+        30
+      ],
+      "parent_id": "UU_27_2022__PASAL_67",
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_27_2022__AYAT_1__PASAL_67",
+          "source_text": "sebagaimana dimaksud\ndalam Pasal 65",
+          "match_position": 231,
+          "target_article": "Pasal 65"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_2__PASAL_67",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Setiap Orang yang dengan sengaja dan melawan hukum\nmengunglapkan Data Pribadi yang bukan miliknya\nsebagaimana dimaksud dalam Pasal 65 ayat (2) dipidana\ndengan pidana penjara paling lama 4 (empat) tahun\ndan/atau pidana denda paling banyak\nRp4.000.000.000,00 (empat miliar rupiah).",
+      "page_range": [
+        30,
+        30
+      ],
+      "parent_id": "UU_27_2022__PASAL_67",
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_27_2022__AYAT_2__PASAL_67",
+          "source_text": "sebagaimana dimaksud dalam Pasal 65",
+          "match_position": 98,
+          "target_article": "Pasal 65"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_3__PASAL_67",
+      "component_type": "AYAT",
+      "number": "3",
+      "title": null,
+      "content": "Setiap Orang yang dengan senqaja dan melawan hukum\nmenggunakan Data Pribadi yang bukan miliknya\nsebagaimana dimaksud dalam Pasal 65 ayat (3) dipidana\ndengan pidana penjara paling lama 5 (lima) tahun\ndan/atau pidana denda paling banyak\nRp5.00O.OOO.000,00 (lima miliar rupiah).",
+      "page_range": [
+        30,
+        30
+      ],
+      "parent_id": "UU_27_2022__PASAL_67",
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_27_2022__AYAT_3__PASAL_67",
+          "source_text": "sebagaimana dimaksud dalam Pasal 65",
+          "match_position": 96,
+          "target_article": "Pasal 65"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_68",
+      "component_type": "PASAL",
+      "number": "68",
+      "title": null,
+      "content": "Setiap Orang yang dengan sengaja membuat Data Pribadi\npalsu atau memalsukan Data Pribadi dengan maksud untuk\nmenguntrrngkan diri sendiri atau orang lain yang dapat\nmengakibatkan kerugian bagi orang lain sebagaimana\ndimaksud dalam Pasal 66 .tipidana dengan pidana penjara\npaling tama 6 (enam) tahun dan/atau pidana denda paling\nbanyak Rp6.0OO. 000.000,00 (enam miliar rupiah).\nSK No 155350A\nPasal 69...\nPRESIDEN\nBLIK INDONES Pasal 69\nSelain dijatuhi pidana ssfagaimana dimaksud dalam\nPasal 67 dan Pasal 68 juga dapat dijatuhi pidana\ntambahan berupa perampasan keuntungan dan/ atau\nharta kekayaan yang diperoleh atau hasil dari tindak\npidana dan pembayaran ganti kerugian.",
+      "page_range": [
+        30,
+        31
+      ],
+      "parent_id": "UU_27_2022__BAB_XIV",
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_27_2022__PASAL_68",
+          "source_text": "sebagaimana\ndimaksud dalam Pasal 66",
+          "match_position": 203,
+          "target_article": "Pasal 66"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_7O",
+      "component_type": "PASAL",
+      "number": "7O",
+      "title": null,
+      "content": "",
+      "page_range": [
+        31,
+        31
+      ],
+      "parent_id": "UU_27_2022__BAB_XIV",
+      "children": [
+        "UU_27_2022__AYAT_1__PASAL_7O",
+        "UU_27_2022__AYAT_2__PASAL_7O",
+        "UU_27_2022__AYAT_3__PASAL_7O",
+        "UU_27_2022__AYAT_4__PASAL_7O",
+        "UU_27_2022__AYAT_1__PASAL_7O",
+        "UU_27_2022__AYAT_2__PASAL_7O",
+        "UU_27_2022__AYAT_3__PASAL_7O",
+        "UU_27_2022__AYAT_4__PASAL_7O",
+        "UU_27_2022__AYAT_5__PASAL_7O",
+        "UU_27_2022__AYAT_1__PASAL_7O",
+        "UU_27_2022__AYAT_2__PASAL_7O"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_1__PASAL_7O",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Dafam hal tindak pidana sebagaimana dimaksud\ndalam Pasal 67 dan Pasal 68 dilakukan oleh Korporasi,\npidana dapat dljatuhkan kepada pengurus, pemegang\nkendali, pemberi perintah, pemilik manfaat, dan/ atau\nKorporasi.",
+      "page_range": [
+        31,
+        31
+      ],
+      "parent_id": "UU_27_2022__PASAL_7O",
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_27_2022__AYAT_1__PASAL_7O",
+          "source_text": "sebagaimana dimaksud\ndalam Pasal 67",
+          "match_position": 24,
+          "target_article": "Pasal 67"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_2__PASAL_7O",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Pidana yang dapat d[jatuhkan terhadap Korporasi\nhanya pidana denda.",
+      "page_range": [
+        31,
+        31
+      ],
+      "parent_id": "UU_27_2022__PASAL_7O",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_3__PASAL_7O",
+      "component_type": "AYAT",
+      "number": "3",
+      "title": null,
+      "content": "Pidana denda yang dijatuhkan kepada Korporasi\npaling banyak 10 (sepuluh) kali dari maksimal pidana\ndenda yang diancamkan.",
+      "page_range": [
+        31,
+        31
+      ],
+      "parent_id": "UU_27_2022__PASAL_7O",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_4__PASAL_7O",
+      "component_type": "AYAT",
+      "number": "4",
+      "title": null,
+      "content": "Selain dijatuhi pidana denda sebagaimana dimaksud\npada ayat (2), Korporasi dapat dijatuhi pidana\n' tambahan berupa:",
+      "page_range": [
+        31,
+        31
+      ],
+      "parent_id": "UU_27_2022__PASAL_7O",
+      "children": [
+        "UU_27_2022__HURUF_a__PASAL_7O",
+        "UU_27_2022__HURUF_b__PASAL_7O",
+        "UU_27_2022__HURUF_c__PASAL_7O",
+        "UU_27_2022__HURUF_d__PASAL_7O",
+        "UU_27_2022__HURUF_e__PASAL_7O",
+        "UU_27_2022__HURUF_f__PASAL_7O",
+        "UU_27_2022__HURUF_g__PASAL_7O",
+        "UU_27_2022__HURUF_h__PASAL_7O"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_a__PASAL_7O",
+      "component_type": "HURUF",
+      "number": "a",
+      "title": null,
+      "content": "perampasan keuntungan dan/ atau harta\nkekayaan yang diperoleh atau hasil dari tindak\npidana;",
+      "page_range": [
+        31,
+        31
+      ],
+      "parent_id": "UU_27_2022__AYAT_4__PASAL_7O",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_b__PASAL_7O",
+      "component_type": "HURUF",
+      "number": "b",
+      "title": null,
+      "content": "pembekuan seluruh atau sebagian usaha\nKorporasi;",
+      "page_range": [
+        31,
+        31
+      ],
+      "parent_id": "UU_27_2022__AYAT_4__PASAL_7O",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_c__PASAL_7O",
+      "component_type": "HURUF",
+      "number": "c",
+      "title": null,
+      "content": "pelarangan permanen melakukan perbuatan\ntertentu;",
+      "page_range": [
+        31,
+        31
+      ],
+      "parent_id": "UU_27_2022__AYAT_4__PASAL_7O",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_d__PASAL_7O",
+      "component_type": "HURUF",
+      "number": "d",
+      "title": null,
+      "content": "penutupan seluruh atau sebagian tempat usaha\ndan/ atau kegiatan Korporasi;",
+      "page_range": [
+        31,
+        31
+      ],
+      "parent_id": "UU_27_2022__AYAT_4__PASAL_7O",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_e__PASAL_7O",
+      "component_type": "HURUF",
+      "number": "e",
+      "title": null,
+      "content": "melaksanakan kewajiban yang telah dilalaikan;",
+      "page_range": [
+        31,
+        31
+      ],
+      "parent_id": "UU_27_2022__AYAT_4__PASAL_7O",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_f__PASAL_7O",
+      "component_type": "HURUF",
+      "number": "f",
+      "title": null,
+      "content": "pembayaran ganti kerugian;",
+      "page_range": [
+        31,
+        31
+      ],
+      "parent_id": "UU_27_2022__AYAT_4__PASAL_7O",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_g__PASAL_7O",
+      "component_type": "HURUF",
+      "number": "g",
+      "title": null,
+      "content": "pencabutan izin; dan/atala",
+      "page_range": [
+        31,
+        31
+      ],
+      "parent_id": "UU_27_2022__AYAT_4__PASAL_7O",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__HURUF_h__PASAL_7O",
+      "component_type": "HURUF",
+      "number": "h",
+      "title": null,
+      "content": "pembubaranKorporasi.\nSK No 155232 A\nPasal 71 ...\nPRESIDEN\nREPIIBLIK INDONESIA Pasal 71",
+      "page_range": [
+        31,
+        32
+      ],
+      "parent_id": "UU_27_2022__AYAT_4__PASAL_7O",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_1__PASAL_7O",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Dalam hal pengadilan menjatuhkan putusan pidana\ndenda, terpidana diberikan jangka waktu 1 (satu)\nbulan sejak putusan telah memperoleh kekuatan\nhukum tetap untuk membayar denda tersebut.",
+      "page_range": [
+        32,
+        32
+      ],
+      "parent_id": "UU_27_2022__PASAL_7O",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_2__PASAL_7O",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "Dalam hal terdapat alasan kuat, jangka waktu\nsebagaimana dimaksud pada ayat (1) dapat\ndiperpanjang untuk waktu paling lama I (satu) bulan.",
+      "page_range": [
+        32,
+        32
+      ],
+      "parent_id": "UU_27_2022__PASAL_7O",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_3__PASAL_7O",
+      "component_type": "AYAT",
+      "number": "3",
+      "title": null,
+      "content": "Dalam hal terpidana tidak membayar pidana denda\ndalam jangka waktu sebagaimana dimaksud pada\nayat (1) atau ayat (2) maka harta kekayaan atau\npendapatan terpidana dapat disita dan dilelang oleh\njaksa untuk melunasi pidana denda yang tidak\ndibayar.",
+      "page_range": [
+        32,
+        32
+      ],
+      "parent_id": "UU_27_2022__PASAL_7O",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_4__PASAL_7O",
+      "component_type": "AYAT",
+      "number": "4",
+      "title": null,
+      "content": "Dalam hal penyitaan dan pelelangan harta kekayaan\natau pendapatan sebagaimana dimaksud pada ayat (3)\ntidak cukup atau tidak\nuntuk\ndilaksanakan, pidana denda yang tidak dibayar diganti\ndengan pidana penjara paling lama sebagaimana\ndiancamkan untuk tindak pidana yang bersangkutan.",
+      "page_range": [
+        32,
+        32
+      ],
+      "parent_id": "UU_27_2022__PASAL_7O",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_5__PASAL_7O",
+      "component_type": "AYAT",
+      "number": "5",
+      "title": null,
+      "content": "Lamanya pidana penjara sebagaimspa dimaksud pada\nayat (4) yang ditentukan oleh hakim, dicantumkan\ndalam putusan pengadilan.\nPasal T2",
+      "page_range": [
+        32,
+        32
+      ],
+      "parent_id": "UU_27_2022__PASAL_7O",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_1__PASAL_7O",
+      "component_type": "AYAT",
+      "number": "1",
+      "title": null,
+      "content": "Dafam hal penyitaan dan pelelangan harta kekayaan\natau pendapatan sebagaimana dimaksud dalam\nPasal 71 ayat (4) dilakukan terhadap terpidana\nKorporasi dan tidak cukup untuk melunasi pidana\n. denda, Korporasi dikenakan pidana pengganti berupa\npembekuan sebagian atau seluruh kegiatan usaha\nKorporasi untuk jangka wa.ktu paling lama 5 (lima)\ntahun.",
+      "page_range": [
+        32,
+        32
+      ],
+      "parent_id": "UU_27_2022__PASAL_7O",
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_27_2022__AYAT_1__PASAL_7O",
+          "source_text": "sebagaimana dimaksud dalam\nPasal 71",
+          "match_position": 66,
+          "target_article": "Pasal 71"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__AYAT_2__PASAL_7O",
+      "component_type": "AYAT",
+      "number": "2",
+      "title": null,
+      "content": "I.arnanya pembekuan s6lagian atau seluruh kegiatan\nusaha Korporasi sebagaimana dimaksud pada ayat (1)\nyang ditentukan oleh hakim, dicantumkan dalam\nputusan pengadilan.\nPasal 73...\nSK No 155233 A\nPRESlOEN\nREPUBLIK INDONESIA Pasal 73\nKetentuan sebagaimana dimaksud dalam Pasal 7L dan\nPdsal 72 juga berlaku dalam hal penjatuhan pidana\ntambahan berupa pembayaran ganti kerugian.",
+      "page_range": [
+        32,
+        33
+      ],
+      "parent_id": "UU_27_2022__PASAL_7O",
+      "children": [],
+      "references": [
+        {
+          "type": "MERUJUK_PASAL",
+          "pattern_name": "INTERNAL_PASAL_REF",
+          "source_component": "UU_27_2022__AYAT_2__PASAL_7O",
+          "source_text": "sebagaimana dimaksud dalam Pasal 7L",
+          "match_position": 242,
+          "target_article": "Pasal 7L"
+        }
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__BAB_XV",
+      "component_type": "BAB",
+      "number": "XV",
+      "title": "KETENTUAN PERALIHAN",
+      "content": "",
+      "page_range": [
+        33,
+        33
+      ],
+      "parent_id": null,
+      "children": [
+        "UU_27_2022__PASAL_74",
+        "UU_27_2022__PASAL_75"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_74",
+      "component_type": "PASAL",
+      "number": "74",
+      "title": null,
+      "content": "Pada saat Undang-Undang ini mulai berlaku, Pengendali\nData Pribadi, Prosesor Data Pribadi, dan pihak lain yang\nterkait dengan pemrosesan Data Pribadi, wajib\nmenyesuaikan dengan ketentuan pemrosesan Data Pribadi\nberdasarkan Undang-Undang ini paling lama 2 (dua) tahun\nsejak Undang-Undang ini diundangkan.",
+      "page_range": [
+        33,
+        33
+      ],
+      "parent_id": "UU_27_2022__BAB_XV",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_75",
+      "component_type": "PASAL",
+      "number": "75",
+      "title": null,
+      "content": "Pada saat Undang-Undang ini mulai berlaku, semua\nketentuan peraturan perundang-undangan yang mengatur\nmengenai Pelindungan Data Pribadi, dinyatakan masih\ntetap berlaku sepanjang tidak bertentangan dengan\nketentuan dalam Undang-Undang ini.",
+      "page_range": [
+        33,
+        33
+      ],
+      "parent_id": "UU_27_2022__BAB_XV",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__BAB_XVI",
+      "component_type": "BAB",
+      "number": "XVI",
+      "title": "KETENTUAN PENUTUP",
+      "content": "",
+      "page_range": [
+        33,
+        33
+      ],
+      "parent_id": null,
+      "children": [
+        "UU_27_2022__PASAL_76",
+        "UU_27_2022__PASAL_2__BAB_XVI",
+        "UU_27_2022__PASAL_3__BAB_XVI",
+        "UU_27_2022__PASAL_5__BAB_XVI",
+        "UU_27_2022__PASAL_6__BAB_XVI",
+        "UU_27_2022__PASAL_7",
+        "UU_27_2022__PASAL_8__BAB_XVI",
+        "UU_27_2022__PASAL_1O",
+        "UU_27_2022__PASAL_15__BAB_XVI",
+        "UU_27_2022__PASAL_16__BAB_XVI",
+        "UU_27_2022__PASAL_18",
+        "UU_27_2022__PASAL_19__BAB_XVI",
+        "UU_27_2022__PASAL_20__BAB_XVI",
+        "UU_27_2022__PASAL_21__BAB_XVI",
+        "UU_27_2022__PASAL_23__BAB_XVI",
+        "UU_27_2022__PASAL_25",
+        "UU_27_2022__PASAL_26__BAB_XVI",
+        "UU_27_2022__PASAL_28__BAB_XVI",
+        "UU_27_2022__PASAL_29__BAB_XVI",
+        "UU_27_2022__PASAL_30__BAB_XVI",
+        "UU_27_2022__PASAL_31__BAB_XVI",
+        "UU_27_2022__PASAL_32__BAB_XVI",
+        "UU_27_2022__PASAL_34__BAB_XVI",
+        "UU_27_2022__PASAL_35__BAB_XVI",
+        "UU_27_2022__PASAL_36__BAB_XVI",
+        "UU_27_2022__PASAL_37__BAB_XVI",
+        "UU_27_2022__PASAL_38__BAB_XVI",
+        "UU_27_2022__PASAL_39__BAB_XVI",
+        "UU_27_2022__PASAL_4O",
+        "UU_27_2022__PASAL_41__BAB_XVI",
+        "UU_27_2022__PASAL_42__BAB_XVI",
+        "UU_27_2022__PASAL_43__BAB_XVI",
+        "UU_27_2022__PASAL_44__BAB_XVI",
+        "UU_27_2022__PASAL_45",
+        "UU_27_2022__PASAL_46__BAB_XVI",
+        "UU_27_2022__PASAL_47__BAB_XVI",
+        "UU_27_2022__PASAL_49__BAB_XVI",
+        "UU_27_2022__PASAL_50__BAB_XVI",
+        "UU_27_2022__PASAL_51__BAB_XVI",
+        "UU_27_2022__PASAL_52__BAB_XVI",
+        "UU_27_2022__PASAL_53__BAB_XVI",
+        "UU_27_2022__PASAL_54__BAB_XVI",
+        "UU_27_2022__PASAL_55__BAB_XVI",
+        "UU_27_2022__PASAL_6O",
+        "UU_27_2022__PASAL_61__BAB_XVI",
+        "UU_27_2022__PASAL_62__BAB_XVI",
+        "UU_27_2022__PASAL_64__BAB_XVI",
+        "UU_27_2022__PASAL_65__BAB_XVI",
+        "UU_27_2022__PASAL_66",
+        "UU_27_2022__PASAL_67__BAB_XVI",
+        "UU_27_2022__PASAL_68__BAB_XVI",
+        "UU_27_2022__PASAL_69",
+        "UU_27_2022__PASAL_7O__BAB_XVI",
+        "UU_27_2022__PASAL_71",
+        "UU_27_2022__PASAL_73",
+        "UU_27_2022__PASAL_74__BAB_XVI",
+        "UU_27_2022__PASAL_75__BAB_XVI",
+        "UU_27_2022__PASAL_76__BAB_XVI"
+      ]
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_76",
+      "component_type": "PASAL",
+      "number": "76",
+      "title": null,
+      "content": "Undang-Undang ini mulai berlaku pada tanggal\nSK No 155234A\nAgar\nPRESlDEN\nREPUBLIK INOONESIA Agar setiap orang mengetahuinya, memerintahkan\npengundangan Undang-Undang ini\ndengan\npenempatannya dalam Lembaran Negara Republik\nIndonesia.\nDisahkan di Jakarta\npada tanggal L7 Oktober 2O22\nPRESIDEN REPUBLIK INDONESIA,\nttd\nJOKO WIDODO\nDiundangkan di Jakarta\npada tanggd 17 Oktober 2022\nMENTERI SEKRETARIS NEGARA\nREPUBLIK INDONESIA,\nttd.\nPRATIKNO\nLEMBARAN NEGARA REPUBLIK INDONESIA TAHUN 2022 NOMOR 196\nSalinan sesuai dengan aslinya\nKEMENTERIAN SEKRETARIAT NEGARA\nKB\nBLIK INDONESIA\nPerundang-undangan\ntrasi Hukum,\nftrN\nts\n!r,l,*\nSK No 155338A\nDjaman\nI\nPRESlDEN\nREPUBLIK INDONESIA\nPENJEI,ASAN\nATAS\nUNDANG-UNDANG REPUBUK INDONESI,A\nNOMOR 27 TAHVN 2022\nTET\\ITANG\nPELINDUNGAN DATA PRIBADI\nUMUM\nFerkembangan teknologi informasi dan komurikasi yang melaju dengan\npesat telah menimbulkan berbagai peluang dan tantangan. Teknologi informasi\nmemunglinkan manusia untuk saling terhubung tanpa mengenal batas wilayah\nnegara sehingga\nsalah satu faktor pendorong globalisasi. Berbagai\nselrtor kehidupan telah memanfaatkan sistem teknologi informasi, seperti\nperyrelengaraan ele&onic @mmet@ (e-ammere) dalam sektor\nperUagangan/bisnis, eledrunic dtution (edtt@lion) daJarla bidang perdidikan,\neledronic hmlth (e-leaftfl dalam bidang kesehatan, ele&onic gouqrunent\n(egovenunent) dalam bidang pemerintahan, serta teknologi informasi yang\ndimanfaatkan dalam bidang lainnya. Pemanfaatan teknologi informasi tersebut\nmengakibatkan Data Pribadi seseorang sanga.t mudah untuk dikumpulkan dan\ndipindahkan dari sahr pihak ke phak lain tanpa sepengetatnran Subjek Data\nPribadi, sehingga mengancam hak konstitusional Subjek Data Pribadi.\nFelindungan Data Pribadi masuk dalam pelindungan hak asasi manusia\nDengan demikian, pengaturan menyangkut Data Pribadi merupakan manifestasi\npengakuan dan pelindungan atas hak dasar manusia. Keberadaan suatu\nUndang-Undang tentang Pelindungan Data Pribadi\nsuahr\nkeharusan yang tidak dapat ditunda lagl karena sanga.t mendesak bagi berbagai\nkepentingan nasional. Fergaulan intemasional Indonesia turut menuntut\nadanya Felindungan Data Pribadi. Felindungan tersebut dapa.t memperlancar\nperdagangan, industri, dan investasi yang bersifat transnasional.\nUndang-Undang tentang Felindungan Data Pribadi\namanat\ndari Pasal2SG ayat (1) Undang-Undang Dasar Negara Republik Indonesia Tahun\n1945 yang menyatakan bahwa, \"Setiap orang berhak atas perlindungan diri\npribadi, keluarga, kehormatan, martabat, dan harta benda yang di bawah\nkekuasaannya, serta berhak atas rasa aman dan pelindungan dari ancaman\nketakutan untuk berbuat atau tidak berbuat sesLratu yang merupakan hak\nasasi\". Persoalan Felindungan Data Pribadi mtrncul kar€na lreprihatinan akan\nterhadap Data Pribadi yang dapa.t dialami oleh orang dan/atau\nbadan hukum. Felangaran tersehut dapat menimbu[€n kerugian materiel dan\nnonmateriel.\nSK No 155236A\nPerumusan\nPRESIDEN\nELIK INDONESIA Perumusan aturan tentang Pelindungan Data Pribadi dapat dipahami\nkarena adanya kebutuhan untuk melindungi hak individu di dalam\nmasyarakat sehubungan dengan pemrosesan Data Pribadi baik yang\ndilakukan secara elektronik dan nonelektronik menggunakan perangkat olah\ndata. Pelindungan yang memadai atas Data Pribadi akan mampu memberikan\nkepercayaan masyarakat untuk menyediakan Data Pribadi guna berbagai\nkepentingan masyarakat yang lebih besar tanpa disalahgunakan atau\nmelanggar hak pribadinya. Dengan demikian, pengaturan ini akan\nmenciptakan keseimbangan antara hak individu dan masyarakat yang\ndiwakili kepentingannya oleh negara. Pengaturan tentang Pelindungan Data\nPribadi ini akan memberikan kontribusi yang besar terhadap terciptanya\nketertiban dan kemajuan dalam masyarakat informasi.\nUntuk mengurangi tumpang tindih ketentuan tentang Pelindungan Data\nPribadi maka pada dasarnya ketentuan dalam Undang-Undang ini adalah\nstandar Pelindungan Data Pribadi secara urnurn, baik yang diproses sebagian\natau keseluruhan dengan cara elektronik dan nonelektronik, dimana masing-\nmasing sektor dapat menerapkan Pelindungan Data Pribadi sesuai\nkarakteristik sektor yang\nPengaturan\nData\nPribadi bertujuan antara lain melindungi dan menjamin hak dasar warga\nnegara terkait dengan pelindungan diri pribadi, menjamin masyarakat untuk\nmendapatkan pelayanan dari Korporasi, Badan Publik, Organisasi\nInternasional, dan Pemerintah, mendorong pertumbuhan ekonomi digital dan\nindustri teknologi informasi dan komunikasi, dan mendukung peningkatan\ndaya saing industri dalam negeri.\nII. PASALDEMIPASAL\nPasal I\nCukupjelas.",
+      "page_range": [
+        33,
+        36
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_2__BAB_XVI",
+      "component_type": "PASAL",
+      "number": "2",
+      "title": null,
+      "content": "Cukupjelas.",
+      "page_range": [
+        36,
+        36
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_3__BAB_XVI",
+      "component_type": "PASAL",
+      "number": "3",
+      "title": null,
+      "content": "Hurufa\nYang dimaksud dengan \"asas pelindungan\" adalah bahwa setiap\npemrosesErn Data Pribadi dilakukan dengan memberikan\npelindungan kepada Subjek Data Pribadi atas Data Pribadinya\ndan Data Pribadi tersebut agar tidak disalahgunakan.\nSK No 155237 A\nHurufb. . .\nPRESIDEN\nREPUBLIK INDONESIA Huruf b\nYang dimaksud dengan \"asas kepastian hukum\" adalah bahwa\nsetiap pemrosesan Data Pribadi dilakukan berdasarkan\nlandasan hukum untuk mewujudkan Pelindungan Data Pribadi\nserta segala sesuatu yang mendukung\nsehingga mendapatkan pengakuan hukum di dalam dan di luar\npengadilan.\nHuruf c\nYang dimaksud dengan \"asas kepentingan umum\" adalah\nbahwa dalam\nPelindungan Data Pribadi harus\nmemperhatikan kepentingan umum atau masyarakat secara\nluas. Kepentingan umum tersebut antara lain\nnegara dan pertahanan dan keamanan\nnasional.\nHuruf d\nYang dimaksud dengan \"asas kemanfaatan\" adalah bahwa\npengaturan Pelindungan Data Pribadi harus bermanfaat bagi\nkepentingan nasional, khususnya dalam mewujudkan cita-cita\nkesej a-hteraan umum.\nHuruf e\nYang dimaksud dengan \"asas kehati-hatian\" adalah bahwa para\npihak yang terkait dengan perrrosesan dan pengawasan Data\nPribadi harus memperhatikan segenap aspek yang berpotensi\nmendatangkan kerugian.\nHuruf f\nYang dimaksud dengan oasas keseimbangan\" adalah sebagai\nupaya Pelindungan Data Pribadi untuk menyeimbangkan antara\nhak atas Data Pribadi di satu pihak dengan hak negara yang sah\nberdasarkan kepentingan umum.\nHuruf g\nYang dimaksud dengan \"asas pertanggungiawaban\" adalah\nbahwa semua pihak yang terkait dengan pemrosesan dan\npengawasan Data Pribadi bertindak secara bertanggung jawab\nsehingga mampu menjamin keseimbangan hak dan kewajiban\npara pihak yang terkait termasuk Subjek Data Pribadi.\nHurufh\nYang dimaksud dengan \"asas kerahasiaan\" adalah bahwa Data\nPribadi terlindungi dari pihak yang tidak berhak dan/atau dari\nkegiatan pemrosesan Data Pribadi yang tidak sah.\nPasal 4...\nSK No 155238 A\nPRESIDEN\nREPUBLIK INOONESIA Pasal 4\nAyat (1)\nHuruf a\nData Pribadi yang bersifat spesifik merupakan Data Pribadi\nyang apabila dalam pemrosesErnnya dapat mengakibatkan\ndampak lebih besar kepada Subjek Data Pribadi, antara\nlain tindakan diskriminasi dan kerugian yang lebih besar\nSubjek Data Pribadi.\nHurufb\nCrkup jelas.\nAyat (2)\nHuruf a\nYang dimaksud dengan \"data dan informasi kesehatan\"\nadalah catatan atau keterangan individu yang berkaitan\ndengan kesehatan fisik, kesehatan mental, dan/atau\npelayanan kesehatan.\nHurufb\nYang dimaksud dengan \"data biometrilC adalah data yang\nberkaitan dengan fisik, fisiologis, atau karakteristik\nperilaku individu yang memungkinkan identilikasi unik\nterhadap individu, seperti gambar wajah atau data\ndaktiloskopi. Data biometrik juga menjelaskan pada sifat\nkeunikan dan/atau karakteristik seseorang yang harus\nddaga dan dirawat, termasuk narnun tidak terbatas pada\nrekam sidik jari, retina mata, dan sampel DNA.\nHurufc\nYang dimaksud dengan odata genetika\" adalah semua data\njenis apa.pun mengenai karakteristik suatu individu yang\ndiwariskan atau diperoleh selama perkembangan prenatal\nawal.\nHurufd\nYang dimaksud dengan \"catatan kejahatan\" merupakan\ncatatan tertulis tentang seseorang yang pernah melakukan\nperbuatan melawan hukum atau melanggar hukum atau\nsedang dalam proses peradilan atas perbuatan yang\ndilakukan, antara lain catatan kepolisian dan\npencantunan dalam daftar pencegahan atau\nHuruf e\nCukup jelas.\nHuruff...\nSK No 155239A\nPRESIDEN\nREPUBLIK INDONESIA Huruf f\nYang dimaksud dengan \"data keuangan pribadi\" adalah\ntermasuk narnun tidak terbatas kepada data jumlah\nsimpanan pada bank termasuk tabungan, deposito, dan\ndata karhr kredit.\nHurufg\nCukup jelas.\nAyat (3)\nHurufa\nCukup jelas.\nHuruf b\nCukup jelas.\nHurufc\nCukup jelas.\nHuruf d\nCukup jelas.\nHurufe\nCukup jelas.\nHuruff\nYang dimaksud dengan \"Data Pribadi yang dikombinasikan\nuntuk mengidentiflkasi seseorang' antara lain nomor\ntelepon seluler dan IP Address.",
+      "page_range": [
+        36,
+        39
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_5__BAB_XVI",
+      "component_type": "PASAL",
+      "number": "5",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        39,
+        39
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_6__BAB_XVI",
+      "component_type": "PASAL",
+      "number": "6",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        39,
+        39
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_7",
+      "component_type": "PASAL",
+      "number": "7",
+      "title": null,
+      "content": "Hak untuk memperoleh salinan Data Pribadi dilakukan secara gratis,\nkecuali untuk kondisi tertentu yang memang membutuhkan biaya.",
+      "page_range": [
+        39,
+        39
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_8__BAB_XVI",
+      "component_type": "PASAL",
+      "number": "8",
+      "title": null,
+      "content": "Cukup jelas.\nPasal 9...\nSK No 155240A\nPRESIDEN\nREPUBLIK INDONESIA Pasal 9\nCukup jelas.",
+      "page_range": [
+        39,
+        40
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_1O",
+      "component_type": "PASAL",
+      "number": "1O",
+      "title": null,
+      "content": "Ayat (l)\nYang dimaksud dengan \"pemrolilan\" adalah kegiatan\nmengidentifikasi seseorang termasuk narnun tidak terbatas\npada riwayat pekerjaan, kondisi ekonomi, kesehatan, preferensi\npribadi, minat, keandalan, perilaku, lokasi, atau pergerakan\nSubjek Data Pribadi secara elektronik.\nAyat (2)\nCukup jelas.\nPasa1\nPasal\nPasal\nPasal\nCukup jelas.\nt2\nCukup jelas.\nCukup jelas.\nL4\nCukupjelas.",
+      "page_range": [
+        40,
+        40
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_15__BAB_XVI",
+      "component_type": "PASAL",
+      "number": "15",
+      "title": null,
+      "content": "Ayat (1)\nHurufa\nCukup jelas.\nHurufb\nYang dimaksud dengan \"kepentingan proses penegakan\nhukum\" adalah kepentingan yang berkaitan dengan\nupaya atau langkah dalam rangka menjalankan atau\nmenegakkan aturan hukum berdasarkan ketentuan\nperaturan perundang-undangan antara lain proses\npenyelidikan, penyidikan, dan penuntutan.\nHuruf c\nYang dimaksud dengan \"kepentingan umum dalam\nrangka penyelenggaraan negara\" antara lain\npenyelenggaraan administrasi kependudukan, jaminan\nsosial, perpajakan, kepabeanan, dan pelayanan perizinan\nberusaha terintegrasi secara elektronik.\nHuruf d\nSK No 155241A\nPRESIDEN\nREPUELIK INDONESIA Hurufd\nYang dimaksud dengan \"sektor jasa keuangan\" adalah\nperbankan, pasar modal, asuransi, lembaga pembiayaan,\ndana pensiun, regulasi berbasis teknologi, teknologi\nfinansial, dan teknologi yang berbasis lainnya yang berada\ndalam pengawasan Bank Indonesia, Otoritas Jasa\nKeuangan, dan l,embaga Penjamin Simpanan.\nHurufe\nCukup jelas.\nAyat (2)\nCukup jelas.",
+      "page_range": [
+        40,
+        41
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_16__BAB_XVI",
+      "component_type": "PASAL",
+      "number": "16",
+      "title": null,
+      "content": "Ayat (1)\nHurufa\nCukup jelas.\nHurufb\nCukup jelas.\nHurufc\nCukup jelas.\nHuruf d\nCukup jelas.\nHuruf e\nYang dimaksud dengan \"penampilan\" adalah perbuatan\nmemperlihatkan Data Pribadi untuk tujuan tertentu dan\npihak-pihak tertentu.\nYang dimaksud dengan\npemberitahuan sebuah Informasi yang ditujukan kepada\norang banyak dan bersifat umum.\nYang dimaksud dengan \"transfe/ adalah perpindahan,\npengiriman, dan/atau penggandaan Data Pribadi baik\nsecara elektronik maupun nonelektronik dari Pengendali\nData Pribadi kepada pihak lain.\nHuruff\nCukup jelas.\nAyat (2)\nCukup jelas.\nAyat (3)\nCukup jelas.\nadalah\nPasal 17. . .\nSK No 155242A\nPRESIDEN\nREPUBLIK INDONESIA Pasal 17\nCukup jelas.",
+      "page_range": [
+        41,
+        42
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_18",
+      "component_type": "PASAL",
+      "number": "18",
+      "title": null,
+      "content": "Cukup je1as.",
+      "page_range": [
+        42,
+        42
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_19__BAB_XVI",
+      "component_type": "PASAL",
+      "number": "19",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        42,
+        42
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_20__BAB_XVI",
+      "component_type": "PASAL",
+      "number": "20",
+      "title": null,
+      "content": "Ayat (1)\nCukup jelas.\nAyat(21\nHurufa\nCukup jelas.\nHuruf b\nCukup jelas.\nHurufc\nCukup jelas.\nHurufd\nYang dimaksud dengan \"kepentingan vital Subjek Data\nPribadi\" adalah terkait dengan keberlangsungan hidup dari\nSubjek Data Pribadi misalnya ketika pemrosesan Data\nPribadi diperlukan untuk tindalan perawatan medis\nsenus.\nHuruf e\nCukup jelas.\nHuruff\nCukup jelas.",
+      "page_range": [
+        42,
+        42
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_21__BAB_XVI",
+      "component_type": "PASAL",
+      "number": "21",
+      "title": null,
+      "content": "Ayat (1)\nHurufa\nCukup jelas.\nHuruf b\nCukup jelas.\nHurufc\nCukup jelas.\nHurufd\nSK No 155243 A\nPRESIDEN\nREPUBLIK INDONESIA Hurufd\nCukup jelas.\nHuruf e\nYang dimaksud dengan \"rincian mengenai Informasi yang\ndikumpulkan\" adalah daftar Informasi mengenai Data\nPribadi Subjek Data Pribadi, baik berupa Data Pribadi yang\nbersifat umum maupun Data Pribadi yang bersifat spesifik,\nyang dikumpulkan oleh Pengendali Data Pribadi dalam\nrangka pemrosesan Data Pribadi.\nHuruff\nYang dimaksud dengan \"jangka waktu pemrosesan Data\nPribadi\" adalah rentang waktu dimulainya hingga\nselesainya serangkaian kegiatan perrrosesan Data kibadi\nsesuai dengan tujuan perrrosesan Data Pribadi.\nHurufg\nCukup jelas.\nAyat (2)\nC\\:kup jelas.\nPasaJ22\nAyat (1)\nCukup jelas.\nAyat (2)\nCukup jelas.\nAyat (3)\nCukup jelas.\nAyat (4)\nHurufa\nCukup jelas.\nHurufb\nCukup jelas.\nHurufc\nYang dimaksud dengan \"bahasa\" adalah Bahasa Indonesia.\nAyat (5)\nCukup jelas.",
+      "page_range": [
+        42,
+        43
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_23__BAB_XVI",
+      "component_type": "PASAL",
+      "number": "23",
+      "title": null,
+      "content": "Cukup jelas.\nSK No 155340A\nPasal 24...\nPRESIDEN\nREPUBLIK INDONESIA\n_ 10_\nPasal24\nCukup jelas.",
+      "page_range": [
+        43,
+        44
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_25",
+      "component_type": "PASAL",
+      "number": "25",
+      "title": null,
+      "content": "Cukup jel,as.",
+      "page_range": [
+        44,
+        44
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_26__BAB_XVI",
+      "component_type": "PASAL",
+      "number": "26",
+      "title": null,
+      "content": "Cukup jelas.\nPasaJ2T\nYang dimaksud dengan \"secara terbatas dan spesifilC adalah\nData Pribadi hanrs terbatas sesuai dengan tujuan\npemrosesannya serta tujuan pernrosesan Data Pribadi harus secara\neksplisit, sah, dan telah ditentukan pada saat\nPribadi.\nData\nYang dimaksud dengan \"sah secara hukum\" adalah pemrosesan Data\nPribadi dilakukan sesuai dengan ketentuan peraturan pertrndang-\nundangan.\nYang dimaksud dengan \"transparan\" adalah pemrosesan Data Pribadi\ndilakukan dengan mema stikan bahwa Subjek Data F?ibadi telah\nmengetahui Data Pribadi yang diproses dan bagaimana Data Pribadi\ntersebut diproses, serta setiap Informasi dan komunikasi yang\nberkaitan dengan penrosesan Data Pribadi tersebut mudah diakses\ndan dipahami, dengan menggunalan bahasa yangjelas.",
+      "page_range": [
+        44,
+        44
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_28__BAB_XVI",
+      "component_type": "PASAL",
+      "number": "28",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        44,
+        44
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_29__BAB_XVI",
+      "component_type": "PASAL",
+      "number": "29",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        44,
+        44
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_30__BAB_XVI",
+      "component_type": "PASAL",
+      "number": "30",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        44,
+        44
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_31__BAB_XVI",
+      "component_type": "PASAL",
+      "number": "31",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        44,
+        44
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_32__BAB_XVI",
+      "component_type": "PASAL",
+      "number": "32",
+      "title": null,
+      "content": "Cukup jelas.\nPasal 33...\nSK No 155245 A\nFRESIOEN\nREPUBLIK INDONES Pasal 33\nHurufa\nYang dimaksud dengan \"membahayakan keamanan, kesehatan\nfisik, atau kesehatan mental Subjek Data Pribadi dan/atau orang\nlain\" antara lain perubahan data riwayat penyakit yang berpotensi\nmembahayakan keamanan diri sendiri dan/atau orang lain.\nHuruf b\nYang dimaksud dengan \"berdampak pada pengungkapan Data\nPribadi milik orang laino antara lain perubahan Data Pribadi\nnasabah yang berdampak pada pengungkapan Data Pribadi orang\nlain.\nHurufc\nCukupjetras.",
+      "page_range": [
+        44,
+        45
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_34__BAB_XVI",
+      "component_type": "PASAL",
+      "number": "34",
+      "title": null,
+      "content": "Ayat (l)\nPenilaian dampak Pelindungan Data Pribadi dilakukan untuk\nmengwaluasi potensi risiko yang timbul dari suatu pemrosesErn\nData kibadi serta upaya atau langkah yang harus dilakukan\nuntuk memitigasi risiko, termasuk terhadap hak Subjek Data\nPribadi dan mematuhi Undang-Undang ini.\nAyat (2)\nCukup jelas.\nAyat (3)\nCukup jelas.",
+      "page_range": [
+        45,
+        45
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_35__BAB_XVI",
+      "component_type": "PASAL",
+      "number": "35",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        45,
+        45
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_36__BAB_XVI",
+      "component_type": "PASAL",
+      "number": "36",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        45,
+        45
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_37__BAB_XVI",
+      "component_type": "PASAL",
+      "number": "37",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        45,
+        45
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_38__BAB_XVI",
+      "component_type": "PASAL",
+      "number": "38",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        45,
+        45
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_39__BAB_XVI",
+      "component_type": "PASAL",
+      "number": "39",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        45,
+        45
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_4O",
+      "component_type": "PASAL",
+      "number": "4O",
+      "title": null,
+      "content": "Cukup jelas.\nPasal 41 ...\nSK No 155246 A\nPRESIDEN\nREPUBLIK INDONES\n-t2-",
+      "page_range": [
+        45,
+        46
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_41__BAB_XVI",
+      "component_type": "PASAL",
+      "number": "41",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        46,
+        46
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_42__BAB_XVI",
+      "component_type": "PASAL",
+      "number": "42",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        46,
+        46
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_43__BAB_XVI",
+      "component_type": "PASAL",
+      "number": "43",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        46,
+        46
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_44__BAB_XVI",
+      "component_type": "PASAL",
+      "number": "44",
+      "title": null,
+      "content": "Ayat (1)\nYang dimaksud dengan \"memusnahkan' adalah tindakan\nuntuk menghilangkan, melenyapkan, atau menghancurkan\nData Pribadi sehingga tidak lagi dapat digunakan untuk\nmengidentilikasi Subjek Data Pribadi.\nAyat (21\nCukup jelas.",
+      "page_range": [
+        46,
+        46
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_45",
+      "component_type": "PASAL",
+      "number": "45",
+      "title": null,
+      "content": "Cukup je1as.",
+      "page_range": [
+        46,
+        46
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_46__BAB_XVI",
+      "component_type": "PASAL",
+      "number": "46",
+      "title": null,
+      "content": "(1)\nYang dimaksud dengan okegagalan Pelindungan Data Pribadi\"\nadalah kegagalan melindungi Data Pribadi seseorang dalam hal\nkerahasiaan, integritas, dan ketersediaan Data Pribadi,\ntermasuk pelanggaran keamanan, baik yang disengaja maupun\ntidak disengaja, yang mengarah pada perusakan, kehilangan,\nperubahan, pengungkapan, atau akses yang tidak sah\nterhadap Data Pribadi yang dikirim, disimpan, atau diproses.\n(21\nCukup.jelas.\n(3)\nYang dimaksud dengan \"dalam hal tertentu\" antara lain jika\nkegagalan Pelindungan Data Pribadi mengganggu pelayanan\npublik dan/ atau berdampak serius terhadap kepentingan\nmasyarakat.",
+      "page_range": [
+        46,
+        46
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_47__BAB_XVI",
+      "component_type": "PASAL",
+      "number": "47",
+      "title": null,
+      "content": "Cukup jelas.\nAyat\nAyat\nAyat\nSK No 155247 A\nPasal 48...\nPRESIDEN\nPUELIK INDONESIA Pasal 48\nAyat (1)\nYang dimaksud dengan \"pemberitahuan\" adalah pemberitahuan\nkepada Subjek Data Pribadi atau pemberitahuan secara umum\nmelalui media massa baik elektronik maupun nonelektronik.\nAyat (2)\nCukup jelas.\nAyat (3)\nCukup jelas.\nAyat (4)\nCukup jelas.\nAyat (5)\nCukup jelas.",
+      "page_range": [
+        46,
+        47
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_49__BAB_XVI",
+      "component_type": "PASAL",
+      "number": "49",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        47,
+        47
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_50__BAB_XVI",
+      "component_type": "PASAL",
+      "number": "50",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        47,
+        47
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_51__BAB_XVI",
+      "component_type": "PASAL",
+      "number": "51",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        47,
+        47
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_52__BAB_XVI",
+      "component_type": "PASAL",
+      "number": "52",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        47,
+        47
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_53__BAB_XVI",
+      "component_type": "PASAL",
+      "number": "53",
+      "title": null,
+      "content": "Ayat (l)\nYang dimaksud dengan \"pejabat atau petugas yang melaksanakan\nfi.rngsi Pelindungan Data Pribadi\" adalah pejabat atau petugas\nyang bertanggung jawab untuk memastikan\nkepa.tuhan atas prinsip Pelindungan Data Pribadi dan mitiggsi\nrisiko pelanggaran Pelindungan Data Pribadi.\nAyat(21\nCukup jelas.\nAyat (3)\nCukup jelas.",
+      "page_range": [
+        47,
+        47
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_54__BAB_XVI",
+      "component_type": "PASAL",
+      "number": "54",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        47,
+        47
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_55__BAB_XVI",
+      "component_type": "PASAL",
+      "number": "55",
+      "title": null,
+      "content": "Cukup jelas.\nSK No 155248 A\nPasal 56...\nPRESIDEN\nREPUBLIK INDONES]A\n-t4-\nPasal\nPasal\nPasal\nPasal\nCukup jelas.\nAyat (1)\nCukup jelas.\nAyat(21\nCukup jelas.\nAyat (3)\nYang dimaksud dengan \"pendapatan\" adalah arus masuk bruto\ndari manfaat ekonomi yang timbul dari alrtivitas normal entitas\nselama periode jika arus masuk tersebut mengakibatkan kenaikan\nekuitas yang tidak berasal dari kontribusi penanam modal.\nAyat (4)\nCukup jelas.\nAyat (s)\nCukup jeLas.\nCukupjelas.\nHurufa\nCukup jelas.\nHuruf b\nCukup jelas.\nHuruf c\nCukup jelas.\nHurufd\nYang dimaksud dengan \"fasilitasi penyelesaian sengketa di luar\npengadilan\" adalah pemberian sarana\nsengketa\nmelalui prosedur yang disepakati para pihak, yakni penyelesaian\ndi luar pengadilan dengan cara konsultasi, arbitrase, negosiasi,\nmediasi, konsiliasi, atau peniliaian ahli sesuai dengan ketentuan\nperaturan perundang-undangan.",
+      "page_range": [
+        47,
+        48
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_6O",
+      "component_type": "PASAL",
+      "number": "6O",
+      "title": null,
+      "content": "Hurufa\nDalam hal perumusan dan penetapan kebijakan Pelindungan Data\nPribadi, lembaga melibatkan organisasi usaha sesuai dengan\nketentuan peraturan perundang-undangan.\nSK No 155249A\nHurufb. . .\nPRESIOEN\nREPI.JBLIK INOONESlA Huruf b\nCukup jelas.\nHuruf c\nCukup jelas.\nHuruf d\nCukup jelas.\nHuruf e\nCukup jelas.\nHuruf f\nCukup jelas.\nHuruf g\nCukup jelas.\nHurufh\nCukup jelas.\nHuruf i\nCukup jelas.\nHurufj\nCukup.jelas.\nHuruf k\nCukup jelas.\nHuruf I\nCukup jelas.\nHurufm\nCukup jelas.\nHuruf n\nCukup jelas.\nHurufo\nCukup.jelas.",
+      "page_range": [
+        48,
+        49
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_61__BAB_XVI",
+      "component_type": "PASAL",
+      "number": "61",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        49,
+        49
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_62__BAB_XVI",
+      "component_type": "PASAL",
+      "number": "62",
+      "title": null,
+      "content": "Cukup jelas.\nPasal 63...\nSK No 155250A\nPRESIDEN\nREPUBLIK INDONESIA Pasal 63\nCukup jelas.",
+      "page_range": [
+        49,
+        50
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_64__BAB_XVI",
+      "component_type": "PASAL",
+      "number": "64",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        50,
+        50
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_65__BAB_XVI",
+      "component_type": "PASAL",
+      "number": "65",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        50,
+        50
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_66",
+      "component_type": "PASAL",
+      "number": "66",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        50,
+        50
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_67__BAB_XVI",
+      "component_type": "PASAL",
+      "number": "67",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        50,
+        50
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_68__BAB_XVI",
+      "component_type": "PASAL",
+      "number": "68",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        50,
+        50
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_69",
+      "component_type": "PASAL",
+      "number": "69",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        50,
+        50
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_7O__BAB_XVI",
+      "component_type": "PASAL",
+      "number": "7O",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        50,
+        50
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_71",
+      "component_type": "PASAL",
+      "number": "71",
+      "title": null,
+      "content": "Cukup jelas.\nPasalT2\nCukup jelas.",
+      "page_range": [
+        50,
+        50
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_73",
+      "component_type": "PASAL",
+      "number": "73",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        50,
+        50
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_74__BAB_XVI",
+      "component_type": "PASAL",
+      "number": "74",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        50,
+        50
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_75__BAB_XVI",
+      "component_type": "PASAL",
+      "number": "75",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        50,
+        50
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    },
+    {
+      "component_id": "UU_27_2022__PASAL_76__BAB_XVI",
+      "component_type": "PASAL",
+      "number": "76",
+      "title": null,
+      "content": "Cukup jelas.\nSK No 155251A",
+      "page_range": [
+        50,
+        50
+      ],
+      "parent_id": "UU_27_2022__BAB_XVI",
+      "children": []
+    }
+  ],
+  "reference_summary": {
+    "total_references": 14,
+    "by_type": {
+      "MERUJUK_PASAL": 14
+    }
+  }
+}

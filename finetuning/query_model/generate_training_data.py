@@ -53,6 +53,8 @@ KG_SCHEMA = """Node Types:
 - PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
 - Sanksi (properties: label, content) — hukuman pidana/denda
 - KonsepHukum (properties: label, content) — konsep abstrak/definisi
+- Peraturan (properties: label, short_name, regulation_type, number, year, status, source_document_id) — dokumen peraturan
+- VersiPasal (properties: label, version, status, source_document_id, content) — versi pasal yang diamandemen
 
 Relation Types:
 - MEMUAT (UndangUndang → Bab, Bab → Pasal)
@@ -60,7 +62,19 @@ Relation Types:
 - MENETAPKAN_SANKSI (Pasal → Sanksi)
 - BERLAKU_UNTUK (Pasal → EntitasHukum)
 - MERUJUK (Pasal → Pasal)
-- MENDEFINISIKAN (Pasal → KonsepHukum)"""
+- MENDEFINISIKAN (Pasal → KonsepHukum)
+- MENGAMANDEMEN (Peraturan → Peraturan) — amandemen
+- DIAMANDEMEN_OLEH (Peraturan → Peraturan)
+- DITURUNKAN_KE (Peraturan → Peraturan) — hierarki regulasi
+- DITURUNKAN_DARI (Peraturan → Peraturan)
+- MENCABUT (Peraturan → Peraturan)
+- DICABUT_OLEH (Peraturan → Peraturan)
+- MERUJUK_DOKUMEN (Entity → Peraturan) — rujukan antar-dokumen
+- MENGUBAH_PASAL (Peraturan → Entity) — perubahan pasal spesifik
+- MENYISIPKAN_PASAL (Peraturan → Entity)
+- MENGHAPUS_PASAL (Peraturan → Entity)
+- MEMILIKI_VERSI (Entity → VersiPasal)
+- DIAMANDEMEN_MENJADI (VersiPasal → VersiPasal) — versioning"""
 
 
 SYSTEM_INSTRUCTION = f"""Anda adalah asisten yang mengubah pertanyaan hukum Indonesia menjadi Cypher query untuk Neo4j Knowledge Graph.
@@ -210,6 +224,100 @@ TEMPLATES = [
         "cypher": "MATCH (p:Pasal)-[:MENDEFINISIKAN]->(k:KonsepHukum) WHERE toLower(k.label) CONTAINS toLower('{konsep_label}') RETURN p.label AS pasal, k.label AS konsep",
         "category": "definisi",
         "fill_query": "MATCH (k:KonsepHukum) RETURN k.label AS konsep_label LIMIT 20",
+    },
+
+    # === CROSS-DOCUMENT ===
+    {
+        "nl": "Peraturan apa saja yang merupakan turunan dari UU ITE?",
+        "cypher": "MATCH (u:Peraturan)-[:DITURUNKAN_KE]->(p:Peraturan) WHERE toLower(u.label) CONTAINS 'informasi dan transaksi elektronik' OR u.short_name = 'UU ITE' RETURN p.label AS peraturan_turunan, p.short_name AS nama_singkat, p.year AS tahun",
+        "category": "cross_document",
+        "fill_query": None,
+    },
+    {
+        "nl": "Peraturan mana yang mencabut {target_label}?",
+        "cypher": "MATCH (p:Peraturan)-[:MENCABUT]->(target:Peraturan) WHERE toLower(target.label) CONTAINS toLower('{target_label}') RETURN p.label AS peraturan_pencabut, p.year AS tahun",
+        "category": "cross_document",
+        "fill_query": "MATCH (p:Peraturan)-[:MENCABUT]->(t:Peraturan) RETURN t.short_name AS target_label LIMIT 10",
+    },
+    {
+        "nl": "Apa saja peraturan yang merujuk ke {ref_label}?",
+        "cypher": "MATCH (src)-[:MERUJUK_DOKUMEN]->(target:Peraturan) WHERE toLower(target.label) CONTAINS toLower('{ref_label}') OR target.short_name = '{ref_label}' RETURN DISTINCT src.label AS sumber, src.source_document_id AS dokumen_sumber",
+        "category": "cross_document",
+        "fill_query": "MATCH ()-[:MERUJUK_DOKUMEN]->(t:Peraturan) RETURN DISTINCT t.short_name AS ref_label LIMIT 10",
+    },
+    {
+        "nl": "Berapa jumlah peraturan dalam Knowledge Graph?",
+        "cypher": "MATCH (p:Peraturan) RETURN count(p) AS jumlah_peraturan",
+        "category": "cross_document",
+        "fill_query": None,
+    },
+    {
+        "nl": "Tamplikan semua peraturan beserta statusnya",
+        "cypher": "MATCH (p:Peraturan) RETURN p.label AS peraturan, p.short_name AS nama_singkat, p.regulation_type AS jenis, p.year AS tahun, p.status AS status ORDER BY p.year",
+        "category": "cross_document",
+        "fill_query": None,
+    },
+    {
+        "nl": "Apa saja PP yang merupakan pelaksanaan dari UU ITE?",
+        "cypher": "MATCH (pp:Peraturan {regulation_type: 'PP'})-[:DITURUNKAN_DARI]->(uu:Peraturan) WHERE uu.short_name = 'UU ITE' RETURN pp.label AS pp_pelaksanaan, pp.year AS tahun, pp.status AS status",
+        "category": "cross_document",
+        "fill_query": None,
+    },
+    {
+        "nl": "Peraturan apa yang mengamandemen {target_label}?",
+        "cypher": "MATCH (amender:Peraturan)-[:MENGAMANDEMEN]->(target:Peraturan) WHERE toLower(target.label) CONTAINS toLower('{target_label}') OR target.short_name = '{target_label}' RETURN amender.label AS peraturan_amandemen, amender.year AS tahun",
+        "category": "cross_document",
+        "fill_query": "MATCH ()-[:MENGAMANDEMEN]->(t:Peraturan) RETURN DISTINCT t.short_name AS target_label LIMIT 10",
+    },
+    {
+        "nl": "Bagaimana hierarki regulasi dari {source_label}?",
+        "cypher": "MATCH path=(src:Peraturan)-[:DITURUNKAN_KE|MENGAMANDEMEN|MENCABUT*1..3]->(target:Peraturan) WHERE src.short_name = '{source_label}' RETURN [n IN nodes(path) | n.short_name] AS hierarki, [r IN relationships(path) | type(r)] AS relasi",
+        "category": "cross_document",
+        "fill_query": "MATCH (p:Peraturan) WHERE p.regulation_type = 'UU' RETURN p.short_name AS source_label LIMIT 5",
+    },
+
+    # === AMANDEMEN / VERSIONING ===
+    {
+        "nl": "Pasal apa saja yang diubah oleh UU 19/2016?",
+        "cypher": "MATCH (amender:Peraturan {id: 'UU_19_2016'})-[:MENGUBAH_PASAL]->(p) RETURN p.label AS pasal_diubah, p.source_document_id AS dokumen_asal",
+        "category": "amandemen",
+        "fill_query": None,
+    },
+    {
+        "nl": "Apakah {pasal_label} sudah diamandemen?",
+        "cypher": "MATCH (p:Entity)-[:MEMILIKI_VERSI]->(v:VersiPasal) WHERE toLower(p.label) CONTAINS toLower('{pasal_label}') RETURN p.label AS pasal, v.label AS versi, v.version AS nomor_versi, v.status AS status ORDER BY v.version",
+        "category": "amandemen",
+        "fill_query": "MATCH (p:Entity)-[:MEMILIKI_VERSI]->(v:VersiPasal) RETURN DISTINCT p.label AS pasal_label LIMIT 10",
+    },
+    {
+        "nl": "Tampilkan semua pasal yang memiliki versi amandemen",
+        "cypher": "MATCH (v1:VersiPasal)-[:DIAMANDEMEN_MENJADI]->(v2:VersiPasal) RETURN v1.label AS versi_lama, v1.status AS status_lama, v2.label AS versi_baru, v2.status AS status_baru",
+        "category": "amandemen",
+        "fill_query": None,
+    },
+    {
+        "nl": "Berapa pasal yang diamandemen dari UU ITE asli?",
+        "cypher": "MATCH (v:VersiPasal {source_document_id: 'UU_11_2008'}) WHERE v.status = 'diamandemen' RETURN count(v) AS jumlah_pasal_diamandemen",
+        "category": "amandemen",
+        "fill_query": None,
+    },
+    {
+        "nl": "Pasal baru apa yang disisipkan oleh UU 19/2016?",
+        "cypher": "MATCH (v:VersiPasal) WHERE v.source_document_id = 'UU_19_2016' AND v.status = 'baru (disisipkan)' RETURN v.label AS pasal_baru, v.content AS keterangan",
+        "category": "amandemen",
+        "fill_query": None,
+    },
+    {
+        "nl": "Apakah {peraturan_label} masih berlaku?",
+        "cypher": "MATCH (p:Peraturan) WHERE toLower(p.label) CONTAINS toLower('{peraturan_label}') OR p.short_name = '{peraturan_label}' RETURN p.label AS peraturan, p.status AS status, p.year AS tahun",
+        "category": "amandemen",
+        "fill_query": "MATCH (p:Peraturan) RETURN p.short_name AS peraturan_label LIMIT 10",
+    },
+    {
+        "nl": "Apa saja entitas dari dokumen {doc_id}?",
+        "cypher": "MATCH (n:Entity) WHERE n.source_document_id = '{doc_id}' RETURN n.node_type AS tipe, n.label AS label, n.content AS konten LIMIT 50",
+        "category": "cross_document",
+        "fill_query": "MATCH (p:Peraturan) RETURN p.id AS doc_id LIMIT 10",
     },
 ]
 
@@ -469,16 +577,41 @@ def upload_to_google_sheets(
     spreadsheet_id: str,
     train_sheet: str = "training_data",
     val_sheet: str = "validation_data",
+    client_email: str = "",
+    private_key: str = "",
+    batch_size: int = 10,
+    max_retries: int = 5,
+    batch_delay: float = 2.0,
 ):
-    """Upload samples to Google Sheets (requires gspread + credentials in .env)."""
+    """Upload samples to Google Sheets with batch processing, retry, and progress tracking.
+
+    Uses GoogleSheetsWriter for robust uploads with:
+    - Batch processing to manage API rate limits
+    - Exponential backoff retry on 429 errors
+    - tqdm progress bar for visibility
+    - BatchWriteResult summary (successful/failed/errors)
+
+    Args:
+        samples: List of TrainingSample to upload
+        spreadsheet_id: Google Spreadsheet ID
+        train_sheet: Worksheet name for training data
+        val_sheet: Worksheet name for validation data
+        client_email: Google service account email (falls back to env var)
+        private_key: Google service account private key (falls back to env var)
+        batch_size: Number of rows per batch (default: 10)
+        max_retries: Max retry attempts on rate limit errors (default: 5)
+        batch_delay: Seconds to wait between batches (default: 2.0)
+    """
     try:
-        from modules.google_sheets_utils import GoogleUtil
+        import pandas as pd
+        from modules.google_sheets_utils import GoogleUtil, GoogleSheetsWriter
     except ImportError:
         print("[WARN] google_sheets_utils not available. Skipping Sheets upload.")
         return
 
-    client_email = os.getenv("GOOGLE_SHEETS_CLIENT_EMAIL", "")
-    private_key = os.getenv("GOOGLE_SHEETS_PRIVATE_KEY", "")
+    # Use provided credentials, fall back to env vars
+    client_email = client_email or os.getenv("GOOGLE_SHEETS_CLIENT_EMAIL", "")
+    private_key = private_key or os.getenv("GOOGLE_SHEETS_PRIVATE_KEY", "")
 
     if not client_email or not private_key:
         print("[WARN] Google Sheets credentials not configured. Skipping upload.")
@@ -494,21 +627,31 @@ def upload_to_google_sheets(
     print(f"Uploading {len(train)} train + {len(val)} val samples to Sheets...")
 
     for sheet_name, data in [(train_sheet, train), (val_sheet, val)]:
-        for s in data:
-            try:
-                google.write_to_spreadsheet(
-                    sheet_id=spreadsheet_id,
-                    worksheet_output_name=sheet_name,
-                    context=s.context,
-                    question=s.question,
-                    response=s.response,
-                    category=s.category,
-                )
-            except Exception as e:
-                print(f"  [ERROR] Failed to write to {sheet_name}: {e}")
-                break
+        print(f"\n--- Writing {len(data)} rows to '{sheet_name}' ---")
 
-    print("Google Sheets upload complete!")
+        # Convert TrainingSamples to DataFrame
+        df = pd.DataFrame([asdict(s) for s in data])
+
+        # Use GoogleSheetsWriter for robust batch upload
+        writer = GoogleSheetsWriter(
+            google_util=google,
+            sheet_id=spreadsheet_id,
+            worksheet_name=sheet_name,
+            batch_size=batch_size,
+            max_retries=max_retries,
+            batch_delay=batch_delay,
+        )
+
+        result = writer.write_dataframe(df, show_progress=True)
+
+        # Summary
+        print(f"  ✓ {result.successful_rows} rows written successfully")
+        if result.failed_rows > 0:
+            print(f"  ✗ {result.failed_rows} rows failed")
+            for error in result.errors[:3]:
+                print(f"    Row {error['row_number']}: {error['error'][:100]}")
+
+    print("\nGoogle Sheets upload complete!")
 
 
 # ============================================================

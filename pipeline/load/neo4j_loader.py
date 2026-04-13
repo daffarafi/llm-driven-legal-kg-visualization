@@ -20,17 +20,22 @@ from tqdm import tqdm
 class Neo4jLoader:
     """Manages Neo4j connection and KG loading."""
     
-    def __init__(self, uri: str, user: str, password: str):
+    def __init__(self, uri: str, user: str, password: str, database: str = "neo4j"):
         self.driver = GraphDatabase.driver(uri, auth=(user, password))
+        self.database = database
         self.driver.verify_connectivity()
-        print(f"Connected to Neo4j at {uri}")
+        print(f"Connected to Neo4j at {uri} (database: {database})")
     
     def close(self):
         self.driver.close()
     
+    def _session(self):
+        """Get a session targeting the configured database."""
+        return self.driver.session(database=self.database)
+    
     def clear_database(self):
         """Delete all nodes and relationships (use with caution!)."""
-        with self.driver.session() as session:
+        with self._session() as session:
             session.run("MATCH (n) DETACH DELETE n")
         print("Database cleared.")
     
@@ -39,7 +44,7 @@ class Neo4jLoader:
         constraints = [
             "CREATE CONSTRAINT entity_id IF NOT EXISTS FOR (n:Entity) REQUIRE n.id IS UNIQUE",
         ]
-        with self.driver.session() as session:
+        with self._session() as session:
             for c in constraints:
                 try:
                     session.run(c)
@@ -49,7 +54,7 @@ class Neo4jLoader:
     
     def create_indexes(self):
         """Create vector and full-text indexes for search."""
-        with self.driver.session() as session:
+        with self._session() as session:
             # Vector index for semantic search
             try:
                 session.run("""
@@ -80,7 +85,7 @@ class Neo4jLoader:
         """Load nodes into Neo4j. Each node gets both :Entity and :{type} labels."""
         iterator = tqdm(nodes, desc="Loading nodes") if show_progress else nodes
         
-        with self.driver.session() as session:
+        with self._session() as session:
             for node in iterator:
                 node_type = node.get("type", "Entity")
                 embedding = node.get("embedding", [])
@@ -119,7 +124,7 @@ class Neo4jLoader:
         """Load edges/relationships into Neo4j."""
         iterator = tqdm(edges, desc="Loading edges") if show_progress else edges
         
-        with self.driver.session() as session:
+        with self._session() as session:
             for edge in iterator:
                 source_id = edge.get("source_id", "") or edge.get("source", "")
                 target_id = edge.get("target_id", "") or edge.get("target", "")
@@ -151,7 +156,7 @@ class Neo4jLoader:
         
         Types: MENGAMANDEMEN, MENGAMANDEMEN_SEBAGIAN, MENCABUT, MENCABUT_SEBAGIAN
         """
-        with self.driver.session() as session:
+        with self._session() as session:
             for amend in amendments:
                 cypher = f"""
                     MERGE (a:Entity:UndangUndang {{uu_number: $source_uu}})
@@ -165,9 +170,221 @@ class Neo4jLoader:
                 )
         print(f"Loaded {len(amendments)} amendment relationships.")
     
+    def load_regex_references(self, parsed_doc_path: str):
+        """Load regex-detected cross-references into Neo4j.
+        
+        Reads the 'references' field from parsed components and creates
+        MERUJUK_DOKUMEN and MERUJUK_PASAL edges.
+        """
+        with open(parsed_doc_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        
+        document_id = data["document_id"]
+        ref_count = 0
+        
+        with self._session() as session:
+            for component in data.get("components", []):
+                for ref in component.get("references", []):
+                    ref_type = ref.get("type", "")
+                    source_comp_id = ref.get("source_component", "")
+                    
+                    if ref_type == "MERUJUK_DOKUMEN":
+                        target_doc_id = ref.get("target_doc_id", "")
+                        if not target_doc_id:
+                            continue
+                        # Create edge from source component to target document
+                        cypher = """
+                            MATCH (src:Entity {source_document_id: $source_doc_id})
+                            WHERE src.label CONTAINS $source_label
+                            WITH src LIMIT 1
+                            MERGE (target:Entity:Peraturan {id: $target_doc_id})
+                            MERGE (src)-[r:MERUJUK_DOKUMEN]->(target)
+                            SET r.source_text = $source_text,
+                                r.detection_method = 'regex',
+                                r.created_at = datetime()
+                        """
+                        # Extract component label from ID
+                        parts = source_comp_id.split("__")
+                        comp_label = parts[-1].replace("_", " ") if parts else ""
+                        
+                        try:
+                            session.run(cypher,
+                                source_doc_id=document_id,
+                                source_label=comp_label,
+                                target_doc_id=target_doc_id,
+                                source_text=ref.get("source_text", "")[:200],
+                            )
+                            ref_count += 1
+                        except Exception as e:
+                            pass  # Non-critical
+                    
+                    elif ref_type in ("MENGUBAH_PASAL", "MENGHAPUS_PASAL", "MENYISIPKAN_PASAL"):
+                        # Amendment operations — link to target articles
+                        target_article = ref.get("target_article", "")
+                        if not target_article:
+                            continue
+                        
+                        cypher = f"""
+                            MATCH (amender:Entity {{source_document_id: $amender_doc}})
+                            WHERE amender.label CONTAINS $amender_label
+                            WITH amender LIMIT 1
+                            MATCH (target:Entity)
+                            WHERE target.label CONTAINS $target_label
+                            AND target.source_document_id <> $amender_doc
+                            WITH amender, target LIMIT 1
+                            MERGE (amender)-[r:{ref_type}]->(target)
+                            SET r.source_text = $source_text,
+                                r.detection_method = 'regex',
+                                r.created_at = datetime()
+                        """
+                        parts = source_comp_id.split("__")
+                        comp_label = parts[-1].replace("_", " ") if parts else ""
+                        
+                        try:
+                            session.run(cypher,
+                                amender_doc=document_id,
+                                amender_label=comp_label,
+                                target_label=target_article,
+                                source_text=ref.get("source_text", "")[:200],
+                            )
+                            ref_count += 1
+                        except Exception as e:
+                            pass
+        
+        return ref_count
+    
+    def load_versi_pasal(self, regulation_list_path: str):
+        """Create VersiPasal nodes for tracking amendment versions.
+        
+        Lex2KG concept: Each amended article gets a VersiPasal node that tracks
+        the original version and the amended version.
+        
+        For each article in amended_articles:
+        - Creates VersiPasal node (version_original, version_amended)
+        - Links: (VersiPasal_original) -[:DIAMANDEMEN_MENJADI]-> (VersiPasal_amended)
+        - Links: (Pasal_original) -[:MEMILIKI_VERSI]-> (VersiPasal_original)
+        - Links: (Pasal_amended) -[:MEMILIKI_VERSI]-> (VersiPasal_amended)
+        """
+        with open(regulation_list_path, "r", encoding="utf-8") as f:
+            regulations = json.load(f)
+        
+        versi_count = 0
+        
+        with self._session() as session:
+            for reg in regulations:
+                amender_doc_id = reg["doc_id"]
+                
+                # Only process docs with amended_articles
+                for art in reg.get("amended_articles", []):
+                    article = art["article"]  # e.g., "Pasal 27"
+                    action = art["action"]    # MENGUBAH, MENYISIPKAN, MENGHAPUS
+                    description = art.get("description", "")
+                    
+                    # Find the target doc being amended
+                    target_doc_ids = [
+                        r["target_doc_id"]
+                        for r in reg.get("relations", [])
+                        if r["type"] == "MENGAMANDEMEN"
+                    ]
+                    
+                    if not target_doc_ids:
+                        continue
+                    
+                    target_doc_id = target_doc_ids[0]
+                    
+                    if action == "MENGUBAH":
+                        # Create two VersiPasal nodes
+                        versi_original_id = f"VersiPasal_{target_doc_id}__{article.replace(' ', '_')}_v1"
+                        versi_amended_id = f"VersiPasal_{amender_doc_id}__{article.replace(' ', '_')}_v2"
+                        
+                        cypher = """
+                            MERGE (v1:Entity:VersiPasal {id: $v1_id})
+                            SET v1.label = $v1_label,
+                                v1.node_type = 'VersiPasal',
+                                v1.version = 1,
+                                v1.source_document_id = $target_doc,
+                                v1.status = 'diamandemen',
+                                v1.content = $description,
+                                v1.created_at = datetime()
+                            
+                            MERGE (v2:Entity:VersiPasal {id: $v2_id})
+                            SET v2.label = $v2_label,
+                                v2.node_type = 'VersiPasal',
+                                v2.version = 2,
+                                v2.source_document_id = $amender_doc,
+                                v2.status = 'berlaku',
+                                v2.content = $description,
+                                v2.created_at = datetime()
+                            
+                            MERGE (v1)-[:DIAMANDEMEN_MENJADI]->(v2)
+                        """
+                        session.run(cypher,
+                            v1_id=versi_original_id,
+                            v1_label=f"{article} (versi {target_doc_id})",
+                            v2_id=versi_amended_id,
+                            v2_label=f"{article} (versi {amender_doc_id})",
+                            target_doc=target_doc_id,
+                            amender_doc=amender_doc_id,
+                            description=description,
+                        )
+                        
+                        # Link VersiPasal to actual Pasal nodes if they exist
+                        link_cypher = """
+                            OPTIONAL MATCH (p1:Entity)
+                            WHERE p1.label CONTAINS $article AND p1.source_document_id = $target_doc
+                            WITH p1
+                            WHERE p1 IS NOT NULL
+                            MATCH (v1:VersiPasal {id: $v1_id})
+                            MERGE (p1)-[:MEMILIKI_VERSI]->(v1)
+                        """
+                        session.run(link_cypher,
+                            article=article,
+                            target_doc=target_doc_id,
+                            v1_id=versi_original_id,
+                        )
+                        
+                        link_cypher2 = """
+                            OPTIONAL MATCH (p2:Entity)
+                            WHERE p2.label CONTAINS $article AND p2.source_document_id = $amender_doc
+                            WITH p2
+                            WHERE p2 IS NOT NULL
+                            MATCH (v2:VersiPasal {id: $v2_id})
+                            MERGE (p2)-[:MEMILIKI_VERSI]->(v2)
+                        """
+                        session.run(link_cypher2,
+                            article=article,
+                            amender_doc=amender_doc_id,
+                            v2_id=versi_amended_id,
+                        )
+                        
+                        versi_count += 1
+                    
+                    elif action == "MENYISIPKAN":
+                        # Inserted articles only have v1 (new)
+                        versi_id = f"VersiPasal_{amender_doc_id}__{article.replace(' ', '_')}_v1"
+                        cypher = """
+                            MERGE (v:Entity:VersiPasal {id: $v_id})
+                            SET v.label = $label,
+                                v.node_type = 'VersiPasal',
+                                v.version = 1,
+                                v.source_document_id = $amender_doc,
+                                v.status = 'baru (disisipkan)',
+                                v.content = $description,
+                                v.created_at = datetime()
+                        """
+                        session.run(cypher,
+                            v_id=versi_id,
+                            label=f"{article} (disisipkan oleh {amender_doc_id})",
+                            amender_doc=amender_doc_id,
+                            description=description,
+                        )
+                        versi_count += 1
+        
+        print(f"Created {versi_count} VersiPasal nodes.")
+    
     def get_stats(self) -> dict:
         """Get database statistics."""
-        with self.driver.session() as session:
+        with self._session() as session:
             node_count = session.run("MATCH (n) RETURN count(n) AS c").single()["c"]
             edge_count = session.run("MATCH ()-[r]->() RETURN count(r) AS c").single()["c"]
             
@@ -209,7 +426,7 @@ class Neo4jLoader:
         )
         query_embedding = result["embedding"]
         
-        with self.driver.session() as session:
+        with self._session() as session:
             results = session.run("""
                 CALL db.index.vector.queryNodes('entity_embeddings', $top_k, $embedding)
                 YIELD node, score

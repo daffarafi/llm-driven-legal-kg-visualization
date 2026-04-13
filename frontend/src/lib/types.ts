@@ -7,6 +7,8 @@ export interface GraphNode {
   labels: string[];
   label?: string;
   content?: string;
+  node_type?: string;
+  source_document_id?: string;
 }
 
 export interface GraphEdge {
@@ -104,9 +106,46 @@ export interface DocumentSection {
 
 export interface DocumentData {
   document: Record<string, unknown>;
-  bab: DocumentSection[];
-  pasal: DocumentSection[];
-  ayat: DocumentSection[];
+  bab?: DocumentSection[];
+  pasal?: DocumentSection[];
+  ayat?: DocumentSection[];
+  entities_by_type?: Record<string, DocumentSection[]>;
+  total_entities?: number;
+}
+
+// --- Regulations (Multi-document) ---
+
+export interface Regulation {
+  doc_id: string;
+  label: string;
+  short_name?: string;
+  regulation_type?: string;
+  number?: string;
+  year?: number;
+  status?: string;
+  entity_count?: number;
+}
+
+export interface RegulationEdge {
+  source: string;
+  target: string;
+  type: string;
+  description?: string;
+}
+
+export interface RegulationGraph {
+  nodes: Regulation[];
+  edges: RegulationEdge[];
+}
+
+export interface Amendment {
+  id: string;
+  label: string;
+  version?: number;
+  status?: string;
+  source_doc?: string;
+  amended_to_id?: string;
+  amended_to_label?: string;
 }
 
 // --- Graph Viz ---
@@ -120,15 +159,17 @@ export interface ForceGraphNode extends GraphNode {
 
 // Node type color mapping
 export const NODE_COLORS: Record<string, string> = {
-  UndangUndang: "#3b82f6", // blue
-  Bab: "#8b5cf6",          // purple
-  Bagian: "#a78bfa",       // light purple
-  Pasal: "#22c55e",        // green
-  Ayat: "#86efac",         // light green
-  EntitasHukum: "#f97316", // orange
+  UndangUndang: "#3b82f6",   // blue
+  Bab: "#8b5cf6",            // purple
+  Bagian: "#a78bfa",         // light purple
+  Pasal: "#22c55e",          // green
+  Ayat: "#86efac",           // light green
+  EntitasHukum: "#f97316",   // orange
   PerbuatanHukum: "#ef4444", // red
-  Sanksi: "#dc2626",       // dark red
-  KonsepHukum: "#eab308",  // yellow
+  Sanksi: "#dc2626",         // dark red
+  KonsepHukum: "#eab308",    // yellow
+  Peraturan: "#06b6d4",      // cyan
+  VersiPasal: "#14b8a6",     // teal
 };
 
 export const NODE_SIZES: Record<string, number> = {
@@ -140,4 +181,20 @@ export const NODE_SIZES: Record<string, number> = {
   PerbuatanHukum: 4,
   Sanksi: 4,
   KonsepHukum: 4,
+  Peraturan: 10,
+  VersiPasal: 5,
+};
+
+// Document source color mapping for multi-doc visualization
+export const DOC_COLORS: Record<string, string> = {
+  UU_11_2008: "#3b82f6",
+  UU_19_2016: "#6366f1",
+  UU_27_2022: "#8b5cf6",
+  UU_36_1999: "#a855f7",
+  PP_71_2019: "#22c55e",
+  PP_80_2019: "#16a34a",
+  PP_82_2012: "#15803d",
+  Perpres_95_2018: "#f97316",
+  Perpres_132_2022: "#ea580c",
+  Permen_Kominfo_5_2017: "#eab308",
 };

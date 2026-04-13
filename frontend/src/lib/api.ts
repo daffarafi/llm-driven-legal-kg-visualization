@@ -73,3 +73,13 @@ export async function getDocuments() {
 export async function getDocument(docId: string) {
   return fetchAPI(`/api/document/${encodeURIComponent(docId)}`);
 }
+
+// --- Regulations (Multi-document) ---
+
+export async function getRegulationGraph() {
+  return fetchAPI("/api/regulations/graph");
+}
+
+export async function getAmendments() {
+  return fetchAPI("/api/regulations/amendments");
+}

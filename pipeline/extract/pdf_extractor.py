@@ -109,43 +109,56 @@ def clean_page_text(page: PageContent) -> str:
 
 
 def parse_uu_metadata_from_filename(pdf_path: str) -> dict:
-    """Extract UU metadata from filename or PDF content.
+    """Extract regulation metadata from filename.
     
     Expected filename patterns:
-      - "UU_11_2008_ITE.pdf"
       - "UU Nomor 11 Tahun 2008.pdf"
-      - "UU-2008-11.pdf"
+      - "PP Nomor 71 Tahun 2019.pdf"
+      - "Perpres Nomor 95 Tahun 2018.pdf"
+      - "Permen Kominfo Nomor 5 Tahun 2017.pdf"
+      - "UU_11_2008_ITE.pdf"
     """
     basename = Path(pdf_path).stem
     
-    # Try pattern: "UU Nomor X Tahun YYYY"
-    match = re.search(r"(?:UU|Undang.Undang)\s*(?:Nomor|No\.?)\s*(\d+)\s*(?:Tahun)\s*(\d{4})", basename, re.IGNORECASE)
-    if match:
-        nomor = match.group(1)
-        tahun = match.group(2)
-        return {
-            "document_id": f"UU_{nomor}_{tahun}",
-            "uu_number": f"{nomor}/{tahun}",
-            "title": basename,
-            "year": int(tahun),
-            "source_url": "",
-        }
+    # Pattern map: regex → doc_id prefix
+    PATTERNS = [
+        # "UU Nomor X Tahun YYYY"
+        (r"(?:UU|Undang.Undang)\s*(?:Nomor|No\.?)\s*(\d+)\s*(?:Tahun)\s*(\d{4})", "UU"),
+        # "PP Nomor X Tahun YYYY"
+        (r"PP\s*(?:Nomor|No\.?)\s*(\d+)\s*(?:Tahun)\s*(\d{4})", "PP"),
+        # "Perpres Nomor X Tahun YYYY"
+        (r"Perpres\s*(?:Nomor|No\.?)\s*(\d+)\s*(?:Tahun)\s*(\d{4})", "Perpres"),
+        # "Permen Kominfo Nomor X Tahun YYYY" (or other ministries)
+        (r"Permen\s*\w*\s*(?:Nomor|No\.?)\s*(\d+)\s*(?:Tahun)\s*(\d{4})", "Permen_Kominfo"),
+        # Underscore/dash format: "UU_11_2008", "PP-71-2019"
+        (r"(UU|PP|Perpres)[_\-](\d+)[_\-](\d{4})", None),  # special handling
+    ]
     
-    # Try pattern: "UU_11_2008" or "UU-11-2008"
-    match = re.search(r"UU[_\-](\d+)[_\-](\d{4})", basename, re.IGNORECASE)
-    if match:
-        nomor = match.group(1)
-        tahun = match.group(2)
-        return {
-            "document_id": f"UU_{nomor}_{tahun}",
-            "uu_number": f"{nomor}/{tahun}",
-            "title": basename,
-            "year": int(tahun),
-            "source_url": "",
-        }
+    for pattern, prefix in PATTERNS:
+        match = re.search(pattern, basename, re.IGNORECASE)
+        if match:
+            if prefix is None:
+                # Underscore/dash format with type in group 1
+                reg_type = match.group(1)
+                nomor = match.group(2)
+                tahun = match.group(3)
+                doc_id = f"{reg_type}_{nomor}_{tahun}"
+            else:
+                nomor = match.group(1)
+                tahun = match.group(2)
+                doc_id = f"{prefix}_{nomor}_{tahun}"
+            
+            return {
+                "document_id": doc_id,
+                "uu_number": f"{nomor}/{tahun}",
+                "title": basename,
+                "year": int(tahun),
+                "source_url": "",
+            }
     
     # Fallback: use sanitized filename
     sanitized = re.sub(r"[^a-zA-Z0-9]", "_", basename)
+    sanitized = re.sub(r"_+", "_", sanitized).strip("_")
     return {
         "document_id": sanitized,
         "uu_number": "unknown",
