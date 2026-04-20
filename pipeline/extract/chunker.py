@@ -258,7 +258,8 @@ def _split_large_text(text: str, max_tokens: int, overlap_tokens: int, encoder=N
         return sub_chunks
 
 
-def save_chunks(document_id: str, chunks: list[Chunk], output_dir: str) -> str:
+def save_chunks(document_id: str, chunks: list[Chunk], output_dir: str,
+                strategy: str = "naive") -> str:
     """Save chunks to JSON file."""
     os.makedirs(output_dir, exist_ok=True)
     output_path = os.path.join(output_dir, f"{document_id}_chunks.json")
@@ -266,6 +267,7 @@ def save_chunks(document_id: str, chunks: list[Chunk], output_dir: str) -> str:
     data = {
         "document_id": document_id,
         "total_chunks": len(chunks),
+        "chunking_strategy": strategy,
         "chunks": [asdict(c) for c in chunks],
     }
     
@@ -284,9 +286,297 @@ def save_chunks(document_id: str, chunks: list[Chunk], output_dir: str) -> str:
     return output_path
 
 
+# ============================================================
+# Structure-Aware Chunking (Bab-based with context injection)
+# ============================================================
+
+def create_structure_aware_chunks(
+    components: list[dict],
+    document_id: str,
+    doc_title: str = "",
+    max_tokens: int = 3000,
+    encoding_name: str = "cl100k_base",
+    include_penjelasan: bool = False,
+) -> list[Chunk]:
+    """Chunk legal document by structural boundaries (Bab/Bagian).
+    
+    Strategy:
+    1. Group components by Bab (chapter)
+    2. Each chunk gets a context header with document title + Bab + Bagian
+    3. If a Bab exceeds max_tokens, split at Pasal boundaries
+    4. Never split mid-Pasal
+    5. Penjelasan (explanation) sections are separated or excluded
+    
+    This ensures:
+    - LLM always knows which Bab/Bagian a Pasal belongs to
+    - No Pasal is cut in the middle
+    - MEMUAT edges are reliably extracted
+    
+    Args:
+        components: List of component dicts from parsed JSON
+        document_id: Document ID (e.g. "UU_11_2008")
+        doc_title: Document title for context header
+        max_tokens: Maximum tokens per chunk (higher than naive since we
+                    want complete Bab context; LLMs handle 4k+ easily)
+        encoding_name: tiktoken encoding to use
+        include_penjelasan: Whether to include Penjelasan chunks
+    
+    Returns:
+        List of Chunk objects
+    """
+    encoder = _get_encoder(encoding_name)
+    
+    # Build component lookup and tree
+    comp_by_id = {c["component_id"]: c for c in components}
+    
+    # Find all BAB-level components
+    babs = [c for c in components if c["component_type"] == "BAB"]
+    
+    # Detect Penjelasan BABs using the is_penjelasan flag set by the parser.
+    # The parser detects the "PENJELASAN ATAS ..." separator text in the PDF
+    # and marks all components after it with is_penjelasan=True.
+    penjelasan_bab_ids = set()
+    for bab in babs:
+        if bab.get("is_penjelasan", False):
+            penjelasan_bab_ids.add(bab["component_id"])
+    
+    if penjelasan_bab_ids:
+        print(f"[INFO] Penjelasan BABs (from parser flag): {penjelasan_bab_ids}")
+    
+    chunks = []
+    chunk_index = 0
+    
+    for bab in babs:
+        bab_id = bab["component_id"]
+        
+        # Check if this is Penjelasan
+        is_penjelasan = bab_id in penjelasan_bab_ids
+        if is_penjelasan and not include_penjelasan:
+            continue
+        
+        # Collect all descendant components of this Bab (recursive to include
+        # Pasals nested under Bagian)
+        bab_children = _get_descendants(bab_id, components, recursive=True)
+        
+        # Build context header
+        bab_number = bab.get("number", "")
+        bab_title = (bab.get("title") or "")
+        bab_label = f"BAB {bab_number}"
+        if bab_title:
+            bab_label += f" {bab_title}"
+        
+        context_header = f"[DOKUMEN: {doc_title}]\n[BAB: {bab_label}]"
+        if is_penjelasan:
+            context_header += "\n[BAGIAN: PENJELASAN]"
+        
+        # Group children by Bagian (if any) or directly by Pasal
+        bagian_groups = _group_by_bagian(bab_children)
+        
+        for group in bagian_groups:
+            group_header = context_header
+            if group["bagian_label"]:
+                group_header += f"\n[BAGIAN: {group['bagian_label']}]"
+            group_header += "\n---\n"
+            
+            # Collect Pasal texts in this group, filtering out Penjelasan Pasals
+            pasal_texts = []
+            pasal_pages = set()
+            for pasal_comp in group["pasals"]:
+                # Skip Penjelasan Pasals (unless include_penjelasan is True)
+                if not include_penjelasan and pasal_comp.get("is_penjelasan", False):
+                    continue
+                pasal_text = _build_full_pasal_text(pasal_comp, comp_by_id, components)
+                pasal_texts.append(pasal_text)
+                pasal_pages.update(pasal_comp.get("page_range", []))
+            
+            # Skip if all Pasals in this group were filtered out
+            if not pasal_texts:
+                continue
+            
+            # Try to fit all Pasals in one chunk
+            full_text = group_header + "\n\n".join(pasal_texts)
+            full_tokens = _count_tokens(full_text, encoder)
+            
+            if full_tokens <= max_tokens:
+                # Fits in one chunk
+                chunks.append(Chunk(
+                    chunk_id=f"{document_id}__struct_chunk_{chunk_index:03d}",
+                    document_id=document_id,
+                    text=full_text.strip(),
+                    token_count=full_tokens,
+                    page_range=sorted(pasal_pages),
+                    parent_component_id=bab_id,
+                    parent_component_type="BAB",
+                    chunk_index=chunk_index,
+                ))
+                chunk_index += 1
+            else:
+                # Too large — split at Pasal boundaries
+                current_text = group_header
+                current_pages = set()
+                
+                for i, pasal_text in enumerate(pasal_texts):
+                    candidate = current_text + "\n\n" + pasal_text
+                    candidate_tokens = _count_tokens(candidate, encoder)
+                    
+                    if candidate_tokens <= max_tokens:
+                        current_text = candidate
+                        current_pages.update(group["pasals"][i].get("page_range", []))
+                    else:
+                        # Flush current chunk
+                        if current_text.strip() != group_header.strip():
+                            chunks.append(Chunk(
+                                chunk_id=f"{document_id}__struct_chunk_{chunk_index:03d}",
+                                document_id=document_id,
+                                text=current_text.strip(),
+                                token_count=_count_tokens(current_text, encoder),
+                                page_range=sorted(current_pages),
+                                parent_component_id=bab_id,
+                                parent_component_type="BAB",
+                                chunk_index=chunk_index,
+                            ))
+                            chunk_index += 1
+                        
+                        # Start new chunk with same header
+                        current_text = group_header + "\n\n" + pasal_text
+                        current_pages = set(group["pasals"][i].get("page_range", []))
+                
+                # Flush remaining
+                if current_text.strip() != group_header.strip():
+                    chunks.append(Chunk(
+                        chunk_id=f"{document_id}__struct_chunk_{chunk_index:03d}",
+                        document_id=document_id,
+                        text=current_text.strip(),
+                        token_count=_count_tokens(current_text, encoder),
+                        page_range=sorted(current_pages),
+                        parent_component_id=bab_id,
+                        parent_component_type="BAB",
+                        chunk_index=chunk_index,
+                    ))
+                    chunk_index += 1
+    
+    # Handle top-level components that are NOT under any Bab
+    # (e.g., preamble, konsiderans)
+    orphans = [c for c in components
+               if not c.get("parent_id") and c["component_type"] != "BAB"
+               and c.get("content", "").strip()]
+    if orphans:
+        orphan_text = "\n\n".join(
+            c.get("content", "") for c in orphans if c.get("content", "").strip()
+        )
+        if orphan_text.strip():
+            header = f"[DOKUMEN: {doc_title}]\n[BAGIAN: PEMBUKAAN]\n---\n"
+            full = header + orphan_text
+            chunks.insert(0, Chunk(
+                chunk_id=f"{document_id}__struct_chunk_preamble",
+                document_id=document_id,
+                text=full.strip(),
+                token_count=_count_tokens(full, encoder),
+                page_range=[],
+                parent_component_id="",
+                parent_component_type="PREAMBLE",
+                chunk_index=-1,
+            ))
+    
+    # Re-index
+    for i, c in enumerate(chunks):
+        c.chunk_index = i
+        if c.chunk_id.endswith("preamble"):
+            c.chunk_id = f"{document_id}__struct_chunk_{i:03d}"
+    
+    return chunks
+
+
+def _get_descendants(parent_id: str, components: list[dict],
+                     recursive: bool = False) -> list[dict]:
+    """Get components that are children of parent_id.
+    
+    If recursive=True, returns ALL descendants (children, grandchildren, etc.).
+    """
+    direct = [c for c in components if (c.get("parent_id") or "") == parent_id]
+    if not recursive:
+        return direct
+    result = list(direct)
+    for child in direct:
+        result.extend(_get_descendants(child["component_id"], components, recursive=True))
+    return result
+
+
+def _group_by_bagian(children: list[dict]) -> list[dict]:
+    """Group children by Bagian. If no Bagian exists, return one group.
+    
+    Since children includes ALL descendants (recursive), Pasals under a Bagian
+    will have parent_id pointing to the Bagian component.
+    """
+    bagians = [c for c in children if c["component_type"] == "BAGIAN"]
+    all_pasals = [c for c in children if c["component_type"] == "PASAL"]
+    
+    if not bagians:
+        return [{"bagian_label": "", "pasals": all_pasals}]
+    
+    bagian_ids = {b["component_id"] for b in bagians}
+    groups = []
+    for bagian in bagians:
+        bagian_label = f"Bagian {bagian.get('number', '')} {(bagian.get('title') or '')}".strip()
+        # Get Pasals whose parent is this Bagian
+        pasals = [p for p in all_pasals
+                  if (p.get("parent_id") or "") == bagian["component_id"]]
+        if pasals:
+            groups.append({"bagian_label": bagian_label, "pasals": pasals})
+    
+    # Pasals directly under Bab (not under any Bagian)
+    direct_pasals = [p for p in all_pasals
+                     if (p.get("parent_id") or "") not in bagian_ids]
+    if direct_pasals:
+        groups.insert(0, {"bagian_label": "", "pasals": direct_pasals})
+    
+    return groups
+
+
+def _build_full_pasal_text(pasal_comp: dict, comp_by_id: dict,
+                           all_components: list[dict]) -> str:
+    """Build full text of a Pasal including all its Ayat/Huruf children."""
+    number = pasal_comp.get("number", "")
+    header = f"Pasal {number}"
+    content = pasal_comp.get("content", "").strip()
+    
+    # Collect child texts (Ayat, Huruf, Angka)
+    child_texts = []
+    children = [c for c in all_components
+                if (c.get("parent_id") or "") == pasal_comp["component_id"]]
+    
+    for child in children:
+        child_type = child["component_type"]
+        child_num = child.get("number", "")
+        child_content = child.get("content", "").strip()
+        
+        if child_type == "AYAT":
+            child_texts.append(f"({child_num}) {child_content}")
+        elif child_type == "HURUF":
+            child_texts.append(f"{child_num}. {child_content}")
+        elif child_type == "ANGKA":
+            child_texts.append(f"{child_num}. {child_content}")
+        else:
+            child_texts.append(child_content)
+    
+    parts = [header]
+    if content:
+        parts.append(content)
+    if child_texts:
+        parts.extend(child_texts)
+    
+    return "\n".join(parts)
+
+
 def chunk_all_documents(input_dir: str, output_dir: str, min_tokens: int = 400,
-                        max_tokens: int = 800, overlap_tokens: int = 100) -> list[str]:
-    """Chunk all parsed documents in a directory."""
+                        max_tokens: int = 800, overlap_tokens: int = 100,
+                        strategy: str = "naive") -> list[str]:
+    """Chunk all parsed documents in a directory.
+    
+    Args:
+        strategy: "naive" for original sliding-window chunking,
+                  "structure_aware" for Bab-based chunking with context injection.
+    """
     json_files = list(Path(input_dir).glob("*.json"))
     if not json_files:
         print(f"No JSON files found in {input_dir}")
@@ -294,15 +584,24 @@ def chunk_all_documents(input_dir: str, output_dir: str, min_tokens: int = 400,
     
     output_paths = []
     for json_path in json_files:
-        print(f"Chunking: {json_path.name}")
+        print(f"Chunking ({strategy}): {json_path.name}")
         with open(json_path, "r", encoding="utf-8") as f:
             doc = json.load(f)
         
-        chunks = create_chunks(
-            doc["components"], doc["document_id"],
-            min_tokens=min_tokens, max_tokens=max_tokens, overlap_tokens=overlap_tokens,
-        )
-        out = save_chunks(doc["document_id"], chunks, output_dir)
+        if strategy == "structure_aware":
+            chunks = create_structure_aware_chunks(
+                doc["components"], doc["document_id"],
+                doc_title=doc.get("title", ""),
+                max_tokens=max_tokens,
+            )
+        else:
+            chunks = create_chunks(
+                doc["components"], doc["document_id"],
+                min_tokens=min_tokens, max_tokens=max_tokens,
+                overlap_tokens=overlap_tokens,
+            )
+        
+        out = save_chunks(doc["document_id"], chunks, output_dir, strategy=strategy)
         
         # Print stats
         if chunks:
@@ -321,10 +620,16 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Chunk legal documents for LLM processing")
     parser.add_argument("--input", required=True, help="Input directory with parsed JSON files")
     parser.add_argument("--output", required=True, help="Output directory for chunk JSON files")
-    parser.add_argument("--min-tokens", type=int, default=400, help="Minimum tokens per chunk")
+    parser.add_argument("--min-tokens", type=int, default=400, help="Minimum tokens per chunk (naive only)")
     parser.add_argument("--max-tokens", type=int, default=800, help="Maximum tokens per chunk")
-    parser.add_argument("--overlap", type=int, default=100, help="Overlap tokens between chunks")
+    parser.add_argument("--overlap", type=int, default=100, help="Overlap tokens between chunks (naive only)")
+    parser.add_argument("--strategy", choices=["naive", "structure_aware"], default="naive",
+                        help="Chunking strategy: 'naive' (sliding window) or 'structure_aware' (Bab-based)")
     args = parser.parse_args()
     
-    paths = chunk_all_documents(args.input, args.output, args.min_tokens, args.max_tokens, args.overlap)
+    paths = chunk_all_documents(
+        args.input, args.output, args.min_tokens, args.max_tokens, args.overlap,
+        strategy=args.strategy,
+    )
     print(f"\nDone! Chunked {len(paths)} documents.")
+

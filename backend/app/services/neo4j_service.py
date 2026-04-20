@@ -76,14 +76,18 @@ class Neo4jService:
         cls,
         node_types: list[str] | None = None,
         relation_types: list[str] | None = None,
-        limit: int = 100,
+        limit: int = 2000,
     ) -> dict:
-        """Get a subgraph with optional filters."""
+        """Get a subgraph with optional filters.
+        
+        Fetches all nodes (typically <1000 for legal KGs) to ensure
+        rare but important structural nodes (Regulasi, Bab, Bagian)
+        are always included.
+        """
         where_clauses = []
         params: dict = {"limit": limit}
 
         if node_types:
-            # Filter by node labels
             label_checks = " OR ".join(f"n:{t}" for t in node_types)
             where_clauses.append(f"({label_checks})")
 
@@ -286,79 +290,47 @@ class Neo4jService:
     def get_document(cls, doc_id: str) -> dict | None:
         """Get document with its hierarchical structure.
         
-        Supports both Peraturan (multi-doc) and UndangUndang (legacy) nodes.
+        Uses Regulasi nodes with hierarchy: Regulasi → Bab → Bagian → Pasal → Ayat.
         """
-        # Try Peraturan node first (multi-document)
         with cls.get_session() as s:
+            # Try matching Regulasi node
             reg = s.run("""
-                MATCH (p:Peraturan)
-                WHERE p.id = $id OR toLower(p.label) CONTAINS toLower($id) OR p.short_name = $id
-                OPTIONAL MATCH (e:Entity {source_document_id: p.id})
-                WITH p, collect(DISTINCT {
-                    id: elementId(e),
-                    labels: labels(e),
-                    label: e.label,
-                    node_type: e.node_type,
-                    content: substring(coalesce(e.content, ''), 0, 300)
-                }) AS entities
-                RETURN p, entities
+                MATCH (r:Regulasi)
+                WHERE r.id = $id OR r.source_document_id = $id
+                   OR toLower(r.label) CONTAINS toLower($id)
+                OPTIONAL MATCH (r)-[:MEMUAT]->(bab:Bab)
+                OPTIONAL MATCH (bab)-[:MEMUAT]->(bagian:Bagian)
+                OPTIONAL MATCH (bab)-[:MEMUAT]->(pasal_direct:Pasal)
+                OPTIONAL MATCH (bagian)-[:MEMUAT]->(pasal_bagian:Pasal)
+                WITH r,
+                     collect(DISTINCT {
+                         id: elementId(bab), label: bab.label, content: bab.content
+                     }) AS bab_list,
+                     collect(DISTINCT {
+                         id: elementId(bagian), label: bagian.label, content: bagian.content,
+                         bab: bab.label
+                     }) AS bagian_list,
+                     collect(DISTINCT {
+                         id: elementId(pasal_direct), label: pasal_direct.label,
+                         content: pasal_direct.content, bab: bab.label
+                     }) + collect(DISTINCT {
+                         id: elementId(pasal_bagian), label: pasal_bagian.label,
+                         content: pasal_bagian.content, bab: bab.label
+                     }) AS pasal_list
+                RETURN r, bab_list, bagian_list, pasal_list
             """, {"id": doc_id}).single()
 
-        if reg and reg["p"]:
-            doc = dict(reg["p"].items())
-            doc["id"] = doc_id
-            # Group entities by type
-            entities_by_type = {}
-            for e in (reg["entities"] or []):
-                if e and e.get("id"):
-                    nt = e.get("node_type", "Unknown")
-                    entities_by_type.setdefault(nt, []).append(e)
-            return {
-                "document": doc,
-                "entities_by_type": entities_by_type,
-                "total_entities": sum(len(v) for v in entities_by_type.values()),
-            }
-
-        # Fallback to UndangUndang (legacy)
-        query = """
-            MATCH (u:UndangUndang)
-            WHERE elementId(u) = $id OR u.label CONTAINS $id
-            OPTIONAL MATCH (u)-[:MEMUAT]->(bab:Bab)
-            OPTIONAL MATCH (bab)-[:MEMUAT|MEMILIKI_PASAL]->(pasal:Pasal)
-            OPTIONAL MATCH (pasal)-[:MEMILIKI_AYAT]->(ayat:Ayat)
-            RETURN u,
-                collect(DISTINCT {
-                    id: elementId(bab),
-                    label: bab.label,
-                    content: bab.content
-                }) AS bab_list,
-                collect(DISTINCT {
-                    id: elementId(pasal),
-                    label: pasal.label,
-                    content: pasal.content,
-                    bab: bab.label
-                }) AS pasal_list,
-                collect(DISTINCT {
-                    id: elementId(ayat),
-                    label: ayat.label,
-                    content: ayat.content,
-                    pasal: pasal.label
-                }) AS ayat_list
-        """
-        with cls.get_session() as s:
-            result = s.run(query, {"id": doc_id}).single()
-
-        if not result or not result["u"]:
+        if not reg or not reg["r"]:
             return None
 
-        doc = dict(result["u"].items())
+        doc = dict(reg["r"].items())
         doc["id"] = doc_id
 
         return {
             "document": doc,
-            "bab": [b for b in result["bab_list"] if b.get("id")],
-            "pasal": [p for p in result["pasal_list"] if p.get("id")],
-            "ayat": [a for a in result["ayat_list"] if a.get("id")],
+            "bab": [b for b in reg["bab_list"] if b.get("id")],
+            "bagian": [bg for bg in reg["bagian_list"] if bg.get("id")],
+            "pasal": [p for p in reg["pasal_list"] if p.get("id")],
         }
 
     # ------------------------------------------------------------------

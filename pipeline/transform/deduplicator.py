@@ -72,8 +72,12 @@ def deduplicate_entities(
             deduped_nodes.append(group_nodes[0])
             continue
         
-        # Pick canonical: longest label, most content
-        canonical = max(group_nodes, key=lambda n: (len(n.get("label") or ""), len(n.get("content") or "")))
+        # Pick canonical: longest label, most content, prefer uppercase (standard legal format)
+        canonical = max(group_nodes, key=lambda n: (
+            len(n.get("label") or ""),
+            n.get("label", "").isupper(),  # prefer uppercase labels (e.g., "BAB VI" over "Bab VI")
+            len(n.get("content") or ""),
+        ))
         
         # Merge provenance from all duplicates
         all_sources = set()
@@ -185,13 +189,14 @@ def _embedding_dedup(nodes, embeddings, threshold):
     return remaining, merge_map
 
 
-def deduplicate_triples_file(input_path: str, output_dir: str, similarity_threshold: float = 0.85) -> str:
+def deduplicate_triples_file(input_path: str, output_dir: str, similarity_threshold: float = 0.85, prompt_id: str = None) -> str:
     """Deduplicate a validated triples file.
     
     Args:
         input_path: Path to validated triples JSON
         output_dir: Output directory
         similarity_threshold: Cosine similarity threshold
+        prompt_id: Prompt identifier for output filename
         
     Returns:
         Path to deduplicated output file
@@ -206,7 +211,8 @@ def deduplicate_triples_file(input_path: str, output_dir: str, similarity_thresh
     )
     
     os.makedirs(output_dir, exist_ok=True)
-    output_path = os.path.join(output_dir, f"{document_id}_triples.json")
+    filename = f"{document_id}_{prompt_id}_triples.json" if prompt_id else f"{document_id}_triples.json"
+    output_path = os.path.join(output_dir, filename)
     
     output_data = {
         "document_id": document_id,

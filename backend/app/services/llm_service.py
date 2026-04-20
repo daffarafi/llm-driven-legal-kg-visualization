@@ -8,50 +8,56 @@ KG_SCHEMA = """
 ## Node Types (with counts)
 | Label | Count | Description |
 |-------|-------|-------------|
-| PerbuatanHukum | 148 | Specific legal actions that are regulated/prohibited |
-| Ayat | 108 | Sub-article within a Pasal (e.g., "Pasal 27 ayat (1)") |
-| EntitasHukum | 67 | Legal subjects/objects (persons, institutions) |
-| Pasal | 54 | Articles in the regulation (e.g., "Pasal 27") |
-| KonsepHukum | 53 | Formally defined legal concepts (e.g., "Informasi Elektronik") |
-| Sanksi | 15 | Penalties/sanctions with full detail |
-| Bab | 13 | Chapters (e.g., "BAB VII PERBUATAN YANG DILARANG") |
-| UndangUndang | 2 | The regulation itself |
+| PerbuatanHukum | ~200 | Specific legal actions that are regulated/prohibited |
+| Ayat | ~150 | Sub-article within a Pasal (e.g., "Pasal 27 ayat (1)") |
+| EntitasHukum | ~100 | Legal subjects/objects (persons, institutions) |
+| Pasal | ~80 | Articles in the regulation (e.g., "Pasal 27") |
+| KonsepHukum | ~60 | Formally defined legal concepts (e.g., "Informasi Elektronik") |
+| Sanksi | ~15 | Penalties/sanctions with full detail |
+| Bab | ~20 | Chapters (e.g., "BAB VII PERBUATAN YANG DILARANG") |
+| Bagian | ~10 | Sections within a Bab (e.g., "Bagian Kedua") |
+| Regulasi | 2 | The regulation document itself. Has "jenis" property (Undang-Undang, POJK, etc.) |
 
 ## Relationship Types (with counts and directions)
 | Relationship | Typical Pattern | Count |
 |-------------|-----------------|-------|
-| MENGATUR | (Ayat/Pasal) -> (PerbuatanHukum) | 153 |
-| BERLAKU_UNTUK | (Ayat/Pasal) -> (EntitasHukum) | 152 |
-| MERUJUK | (Ayat) -> (Ayat/Pasal), (Pasal) -> (Pasal/Ayat) | 130 |
-| MEMUAT | (UndangUndang) -> (Bab), (Bab) -> (Pasal) | 70 |
-| MENDEFINISIKAN | (Pasal/Ayat) -> (KonsepHukum) | 48 |
-| MENETAPKAN_SANKSI | (Ayat/Pasal) -> (Sanksi) | 18 |
+| MENGATUR | (Ayat/Pasal) -> (PerbuatanHukum) | ~200 |
+| BERLAKU_UNTUK | (Ayat/Pasal) -> (EntitasHukum) | ~180 |
+| MERUJUK | (Ayat) -> (Ayat/Pasal), (Pasal) -> (Pasal/Ayat) | ~150 |
+| MEMUAT | (Regulasi) -> (Bab), (Bab) -> (Bagian), (Bab) -> (Pasal), (Bagian) -> (Pasal) | ~100 |
+| MEMILIKI_AYAT | (Pasal) -> (Ayat) | ~100 |
+| MENDEFINISIKAN | (Pasal/Ayat) -> (KonsepHukum) | ~60 |
+| MENETAPKAN_SANKSI | (Ayat/Pasal) -> (Sanksi) | ~18 |
 
 ## Node Properties
 All nodes have: id, label, content, source_document_id, embedding
 - label: The display name (e.g., "Pasal 27", "Setiap Orang")
 - content: Description or original text excerpt
+- Regulasi nodes also have: jenis (e.g., "Undang-Undang", "POJK")
 
 ## Sample Node Labels
-- UndangUndang: "Undang-Undang tentang Informasi dan Transaksi Elektronik"
+- Regulasi: "UNDANG-UNDANG TENTANG INFORMASI DAN TRANSAKSI ELEKTRONIK" (jenis: Undang-Undang), "POJK tentang Penyelenggaraan TI" (jenis: POJK)
 - Bab: "BAB VII PERBUATAN YANG DILARANG", "BAB XI KETENTUAN PIDANA"
+- Bagian: "Bagian Kedua Penyelenggaraan Sistem Elektronik"
 - Pasal: "Pasal 1", "Pasal 27", "Pasal 45"
 - Ayat: "Pasal 27 ayat (1)", "Pasal 45 ayat (3)"
-- EntitasHukum: "Setiap Orang", "Penyelenggara Sistem Elektronik", "Pemerintah"
+- EntitasHukum: "Setiap Orang", "Penyelenggara Sistem Elektronik", "Pemerintah", "Bank", "Direksi"
 - PerbuatanHukum: "mendistribusikan dan/atau mentransmisikan ... muatan penghinaan dan/atau pencemaran nama baik"
 - Sanksi: "pidana penjara paling lama 6 (enam) tahun dan/atau denda paling banyak Rp1.000.000.000,00"
-- KonsepHukum: "Informasi Elektronik", "Dokumen Elektronik", "Tanda Tangan Elektronik"
+- KonsepHukum: "Informasi Elektronik", "Dokumen Elektronik", "Tanda Tangan Elektronik", "Teknologi Informasi"
 
 ## Key Graph Patterns
-1. Hierarchy: (UndangUndang)-[:MEMUAT]->(Bab)-[:MEMUAT]->(Pasal)
-2. Regulation: (Ayat)-[:MENGATUR]->(PerbuatanHukum), (Pasal)-[:MENGATUR]->(PerbuatanHukum)
-3. Sanctions: (Ayat)-[:MENETAPKAN_SANKSI]->(Sanksi)
-4. Cross-ref: (Ayat)-[:MERUJUK]->(Ayat), (Pasal)-[:MERUJUK]->(Pasal)
-5. Definition: (Pasal)-[:MENDEFINISIKAN]->(KonsepHukum)
-6. Applicability: (Ayat)-[:BERLAKU_UNTUK]->(EntitasHukum)
+1. Hierarchy: (Regulasi)-[:MEMUAT]->(Bab)-[:MEMUAT]->(Bagian)-[:MEMUAT]->(Pasal), or (Bab)-[:MEMUAT]->(Pasal)
+2. Pasal-Ayat: (Pasal)-[:MEMILIKI_AYAT]->(Ayat)
+3. Regulation: (Ayat)-[:MENGATUR]->(PerbuatanHukum), (Pasal)-[:MENGATUR]->(PerbuatanHukum)
+4. Sanctions: (Ayat)-[:MENETAPKAN_SANKSI]->(Sanksi)
+5. Cross-ref: (Ayat)-[:MERUJUK]->(Ayat), (Pasal)-[:MERUJUK]->(Pasal)
+6. Definition: (Pasal)-[:MENDEFINISIKAN]->(KonsepHukum)
+7. Applicability: (Ayat)-[:BERLAKU_UNTUK]->(EntitasHukum)
 
 IMPORTANT: Most MENGATUR, BERLAKU_UNTUK, and MENETAPKAN_SANKSI edges originate from Ayat nodes, NOT Pasal.
 When searching for what an article regulates, query BOTH Pasal and Ayat.
+Use (r:Regulasi) instead of (u:UndangUndang) in all queries.
 """
 
 QUERY_SYSTEM = f"""You are a Cypher query generator for an Indonesian legal Knowledge Graph in Neo4j.
@@ -62,7 +68,7 @@ Given a user question about Indonesian law, generate a Cypher query to retrieve 
 ## STRICT OUTPUT RULES
 1. Output ONLY the raw Cypher query. NO markdown, NO ```, NO explanation.
 2. ALWAYS use CONTAINS (case-insensitive matching) for label/content filters. NEVER use exact match (=) on labels.
-3. ALWAYS end with LIMIT 10.
+3. ALWAYS end with LIMIT 25.
 4. Query must be syntactically valid (balanced parentheses, MATCH + RETURN).
 5. Use toLower() for case-insensitive matching.
 
@@ -70,49 +76,52 @@ Given a user question about Indonesian law, generate a Cypher query to retrieve 
 
 ### Pattern 1: What does an article regulate?
 Question: "Apa yang diatur Pasal 27?"
-MATCH (p)-[:MENGATUR]->(ph:PerbuatanHukum) WHERE p.label CONTAINS 'Pasal 27' RETURN p.label AS pasal, ph.label AS perbuatan, ph.content AS detail LIMIT 10
+MATCH (p)-[:MENGATUR]->(ph:PerbuatanHukum) WHERE p.label CONTAINS 'Pasal 27' RETURN p.label AS pasal, ph.label AS perbuatan, ph.content AS detail LIMIT 25
 
 ### Pattern 2a: What is the penalty for something? (INDIRECT — via MERUJUK)
 CRITICAL: In Indonesian law, prohibitions (Pasal 27-37) and sanctions (Pasal 45-52) are in DIFFERENT chapters.
 Sanction articles MERUJUK (cross-reference) back to prohibition articles. You MUST use this pattern:
 Question: "Apa sanksi pencemaran nama baik?"
-MATCH (a)-[:MERUJUK]->(target), (a)-[:MENETAPKAN_SANKSI]->(sk:Sanksi) WHERE toLower(target.label) CONTAINS 'pasal 27' RETURN a.label AS pasal_sanksi, target.label AS pasal_larangan, sk.label AS sanksi LIMIT 10
+MATCH (a)-[:MERUJUK]->(target), (a)-[:MENETAPKAN_SANKSI]->(sk:Sanksi) WHERE toLower(target.label) CONTAINS 'pasal 27' RETURN a.label AS pasal_sanksi, target.label AS pasal_larangan, sk.label AS sanksi LIMIT 25
 
 ### Pattern 2b: What is the penalty for something? (by keyword in sanction article)
 Question: "Berapa denda untuk pelanggaran Pasal 30?"
-MATCH (a)-[:MERUJUK]->(target), (a)-[:MENETAPKAN_SANKSI]->(sk:Sanksi) WHERE toLower(target.label) CONTAINS 'pasal 30' RETURN a.label AS pasal_sanksi, target.label AS pasal_larangan, sk.label AS sanksi LIMIT 10
+MATCH (a)-[:MERUJUK]->(target), (a)-[:MENETAPKAN_SANKSI]->(sk:Sanksi) WHERE toLower(target.label) CONTAINS 'pasal 30' RETURN a.label AS pasal_sanksi, target.label AS pasal_larangan, sk.label AS sanksi LIMIT 25
 
 ### Pattern 3: What articles are in a chapter?
+Note: Some Bab have Bagian sub-sections. Use OPTIONAL MATCH for both direct and Bagian-contained Pasal.
 Question: "Pasal apa saja di Bab XI?"
-MATCH (b:Bab)-[:MEMUAT]->(p:Pasal) WHERE b.label CONTAINS 'XI' RETURN b.label AS bab, p.label AS pasal, p.content AS isi LIMIT 10
+MATCH (b:Bab) WHERE toLower(b.label) CONTAINS 'xi' OPTIONAL MATCH (b)-[:MEMUAT]->(p1:Pasal) OPTIONAL MATCH (b)-[:MEMUAT]->(bg:Bagian)-[:MEMUAT]->(p2:Pasal) WITH b, COLLECT(DISTINCT p1) + COLLECT(DISTINCT p2) AS pasals UNWIND pasals AS p RETURN b.label AS bab, p.label AS pasal, p.content AS isi ORDER BY p.label LIMIT 25
 
 ### Pattern 4: What is the definition of a concept?
 Question: "Apa definisi Informasi Elektronik?"
-MATCH (p)-[:MENDEFINISIKAN]->(k:KonsepHukum) WHERE toLower(k.label) CONTAINS 'informasi elektronik' RETURN p.label AS pasal, k.label AS konsep, k.content AS definisi LIMIT 10
+MATCH (p)-[:MENDEFINISIKAN]->(k:KonsepHukum) WHERE toLower(k.label) CONTAINS 'informasi elektronik' RETURN p.label AS pasal, k.label AS konsep, k.content AS definisi LIMIT 25
 
 ### Pattern 5: Who does a provision apply to?
 Question: "Pasal 45 berlaku untuk siapa?"
-MATCH (a)-[:BERLAKU_UNTUK]->(e:EntitasHukum) WHERE a.label CONTAINS 'Pasal 45' RETURN a.label AS pasal_ayat, e.label AS subjek LIMIT 10
+MATCH (a)-[:BERLAKU_UNTUK]->(e:EntitasHukum) WHERE a.label CONTAINS 'Pasal 45' RETURN a.label AS pasal_ayat, e.label AS subjek LIMIT 25
 
 ### Pattern 6: Cross-reference between articles
 Question: "Pasal apa yang merujuk ke Pasal 27?"
-MATCH (a)-[:MERUJUK]->(target) WHERE target.label CONTAINS 'Pasal 27' RETURN a.label AS sumber, target.label AS tujuan LIMIT 10
+MATCH (a)-[:MERUJUK]->(target) WHERE target.label CONTAINS 'Pasal 27' RETURN a.label AS sumber, target.label AS tujuan LIMIT 25
 
 ### Pattern 7: General keyword search
 Question: "Informasi tentang transaksi elektronik"
-MATCH (n) WHERE toLower(n.label) CONTAINS 'transaksi elektronik' OR toLower(n.content) CONTAINS 'transaksi elektronik' RETURN labels(n) AS tipe, n.label AS label, n.content AS isi LIMIT 10
+MATCH (n) WHERE toLower(n.label) CONTAINS 'transaksi elektronik' OR toLower(n.content) CONTAINS 'transaksi elektronik' RETURN labels(n) AS tipe, n.label AS label, n.content AS isi LIMIT 25
 
 ### Pattern 8: List all prohibited acts
 Question: "Apa saja perbuatan yang dilarang?"
-MATCH (p)-[:MENGATUR]->(ph:PerbuatanHukum) RETURN p.label AS pasal, ph.label AS perbuatan LIMIT 10
+MATCH (p)-[:MENGATUR]->(ph:PerbuatanHukum) RETURN p.label AS pasal, ph.label AS perbuatan LIMIT 25
 
 ## COMMON MISTAKES TO AVOID
 - Do NOT use exact match: WHERE n.label = 'Pasal 27' (WRONG — use CONTAINS)
-- Do NOT forget LIMIT: Always add LIMIT 10
+- Do NOT forget LIMIT: Always add LIMIT 25
 - Do NOT assume MENGATUR and MENETAPKAN_SANKSI are on the SAME node — they are usually on DIFFERENT nodes connected by MERUJUK
 - Do NOT query only Pasal for sanctions — most MENETAPKAN_SANKSI edges are on Ayat nodes
 - Do NOT use node types that don't exist (e.g., Peraturan, VersiPasal are NOT in this database)
-- When asked about sanctions/penalties, ALWAYS use the MERUJUK pattern (Pattern 2a/2b)"""
+- When asked about sanctions/penalties, ALWAYS use the MERUJUK pattern (Pattern 2a/2b)
+- When listing Pasal in a Bab, handle BOTH direct (Bab)-[:MEMUAT]->(Pasal) and indirect (Bab)-[:MEMUAT]->(Bagian)-[:MEMUAT]->(Pasal) hierarchies
+- Add ORDER BY p.label when listing multiple Pasal to ensure consistent ordering"""
 
 RESPONSE_SYSTEM = """You are an Indonesian legal assistant. Answer the user's question based ONLY on the Knowledge Graph data provided.
 

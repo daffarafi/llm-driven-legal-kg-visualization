@@ -20,7 +20,8 @@
         1
       ],
       "parent_id": null,
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__ANGKA_2",
@@ -33,7 +34,8 @@
         1
       ],
       "parent_id": null,
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__BAB_I",
@@ -48,7 +50,8 @@
       "parent_id": null,
       "children": [
         "PP_80_2019__PASAL_1"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_1",
@@ -84,7 +87,8 @@
         "PP_80_2019__ANGKA_20",
         "PP_80_2019__ANGKA_21",
         "PP_80_2019__ANGKA_22"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__ANGKA_1__PASAL_1",
@@ -97,7 +101,8 @@
         1
       ],
       "parent_id": "PP_80_2019__PASAL_1",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__ANGKA_2__PASAL_1",
@@ -110,7 +115,8 @@
         2
       ],
       "parent_id": "PP_80_2019__PASAL_1",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__ANGKA_3",
@@ -123,7 +129,8 @@
         2
       ],
       "parent_id": "PP_80_2019__PASAL_1",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__ANGKA_4",
@@ -136,7 +143,8 @@
         2
       ],
       "parent_id": "PP_80_2019__PASAL_1",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__ANGKA_5",
@@ -149,7 +157,8 @@
         2
       ],
       "parent_id": "PP_80_2019__PASAL_1",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__ANGKA_6",
@@ -162,7 +171,8 @@
         2
       ],
       "parent_id": "PP_80_2019__PASAL_1",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__ANGKA_7",
@@ -175,7 +185,8 @@
         2
       ],
       "parent_id": "PP_80_2019__PASAL_1",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__ANGKA_8",
@@ -188,7 +199,8 @@
         2
       ],
       "parent_id": "PP_80_2019__PASAL_1",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__ANGKA_9",
@@ -201,7 +213,8 @@
         2
       ],
       "parent_id": "PP_80_2019__PASAL_1",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__ANGKA_10",
@@ -214,7 +227,8 @@
         3
       ],
       "parent_id": "PP_80_2019__PASAL_1",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__ANGKA_11",
@@ -227,7 +241,8 @@
         3
       ],
       "parent_id": "PP_80_2019__PASAL_1",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__ANGKA_12",
@@ -240,7 +255,8 @@
         3
       ],
       "parent_id": "PP_80_2019__PASAL_1",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__ANGKA_13",
@@ -253,7 +269,8 @@
         3
       ],
       "parent_id": "PP_80_2019__PASAL_1",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__ANGKA_14",
@@ -266,7 +283,8 @@
         3
       ],
       "parent_id": "PP_80_2019__PASAL_1",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__ANGKA_15",
@@ -279,7 +297,8 @@
         3
       ],
       "parent_id": "PP_80_2019__PASAL_1",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__ANGKA_16",
@@ -292,7 +311,8 @@
         3
       ],
       "parent_id": "PP_80_2019__PASAL_1",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__ANGKA_17",
@@ -305,7 +325,8 @@
         3
       ],
       "parent_id": "PP_80_2019__PASAL_1",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__ANGKA_18",
@@ -318,7 +339,8 @@
         4
       ],
       "parent_id": "PP_80_2019__PASAL_1",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__ANGKA_19",
@@ -331,7 +353,8 @@
         4
       ],
       "parent_id": "PP_80_2019__PASAL_1",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__ANGKA_20",
@@ -344,7 +367,8 @@
         4
       ],
       "parent_id": "PP_80_2019__PASAL_1",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__ANGKA_21",
@@ -357,7 +381,8 @@
         4
       ],
       "parent_id": "PP_80_2019__PASAL_1",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__ANGKA_22",
@@ -370,7 +395,8 @@
         4
       ],
       "parent_id": "PP_80_2019__PASAL_1",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__BAB_II",
@@ -386,7 +412,8 @@
       "children": [
         "PP_80_2019__PASAL_2",
         "PP_80_2019__PASAL_3"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_2",
@@ -410,7 +437,8 @@
         "PP_80_2019__HURUF_k",
         "PP_80_2019__HURUF_m",
         "PP_80_2019__HURUF_n"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_a",
@@ -423,7 +451,8 @@
         4
       ],
       "parent_id": "PP_80_2019__PASAL_2",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_b",
@@ -436,7 +465,8 @@
         4
       ],
       "parent_id": "PP_80_2019__PASAL_2",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_c",
@@ -449,7 +479,8 @@
         4
       ],
       "parent_id": "PP_80_2019__PASAL_2",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_d",
@@ -462,7 +493,8 @@
         4
       ],
       "parent_id": "PP_80_2019__PASAL_2",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_e",
@@ -475,7 +507,8 @@
         4
       ],
       "parent_id": "PP_80_2019__PASAL_2",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_g",
@@ -488,7 +521,8 @@
         5
       ],
       "parent_id": "PP_80_2019__PASAL_2",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_h",
@@ -501,7 +535,8 @@
         5
       ],
       "parent_id": "PP_80_2019__PASAL_2",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_k",
@@ -516,7 +551,8 @@
       "parent_id": "PP_80_2019__PASAL_2",
       "children": [
         "PP_80_2019__ANGKA_1__HURUF_k"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__ANGKA_1__HURUF_k",
@@ -529,7 +565,8 @@
         5
       ],
       "parent_id": "PP_80_2019__HURUF_k",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_m",
@@ -542,7 +579,8 @@
         5
       ],
       "parent_id": "PP_80_2019__PASAL_2",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_n",
@@ -555,7 +593,8 @@
         5
       ],
       "parent_id": "PP_80_2019__PASAL_2",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_3",
@@ -575,7 +614,8 @@
         "PP_80_2019__HURUF_d__PASAL_3",
         "PP_80_2019__HURUF_e__PASAL_3",
         "PP_80_2019__HURUF_g__PASAL_3"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_a__PASAL_3",
@@ -588,7 +628,8 @@
         5
       ],
       "parent_id": "PP_80_2019__PASAL_3",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_b__PASAL_3",
@@ -601,7 +642,8 @@
         5
       ],
       "parent_id": "PP_80_2019__PASAL_3",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_c__PASAL_3",
@@ -614,7 +656,8 @@
         5
       ],
       "parent_id": "PP_80_2019__PASAL_3",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_d__PASAL_3",
@@ -627,7 +670,8 @@
         5
       ],
       "parent_id": "PP_80_2019__PASAL_3",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_e__PASAL_3",
@@ -640,7 +684,8 @@
         5
       ],
       "parent_id": "PP_80_2019__PASAL_3",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_g__PASAL_3",
@@ -653,7 +698,8 @@
         5
       ],
       "parent_id": "PP_80_2019__PASAL_3",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__BAB_III",
@@ -671,7 +717,8 @@
         "PP_80_2019__PASAL_5",
         "PP_80_2019__PASAL_6",
         "PP_80_2019__PASAL_8"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_4",
@@ -687,7 +734,8 @@
       "children": [
         "PP_80_2019__AYAT_1",
         "PP_80_2019__AYAT_2"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1",
@@ -700,7 +748,8 @@
         5
       ],
       "parent_id": "PP_80_2019__PASAL_4",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_2",
@@ -718,7 +767,8 @@
         "PP_80_2019__HURUF_b__AYAT_2",
         "PP_80_2019__HURUF_c__AYAT_2",
         "PP_80_2019__HURUF_d__AYAT_2"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_a__AYAT_2",
@@ -731,7 +781,8 @@
         5
       ],
       "parent_id": "PP_80_2019__AYAT_2",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_b__AYAT_2",
@@ -744,7 +795,8 @@
         5
       ],
       "parent_id": "PP_80_2019__AYAT_2",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_c__AYAT_2",
@@ -757,7 +809,8 @@
         6
       ],
       "parent_id": "PP_80_2019__AYAT_2",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_d__AYAT_2",
@@ -770,7 +823,8 @@
         6
       ],
       "parent_id": "PP_80_2019__AYAT_2",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_5",
@@ -786,7 +840,8 @@
       "children": [
         "PP_80_2019__HURUF_a__PASAL_5",
         "PP_80_2019__HURUF_b__PASAL_5"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_a__PASAL_5",
@@ -803,7 +858,8 @@
         "PP_80_2019__ANGKA_1__PASAL_5",
         "PP_80_2019__ANGKA_2__PASAL_5",
         "PP_80_2019__ANGKA_3__PASAL_5"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__ANGKA_1__PASAL_5",
@@ -816,7 +872,8 @@
         6
       ],
       "parent_id": "PP_80_2019__HURUF_a__PASAL_5",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__ANGKA_2__PASAL_5",
@@ -829,7 +886,8 @@
         6
       ],
       "parent_id": "PP_80_2019__HURUF_a__PASAL_5",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__ANGKA_3__PASAL_5",
@@ -842,7 +900,8 @@
         6
       ],
       "parent_id": "PP_80_2019__HURUF_a__PASAL_5",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_b__PASAL_5",
@@ -859,7 +918,8 @@
         "PP_80_2019__ANGKA_1__PASAL_5",
         "PP_80_2019__ANGKA_2__PASAL_5",
         "PP_80_2019__ANGKA_3__PASAL_5"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__ANGKA_1__PASAL_5",
@@ -872,7 +932,8 @@
         6
       ],
       "parent_id": "PP_80_2019__HURUF_b__PASAL_5",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__ANGKA_2__PASAL_5",
@@ -885,7 +946,8 @@
         6
       ],
       "parent_id": "PP_80_2019__HURUF_b__PASAL_5",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__ANGKA_3__PASAL_5",
@@ -898,7 +960,8 @@
         6
       ],
       "parent_id": "PP_80_2019__HURUF_b__PASAL_5",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_6",
@@ -917,7 +980,8 @@
         "PP_80_2019__AYAT_3",
         "PP_80_2019__AYAT_4",
         "PP_80_2019__AYAT_5"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_a__PASAL_6",
@@ -930,7 +994,8 @@
         7
       ],
       "parent_id": "PP_80_2019__PASAL_6",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_6",
@@ -948,7 +1013,8 @@
         "PP_80_2019__HURUF_b__PASAL_6",
         "PP_80_2019__HURUF_c__PASAL_6",
         "PP_80_2019__HURUF_d__PASAL_6"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_a__PASAL_6",
@@ -961,7 +1027,8 @@
         7
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_6",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_b__PASAL_6",
@@ -974,7 +1041,8 @@
         7
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_6",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_c__PASAL_6",
@@ -987,7 +1055,8 @@
         7
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_6",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_d__PASAL_6",
@@ -1000,7 +1069,8 @@
         7
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_6",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_3",
@@ -1013,7 +1083,8 @@
         7
       ],
       "parent_id": "PP_80_2019__PASAL_6",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_4",
@@ -1026,7 +1097,8 @@
         7
       ],
       "parent_id": "PP_80_2019__PASAL_6",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_5",
@@ -1039,7 +1111,8 @@
         7
       ],
       "parent_id": "PP_80_2019__PASAL_6",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_8",
@@ -1052,7 +1125,8 @@
         7
       ],
       "parent_id": "PP_80_2019__BAB_III",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__BAB_IV",
@@ -1071,7 +1145,8 @@
         "PP_80_2019__PASAL_12",
         "PP_80_2019__PASAL_13",
         "PP_80_2019__PASAL_14"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_9",
@@ -1087,7 +1162,8 @@
       "children": [
         "PP_80_2019__AYAT_1__PASAL_9",
         "PP_80_2019__AYAT_2__PASAL_9"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_9",
@@ -1100,7 +1176,8 @@
         7
       ],
       "parent_id": "PP_80_2019__PASAL_9",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_2__PASAL_9",
@@ -1113,7 +1190,8 @@
         8
       ],
       "parent_id": "PP_80_2019__PASAL_9",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_1O",
@@ -1130,7 +1208,8 @@
         "PP_80_2019__AYAT_1__PASAL_1O",
         "PP_80_2019__AYAT_2__PASAL_1O",
         "PP_80_2019__AYAT_3__PASAL_1O"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_1O",
@@ -1143,7 +1222,8 @@
         8
       ],
       "parent_id": "PP_80_2019__PASAL_1O",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_2__PASAL_1O",
@@ -1156,7 +1236,8 @@
         8
       ],
       "parent_id": "PP_80_2019__PASAL_1O",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_3__PASAL_1O",
@@ -1169,7 +1250,8 @@
         8
       ],
       "parent_id": "PP_80_2019__PASAL_1O",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_12",
@@ -1185,7 +1267,8 @@
       "children": [
         "PP_80_2019__AYAT_1__PASAL_12",
         "PP_80_2019__AYAT_1__PASAL_12"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_12",
@@ -1202,7 +1285,8 @@
         "PP_80_2019__HURUF_a__PASAL_12",
         "PP_80_2019__HURUF_b__PASAL_12",
         "PP_80_2019__HURUF_c__PASAL_12"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_a__PASAL_12",
@@ -1215,7 +1299,8 @@
         8
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_12",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_b__PASAL_12",
@@ -1228,7 +1313,8 @@
         8
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_12",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_c__PASAL_12",
@@ -1241,7 +1327,8 @@
         8
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_12",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_12",
@@ -1254,7 +1341,8 @@
         9
       ],
       "parent_id": "PP_80_2019__PASAL_12",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_13",
@@ -1269,7 +1357,8 @@
       "parent_id": "PP_80_2019__BAB_IV",
       "children": [
         "PP_80_2019__HURUF_a__PASAL_13"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_a__PASAL_13",
@@ -1282,7 +1371,8 @@
         9
       ],
       "parent_id": "PP_80_2019__PASAL_13",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_14",
@@ -1295,7 +1385,8 @@
         9
       ],
       "parent_id": "PP_80_2019__BAB_IV",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__BAB_V",
@@ -1313,7 +1404,8 @@
         "PP_80_2019__PASAL_16",
         "PP_80_2019__PASAL_17",
         "PP_80_2019__PASAL_18"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_15",
@@ -1332,7 +1424,8 @@
         "PP_80_2019__AYAT_2__PASAL_15",
         "PP_80_2019__AYAT_4__PASAL_15",
         "PP_80_2019__AYAT_4__PASAL_15"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_15",
@@ -1348,7 +1441,8 @@
       "children": [
         "PP_80_2019__HURUF_a__PASAL_15",
         "PP_80_2019__HURUF_b__PASAL_15"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_a__PASAL_15",
@@ -1361,7 +1455,8 @@
         9
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_15",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_b__PASAL_15",
@@ -1374,7 +1469,8 @@
         9
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_15",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_3__PASAL_15",
@@ -1389,7 +1485,8 @@
       "parent_id": "PP_80_2019__PASAL_15",
       "children": [
         "PP_80_2019__HURUF_c__PASAL_15"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_c__PASAL_15",
@@ -1402,7 +1499,8 @@
         9
       ],
       "parent_id": "PP_80_2019__AYAT_3__PASAL_15",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_2__PASAL_15",
@@ -1421,7 +1519,8 @@
         "PP_80_2019__HURUF_c__PASAL_15",
         "PP_80_2019__HURUF_d__PASAL_15",
         "PP_80_2019__HURUF_e__PASAL_15"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_a__PASAL_15",
@@ -1434,7 +1533,8 @@
         9
       ],
       "parent_id": "PP_80_2019__AYAT_2__PASAL_15",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_b__PASAL_15",
@@ -1447,7 +1547,8 @@
         9
       ],
       "parent_id": "PP_80_2019__AYAT_2__PASAL_15",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_c__PASAL_15",
@@ -1460,7 +1561,8 @@
         9
       ],
       "parent_id": "PP_80_2019__AYAT_2__PASAL_15",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_d__PASAL_15",
@@ -1473,7 +1575,8 @@
         9
       ],
       "parent_id": "PP_80_2019__AYAT_2__PASAL_15",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_e__PASAL_15",
@@ -1486,7 +1589,8 @@
         9
       ],
       "parent_id": "PP_80_2019__AYAT_2__PASAL_15",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_4__PASAL_15",
@@ -1499,7 +1603,8 @@
         10
       ],
       "parent_id": "PP_80_2019__PASAL_15",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_4__PASAL_15",
@@ -1512,7 +1617,8 @@
         10
       ],
       "parent_id": "PP_80_2019__PASAL_15",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_16",
@@ -1528,7 +1634,8 @@
       "children": [
         "PP_80_2019__AYAT_1__PASAL_16",
         "PP_80_2019__AYAT_2__PASAL_16"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_16",
@@ -1545,7 +1652,8 @@
         "PP_80_2019__HURUF_a__PASAL_16",
         "PP_80_2019__HURUF_b__PASAL_16",
         "PP_80_2019__HURUF_c__PASAL_16"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_a__PASAL_16",
@@ -1558,7 +1666,8 @@
         10
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_16",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_b__PASAL_16",
@@ -1571,7 +1680,8 @@
         10
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_16",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_c__PASAL_16",
@@ -1584,7 +1694,8 @@
         10
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_16",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_2__PASAL_16",
@@ -1601,7 +1712,8 @@
         "PP_80_2019__HURUF_a__PASAL_16",
         "PP_80_2019__HURUF_b__PASAL_16",
         "PP_80_2019__HURUF_c__PASAL_16"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_a__PASAL_16",
@@ -1614,7 +1726,8 @@
         10
       ],
       "parent_id": "PP_80_2019__AYAT_2__PASAL_16",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_b__PASAL_16",
@@ -1627,7 +1740,8 @@
         10
       ],
       "parent_id": "PP_80_2019__AYAT_2__PASAL_16",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_c__PASAL_16",
@@ -1640,7 +1754,8 @@
         10
       ],
       "parent_id": "PP_80_2019__AYAT_2__PASAL_16",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_17",
@@ -1656,7 +1771,8 @@
       "children": [
         "PP_80_2019__AYAT_1__PASAL_17",
         "PP_80_2019__AYAT_2__PASAL_17"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_17",
@@ -1669,7 +1785,8 @@
         10
       ],
       "parent_id": "PP_80_2019__PASAL_17",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_2__PASAL_17",
@@ -1682,7 +1799,8 @@
         10
       ],
       "parent_id": "PP_80_2019__PASAL_17",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_18",
@@ -1701,7 +1819,8 @@
         "PP_80_2019__AYAT_3__PASAL_18",
         "PP_80_2019__AYAT_4__PASAL_18",
         "PP_80_2019__AYAT_5__PASAL_18"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_18",
@@ -1714,7 +1833,8 @@
         10
       ],
       "parent_id": "PP_80_2019__PASAL_18",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_2__PASAL_18",
@@ -1727,7 +1847,8 @@
         10
       ],
       "parent_id": "PP_80_2019__PASAL_18",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_3__PASAL_18",
@@ -1740,7 +1861,8 @@
         10
       ],
       "parent_id": "PP_80_2019__PASAL_18",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_4__PASAL_18",
@@ -1753,7 +1875,8 @@
         10
       ],
       "parent_id": "PP_80_2019__PASAL_18",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_5__PASAL_18",
@@ -1770,7 +1893,8 @@
         "PP_80_2019__HURUF_a__PASAL_18",
         "PP_80_2019__HURUF_b__PASAL_18",
         "PP_80_2019__HURUF_c__PASAL_18"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_a__PASAL_18",
@@ -1783,7 +1907,8 @@
         11
       ],
       "parent_id": "PP_80_2019__AYAT_5__PASAL_18",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_b__PASAL_18",
@@ -1796,7 +1921,8 @@
         11
       ],
       "parent_id": "PP_80_2019__AYAT_5__PASAL_18",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_c__PASAL_18",
@@ -1809,7 +1935,8 @@
         11
       ],
       "parent_id": "PP_80_2019__AYAT_5__PASAL_18",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__BAB_VI",
@@ -1830,7 +1957,8 @@
         "PP_80_2019__PASAL_25",
         "PP_80_2019__PASAL_26",
         "PP_80_2019__PASAL_27"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_20",
@@ -1849,7 +1977,8 @@
         "PP_80_2019__AYAT_3__PASAL_20",
         "PP_80_2019__AYAT_2__PASAL_20",
         "PP_80_2019__AYAT_4__PASAL_20"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_20",
@@ -1869,7 +1998,8 @@
         "PP_80_2019__HURUF_d__PASAL_20",
         "PP_80_2019__HURUF_e__PASAL_20",
         "PP_80_2019__HURUF_f"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_a__PASAL_20",
@@ -1882,7 +2012,8 @@
         11
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_20",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_b__PASAL_20",
@@ -1895,7 +2026,8 @@
         11
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_20",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_c__PASAL_20",
@@ -1908,7 +2040,8 @@
         11
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_20",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_d__PASAL_20",
@@ -1921,7 +2054,8 @@
         11
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_20",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_e__PASAL_20",
@@ -1934,7 +2068,8 @@
         11
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_20",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_f",
@@ -1947,7 +2082,8 @@
         12
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_20",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_2__PASAL_20",
@@ -1960,7 +2096,8 @@
         12
       ],
       "parent_id": "PP_80_2019__PASAL_20",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_3__PASAL_20",
@@ -1973,7 +2110,8 @@
         12
       ],
       "parent_id": "PP_80_2019__PASAL_20",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_2__PASAL_20",
@@ -1986,7 +2124,8 @@
         12
       ],
       "parent_id": "PP_80_2019__PASAL_20",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_4__PASAL_20",
@@ -1999,7 +2138,8 @@
         12
       ],
       "parent_id": "PP_80_2019__PASAL_20",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_22",
@@ -2016,7 +2156,8 @@
         "PP_80_2019__AYAT_1__PASAL_22",
         "PP_80_2019__AYAT_3__PASAL_22",
         "PP_80_2019__AYAT_4__PASAL_22"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_22",
@@ -2029,7 +2170,8 @@
         12
       ],
       "parent_id": "PP_80_2019__PASAL_22",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_3__PASAL_22",
@@ -2048,7 +2190,8 @@
         "PP_80_2019__HURUF_b__PASAL_22",
         "PP_80_2019__HURUF_c__PASAL_22",
         "PP_80_2019__HURUF_d__PASAL_22"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_a__PASAL_22",
@@ -2061,7 +2204,8 @@
         13
       ],
       "parent_id": "PP_80_2019__AYAT_3__PASAL_22",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_a__PASAL_22",
@@ -2078,7 +2222,8 @@
         "PP_80_2019__ANGKA_1__PASAL_22",
         "PP_80_2019__ANGKA_2__PASAL_22",
         "PP_80_2019__ANGKA_3__PASAL_22"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__ANGKA_1__PASAL_22",
@@ -2091,7 +2236,8 @@
         13
       ],
       "parent_id": "PP_80_2019__HURUF_a__PASAL_22",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__ANGKA_2__PASAL_22",
@@ -2104,7 +2250,8 @@
         13
       ],
       "parent_id": "PP_80_2019__HURUF_a__PASAL_22",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__ANGKA_3__PASAL_22",
@@ -2117,7 +2264,8 @@
         13
       ],
       "parent_id": "PP_80_2019__HURUF_a__PASAL_22",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_b__PASAL_22",
@@ -2136,7 +2284,8 @@
         "PP_80_2019__ANGKA_3__PASAL_22",
         "PP_80_2019__ANGKA_4__PASAL_22",
         "PP_80_2019__ANGKA_5__PASAL_22"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__ANGKA_1__PASAL_22",
@@ -2149,7 +2298,8 @@
         13
       ],
       "parent_id": "PP_80_2019__HURUF_b__PASAL_22",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__ANGKA_2__PASAL_22",
@@ -2162,7 +2312,8 @@
         13
       ],
       "parent_id": "PP_80_2019__HURUF_b__PASAL_22",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__ANGKA_3__PASAL_22",
@@ -2175,7 +2326,8 @@
         13
       ],
       "parent_id": "PP_80_2019__HURUF_b__PASAL_22",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__ANGKA_4__PASAL_22",
@@ -2188,7 +2340,8 @@
         13
       ],
       "parent_id": "PP_80_2019__HURUF_b__PASAL_22",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__ANGKA_5__PASAL_22",
@@ -2201,7 +2354,8 @@
         13
       ],
       "parent_id": "PP_80_2019__HURUF_b__PASAL_22",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_c__PASAL_22",
@@ -2216,7 +2370,8 @@
       "parent_id": "PP_80_2019__AYAT_3__PASAL_22",
       "children": [
         "PP_80_2019__ANGKA_1__PASAL_22"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__ANGKA_1__PASAL_22",
@@ -2229,7 +2384,8 @@
         14
       ],
       "parent_id": "PP_80_2019__HURUF_c__PASAL_22",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_d__PASAL_22",
@@ -2242,7 +2398,8 @@
         14
       ],
       "parent_id": "PP_80_2019__AYAT_3__PASAL_22",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_4__PASAL_22",
@@ -2258,7 +2415,8 @@
       "children": [
         "PP_80_2019__HURUF_a__PASAL_22",
         "PP_80_2019__HURUF_b__PASAL_22"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_a__PASAL_22",
@@ -2271,7 +2429,8 @@
         14
       ],
       "parent_id": "PP_80_2019__AYAT_4__PASAL_22",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_b__PASAL_22",
@@ -2284,7 +2443,8 @@
         14
       ],
       "parent_id": "PP_80_2019__AYAT_4__PASAL_22",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_23",
@@ -2300,7 +2460,8 @@
       "children": [
         "PP_80_2019__HURUF_a__PASAL_23",
         "PP_80_2019__HURUF_b__PASAL_23"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_a__PASAL_23",
@@ -2313,7 +2474,8 @@
         14
       ],
       "parent_id": "PP_80_2019__PASAL_23",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_b__PASAL_23",
@@ -2326,7 +2488,8 @@
         14
       ],
       "parent_id": "PP_80_2019__PASAL_23",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_24",
@@ -2343,7 +2506,8 @@
         "PP_80_2019__AYAT_1__PASAL_24",
         "PP_80_2019__AYAT_2__PASAL_24",
         "PP_80_2019__AYAT_3__PASAL_24"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_24",
@@ -2356,7 +2520,8 @@
         15
       ],
       "parent_id": "PP_80_2019__PASAL_24",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_2__PASAL_24",
@@ -2369,7 +2534,8 @@
         15
       ],
       "parent_id": "PP_80_2019__PASAL_24",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_3__PASAL_24",
@@ -2382,7 +2548,8 @@
         15
       ],
       "parent_id": "PP_80_2019__PASAL_24",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_25",
@@ -2397,7 +2564,8 @@
       "parent_id": "PP_80_2019__BAB_VI",
       "children": [
         "PP_80_2019__AYAT_1__PASAL_25"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_25",
@@ -2422,7 +2590,8 @@
         "PP_80_2019__HURUF_g__PASAL_25",
         "PP_80_2019__HURUF_h__PASAL_25",
         "PP_80_2019__HURUF_h__PASAL_25"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_a__PASAL_25",
@@ -2435,7 +2604,8 @@
         15
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_25",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_b__PASAL_25",
@@ -2448,7 +2618,8 @@
         15
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_25",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_a__PASAL_25",
@@ -2461,7 +2632,8 @@
         15
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_25",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_b__PASAL_25",
@@ -2474,7 +2646,8 @@
         15
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_25",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_c__PASAL_25",
@@ -2487,7 +2660,8 @@
         15
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_25",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_d__PASAL_25",
@@ -2500,7 +2674,8 @@
         15
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_25",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_e__PASAL_25",
@@ -2513,7 +2688,8 @@
         15
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_25",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_f__PASAL_25",
@@ -2526,7 +2702,8 @@
         15
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_25",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_g__PASAL_25",
@@ -2539,7 +2716,8 @@
         15
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_25",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_h__PASAL_25",
@@ -2552,7 +2730,8 @@
         16
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_25",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_h__PASAL_25",
@@ -2565,7 +2744,8 @@
         16
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_25",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_26",
@@ -2581,7 +2761,8 @@
       "children": [
         "PP_80_2019__HURUF_a__PASAL_26",
         "PP_80_2019__HURUF_b__PASAL_26"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_a__PASAL_26",
@@ -2594,7 +2775,8 @@
         16
       ],
       "parent_id": "PP_80_2019__PASAL_26",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_b__PASAL_26",
@@ -2607,7 +2789,8 @@
         16
       ],
       "parent_id": "PP_80_2019__PASAL_26",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_27",
@@ -2622,7 +2805,8 @@
       "parent_id": "PP_80_2019__BAB_VI",
       "children": [
         "PP_80_2019__AYAT_1__PASAL_27"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_27",
@@ -2641,7 +2825,8 @@
         "PP_80_2019__HURUF_c__PASAL_27",
         "PP_80_2019__HURUF_d__PASAL_27",
         "PP_80_2019__HURUF_e__PASAL_27"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_a__PASAL_27",
@@ -2654,7 +2839,8 @@
         16
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_27",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_b__PASAL_27",
@@ -2667,7 +2853,8 @@
         16
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_27",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_c__PASAL_27",
@@ -2680,7 +2867,8 @@
         16
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_27",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_d__PASAL_27",
@@ -2693,7 +2881,8 @@
         16
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_27",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_e__PASAL_27",
@@ -2706,7 +2895,8 @@
         16
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_27",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__BAB_VII",
@@ -2724,7 +2914,8 @@
         "PP_80_2019__PASAL_29",
         "PP_80_2019__PASAL_3O",
         "PP_80_2019__PASAL_31"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_28",
@@ -2743,7 +2934,8 @@
         "PP_80_2019__AYAT_3__PASAL_28",
         "PP_80_2019__AYAT_3__PASAL_28",
         "PP_80_2019__AYAT_4__PASAL_28"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_28",
@@ -2756,7 +2948,8 @@
         16
       ],
       "parent_id": "PP_80_2019__PASAL_28",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_28",
@@ -2769,7 +2962,8 @@
         16
       ],
       "parent_id": "PP_80_2019__PASAL_28",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_3__PASAL_28",
@@ -2782,7 +2976,8 @@
         17
       ],
       "parent_id": "PP_80_2019__PASAL_28",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_3__PASAL_28",
@@ -2795,7 +2990,8 @@
         17
       ],
       "parent_id": "PP_80_2019__PASAL_28",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_4__PASAL_28",
@@ -2811,7 +3007,8 @@
       "children": [
         "PP_80_2019__HURUF_a__PASAL_28",
         "PP_80_2019__HURUF_b__PASAL_28"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_a__PASAL_28",
@@ -2824,7 +3021,8 @@
         17
       ],
       "parent_id": "PP_80_2019__AYAT_4__PASAL_28",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_b__PASAL_28",
@@ -2837,7 +3035,8 @@
         17
       ],
       "parent_id": "PP_80_2019__AYAT_4__PASAL_28",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_29",
@@ -2853,7 +3052,8 @@
       "children": [
         "PP_80_2019__AYAT_1__PASAL_29",
         "PP_80_2019__AYAT_2__PASAL_29"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_29",
@@ -2866,7 +3066,8 @@
         17
       ],
       "parent_id": "PP_80_2019__PASAL_29",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_2__PASAL_29",
@@ -2879,7 +3080,8 @@
         17
       ],
       "parent_id": "PP_80_2019__PASAL_29",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_3O",
@@ -2897,7 +3099,8 @@
         "PP_80_2019__AYAT_2__PASAL_3O",
         "PP_80_2019__AYAT_2__PASAL_3O",
         "PP_80_2019__AYAT_3__PASAL_3O"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_3O",
@@ -2910,7 +3113,8 @@
         17
       ],
       "parent_id": "PP_80_2019__PASAL_3O",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_2__PASAL_3O",
@@ -2923,7 +3127,8 @@
         18
       ],
       "parent_id": "PP_80_2019__PASAL_3O",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_2__PASAL_3O",
@@ -2939,7 +3144,8 @@
       "children": [
         "PP_80_2019__HURUF_a__PASAL_3O",
         "PP_80_2019__HURUF_b__PASAL_3O"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_a__PASAL_3O",
@@ -2952,7 +3158,8 @@
         18
       ],
       "parent_id": "PP_80_2019__AYAT_2__PASAL_3O",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_b__PASAL_3O",
@@ -2965,7 +3172,8 @@
         18
       ],
       "parent_id": "PP_80_2019__AYAT_2__PASAL_3O",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_3__PASAL_3O",
@@ -2981,7 +3189,8 @@
       "children": [
         "PP_80_2019__HURUF_a__PASAL_3O",
         "PP_80_2019__HURUF_b__PASAL_3O"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_a__PASAL_3O",
@@ -2994,7 +3203,8 @@
         18
       ],
       "parent_id": "PP_80_2019__AYAT_3__PASAL_3O",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_b__PASAL_3O",
@@ -3010,7 +3220,8 @@
       "children": [
         "PP_80_2019__ANGKA_1__PASAL_3O",
         "PP_80_2019__ANGKA_2__PASAL_3O"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__ANGKA_1__PASAL_3O",
@@ -3023,7 +3234,8 @@
         18
       ],
       "parent_id": "PP_80_2019__HURUF_b__PASAL_3O",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__ANGKA_2__PASAL_3O",
@@ -3036,7 +3248,8 @@
         19
       ],
       "parent_id": "PP_80_2019__HURUF_b__PASAL_3O",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_31",
@@ -3049,7 +3262,8 @@
         19
       ],
       "parent_id": "PP_80_2019__BAB_VII",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__BAB_VIII",
@@ -3067,7 +3281,8 @@
         "PP_80_2019__PASAL_33",
         "PP_80_2019__PASAL_35",
         "PP_80_2019__PASAL_36"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_32",
@@ -3083,7 +3298,8 @@
       "children": [
         "PP_80_2019__AYAT_1__PASAL_32",
         "PP_80_2019__AYAT_2__PASAL_32"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_32",
@@ -3096,7 +3312,8 @@
         19
       ],
       "parent_id": "PP_80_2019__PASAL_32",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_2__PASAL_32",
@@ -3114,7 +3331,8 @@
         "PP_80_2019__HURUF_b__PASAL_32",
         "PP_80_2019__HURUF_c__PASAL_32",
         "PP_80_2019__HURUF_d__PASAL_32"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_a__PASAL_32",
@@ -3127,7 +3345,8 @@
         19
       ],
       "parent_id": "PP_80_2019__AYAT_2__PASAL_32",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_b__PASAL_32",
@@ -3140,7 +3359,8 @@
         19
       ],
       "parent_id": "PP_80_2019__AYAT_2__PASAL_32",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_c__PASAL_32",
@@ -3153,7 +3373,8 @@
         19
       ],
       "parent_id": "PP_80_2019__AYAT_2__PASAL_32",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_d__PASAL_32",
@@ -3166,7 +3387,8 @@
         19
       ],
       "parent_id": "PP_80_2019__AYAT_2__PASAL_32",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_33",
@@ -3185,7 +3407,8 @@
         "PP_80_2019__AYAT_1__PASAL_33",
         "PP_80_2019__AYAT_2__PASAL_33",
         "PP_80_2019__AYAT_3__PASAL_33"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_33",
@@ -3198,7 +3421,8 @@
         19
       ],
       "parent_id": "PP_80_2019__PASAL_33",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_2__PASAL_33",
@@ -3211,7 +3435,8 @@
         20
       ],
       "parent_id": "PP_80_2019__PASAL_33",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_33",
@@ -3224,7 +3449,8 @@
         20
       ],
       "parent_id": "PP_80_2019__PASAL_33",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_2__PASAL_33",
@@ -3237,7 +3463,8 @@
         20
       ],
       "parent_id": "PP_80_2019__PASAL_33",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_3__PASAL_33",
@@ -3250,7 +3477,8 @@
         20
       ],
       "parent_id": "PP_80_2019__PASAL_33",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_35",
@@ -3263,7 +3491,8 @@
         20
       ],
       "parent_id": "PP_80_2019__BAB_VIII",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_36",
@@ -3276,7 +3505,8 @@
         20
       ],
       "parent_id": "PP_80_2019__BAB_VIII",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__BAB_IX",
@@ -3307,7 +3537,8 @@
         "PP_80_2019__PASAL_54",
         "PP_80_2019__PASAL_55",
         "PP_80_2019__PASAL_57"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_37",
@@ -3320,7 +3551,8 @@
         20
       ],
       "parent_id": "PP_80_2019__BAB_IX",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_38",
@@ -3336,7 +3568,8 @@
       "children": [
         "PP_80_2019__AYAT_2__PASAL_38",
         "PP_80_2019__AYAT_2__PASAL_38"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_2__PASAL_38",
@@ -3349,7 +3582,8 @@
         21
       ],
       "parent_id": "PP_80_2019__PASAL_38",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_2__PASAL_38",
@@ -3362,7 +3596,8 @@
         21
       ],
       "parent_id": "PP_80_2019__PASAL_38",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_39",
@@ -3378,7 +3613,8 @@
       "children": [
         "PP_80_2019__AYAT_1__PASAL_39",
         "PP_80_2019__AYAT_3__PASAL_39"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_39",
@@ -3399,7 +3635,8 @@
         "PP_80_2019__HURUF_e__PASAL_39",
         "PP_80_2019__HURUF_f__PASAL_39",
         "PP_80_2019__HURUF_g__PASAL_39"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_a__PASAL_39",
@@ -3412,7 +3649,8 @@
         21
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_39",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_b__PASAL_39",
@@ -3425,7 +3663,8 @@
         21
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_39",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_c__PASAL_39",
@@ -3438,7 +3677,8 @@
         21
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_39",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_d__PASAL_39",
@@ -3451,7 +3691,8 @@
         21
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_39",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_e__PASAL_39",
@@ -3464,7 +3705,8 @@
         21
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_39",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_f__PASAL_39",
@@ -3477,7 +3719,8 @@
         21
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_39",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_g__PASAL_39",
@@ -3490,7 +3733,8 @@
         21
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_39",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_3__PASAL_39",
@@ -3503,7 +3747,8 @@
         21
       ],
       "parent_id": "PP_80_2019__PASAL_39",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_40",
@@ -3516,7 +3761,8 @@
         22
       ],
       "parent_id": "PP_80_2019__BAB_IX",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_42",
@@ -3529,7 +3775,8 @@
         22
       ],
       "parent_id": "PP_80_2019__BAB_IX",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_43",
@@ -3548,7 +3795,8 @@
         "PP_80_2019__HURUF_c__PASAL_43",
         "PP_80_2019__HURUF_d__PASAL_43",
         "PP_80_2019__HURUF_e__PASAL_43"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_a__PASAL_43",
@@ -3561,7 +3809,8 @@
         22
       ],
       "parent_id": "PP_80_2019__PASAL_43",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_b__PASAL_43",
@@ -3574,7 +3823,8 @@
         22
       ],
       "parent_id": "PP_80_2019__PASAL_43",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_c__PASAL_43",
@@ -3587,7 +3837,8 @@
         22
       ],
       "parent_id": "PP_80_2019__PASAL_43",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_d__PASAL_43",
@@ -3600,7 +3851,8 @@
         22
       ],
       "parent_id": "PP_80_2019__PASAL_43",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_e__PASAL_43",
@@ -3613,7 +3865,8 @@
         22
       ],
       "parent_id": "PP_80_2019__PASAL_43",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_44",
@@ -3632,7 +3885,8 @@
         "PP_80_2019__AYAT_1__PASAL_44",
         "PP_80_2019__AYAT_3__PASAL_44",
         "PP_80_2019__AYAT_4__PASAL_44"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_44",
@@ -3645,7 +3899,8 @@
         22
       ],
       "parent_id": "PP_80_2019__PASAL_44",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_2__PASAL_44",
@@ -3658,7 +3913,8 @@
         23
       ],
       "parent_id": "PP_80_2019__PASAL_44",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_44",
@@ -3671,7 +3927,8 @@
         23
       ],
       "parent_id": "PP_80_2019__PASAL_44",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_3__PASAL_44",
@@ -3684,7 +3941,8 @@
         23
       ],
       "parent_id": "PP_80_2019__PASAL_44",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_4__PASAL_44",
@@ -3697,7 +3955,8 @@
         23
       ],
       "parent_id": "PP_80_2019__PASAL_44",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_46",
@@ -3718,7 +3977,8 @@
         "PP_80_2019__AYAT_1__PASAL_46",
         "PP_80_2019__AYAT_2__PASAL_46",
         "PP_80_2019__AYAT_3__PASAL_46"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_46",
@@ -3731,7 +3991,8 @@
         23
       ],
       "parent_id": "PP_80_2019__PASAL_46",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_2__PASAL_46",
@@ -3744,7 +4005,8 @@
         23
       ],
       "parent_id": "PP_80_2019__PASAL_46",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_3__PASAL_46",
@@ -3757,7 +4019,8 @@
         23
       ],
       "parent_id": "PP_80_2019__PASAL_46",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_4__PASAL_46",
@@ -3770,7 +4033,8 @@
         24
       ],
       "parent_id": "PP_80_2019__PASAL_46",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_46",
@@ -3783,7 +4047,8 @@
         24
       ],
       "parent_id": "PP_80_2019__PASAL_46",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_2__PASAL_46",
@@ -3796,7 +4061,8 @@
         24
       ],
       "parent_id": "PP_80_2019__PASAL_46",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_3__PASAL_46",
@@ -3809,7 +4075,8 @@
         24
       ],
       "parent_id": "PP_80_2019__PASAL_46",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_48",
@@ -3825,7 +4092,8 @@
       "children": [
         "PP_80_2019__AYAT_1__PASAL_48",
         "PP_80_2019__AYAT_2__PASAL_48"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_48",
@@ -3838,7 +4106,8 @@
         24
       ],
       "parent_id": "PP_80_2019__PASAL_48",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_2__PASAL_48",
@@ -3851,7 +4120,8 @@
         24
       ],
       "parent_id": "PP_80_2019__PASAL_48",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_49",
@@ -3867,7 +4137,8 @@
       "children": [
         "PP_80_2019__AYAT_1__PASAL_49",
         "PP_80_2019__AYAT_3__PASAL_49"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_49",
@@ -3880,7 +4151,8 @@
         24
       ],
       "parent_id": "PP_80_2019__PASAL_49",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_3__PASAL_49",
@@ -3893,7 +4165,8 @@
         25
       ],
       "parent_id": "PP_80_2019__PASAL_49",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_50",
@@ -3906,7 +4179,8 @@
         25
       ],
       "parent_id": "PP_80_2019__BAB_IX",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_51",
@@ -3922,7 +4196,8 @@
       "children": [
         "PP_80_2019__AYAT_1__PASAL_51",
         "PP_80_2019__AYAT_2__PASAL_51"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_51",
@@ -3935,7 +4210,8 @@
         25
       ],
       "parent_id": "PP_80_2019__PASAL_51",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_2__PASAL_51",
@@ -3954,7 +4230,8 @@
         "PP_80_2019__HURUF_c__PASAL_51",
         "PP_80_2019__HURUF_d__PASAL_51",
         "PP_80_2019__HURUF_e__PASAL_51"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_a__PASAL_51",
@@ -3967,7 +4244,8 @@
         25
       ],
       "parent_id": "PP_80_2019__AYAT_2__PASAL_51",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_b__PASAL_51",
@@ -3980,7 +4258,8 @@
         25
       ],
       "parent_id": "PP_80_2019__AYAT_2__PASAL_51",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_c__PASAL_51",
@@ -3993,7 +4272,8 @@
         25
       ],
       "parent_id": "PP_80_2019__AYAT_2__PASAL_51",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_d__PASAL_51",
@@ -4006,7 +4286,8 @@
         25
       ],
       "parent_id": "PP_80_2019__AYAT_2__PASAL_51",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_e__PASAL_51",
@@ -4019,7 +4300,8 @@
         25
       ],
       "parent_id": "PP_80_2019__AYAT_2__PASAL_51",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_52",
@@ -4038,7 +4320,8 @@
         "PP_80_2019__HURUF_c__PASAL_52",
         "PP_80_2019__HURUF_d__PASAL_52",
         "PP_80_2019__HURUF_f__PASAL_52"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_a__PASAL_52",
@@ -4051,7 +4334,8 @@
         25
       ],
       "parent_id": "PP_80_2019__PASAL_52",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_b__PASAL_52",
@@ -4064,7 +4348,8 @@
         25
       ],
       "parent_id": "PP_80_2019__PASAL_52",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_c__PASAL_52",
@@ -4077,7 +4362,8 @@
         25
       ],
       "parent_id": "PP_80_2019__PASAL_52",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_d__PASAL_52",
@@ -4090,7 +4376,8 @@
         26
       ],
       "parent_id": "PP_80_2019__PASAL_52",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_f__PASAL_52",
@@ -4103,7 +4390,8 @@
         26
       ],
       "parent_id": "PP_80_2019__PASAL_52",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_53",
@@ -4119,7 +4407,8 @@
       "children": [
         "PP_80_2019__AYAT_1__PASAL_53",
         "PP_80_2019__AYAT_2__PASAL_53"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_53",
@@ -4142,7 +4431,8 @@
         "PP_80_2019__HURUF_g__PASAL_53",
         "PP_80_2019__HURUF_h__PASAL_53",
         "PP_80_2019__HURUF_i"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_a__PASAL_53",
@@ -4155,7 +4445,8 @@
         26
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_53",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_b__PASAL_53",
@@ -4168,7 +4459,8 @@
         26
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_53",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_c__PASAL_53",
@@ -4181,7 +4473,8 @@
         26
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_53",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_d__PASAL_53",
@@ -4194,7 +4487,8 @@
         26
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_53",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_e__PASAL_53",
@@ -4207,7 +4501,8 @@
         26
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_53",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_f__PASAL_53",
@@ -4220,7 +4515,8 @@
         26
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_53",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_g__PASAL_53",
@@ -4233,7 +4529,8 @@
         26
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_53",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_h__PASAL_53",
@@ -4246,7 +4543,8 @@
         26
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_53",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_i",
@@ -4259,7 +4557,8 @@
         26
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_53",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_2__PASAL_53",
@@ -4272,7 +4571,8 @@
         26
       ],
       "parent_id": "PP_80_2019__PASAL_53",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_54",
@@ -4285,7 +4585,8 @@
         26
       ],
       "parent_id": "PP_80_2019__BAB_IX",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_55",
@@ -4298,7 +4599,8 @@
         27
       ],
       "parent_id": "PP_80_2019__BAB_IX",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_57",
@@ -4315,7 +4617,8 @@
         "PP_80_2019__AYAT_1__PASAL_57",
         "PP_80_2019__AYAT_2__PASAL_57",
         "PP_80_2019__AYAT_3__PASAL_57"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_57",
@@ -4328,7 +4631,8 @@
         27
       ],
       "parent_id": "PP_80_2019__PASAL_57",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_2__PASAL_57",
@@ -4341,7 +4645,8 @@
         27
       ],
       "parent_id": "PP_80_2019__PASAL_57",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_3__PASAL_57",
@@ -4354,7 +4659,8 @@
         27
       ],
       "parent_id": "PP_80_2019__PASAL_57",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__BAB_XI",
@@ -4372,7 +4678,8 @@
         "PP_80_2019__PASAL_59",
         "PP_80_2019__PASAL_60",
         "PP_80_2019__PASAL_61"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_58",
@@ -4387,7 +4694,8 @@
       "parent_id": "PP_80_2019__BAB_XI",
       "children": [
         "PP_80_2019__AYAT_1__PASAL_58"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_58",
@@ -4400,7 +4708,8 @@
         27
       ],
       "parent_id": "PP_80_2019__PASAL_58",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_59",
@@ -4418,7 +4727,8 @@
         "PP_80_2019__AYAT_2__PASAL_59",
         "PP_80_2019__AYAT_3__PASAL_59",
         "PP_80_2019__AYAT_4__PASAL_59"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_59",
@@ -4431,7 +4741,8 @@
         27
       ],
       "parent_id": "PP_80_2019__PASAL_59",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_2__PASAL_59",
@@ -4453,7 +4764,8 @@
         "PP_80_2019__HURUF_f__PASAL_59",
         "PP_80_2019__HURUF_g__PASAL_59",
         "PP_80_2019__HURUF_h__PASAL_59"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_a__PASAL_59",
@@ -4466,7 +4778,8 @@
         28
       ],
       "parent_id": "PP_80_2019__AYAT_2__PASAL_59",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_b__PASAL_59",
@@ -4479,7 +4792,8 @@
         28
       ],
       "parent_id": "PP_80_2019__AYAT_2__PASAL_59",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_c__PASAL_59",
@@ -4492,7 +4806,8 @@
         28
       ],
       "parent_id": "PP_80_2019__AYAT_2__PASAL_59",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_d__PASAL_59",
@@ -4505,7 +4820,8 @@
         28
       ],
       "parent_id": "PP_80_2019__AYAT_2__PASAL_59",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_e__PASAL_59",
@@ -4518,7 +4834,8 @@
         28
       ],
       "parent_id": "PP_80_2019__AYAT_2__PASAL_59",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_f__PASAL_59",
@@ -4531,7 +4848,8 @@
         28
       ],
       "parent_id": "PP_80_2019__AYAT_2__PASAL_59",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_g__PASAL_59",
@@ -4544,7 +4862,8 @@
         28
       ],
       "parent_id": "PP_80_2019__AYAT_2__PASAL_59",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_h__PASAL_59",
@@ -4557,7 +4876,8 @@
         28
       ],
       "parent_id": "PP_80_2019__AYAT_2__PASAL_59",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_3__PASAL_59",
@@ -4570,7 +4890,8 @@
         28
       ],
       "parent_id": "PP_80_2019__PASAL_59",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_4__PASAL_59",
@@ -4583,7 +4904,8 @@
         29
       ],
       "parent_id": "PP_80_2019__PASAL_59",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_60",
@@ -4602,7 +4924,8 @@
         "PP_80_2019__AYAT_4__PASAL_60",
         "PP_80_2019__AYAT_5__PASAL_60",
         "PP_80_2019__AYAT_6"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_60",
@@ -4615,7 +4938,8 @@
         29
       ],
       "parent_id": "PP_80_2019__PASAL_60",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_3__PASAL_60",
@@ -4628,7 +4952,8 @@
         29
       ],
       "parent_id": "PP_80_2019__PASAL_60",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_4__PASAL_60",
@@ -4641,7 +4966,8 @@
         29
       ],
       "parent_id": "PP_80_2019__PASAL_60",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_5__PASAL_60",
@@ -4654,7 +4980,8 @@
         29
       ],
       "parent_id": "PP_80_2019__PASAL_60",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_6",
@@ -4667,7 +4994,8 @@
         29
       ],
       "parent_id": "PP_80_2019__PASAL_60",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_61",
@@ -4682,7 +5010,8 @@
       "parent_id": "PP_80_2019__BAB_XI",
       "children": [
         "PP_80_2019__AYAT_1__PASAL_61"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_61",
@@ -4696,16 +5025,7 @@
       ],
       "parent_id": "PP_80_2019__PASAL_61",
       "children": [],
-      "references": [
-        {
-          "type": "MERUJUK_PASAL",
-          "pattern_name": "INTERNAL_PASAL_REF",
-          "source_component": "PP_80_2019__AYAT_1__PASAL_61",
-          "source_text": "sebagaimana dimaksud dalam Pasal 61",
-          "match_position": 533,
-          "target_article": "Pasal 61"
-        }
-      ]
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__BAB_XIII",
@@ -4724,7 +5044,8 @@
         "PP_80_2019__PASAL_65",
         "PP_80_2019__PASAL_66",
         "PP_80_2019__PASAL_68"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_63",
@@ -4740,7 +5061,8 @@
       "children": [
         "PP_80_2019__AYAT_1__PASAL_63",
         "PP_80_2019__AYAT_2__PASAL_63"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_63",
@@ -4753,7 +5075,8 @@
         30
       ],
       "parent_id": "PP_80_2019__PASAL_63",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_2__PASAL_63",
@@ -4766,7 +5089,8 @@
         30
       ],
       "parent_id": "PP_80_2019__PASAL_63",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_64",
@@ -4783,7 +5107,8 @@
         "PP_80_2019__AYAT_1__PASAL_64",
         "PP_80_2019__AYAT_2__PASAL_64",
         "PP_80_2019__AYAT_3__PASAL_64"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_64",
@@ -4802,7 +5127,8 @@
         "PP_80_2019__HURUF_c__PASAL_64",
         "PP_80_2019__HURUF_d__PASAL_64",
         "PP_80_2019__HURUF_e__PASAL_64"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_a__PASAL_64",
@@ -4815,7 +5141,8 @@
         30
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_64",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_b__PASAL_64",
@@ -4828,7 +5155,8 @@
         30
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_64",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_c__PASAL_64",
@@ -4841,7 +5169,8 @@
         30
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_64",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_d__PASAL_64",
@@ -4854,7 +5183,8 @@
         30
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_64",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_e__PASAL_64",
@@ -4867,7 +5197,8 @@
         30
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_64",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_2__PASAL_64",
@@ -4880,7 +5211,8 @@
         30
       ],
       "parent_id": "PP_80_2019__PASAL_64",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_3__PASAL_64",
@@ -4893,7 +5225,8 @@
         31
       ],
       "parent_id": "PP_80_2019__PASAL_64",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_65",
@@ -4910,7 +5243,8 @@
         "PP_80_2019__AYAT_1__PASAL_65",
         "PP_80_2019__AYAT_2__PASAL_65",
         "PP_80_2019__AYAT_3__PASAL_65"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_65",
@@ -4923,7 +5257,8 @@
         31
       ],
       "parent_id": "PP_80_2019__PASAL_65",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_2__PASAL_65",
@@ -4936,7 +5271,8 @@
         31
       ],
       "parent_id": "PP_80_2019__PASAL_65",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_3__PASAL_65",
@@ -4949,7 +5285,8 @@
         31
       ],
       "parent_id": "PP_80_2019__PASAL_65",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_66",
@@ -4965,7 +5302,8 @@
       "children": [
         "PP_80_2019__AYAT_1__PASAL_66",
         "PP_80_2019__AYAT_2__PASAL_66"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_66",
@@ -4978,7 +5316,8 @@
         31
       ],
       "parent_id": "PP_80_2019__PASAL_66",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_2__PASAL_66",
@@ -4991,7 +5330,8 @@
         32
       ],
       "parent_id": "PP_80_2019__PASAL_66",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_68",
@@ -5008,7 +5348,8 @@
         "PP_80_2019__AYAT_1__PASAL_68",
         "PP_80_2019__AYAT_2__PASAL_68",
         "PP_80_2019__AYAT_3__PASAL_68"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_68",
@@ -5021,7 +5362,8 @@
         32
       ],
       "parent_id": "PP_80_2019__PASAL_68",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_2__PASAL_68",
@@ -5034,7 +5376,8 @@
         32
       ],
       "parent_id": "PP_80_2019__PASAL_68",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_3__PASAL_68",
@@ -5047,7 +5390,8 @@
         32
       ],
       "parent_id": "PP_80_2019__PASAL_68",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__BAB_XIV",
@@ -5068,7 +5412,8 @@
         "PP_80_2019__PASAL_73",
         "PP_80_2019__PASAL_74",
         "PP_80_2019__PASAL_75"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_69",
@@ -5085,7 +5430,8 @@
         "PP_80_2019__AYAT_1__PASAL_69",
         "PP_80_2019__AYAT_3__PASAL_69",
         "PP_80_2019__AYAT_4__PASAL_69"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_69",
@@ -5103,7 +5449,8 @@
         "PP_80_2019__HURUF_c__PASAL_69",
         "PP_80_2019__HURUF_d__PASAL_69",
         "PP_80_2019__HURUF_e__PASAL_69"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_a__PASAL_69",
@@ -5116,7 +5463,8 @@
         33
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_69",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_c__PASAL_69",
@@ -5129,7 +5477,8 @@
         33
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_69",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_d__PASAL_69",
@@ -5142,7 +5491,8 @@
         33
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_69",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_e__PASAL_69",
@@ -5155,7 +5505,8 @@
         33
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_69",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_3__PASAL_69",
@@ -5168,7 +5519,8 @@
         33
       ],
       "parent_id": "PP_80_2019__PASAL_69",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_4__PASAL_69",
@@ -5181,7 +5533,8 @@
         33
       ],
       "parent_id": "PP_80_2019__PASAL_69",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_7O",
@@ -5197,7 +5550,8 @@
       "children": [
         "PP_80_2019__AYAT_1__PASAL_7O",
         "PP_80_2019__AYAT_2__PASAL_7O"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_7O",
@@ -5210,7 +5564,8 @@
         33
       ],
       "parent_id": "PP_80_2019__PASAL_7O",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_2__PASAL_7O",
@@ -5223,7 +5578,8 @@
         33
       ],
       "parent_id": "PP_80_2019__PASAL_7O",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_71",
@@ -5236,7 +5592,8 @@
         34
       ],
       "parent_id": "PP_80_2019__BAB_XIV",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_72",
@@ -5253,7 +5610,8 @@
         "PP_80_2019__AYAT_1__PASAL_72",
         "PP_80_2019__AYAT_2__PASAL_72",
         "PP_80_2019__AYAT_3__PASAL_72"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_72",
@@ -5266,7 +5624,8 @@
         34
       ],
       "parent_id": "PP_80_2019__PASAL_72",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_2__PASAL_72",
@@ -5279,7 +5638,8 @@
         34
       ],
       "parent_id": "PP_80_2019__PASAL_72",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_3__PASAL_72",
@@ -5292,7 +5652,8 @@
         34
       ],
       "parent_id": "PP_80_2019__PASAL_72",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_73",
@@ -5308,7 +5669,8 @@
       "children": [
         "PP_80_2019__AYAT_1__PASAL_73",
         "PP_80_2019__AYAT_2__PASAL_73"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_73",
@@ -5321,7 +5683,8 @@
         34
       ],
       "parent_id": "PP_80_2019__PASAL_73",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_2__PASAL_73",
@@ -5334,7 +5697,8 @@
         34
       ],
       "parent_id": "PP_80_2019__PASAL_73",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_74",
@@ -5351,7 +5715,8 @@
         "PP_80_2019__AYAT_1__PASAL_74",
         "PP_80_2019__AYAT_2__PASAL_74",
         "PP_80_2019__AYAT_3__PASAL_74"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_74",
@@ -5364,7 +5729,8 @@
         34
       ],
       "parent_id": "PP_80_2019__PASAL_74",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_2__PASAL_74",
@@ -5377,7 +5743,8 @@
         34
       ],
       "parent_id": "PP_80_2019__PASAL_74",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_3__PASAL_74",
@@ -5393,7 +5760,8 @@
       "children": [
         "PP_80_2019__HURUF_a__PASAL_74",
         "PP_80_2019__HURUF_b__PASAL_74"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_a__PASAL_74",
@@ -5406,7 +5774,8 @@
         35
       ],
       "parent_id": "PP_80_2019__AYAT_3__PASAL_74",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_b__PASAL_74",
@@ -5419,7 +5788,8 @@
         35
       ],
       "parent_id": "PP_80_2019__AYAT_3__PASAL_74",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_75",
@@ -5435,7 +5805,8 @@
       "children": [
         "PP_80_2019__HURUF_a__PASAL_75",
         "PP_80_2019__HURUF_b__PASAL_75"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_a__PASAL_75",
@@ -5448,7 +5819,8 @@
         35
       ],
       "parent_id": "PP_80_2019__PASAL_75",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_b__PASAL_75",
@@ -5461,7 +5833,8 @@
         35
       ],
       "parent_id": "PP_80_2019__PASAL_75",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__BAB_XVI",
@@ -5477,7 +5850,8 @@
       "children": [
         "PP_80_2019__PASAL_76",
         "PP_80_2019__PASAL_78"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_76",
@@ -5494,7 +5868,8 @@
         "PP_80_2019__AYAT_1__PASAL_76",
         "PP_80_2019__AYAT_1__PASAL_76",
         "PP_80_2019__AYAT_3__PASAL_76"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_76",
@@ -5507,7 +5882,8 @@
         36
       ],
       "parent_id": "PP_80_2019__PASAL_76",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_76",
@@ -5529,7 +5905,8 @@
         "PP_80_2019__HURUF_f__PASAL_76",
         "PP_80_2019__HURUF_g__PASAL_76",
         "PP_80_2019__HURUF_h__PASAL_76"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_a__PASAL_76",
@@ -5542,7 +5919,8 @@
         36
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_76",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_b__PASAL_76",
@@ -5555,7 +5933,8 @@
         36
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_76",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_c__PASAL_76",
@@ -5568,7 +5947,8 @@
         36
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_76",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_d__PASAL_76",
@@ -5581,7 +5961,8 @@
         36
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_76",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_e__PASAL_76",
@@ -5594,7 +5975,8 @@
         36
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_76",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_f__PASAL_76",
@@ -5607,7 +5989,8 @@
         36
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_76",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_g__PASAL_76",
@@ -5620,7 +6003,8 @@
         36
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_76",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_h__PASAL_76",
@@ -5633,7 +6017,8 @@
         36
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_76",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_3__PASAL_76",
@@ -5646,7 +6031,8 @@
         36
       ],
       "parent_id": "PP_80_2019__PASAL_76",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_78",
@@ -5665,7 +6051,8 @@
         "PP_80_2019__AYAT_4__PASAL_78",
         "PP_80_2019__AYAT_1__PASAL_78",
         "PP_80_2019__AYAT_2__PASAL_78"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_78",
@@ -5678,7 +6065,8 @@
         36
       ],
       "parent_id": "PP_80_2019__PASAL_78",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_3__PASAL_78",
@@ -5691,7 +6079,8 @@
         36
       ],
       "parent_id": "PP_80_2019__PASAL_78",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_4__PASAL_78",
@@ -5704,7 +6093,8 @@
         37
       ],
       "parent_id": "PP_80_2019__PASAL_78",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_78",
@@ -5720,7 +6110,8 @@
       "children": [
         "PP_80_2019__HURUF_a__PASAL_78",
         "PP_80_2019__HURUF_b__PASAL_78"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_a__PASAL_78",
@@ -5733,7 +6124,8 @@
         37
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_78",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_b__PASAL_78",
@@ -5747,16 +6139,7 @@
       ],
       "parent_id": "PP_80_2019__AYAT_1__PASAL_78",
       "children": [],
-      "references": [
-        {
-          "type": "MERUJUK_PASAL",
-          "pattern_name": "INTERNAL_PASAL_REF",
-          "source_component": "PP_80_2019__HURUF_b__PASAL_78",
-          "source_text": "sebagaimana\ndimaksud dalam Pasal 21",
-          "match_position": 168,
-          "target_article": "Pasal 21"
-        }
-      ]
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_2__PASAL_78",
@@ -5769,7 +6152,8 @@
         37
       ],
       "parent_id": "PP_80_2019__PASAL_78",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__BAB_XVII",
@@ -5784,7 +6168,8 @@
       "parent_id": null,
       "children": [
         "PP_80_2019__PASAL_80"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_80",
@@ -5805,7 +6190,8 @@
         "PP_80_2019__AYAT_4__PASAL_80",
         "PP_80_2019__AYAT_2__PASAL_80",
         "PP_80_2019__AYAT_5__PASAL_80"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_80",
@@ -5819,16 +6205,7 @@
       ],
       "parent_id": "PP_80_2019__PASAL_80",
       "children": [],
-      "references": [
-        {
-          "type": "MERUJUK_PASAL",
-          "pattern_name": "INTERNAL_PASAL_REF",
-          "source_component": "PP_80_2019__AYAT_1__PASAL_80",
-          "source_text": "sebagaimana\ndimaksud dalam Pasal 7",
-          "match_position": 38,
-          "target_article": "Pasal 7"
-        }
-      ]
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_1__PASAL_80",
@@ -5841,7 +6218,8 @@
         37
       ],
       "parent_id": "PP_80_2019__PASAL_80",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_2__PASAL_80",
@@ -5860,7 +6238,8 @@
         "PP_80_2019__HURUF_c__PASAL_80",
         "PP_80_2019__HURUF_d__PASAL_80",
         "PP_80_2019__HURUF_e__PASAL_80"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_a__PASAL_80",
@@ -5873,7 +6252,8 @@
         38
       ],
       "parent_id": "PP_80_2019__AYAT_2__PASAL_80",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_b__PASAL_80",
@@ -5886,7 +6266,8 @@
         38
       ],
       "parent_id": "PP_80_2019__AYAT_2__PASAL_80",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_c__PASAL_80",
@@ -5899,7 +6280,8 @@
         38
       ],
       "parent_id": "PP_80_2019__AYAT_2__PASAL_80",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_d__PASAL_80",
@@ -5912,7 +6294,8 @@
         38
       ],
       "parent_id": "PP_80_2019__AYAT_2__PASAL_80",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_e__PASAL_80",
@@ -5925,7 +6308,8 @@
         38
       ],
       "parent_id": "PP_80_2019__AYAT_2__PASAL_80",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_3__PASAL_80",
@@ -5938,7 +6322,8 @@
         38
       ],
       "parent_id": "PP_80_2019__PASAL_80",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_4__PASAL_80",
@@ -5951,7 +6336,8 @@
         38
       ],
       "parent_id": "PP_80_2019__PASAL_80",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_2__PASAL_80",
@@ -5964,7 +6350,8 @@
         38
       ],
       "parent_id": "PP_80_2019__PASAL_80",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__AYAT_5__PASAL_80",
@@ -5977,7 +6364,8 @@
         38
       ],
       "parent_id": "PP_80_2019__PASAL_80",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__BAB_XVIII",
@@ -5992,7 +6380,8 @@
       "parent_id": null,
       "children": [
         "PP_80_2019__PASAL_81"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_81",
@@ -6005,7 +6394,8 @@
         38
       ],
       "parent_id": "PP_80_2019__BAB_XVIII",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__BAB_XIX",
@@ -6090,14 +6480,15 @@
         "PP_80_2019__PASAL_80__BAB_XIX",
         "PP_80_2019__PASAL_81__BAB_XIX",
         "PP_80_2019__PASAL_82__BAB_XIX"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__PASAL_82",
       "component_type": "PASAL",
       "number": "82",
       "title": null,
-      "content": "Peraturan Pemerintah ini\ndiundangkan.\nmulai berlaku pada tanggal\nSK No 019149 A\nAgar\nPRESIDEN\nREPUBLIK INDONESIA Agar setiap orang mengetahuinya, memerintahkan\npengundangan Peraturan Pemerintah ini\ndengan\npenempatannya dalam Lembaran Negara Republik Indonesia.\nDitetapkan di Jakarta\npada tanggal 20 November 2Ol9\nPRESIDEN REPUBLIK INDONESIA,\nttd.\nJOKO WIDODO\nDiundangkan di Jakarta\npada tanggal 25 November 2019\nMENTERI HUKUM DAN HAK ASASI MANUSIA\nREPUBLIK INDONESIA,\nYASONNA H. LAOLY\nLEMBARAN NEGARA REPUBLIK INDONESIA TAHUN 2OL9 NOMOR 222\nSalinan sesuai dengan aslinya\nKEMENTERIAN SEKRETARIAT NEGARA\nREPUBLIK INDONESIA\nti Bidang Hukum dan\nundangan,\nttd\nSK No 019150 A\nDjaman\nPRES IDEN\nREPUEUK INDONESIA\nATAS\nPERATURAN PEMERINTAH REPUBLIK INDONESIA\nNOMOR 80 TAHUN 2019\nTENTANG\nPERDAGANGAN MELALUI SISTEM ELEKTRONIK\nI. UMUM\nDewasa ini telah berkembang Perdagangan Melalui Sistem Elektronik,\nyang memungkinkan setiap pihak dapat melakukan aktivitas dan transaksi\nperdagangannya melalui sistem Komunikasi Elektronik. Pada dasarnya\nkebijakan dan kaidah ketentuan peraturan perundang-undangan tentang\nPerdagangan baik yang dilakukan secara konvensional maupun yang\ndilakukan secara elektronik mempunyai tujuan yang sama, yakni\nmelakukan kegiatan Perdagangan yang legal, jujur, dilandasi dengan prinsip\npersaingan usaha yang sehat serta menghargai dan melindungi hak-hak\nkonsumen.\nDemikian pula halnya dengan pihak-pihak ketiga (intermediaryl yang\nterkait yang memberikan kontribusi sehingga secara teknis suatu akti.ritai\nataupun transaksi Perdagangan menjadi dapat dilakukan secara elektronik.\nKeda sama antara para pihak terkait tersebut dalam suatu penyelenggaraan\nSistem Elektronik untuk transaksi Perdagangan harus dibangun dari\nsemangat kerja sama yang saling menguntungkan dan bertanggung jawab\nsecara tanggung renteng dan/atau bertanggung jawab secara proporsional\nkepada para pengguna sistem tersebut sesuai fungsi dan perannya masing-\nmasing.\nTidak berbeda dengan Perdagangan secara konvensional maka kegiatan\ndan transaksi Perdagangan Melalui Sistem Elektronik harus memenuhi\naspek kewajiban Perdagangan pada umumnya terutama kejelasan informasi\nbaik unsur subyektif maupun obyektif. Hal tersebut mengamanatkan\nkejelasan legalitas dalam transaksi elektronik, baik sebelum terjadinya\ntransaksi, pelaksanaan transaksi, dan pasca transaksi.\nSK No 019151 A\nPengaturan\nPRESTDEN\nREPUELIK INDONESIA Pengaturan Perdagangan pada umumnya telah diatur dalam Undang-\nUndang Nomor 7 Tahun 2Ot4 tentang Perdagangan dan terhadap kegiatan\nPerdagangan Melalui Sistem Elektronik diamanatkan untuk membuat\npengaturan lebih lanjut dalam Peraturan Pemerintah yang mengatur\naktivitas perniagaan secara elektronik tersebut demi terselenggaranyasistem\nPerdagangan yang fair dan terpercaya serta melindungi kepentingan\nnasional. Berbeda dengan pengaturan dalam Peraturan Pemerintah\nNomor 71 Tahun 2019 tentang Penyelenggaraan Sistem dan Transaksi\nElektronik maka Peraturan Pemerintah tentang Perdagangan Melalui Sistem\nElektronik mengatur aspek hukum Perdagangan dalam penyelenggaraan\ndan pemanfaatan Sistem Elektronik yang ditujukan khusus untuk\nPerdagangan.\nLingkup pengaturan dalam Peraturan Pemerintah ini mencakup semua\nkegiatan Perdagangan yang dilakukan dengan menggunakan berbagai moda\ndan jenis sistem komunikasi elektronik, baik yang online maupun secara\noff-line. Hal tersebut akan mencakup hubungan hukum dalam konteks\nantara pelaku usaha (business to business) maupun pelaku usaha dengan\nkonsumen (business to arctomefl.\nMateri pokok pengaturan PMSE meliputi:",
+      "content": "Peraturan Pemerintah ini\ndiundangkan.\nmulai berlaku pada tanggal\nSK No 019149 A\nAgar\nPRESIDEN\nREPUBLIK INDONESIA Agar setiap orang mengetahuinya, memerintahkan\npengundangan Peraturan Pemerintah ini\ndengan\npenempatannya dalam Lembaran Negara Republik Indonesia.\nDitetapkan di Jakarta\npada tanggal 20 November 2Ol9\nPRESIDEN REPUBLIK INDONESIA,\nttd.\nJOKO WIDODO\nDiundangkan di Jakarta\npada tanggal 25 November 2019\nMENTERI HUKUM DAN HAK ASASI MANUSIA\nREPUBLIK INDONESIA,\nYASONNA H. LAOLY\nLEMBARAN NEGARA REPUBLIK INDONESIA TAHUN 2OL9 NOMOR 222\nSalinan sesuai dengan aslinya\nKEMENTERIAN SEKRETARIAT NEGARA\nREPUBLIK INDONESIA\nti Bidang Hukum dan\nundangan,\nttd\nSK No 019150 A\nDjaman\nPRES IDEN\nREPUEUK INDONESIA\nPENJELASAN\nATAS\nPERATURAN PEMERINTAH REPUBLIK INDONESIA\nNOMOR 80 TAHUN 2019\nTENTANG\nPERDAGANGAN MELALUI SISTEM ELEKTRONIK\nI. UMUM\nDewasa ini telah berkembang Perdagangan Melalui Sistem Elektronik,\nyang memungkinkan setiap pihak dapat melakukan aktivitas dan transaksi\nperdagangannya melalui sistem Komunikasi Elektronik. Pada dasarnya\nkebijakan dan kaidah ketentuan peraturan perundang-undangan tentang\nPerdagangan baik yang dilakukan secara konvensional maupun yang\ndilakukan secara elektronik mempunyai tujuan yang sama, yakni\nmelakukan kegiatan Perdagangan yang legal, jujur, dilandasi dengan prinsip\npersaingan usaha yang sehat serta menghargai dan melindungi hak-hak\nkonsumen.\nDemikian pula halnya dengan pihak-pihak ketiga (intermediaryl yang\nterkait yang memberikan kontribusi sehingga secara teknis suatu akti.ritai\nataupun transaksi Perdagangan menjadi dapat dilakukan secara elektronik.\nKeda sama antara para pihak terkait tersebut dalam suatu penyelenggaraan\nSistem Elektronik untuk transaksi Perdagangan harus dibangun dari\nsemangat kerja sama yang saling menguntungkan dan bertanggung jawab\nsecara tanggung renteng dan/atau bertanggung jawab secara proporsional\nkepada para pengguna sistem tersebut sesuai fungsi dan perannya masing-\nmasing.\nTidak berbeda dengan Perdagangan secara konvensional maka kegiatan\ndan transaksi Perdagangan Melalui Sistem Elektronik harus memenuhi\naspek kewajiban Perdagangan pada umumnya terutama kejelasan informasi\nbaik unsur subyektif maupun obyektif. Hal tersebut mengamanatkan\nkejelasan legalitas dalam transaksi elektronik, baik sebelum terjadinya\ntransaksi, pelaksanaan transaksi, dan pasca transaksi.\nSK No 019151 A\nPengaturan\nPRESTDEN\nREPUELIK INDONESIA Pengaturan Perdagangan pada umumnya telah diatur dalam Undang-\nUndang Nomor 7 Tahun 2Ot4 tentang Perdagangan dan terhadap kegiatan\nPerdagangan Melalui Sistem Elektronik diamanatkan untuk membuat\npengaturan lebih lanjut dalam Peraturan Pemerintah yang mengatur\naktivitas perniagaan secara elektronik tersebut demi terselenggaranyasistem\nPerdagangan yang fair dan terpercaya serta melindungi kepentingan\nnasional. Berbeda dengan pengaturan dalam Peraturan Pemerintah\nNomor 71 Tahun 2019 tentang Penyelenggaraan Sistem dan Transaksi\nElektronik maka Peraturan Pemerintah tentang Perdagangan Melalui Sistem\nElektronik mengatur aspek hukum Perdagangan dalam penyelenggaraan\ndan pemanfaatan Sistem Elektronik yang ditujukan khusus untuk\nPerdagangan.\nLingkup pengaturan dalam Peraturan Pemerintah ini mencakup semua\nkegiatan Perdagangan yang dilakukan dengan menggunakan berbagai moda\ndan jenis sistem komunikasi elektronik, baik yang online maupun secara\noff-line. Hal tersebut akan mencakup hubungan hukum dalam konteks\nantara pelaku usaha (business to business) maupun pelaku usaha dengan\nkonsumen (business to arctomefl.\nMateri pokok pengaturan PMSE meliputi:",
       "page_range": [
         38,
         41
@@ -6118,18 +6509,7 @@
         "PP_80_2019__HURUF_m__PASAL_82",
         "PP_80_2019__HURUF_n__PASAL_82"
       ],
-      "references": [
-        {
-          "type": "MERUJUK_DOKUMEN",
-          "pattern_name": "PP_REF",
-          "source_component": "PP_80_2019__PASAL_82",
-          "source_text": "Peraturan Pemerintah\nNomor 71 Tahun 2019",
-          "match_position": 2843,
-          "target_doc_id": "PP_71_2019",
-          "target_number": "71",
-          "target_year": "2019"
-        }
-      ]
+      "is_penjelasan": false
     },
     {
       "component_id": "PP_80_2019__HURUF_a__PASAL_82",
@@ -6142,7 +6522,8 @@
         41
       ],
       "parent_id": "PP_80_2019__PASAL_82",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__HURUF_b__PASAL_82",
@@ -6155,7 +6536,8 @@
         41
       ],
       "parent_id": "PP_80_2019__PASAL_82",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__HURUF_c__PASAL_82",
@@ -6168,7 +6550,8 @@
         41
       ],
       "parent_id": "PP_80_2019__PASAL_82",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__HURUF_d__PASAL_82",
@@ -6181,7 +6564,8 @@
         41
       ],
       "parent_id": "PP_80_2019__PASAL_82",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__HURUF_e__PASAL_82",
@@ -6194,7 +6578,8 @@
         41
       ],
       "parent_id": "PP_80_2019__PASAL_82",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__HURUF_f__PASAL_82",
@@ -6207,7 +6592,8 @@
         41
       ],
       "parent_id": "PP_80_2019__PASAL_82",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__HURUF_g__PASAL_82",
@@ -6220,7 +6606,8 @@
         41
       ],
       "parent_id": "PP_80_2019__PASAL_82",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__HURUF_h__PASAL_82",
@@ -6233,7 +6620,8 @@
         41
       ],
       "parent_id": "PP_80_2019__PASAL_82",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__HURUF_i__PASAL_82",
@@ -6246,7 +6634,8 @@
         41
       ],
       "parent_id": "PP_80_2019__PASAL_82",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__HURUF_j",
@@ -6259,7 +6648,8 @@
         41
       ],
       "parent_id": "PP_80_2019__PASAL_82",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__HURUF_k__PASAL_82",
@@ -6274,7 +6664,8 @@
       "parent_id": "PP_80_2019__PASAL_82",
       "children": [
         "PP_80_2019__ANGKA_1__PASAL_82"
-      ]
+      ],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__ANGKA_1__PASAL_82",
@@ -6287,7 +6678,8 @@
         41
       ],
       "parent_id": "PP_80_2019__HURUF_k__PASAL_82",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__HURUF_m__PASAL_82",
@@ -6300,7 +6692,8 @@
         41
       ],
       "parent_id": "PP_80_2019__PASAL_82",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__HURUF_n__PASAL_82",
@@ -6313,7 +6706,8 @@
         42
       ],
       "parent_id": "PP_80_2019__PASAL_82",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_1__BAB_XIX",
@@ -6326,7 +6720,8 @@
         42
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_2__BAB_XIX",
@@ -6339,7 +6734,8 @@
         42
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_3__BAB_XIX",
@@ -6352,7 +6748,8 @@
         43
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_4__BAB_XIX",
@@ -6366,38 +6763,7 @@
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
       "children": [],
-      "references": [
-        {
-          "type": "MERUJUK_DOKUMEN",
-          "pattern_name": "UU_REF",
-          "source_component": "PP_80_2019__PASAL_4__BAB_XIX",
-          "source_text": "undang-Undang Nomor 11 Tahun 2008",
-          "match_position": 288,
-          "target_doc_id": "UU_11_2008",
-          "target_number": "11",
-          "target_year": "2008"
-        },
-        {
-          "type": "MERUJUK_DOKUMEN",
-          "pattern_name": "UU_REF",
-          "source_component": "PP_80_2019__PASAL_4__BAB_XIX",
-          "source_text": "Undang-Undang Nomor 19 Tahun 2016",
-          "match_position": 397,
-          "target_doc_id": "UU_19_2016",
-          "target_number": "19",
-          "target_year": "2016"
-        },
-        {
-          "type": "MERUJUK_DOKUMEN",
-          "pattern_name": "UU_REF",
-          "source_component": "PP_80_2019__PASAL_4__BAB_XIX",
-          "source_text": "Undang-Undang Nomor 11 Tahun 2008",
-          "match_position": 454,
-          "target_doc_id": "UU_11_2008",
-          "target_number": "11",
-          "target_year": "2008"
-        }
-      ]
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_5__BAB_XIX",
@@ -6416,7 +6782,8 @@
         "PP_80_2019__HURUF_c__BAB_XIX",
         "PP_80_2019__HURUF_d__BAB_XIX",
         "PP_80_2019__HURUF_e__BAB_XIX"
-      ]
+      ],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__HURUF_a__BAB_XIX",
@@ -6429,7 +6796,8 @@
         44
       ],
       "parent_id": "PP_80_2019__PASAL_5__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__HURUF_b__BAB_XIX",
@@ -6442,7 +6810,8 @@
         44
       ],
       "parent_id": "PP_80_2019__PASAL_5__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__HURUF_c__BAB_XIX",
@@ -6455,7 +6824,8 @@
         44
       ],
       "parent_id": "PP_80_2019__PASAL_5__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__HURUF_d__BAB_XIX",
@@ -6468,7 +6838,8 @@
         44
       ],
       "parent_id": "PP_80_2019__PASAL_5__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__HURUF_e__BAB_XIX",
@@ -6481,7 +6852,8 @@
         44
       ],
       "parent_id": "PP_80_2019__PASAL_5__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_6__BAB_XIX",
@@ -6494,7 +6866,8 @@
         44
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_7",
@@ -6507,7 +6880,8 @@
         45
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_9__BAB_XIX",
@@ -6526,18 +6900,7 @@
         "PP_80_2019__HURUF_c__BAB_XIX",
         "PP_80_2019__HURUF_d__BAB_XIX"
       ],
-      "references": [
-        {
-          "type": "MERUJUK_DOKUMEN",
-          "pattern_name": "UU_REF",
-          "source_component": "PP_80_2019__PASAL_9__BAB_XIX",
-          "source_text": "Undang-Undang Nomor 11 Tahun 2008",
-          "match_position": 780,
-          "target_doc_id": "UU_11_2008",
-          "target_number": "11",
-          "target_year": "2008"
-        }
-      ]
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__HURUF_a__BAB_XIX",
@@ -6550,7 +6913,8 @@
         45
       ],
       "parent_id": "PP_80_2019__PASAL_9__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__HURUF_b__BAB_XIX",
@@ -6563,7 +6927,8 @@
         45
       ],
       "parent_id": "PP_80_2019__PASAL_9__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__HURUF_c__BAB_XIX",
@@ -6576,7 +6941,8 @@
         45
       ],
       "parent_id": "PP_80_2019__PASAL_9__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__HURUF_d__BAB_XIX",
@@ -6589,7 +6955,8 @@
         45
       ],
       "parent_id": "PP_80_2019__PASAL_9__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_10",
@@ -6602,7 +6969,8 @@
         46
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_12__BAB_XIX",
@@ -6615,7 +6983,8 @@
         46
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_13__BAB_XIX",
@@ -6628,7 +6997,8 @@
         46
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_14__BAB_XIX",
@@ -6641,7 +7011,8 @@
         46
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_15__BAB_XIX",
@@ -6654,7 +7025,8 @@
         47
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_17__BAB_XIX",
@@ -6667,7 +7039,8 @@
         47
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_18__BAB_XIX",
@@ -6680,7 +7053,8 @@
         47
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_19",
@@ -6693,7 +7067,8 @@
         47
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_20__BAB_XIX",
@@ -6706,7 +7081,8 @@
         48
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_22__BAB_XIX",
@@ -6719,7 +7095,8 @@
         49
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_23__BAB_XIX",
@@ -6732,7 +7109,8 @@
         49
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_25__BAB_XIX",
@@ -6746,38 +7124,7 @@
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
       "children": [],
-      "references": [
-        {
-          "type": "MERUJUK_DOKUMEN",
-          "pattern_name": "UU_REF",
-          "source_component": "PP_80_2019__PASAL_25__BAB_XIX",
-          "source_text": "Undang-Undang Nomor 6 Tahun 1983",
-          "match_position": 159,
-          "target_doc_id": "UU_6_1983",
-          "target_number": "6",
-          "target_year": "1983"
-        },
-        {
-          "type": "MERUJUK_DOKUMEN",
-          "pattern_name": "UU_REF",
-          "source_component": "PP_80_2019__PASAL_25__BAB_XIX",
-          "source_text": "Undang-Undang Nomor 5\nTahun 2008",
-          "match_position": 378,
-          "target_doc_id": "UU_5_2008",
-          "target_number": "5",
-          "target_year": "2008"
-        },
-        {
-          "type": "MERUJUK_DOKUMEN",
-          "pattern_name": "UU_REF",
-          "source_component": "PP_80_2019__PASAL_25__BAB_XIX",
-          "source_text": "Undang-Undang\nNomor 6 Tahun 1983",
-          "match_position": 442,
-          "target_doc_id": "UU_6_1983",
-          "target_number": "6",
-          "target_year": "1983"
-        }
-      ]
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_27__BAB_XIX",
@@ -6790,7 +7137,8 @@
         50
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_28__BAB_XIX",
@@ -6804,18 +7152,7 @@
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
       "children": [],
-      "references": [
-        {
-          "type": "MERUJUK_DOKUMEN",
-          "pattern_name": "UU_REF",
-          "source_component": "PP_80_2019__PASAL_28__BAB_XIX",
-          "source_text": "Undang-Undang Nomor 11 tahun 2008",
-          "match_position": 72,
-          "target_doc_id": "UU_11_2008",
-          "target_number": "11",
-          "target_year": "2008"
-        }
-      ]
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_29__BAB_XIX",
@@ -6828,7 +7165,8 @@
         52
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_30",
@@ -6841,7 +7179,8 @@
         52
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_31__BAB_XIX",
@@ -6854,7 +7193,8 @@
         52
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_32__BAB_XIX",
@@ -6867,7 +7207,8 @@
         52
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_33__BAB_XIX",
@@ -6881,28 +7222,7 @@
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
       "children": [],
-      "references": [
-        {
-          "type": "MERUJUK_DOKUMEN",
-          "pattern_name": "UU_REF",
-          "source_component": "PP_80_2019__PASAL_33__BAB_XIX",
-          "source_text": "Undang-Undang Nomor 11 tahun 2008",
-          "match_position": 321,
-          "target_doc_id": "UU_11_2008",
-          "target_number": "11",
-          "target_year": "2008"
-        },
-        {
-          "type": "MERUJUK_DOKUMEN",
-          "pattern_name": "UU_REF",
-          "source_component": "PP_80_2019__PASAL_33__BAB_XIX",
-          "source_text": "Undang-Undang Nomor 8 Tahun 1999",
-          "match_position": 1103,
-          "target_doc_id": "UU_8_1999",
-          "target_number": "8",
-          "target_year": "1999"
-        }
-      ]
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_35__BAB_XIX",
@@ -6915,7 +7235,8 @@
         53
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_36__BAB_XIX",
@@ -6928,7 +7249,8 @@
         53
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_37__BAB_XIX",
@@ -6941,7 +7263,8 @@
         53
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_38__BAB_XIX",
@@ -6954,7 +7277,8 @@
         54
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_39__BAB_XIX",
@@ -6967,7 +7291,8 @@
         54
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_40__BAB_XIX",
@@ -6980,7 +7305,8 @@
         54
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_42__BAB_XIX",
@@ -6993,7 +7319,8 @@
         54
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_43__BAB_XIX",
@@ -7006,7 +7333,8 @@
         54
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_44__BAB_XIX",
@@ -7019,7 +7347,8 @@
         54
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_45",
@@ -7032,7 +7361,8 @@
         54
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_46__BAB_XIX",
@@ -7045,7 +7375,8 @@
         55
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_47",
@@ -7058,7 +7389,8 @@
         55
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_48__BAB_XIX",
@@ -7071,7 +7403,8 @@
         55
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_49__BAB_XIX",
@@ -7084,7 +7417,8 @@
         55
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_50__BAB_XIX",
@@ -7097,7 +7431,8 @@
         55
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_51__BAB_XIX",
@@ -7110,7 +7445,8 @@
         55
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_52__BAB_XIX",
@@ -7123,7 +7459,8 @@
         55
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_53__BAB_XIX",
@@ -7136,7 +7473,8 @@
         55
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_54__BAB_XIX",
@@ -7149,7 +7487,8 @@
         55
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_55__BAB_XIX",
@@ -7162,7 +7501,8 @@
         55
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_56",
@@ -7175,7 +7515,8 @@
         56
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_58__BAB_XIX",
@@ -7188,7 +7529,8 @@
         56
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_59__BAB_XIX",
@@ -7201,7 +7543,8 @@
         56
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_60__BAB_XIX",
@@ -7214,7 +7557,8 @@
         56
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_61__BAB_XIX",
@@ -7227,7 +7571,8 @@
         57
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_63__BAB_XIX",
@@ -7240,7 +7585,8 @@
         57
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_64__BAB_XIX",
@@ -7253,7 +7599,8 @@
         57
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_65__BAB_XIX",
@@ -7266,7 +7613,8 @@
         57
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_66__BAB_XIX",
@@ -7279,7 +7627,8 @@
         57
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_67",
@@ -7292,7 +7641,8 @@
         57
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_68__BAB_XIX",
@@ -7305,7 +7655,8 @@
         58
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_69__BAB_XIX",
@@ -7318,7 +7669,8 @@
         58
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_70",
@@ -7331,7 +7683,8 @@
         58
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_71__BAB_XIX",
@@ -7344,7 +7697,8 @@
         59
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_74__BAB_XIX",
@@ -7357,7 +7711,8 @@
         59
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_75__BAB_XIX",
@@ -7370,7 +7725,8 @@
         59
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_76__BAB_XIX",
@@ -7383,7 +7739,8 @@
         59
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_77",
@@ -7396,7 +7753,8 @@
         59
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_78__BAB_XIX",
@@ -7409,7 +7767,8 @@
         60
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_79",
@@ -7422,7 +7781,8 @@
         60
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_80__BAB_XIX",
@@ -7435,7 +7795,8 @@
         61
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_81__BAB_XIX",
@@ -7448,7 +7809,8 @@
         61
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "PP_80_2019__PASAL_82__BAB_XIX",
@@ -7461,14 +7823,8 @@
         61
       ],
       "parent_id": "PP_80_2019__BAB_XIX",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     }
-  ],
-  "reference_summary": {
-    "total_references": 14,
-    "by_type": {
-      "MERUJUK_PASAL": 3,
-      "MERUJUK_DOKUMEN": 11
-    }
-  }
+  ]
 }

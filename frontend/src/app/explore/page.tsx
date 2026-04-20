@@ -18,7 +18,7 @@ const ForceGraph2D = dynamic(() => import("react-force-graph-2d"), { ssr: false 
 
 // All available node types
 const ALL_NODE_TYPES = [
-  "UndangUndang", "Bab", "Pasal", "Ayat",
+  "Regulasi", "Bab", "Bagian", "Pasal", "Ayat",
   "EntitasHukum", "PerbuatanHukum", "Sanksi", "KonsepHukum",
 ];
 
@@ -423,8 +423,8 @@ export default function ExplorePage() {
                 </div>
               )}
 
-              {/* Document button - only for UndangUndang nodes */}
-              {selectedNode.labels?.some(l => l === "UndangUndang") && (
+              {/* Document button - only for Regulasi nodes */}
+              {selectedNode.labels?.some(l => l === "Regulasi") && (
                 <>
                   <Separator className="my-3" />
                   <a href={`/document/${encodeURIComponent(selectedNode.id)}`}>

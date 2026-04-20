@@ -1,0 +1,94 @@
+{
+  "node_types": {
+    "Regulasi": {
+      "description": "The regulation document being processed. Exactly ONE per document.",
+      "example_labels": ["Undang-Undang tentang Informasi dan Transaksi Elektronik", "Peraturan OJK tentang Penyelenggaraan Teknologi Informasi oleh Bank Umum"],
+      "required": true,
+      "properties": {
+        "jenis": {
+          "description": "Jenis regulasi",
+          "enum": ["Undang-Undang", "POJK", "PP", "Perpres", "Perda", "Permen"],
+          "required": true
+        }
+      }
+    },
+    "Bab": {
+      "description": "A chapter (Bab) within the regulation.",
+      "example_labels": ["BAB VII PERBUATAN YANG DILARANG", "BAB II TATA KELOLA TI BANK"],
+      "required": true
+    },
+    "Bagian": {
+      "description": "A section (Bagian) within a Bab. Only create if explicitly present in the text.",
+      "example_labels": ["Bagian Kedua Penyelenggaraan Sistem Elektronik", "Bagian Kesatu Umum"],
+      "required": false
+    },
+    "Pasal": {
+      "description": "An article (Pasal) within the regulation.",
+      "example_labels": ["Pasal 27", "Pasal 45"],
+      "required": true
+    },
+    "Ayat": {
+      "description": "A sub-article (Ayat) within a Pasal. Only create when text explicitly refers to a specific ayat.",
+      "example_labels": ["Pasal 27 ayat (1)", "Pasal 45 ayat (3)"],
+      "required": true
+    },
+    "EntitasHukum": {
+      "description": "A legal subject — person, institution, or body explicitly named as a party in a provision.",
+      "example_labels": ["Setiap Orang", "Penyelenggara Sistem Elektronik", "Pemerintah", "Bank", "Direksi"],
+      "required": true
+    },
+    "PerbuatanHukum": {
+      "description": "A specific, concrete legal act that is regulated, prohibited, or required.",
+      "example_labels": ["mendistribusikan informasi yang memiliki muatan penghinaan", "menerapkan tata kelola TI yang baik"],
+      "required": true
+    },
+    "Sanksi": {
+      "description": "A penalty or sanction. Always include FULL penalty detail (duration + fine). May not exist in all regulation types.",
+      "example_labels": ["pidana penjara paling lama 6 tahun dan/atau denda paling banyak Rp1.000.000.000,00"],
+      "required": false
+    },
+    "KonsepHukum": {
+      "description": "A legal concept formally defined in the text (e.g., Pasal 1). NOT for general terms merely mentioned.",
+      "example_labels": ["Informasi Elektronik", "Dokumen Elektronik", "Teknologi Informasi", "Pusat Data"],
+      "required": true
+    }
+  },
+
+  "edge_types": {
+    "MEMUAT": {
+      "description": "Hierarchical containment",
+      "allowed_sources": ["Regulasi", "Bab", "Bagian"],
+      "allowed_targets": ["Bab", "Bagian", "Pasal"]
+    },
+    "MEMILIKI_AYAT": {
+      "description": "Pasal contains Ayat",
+      "allowed_sources": ["Pasal"],
+      "allowed_targets": ["Ayat"]
+    },
+    "MENGATUR": {
+      "description": "An article regulates a legal act",
+      "allowed_sources": ["Pasal", "Ayat"],
+      "allowed_targets": ["PerbuatanHukum"]
+    },
+    "MENETAPKAN_SANKSI": {
+      "description": "An article establishes a sanction",
+      "allowed_sources": ["Pasal", "Ayat"],
+      "allowed_targets": ["Sanksi"]
+    },
+    "BERLAKU_UNTUK": {
+      "description": "A provision applies to a legal entity",
+      "allowed_sources": ["Pasal", "Ayat", "Regulasi"],
+      "allowed_targets": ["EntitasHukum"]
+    },
+    "MERUJUK": {
+      "description": "Explicit cross-reference to another article (\"sebagaimana dimaksud dalam Pasal X\")",
+      "allowed_sources": ["Pasal", "Ayat"],
+      "allowed_targets": ["Pasal", "Ayat", "Regulasi"]
+    },
+    "MENDEFINISIKAN": {
+      "description": "An article formally defines a concept (typically Pasal 1)",
+      "allowed_sources": ["Pasal", "Ayat"],
+      "allowed_targets": ["KonsepHukum"]
+    }
+  }
+}

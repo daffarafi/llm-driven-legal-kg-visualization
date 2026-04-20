@@ -29,6 +29,7 @@ class LegalComponent:
     page_range: list = field(default_factory=list)   # [start_page, end_page]
     parent_id: Optional[str] = None
     children: list = field(default_factory=list)     # list of child component IDs
+    is_penjelasan: bool = False                      # True if part of "Penjelasan" section
 
 
 # ============================================================
@@ -77,6 +78,17 @@ PATTERNS = {
 
 # Title line that follows BAB/BAGIAN header
 TITLE_LINE_RE = re.compile(r"^[A-Z\s]+$")
+
+# Penjelasan section separator — appears in Indonesian legal documents
+# between the main body (Batang Tubuh) and the explanation section.
+# Matches patterns like:
+#   "PENJELASAN"  (standalone line)
+#   "PENJEI,ASAN"  (common OCR error: L→I, E→,)
+#   "PENJELASAN ATAS" (on same line)
+PENJELASAN_RE = re.compile(
+    r"^\s*PENJ[EI.,]*L?[AE.,]*S[AE.,]*N\s*$",
+    re.IGNORECASE
+)
 
 
 def _make_component_id(document_id: str, comp_type: str, number: str, parent_id: Optional[str] = None) -> str:
@@ -128,6 +140,23 @@ def parse_document_structure(extracted_doc: dict) -> list[LegalComponent]:
     full_text, line_to_page = merge_pages_to_text(pages)
     lines = full_text.split("\n")
     
+    # Detect Penjelasan section start line
+    penjelasan_start_line = None
+    for idx, line in enumerate(lines):
+        if PENJELASAN_RE.match(line.strip()):
+            # Verify it's the real Penjelasan separator by checking
+            # the next few lines for "ATAS" or "UNDANG-UNDANG"
+            lookahead = " ".join(
+                lines[idx+1:idx+4]
+            ).upper() if idx + 1 < len(lines) else ""
+            if "ATAS" in lookahead or "UNDANG" in lookahead or "PERATURAN" in lookahead:
+                penjelasan_start_line = idx
+                break
+    
+    if penjelasan_start_line is not None:
+        print(f"[INFO] Penjelasan detected at line {penjelasan_start_line} "
+              f"(page {line_to_page.get(penjelasan_start_line, '?')})")
+    
     components = []
     component_map = {}  # id -> LegalComponent
     
@@ -138,6 +167,7 @@ def parse_document_structure(extracted_doc: dict) -> list[LegalComponent]:
     current_content_lines = []
     current_component = None
     current_start_page = 1
+    in_penjelasan = False  # Flag: are we past the Penjelasan separator?
     
     def close_current_component():
         """Save accumulated content to the current component."""
@@ -161,6 +191,10 @@ def parse_document_structure(extracted_doc: dict) -> list[LegalComponent]:
         line = lines[i]
         stripped = line.strip()
         page_num = line_to_page.get(i, 1)
+        
+        # Check if we've entered the Penjelasan section
+        if penjelasan_start_line is not None and i >= penjelasan_start_line:
+            in_penjelasan = True
         
         matched = False
         
@@ -224,6 +258,7 @@ def parse_document_structure(extracted_doc: dict) -> list[LegalComponent]:
                     page_range=[page_num, page_num],
                     parent_id=parent_id,
                     children=[],
+                    is_penjelasan=in_penjelasan,
                 )
                 
                 # Register as child of parent

@@ -16,37 +16,47 @@ from pathlib import Path
 
 
 # ============================================================
-# Valid types from ontology
+# Load schema from config (single source of truth)
 # ============================================================
 
-VALID_NODE_TYPES = {
-    "UndangUndang", "Bab", "Bagian", "Pasal", "Ayat",
-    "EntitasHukum", "PerbuatanHukum", "Sanksi", "KonsepHukum",
-    # Multi-document types
-    "Peraturan", "VersiPasal",
-}
+def _load_schema():
+    """Load KG schema from config file."""
+    schema_path = Path(__file__).parent.parent.parent / "config" / "kg_schema.json"
+    if schema_path.exists():
+        with open(schema_path, "r", encoding="utf-8") as f:
+            return json.load(f)
+    # Fallback if config not found
+    return None
 
-VALID_EDGE_TYPES = {
-    "MEMUAT", "MENGATUR", "MENETAPKAN_SANKSI", "BERLAKU_UNTUK",
-    "MERUJUK", "MENDEFINISIKAN", "MENIMBANG", "MENGAMANDEMEN", "MENCABUT",
-    # Multi-document edge types
-    "DIAMANDEMEN_OLEH", "DITURUNKAN_KE", "DITURUNKAN_DARI", "DICABUT_OLEH",
-    "MERUJUK_DOKUMEN", "MERUJUK_PASAL",
-    "MENGUBAH_PASAL", "MENGHAPUS_PASAL", "MENYISIPKAN_PASAL",
-    "MEMILIKI_VERSI", "DIAMANDEMEN_MENJADI",
-    # Amendment actions
-    "MENGUBAH", "MENYISIPKAN",
-}
+_schema = _load_schema()
 
-# Allowed edge type constraints: {edge_type: (allowed_source_types, allowed_target_types)}
-EDGE_CONSTRAINTS = {
-    "MENGATUR": ({"Pasal", "Ayat"}, {"PerbuatanHukum"}),
-    "MENETAPKAN_SANKSI": ({"Pasal", "Ayat"}, {"Sanksi"}),
-    "BERLAKU_UNTUK": ({"Pasal", "Ayat", "UndangUndang"}, {"EntitasHukum"}),
-    "MERUJUK": ({"Pasal", "Ayat"}, {"Pasal", "Ayat", "UndangUndang"}),
-    "MEMUAT": ({"UndangUndang", "Bab", "Bagian"}, {"Bab", "Bagian", "Pasal"}),
-    "MENDEFINISIKAN": ({"Pasal", "Ayat"}, {"KonsepHukum"}),
-}
+if _schema:
+    VALID_NODE_TYPES = set(_schema["node_types"].keys())
+    VALID_EDGE_TYPES = set(_schema["edge_types"].keys())
+    EDGE_CONSTRAINTS = {
+        etype: (set(edef["allowed_sources"]), set(edef["allowed_targets"]))
+        for etype, edef in _schema["edge_types"].items()
+        if "allowed_sources" in edef and "allowed_targets" in edef
+    }
+else:
+    # Hardcoded fallback
+    VALID_NODE_TYPES = {
+        "Regulasi", "Bab", "Bagian", "Pasal", "Ayat",
+        "EntitasHukum", "PerbuatanHukum", "Sanksi", "KonsepHukum",
+    }
+    VALID_EDGE_TYPES = {
+        "MEMUAT", "MEMILIKI_AYAT", "MENGATUR", "MENETAPKAN_SANKSI", "BERLAKU_UNTUK",
+        "MERUJUK", "MENDEFINISIKAN",
+    }
+    EDGE_CONSTRAINTS = {
+        "MENGATUR": ({"Pasal", "Ayat"}, {"PerbuatanHukum"}),
+        "MENETAPKAN_SANKSI": ({"Pasal", "Ayat"}, {"Sanksi"}),
+        "BERLAKU_UNTUK": ({"Pasal", "Ayat", "Regulasi"}, {"EntitasHukum"}),
+        "MERUJUK": ({"Pasal", "Ayat"}, {"Pasal", "Ayat", "Regulasi"}),
+        "MEMUAT": ({"Regulasi", "Bab", "Bagian"}, {"Bab", "Bagian", "Pasal"}),
+        "MEMILIKI_AYAT": ({"Pasal"}, {"Ayat"}),
+        "MENDEFINISIKAN": ({"Pasal", "Ayat"}, {"KonsepHukum"}),
+    }
 
 
 def validate_extraction(
@@ -130,13 +140,14 @@ def validate_extraction(
     return valid_nodes, valid_edges, errors
 
 
-def validate_triples_file(input_path: str, output_dir: str, strict: bool = False) -> str:
+def validate_triples_file(input_path: str, output_dir: str, strict: bool = False, prompt_id: str = None) -> str:
     """Validate a triples JSON file and save validated output.
     
     Args:
         input_path: Path to triples JSON
         output_dir: Output directory
         strict: Whether to enforce edge constraints
+        prompt_id: Prompt identifier for output filename
         
     Returns:
         Path to validated output file
@@ -151,7 +162,8 @@ def validate_triples_file(input_path: str, output_dir: str, strict: bool = False
     
     # Save validated triples
     os.makedirs(output_dir, exist_ok=True)
-    output_path = os.path.join(output_dir, f"{document_id}_triples.json")
+    filename = f"{document_id}_{prompt_id}_triples.json" if prompt_id else f"{document_id}_triples.json"
+    output_path = os.path.join(output_dir, filename)
     
     output_data = {
         "document_id": document_id,
@@ -168,7 +180,8 @@ def validate_triples_file(input_path: str, output_dir: str, strict: bool = False
     
     # Save errors log
     if errors:
-        error_path = os.path.join(output_dir, f"{document_id}_errors.log")
+        error_filename = f"{document_id}_{prompt_id}_errors.log" if prompt_id else f"{document_id}_errors.log"
+        error_path = os.path.join(output_dir, error_filename)
         with open(error_path, "w", encoding="utf-8") as f:
             f.write(f"Validation Errors for {document_id}\n")
             f.write(f"{'='*60}\n")

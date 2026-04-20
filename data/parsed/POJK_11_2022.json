@@ -1,0 +1,2683 @@
+{
+  "document_id": "POJK_11_2022",
+  "total_components": 177,
+  "component_types": {
+    "BAB": 14,
+    "PASAL": 146,
+    "BAGIAN": 17
+  },
+  "components": [
+    {
+      "component_id": "POJK_11_2022__BAB_I",
+      "component_type": "BAB",
+      "number": "I",
+      "title": "KETENTUAN UMUM",
+      "content": "",
+      "page_range": [
+        3,
+        3
+      ],
+      "parent_id": null,
+      "children": [
+        "POJK_11_2022__PASAL_1"
+      ],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_1",
+      "component_type": "PASAL",
+      "number": "1",
+      "title": null,
+      "content": "Dalam Peraturan Otoritas Jasa Keuangan ini, yang\ndimaksud dengan:\n1.\nBank Umum yang selanjutnya disebut sebagai Bank\nadalah bank yang melaksanakan kegiatan usaha secara\nkonvensional atau melaksanakan kegiatan usaha\nberdasarkan prinsip syariah, yang dalam kegiatannya\nmemberikan jasa dalam lalu lintas pembayaran,\ntermasuk kantor cabang dari bank yang berkedudukan\ndi luar negeri dan unit usaha syariah.\n2.\nTeknologi Informasi yang selanjutnya disingkat TI\nadalah\nsuatu\nteknik\nuntuk\nmengumpulkan,\nmenyiapkan, menyimpan, memproses, mengumumkan,\nmenganalisis, dan/atau menyebarkan informasi.\n3.\nSistem Elektronik adalah serangkaian perangkat dan\nprosedur elektronik yang berfungsi mempersiapkan,\nmengumpulkan, mengolah, menganalisis, menyimpan,\nmenampilkan,\nmengumumkan,\nmengirimkan,\ndan/atau menyebarkan informasi elektronik.\n4.\nPusat Data adalah suatu fasilitas yang digunakan\nuntuk menempatkan Sistem Elektronik dan komponen\nterkaitnya\nuntuk\nkeperluan\npenempatan,\npenyimpanan, dan pengolahan data.\n5.\nPusat Pemulihan Bencana adalah suatu fasilitas yang\ndigunakan untuk memulihkan kembali data atau\ninformasi serta fungsi penting Sistem Elektronik yang\nterganggu atau rusak akibat terjadinya bencana yang\ndisebabkan oleh alam atau manusia.\n6.\nRencana Pemulihan Bencana adalah dokumen yang\nberisikan rencana dan langkah untuk menggantikan\ndan/atau memulihkan kembali akses data, perangkat\nkeras, dan perangkat lunak yang diperlukan, agar Bank\ndapat menjalankan kegiatan operasional bisnis yang\nkritikal setelah adanya gangguan dan/atau bencana.\n7.\nDireksi adalah organ Bank yang berwenang dan\nbertanggung jawab penuh atas pengurusan Bank\nuntuk kepentingan Bank, sesuai dengan maksud dan\ntujuan Bank serta mewakili Bank, baik di dalam\nmaupun di luar pengadilan sesuai dengan anggaran\ndasar bagi Bank yang berbadan hukum perseroan\nterbatas, organ atau pihak yang setara bagi Bank\ndengan\nbentuk\nbadan\nhukum\nselain\nperseroan\nterbatas, atau pemimpin kantor cabang dan pejabat\nsatu tingkat di bawah pemimpin kantor cabang bagi\nkantor cabang dari bank yang berkedudukan di luar\nnegeri.\n8.\nDewan Komisaris adalah organ Bank yang bertugas\nmelakukan\npengawasan\nsecara\numum\ndan/atau\nkhusus sesuai dengan anggaran dasar serta memberi\nnasihat kepada Direksi bagi Bank yang berbadan\nhukum perseroan terbatas, organ atau pihak yang\nsetara bagi Bank dengan bentuk badan hukum selain\nperseroan terbatas, atau pihak yang ditunjuk untuk\nmelaksanakan fungsi pengawasan bagi kantor cabang\ndari bank yang berkedudukan di luar negeri.",
+      "page_range": [
+        3,
+        4
+      ],
+      "parent_id": "POJK_11_2022__BAB_I",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__BAB_II",
+      "component_type": "BAB",
+      "number": "II",
+      "title": "TATA KELOLA TI BANK",
+      "content": "",
+      "page_range": [
+        4,
+        4
+      ],
+      "parent_id": null,
+      "children": [
+        "POJK_11_2022__BAGIAN_Kesatu",
+        "POJK_11_2022__BAGIAN_Kedua"
+      ],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__BAGIAN_Kesatu",
+      "component_type": "BAGIAN",
+      "number": "Kesatu",
+      "title": "Umum",
+      "content": "",
+      "page_range": [
+        4,
+        4
+      ],
+      "parent_id": "POJK_11_2022__BAB_II",
+      "children": [
+        "POJK_11_2022__PASAL_2",
+        "POJK_11_2022__PASAL_3"
+      ],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_2",
+      "component_type": "PASAL",
+      "number": "2",
+      "title": null,
+      "content": "(1)\nBank wajib menerapkan tata kelola TI yang baik dalam\npenyelenggaraan TI.\n(2)\nDalam\nmenerapkan\ntata\nkelola\nTI\nyang\nbaik\nsebagaimana\ndimaksud\npada\nayat\n(1),\nBank\nmempertimbangkan faktor paling sedikit:\na.\nstrategi dan tujuan bisnis Bank;\nb.\nukuran dan kompleksitas bisnis Bank;\nc.\nperan TI bagi Bank;\nd.\nmetode pengadaan sumber daya TI;\ne.\nrisiko dan permasalahan terkait TI;\nf.\npraktik atau standar yang berlaku secara nasional\nmaupun internasional; dan\ng.\nketentuan peraturan perundang-undangan.\n(3)\nDalam\nmenerapkan\ntata\nkelola\nTI\nyang\nbaik\nsebagaimana dimaksud pada ayat (1), Bank melakukan\nkegiatan paling sedikit:\na.\nevaluasi atas pilihan strategi, pengarahan atas\nstrategi penyelenggaraan TI, dan pemantauan\npencapaian strategi;\nb.\npenyelarasan, perencanaan, dan pengorganisasian\nseluruh\nunit,\nstrategi,\ndan\nkegiatan\nyang\nmendukung penyelenggaraan TI;\nc.\npendefinisian, akuisisi, dan implementasi atas\nsolusi TI serta integrasinya dalam proses bisnis\nBank;\nd.\npenyediaan dukungan operasional layanan TI\nkepada pemangku kepentingan; dan\ne.\npemantauan\nkinerja\ndan\nkesesuaian\npenyelenggaraan TI dengan target kinerja intern,\npengendalian intern, dan ketentuan peraturan\nperundang-undangan.\n(4)\nPenerapan tata kelola TI yang baik sebagaimana\ndimaksud pada ayat (1) berlaku bagi seluruh unit\ndan/atau fungsi:\na.\npengelola TI; dan\nb.\npengguna TI,\npada Bank.",
+      "page_range": [
+        4,
+        5
+      ],
+      "parent_id": "POJK_11_2022__BAGIAN_Kesatu",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_3",
+      "component_type": "PASAL",
+      "number": "3",
+      "title": null,
+      "content": "(1)\nDalam menerapkan tata kelola TI, Bank wajib\nmelakukan\npemetaan,\nperencanaan,\ndan/atau\npenetapan atas aspek paling sedikit:\na.\nproses bisnis;\nb.\nstruktur organisasi;\nc.\nkebijakan, standar, dan prosedur;\nd.\nkebutuhan dan alur informasi pendukung proses\nbisnis;\ne.\nsumber daya manusia pendukung;\nf.\nbudaya TI; dan\ng.\ninfrastruktur dan aplikasi.\n(2)\nBank memastikan terciptanya sinergi pada seluruh\naspek sebagaimana dimaksud pada ayat (1).\n(3)\nBank wajib menerapkan kebijakan, standar, dan\nprosedur\nsebagaimana\ndimaksud\npada\nayat\n(1)\nhuruf c secara konsisten dan berkesinambungan.\n(4)\nBank wajib melakukan kaji ulang dan penginian\nkebijakan,\nstandar,\ndan\nprosedur\nsebagaimana\ndimaksud pada ayat (1) huruf c secara berkala.",
+      "page_range": [
+        5,
+        6
+      ],
+      "parent_id": "POJK_11_2022__BAGIAN_Kesatu",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__BAGIAN_Kedua",
+      "component_type": "BAGIAN",
+      "number": "Kedua",
+      "title": "Penerapan Tata Kelola TI Bank",
+      "content": "",
+      "page_range": [
+        6,
+        6
+      ],
+      "parent_id": "POJK_11_2022__BAB_II",
+      "children": [
+        "POJK_11_2022__PASAL_4",
+        "POJK_11_2022__PASAL_5",
+        "POJK_11_2022__PASAL_6",
+        "POJK_11_2022__PASAL_7",
+        "POJK_11_2022__PASAL_8",
+        "POJK_11_2022__PASAL_9",
+        "POJK_11_2022__PASAL_10"
+      ],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_4",
+      "component_type": "PASAL",
+      "number": "4",
+      "title": null,
+      "content": "Bank wajib menetapkan wewenang dan tanggung jawab\nyang jelas dari Direksi, Dewan Komisaris, dan pejabat pada\nsetiap jenjang jabatan yang terkait dengan penerapan tata\nkelola TI.",
+      "page_range": [
+        6,
+        6
+      ],
+      "parent_id": "POJK_11_2022__BAGIAN_Kedua",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_5",
+      "component_type": "PASAL",
+      "number": "5",
+      "title": null,
+      "content": "Wewenang dan tanggung jawab Direksi sebagaimana\ndimaksud dalam Pasal 4 paling sedikit mencakup:\na.\nmenetapkan rencana strategis TI;\nb.\nmenetapkan kebijakan, standar, dan prosedur terkait\npenyelenggaraan dan penggunaan TI yang memadai\ndan mengomunikasikan secara efektif, baik kepada\nsatuan kerja penyelenggara maupun pengguna TI; dan\nc.\nmengevaluasi tujuan strategis, mengarahkan pejabat\neksekutif Bank, dan memantau seluruh kegiatan\npenyelenggaraan TI untuk memastikan:\n1.\npenerapan tata kelola TI sesuai dengan kebutuhan\ndan karakteristik Bank;\n2.\nefektivitas dan efisiensi penyelenggaraan TI secara\nkeseluruhan untuk memberikan manfaat yang\noptimal bagi Bank;\n3.\npenerapan\nproses\nmanajemen\nrisiko\ndalam\npenyelenggaraan TI dilaksanakan secara efektif;\n4.\ntersedianya sumber daya yang memadai terkait\npenyelenggaraan TI untuk mendukung bisnis\nBank secara efektif dan efisien; dan\n5.\ndukungan\ndan\nketerlibatan\npemangku\nkepentingan dalam penerapan tata kelola TI.",
+      "page_range": [
+        6,
+        7
+      ],
+      "parent_id": "POJK_11_2022__BAGIAN_Kedua",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_6",
+      "component_type": "PASAL",
+      "number": "6",
+      "title": null,
+      "content": "Wewenang\ndan\ntanggung\njawab\nDewan\nKomisaris\nsebagaimana dimaksud dalam Pasal 4 paling sedikit\nmencakup:\na.\nmengevaluasi, mengarahkan, dan memantau rencana\nstrategis TI; dan\nb.\nmengevaluasi,\nmengarahkan,\ndan\nmemantau\npenerapan tata kelola TI.",
+      "page_range": [
+        7,
+        7
+      ],
+      "parent_id": "POJK_11_2022__BAGIAN_Kedua",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_7",
+      "component_type": "PASAL",
+      "number": "7",
+      "title": null,
+      "content": "(1)\nBank wajib memiliki komite pengarah TI.\n(2)\nKomite pengarah TI sebagaimana dimaksud pada\nayat (1) bertanggung jawab memberikan rekomendasi\nkepada Direksi paling sedikit terkait dengan:\na.\nrencana strategis TI yang sejalan dengan rencana\nkorporasi Bank;\nb.\nkebijakan, standar, dan prosedur TI;\nc.\nkesesuaian antara rencana pengembangan TI dan\nrencana strategis TI;\nd.\nkesesuaian antara pelaksanaan pengembangan TI\ndan rencana pengembangan TI;\ne.\nevaluasi\natas\nefektivitas\nbiaya\nTI\nterhadap\npencapaian manfaat yang direncanakan;\nf.\npemantauan\natas\nkinerja\nTI\ndan\nupaya\npeningkatan kinerja TI;\ng.\nupaya penyelesaian berbagai masalah terkait TI\nyang tidak dapat diselesaikan oleh satuan kerja\npengguna dan penyelenggara TI secara efektif,\nefisien, dan tepat waktu; dan\nh.\nkecukupan dan alokasi sumber daya terkait TI\nyang dimiliki Bank.\n(3)\nKomite pengarah TI sebagaimana dimaksud pada\nayat (1) paling sedikit beranggotakan:\na.\ndirektur\nyang\nmembawahkan\nsatuan\nkerja\npenyelenggara TI;\nb.\ndirektur\nyang\nmembawahkan\nsatuan\nkerja\nmanajemen risiko;\nc.\npejabat tertinggi yang memimpin satuan kerja\npenyelenggara TI; dan\nd.\npejabat tertinggi yang memimpin satuan kerja\npengguna TI.\n(4)\nKomite pengarah TI sebagaimana dimaksud pada\nayat (3) diketuai oleh salah satu direktur Bank\nmerangkap sebagai anggota.",
+      "page_range": [
+        7,
+        8
+      ],
+      "parent_id": "POJK_11_2022__BAGIAN_Kedua",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_8",
+      "component_type": "PASAL",
+      "number": "8",
+      "title": null,
+      "content": "(1)\nBank wajib memiliki satuan kerja penyelenggara TI\nyang bertanggung jawab atas pengelolaan TI.\n(2)\nPengelolaan TI sebagaimana dimaksud pada ayat (1)\npaling sedikit berupa aktivitas:\na.\nperencanaan;\nb.\npenyusunan atau pengembangan;\nc.\npengoperasian; dan\nd.\npemantauan,\natas kegiatan penyelenggaraan TI.\n(3)\nAktivitas pengelolaan TI sebagaimana dimaksud pada\nayat (2) dilaksanakan sesuai dengan arahan yang\nditetapkan oleh Direksi untuk mencapai tujuan bisnis\nBank.",
+      "page_range": [
+        8,
+        8
+      ],
+      "parent_id": "POJK_11_2022__BAGIAN_Kedua",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_9",
+      "component_type": "PASAL",
+      "number": "9",
+      "title": null,
+      "content": "(1)\nBank\nyang\nmelanggar\nketentuan\nsebagaimana\ndimaksud dalam Pasal 2 ayat (1), Pasal 3 ayat (1),\nayat (3), ayat (4), Pasal 4, Pasal 7 ayat (1), dan/atau\nPasal 8 ayat (1), dikenai sanksi administratif berupa\nteguran tertulis.\n(2)\nDalam hal Bank telah dikenai sanksi administratif\nsebagaimana dimaksud pada ayat (1) dan belum\nmemenuhi ketentuan sebagaimana dimaksud dalam\nPasal 2 ayat (1), Pasal 3 ayat (1), ayat (3), ayat (4),\nPasal 4, Pasal 7 ayat (1), dan/atau Pasal 8\nayat (1), Bank dikenai sanksi administratif berupa:\na.\nlarangan untuk menerbitkan produk Bank baru;\nb.\npembekuan kegiatan usaha tertentu; dan/atau\nc.\npenurunan penilaian faktor tata kelola dalam\npenilaian tingkat kesehatan Bank.",
+      "page_range": [
+        9,
+        9
+      ],
+      "parent_id": "POJK_11_2022__BAGIAN_Kedua",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_10",
+      "component_type": "PASAL",
+      "number": "10",
+      "title": null,
+      "content": "Ketentuan lebih lanjut mengenai penerapan tata kelola TI\nditetapkan oleh Otoritas Jasa Keuangan.",
+      "page_range": [
+        9,
+        9
+      ],
+      "parent_id": "POJK_11_2022__BAGIAN_Kedua",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__BAB_III",
+      "component_type": "BAB",
+      "number": "III",
+      "title": "ARSITEKTUR TI BANK",
+      "content": "",
+      "page_range": [
+        9,
+        9
+      ],
+      "parent_id": null,
+      "children": [
+        "POJK_11_2022__BAGIAN_Kesatu__BAB_III",
+        "POJK_11_2022__BAGIAN_Kedua__BAB_III"
+      ],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__BAGIAN_Kesatu__BAB_III",
+      "component_type": "BAGIAN",
+      "number": "Kesatu",
+      "title": "Penyusunan Arsitektur TI Bank",
+      "content": "",
+      "page_range": [
+        9,
+        9
+      ],
+      "parent_id": "POJK_11_2022__BAB_III",
+      "children": [
+        "POJK_11_2022__PASAL_11"
+      ],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_11",
+      "component_type": "PASAL",
+      "number": "11",
+      "title": null,
+      "content": "(1)\nBank wajib memiliki arsitektur TI.\n(2)\nDalam menyusun arsitektur TI sebagaimana dimaksud\npada ayat (1), Bank mempertimbangkan faktor paling\nsedikit:\na.\nvisi dan misi Bank;\nb.\nrencana korporasi Bank;\nc.\nproses dan kapabilitas bisnis Bank;\nd.\ntata kelola TI;\ne.\nprinsip pengelolaan data, aplikasi, dan teknologi\nBank;\nf.\nukuran dan kompleksitas bisnis Bank;\ng.\nkemampuan permodalan Bank;\nh.\nstandar yang berlaku secara nasional maupun\ninternasional; dan\ni.\nketentuan peraturan perundang-undangan.\n(3)\nArsitektur TI sebagaimana dimaksud pada ayat (1)\ndisusun secara komprehensif meliputi proses:\na.\nperencanaan;\nb.\ndesain;\nc.\nimplementasi; dan\nd.\nkontrol.\n(4)\nDalam\nhal\nterdapat\nperubahan\npada\nfaktor\nsebagaimana dimaksud pada ayat (2), Bank wajib\nmelakukan penginian terhadap arsitektur TI.\n(5)\nKetentuan\nlebih\nlanjut\nmengenai\npenyusunan\narsitektur TI ditetapkan oleh Otoritas Jasa Keuangan.",
+      "page_range": [
+        9,
+        10
+      ],
+      "parent_id": "POJK_11_2022__BAGIAN_Kesatu__BAB_III",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__BAGIAN_Kedua__BAB_III",
+      "component_type": "BAGIAN",
+      "number": "Kedua",
+      "title": "Penyusunan Rencana Strategis TI Bank",
+      "content": "",
+      "page_range": [
+        10,
+        10
+      ],
+      "parent_id": "POJK_11_2022__BAB_III",
+      "children": [
+        "POJK_11_2022__PASAL_12",
+        "POJK_11_2022__PASAL_13",
+        "POJK_11_2022__PASAL_14"
+      ],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_12",
+      "component_type": "PASAL",
+      "number": "12",
+      "title": null,
+      "content": "(1)\nBank wajib memiliki rencana strategis TI yang\nmendukung rencana korporasi Bank.\n(2)\nRencana strategis TI sebagaimana dimaksud pada\nayat (1) disusun untuk penyelenggaraan TI dalam\njangka panjang sesuai periode rencana korporasi Bank.\n(3)\nKetentuan lebih lanjut mengenai penyusunan rencana\nstrategis TI ditetapkan oleh Otoritas Jasa Keuangan.",
+      "page_range": [
+        10,
+        10
+      ],
+      "parent_id": "POJK_11_2022__BAGIAN_Kedua__BAB_III",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_13",
+      "component_type": "PASAL",
+      "number": "13",
+      "title": null,
+      "content": "(1)\nBank wajib menyampaikan rencana strategis TI\nsebagaimana dimaksud dalam Pasal 12 ayat (1) kepada\nOtoritas Jasa Keuangan paling lambat pada akhir bulan\nNovember tahun sebelum periode awal rencana\nstrategis TI dimulai.\n(2)\nDalam hal terdapat kondisi yang secara signifikan\nmemengaruhi\nsasaran\ndan\nstrategi\nTI\nBank\nsebagaimana dimuat dalam rencana strategis TI yang\nsedang berjalan, Bank dapat melakukan perubahan\nrencana strategis TI.\n(3)\nBank menyampaikan perubahan rencana strategis TI\nsebagaimana dimaksud pada ayat (2) kepada Otoritas\nJasa Keuangan sewaktu-waktu dalam periode rencana\nstrategis TI sebagaimana dimaksud dalam Pasal 12\nayat (2).",
+      "page_range": [
+        10,
+        11
+      ],
+      "parent_id": "POJK_11_2022__BAGIAN_Kedua__BAB_III",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_14",
+      "component_type": "PASAL",
+      "number": "14",
+      "title": null,
+      "content": "(1)\nBank\nyang\nmelanggar\nketentuan\nsebagaimana\ndimaksud dalam Pasal 11 ayat (1), ayat (4), Pasal 12\nayat (1), dan/atau Pasal 13 ayat (1), dikenai sanksi\nadministratif berupa teguran tertulis.\n(2)\nDalam hal Bank telah dikenai sanksi administratif\nsebagaimana dimaksud pada ayat (1) dan belum\nmemenuhi ketentuan sebagaimana dimaksud dalam\nPasal 11 ayat (1), ayat (4), Pasal 12 ayat (1), dan/atau\nPasal 13 ayat (1), Bank dikenai sanksi administratif\nberupa:\na.\nlarangan untuk menerbitkan produk Bank baru;\nb.\npembekuan kegiatan usaha tertentu; dan/atau\nc.\npenurunan penilaian faktor tata kelola dalam\npenilaian tingkat kesehatan Bank.",
+      "page_range": [
+        11,
+        11
+      ],
+      "parent_id": "POJK_11_2022__BAGIAN_Kedua__BAB_III",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__BAB_IV",
+      "component_type": "BAB",
+      "number": "IV",
+      "title": "PENERAPAN MANAJEMEN RISIKO PENYELENGGARAAN TI BANK",
+      "content": "",
+      "page_range": [
+        11,
+        11
+      ],
+      "parent_id": null,
+      "children": [
+        "POJK_11_2022__BAGIAN_Kesatu__BAB_IV",
+        "POJK_11_2022__BAGIAN_Kedua__BAB_IV"
+      ],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__BAGIAN_Kesatu__BAB_IV",
+      "component_type": "BAGIAN",
+      "number": "Kesatu",
+      "title": "Umum",
+      "content": "",
+      "page_range": [
+        11,
+        11
+      ],
+      "parent_id": "POJK_11_2022__BAB_IV",
+      "children": [
+        "POJK_11_2022__PASAL_15"
+      ],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_15",
+      "component_type": "PASAL",
+      "number": "15",
+      "title": null,
+      "content": "(1)\nBank wajib menerapkan manajemen risiko secara\nefektif dalam penyelenggaraan TI.\n(2)\nPenerapan manajemen risiko sebagaimana dimaksud\npada ayat (1) harus dilakukan secara terintegrasi dalam\nsetiap tahapan penyelenggaraan TI.\n(3)\nDalam menerapkan manajemen risiko sebagaimana\ndimaksud pada ayat (1), Bank melakukan proses paling\nsedikit:\na.\nidentifikasi risiko;\nb.\npengukuran risiko;\nc.\npemantauan risiko; dan\nd.\npengendalian risiko.\n(4)\nBank wajib memastikan kecukupan sistem informasi\nmanajemen risiko dalam penyelenggaraan TI.\n(5)\nKetentuan\nlebih\nlanjut\nmengenai\npenerapan\nmanajemen risiko dalam penyelenggaraan TI ditetapkan\noleh Otoritas Jasa Keuangan.",
+      "page_range": [
+        11,
+        12
+      ],
+      "parent_id": "POJK_11_2022__BAGIAN_Kesatu__BAB_IV",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__BAGIAN_Kedua__BAB_IV",
+      "component_type": "BAGIAN",
+      "number": "Kedua",
+      "title": "Pengamanan Informasi dalam Penyelenggaraan TI Bank",
+      "content": "",
+      "page_range": [
+        12,
+        12
+      ],
+      "parent_id": "POJK_11_2022__BAB_IV",
+      "children": [
+        "POJK_11_2022__PASAL_16",
+        "POJK_11_2022__PASAL_17",
+        "POJK_11_2022__PASAL_18",
+        "POJK_11_2022__PASAL_19",
+        "POJK_11_2022__PASAL_20"
+      ],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_16",
+      "component_type": "PASAL",
+      "number": "16",
+      "title": null,
+      "content": "(1)\nBank\nwajib\nmemastikan\npengamanan\ninformasi\ndilaksanakan secara efektif dan efisien.\n(2)\nPengamanan informasi sebagaimana dimaksud pada\nayat (1) dilakukan terhadap aspek sumber daya\nmanusia, proses, teknologi, dan fisik atau lingkungan,\ndalam penyelenggaraan TI secara menyeluruh.\n(3)\nPenerapan\npengamanan\ninformasi\nsebagaimana\ndimaksud pada ayat (1) dilakukan berdasarkan hasil\npenilaian terhadap risiko pada informasi yang dimiliki\nBank.\n(4)\nKetentuan\nlebih\nlanjut\nmengenai\npengamanan\ninformasi ditetapkan oleh Otoritas Jasa Keuangan.",
+      "page_range": [
+        12,
+        12
+      ],
+      "parent_id": "POJK_11_2022__BAGIAN_Kedua__BAB_IV",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_17",
+      "component_type": "PASAL",
+      "number": "17",
+      "title": null,
+      "content": "(1)\nBank wajib memastikan jaringan komunikasi yang\ndisediakan\noleh\nBank\ntelah\nmemenuhi\nprinsip\nkerahasiaan, integritas, dan ketersediaan.\n(2)\nKetentuan lebih lanjut mengenai jaringan komunikasi\nditetapkan oleh Otoritas Jasa Keuangan.",
+      "page_range": [
+        13,
+        13
+      ],
+      "parent_id": "POJK_11_2022__BAGIAN_Kedua__BAB_IV",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_18",
+      "component_type": "PASAL",
+      "number": "18",
+      "title": null,
+      "content": "(1)\nBank wajib memiliki Rencana Pemulihan Bencana.\n(2)\nBank wajib memastikan Rencana Pemulihan Bencana\nsebagaimana\ndimaksud\npada\nayat\n(1)\ndapat\ndilaksanakan,\nsehingga\nkelangsungan\noperasional\nBank tetap berjalan saat terjadi bencana dan/atau\ngangguan pada sarana TI yang digunakan Bank.\n(3)\nBank wajib melakukan uji coba atas Rencana\nPemulihan Bencana terhadap seluruh aplikasi dan\ninfrastruktur yang kritikal sesuai hasil analisis dampak\nbisnis,\npaling\nsedikit\n(satu)\nkali\ndalam\n1 (satu) tahun dengan melibatkan pengguna TI.\n(4)\nBank wajib melakukan kaji ulang Rencana Pemulihan\nBencana paling sedikit 1 (satu) kali dalam 1 (satu)\ntahun.\n(5)\nKetentuan lebih lanjut mengenai Rencana Pemulihan\nBencana ditetapkan oleh Otoritas Jasa Keuangan.",
+      "page_range": [
+        13,
+        13
+      ],
+      "parent_id": "POJK_11_2022__BAGIAN_Kedua__BAB_IV",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_19",
+      "component_type": "PASAL",
+      "number": "19",
+      "title": null,
+      "content": "Bank umum konvensional yang memiliki unit usaha syariah\nwajib memiliki sistem yang dapat menghasilkan laporan\nterpisah bagi kegiatan unit usaha syariah.",
+      "page_range": [
+        13,
+        13
+      ],
+      "parent_id": "POJK_11_2022__BAGIAN_Kedua__BAB_IV",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_20",
+      "component_type": "PASAL",
+      "number": "20",
+      "title": null,
+      "content": "(1)\nBank\nyang\nmelanggar\nketentuan\nsebagaimana\ndimaksud dalam Pasal 15 ayat (1), ayat (4), Pasal 16\nayat (1), Pasal 17 ayat (1), Pasal 18 ayat (1), ayat (2),\nayat (3), ayat (4), dan/atau Pasal 19, dikenai sanksi\nadministratif berupa teguran tertulis.\n(2)\nDalam hal Bank telah dikenai sanksi administratif\nsebagaimana dimaksud pada ayat (1) dan belum\nmemenuhi ketentuan sebagaimana dimaksud dalam\nPasal 15 ayat (1), ayat (4), Pasal 16 ayat (1), Pasal 17\nayat (1), Pasal 18 ayat (1), ayat (2), ayat (3), ayat (4),\ndan/atau Pasal 19, Bank dikenai sanksi administratif\nberupa:\na.\nlarangan untuk menerbitkan produk Bank baru;\nb.\npembekuan kegiatan usaha tertentu; dan/atau\nc.\npenurunan penilaian faktor tata kelola dalam\npenilaian tingkat kesehatan Bank.",
+      "page_range": [
+        13,
+        14
+      ],
+      "parent_id": "POJK_11_2022__BAGIAN_Kedua__BAB_IV",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__BAB_V",
+      "component_type": "BAB",
+      "number": "V",
+      "title": "KETAHANAN DAN KEAMANAN SIBER BANK",
+      "content": "",
+      "page_range": [
+        14,
+        14
+      ],
+      "parent_id": null,
+      "children": [
+        "POJK_11_2022__PASAL_21",
+        "POJK_11_2022__PASAL_22",
+        "POJK_11_2022__PASAL_23",
+        "POJK_11_2022__PASAL_24",
+        "POJK_11_2022__PASAL_25",
+        "POJK_11_2022__PASAL_26",
+        "POJK_11_2022__PASAL_27",
+        "POJK_11_2022__PASAL_28"
+      ],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_21",
+      "component_type": "PASAL",
+      "number": "21",
+      "title": null,
+      "content": "(1)\nBank wajib menjaga ketahanan siber.\n(2)\nUntuk\nmenjaga\nketahanan\nsiber\nsebagaimana\ndimaksud pada ayat (1), Bank melakukan proses paling\nsedikit:\na.\nidentifikasi aset, ancaman, dan kerentanan;\nb.\npelindungan aset;\nc.\ndeteksi insiden siber; dan\nd.\npenanggulangan dan pemulihan insiden siber.\n(3)\nBank memastikan proses untuk menjaga ketahanan\nsiber sebagaimana dimaksud pada ayat (2) didukung\ndengan\nsistem\ninformasi\nketahanan\nsiber\nyang\nmemadai.",
+      "page_range": [
+        14,
+        14
+      ],
+      "parent_id": "POJK_11_2022__BAB_V",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_22",
+      "component_type": "PASAL",
+      "number": "22",
+      "title": null,
+      "content": "(1)\nBank wajib melakukan penilaian sendiri atas tingkat\nmaturitas keamanan siber.\n(2)\nPenilaian sendiri atas tingkat maturitas keamanan\nsiber sebagaimana dimaksud pada ayat (1) dilakukan\nsecara tahunan untuk posisi akhir bulan Desember.\n(3)\nBank dapat melakukan penginian penilaian sendiri atas\ntingkat maturitas keamanan siber sewaktu-waktu\napabila diperlukan.\n(4)\nBank wajib menyampaikan hasil penilaian sendiri atas\ntingkat\nmaturitas\nkeamanan\nsiber\nsebagaimana\ndimaksud pada ayat (1) kepada Otoritas Jasa Keuangan\nsebagai\nbagian\ndari\nlaporan\nkondisi\nterkini\npenyelenggaraan TI Bank.",
+      "page_range": [
+        14,
+        15
+      ],
+      "parent_id": "POJK_11_2022__BAB_V",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_23",
+      "component_type": "PASAL",
+      "number": "23",
+      "title": null,
+      "content": "Bank\nwajib\nmelakukan\npengujian\nkeamanan\nsiber\nberdasarkan:\na.\nanalisis kerentanan; dan\nb.\nskenario.",
+      "page_range": [
+        15,
+        15
+      ],
+      "parent_id": "POJK_11_2022__BAB_V",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_24",
+      "component_type": "PASAL",
+      "number": "24",
+      "title": null,
+      "content": "(1)\nPengujian\nkeamanan\nsiber\nberdasarkan\nanalisis\nkerentanan sebagaimana dimaksud dalam Pasal 23\nhuruf a wajib dilaksanakan secara berkala.\n(2)\nBank wajib menyampaikan hasil pengujian keamanan\nsiber berdasarkan analisis kerentanan sebagaimana\ndimaksud pada ayat (1) kepada Otoritas Jasa Keuangan\nsebagai\nbagian\ndari\nlaporan\nkondisi\nterkini\npenyelenggaraan TI Bank.",
+      "page_range": [
+        15,
+        15
+      ],
+      "parent_id": "POJK_11_2022__BAB_V",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_25",
+      "component_type": "PASAL",
+      "number": "25",
+      "title": null,
+      "content": "(1)\nPengujian keamanan siber berdasarkan skenario\nsebagaimana dimaksud dalam Pasal 23 huruf b wajib\ndilaksanakan paling sedikit 1 (satu) kali dalam 1 (satu)\ntahun.\n(2)\nPengujian keamanan siber berdasarkan skenario\nsebagaimana dimaksud pada ayat (1) paling sedikit\nmencakup:\na.\npenetapan\ntujuan,\ncakupan,\ndan\nskenario\npengujian;\nb.\npelaksanaan pengujian;\nc.\nevaluasi hasil pengujian; dan\nd.\npenilaian terhadap efektivitas upaya mitigasi,\nrespon, dan tindakan pemulihan Bank terhadap\nserangan siber.\n(3)\nBank wajib menyampaikan laporan hasil pengujian\nkeamanan siber berdasarkan skenario sebagaimana\ndimaksud pada ayat (1) kepada Otoritas Jasa Keuangan\npaling lama 10 (sepuluh) hari kerja setelah pengujian\nkeamanan siber selesai dilaksanakan.\n(4)\nLaporan hasil pengujian keamanan siber sebagaimana\ndimaksud pada ayat (3) paling sedikit mencakup:\na.\nringkasan pelaksanaan pengujian;\nb.\npelajaran terpetik atau hasil observasi dari hasil\npengujian; dan\nc.\nrencana atau perbaikan yang telah dilakukan.",
+      "page_range": [
+        15,
+        16
+      ],
+      "parent_id": "POJK_11_2022__BAB_V",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_26",
+      "component_type": "PASAL",
+      "number": "26",
+      "title": null,
+      "content": "(1)\nBank wajib membentuk unit atau fungsi yang bertugas\nmenangani ketahanan dan keamanan siber Bank.\n(2)\nUnit atau fungsi sebagaimana dimaksud pada ayat (1)\nbersifat independen terhadap fungsi pengelolaan TI.",
+      "page_range": [
+        16,
+        16
+      ],
+      "parent_id": "POJK_11_2022__BAB_V",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_27",
+      "component_type": "PASAL",
+      "number": "27",
+      "title": null,
+      "content": "(1)\nBank\nyang\nmelanggar\nketentuan\nsebagaimana\ndimaksud dalam Pasal 21 ayat (1), Pasal 22 ayat (1),\nayat (4), Pasal 23, Pasal 24, Pasal 25 ayat (1),\ndan/atau Pasal 26 ayat (1), dikenai sanksi administratif\nberupa teguran tertulis.\n(2)\nDalam hal Bank telah dikenai sanksi administratif\nsebagaimana dimaksud pada ayat (1) dan belum\nmemenuhi ketentuan sebagaimana dimaksud dalam\nPasal 21 ayat (1), Pasal 22 ayat (1), ayat (4), Pasal 23,\nPasal 24, Pasal 25 ayat (1), dan/atau Pasal 26 ayat (1),\nBank dikenai sanksi administratif berupa:\na.\nlarangan untuk menerbitkan produk Bank baru;\nb.\npembekuan kegiatan usaha tertentu; dan/atau\nc.\npenurunan penilaian faktor tata kelola dalam\npenilaian tingkat kesehatan Bank.",
+      "page_range": [
+        16,
+        16
+      ],
+      "parent_id": "POJK_11_2022__BAB_V",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_28",
+      "component_type": "PASAL",
+      "number": "28",
+      "title": null,
+      "content": "Ketentuan lebih lanjut mengenai ketahanan dan keamanan\nsiber Bank ditetapkan oleh Otoritas Jasa Keuangan.",
+      "page_range": [
+        17,
+        17
+      ],
+      "parent_id": "POJK_11_2022__BAB_V",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__BAB_VI",
+      "component_type": "BAB",
+      "number": "VI",
+      "title": "PENGGUNAAN PIHAK PENYEDIA JASA TI DALAM PENYELENGGARAAN TI BANK",
+      "content": "",
+      "page_range": [
+        17,
+        17
+      ],
+      "parent_id": null,
+      "children": [
+        "POJK_11_2022__PASAL_29",
+        "POJK_11_2022__PASAL_30",
+        "POJK_11_2022__PASAL_31",
+        "POJK_11_2022__PASAL_32",
+        "POJK_11_2022__PASAL_33",
+        "POJK_11_2022__PASAL_34"
+      ],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_29",
+      "component_type": "PASAL",
+      "number": "29",
+      "title": null,
+      "content": "(1)\nBank dapat menggunakan pihak penyedia jasa TI dalam\npenyelenggaraan TI.\n(2)\nBank yang menggunakan pihak penyedia jasa TI\nsebagaimana dimaksud pada ayat (1) wajib memiliki\nkemampuan dalam melakukan pengawasan atas\npelaksanaan kegiatan Bank yang diselenggarakan oleh\npihak penyedia jasa TI.\n(3)\nBank wajib memiliki kebijakan dan prosedur dalam\npenggunaan pihak penyedia jasa TI sebagaimana\ndimaksud pada ayat (1) paling sedikit memuat:\na.\nproses identifikasi kebutuhan penggunaan pihak\npenyedia jasa TI;\nb.\nproses pemilihan pihak penyedia jasa TI;\nc.\ntata cara melakukan hubungan kerja sama dengan\npihak penyedia jasa TI;\nd.\nproses manajemen risiko penggunaan pihak\npenyedia jasa TI; dan\ne.\ntata cara penilaian kinerja dan kepatuhan pihak\npenyedia jasa TI.",
+      "page_range": [
+        17,
+        17
+      ],
+      "parent_id": "POJK_11_2022__BAB_VI",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_30",
+      "component_type": "PASAL",
+      "number": "30",
+      "title": null,
+      "content": "(1)\nBank dalam melakukan proses identifikasi kebutuhan\npenggunaan pihak penyedia jasa TI sebagaimana\ndimaksud dalam Pasal 29 ayat (3) huruf a paling sedikit:\na.\nmeneliti potensi calon pihak penyedia jasa TI; dan\nb.\nmenyusun kriteria pihak penyedia jasa TI yang\ndibutuhkan.\n(2)\nBank dalam melakukan proses pemilihan pihak\npenyedia jasa TI sebagaimana dimaksud dalam\nPasal 29 ayat (3) huruf b paling sedikit memperhatikan:\na.\nkualifikasi dan kompetensi pihak penyedia jasa TI,\ntermasuk sumber daya manusia yang dimiliki;\nb.\nanalisis\nbiaya\ndan\nmanfaat\ndengan\nmengikutsertakan satuan kerja penyelenggara TI\nBank;\nc.\nprinsip kehati-hatian dan manajemen risiko; dan\nd.\nprinsip hubungan kerja sama secara wajar jika\npihak penyedia jasa TI merupakan pihak terkait\ndengan Bank.\n(3)\nBank dalam melakukan hubungan kerja sama dengan\npihak penyedia jasa TI sebagaimana dimaksud dalam\nPasal 29 ayat (3) huruf c wajib memiliki perjanjian kerja\nsama\ndengan\npihak\npenyedia\njasa\nTI,\ndengan\nmemperhatikan paling sedikit:\na.\nkualifikasi dan kompetensi sumber daya manusia\nyang dimiliki pihak penyedia jasa TI;\nb.\nkomitmen pihak penyedia jasa TI dalam menjaga\nkerahasiaan data dan/atau informasi Bank serta\nnasabah Bank;\nc.\nkomitmen\npihak\npenyedia\njasa\nTI\nuntuk\nmenyampaikan hasil audit TI secara berkala yang\ndilakukan auditor independen atas penyediaan\njasa TI kepada Bank;\nd.\npengalihan sebagian kegiatan atau subkontrak\noleh pihak penyedia jasa TI dilakukan atas\npersetujuan\nBank\nyang\ndibuktikan\ndengan\ndokumen tertulis;\ne.\nmekanisme pelaporan kejadian kritis oleh pihak\npenyedia jasa TI kepada Bank;\nf.\nmekanisme penghentian perjanjian kerja sama jika\nterdapat penghentian perjanjian sebelum jangka\nwaktu perjanjian berakhir;\ng.\npemenuhan ketentuan peraturan perundang-\nundangan atas penyediaan jasa TI oleh pihak\npenyedia jasa TI;\nh.\nkesediaan pihak penyedia jasa TI untuk memenuhi\nkewajiban dan/atau persyaratan yang dimuat\ndalam perjanjian kerja sama; dan\ni.\nkesediaan\npihak\npenyedia\njasa\nTI\nuntuk\nmemberikan\nakses\nkepada\nOtoritas\nJasa\nKeuangan dan/atau pihak lain yang berwenang\nuntuk melakukan pemeriksaan terhadap kegiatan\npenyediaan jasa TI yang diberikan sesuai dengan\nketentuan peraturan perundang-undangan.\n(4)\nProses manajemen risiko penggunaan pihak penyedia\njasa TI sebagaimana dimaksud dalam Pasal 29\nayat (3) huruf d meliputi:\na.\ntanggung jawab Bank atas penerapan manajemen\nrisiko terkait penggunaan pihak penyedia jasa TI;\nb.\npenyediaan Rencana Pemulihan Bencana yang\nteruji dan memadai; dan\nc.\npenetapan dan pemantauan atas pemenuhan\npersyaratan keamanan data dan/atau informasi\ndalam kebijakan dan prosedur intern serta dalam\nperjanjian kerja sama.\n(5)\nBank\ndalam\nmelakukan\npenilaian\nkinerja\ndan\nkepatuhan pihak penyedia jasa TI sebagaimana\ndimaksud\ndalam\nPasal\nayat\n(3)\nhuruf\ne\nmemperhatikan paling sedikit:\na.\npemantauan\ndan\nevaluasi\nkeandalan\npihak\npenyedia jasa TI secara berkala terkait kinerja,\nreputasi pihak penyedia jasa TI, dan kelangsungan\npenyediaan layanan;\nb.\npenerapan pengendalian TI secara memadai oleh\npihak penyedia jasa TI, yang dibuktikan dengan\nhasil audit dan/atau penilaian yang dilakukan\noleh pihak independen; dan\nc.\npemenuhan\ntingkat\nlayanan\nsesuai\ndengan\nperjanjian tingkat layanan antara Bank dan pihak\npenyedia jasa TI.",
+      "page_range": [
+        17,
+        20
+      ],
+      "parent_id": "POJK_11_2022__BAB_VI",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_31",
+      "component_type": "PASAL",
+      "number": "31",
+      "title": null,
+      "content": "Dalam hal terdapat perubahan yang signifikan terhadap\norganisasi dari pihak penyedia jasa TI, Bank wajib\nmelakukan penilaian ulang materialitas terhadap pihak\npenyedia jasa TI.",
+      "page_range": [
+        20,
+        20
+      ],
+      "parent_id": "POJK_11_2022__BAB_VI",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_32",
+      "component_type": "PASAL",
+      "number": "32",
+      "title": null,
+      "content": "(1)\nDalam hal terdapat kondisi berupa:\na.\nhasil penilaian ulang materialitas sebagaimana\ndimaksud dalam Pasal 31 menunjukkan bahwa\nkinerja pihak penyedia jasa TI berpotensi tidak\nberjalan dengan efektif;\nb.\nmemburuknya kinerja penyelenggaraan TI oleh\npihak\npenyedia\njasa\nTI\nyang\nberpotensi\nmenimbulkan dan/atau mengakibatkan dampak\nyang signifikan pada kegiatan usaha dan/atau\noperasional Bank;\nc.\npihak penyedia jasa TI menjadi insolven, dalam\nproses menuju likuidasi, atau dipailitkan oleh\npengadilan;\nd.\nterdapat pelanggaran oleh pihak penyedia jasa TI\nterhadap\nketentuan\nperaturan\nperundang-\nundangan mengenai rahasia Bank dan/atau data\npribadi nasabah;\ne.\nterdapat kondisi yang menyebabkan Bank tidak\ndapat menyediakan data yang diperlukan untuk\npengawasan\noleh\nOtoritas\nJasa\nKeuangan;\ndan/atau\nf.\nterdapat\nkondisi\nlain\nyang\nmenyebabkan\nterganggunya atau terhentinya penyediaan jasa TI\ndari pihak penyedia jasa TI kepada Bank,\nBank wajib melakukan tindakan tertentu.\n(2)\nTindakan\ntertentu\nsebagaimana\ndimaksud\npada\nayat (1), paling sedikit:\na.\nmelaporkan kepada Otoritas Jasa Keuangan\npaling lama 3 (tiga) hari kerja setelah kondisi\nsebagaimana dimaksud pada ayat (1) diketahui\noleh Bank;\nb.\nmemutuskan tindak lanjut yang akan diambil\nuntuk\nmengatasi\npermasalahan\ntermasuk\npenghentian penggunaan pihak penyedia jasa TI\ndalam hal diperlukan; dan\nc.\nmelaporkan kepada Otoritas Jasa Keuangan paling\nlama 3 (tiga) hari kerja setelah Bank menghentikan\npenggunaan pihak penyedia jasa TI sebelum\nberakhirnya jangka waktu perjanjian, dalam hal\nBank\nmemutuskan\nuntuk\nmenghentikan\npenggunaan pihak penyedia jasa TI.\n(3)\nDalam hal penggunaan pihak penyedia jasa TI atau\nrencana\npenggunaan\npihak\npenyedia\njasa\nTI\nmenyebabkan atau diindikasikan akan menyebabkan\nkesulitan pengawasan yang dilakukan oleh Otoritas\nJasa Keuangan, Otoritas Jasa Keuangan dapat:\na.\nmemerintahkan\nBank\nuntuk\nmenghentikan\npenggunaan pihak penyedia jasa TI sebelum\nberakhirnya jangka waktu perjanjian; atau\nb.\nmelarang rencana penggunaan pihak penyedia\njasa TI oleh Bank.\n(4)\nDalam hal Bank akan menghentikan penggunaan pihak\npenyedia jasa TI, Bank wajib:\na.\nmenyusun\nrencana\npenghentian\npenggunaan\npihak penyedia jasa TI;\nb.\nmelakukan penilaian atas kelangsungan layanan\ndan data terkait dengan kegiatan yang diserahkan\nkepada pihak penyedia jasa TI serta pengujian\natau simulasi terhadap kelangsungan kegiatan\nusaha dan/atau operasional Bank; dan\nc.\nmemastikan\npenghentian\npenggunaan\npihak\npenyedia jasa TI tidak menimbulkan gangguan\npada kegiatan usaha dan/atau operasional Bank.",
+      "page_range": [
+        20,
+        22
+      ],
+      "parent_id": "POJK_11_2022__BAB_VI",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_33",
+      "component_type": "PASAL",
+      "number": "33",
+      "title": null,
+      "content": "(1)\nBank\nyang\nmelanggar\nketentuan\nsebagaimana\ndimaksud dalam Pasal 29 ayat (2), ayat (3), Pasal 30\nayat (3), Pasal 31, Pasal 32 ayat (1), dan/atau ayat (4),\ndikenai sanksi administratif berupa teguran tertulis.\n(2)\nDalam hal Bank telah dikenai sanksi administratif\nsebagaimana dimaksud pada ayat (1) dan belum\nmemenuhi ketentuan sebagaimana dimaksud dalam\nPasal 29 ayat (2), ayat (3), Pasal 30 ayat (3), Pasal 31,\nPasal 32 ayat (1), dan/atau ayat (4), Bank dikenai\nsanksi administratif berupa:\na.\nlarangan untuk menerbitkan produk Bank baru;\nb.\npembekuan kegiatan usaha tertentu; dan/atau\nc.\npenurunan penilaian faktor tata kelola dalam\npenilaian tingkat kesehatan Bank.",
+      "page_range": [
+        22,
+        22
+      ],
+      "parent_id": "POJK_11_2022__BAB_VI",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_34",
+      "component_type": "PASAL",
+      "number": "34",
+      "title": null,
+      "content": "Ketentuan lebih lanjut mengenai penggunaan pihak\npenyedia jasa TI dalam penyelenggaraan TI Bank ditetapkan\noleh Otoritas Jasa Keuangan.",
+      "page_range": [
+        22,
+        22
+      ],
+      "parent_id": "POJK_11_2022__BAB_VI",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__BAB_VII",
+      "component_type": "BAB",
+      "number": "VII",
+      "title": "PENEMPATAN SISTEM ELEKTRONIK DAN PEMROSESAN TRANSAKSI BERBASIS TI",
+      "content": "",
+      "page_range": [
+        22,
+        22
+      ],
+      "parent_id": null,
+      "children": [
+        "POJK_11_2022__BAGIAN_Kesatu__BAB_VII",
+        "POJK_11_2022__BAGIAN_Kedua__BAB_VII",
+        "POJK_11_2022__BAGIAN_Ketiga"
+      ],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__BAGIAN_Kesatu__BAB_VII",
+      "component_type": "BAGIAN",
+      "number": "Kesatu",
+      "title": "Penempatan Sistem Elektronik",
+      "content": "",
+      "page_range": [
+        22,
+        22
+      ],
+      "parent_id": "POJK_11_2022__BAB_VII",
+      "children": [
+        "POJK_11_2022__PASAL_35",
+        "POJK_11_2022__PASAL_36",
+        "POJK_11_2022__PASAL_37",
+        "POJK_11_2022__PASAL_38"
+      ],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_35",
+      "component_type": "PASAL",
+      "number": "35",
+      "title": null,
+      "content": "(1)\nBank wajib menempatkan Sistem Elektronik pada\nPusat Data dan Pusat Pemulihan Bencana di wilayah\nIndonesia.\n(2)\nBank dapat menempatkan Sistem Elektronik pada\nPusat Data dan/atau Pusat Pemulihan Bencana di luar\nwilayah Indonesia sepanjang memperoleh izin dari\nOtoritas Jasa Keuangan.\n(3)\nKriteria Sistem Elektronik yang dapat ditempatkan\npada Pusat Data dan/atau Pusat Pemulihan Bencana\ndi luar wilayah Indonesia sebagaimana dimaksud pada\nayat (2), meliputi:\na.\nSistem\nElektronik\nyang\ndigunakan\nuntuk\nmendukung analisis terintegrasi dalam memenuhi\nketentuan yang diterbitkan oleh otoritas negara\nasal Bank yang bersifat global, termasuk lintas\nnegara;\nb.\nSistem\nElektronik\nyang\ndigunakan\nuntuk\nmanajemen risiko secara terintegrasi dengan\nkantor pusat Bank atau kantor induk atau kantor\nentitas utama di luar wilayah Indonesia;\nc.\nSistem\nElektronik\nyang\ndigunakan\nuntuk\npenerapan anti pencucian uang dan pencegahan\npendanaan terorisme secara terintegrasi dengan\nkantor pusat Bank atau kantor induk Bank di luar\nwilayah Indonesia;\nd.\nSistem\nElektronik\nyang\ndigunakan\nuntuk\npelayanan kepada nasabah secara global, yang\nmemerlukan integrasi dengan Sistem Elektronik\nmilik grup Bank di luar wilayah Indonesia;\ne.\nSistem\nElektronik\nyang\ndigunakan\nuntuk\nmanajemen komunikasi antara kantor pusat Bank\ndan kantor cabang, atau antara perusahaan anak\ndan perusahaan induk; dan/atau\nf.\nSistem\nElektronik\nyang\ndigunakan\nuntuk\nmanajemen intern Bank.\n(4)\nDalam\nhal\nterdapat\nkondisi\nyang\nmengganggu\noperasional Bank secara signifikan, Otoritas Jasa\nKeuangan dapat menentukan penempatan Sistem\nElektronik pada Pusat Data dan/atau Pusat Pemulihan\nBencana di luar wilayah Indonesia selain kriteria\nsebagaimana dimaksud pada ayat (3) untuk sementara\nwaktu.",
+      "page_range": [
+        22,
+        24
+      ],
+      "parent_id": "POJK_11_2022__BAGIAN_Kesatu__BAB_VII",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_36",
+      "component_type": "PASAL",
+      "number": "36",
+      "title": null,
+      "content": "(1)\nBank dapat mengajukan permohonan izin sebagaimana\ndimaksud dalam Pasal 35 ayat (2) sepanjang Bank:\na.\nmemenuhi ketentuan sebagaimana dimaksud\ndalam Pasal 29 dan Pasal 30;\nb.\nmenyampaikan hasil analisis risiko negara;\nc.\nmemastikan penempatan Sistem Elektronik pada\nPusat Data dan/atau Pusat Pemulihan Bencana di\nluar\nwilayah\nIndonesia\ntidak\nmengurangi\nefektivitas pengawasan Otoritas Jasa Keuangan\nyang dibuktikan dengan surat pernyataan;\nd.\nmemastikan bahwa informasi mengenai rahasia\nBank hanya diungkapkan sepanjang memenuhi\nketentuan peraturan perundang-undangan di\nIndonesia yang dibuktikan dengan perjanjian kerja\nsama\nantara\nBank\ndan\npihak\npenyedia\njasa TI;\ne.\nmemastikan bahwa perjanjian tertulis dengan\npihak penyedia jasa TI memuat klausula pilihan\nhukum;\nf.\nmenyampaikan surat pernyataan tidak keberatan\ndari otoritas pengawas pihak penyedia jasa TI di\nluar wilayah Indonesia bahwa Otoritas Jasa\nKeuangan\ndapat\nmelakukan\npemeriksaan\nterhadap pihak penyedia jasa TI;\ng.\nmenyampaikan surat pernyataan bahwa Bank\nmenyampaikan secara berkala hasil penilaian yang\ndilakukan kantor bank di luar wilayah Indonesia\natas penerapan manajemen risiko pada pihak\npenyedia jasa TI;\nh.\nmemastikan manfaat dari rencana penempatan\nSistem Elektronik pada Pusat Data dan/atau\nPusat\nPemulihan\nBencana\ndi\nluar\nwilayah\nIndonesia bagi Bank lebih besar daripada beban\nyang ditanggung oleh Bank;\ni.\nmenyampaikan\nrencana\nBank\nuntuk\nmeningkatkan kemampuan sumber daya manusia\nBank baik yang berkaitan dengan penyelenggaraan\nTI maupun transaksi bisnis atau produk yang\nditawarkan; dan\nj.\nmenyampaikan\nrencana\ntindak\npenempatan\nSistem Elektronik pada Pusat Data dan/atau\nPusat Pemulihan Bencana di wilayah Indonesia\nbagi Bank yang akan menempatkan Sistem\nElektronik pada Pusat Data dan/atau Pusat\nPemulihan Bencana di luar wilayah Indonesia\nsebagaimana dimaksud dalam Pasal 35 ayat (4).\n(2)\nOtoritas Jasa Keuangan memberikan izin atau menolak\npermohonan izin penempatan Sistem Elektronik pada\nPusat Data dan/atau Pusat Pemulihan Bencana di luar\nwilayah Indonesia sebagaimana dimaksud dalam\nPasal 35 ayat (2) paling lama 3 (tiga) bulan setelah\nseluruh persyaratan dipenuhi oleh Bank dan dokumen\npermohonan diterima secara lengkap oleh Otoritas Jasa\nKeuangan.\n(3)\nBank wajib memastikan bahwa data yang digunakan\ndalam Sistem Elektronik yang ditempatkan pada Pusat\nData dan/atau Pusat Pemulihan Bencana di luar\nwilayah Indonesia tidak digunakan untuk tujuan selain\nsebagaimana dimaksud dalam Pasal 35 ayat (3) atau\nPasal 35 ayat (4).\n(4)\nDalam hal berdasarkan penilaian Otoritas Jasa\nKeuangan penempatan Sistem Elektronik pada Pusat\nData dan/atau Pusat Pemulihan Bencana di luar\nwilayah Indonesia:\na.\ntidak sesuai dengan permohonan izin penempatan\nSistem Elektronik pada Pusat Data dan/atau\nPusat\nPemulihan\nBencana\ndi\nluar\nwilayah\nIndonesia yang disampaikan kepada Otoritas Jasa\nKeuangan;\nb.\nberpotensi mengurangi efektivitas pengawasan\nOtoritas Jasa Keuangan;\nc.\nberpotensi berdampak negatif terhadap kinerja\nBank; dan/atau\nd.\ntidak\nsesuai\ndengan\nketentuan\nperaturan\nperundang-undangan,\nOtoritas Jasa Keuangan dapat meminta Bank untuk\nmenempatkan Sistem Elektronik pada Pusat Data\ndan/atau Pusat Pemulihan Bencana di wilayah\nIndonesia.",
+      "page_range": [
+        24,
+        26
+      ],
+      "parent_id": "POJK_11_2022__BAGIAN_Kesatu__BAB_VII",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_37",
+      "component_type": "PASAL",
+      "number": "37",
+      "title": null,
+      "content": "Bank wajib memastikan Pusat Data dan Pusat Pemulihan\nBencana sebagaimana dimaksud dalam Pasal 35 menjamin\nkelangsungan usaha Bank.",
+      "page_range": [
+        26,
+        26
+      ],
+      "parent_id": "POJK_11_2022__BAGIAN_Kesatu__BAB_VII",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_38",
+      "component_type": "PASAL",
+      "number": "38",
+      "title": null,
+      "content": "Ketentuan lebih lanjut mengenai penempatan Sistem\nElektronik pada Pusat Data dan Pusat Pemulihan Bencana\nditetapkan oleh Otoritas Jasa Keuangan.",
+      "page_range": [
+        26,
+        26
+      ],
+      "parent_id": "POJK_11_2022__BAGIAN_Kesatu__BAB_VII",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__BAGIAN_Kedua__BAB_VII",
+      "component_type": "BAGIAN",
+      "number": "Kedua",
+      "title": "Pemrosesan Transaksi Berbasis TI",
+      "content": "",
+      "page_range": [
+        26,
+        26
+      ],
+      "parent_id": "POJK_11_2022__BAB_VII",
+      "children": [
+        "POJK_11_2022__PASAL_39"
+      ],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_39",
+      "component_type": "PASAL",
+      "number": "39",
+      "title": null,
+      "content": "(1)\nBank wajib menyelenggarakan pemrosesan transaksi\nberbasis TI di wilayah Indonesia.\n(2)\nPemrosesan transaksi berbasis TI dapat dilakukan oleh\npihak penyedia jasa TI di wilayah Indonesia.\n(3)\nPenyelenggaraan pemrosesan transaksi berbasis TI oleh\npihak penyedia jasa TI sebagaimana dimaksud pada\nayat (2) dapat dilakukan sepanjang:\na.\nmemenuhi prinsip kehati-hatian;\nb.\nmemenuhi ketentuan sebagaimana dimaksud\ndalam Pasal 29 dan Pasal 30; dan\nc.\nmemperhatikan aspek perlindungan nasabah.\n(4)\nPemrosesan transaksi berbasis TI oleh pihak penyedia\njasa TI di luar wilayah Indonesia dapat dilakukan\nsepanjang Bank memperoleh izin dari Otoritas Jasa\nKeuangan.\n(5)\nBank dapat mengajukan permohonan izin sebagaimana\ndimaksud pada ayat (4) sepanjang:\na.\nBank\nmemenuhi\npersyaratan\nsebagaimana\ndimaksud pada ayat (3);\nb.\ndokumen pendukung administrasi keuangan atas\ntransaksi yang dilakukan di kantor Bank di\nIndonesia ditatausahakan di kantor Bank di\nIndonesia; dan\nc.\nrencana bisnis Bank menunjukkan adanya upaya\nuntuk\nmeningkatkan\nperan\nBank\nbagi\nperkembangan perekonomian Indonesia.\n(6)\nOtoritas Jasa Keuangan memberikan izin atau menolak\npermohonan izin pemrosesan transaksi berbasis TI oleh\npihak penyedia jasa TI di luar wilayah Indonesia\nsebagaimana dimaksud pada ayat (4) paling lama\n3 (tiga) bulan setelah seluruh persyaratan dipenuhi oleh\nBank dan dokumen permohonan diterima secara\nlengkap oleh Otoritas Jasa Keuangan.\n(7)\nKetentuan lebih lanjut mengenai pemrosesan transaksi\nberbasis TI ditetapkan oleh Otoritas Jasa Keuangan.",
+      "page_range": [
+        26,
+        27
+      ],
+      "parent_id": "POJK_11_2022__BAGIAN_Kedua__BAB_VII",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__BAGIAN_Ketiga",
+      "component_type": "BAGIAN",
+      "number": "Ketiga",
+      "title": "Tata Cara Permohonan Izin dan Batas Waktu Pelaksanaan Setelah Memperoleh Izin",
+      "content": "",
+      "page_range": [
+        27,
+        27
+      ],
+      "parent_id": "POJK_11_2022__BAB_VII",
+      "children": [
+        "POJK_11_2022__PASAL_40",
+        "POJK_11_2022__PASAL_41",
+        "POJK_11_2022__PASAL_42"
+      ],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_40",
+      "component_type": "PASAL",
+      "number": "40",
+      "title": null,
+      "content": "(1)\nPermohonan\nizin\nsebagaimana\ndimaksud\ndalam\nPasal 35 ayat (2) dan/atau Pasal 39 ayat (4)\ndisampaikan kepada Otoritas Jasa Keuangan secara\ndaring\nmelalui\nsistem\nperizinan\ndan\nregistrasi\nterintegrasi Otoritas Jasa Keuangan.\n(2)\nDalam\nhal\nsarana\npenyampaian\nsebagaimana\ndimaksud pada ayat (1) belum tersedia, penyampaian\ndilakukan melalui sistem pelaporan Otoritas Jasa\nKeuangan untuk laporan tidak terstruktur kepada:\na.\nDepartemen Pengawasan Bank terkait atau Kantor\nRegional Otoritas Jasa Keuangan di Jakarta, bagi\nBank yang berkantor pusat di wilayah Provinsi\nDaerah Khusus Ibukota Jakarta atau Provinsi\nBanten; atau\nb.\nKantor Regional Otoritas Jasa Keuangan atau\nKantor Otoritas Jasa Keuangan setempat, bagi\nBank yang berkantor pusat di luar wilayah Provinsi\nDaerah Khusus Ibukota Jakarta atau Provinsi\nBanten.",
+      "page_range": [
+        27,
+        28
+      ],
+      "parent_id": "POJK_11_2022__BAGIAN_Ketiga",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_41",
+      "component_type": "PASAL",
+      "number": "41",
+      "title": null,
+      "content": "(1)\nBank harus:\na.\nmenempatkan Sistem Elektronik pada Pusat Data\ndan/atau Pusat Pemulihan Bencana di luar\nwilayah Indonesia sebagaimana dimaksud dalam\nPasal 35 ayat (2); dan/atau\nb.\nmengimplementasikan\npemrosesan\ntransaksi\nberbasis TI oleh pihak penyedia jasa TI di luar\nwilayah Indonesia sebagaimana dimaksud dalam\nPasal 39 ayat (4),\npaling lama 6 (enam) bulan sejak memperoleh izin dari\nOtoritas Jasa Keuangan.\n(2)\nApabila\nBank\ntidak\nmelaksanakan\nketentuan\nsebagaimana dimaksud pada ayat (1) dalam jangka\nwaktu 6 (enam) bulan sejak izin diperoleh dari Otoritas\nJasa Keuangan, izin Otoritas Jasa Keuangan menjadi\ntidak berlaku.",
+      "page_range": [
+        28,
+        28
+      ],
+      "parent_id": "POJK_11_2022__BAGIAN_Ketiga",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_42",
+      "component_type": "PASAL",
+      "number": "42",
+      "title": null,
+      "content": "(1)\nBank\nyang\nmelanggar\nketentuan\nsebagaimana\ndimaksud dalam Pasal 35 ayat (1), Pasal 36 ayat (3),\nPasal 37, dan/atau Pasal 39 ayat (1), dikenai sanksi\nadministratif berupa teguran tertulis.\n(2)\nDalam hal Bank telah dikenai sanksi administratif\nsebagaimana dimaksud pada ayat (1) dan belum\nmemenuhi ketentuan sebagaimana dimaksud dalam\nPasal 35 ayat (1), Pasal 36 ayat (3), Pasal 37, dan/atau\nPasal 39 ayat (1), Bank dikenai sanksi administratif\nberupa:\na.\nlarangan untuk menerbitkan produk Bank baru;\nb.\npembekuan kegiatan usaha tertentu; dan/atau\nc.\npenurunan penilaian faktor tata kelola dalam\npenilaian tingkat kesehatan Bank.",
+      "page_range": [
+        28,
+        29
+      ],
+      "parent_id": "POJK_11_2022__BAGIAN_Ketiga",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__BAB_VIII",
+      "component_type": "BAB",
+      "number": "VIII",
+      "title": "PENGELOLAAN DATA DAN PELINDUNGAN DATA PRIBADI DALAM PENYELENGGARAAN TI BANK",
+      "content": "",
+      "page_range": [
+        29,
+        29
+      ],
+      "parent_id": null,
+      "children": [
+        "POJK_11_2022__BAGIAN_Kesatu__BAB_VIII",
+        "POJK_11_2022__BAGIAN_Kedua__BAB_VIII"
+      ],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__BAGIAN_Kesatu__BAB_VIII",
+      "component_type": "BAGIAN",
+      "number": "Kesatu",
+      "title": "Pengelolaan Data oleh Bank",
+      "content": "",
+      "page_range": [
+        29,
+        29
+      ],
+      "parent_id": "POJK_11_2022__BAB_VIII",
+      "children": [
+        "POJK_11_2022__PASAL_43"
+      ],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_43",
+      "component_type": "PASAL",
+      "number": "43",
+      "title": null,
+      "content": "(1)\nBank wajib mengelola data secara efektif dalam\npemrosesan data Bank untuk mendukung pencapaian\ntujuan bisnis Bank.\n(2)\nPengelolaan data secara efektif sebagaimana dimaksud\npada ayat (1) memperhatikan paling sedikit:\na.\nkepemilikan dan kepengurusan data;\nb.\nkualitas data;\nc.\nsistem pengelolaan data; dan\nd.\nsumber daya pendukung pengelolaan data.\n(3)\nKetentuan lebih lanjut mengenai pengelolaan data oleh\nBank ditetapkan oleh Otoritas Jasa Keuangan.",
+      "page_range": [
+        29,
+        29
+      ],
+      "parent_id": "POJK_11_2022__BAGIAN_Kesatu__BAB_VIII",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__BAGIAN_Kedua__BAB_VIII",
+      "component_type": "BAGIAN",
+      "number": "Kedua",
+      "title": "Pelindungan Data Pribadi oleh Bank",
+      "content": "",
+      "page_range": [
+        29,
+        29
+      ],
+      "parent_id": "POJK_11_2022__BAB_VIII",
+      "children": [
+        "POJK_11_2022__PASAL_44",
+        "POJK_11_2022__PASAL_45",
+        "POJK_11_2022__PASAL_46",
+        "POJK_11_2022__PASAL_47"
+      ],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_44",
+      "component_type": "PASAL",
+      "number": "44",
+      "title": null,
+      "content": "(1)\nBank wajib melaksanakan prinsip pelindungan data\npribadi dalam melakukan pemrosesan data pribadi.\n(2)\nDalam hal terdapat kondisi tertentu yang berpotensi\nmeningkatkan risiko bagi pemilik data pribadi, Bank\nwajib melakukan penilaian dampak atas penerapan\nprinsip\npelindungan\ndata\npribadi\nsebagaimana\ndimaksud pada ayat (1).",
+      "page_range": [
+        29,
+        30
+      ],
+      "parent_id": "POJK_11_2022__BAGIAN_Kedua__BAB_VIII",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_45",
+      "component_type": "PASAL",
+      "number": "45",
+      "title": null,
+      "content": "(1)\nDalam menerapkan pelindungan data pribadi pada\nkegiatan pertukaran data, Bank wajib menetapkan\npaling sedikit:\na.\nklasifikasi data yang merupakan data pribadi;\nb.\nhak dan kewajiban para pihak yang terlibat dalam\npertukaran data pribadi;\nc.\nperjanjian pertukaran data pribadi;\nd.\nsarana pertukaran data pribadi; dan\ne.\nkeamanan data pribadi.\n(2)\nPertukaran\ndata\npribadi\nsebagaimana\ndimaksud\npada ayat (1) dilakukan dengan memperhatikan\npersetujuan nasabah dan/atau calon nasabah yang\ndilaksanakan sesuai dengan ketentuan peraturan\nperundang-undangan.",
+      "page_range": [
+        30,
+        30
+      ],
+      "parent_id": "POJK_11_2022__BAGIAN_Kedua__BAB_VIII",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_46",
+      "component_type": "PASAL",
+      "number": "46",
+      "title": null,
+      "content": "(1)\nBank\nyang\nmelanggar\nketentuan\nsebagaimana\ndimaksud dalam Pasal 43 ayat (1), Pasal 44, dan/atau\nPasal 45 ayat (1), dikenai sanksi administratif berupa\nteguran tertulis.\n(2)\nDalam hal Bank telah dikenai sanksi administratif\nsebagaimana dimaksud pada ayat (1) dan belum\nmemenuhi ketentuan sebagaimana dimaksud dalam\nPasal 43 ayat (1), Pasal 44, dan/atau Pasal 45 ayat (1),\nBank dikenai sanksi administratif berupa:\na.\nlarangan untuk menerbitkan produk Bank baru;\nb.\npembekuan kegiatan usaha tertentu; dan/atau\nc.\npenurunan penilaian faktor tata kelola dalam\npenilaian tingkat kesehatan Bank.",
+      "page_range": [
+        30,
+        30
+      ],
+      "parent_id": "POJK_11_2022__BAGIAN_Kedua__BAB_VIII",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_47",
+      "component_type": "PASAL",
+      "number": "47",
+      "title": null,
+      "content": "Ketentuan lebih lanjut mengenai pelindungan data pribadi\noleh Bank ditetapkan oleh Otoritas Jasa Keuangan.",
+      "page_range": [
+        31,
+        31
+      ],
+      "parent_id": "POJK_11_2022__BAGIAN_Kedua__BAB_VIII",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__BAB_IX",
+      "component_type": "BAB",
+      "number": "IX",
+      "title": "PENYEDIAAN JASA TI OLEH BANK",
+      "content": "",
+      "page_range": [
+        31,
+        31
+      ],
+      "parent_id": null,
+      "children": [
+        "POJK_11_2022__PASAL_48",
+        "POJK_11_2022__PASAL_49",
+        "POJK_11_2022__PASAL_50",
+        "POJK_11_2022__PASAL_51",
+        "POJK_11_2022__PASAL_52"
+      ],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_48",
+      "component_type": "PASAL",
+      "number": "48",
+      "title": null,
+      "content": "(1)\nBank hanya dapat menyediakan jasa TI kepada\nlembaga jasa keuangan lain:\na.\nyang diawasi oleh Otoritas Jasa Keuangan;\ndan/atau\nb.\ndi luar wilayah Indonesia yang diawasi otoritas\npengawas dan pengatur lembaga jasa keuangan\nsetempat.\n(2)\nBank yang akan menyediakan jasa TI sebagaimana\ndimaksud pada ayat (1), wajib:\na.\nmemenuhi persyaratan penyediaan jasa TI tidak\nmenjadi salah satu kegiatan pokok Bank;\nb.\nmemenuhi prinsip kehati-hatian;\nc.\nmemperhatikan analisis biaya dan manfaat;\nd.\nmemenuhi prinsip hubungan kerja sama secara\nwajar; dan\ne.\nmemenuhi\nketentuan\nperaturan\nperundang-\nundangan.\n(3)\nBank wajib memperoleh izin Otoritas Jasa Keuangan\nuntuk setiap rencana penyediaan jasa TI sebagaimana\ndimaksud pada ayat (1).\n(4)\nPenyediaan jasa TI berupa aplikasi kepada lembaga jasa\nkeuangan selain bank dapat dilakukan sepanjang:\na.\nlembaga jasa keuangan pengguna jasa TI berada\ndalam satu grup atau kelompok dengan Bank; dan\nb.\npenggunaan aplikasi ditujukan untuk mendukung\nkegiatan operasional yang umum.",
+      "page_range": [
+        31,
+        31
+      ],
+      "parent_id": "POJK_11_2022__BAB_IX",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_49",
+      "component_type": "PASAL",
+      "number": "49",
+      "title": null,
+      "content": "(1)\nPermohonan\nizin\nsebagaimana\ndimaksud\ndalam\nPasal 48 ayat (3) disampaikan kepada Otoritas Jasa\nKeuangan secara daring melalui sistem perizinan dan\nregistrasi terintegrasi Otoritas Jasa Keuangan.\n(2)\nDalam\nhal\nsarana\npenyampaian\nsebagaimana\ndimaksud pada ayat (1) belum tersedia, penyampaian\ndilakukan melalui sistem pelaporan Otoritas Jasa\nKeuangan untuk laporan tidak terstruktur kepada:\na.\nDepartemen Pengawasan Bank terkait atau Kantor\nRegional Otoritas Jasa Keuangan di Jakarta, bagi\nBank yang berkantor pusat di wilayah Provinsi\nDaerah Khusus Ibukota Jakarta atau Provinsi\nBanten; atau\nb.\nKantor Regional Otoritas Jasa Keuangan atau\nKantor Otoritas Jasa Keuangan setempat, bagi\nBank yang berkantor pusat di luar wilayah Provinsi\nDaerah Khusus Ibukota Jakarta atau Provinsi\nBanten.",
+      "page_range": [
+        32,
+        32
+      ],
+      "parent_id": "POJK_11_2022__BAB_IX",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_50",
+      "component_type": "PASAL",
+      "number": "50",
+      "title": null,
+      "content": "(1)\nBank harus melaksanakan rencana penyediaan jasa TI\nsebagaimana dimaksud dalam Pasal 48 ayat (3) paling\nlama 6 (enam) bulan sejak memperoleh izin dari\nOtoritas Jasa Keuangan.\n(2)\nApabila Bank tidak melaksanakan rencana penyediaan\njasa TI sebagaimana dimaksud dalam Pasal 48 ayat (3)\ndalam jangka waktu 6 (enam) bulan sejak izin diperoleh\ndari Otoritas Jasa Keuangan, izin Otoritas Jasa\nKeuangan menjadi tidak berlaku.",
+      "page_range": [
+        32,
+        32
+      ],
+      "parent_id": "POJK_11_2022__BAB_IX",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_51",
+      "component_type": "PASAL",
+      "number": "51",
+      "title": null,
+      "content": "(1)\nBank\nyang\nmelanggar\nketentuan\nsebagaimana\ndimaksud dalam Pasal 48 ayat (2) dan/atau ayat (3)\ndikenai sanksi administratif berupa teguran tertulis.\n(2)\nDalam hal Bank telah dikenai sanksi administratif\nsebagaimana dimaksud pada ayat (1) dan belum\nmemenuhi ketentuan sebagaimana dimaksud dalam\nPasal 48 ayat (2) dan/atau ayat (3), Bank dikenai sanksi\nadministratif berupa:\na.\nlarangan untuk menerbitkan produk Bank baru;\nb.\npembekuan kegiatan usaha tertentu; dan/atau\nc.\npenurunan penilaian faktor tata kelola dalam\npenilaian tingkat kesehatan Bank.",
+      "page_range": [
+        32,
+        33
+      ],
+      "parent_id": "POJK_11_2022__BAB_IX",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_52",
+      "component_type": "PASAL",
+      "number": "52",
+      "title": null,
+      "content": "Ketentuan lebih lanjut mengenai penyediaan jasa TI oleh\nBank ditetapkan oleh Otoritas Jasa Keuangan.",
+      "page_range": [
+        33,
+        33
+      ],
+      "parent_id": "POJK_11_2022__BAB_IX",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__BAB_X",
+      "component_type": "BAB",
+      "number": "X",
+      "title": "PENGENDALIAN DAN AUDIT INTERN DALAM PENYELENGGARAAN TI BANK",
+      "content": "",
+      "page_range": [
+        33,
+        33
+      ],
+      "parent_id": null,
+      "children": [
+        "POJK_11_2022__BAGIAN_Kesatu__BAB_X",
+        "POJK_11_2022__BAGIAN_Kedua__BAB_X"
+      ],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__BAGIAN_Kesatu__BAB_X",
+      "component_type": "BAGIAN",
+      "number": "Kesatu",
+      "title": "Pengendalian Intern Bank dalam Penyelenggaraan TI",
+      "content": "",
+      "page_range": [
+        33,
+        33
+      ],
+      "parent_id": "POJK_11_2022__BAB_X",
+      "children": [
+        "POJK_11_2022__PASAL_53"
+      ],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_53",
+      "component_type": "PASAL",
+      "number": "53",
+      "title": null,
+      "content": "(1)\nBank wajib melaksanakan sistem pengendalian intern\nsecara efektif dalam penyelenggaraan TI.\n(2)\nSistem pengendalian intern secara efektif sebagaimana\ndimaksud pada ayat (1) paling sedikit mencakup:\na.\npengawasan oleh manajemen dan penerapan\nbudaya pengendalian;\nb.\nidentifikasi dan penilaian risiko;\nc.\nkegiatan pengendalian dan pemisahan fungsi;\nd.\ndukungan sistem informasi, sistem akuntansi, dan\nsistem komunikasi; dan\ne.\nkegiatan\npemantauan\ndan\ntindakan\nkoreksi\npenyimpangan, yang dilakukan oleh satuan kerja\noperasional, satuan kerja audit intern, maupun\npihak lain.\n(3)\nSistem informasi, sistem akuntansi, dan sistem\nkomunikasi sebagaimana dimaksud pada ayat (2)\nhuruf d harus didukung oleh teknologi, sumber daya\nmanusia, dan struktur organisasi Bank yang memadai.\n(4)\nKegiatan\npemantauan\ndan\ntindakan\nkoreksi\npenyimpangan sebagaimana dimaksud pada ayat (2)\nhuruf e paling sedikit:\na.\nkegiatan pemantauan secara terus menerus;\nb.\npelaksanaan fungsi audit intern yang efektif dan\nmenyeluruh; dan\nc.\nperbaikan\nterhadap\npenyimpangan\nyang\ndiidentifikasi.",
+      "page_range": [
+        33,
+        34
+      ],
+      "parent_id": "POJK_11_2022__BAGIAN_Kesatu__BAB_X",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__BAGIAN_Kedua__BAB_X",
+      "component_type": "BAGIAN",
+      "number": "Kedua",
+      "title": "Audit Intern dalam Penyelenggaraan TI",
+      "content": "",
+      "page_range": [
+        34,
+        34
+      ],
+      "parent_id": "POJK_11_2022__BAB_X",
+      "children": [
+        "POJK_11_2022__PASAL_54",
+        "POJK_11_2022__PASAL_55",
+        "POJK_11_2022__PASAL_56",
+        "POJK_11_2022__PASAL_57"
+      ],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_54",
+      "component_type": "PASAL",
+      "number": "54",
+      "title": null,
+      "content": "(1)\nBank melaksanakan fungsi audit intern TI yang efektif\ndan\nmenyeluruh\nsebagaimana\ndimaksud\ndalam\nPasal 53 ayat (4) huruf b sesuai dengan Peraturan\nOtoritas Jasa Keuangan mengenai penerapan fungsi\naudit intern bagi bank umum.\n(2)\nUntuk memastikan pelaksanaan audit intern TI yang\nefektif dan menyeluruh sebagaimana dimaksud dalam\nPasal 53 ayat (4) huruf b, Bank wajib memastikan\nketersediaan\njejak\naudit\natas\nseluruh\nkegiatan\npenyelenggaraan TI untuk keperluan pengawasan,\npenegakan hukum, penyelesaian sengketa, verifikasi,\npengujian, dan pemeriksaan lain.\n(3)\nDalam hal Bank menggunakan jasa pihak ekstern\ndalam pelaksanaan audit intern TI, penggunaan jasa\npihak ekstern dilakukan sesuai dengan Peraturan\nOtoritas Jasa Keuangan mengenai penerapan fungsi\naudit intern bagi bank umum.\n(4)\nBank wajib melaksanakan audit intern terhadap\npenyelenggaraan TI sesuai kebutuhan, prioritas, dan\nhasil analisis risiko atas penyelenggaraan TI, paling\nsedikit 1 (satu) kali dalam 1 (satu) tahun.",
+      "page_range": [
+        34,
+        34
+      ],
+      "parent_id": "POJK_11_2022__BAGIAN_Kedua__BAB_X",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_55",
+      "component_type": "PASAL",
+      "number": "55",
+      "title": null,
+      "content": "(1)\nBank wajib memiliki pedoman audit intern atas\npenyelenggaraan TI.\n(2)\nBank wajib melakukan kaji ulang terhadap fungsi audit\nintern\natas\npenyelenggaraan\nTI\npaling\nsedikit 1 (satu) kali dalam 3 (tiga) tahun dengan\nmenggunakan jasa pihak ekstern yang independen.\n(3)\nBank wajib menyampaikan kepada Otoritas Jasa\nKeuangan:\na.\nhasil kaji ulang sebagaimana dimaksud pada\nayat (2) sebagai bagian dari laporan hasil kaji ulang\npihak ekstern yang independen; dan\nb.\nhasil audit intern TI sebagai bagian dari laporan\npelaksanaan dan pokok-pokok hasil audit intern,\nsesuai dengan Peraturan Otoritas Jasa Keuangan\nmengenai penerapan fungsi audit intern bagi bank\numum.",
+      "page_range": [
+        35,
+        35
+      ],
+      "parent_id": "POJK_11_2022__BAGIAN_Kedua__BAB_X",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_56",
+      "component_type": "PASAL",
+      "number": "56",
+      "title": null,
+      "content": "(1)\nBank\nyang\nmelanggar\nketentuan\nsebagaimana\ndimaksud dalam Pasal 53 ayat (1), Pasal 54 ayat (2),\nayat\n(4),\ndan/atau\nPasal\n55,\ndikenai\nsanksi\nadministratif berupa teguran tertulis.\n(2)\nDalam hal Bank telah dikenai sanksi administratif\nsebagaimana dimaksud pada ayat (1) dan belum\nmemenuhi ketentuan sebagaimana dimaksud dalam\nPasal 53 ayat (1), Pasal 54 ayat (2), ayat (4), dan/atau\nPasal 55, Bank dikenai sanksi administratif berupa:\na.\nlarangan untuk menerbitkan produk Bank baru;\nb.\npembekuan kegiatan usaha tertentu; dan/atau\nc.\npenurunan penilaian faktor tata kelola dalam\npenilaian tingkat kesehatan Bank.",
+      "page_range": [
+        35,
+        35
+      ],
+      "parent_id": "POJK_11_2022__BAGIAN_Kedua__BAB_X",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_57",
+      "component_type": "PASAL",
+      "number": "57",
+      "title": null,
+      "content": "Ketentuan lebih lanjut mengenai pengendalian dan audit\nintern dalam penyelenggaraan TI Bank ditetapkan oleh\nOtoritas Jasa Keuangan.",
+      "page_range": [
+        35,
+        35
+      ],
+      "parent_id": "POJK_11_2022__BAGIAN_Kedua__BAB_X",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__BAB_XI",
+      "component_type": "BAB",
+      "number": "XI",
+      "title": "PELAPORAN",
+      "content": "",
+      "page_range": [
+        36,
+        36
+      ],
+      "parent_id": null,
+      "children": [
+        "POJK_11_2022__BAGIAN_Kesatu__BAB_XI",
+        "POJK_11_2022__BAGIAN_Kedua__BAB_XI",
+        "POJK_11_2022__BAGIAN_Ketiga__BAB_XI",
+        "POJK_11_2022__BAGIAN_Keempat"
+      ],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__BAGIAN_Kesatu__BAB_XI",
+      "component_type": "BAGIAN",
+      "number": "Kesatu",
+      "title": "Laporan Penyelenggaraan TI",
+      "content": "",
+      "page_range": [
+        36,
+        36
+      ],
+      "parent_id": "POJK_11_2022__BAB_XI",
+      "children": [
+        "POJK_11_2022__PASAL_58",
+        "POJK_11_2022__PASAL_59"
+      ],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_58",
+      "component_type": "PASAL",
+      "number": "58",
+      "title": null,
+      "content": "(1)\nBank wajib melaporkan rencana pengembangan TI yang\nakan diimplementasikan 1 (satu) tahun ke depan paling\nlambat pada akhir bulan November sebelum tahun\nrencana pengembangan TI.\n(2)\nBank\ndapat\nmelakukan\nperubahan\nrencana\npengembangan TI yang telah disampaikan sebagaimana\ndimaksud\npada\nayat\n(1)\npaling\nbanyak\n1 (satu) kali, paling lambat pada akhir bulan Juni tahun\nberjalan.\n(3)\nBank\ndapat\nmengajukan\nperubahan\nrencana\npengembangan\nTI\nselain\ndalam\njangka\nwaktu\nsebagaimana dimaksud pada ayat (2) sepanjang\nmemenuhi pertimbangan tertentu dan mendapatkan\npersetujuan dari Otoritas Jasa Keuangan.\n(4)\nOtoritas Jasa Keuangan dapat meminta Bank untuk\nmelakukan penyesuaian terhadap perubahan rencana\npengembangan\nTI\nsebagaimana\ndimaksud\npada\nayat (2).",
+      "page_range": [
+        36,
+        36
+      ],
+      "parent_id": "POJK_11_2022__BAGIAN_Kesatu__BAB_XI",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_59",
+      "component_type": "PASAL",
+      "number": "59",
+      "title": null,
+      "content": "Bank wajib melaporkan kondisi terkini penyelenggaraan TI\npaling lama 15 (lima belas) hari kerja setelah akhir tahun\npelaporan.",
+      "page_range": [
+        36,
+        36
+      ],
+      "parent_id": "POJK_11_2022__BAGIAN_Kesatu__BAB_XI",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__BAGIAN_Kedua__BAB_XI",
+      "component_type": "BAGIAN",
+      "number": "Kedua",
+      "title": "Laporan Insidentil",
+      "content": "",
+      "page_range": [
+        36,
+        36
+      ],
+      "parent_id": "POJK_11_2022__BAB_XI",
+      "children": [
+        "POJK_11_2022__PASAL_60"
+      ],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_60",
+      "component_type": "PASAL",
+      "number": "60",
+      "title": null,
+      "content": "(1)\nDalam hal terjadi insiden TI yang berpotensi dan/atau\ntelah\nmengakibatkan\nkerugian\nyang\nsignifikan\ndan/atau mengganggu kelancaran operasional Bank,\nBank wajib menyampaikan:\na.\nnotifikasi awal paling lama 24 (dua puluh empat)\njam setelah insiden TI diketahui; dan\nb.\nlaporan insiden TI paling lama 5 (lima) hari kerja\nsetelah insiden TI diketahui.\n(2)\nNotifikasi awal sebagaimana dimaksud pada ayat (1)\nhuruf a disampaikan melalui sarana elektronik secara\ntertulis kepada Otoritas Jasa Keuangan berdasarkan\ninformasi awal yang tersedia.\n(3)\nLaporan insiden TI sebagaimana dimaksud pada\nayat (1) huruf b merupakan bagian dari laporan kondisi\nyang berpotensi menimbulkan kerugian yang signifikan\nterhadap kondisi keuangan Bank sesuai dengan:\na.\nPeraturan Otoritas Jasa Keuangan mengenai\npenerapan manajemen risiko bagi bank umum;\natau\nb.\nPeraturan Otoritas Jasa Keuangan mengenai\npenerapan manajemen risiko bagi bank umum\nsyariah dan unit usaha syariah.\n(4)\nDalam hal terdapat pengaturan otoritas lain mengenai\npenyampaian notifikasi awal dan/atau laporan insiden\nTI dalam jangka waktu yang lebih cepat daripada\njangka waktu sebagaimana dimaksud pada ayat (1),\nBank wajib menyampaikan notifikasi awal dan/atau\nlaporan insiden TI kepada Otoritas Jasa Keuangan pada\nsaat\nyang\nbersamaan\nsesuai\ndengan\nketentuan\nperaturan\nperundang-undangan\notoritas\nlain\ndimaksud.\n(5)\nBank yang telah menyampaikan notifikasi awal\ndan/atau laporan insiden TI sebagaimana dimaksud\npada ayat (4) dianggap telah memenuhi ketentuan\nsebagaimana dimaksud pada ayat (1) huruf a dan/atau\nhuruf b.",
+      "page_range": [
+        36,
+        37
+      ],
+      "parent_id": "POJK_11_2022__BAGIAN_Kedua__BAB_XI",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__BAGIAN_Ketiga__BAB_XI",
+      "component_type": "BAGIAN",
+      "number": "Ketiga",
+      "title": "Laporan Realisasi Penyelenggaraan TI Bank",
+      "content": "",
+      "page_range": [
+        38,
+        38
+      ],
+      "parent_id": "POJK_11_2022__BAB_XI",
+      "children": [
+        "POJK_11_2022__PASAL_61"
+      ],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_61",
+      "component_type": "PASAL",
+      "number": "61",
+      "title": null,
+      "content": "(1)\nBank wajib menyampaikan laporan realisasi:\na.\npenempatan Sistem Elektronik pada Pusat Data\ndan/atau Pusat Pemulihan Bencana di luar\nwilayah Indonesia;\nb.\npemrosesan transaksi berbasis TI di luar wilayah\nIndonesia; dan/atau\nc.\nkegiatan sebagai penyedia jasa TI.\n(2)\nLaporan realisasi sebagaimana dimaksud pada ayat (1)\ndisampaikan paling lama 3 (tiga) bulan setelah\nimplementasi.",
+      "page_range": [
+        38,
+        38
+      ],
+      "parent_id": "POJK_11_2022__BAGIAN_Ketiga__BAB_XI",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__BAGIAN_Keempat",
+      "component_type": "BAGIAN",
+      "number": "Keempat",
+      "title": "Tata Cara Penyampaian Laporan",
+      "content": "",
+      "page_range": [
+        38,
+        38
+      ],
+      "parent_id": "POJK_11_2022__BAB_XI",
+      "children": [
+        "POJK_11_2022__PASAL_62",
+        "POJK_11_2022__PASAL_63",
+        "POJK_11_2022__PASAL_64",
+        "POJK_11_2022__PASAL_65"
+      ],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_62",
+      "component_type": "PASAL",
+      "number": "62",
+      "title": null,
+      "content": "(1)\nBank menyampaikan laporan:\na.\nhasil pengujian keamanan siber berdasarkan\nskenario sebagaimana dimaksud dalam Pasal 25\nayat (3);\nb.\nrencana pengembangan TI sebagaimana dimaksud\ndalam Pasal 58 ayat (1);\nc.\nkondisi terkini penyelenggaraan TI sebagaimana\ndimaksud dalam Pasal 59;\nd.\ninsiden TI sebagaimana dimaksud dalam Pasal 60\nayat (1) huruf b atau ayat (4); dan/atau\ne.\nrealisasi sebagaimana dimaksud dalam Pasal 61,\nsecara daring melalui sistem pelaporan Otoritas Jasa\nKeuangan.\n(2)\nBank\nyang\nmelakukan\npelanggaran\nterkait\npenyampaian laporan sebagaimana dimaksud pada\nayat (1) dikenai sanksi administratif.\n(3)\nTata\ncara\npenyampaian\nlaporan\nsecara\ndaring\nsebagaimana dimaksud pada ayat (1) dan pengenaan\nsanksi administratif sebagaimana dimaksud pada\nayat (2) dilaksanakan sesuai dengan Peraturan Otoritas\nJasa Keuangan mengenai pelaporan bank melalui\nsistem pelaporan Otoritas Jasa Keuangan.",
+      "page_range": [
+        38,
+        39
+      ],
+      "parent_id": "POJK_11_2022__BAGIAN_Keempat",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_63",
+      "component_type": "PASAL",
+      "number": "63",
+      "title": null,
+      "content": "(1)\nBank yang terlambat menyampaikan notifikasi awal\ninsiden TI sebagaimana dimaksud dalam Pasal 60\nayat (1) huruf a atau ayat (4) dikenai sanksi\nadministratif berupa teguran tertulis.\n(2)\nDalam hal Bank telah dikenai sanksi administratif\nsebagaimana dimaksud pada ayat (1) dan belum\nmemenuhi ketentuan sebagaimana dimaksud dalam\nPasal 60 ayat (1) huruf a atau ayat (4), Bank dikenai\nsanksi administratif berupa:\na.\nlarangan untuk menerbitkan produk Bank baru;\nb.\npembekuan kegiatan usaha tertentu; dan/atau\nc.\npenurunan penilaian faktor tata kelola dalam\npenilaian tingkat kesehatan Bank.",
+      "page_range": [
+        39,
+        39
+      ],
+      "parent_id": "POJK_11_2022__BAGIAN_Keempat",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_64",
+      "component_type": "PASAL",
+      "number": "64",
+      "title": null,
+      "content": "Bank yang menyampaikan laporan secara tidak lengkap\ndikenai sanksi administratif atas kesalahan informasi sesuai\ndengan Peraturan Otoritas Jasa Keuangan mengenai\npelaporan bank melalui sistem pelaporan Otoritas Jasa\nKeuangan.",
+      "page_range": [
+        39,
+        39
+      ],
+      "parent_id": "POJK_11_2022__BAGIAN_Keempat",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_65",
+      "component_type": "PASAL",
+      "number": "65",
+      "title": null,
+      "content": "Ketentuan lebih lanjut mengenai format pelaporan dan tata\ncara penyampaian laporan ditetapkan oleh Otoritas Jasa\nKeuangan.",
+      "page_range": [
+        39,
+        39
+      ],
+      "parent_id": "POJK_11_2022__BAGIAN_Keempat",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__BAB_XII",
+      "component_type": "BAB",
+      "number": "XII",
+      "title": "PENILAIAN TINGKAT MATURITAS DIGITAL BANK",
+      "content": "",
+      "page_range": [
+        40,
+        40
+      ],
+      "parent_id": null,
+      "children": [
+        "POJK_11_2022__PASAL_66"
+      ],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_66",
+      "component_type": "PASAL",
+      "number": "66",
+      "title": null,
+      "content": "(1)\nBank wajib melakukan penilaian sendiri atas tingkat\nmaturitas\ndigital\nBank\nsecara\nberkala,\npaling\nsedikit 1 (satu) kali dalam 1 (satu) tahun.\n(2)\nTingkat maturitas digital Bank sebagaimana dimaksud\npada ayat (1) mempertimbangkan seluruh aspek dalam\npenyelenggaraan TI.\n(3)\nBank wajib menyampaikan laporan hasil penilaian\nsendiri atas tingkat maturitas digital Bank sebagaimana\ndimaksud pada ayat (1) sebagai bagian dari laporan\nkondisi terkini penyelenggaraan TI Bank.\n(4)\nBank\nyang\nmelanggar\nketentuan\nsebagaimana\ndimaksud pada ayat (1) dan/atau ayat (3) dikenai\nsanksi administratif berupa teguran tertulis.\n(5)\nDalam hal Bank telah dikenai sanksi administratif\nsebagaimana dimaksud pada ayat (4) dan belum\nmemenuhi ketentuan sebagaimana dimaksud pada\nayat (1) dan/atau ayat (3), Bank dikenai sanksi\nadministratif berupa:\na.\nlarangan untuk menerbitkan produk Bank baru;\nb.\npembekuan kegiatan usaha tertentu; dan/atau\nc.\npenurunan penilaian faktor tata kelola dalam\npenilaian tingkat kesehatan Bank.\n(6)\nKetentuan lebih lanjut mengenai penilaian sendiri atas\ntingkat maturitas digital Bank sebagaimana dimaksud\npada ayat (1) ditetapkan oleh Otoritas Jasa Keuangan.",
+      "page_range": [
+        40,
+        40
+      ],
+      "parent_id": "POJK_11_2022__BAB_XII",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__BAB_XIII",
+      "component_type": "BAB",
+      "number": "XIII",
+      "title": "KETENTUAN PERALIHAN",
+      "content": "",
+      "page_range": [
+        40,
+        40
+      ],
+      "parent_id": null,
+      "children": [
+        "POJK_11_2022__PASAL_67",
+        "POJK_11_2022__PASAL_68",
+        "POJK_11_2022__PASAL_69"
+      ],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_67",
+      "component_type": "PASAL",
+      "number": "67",
+      "title": null,
+      "content": "Bank yang telah memiliki kebijakan, standar, dan prosedur\ndalam penyelenggaraan TI serta pedoman manajemen risiko\npenyelenggaraan TI harus menyesuaikan dengan ketentuan\ndalam Peraturan Otoritas Jasa Keuangan ini paling lama\n6 (enam) bulan sejak berlakunya Peraturan Otoritas Jasa\nKeuangan ini.",
+      "page_range": [
+        40,
+        41
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIII",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_68",
+      "component_type": "PASAL",
+      "number": "68",
+      "title": null,
+      "content": "Bank yang telah menggunakan pihak penyedia jasa TI\nsebelum berlakunya Peraturan Otoritas Jasa Keuangan ini,\nharus menyesuaikan perjanjian yang telah dibuat sesuai\ndengan\nketentuan\ndalam\nPeraturan\nOtoritas\nJasa\nKeuangan ini.",
+      "page_range": [
+        41,
+        41
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIII",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_69",
+      "component_type": "PASAL",
+      "number": "69",
+      "title": null,
+      "content": "Bank harus menyesuaikan rencana strategis TI sesuai\ndengan ketentuan dalam Peraturan Otoritas Jasa Keuangan\nini paling lambat akhir bulan November 2022.",
+      "page_range": [
+        41,
+        41
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIII",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__BAB_XIV",
+      "component_type": "BAB",
+      "number": "XIV",
+      "title": "KETENTUAN PENUTUP",
+      "content": "",
+      "page_range": [
+        41,
+        41
+      ],
+      "parent_id": null,
+      "children": [
+        "POJK_11_2022__PASAL_70",
+        "POJK_11_2022__PASAL_71",
+        "POJK_11_2022__PASAL_72",
+        "POJK_11_2022__PASAL_73",
+        "POJK_11_2022__PASAL_1__BAB_XIV",
+        "POJK_11_2022__PASAL_2__BAB_XIV",
+        "POJK_11_2022__PASAL_3__BAB_XIV",
+        "POJK_11_2022__PASAL_4__BAB_XIV",
+        "POJK_11_2022__PASAL_5__BAB_XIV",
+        "POJK_11_2022__PASAL_6__BAB_XIV",
+        "POJK_11_2022__PASAL_7__BAB_XIV",
+        "POJK_11_2022__PASAL_8__BAB_XIV",
+        "POJK_11_2022__PASAL_9__BAB_XIV",
+        "POJK_11_2022__PASAL_10__BAB_XIV",
+        "POJK_11_2022__PASAL_11__BAB_XIV",
+        "POJK_11_2022__PASAL_12__BAB_XIV",
+        "POJK_11_2022__PASAL_13__BAB_XIV",
+        "POJK_11_2022__PASAL_14__BAB_XIV",
+        "POJK_11_2022__PASAL_15__BAB_XIV",
+        "POJK_11_2022__PASAL_16__BAB_XIV",
+        "POJK_11_2022__PASAL_17__BAB_XIV",
+        "POJK_11_2022__PASAL_18__BAB_XIV",
+        "POJK_11_2022__PASAL_19__BAB_XIV",
+        "POJK_11_2022__PASAL_20__BAB_XIV",
+        "POJK_11_2022__PASAL_21__BAB_XIV",
+        "POJK_11_2022__PASAL_22__BAB_XIV",
+        "POJK_11_2022__PASAL_23__BAB_XIV",
+        "POJK_11_2022__PASAL_24__BAB_XIV",
+        "POJK_11_2022__PASAL_25__BAB_XIV",
+        "POJK_11_2022__PASAL_26__BAB_XIV",
+        "POJK_11_2022__PASAL_27__BAB_XIV",
+        "POJK_11_2022__PASAL_28__BAB_XIV",
+        "POJK_11_2022__PASAL_29__BAB_XIV",
+        "POJK_11_2022__PASAL_30__BAB_XIV",
+        "POJK_11_2022__PASAL_31__BAB_XIV",
+        "POJK_11_2022__PASAL_32__BAB_XIV",
+        "POJK_11_2022__PASAL_33__BAB_XIV",
+        "POJK_11_2022__PASAL_34__BAB_XIV",
+        "POJK_11_2022__PASAL_35__BAB_XIV",
+        "POJK_11_2022__PASAL_36__BAB_XIV",
+        "POJK_11_2022__PASAL_37__BAB_XIV",
+        "POJK_11_2022__PASAL_38__BAB_XIV",
+        "POJK_11_2022__PASAL_39__BAB_XIV",
+        "POJK_11_2022__PASAL_40__BAB_XIV",
+        "POJK_11_2022__PASAL_41__BAB_XIV",
+        "POJK_11_2022__PASAL_42__BAB_XIV",
+        "POJK_11_2022__PASAL_43__BAB_XIV",
+        "POJK_11_2022__PASAL_44__BAB_XIV",
+        "POJK_11_2022__PASAL_45__BAB_XIV",
+        "POJK_11_2022__PASAL_46__BAB_XIV",
+        "POJK_11_2022__PASAL_47__BAB_XIV",
+        "POJK_11_2022__PASAL_48__BAB_XIV",
+        "POJK_11_2022__PASAL_49__BAB_XIV",
+        "POJK_11_2022__PASAL_50__BAB_XIV",
+        "POJK_11_2022__PASAL_51__BAB_XIV",
+        "POJK_11_2022__PASAL_52__BAB_XIV",
+        "POJK_11_2022__PASAL_53__BAB_XIV",
+        "POJK_11_2022__PASAL_54__BAB_XIV",
+        "POJK_11_2022__PASAL_55__BAB_XIV",
+        "POJK_11_2022__PASAL_56__BAB_XIV",
+        "POJK_11_2022__PASAL_57__BAB_XIV",
+        "POJK_11_2022__PASAL_58__BAB_XIV",
+        "POJK_11_2022__PASAL_59__BAB_XIV",
+        "POJK_11_2022__PASAL_60__BAB_XIV",
+        "POJK_11_2022__PASAL_61__BAB_XIV",
+        "POJK_11_2022__PASAL_62__BAB_XIV",
+        "POJK_11_2022__PASAL_63__BAB_XIV",
+        "POJK_11_2022__PASAL_64__BAB_XIV",
+        "POJK_11_2022__PASAL_65__BAB_XIV",
+        "POJK_11_2022__PASAL_66__BAB_XIV",
+        "POJK_11_2022__PASAL_67__BAB_XIV",
+        "POJK_11_2022__PASAL_68__BAB_XIV",
+        "POJK_11_2022__PASAL_69__BAB_XIV",
+        "POJK_11_2022__PASAL_70__BAB_XIV",
+        "POJK_11_2022__PASAL_71__BAB_XIV",
+        "POJK_11_2022__PASAL_72__BAB_XIV",
+        "POJK_11_2022__PASAL_73__BAB_XIV"
+      ],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_70",
+      "component_type": "PASAL",
+      "number": "70",
+      "title": null,
+      "content": "Bank melaksanakan ketentuan terkait:\na.\npenilaian sendiri atas tingkat maturitas keamanan\nsiber sebagaimana dimaksud dalam Pasal 22;\nb.\npengujian\nkeamanan\nsiber\nberdasarkan\nanalisis\nkerentanan\nsebagaimana\ndimaksud\ndalam\nPasal 24;\nc.\npengujian keamanan siber berdasarkan skenario\nsebagaimana dimaksud dalam Pasal 25; dan\nd.\npenilaian sendiri atas tingkat maturitas digital Bank\nsebagaimana dimaksud dalam Pasal 66,\nuntuk pertama kali setelah ditetapkan oleh Otoritas Jasa\nKeuangan.",
+      "page_range": [
+        41,
+        41
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_71",
+      "component_type": "PASAL",
+      "number": "71",
+      "title": null,
+      "content": "Pada saat Peraturan Otoritas Jasa Keuangan ini mulai\nberlaku, ketentuan pelaksanaan dari Peraturan Otoritas\nJasa\nKeuangan\nNomor\n38/POJK.03/2016\ntentang\nPenerapan Manajemen Risiko dalam Penggunaan Teknologi\nInformasi oleh Bank Umum (Lembaran Negara Republik\nIndonesia Tahun 2016 Nomor 267, Tambahan Lembaran\nNegara Republik Indonesia Nomor 5963) sebagaimana\ntelah\ndiubah\ndengan\nPeraturan\nOtoritas\nJasa\nKeuangan\nNomor\n13/POJK.03/2020\ntentang\nPerubahan\natas\nPeraturan\nOtoritas\nJasa\nKeuangan\nNomor 38/POJK.03/2016 tentang Penerapan Manajemen\nRisiko dalam Penggunaan Teknologi Informasi oleh Bank\nUmum (Lembaran Negara Republik Indonesia Tahun 2020\nNomor 88, Tambahan Lembaran Negara Republik Indonesia\nNomor 6486), dinyatakan masih tetap berlaku sepanjang\ntidak bertentangan dengan ketentuan dalam Peraturan\nOtoritas Jasa Keuangan ini.",
+      "page_range": [
+        41,
+        42
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_72",
+      "component_type": "PASAL",
+      "number": "72",
+      "title": null,
+      "content": "Pada saat Peraturan Otoritas Jasa Keuangan ini mulai\nberlaku,\nPeraturan\nOtoritas\nJasa\nKeuangan\nNomor 38/POJK.03/2016 tentang Penerapan Manajemen\nRisiko dalam Penggunaan Teknologi Informasi oleh Bank\nUmum (Lembaran Negara Republik Indonesia Tahun 2016\nNomor\n267,\nTambahan\nLembaran\nNegara\nRepublik\nIndonesia\nNomor\n5963)\nsebagaimana\ntelah\ndiubah\ndengan\nPeraturan\nOtoritas\nJasa\nKeuangan\nNomor\n13/POJK.03/2020\ntentang\nPerubahan\natas\nPeraturan\nOtoritas\nJasa\nKeuangan\nNomor 38/POJK.03/2016 tentang Penerapan Manajemen\nRisiko dalam Penggunaan Teknologi Informasi oleh Bank\nUmum (Lembaran Negara Republik Indonesia Tahun 2020\nNomor 88, Tambahan Lembaran Negara Republik Indonesia\nNomor 6486), dicabut dan dinyatakan tidak berlaku.",
+      "page_range": [
+        42,
+        42
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_73",
+      "component_type": "PASAL",
+      "number": "73",
+      "title": null,
+      "content": "Peraturan Otoritas Jasa Keuangan ini mulai berlaku setelah\n3 (tiga) bulan terhitung sejak tanggal diundangkan.\nSalinan ini sesuai dengan aslinya\nDirektur Hukum 1\nDepartemen Hukum\nttd\nMufli Asmawidjaja\nAgar\nsetiap\norang\nmengetahuinya,\nmemerintahkan\npengundangan Peraturan Otoritas Jasa Keuangan ini\ndengan penempatannya dalam Lembaran Negara Republik\nIndonesia.\nDitetapkan di Jakarta\npada tanggal 6 Juli 2022\nKETUA DEWAN KOMISIONER\nOTORITAS JASA KEUANGAN\nREPUBLIK INDONESIA,\nttd\nWIMBOH SANTOSO\nDiundangkan di Jakarta\npada tanggal 7 Juli 2022\nMENTERI HUKUM DAN HAK ASASI MANUSIA\nREPUBLIK INDONESIA,\nttd\nYASONNA H. LAOLY\nLEMBARAN NEGARA REPUBLIK INDONESIA TAHUN 2022 NOMOR 5/OJK\nPENJELASAN\nATAS\nPERATURAN OTORITAS JASA KEUANGAN\nREPUBLIK INDONESIA\nNOMOR 11 /POJK.03/2022\nTENTANG\nPENYELENGGARAAN TEKNOLOGI INFORMASI\nOLEH BANK UMUM\nI.\nUMUM\nPemanfaatan TI bagi Bank merupakan suatu keniscayaan untuk\nmendukung kelangsungan operasional serta pelayanan Bank secara\nefektif dan efisien. Salah satu bentuk dukungan TI dalam operasional\nBank yaitu otomasi proses kerja dengan pemanfaatan perangkat keras\ndan perangkat lunak tertentu. Dari sisi pelayanan kepada masyarakat,\npemanfaatan TI diwujudkan melalui kemunculan inovasi layanan\nperbankan, antara lain mobile banking dan internet banking yang telah\nmempermudah masyarakat dalam melakukan transaksi.\nDi sisi lain, seiring dengan perkembangan TI, industri perbankan\nIndonesia menghadapi tantangan yang baru dengan kemunculan\nindustri jasa keuangan yang mengedepankan penyediaan kemudahan\nlayanan keuangan dengan memanfaatkan TI. Hal ini menyebabkan\npersaingan di industri jasa keuangan semakin ketat. Dengan demikian,\nBank semakin dituntut untuk melakukan peningkatan layanan kepada\nmasyarakat melalui transformasi digital.\nDengan adanya tuntutan untuk melakukan transformasi digital,\npemanfaatan TI untuk menunjang kegiatan operasional Bank serta\npenyediaan layanan kepada masyarakat juga semakin meningkat.\nPeningkatan pemanfaatan TI tersebut tentunya dapat menyebabkan\npeningkatan kompleksitas penyelenggaraan TI dalam berbagai aspek.\nHal tersebut berpotensi menimbulkan eksposur risiko baru bagi industri\nperbankan.\nBeberapa contoh peningkatan eksposur risiko yang dihadapi oleh\nindustri perbankan dengan peningkatan pemanfaatan TI yaitu:\na.\npeningkatan kerja sama layanan dengan pihak ketiga menyebabkan\ntingginya jumlah konektivitas sistem Bank dengan sistem pihak\nketiga berpotensi meningkatkan celah keamanan yang berasal dari\npihak ketiga sehingga dapat meningkatkan risiko terjadinya insiden\nsiber Bank; dan\nb.\npeningkatan\npenyediaan\nlayanan\nyang\nmengedepankan\npersonalisasi menyebabkan tingginya kebutuhan atas data olah\nBank termasuk data pribadi nasabah sehingga berpotensi\nmeningkatkan risiko kebocoran data pribadi nasabah.\nSehubungan dengan peningkatan risiko yang mungkin dihadapi,\nBank perlu meningkatkan kematangan dalam penyelenggaraan TI\nmelalui penerapan tata kelola TI yang baik. Hal ini bertujuan agar\npenyelenggaraan TI dapat memberikan nilai tambah dari investasi yang\ntelah dikeluarkan Bank untuk mendukung tujuan bisnis Bank. Untuk\ndapat memberikan nilai tambah yang optimal, Bank harus mampu\nmenangani risiko yang mungkin timbul dari pemanfaatan TI serta\nmengelola sumber daya yang dimiliki secara tepat guna.\nDi samping itu, perkembangan TI yang cepat dan dinamis juga\nmemengaruhi perubahan atas ketentuan maupun standar terkait\npenyelenggaraan TI, baik secara nasional maupun internasional. Dengan\ndemikian, Bank perlu menyesuaikan diri dengan perkembangan\nketentuan dan standar tersebut sesuai dengan kebutuhan dan\nkompleksitas dari penyelenggaraan TI Bank.\nSehubungan dengan hal tersebut dan untuk memperkuat seluruh\naspek dalam penyelenggaraan TI serta memitigasi risiko yang mungkin\ntimbul,\nperlu\ndilakukan\npenyusunan\npengaturan\ntentang\npenyelenggaraan teknologi informasi oleh bank umum.\nII.\nPASAL DEMI PASAL",
+      "page_range": [
+        42,
+        45
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_1__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "1",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        45,
+        45
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_2__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "2",
+      "title": null,
+      "content": "Ayat (1)\nPenerapan tata kelola TI merupakan bagian dari penerapan\ntata kelola Bank secara umum. Tata kelola yang baik\ndilaksanakan\nsesuai\ndengan\nPeraturan\nOtoritas\nJasa\nKeuangan mengenai penerapan tata kelola bagi bank umum\natau ketentuan peraturan perundang-undangan mengenai\npelaksanaan good corporate governance bagi bank umum\nsyariah dan unit usaha syariah.\nTata kelola TI diterapkan pada seluruh kegiatan yang berkaitan\ndengan penyelenggaraan TI antara lain manajemen risiko,\nketahanan dan keamanan TI termasuk siber, pengelolaan data,\npenggunaan pihak penyedia jasa TI, penyediaan jasa TI oleh\nBank,\npengendalian\nintern,\nserta\npengembangan\ndan\nperubahan TI.\nAyat (2)\nHuruf a\nStrategi dan tujuan bisnis Bank mencerminkan antara\nlain\narah\nbisnis\ndan\nkebutuhan\ndari\npemangku\nkepentingan.\nHuruf b\nCukup jelas.\nHuruf c\nCukup jelas.\nHuruf d\nMetode pengadaan sumber daya TI disesuaikan dengan\nkebutuhan dan kemampuan Bank, antara lain pengadaan\nsecara mandiri, pengadaan dengan menggunakan pihak\npenyedia jasa TI, dan kombinasi antara keduanya.\nHuruf e\nCukup jelas.\nHuruf f\nCukup jelas.\nHuruf g\nCukup jelas.\nAyat (3)\nCukup jelas.\nAyat (4)\nCukup jelas.",
+      "page_range": [
+        46,
+        47
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_3__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "3",
+      "title": null,
+      "content": "Ayat (1)\nHuruf a\nDalam\nsetiap\nkegiatan\nyang\nberkaitan\ndengan\npenyelenggaraan TI, Bank menentukan proses bisnis\nyang harus dilalui untuk mencapai tujuan strategis\nBank.\nHuruf b\nBank menetapkan penugasan dan tanggung jawab\ndalam setiap jabatan yang terkait pada setiap proses\nbisnis yang dimiliki Bank dalam penyelenggaraan TI\nsesuai dengan struktur organisasi Bank.\nHuruf c\nKebijakan, standar, dan prosedur ditetapkan untuk\nseluruh proses bisnis yang dimiliki Bank dalam\npenyelenggaraan TI.\nHuruf d\nCukup jelas.\nHuruf e\nBank menetapkan dukungan jumlah sumber daya\nmanusia yang cukup dengan keahlian dan kompetensi\nyang sesuai dalam penyelenggaraan TI.\nHuruf f\nBank\nmenetapkan\nbudaya\nyang\nsesuai\ndengan\npencapaian tujuan tata kelola TI.\nHuruf g\nCukup jelas.\nAyat (2)\nCukup jelas.\nAyat (3)\nCukup jelas.\nAyat (4)\nBank menetapkan jangka waktu kaji ulang dan penginian\nkebijakan, standar, dan prosedur sesuai dengan kebutuhan\nBank dengan mempertimbangkan kondisi internal maupun\neksternal Bank.",
+      "page_range": [
+        47,
+        48
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_4__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "4",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        48,
+        48
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_5__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "5",
+      "title": null,
+      "content": "Huruf a\nRencana strategis TI merupakan dokumen yang antara lain\nmenggambarkan visi dan misi TI, strategi yang mendukung visi\ndan misi TI, dan prinsip utama yang menjadi acuan dalam\npenyelenggaraan TI untuk memenuhi kebutuhan bisnis serta\nmendukung rencana korporasi.\nHuruf b\nCukup jelas.\nHuruf c\nAngka 1\nPenerapan tata kelola TI yang sesuai dengan kebutuhan\ndan karakteristik Bank antara lain diwujudkan dengan:\na)\nkebijakan, standar, dan prosedur TI yang diterapkan\nsecara efektif pada satuan kerja pengguna dan\npenyelenggara TI; dan\nb)\ntersedianya\nsistem\npengukuran\nkinerja\nproses\npenyelenggaraan\nTI\nyang\nantara\nlain\ndapat\nmendukung\nproses\npemantauan\nterhadap\nimplementasi strategi, mendukung penyelesaian\nproyek\npengembangan\nTI,\nmengoptimalkan\npendayagunaan sumber daya manusia dan investasi\npada infrastruktur TI, serta meningkatkan kinerja\nproses penyelenggaraan TI dan kualitas layanan\npenyampaian hasil proses kepada pengguna TI.\nAngka 2\nYang dimaksud dengan “memberikan manfaat yang\noptimal” adalah TI yang diselenggarakan Bank dapat\nmendukung perkembangan usaha Bank, pencapaian\ntujuan bisnis Bank, dan kelangsungan pelayanan\nterhadap nasabah Bank.\nAngka 3\nProses manajemen risiko dalam penyelenggaraan TI\ntermasuk manajemen risiko siber.\nAngka 4\nTersedianya\nsumber\ndaya\nyang\nmemadai\ndapat\nditunjukkan antara lain dengan terdapatnya:\na)\nkegiatan peningkatan kompetensi sumber daya\nmanusia yang terkait dengan penyelenggaraan TI;\ndan\nb)\nsistem pengelolaan pengamanan informasi yang\nefektif yang dikomunikasikan kepada satuan kerja\npengguna dan penyelenggara TI.\nAngka 5\nContoh keterlibatan pemangku kepentingan dapat berupa\nsurvei atas penggunaan TI dari satuan kerja pengguna TI.",
+      "page_range": [
+        48,
+        49
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_6__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "6",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        49,
+        49
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_7__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "7",
+      "title": null,
+      "content": "Ayat (1)\nCukup jelas.\nAyat (2)\nHuruf a\nCukup jelas.\nHuruf b\nCukup jelas.\nHuruf c\nKesesuaian antara rencana pengembangan TI dan\nrencana strategis TI termasuk kesesuaian langkah untuk\nmemitigasi risiko.\nHuruf d\nCukup jelas.\nHuruf e\nCukup jelas.\nHuruf f\nCukup jelas.\nHuruf g\nCukup jelas.\nHuruf h\nCukup jelas.\nAyat (3)\nStruktur komite pengarah TI dapat disesuaikan dengan antara\nlain ukuran, kompleksitas bisnis, struktur kepemilikan, dan\nbentuk badan hukum Bank.\nAyat (4)\nCukup jelas.",
+      "page_range": [
+        49,
+        50
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_8__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "8",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        50,
+        50
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_9__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "9",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        50,
+        50
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_10__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "10",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        50,
+        50
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_11__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "11",
+      "title": null,
+      "content": "Ayat (1)\nYang dimaksud dengan “arsitektur TI” adalah dokumentasi\nstrategis atas sumber daya TI Bank yang terorganisasi dan\nterintegrasi untuk mencapai dan mendukung tujuan bisnis\nBank. Arsitektur TI antara lain berupa data, aplikasi, dan\nteknologi.\nAyat (2)\nHuruf a\nCukup jelas.\nHuruf b\nCukup jelas.\nHuruf c\nCukup jelas.\nHuruf d\nCukup jelas.\nHuruf e\nCukup jelas.\nHuruf f\nCukup jelas.\nHuruf g\nCukup jelas.\nHuruf h\nCukup jelas.\nHuruf i\nContoh ketentuan peraturan perundang-undangan yaitu\nketentuan peraturan perundang-undangan mengenai\ninformasi dan transaksi elektronik.\nAyat (3)\nCukup jelas.\nAyat (4)\nCukup jelas.\nAyat (5)\nCukup jelas.",
+      "page_range": [
+        50,
+        51
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_12__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "12",
+      "title": null,
+      "content": "Ayat (1)\nCukup jelas.\nAyat (2)\nPeriode rencana korporasi Bank sesuai dengan Peraturan\nOtoritas Jasa Keuangan mengenai bank umum dan Peraturan\nOtoritas Jasa Keuangan mengenai bank umum syariah.\nAyat (3)\nCukup jelas.",
+      "page_range": [
+        51,
+        51
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_13__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "13",
+      "title": null,
+      "content": "Ayat (1)\nContoh:\nRencana strategis TI periode tahun 2023 sampai dengan\ntahun 2027 disampaikan kepada OJK paling lambat akhir\nbulan November 2022.\nAyat (2)\nKondisi yang dapat memengaruhi sasaran dan strategi TI Bank\nantara\nlain\nperubahan\nrencana\nkorporasi\nBank\natau\nperubahan\nketentuan\nperaturan\nperundang-undangan\nmengenai penyelenggaraan teknologi informasi oleh bank.\nAyat (3)\nCukup jelas.",
+      "page_range": [
+        51,
+        52
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_14__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "14",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        52,
+        52
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_15__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "15",
+      "title": null,
+      "content": "Ayat (1)\nCakupan\npenerapan\nmanajemen\nrisiko\nsecara\nefektif\ndilaksanakan\nsesuai\ndengan\nPeraturan\nOtoritas\nJasa\nKeuangan mengenai penerapan manajemen risiko bagi bank\numum atau Peraturan Otoritas Jasa Keuangan mengenai\npenerapan manajemen risiko bagi bank umum syariah dan\nunit usaha syariah.\nManajemen risiko berlaku untuk seluruh penyelenggaraan TI\nantara lain:\na.\nkeamanan siber;\nb.\npengelolaan data;\nc.\npenggunaan pihak penyedia jasa TI; dan\nd.\npenggunaan TI secara umum.\nAyat (2)\nTahapan penyelenggaraan TI antara lain proses perencanaan,\npengadaan,\npengembangan,\noperasional,\npemeliharaan,\npenghentian, dan penghapusan sumber daya TI.\nSumber daya TI mencakup antara lain perangkat keras,\nperangkat lunak, jaringan, sumber daya manusia, data, dan\ninformasi.\nAyat (3)\nCukup jelas.\nAyat (4)\nCukup jelas.\nAyat (5)\nCukup jelas.",
+      "page_range": [
+        52,
+        53
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_16__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "16",
+      "title": null,
+      "content": "Ayat (1)\nPengamanan informasi ditujukan untuk menjaga kerahasiaan,\nintegritas, dan ketersediaan informasi yang dikelola.\nContoh memastikan pengamanan informasi dilaksanakan\nsecara efektif dan efisien antara lain dengan membangun dan\nmemelihara sistem manajemen keamanan informasi.\nAyat (2)\nCukup jelas.\nAyat (3)\nDengan adanya penilaian terhadap risiko, Bank dapat\nmenerapkan pengamanan informasi yang berbeda sesuai\ndengan risiko atas informasi tersebut.\nAyat (4)\nCukup jelas.",
+      "page_range": [
+        53,
+        53
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_17__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "17",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        53,
+        53
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_18__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "18",
+      "title": null,
+      "content": "Ayat (1)\nCukup jelas.\nAyat (2)\nRencana Pemulihan Bencana mencakup rencana pemulihan\npada berbagai tingkat bencana dan gangguan seperti:\na.\nminor\ndisaster\nyang\nberdampak\nkecil\ndan\ntidak\nmemerlukan biaya besar serta dapat diselesaikan dalam\njangka waktu pendek;\nb.\nmajor disaster yang berdampak besar dan dapat menjadi\nlebih parah apabila tidak diatasi segera; dan/atau\nc.\ncatastrophic yang berdampak terjadi kerusakan yang\nbersifat permanen sehingga memerlukan relokasi atau\npenggantian dengan biaya yang besar.\nAyat (3)\nHasil analisis dampak bisnis dikenal dengan istilah business\nimpact analysis.\nAyat (4)\nCukup jelas.\nAyat (5)\nCukup jelas.",
+      "page_range": [
+        53,
+        54
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_19__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "19",
+      "title": null,
+      "content": "Yang dimaksud dengan “sistem yang dapat menghasilkan laporan\nterpisah” adalah sistem yang dapat mengidentifikasi input, proses,\ndan output dari transaksi berdasarkan prinsip syariah.",
+      "page_range": [
+        54,
+        54
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_20__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "20",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        54,
+        54
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_21__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "21",
+      "title": null,
+      "content": "Ayat (1)\nCukup jelas.\nAyat (2)\nCukup jelas.\nAyat (3)\nYang dimaksud dengan \"sistem informasi ketahanan siber yang\nmemadai\" adalah sistem informasi yang dapat mendukung\nkeseluruhan proses dalam menjaga ketahanan siber, sesuai\ndengan ukuran dan kompleksitas bisnis Bank.",
+      "page_range": [
+        54,
+        54
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_22__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "22",
+      "title": null,
+      "content": "Ayat (1)\nDalam melakukan penilaian sendiri atas tingkat maturitas\nkeamanan siber, Bank perlu melakukan analisis secara\nkomprehensif dengan memperhatikan antara lain hasil\npenilaian terhadap pengujian keamanan siber.\nAyat (2)\nCukup jelas.\nAyat (3)\nCukup jelas.\nAyat (4)\nCukup jelas.",
+      "page_range": [
+        54,
+        55
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_23__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "23",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        55,
+        55
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_24__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "24",
+      "title": null,
+      "content": "Ayat (1)\nContoh pengujian keamanan siber berdasarkan analisis\nkerentanan antara lain penetration test. Frekuensi pengujian\nkeamanan siber berdasarkan analisis kerentanan dapat\nditentukan berdasarkan beberapa faktor, seperti kekritisan\nsistem dan eksposur risiko terkait siber terhadap sistem.\nPengujian keamanan siber berdasarkan analisis kerentanan\ndilaksanakan secara berkala sesuai kebutuhan Bank.\nAyat (2)\nCukup jelas.",
+      "page_range": [
+        55,
+        55
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_25__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "25",
+      "title": null,
+      "content": "Ayat (1)\nContoh pengujian keamanan siber berdasarkan skenario\nantara lain cyber incident response, table-top exercise, dan\ncyber range exercise.\nAyat (2)\nCukup jelas.\nAyat (3)\nCukup jelas.\nAyat (4)\nHuruf a\nCukup jelas.\nHuruf b\nPelajaran terpetik dikenal dengan istilah lesson learned.\nHuruf c\nCukup jelas.",
+      "page_range": [
+        55,
+        55
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_26__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "26",
+      "title": null,
+      "content": "Ayat (1)\nUnit atau fungsi yang bertugas menangani ketahanan dan\nkeamanan siber Bank disesuaikan dengan ukuran dan\nkompleksitas bisnis Bank, termasuk alur pertanggungjawaban\nkepada Direksi.\nAyat (2)\nCukup jelas.",
+      "page_range": [
+        56,
+        56
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_27__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "27",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        56,
+        56
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_28__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "28",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        56,
+        56
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_29__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "29",
+      "title": null,
+      "content": "Ayat (1)\nYang dimaksud dengan “menggunakan pihak penyedia jasa TI”\nadalah penggunaan jasa pihak lain dalam penyelenggaraan TI\nBank secara berkesinambungan dan/atau dalam periode\ntertentu.\nYang dimaksud dengan pihak lain termasuk:\na.\nkantor pusat dan kantor bank lain di luar negeri maupun\nkelompok usaha Bank, bagi kantor cabang dari bank yang\nberkedudukan di luar negeri; atau\nb.\nkantor induk dan kelompok usaha Bank, bagi Bank yang\ndimiliki pihak asing.\nSelain itu, meskipun Bank menyerahkan penyelenggaraan TI\nkepada pihak penyedia jasa TI maka Bank tetap bertindak\nsebagai penyelenggara Sistem Elektronik untuk setiap Sistem\nElektronik yang digunakan Bank dalam menjalankan kegiatan\nusahanya.\nContoh penyelenggaraan TI yang menggunakan pihak penyedia\njasa TI antara lain penggunaan komputasi awan (cloud\ncomputing) sebagai Pusat Data dan/atau Pusat Pemulihan\nBencana Bank.\nAyat (2)\nKemampuan Bank dalam melakukan pengawasan atas\npelaksanaan kegiatan Bank yang diselenggarakan oleh pihak\npenyedia jasa TI antara lain ditunjukkan dengan tersedianya\nsumber daya manusia yang memiliki pengetahuan atau\nkapabilitas mengenai jasa TI yang diberikan oleh pihak\npenyedia jasa TI.\nAyat (3)\nCukup jelas.",
+      "page_range": [
+        56,
+        57
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_30__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "30",
+      "title": null,
+      "content": "Ayat (1)\nCukup jelas.\nAyat (2)\nHuruf a\nBank memastikan pihak penyedia jasa TI memiliki tenaga\nahli yang andal, dengan didukung oleh sertifikat keahlian\nsecara akademis dan/atau secara profesional sesuai\ndengan keperluan penyelenggaraan TI.\nHuruf b\nCukup jelas.\nHuruf c\nCukup jelas.\nHuruf d\nYang dimaksud dengan “pihak terkait dengan Bank”\nadalah pihak terkait sesuai dengan Peraturan Otoritas\nJasa Keuangan mengenai batas maksimum pemberian\nkredit dan penyediaan dana besar bagi bank umum atau\nPeraturan Otoritas Jasa Keuangan mengenai batas\nmaksimum penyaluran dana dan penyaluran dana besar\nbagi bank umum syariah.\nAyat (3)\nHuruf a\nCukup jelas.\nHuruf b\nData dan/atau informasi Bank serta nasabah Bank\nmerupakan aset yang harus dijamin keamanannya oleh\npihak penyedia jasa TI dengan cara dilindungi dari\nancaman bahaya yang dapat mengganggu prinsip\nkerahasiaan, integritas, dan ketersediaan.\nInformasi dalam hal ini termasuk informasi mengenai\nsistem dan perangkat yang digunakan untuk memproses,\nmenyimpan, dan mengirimkan informasi.\nHuruf c\nYang\ndimaksud\ndengan\n“secara\nberkala”\nadalah\npelaksanaan audit sesuai dengan tingkat risiko yang akan\ndiambil (risk appetite) oleh Bank terhadap jasa yang\ndiberikan oleh pihak penyedia jasa TI.\nContoh cakupan audit yang dilakukan oleh auditor\nindependen antara lain:\n1.\npengendalian fisik dan logic serta operasional Pusat\nData dan/atau Pusat Pemulihan Bencana; dan\n2.\nsistem aplikasi yang digunakan untuk memproses\ndata Bank.\nHuruf d\nCukup jelas.\nHuruf e\nYang dimaksud dengan “kejadian kritis” adalah kejadian\nyang dapat mengakibatkan kerugian keuangan yang\nsignifikan dan/atau mengganggu kelancaran operasional\nBank.\nHuruf f\nCukup jelas.\nHuruf g\nTermasuk ketentuan peraturan perundang-undangan\nterkait dengan pekerjaan yang diserahkan oleh Bank.\nHuruf h\nCukup jelas.\nHuruf i\nCukup jelas.\nAyat (4)\nHuruf a\nTanggung jawab Bank atas penerapan manajemen risiko\nantara lain dilakukan dengan memastikan bahwa pihak\npenyedia jasa TI menerapkan manajemen risiko pada\nkegiatan Bank yang diselenggarakan oleh pihak penyedia\njasa TI sesuai dengan Peraturan Otoritas Jasa Keuangan\nini.\nHuruf b\nYang dimaksud dengan “teruji dan memadai” adalah\ndapat menjaga kelangsungan operasional Bank saat\nterjadi bencana dan/atau gangguan pada sarana TI yang\ndigunakan Bank.\nHuruf c\nContoh cakupan keamanan data dan/atau informasi yang\ndipersyaratkan oleh Bank yaitu:\n1.\nkeamanan informasi organisasi;\n2.\npengelolaan akses;\n3.\nmanajemen enkripsi dan sandi;\n4.\nkeamanan jaringan dan operasi;\n5.\nantarmuka\npemrograman\naplikasi\n(Application\nProgramming Interface/API);\n6.\nlokasi data; dan\n7.\nkerahasiaan data pribadi nasabah Bank.\nAyat (5)\nHuruf a\nYang\ndimaksud\ndengan\n“secara\nberkala”\nadalah\npemantauan dan evaluasi keandalan pihak penyedia jasa\nTI sesuai dengan tingkat risiko yang akan diambil (risk\nappetite) oleh Bank terhadap jasa yang diberikan oleh\npihak penyedia jasa TI.\nBank menggunakan prosedur kontrol dan pemantauan\nyang efektif untuk memantau kinerja pihak penyedia jasa\nTI dan mengelola risiko terkait kegiatan yang diserahkan\noleh Bank, terutama jika kegiatan yang bersifat material\nterkonsentrasi pada satu perusahaan penyedia jasa TI.\nHuruf b\nPenerapan pengendalian TI secara memadai oleh pihak\npenyedia jasa TI memperhatikan antara lain pengamanan\nfisik dan pengamanan logic.\nPihak independen, bagi pihak penyedia jasa TI berupa\nbank yang berada dalam satu kelompok atau grup usaha,\ntermasuk auditor intern.\nHuruf c\nPemenuhan tingkat layanan dilakukan antara lain dengan\nmemastikan penyelenggaraan TI dapat mendukung\noperasional Bank.\nPerjanjian tingkat layanan dikenal dengan istilah service\nlevel agreement.",
+      "page_range": [
+        57,
+        60
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_31__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "31",
+      "title": null,
+      "content": "Contoh perubahan yang signifikan antara lain perubahan\nkepemilikan atau kondisi keuangan pihak penyedia jasa TI, yang\nsecara material dapat mengubah sifat, skala, dan kompleksitas\nrisiko yang melekat pada penyediaan jasa TI.\nPenilaian ulang materialitas dikenal dengan istilah materiality\nreassesment.",
+      "page_range": [
+        60,
+        60
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_32__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "32",
+      "title": null,
+      "content": "Ayat (1)\nHuruf a\nContoh kinerja pihak penyedia jasa TI berpotensi tidak\nberjalan dengan efektif antara lain ketidakmampuan\npihak penyedia jasa TI untuk mendukung kebutuhan\nbisnis Bank.\nHuruf b\nCukup jelas.\nHuruf c\nYang dimaksud dengan “insolven” adalah tidak memiliki\ncukup dana untuk melunasi utang.\nHuruf d\nCukup jelas.\nHuruf e\nCukup jelas.\nHuruf f\nCukup jelas.\nAyat (2)\nCukup jelas.\nAyat (3)\nIndikasi kesulitan pengawasan antara lain:\na.\nkesulitan dalam memperoleh akses terhadap data\ndan/atau informasi;\nb.\nkesulitan dalam pelaksanaan pemeriksaan terhadap\npihak penyedia jasa TI; dan\nc.\npihak penyedia jasa TI digunakan sebagai media untuk\nmelakukan rekayasa data Bank dan/atau rekayasa\nkeuangan Bank.\nAyat (4)\nHuruf a\nCukup jelas.\nHuruf b\nCukup jelas.\nHuruf c\nBank antara lain memastikan bahwa semua data nasabah\ndan/atau calon nasabah telah dikembalikan atau\ndimusnahkan oleh pihak penyedia jasa TI.\nTermasuk dalam kegiatan usaha Bank yaitu layanan\nkepada\nnasabah\ndengan\nmemperhatikan\naspek\nkerahasiaan, integritas, dan ketersediaan data.",
+      "page_range": [
+        60,
+        61
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_33__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "33",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        61,
+        61
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_34__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "34",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        61,
+        61
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_35__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "35",
+      "title": null,
+      "content": "Ayat (1)\nCukup jelas.\nAyat (2)\nCukup jelas.\nAyat (3)\nHuruf a\nKetentuan yang diterbitkan oleh otoritas negara asal Bank\nuntuk kantor cabang yaitu sesuai dengan kedudukan\nkantor pusat Bank di luar wilayah Indonesia, sedangkan\nuntuk kantor subsidiari sesuai dengan kedudukan kantor\ninduk atau kantor entitas utama berupa bank di luar\nwilayah Indonesia.\nHuruf b\nCukup jelas.\nHuruf c\nCukup jelas.\nHuruf d\nPelayanan kepada nasabah secara global berupa Sistem\nElektronik front end yang digunakan oleh Bank atau oleh\nnasabah\nuntuk\nmemperoleh\nlayanan\nBank\nyang\ndisediakan secara global bagi seluruh nasabahnya, baik di\nwilayah Indonesia maupun di luar wilayah Indonesia,\nsebagai contoh global cash management system.\nSementara Sistem Elektronik yang digunakan untuk\nmemproses laporan kepada otoritas dan back end system\nyang terakhir memproses data individu, akun, dan/atau\ntransaksi\nnasabah,\ntetap\nditempatkan\ndi\nwilayah\nIndonesia.\nBack end system antara lain:\n1.\ncore\nbanking\nsystem\nyang\ndigunakan\nuntuk\nmemproses data nasabah, giro, tabungan, deposito,\ndan kredit atau pembiayaan; dan\n2.\nback end system yang digunakan untuk memproses\nkartu kredit, sharia card, treasury, pembiayaan\nperdagangan, dan general ledger.\nHuruf e\nCukup jelas.\nHuruf f\nSistem Elektronik yang digunakan untuk manajemen\nintern yaitu sistem yang digunakan Bank untuk\nkeperluan intern, yang tidak terkait secara langsung\ndengan pelayanan kepada nasabah dan/atau operasional\nBank.\nSistem Elektronik yang digunakan untuk manajemen\nintern antara lain:\n1.\nsistem kepegawaian;\n2.\nsistem remunerasi; dan/atau\n3.\nsistem audit intern.\nAyat (4)\nContoh kondisi yang mengganggu operasional Bank secara\nsignifikan antara lain terhentinya layanan atau jasa dari pihak\npenyedia jasa TI serta tidak terdapat pihak penyedia jasa TI lain\ndi wilayah Indonesia yang dapat memberikan layanan atau jasa\nyang serupa.\nSebelum berakhirnya masa penempatan Sistem Elektronik\npada Pusat Data dan/atau Pusat Pemulihan Bencana di luar\nwilayah\nIndonesia,\nBank\nmelakukan\nevaluasi\nuntuk\nmenentukan ketersediaan dan keandalan pihak penyedia\nSistem Elektronik di wilayah Indonesia.",
+      "page_range": [
+        61,
+        63
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_36__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "36",
+      "title": null,
+      "content": "Ayat (1)\nHuruf a\nCukup jelas.\nHuruf b\nRisiko negara dikenal dengan istilah country risk.\nHuruf c\nYang dimaksud dengan “tidak mengurangi efektivitas\npengawasan Otoritas Jasa Keuangan” adalah tidak\nmenimbulkan kesulitan bagi Otoritas Jasa Keuangan\ndalam memperoleh data dan/atau informasi yang\ndiperlukan seperti adanya akses terhadap pangkalan data\ndan memiliki struktur pangkalan data dari setiap aplikasi\nyang digunakan.\nHuruf d\nKetentuan peraturan perundang-undangan di Indonesia\nantara lain ketentuan peraturan perundang-undangan\nmengenai persyaratan dan tata cara pemberian perintah\natau izin tertulis membuka rahasia Bank.\nHuruf e\nCukup jelas.\nHuruf f\nSurat pernyataan hanya disampaikan bagi pihak penyedia\njasa TI yang memiliki otoritas pengawasan di bidang\nkeuangan.\nHuruf g\nKantor bank di luar wilayah Indonesia :\n1.\nbagi kantor cabang dari bank yang berkedudukan di\nluar wilayah Indonesia yaitu kantor pusat atau\nkantor lainnya; atau\n2.\nbagi Bank yang dimiliki lembaga keuangan asing\nyaitu kantor induk Bank.\nSurat pernyataan disampaikan termasuk jika bank\nmemiliki kantor bank di wilayah yang sama dengan\nwilayah kedudukan penyedia jasa TI.\nHuruf h\nManfaat yang diharapkan antara lain peningkatan\nkualitas layanan kepada nasabah serta penerapan\nprogram anti pencucian uang dan pencegahan pendanaan\nterorisme.\nHuruf i\nCukup jelas.\nHuruf j\nCukup jelas.\nAyat (2)\nYang dimaksud dengan “dokumen permohonan diterima\nsecara\nlengkap”\nadalah\nditerimanya\ndokumen\nyang\ndipersyaratkan dalam Peraturan Otoritas Jasa Keuangan ini.\nAyat (3)\nCukup jelas.\nAyat (4)\nCukup jelas.",
+      "page_range": [
+        63,
+        64
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_37__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "37",
+      "title": null,
+      "content": "Yang dimaksud dengan “menjamin kelangsungan usaha” adalah\nmemastikan bahwa kelangsungan usaha tetap dapat berjalan\nsebagaimana mestinya ketika terjadi bencana atau gangguan,\ntermasuk menjamin kesiapan Sistem Elektronik yang terdapat pada\nPusat Data dan Pusat Pemulihan Bencana.\nContoh\nlangkah\nyang\ndapat\ndilakukan\nuntuk\nmenjamin\nkelangsungan usaha Bank antara lain Bank melakukan penilaian\nrisiko atas Pusat Data dan Pusat Pemulihan Bencana, termasuk\ndengan mempertimbangkan eksposur risiko yang berbeda dari\nmasing-masing Pusat Data dan Pusat Pemulihan Bencana.\nPusat Pemulihan Bencana termasuk Pusat Data yang beroperasi\nsecara bersamaan dengan Pusat Data lainnya sehingga dapat saling\nmenggantikan.",
+      "page_range": [
+        65,
+        65
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_38__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "38",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        65,
+        65
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_39__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "39",
+      "title": null,
+      "content": "Ayat (1)\nYang dimaksud dengan \"pemrosesan transaksi berbasis TI\"\nadalah\nkegiatan\nberupa\npenambahan,\npengubahan,\npenghapusan, dan/atau otorisasi data yang dilakukan pada\nsistem aplikasi yang digunakan untuk memproses transaksi.\nAyat (2)\nCukup jelas.\nAyat (3)\nBank\nbertanggung\njawab\natas\nsetiap\ntransaksi\nyang\npemrosesannya diserahkan kepada pihak penyedia jasa TI.\nHuruf a\nYang dimaksud dengan “prinsip kehati-hatian” antara lain\npengelolaan risiko sesuai dengan Peraturan Otoritas Jasa\nKeuangan mengenai penerapan manajemen risiko bagi\nbank umum atau Peraturan Otoritas Jasa Keuangan\nmengenai penerapan manajemen risiko bagi bank umum\nsyariah dan unit usaha syariah.\nHuruf b\nCukup jelas.\nHuruf c\nHubungan Bank dengan nasabah didasarkan atas\nperjanjian dengan memperhatikan antara lain Peraturan\nOtoritas\nJasa\nKeuangan\nmengenai\nperlindungan\nkonsumen dan Peraturan Otoritas Jasa Keuangan\nmengenai layanan pengaduan konsumen di sektor jasa\nkeuangan.\nAyat (4)\nPenyelenggaraan pemrosesan transaksi berbasis TI di luar\nwilayah Indonesia termasuk yang dilakukan pada kantor pusat\natau kantor bank lain bagi kantor cabang dari bank yang\nberkedudukan di luar negeri atau kantor induk bagi Bank yang\ndimiliki lembaga keuangan asing.\nAyat (5)\nHuruf a\nCukup jelas.\nHuruf b\nYang\ndimaksud\ndengan\n“dokumen\npendukung\nadministrasi keuangan” adalah data yang merupakan\nbukti adanya hak dan kewajiban serta kegiatan usaha\nsuatu perusahaan dan digunakan sebagai pendukung\npenyusunan laporan keuangan. Contoh: akad kredit atau\npembiayaan\ndan\ndokumen\npencairan\nkredit\natau\npembiayaan, deal slip dan deal confirmation dari transaksi\ntreasury, serta dokumen perintah transfer data melalui\nSociety\nfor\nWorldwide\nInterbank\nFinancial\nTelecommunication (SWIFT).\nHuruf c\nUpaya\nuntuk\nmeningkatkan\nperan\nBank\nbagi\nperkembangan perekonomian Indonesia antara lain\ntercermin pada rencana peningkatan pemberian kredit\natau pembiayaan dan peningkatan pembiayaan ekspor-\nimpor.\nAyat (6)\nCukup jelas.\nAyat (7)\nCukup jelas.",
+      "page_range": [
+        65,
+        67
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_40__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "40",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        67,
+        67
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_41__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "41",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        67,
+        67
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_42__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "42",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        67,
+        67
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_43__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "43",
+      "title": null,
+      "content": "Ayat (1)\nBentuk\npemrosesan\ndata\nantara\nlain\nperolehan,\npendistribusian, pengolahan, pemeliharaan, penyimpanan,\ndan penghapusan data.\nAyat (2)\nHuruf a\nKepemilikan data (data ownership) dan kepengurusan\ndata (data stewardship) menjelaskan mengenai peran\nserta dan tanggung jawab masing-masing bagian dalam\norganisasi Bank yang terlibat dalam pengelolaan data.\nHuruf b\nYang dimaksud dengan “kualitas data” adalah keandalan\ndan akurasi data antara lain untuk analisis bisnis dan\npelaporan risiko.\nHuruf c\nSistem pengelolaan data disesuaikan dengan kebutuhan\ndan kompleksitas Bank.\nSistem pengelolaan data antara lain:\n1.\narsitektur data;\n2.\npemodelan data (data modelling dan design);\n3.\npenyimpanan dan operasi data (data storage and\noperation);\n4.\nkeamanan data;\n5.\nintegrasi dan interoperabilitas data;\n6.\npengelolaan dokumen dan konten;\n7.\nreference dan master data;\n8.\ndata warehouse dan business intelligence; dan\n9.\nmetadata.\nHuruf d\nSumber daya pendukung pengelolaan data antara lain\nberupa:\n1.\nteknologi yang digunakan untuk mendukung sistem\npengelolaan data; dan\n2.\nsumber daya manusia yang kompeten untuk\nmelakukan pengelolaan data.\nAyat (3)\nCukup jelas.",
+      "page_range": [
+        67,
+        68
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_44__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "44",
+      "title": null,
+      "content": "Ayat (1)\nData pribadi dan prinsip pelindungan data pribadi sesuai\ndengan ketentuan peraturan perundang-undangan mengenai\npelindungan data pribadi.\nAyat (2)\nContoh kondisi tertentu antara lain:\na.\npenggunaan teknologi baru;\nb.\npelacakan lokasi dan perilaku nasabah;\nc.\npemantauan atas lokasi fasilitas publik dalam skala\nbesar; dan\nd.\npemrosesan data pribadi bersifat sensitif yang berkaitan\ndengan suku, agama, ras, dan antargolongan.\nYang dimaksud dengan \"pemilik data pribadi\" adalah nasabah\ndan/atau calon nasabah Bank.",
+      "page_range": [
+        68,
+        68
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_45__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "45",
+      "title": null,
+      "content": "Ayat (1)\nHuruf a\nCukup jelas.\nHuruf b\nPara pihak yang terlibat dalam pertukaran data pribadi\nantara lain:\n1.\npihak yang dapat memerintahkan pertukaran data\npribadi;\n2.\npihak yang diwajibkan untuk membagikan data\npribadi; dan\n3.\npenerima data pribadi.\nHuruf c\nPenetapan perjanjian pertukaran data pribadi dilakukan\ntermasuk untuk kondisi darurat.\nHuruf d\nCukup jelas.\nHuruf e\nCukup jelas.\nAyat (2)\nCukup jelas.",
+      "page_range": [
+        68,
+        69
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_46__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "46",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        69,
+        69
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_47__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "47",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        69,
+        69
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_48__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "48",
+      "title": null,
+      "content": "Ayat (1)\nPenyediaan jasa TI oleh Bank yaitu pemberian jasa berupa\npemanfaatan infrastruktur TI milik Bank kepada lembaga jasa\nkeuangan didasari dengan perjanjian kerja sama dan/atau\nsewa-menyewa di antara kedua belah pihak.\nContoh penyediaan jasa TI yaitu penyelenggaraan Pusat Data,\nPusat Pemulihan Bencana, dan aplikasi.\nAyat (2)\nHuruf a\nCukup jelas.\nHuruf b\nPrinsip kehati-hatian diterapkan dengan memperhatikan\nantara lain:\n1.\nproses uji tuntas (due diligence) kepada pengguna\njasa TI;\n2.\ntata cara pengakhiran kerja sama (terminasi);\n3.\naspek keamanan; dan\n4.\nkewajiban para pihak.\nHuruf c\nCukup jelas.\nHuruf d\nCukup jelas.\nHuruf e\nCukup jelas.\nAyat (3)\nCukup jelas.\nAyat (4)\nHuruf a\nYang dimaksud dengan “grup atau kelompok” adalah\nlembaga jasa keuangan yang memiliki keterkaitan\nkepemilikan dan/atau pengendalian.\nContoh: perusahaan anak dan sister company.\nHuruf b\nPenyediaan aplikasi tidak dimaksudkan bagi Bank untuk\nmembangun aplikasi khusus bagi lembaga jasa keuangan\nselain bank.\nContoh aplikasi yang ditujukan untuk mendukung\nkegiatan operasional yang umum antara lain sistem\nremunerasi dan sistem kepegawaian.",
+      "page_range": [
+        69,
+        70
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_49__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "49",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        70,
+        70
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_50__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "50",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        70,
+        70
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_51__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "51",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        70,
+        70
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_52__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "52",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        70,
+        70
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_53__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "53",
+      "title": null,
+      "content": "Ayat (1)\nPrinsip umum pelaksanaan sistem pengendalian intern TI\ndilaksanakan sesuai dengan:\na.\nPeraturan Otoritas Jasa Keuangan mengenai penerapan\nmanajemen risiko bagi bank umum;\nb.\nPeraturan Otoritas Jasa Keuangan mengenai penerapan\nmanajemen risiko bagi bank umum syariah dan unit\nusaha syariah; dan/atau\nc.\nketentuan Otoritas Jasa Keuangan mengenai pedoman\nstandar sistem pengendalian intern bagi bank umum.\nAyat (2)\nHuruf a\nCukup jelas.\nHuruf b\nCukup jelas.\nHuruf c\nCukup jelas.\nHuruf d\nCukup jelas.\nHuruf e\nTermasuk pemantauan dan koreksi atas kesesuaian\npenyelenggaraan TI dengan perjanjian yang dimiliki serta\nketentuan peraturan perundang-undangan.\nYang dimaksud dengan “pihak lain” adalah pihak intern\nBank seperti unit atau fungsi kepatuhan Bank.\nAyat (3)\nYang dimaksud dengan “memadai” antara lain teknologi yang\nsesuai dengan kegiatan operasional Bank, sumber daya\nmanusia yang kompeten, dan struktur organisasi yang tidak\nmemberikan\npeluang\nuntuk\nmelakukan\ndan/atau\nmenyembunyikan kesalahan atau penyimpangan.\nAyat (4)\nCukup jelas.",
+      "page_range": [
+        71,
+        71
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_54__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "54",
+      "title": null,
+      "content": "Ayat (1)\nCukup jelas.\nAyat (2)\nCukup jelas.\nAyat (3)\nPenggunaan jasa pihak ekstern untuk melaksanakan fungsi\naudit intern TI tidak mengurangi tanggung jawab pimpinan\nsatuan kerja audit intern. Selain itu, penggunaan jasa pihak\nekstern harus mempertimbangkan ukuran dan kompleksitas\nusaha Bank.\nDalam menggunakan jasa pihak ekstern untuk melaksanakan\nfungsi audit intern atas TI, Bank memperhatikan kerahasiaan\ndata dan/atau informasi pada Bank yang akan diakses oleh\npihak ekstern.\nAyat (4)\nCukup jelas.",
+      "page_range": [
+        72,
+        72
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_55__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "55",
+      "title": null,
+      "content": "Ayat (1)\nPenyelenggaraan TI termasuk untuk Bank yang menggunakan\npihak penyedia jasa TI.\nAyat (2)\nCukup jelas.\nAyat (3)\nHuruf a\nCukup jelas.\nHuruf b\nYang dimaksud dengan “hasil audit intern TI” adalah\nlaporan hasil audit intern TI secara lengkap.",
+      "page_range": [
+        72,
+        72
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_56__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "56",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        72,
+        72
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_57__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "57",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        72,
+        72
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_58__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "58",
+      "title": null,
+      "content": "Ayat (1)\nRencana pengembangan TI merupakan dokumen yang\nmenjabarkan rincian rencana pengembangan TI untuk jangka\nwaktu 1 (satu) tahun sebagaimana dimuat dalam rencana\nstrategis TI Bank.\nAyat (2)\nCukup jelas.\nAyat (3)\nPertimbangan\ntertentu\nantara\nlain\nuntuk\nmendukung\nimplementasi kebijakan dan/atau ketentuan di sektor jasa\nkeuangan\ndan/atau\npemerintah\nuntuk\nmendorong\nperkembangan perekonomian.\nAyat (4)\nCukup jelas.",
+      "page_range": [
+        73,
+        73
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_59__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "59",
+      "title": null,
+      "content": "Laporan ini berisi kondisi penyelenggaraan TI Bank termasuk\nperubahan yang telah dilakukan selama 1 (satu) tahun pelaporan.",
+      "page_range": [
+        73,
+        73
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_60__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "60",
+      "title": null,
+      "content": "Ayat (1)\nInsiden TI yaitu kejadian kritis, penyalahgunaan, dan/atau\nkejahatan dalam penyelenggaraan TI, berupa:\na.\ninsiden siber; dan\nb.\ninsiden nonsiber.\nYang dimaksud dengan “kerugian” adalah kerugian keuangan\ndan/atau\nkerugian\nnonkeuangan.\nContoh\nkerugian\nnonkeuangan yaitu pemberitaan negatif yang memengaruhi\nreputasi Bank.\nInsiden siber yaitu ancaman siber, berupa upaya, kegiatan,\ndan/atau tindakan, yang mengakibatkan Sistem Elektronik\ntidak berfungsi sebagaimana mestinya.\nContoh insiden siber yaitu tidak berfungsinya Sistem\nElektronik sebagaimana mestinya yang disebabkan oleh\nserangan siber antara lain peretasan, virus, malware,\nransomware, web defacement, dan distributed denial of service\nattacks.\nAyat (2)\nNotifikasi awal disampaikan kepada satuan kerja pengawasan\ndari Bank.\nContoh sarana elektronik secara tertulis yaitu surat elektronik\nresmi.\nAyat (3)\nCukup jelas.\nAyat (4)\nCukup jelas.\nAyat (5)\nCukup jelas.",
+      "page_range": [
+        73,
+        74
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_61__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "61",
+      "title": null,
+      "content": "Ayat (1)\nLaporan realisasi mencakup kajian pascaimplementasi (post\nimplementation review).\nAyat (2)\nCukup jelas.",
+      "page_range": [
+        74,
+        74
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_62__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "62",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        74,
+        74
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_63__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "63",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        74,
+        74
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_64__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "64",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        74,
+        74
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_65__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "65",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        74,
+        74
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_66__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "66",
+      "title": null,
+      "content": "Ayat (1)\nTingkat maturitas digital Bank mencerminkan pemenuhan\nterhadap seluruh aspek dalam penyelenggaraan TI sesuai\ndengan Peraturan Otoritas Jasa Keuangan ini serta kesiapan\nBank dalam mendukung transformasi digital.\nPenilaian sendiri atas tingkat maturitas digital Bank secara\nberkala\ndilakukan\ndengan\nmempertimbangkan\nadanya\nperubahan kondisi intern dan ekstern Bank.\nContoh perubahan kondisi intern yaitu perubahan sasaran\ndan strategi bisnis Bank.\nContoh perubahan kondisi ekstern yaitu perkembangan TI.\nAyat (2)\nCukup jelas.\nAyat (3)\nCukup jelas.\nAyat (4)\nCukup jelas.\nAyat (5)\nCukup jelas.\nAyat (6)\nCukup jelas.",
+      "page_range": [
+        74,
+        75
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_67__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "67",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        75,
+        75
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_68__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "68",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        75,
+        75
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_69__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "69",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        75,
+        75
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_70__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "70",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        75,
+        75
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_71__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "71",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        75,
+        75
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_72__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "72",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        75,
+        75
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    },
+    {
+      "component_id": "POJK_11_2022__PASAL_73__BAB_XIV",
+      "component_type": "PASAL",
+      "number": "73",
+      "title": null,
+      "content": "Cukup jelas.",
+      "page_range": [
+        76,
+        76
+      ],
+      "parent_id": "POJK_11_2022__BAB_XIV",
+      "children": [],
+      "is_penjelasan": true
+    }
+  ]
+}

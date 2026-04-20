@@ -45,34 +45,35 @@ class TrainingSample:
 # ============================================================
 
 KG_SCHEMA = """Node Types:
-- UndangUndang (properties: label, content, uu_number, source_document_id)
+- Regulasi (properties: label, content, jenis, source_document_id) — dokumen regulasi (jenis: Undang-Undang, POJK, PP, etc.)
 - Bab (properties: label, content)
+- Bagian (properties: label, content) — bagian dalam bab
 - Pasal (properties: label, content)
 - Ayat (properties: label, content)
 - EntitasHukum (properties: label, content) — subjek/objek: orang, badan, institusi
 - PerbuatanHukum (properties: label, content) — tindakan yang diatur/dilarang
 - Sanksi (properties: label, content) — hukuman pidana/denda
 - KonsepHukum (properties: label, content) — konsep abstrak/definisi
-- Peraturan (properties: label, short_name, regulation_type, number, year, status, source_document_id) — dokumen peraturan
 - VersiPasal (properties: label, version, status, source_document_id, content) — versi pasal yang diamandemen
 
 Relation Types:
-- MEMUAT (UndangUndang → Bab, Bab → Pasal)
-- MENGATUR (Pasal → PerbuatanHukum)
-- MENETAPKAN_SANKSI (Pasal → Sanksi)
-- BERLAKU_UNTUK (Pasal → EntitasHukum)
-- MERUJUK (Pasal → Pasal)
-- MENDEFINISIKAN (Pasal → KonsepHukum)
-- MENGAMANDEMEN (Peraturan → Peraturan) — amandemen
-- DIAMANDEMEN_OLEH (Peraturan → Peraturan)
-- DITURUNKAN_KE (Peraturan → Peraturan) — hierarki regulasi
-- DITURUNKAN_DARI (Peraturan → Peraturan)
-- MENCABUT (Peraturan → Peraturan)
-- DICABUT_OLEH (Peraturan → Peraturan)
-- MERUJUK_DOKUMEN (Entity → Peraturan) — rujukan antar-dokumen
-- MENGUBAH_PASAL (Peraturan → Entity) — perubahan pasal spesifik
-- MENYISIPKAN_PASAL (Peraturan → Entity)
-- MENGHAPUS_PASAL (Peraturan → Entity)
+- MEMUAT (Regulasi → Bab, Bab → Bagian, Bab → Pasal, Bagian → Pasal)
+- MEMILIKI_AYAT (Pasal → Ayat)
+- MENGATUR (Pasal/Ayat → PerbuatanHukum)
+- MENETAPKAN_SANKSI (Pasal/Ayat → Sanksi)
+- BERLAKU_UNTUK (Pasal/Ayat → EntitasHukum)
+- MERUJUK (Pasal/Ayat → Pasal/Ayat)
+- MENDEFINISIKAN (Pasal/Ayat → KonsepHukum)
+- MENGAMANDEMEN (Regulasi → Regulasi) — amandemen
+- DIAMANDEMEN_OLEH (Regulasi → Regulasi)
+- DITURUNKAN_KE (Regulasi → Regulasi) — hierarki regulasi
+- DITURUNKAN_DARI (Regulasi → Regulasi)
+- MENCABUT (Regulasi → Regulasi)
+- DICABUT_OLEH (Regulasi → Regulasi)
+- MERUJUK_DOKUMEN (Entity → Regulasi) — rujukan antar-dokumen
+- MENGUBAH_PASAL (Regulasi → Entity) — perubahan pasal spesifik
+- MENYISIPKAN_PASAL (Regulasi → Entity)
+- MENGHAPUS_PASAL (Regulasi → Entity)
 - MEMILIKI_VERSI (Entity → VersiPasal)
 - DIAMANDEMEN_MENJADI (VersiPasal → VersiPasal) — versioning"""
 
@@ -103,7 +104,7 @@ TEMPLATES = [
     },
     {
         "nl": "Bab apa saja yang ada dalam UU ITE?",
-        "cypher": "MATCH (u:UndangUndang)-[:MEMUAT]->(b:Bab) WHERE toLower(u.label) CONTAINS 'ite' OR toLower(u.label) CONTAINS '11' RETURN b.label AS bab",
+        "cypher": "MATCH (r:Regulasi)-[:MEMUAT]->(b:Bab) WHERE toLower(r.label) CONTAINS 'ite' OR toLower(r.label) CONTAINS '11' RETURN b.label AS bab",
         "category": "hierarki",
         "fill_query": None,  # static
     },

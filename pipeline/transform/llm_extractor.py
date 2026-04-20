@@ -26,7 +26,7 @@ from tqdm import tqdm
 class ExtractedNode:
     """A node/entity extracted from legal text."""
     id: str
-    type: str           # UndangUndang | Pasal | EntitasHukum | PerbuatanHukum | Sanksi | KonsepHukum
+    type: str           # Regulasi | Bab | Bagian | Pasal | Ayat | EntitasHukum | PerbuatanHukum | Sanksi | KonsepHukum
     label: str          # e.g. "Pasal 27", "Pencemaran Nama Baik"
     content: str        # description or original text
     provenance: dict = field(default_factory=dict)
@@ -52,7 +52,7 @@ Given a chunk of legal text, extract entities (nodes) and relationships (edges) 
 
 | Type | Description | Example Labels |
 |------|-------------|----------------|
-| UndangUndang | The regulation being processed. Create exactly ONE per document. | "Undang-Undang tentang Informasi dan Transaksi Elektronik" |
+| Regulasi | The regulation being processed. Create exactly ONE per document. Include a "jenis" property: one of [Undang-Undang, POJK, PP, Perpres, Perda, Permen]. | "Undang-Undang tentang Informasi dan Transaksi Elektronik", "POJK tentang Penyelenggaraan TI oleh Bank Umum" |
 | Bab | A chapter (Bab) within the regulation. | "BAB VII PERBUATAN YANG DILARANG" |
 | Pasal | An article (Pasal) within the regulation. | "Pasal 27", "Pasal 45" |
 | Ayat | A sub-article (Ayat) within a Pasal. Only create if the text explicitly refers to a specific ayat. | "Pasal 27 ayat (1)", "Pasal 45 ayat (3)" |
@@ -65,7 +65,7 @@ Given a chunk of legal text, extract entities (nodes) and relationships (edges) 
 
 | Type | Direction | Description |
 |------|-----------|-------------|
-| MEMUAT | UndangUndang → Bab, Bab → Pasal | Hierarchical containment |
+| MEMUAT | Regulasi → Bab, Bab → Bagian, Bab → Pasal, Bagian → Pasal | Hierarchical containment |
 | MEMILIKI_AYAT | Pasal → Ayat | Pasal contains Ayat |
 | MENGATUR | Pasal/Ayat → PerbuatanHukum | An article regulates an act |
 | MENETAPKAN_SANKSI | Pasal/Ayat → Sanksi | An article establishes a sanction |
@@ -79,7 +79,7 @@ Given a chunk of legal text, extract entities (nodes) and relationships (edges) 
 1. Every node MUST have a unique `id`, `type`, and `label`.
 2. Use the format `{Type}_{short_label}` for ids (e.g., `Pasal_27`, `Sanksi_pidana_penjara_6_tahun`).
 3. If the same entity appears multiple times in the text, reuse the SAME id — do NOT create duplicates.
-4. Create only ONE `UndangUndang` node for the document being processed. Other laws referenced in the text (e.g., UUD 1945, UU Telekomunikasi) should NOT get their own UndangUndang node; instead, mention them in the `content` field of the MERUJUK edge or the referencing Pasal.
+4. Create only ONE `Regulasi` node for the entire document. Use the **exact same id and label** across all chunks. Other laws referenced in the text (e.g., UUD 1945, UU Telekomunikasi) should NOT get their own Regulasi node; instead, mention them in the `content` field of the MERUJUK edge or the referencing Pasal.
 
 ### Quality over Quantity
 5. Prefer fewer, high-quality nodes over many low-quality ones.
@@ -87,15 +87,21 @@ Given a chunk of legal text, extract entities (nodes) and relationships (edges) 
 7. `PerbuatanHukum` must be a **specific, concrete action** (e.g., "mendistribusikan konten bermuatan penghinaan"), not a vague description.
 8. Every `Sanksi` node must contain the FULL penalty text including duration and/or fine amount.
 
-### Hierarchy
-9. Maintain strict hierarchy: UndangUndang → Bab → Pasal → Ayat.
-10. Every Pasal should be connected to its parent Bab via MEMUAT if the Bab is known from the text.
+### Hierarchy (VERY IMPORTANT)
+9. Maintain strict hierarchy: Regulasi → Bab → Bagian (if exists) → Pasal → Ayat.
+10. **EVERY Pasal MUST be connected to its parent Bab via a MEMUAT edge.** This is mandatory — no Pasal should exist without a MEMUAT edge from its Bab. If the current chunk mentions "BAB VII" at the top, then ALL Pasal nodes extracted from that chunk MUST have a `(Bab_VII)-[:MEMUAT]->(Pasal_X)` edge.
 11. If a Pasal has multiple ayat, create Ayat nodes and connect them via MEMILIKI_AYAT.
+12. If the text contains a "Bagian" (e.g., "Bagian Kedua"), create a Bagian node and connect Pasal nodes within that Bagian via `(Bagian)-[:MEMUAT]->(Pasal)` instead of directly to the Bab.
+13. **Every Bab MUST be connected to the Regulasi node via a MEMUAT edge.** Always include `(Regulasi_X)-[:MEMUAT]->(Bab_Y)` for each Bab encountered.
 
 ### Relationships
-12. Each Pasal/Ayat that regulates an action MUST have a MENGATUR edge.
-13. Each Pasal/Ayat that specifies a sanction MUST have both MENGATUR (to the prohibited act) and MENETAPKAN_SANKSI (to the penalty).
-14. MERUJUK edges should only be created for **explicit cross-references** (e.g., "sebagaimana dimaksud dalam Pasal 27").
+14. Each Pasal/Ayat that regulates an action MUST have a MENGATUR edge.
+15. Each Pasal/Ayat that specifies a sanction MUST have both MENGATUR (to the prohibited act) and MENETAPKAN_SANKSI (to the penalty).
+16. MERUJUK edges should only be created for **explicit cross-references** (e.g., "sebagaimana dimaksud dalam Pasal 27").
+
+### Completeness Check
+17. Before finalizing your output, verify: Does every Pasal in the text have a MEMUAT edge from its parent Bab? If not, add the missing edges.
+18. Count the Pasal nodes you extracted — if the text mentions Pasal numbers that you did not extract, go back and extract them.
 
 ## Output Format
 
@@ -162,6 +168,8 @@ def extract_triples_from_chunk(
     chunk_text: str,
     chunk_metadata: dict,
     model: genai.GenerativeModel,
+    system_prompt: Optional[str] = None,
+    user_prompt_template: Optional[str] = None,
 ) -> tuple[list[ExtractedNode], list[ExtractedEdge]]:
     """Extract nodes and edges from a single chunk using LLM.
     
@@ -169,17 +177,23 @@ def extract_triples_from_chunk(
         chunk_text: The text content of the chunk
         chunk_metadata: Metadata dict with document_id, chunk_id, page_range
         model: Gemini GenerativeModel instance
+        system_prompt: Override system prompt (default: use built-in SYSTEM_PROMPT)
+        user_prompt_template: Override user prompt template (default: use built-in USER_PROMPT_TEMPLATE).
+                              Must contain {document_id} and {chunk_text} placeholders.
         
     Returns:
         Tuple of (nodes, edges)
     """
-    prompt = USER_PROMPT_TEMPLATE.format(
+    _system = system_prompt or SYSTEM_PROMPT
+    _user_template = user_prompt_template or USER_PROMPT_TEMPLATE
+
+    prompt = _user_template.format(
         document_id=chunk_metadata.get("document_id", ""),
         chunk_text=chunk_text,
     )
     
     response = model.generate_content(
-        [SYSTEM_PROMPT, prompt],
+        [_system, prompt],
         generation_config={
             "response_mime_type": "application/json",
             "temperature": 0.1,
@@ -232,6 +246,8 @@ def extract_triples_from_batch(
     chunks: list[dict],
     model: genai.GenerativeModel,
     batch_size: int = 5,
+    system_prompt: Optional[str] = None,
+    user_prompt_template: Optional[str] = None,
 ) -> tuple[list[ExtractedNode], list[ExtractedEdge]]:
     """Extract triples from a batch of chunks, concatenated.
     
@@ -239,6 +255,8 @@ def extract_triples_from_batch(
         chunks: List of chunk dicts from chunks JSON
         model: Gemini GenerativeModel instance
         batch_size: Number of chunks to process per LLM call
+        system_prompt: Override system prompt
+        user_prompt_template: Override user prompt template
         
     Returns:
         Tuple of (all_nodes, all_edges)
@@ -251,7 +269,7 @@ def extract_triples_from_batch(
         "page_range": list(set(p for c in chunks[:batch_size] for p in c.get("page_range", []))),
     }
     
-    return extract_triples_from_chunk(batch_text, metadata, model)
+    return extract_triples_from_chunk(batch_text, metadata, model, system_prompt, user_prompt_template)
 
 
 def extract_all_triples(
@@ -262,6 +280,9 @@ def extract_all_triples(
     batch_size: int = 5,
     max_retries: int = 3,
     delay_between_calls: float = 1.0,
+    system_prompt: Optional[str] = None,
+    user_prompt_template: Optional[str] = None,
+    prompt_id: Optional[str] = None,
 ) -> str:
     """Extract triples from all chunks in a document.
     
@@ -273,6 +294,9 @@ def extract_all_triples(
         batch_size: Chunks per LLM call
         max_retries: Max retry attempts on failure
         delay_between_calls: Seconds to wait between API calls
+        system_prompt: Override system prompt (if None, uses built-in default)
+        user_prompt_template: Override user prompt template (if None, uses built-in default)
+        prompt_id: Prompt identifier for output filename (e.g., 'PROMPT_1')
         
     Returns:
         Path to output triples JSON file
@@ -298,7 +322,7 @@ def extract_all_triples(
         
         for attempt in range(max_retries):
             try:
-                nodes, edges = extract_triples_from_batch(batch, model, batch_size)
+                nodes, edges = extract_triples_from_batch(batch, model, batch_size, system_prompt, user_prompt_template)
                 all_nodes.extend(nodes)
                 all_edges.extend(edges)
                 break
@@ -317,7 +341,8 @@ def extract_all_triples(
     
     # Save output
     os.makedirs(output_dir, exist_ok=True)
-    output_path = os.path.join(output_dir, f"{document_id}_triples.json")
+    filename = f"{document_id}_{prompt_id}_triples.json" if prompt_id else f"{document_id}_triples.json"
+    output_path = os.path.join(output_dir, filename)
     
     output_data = {
         "document_id": document_id,

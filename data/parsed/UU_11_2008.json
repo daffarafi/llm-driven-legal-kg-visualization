@@ -21,7 +21,8 @@
         1
       ],
       "parent_id": null,
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__HURUF_c",
@@ -34,7 +35,8 @@
         1
       ],
       "parent_id": null,
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__HURUF_d",
@@ -47,7 +49,8 @@
         1
       ],
       "parent_id": null,
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__HURUF_e",
@@ -60,7 +63,8 @@
         1
       ],
       "parent_id": null,
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__HURUF_f",
@@ -73,7 +77,8 @@
         1
       ],
       "parent_id": null,
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__HURUF_g",
@@ -86,7 +91,8 @@
         2
       ],
       "parent_id": null,
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__BAB_I",
@@ -102,7 +108,8 @@
       "children": [
         "UU_11_2008__PASAL_1",
         "UU_11_2008__PASAL_2"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_1",
@@ -131,7 +138,8 @@
         "UU_11_2008__ANGKA_21",
         "UU_11_2008__ANGKA_22",
         "UU_11_2008__ANGKA_23"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__ANGKA_5",
@@ -144,7 +152,8 @@
         3
       ],
       "parent_id": "UU_11_2008__PASAL_1",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__ANGKA_10",
@@ -157,7 +166,8 @@
         3
       ],
       "parent_id": "UU_11_2008__PASAL_1",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__ANGKA_11",
@@ -170,7 +180,8 @@
         3
       ],
       "parent_id": "UU_11_2008__PASAL_1",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__ANGKA_12",
@@ -183,7 +194,8 @@
         3
       ],
       "parent_id": "UU_11_2008__PASAL_1",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__ANGKA_13",
@@ -196,7 +208,8 @@
         3
       ],
       "parent_id": "UU_11_2008__PASAL_1",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__ANGKA_14",
@@ -209,7 +222,8 @@
         3
       ],
       "parent_id": "UU_11_2008__PASAL_1",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__ANGKA_15",
@@ -222,7 +236,8 @@
         3
       ],
       "parent_id": "UU_11_2008__PASAL_1",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__ANGKA_16",
@@ -235,7 +250,8 @@
         3
       ],
       "parent_id": "UU_11_2008__PASAL_1",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__ANGKA_17",
@@ -248,7 +264,8 @@
         4
       ],
       "parent_id": "UU_11_2008__PASAL_1",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__ANGKA_18",
@@ -261,7 +278,8 @@
         4
       ],
       "parent_id": "UU_11_2008__PASAL_1",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__ANGKA_19",
@@ -274,7 +292,8 @@
         4
       ],
       "parent_id": "UU_11_2008__PASAL_1",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__ANGKA_20",
@@ -287,7 +306,8 @@
         4
       ],
       "parent_id": "UU_11_2008__PASAL_1",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__ANGKA_21",
@@ -300,7 +320,8 @@
         4
       ],
       "parent_id": "UU_11_2008__PASAL_1",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__ANGKA_22",
@@ -313,7 +334,8 @@
         4
       ],
       "parent_id": "UU_11_2008__PASAL_1",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__ANGKA_23",
@@ -326,7 +348,8 @@
         4
       ],
       "parent_id": "UU_11_2008__PASAL_1",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_2",
@@ -339,7 +362,8 @@
         4
       ],
       "parent_id": "UU_11_2008__BAB_I",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__BAB_II",
@@ -355,7 +379,8 @@
       "children": [
         "UU_11_2008__PASAL_3",
         "UU_11_2008__PASAL_4"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_3",
@@ -368,7 +393,8 @@
         4
       ],
       "parent_id": "UU_11_2008__BAB_II",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_4",
@@ -387,7 +413,8 @@
         "UU_11_2008__HURUF_c__PASAL_4",
         "UU_11_2008__HURUF_d__PASAL_4",
         "UU_11_2008__HURUF_e__PASAL_4"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__HURUF_a",
@@ -400,7 +427,8 @@
         5
       ],
       "parent_id": "UU_11_2008__PASAL_4",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__HURUF_b__PASAL_4",
@@ -413,7 +441,8 @@
         5
       ],
       "parent_id": "UU_11_2008__PASAL_4",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__HURUF_c__PASAL_4",
@@ -426,7 +455,8 @@
         5
       ],
       "parent_id": "UU_11_2008__PASAL_4",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__HURUF_d__PASAL_4",
@@ -439,7 +469,8 @@
         5
       ],
       "parent_id": "UU_11_2008__PASAL_4",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__HURUF_e__PASAL_4",
@@ -452,7 +483,8 @@
         5
       ],
       "parent_id": "UU_11_2008__PASAL_4",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__BAB_III",
@@ -474,7 +506,8 @@
         "UU_11_2008__PASAL_10",
         "UU_11_2008__PASAL_11",
         "UU_11_2008__PASAL_12"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_5",
@@ -490,7 +523,8 @@
       "children": [
         "UU_11_2008__HURUF_a__PASAL_5",
         "UU_11_2008__HURUF_b__PASAL_5"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__HURUF_a__PASAL_5",
@@ -503,7 +537,8 @@
         5
       ],
       "parent_id": "UU_11_2008__PASAL_5",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__HURUF_b__PASAL_5",
@@ -516,7 +551,8 @@
         5
       ],
       "parent_id": "UU_11_2008__PASAL_5",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_6",
@@ -529,7 +565,8 @@
         6
       ],
       "parent_id": "UU_11_2008__BAB_III",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_7",
@@ -542,7 +579,8 @@
         6
       ],
       "parent_id": "UU_11_2008__BAB_III",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_8",
@@ -558,7 +596,8 @@
       "children": [
         "UU_11_2008__HURUF_a__PASAL_8",
         "UU_11_2008__HURUF_b__PASAL_8"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__HURUF_a__PASAL_8",
@@ -571,7 +610,8 @@
         6
       ],
       "parent_id": "UU_11_2008__PASAL_8",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__HURUF_b__PASAL_8",
@@ -584,7 +624,8 @@
         7
       ],
       "parent_id": "UU_11_2008__PASAL_8",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_9",
@@ -597,7 +638,8 @@
         7
       ],
       "parent_id": "UU_11_2008__BAB_III",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_10",
@@ -610,7 +652,8 @@
         7
       ],
       "parent_id": "UU_11_2008__BAB_III",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_11",
@@ -625,7 +668,8 @@
       "parent_id": "UU_11_2008__BAB_III",
       "children": [
         "UU_11_2008__AYAT_2"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__AYAT_2",
@@ -638,7 +682,8 @@
         8
       ],
       "parent_id": "UU_11_2008__PASAL_11",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_12",
@@ -651,7 +696,8 @@
         8
       ],
       "parent_id": "UU_11_2008__BAB_III",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__BAB_IV",
@@ -667,7 +713,8 @@
       "children": [
         "UU_11_2008__BAGIAN_Kesatu",
         "UU_11_2008__BAGIAN_Kedua"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__BAGIAN_Kesatu",
@@ -683,7 +730,8 @@
       "children": [
         "UU_11_2008__PASAL_13",
         "UU_11_2008__PASAL_14"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_13",
@@ -696,7 +744,8 @@
         9
       ],
       "parent_id": "UU_11_2008__BAGIAN_Kesatu",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_14",
@@ -710,16 +759,7 @@
       ],
       "parent_id": "UU_11_2008__BAGIAN_Kesatu",
       "children": [],
-      "references": [
-        {
-          "type": "MERUJUK_PASAL",
-          "pattern_name": "INTERNAL_PASAL_REF",
-          "source_component": "UU_11_2008__PASAL_14",
-          "source_text": "sebagaimana dimaksud\ndalam Pasal 13",
-          "match_position": 37,
-          "target_article": "Pasal 13"
-        }
-      ]
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__BAGIAN_Kedua",
@@ -735,7 +775,8 @@
       "children": [
         "UU_11_2008__PASAL_15",
         "UU_11_2008__PASAL_16"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_15",
@@ -750,7 +791,8 @@
       "parent_id": "UU_11_2008__BAGIAN_Kedua",
       "children": [
         "UU_11_2008__AYAT_1"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__AYAT_1",
@@ -763,7 +805,8 @@
         10
       ],
       "parent_id": "UU_11_2008__PASAL_15",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_16",
@@ -776,7 +819,8 @@
         10
       ],
       "parent_id": "UU_11_2008__BAGIAN_Kedua",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__BAB_V",
@@ -796,7 +840,8 @@
         "UU_11_2008__PASAL_20",
         "UU_11_2008__PASAL_21",
         "UU_11_2008__PASAL_22"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_17",
@@ -809,7 +854,8 @@
         11
       ],
       "parent_id": "UU_11_2008__BAB_V",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_18",
@@ -822,7 +868,8 @@
         11
       ],
       "parent_id": "UU_11_2008__BAB_V",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_19",
@@ -835,7 +882,8 @@
         11
       ],
       "parent_id": "UU_11_2008__BAB_V",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_20",
@@ -848,7 +896,8 @@
         12
       ],
       "parent_id": "UU_11_2008__BAB_V",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_21",
@@ -861,7 +910,8 @@
         12
       ],
       "parent_id": "UU_11_2008__BAB_V",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_22",
@@ -874,7 +924,8 @@
         13
       ],
       "parent_id": "UU_11_2008__BAB_V",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__BAB_VI",
@@ -892,7 +943,8 @@
         "UU_11_2008__PASAL_24",
         "UU_11_2008__PASAL_25",
         "UU_11_2008__PASAL_26"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_23",
@@ -905,7 +957,8 @@
         13
       ],
       "parent_id": "UU_11_2008__BAB_VI",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_24",
@@ -918,7 +971,8 @@
         13
       ],
       "parent_id": "UU_11_2008__BAB_VI",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_25",
@@ -931,7 +985,8 @@
         14
       ],
       "parent_id": "UU_11_2008__BAB_VI",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_26",
@@ -944,7 +999,8 @@
         14
       ],
       "parent_id": "UU_11_2008__BAB_VI",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__BAB_VII",
@@ -969,7 +1025,8 @@
         "UU_11_2008__PASAL_35",
         "UU_11_2008__PASAL_36",
         "UU_11_2008__PASAL_37"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_27",
@@ -987,7 +1044,8 @@
         "UU_11_2008__AYAT_2__PASAL_27",
         "UU_11_2008__AYAT_3",
         "UU_11_2008__AYAT_4"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__AYAT_1__PASAL_27",
@@ -1000,7 +1058,8 @@
         14
       ],
       "parent_id": "UU_11_2008__PASAL_27",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__AYAT_2__PASAL_27",
@@ -1013,7 +1072,8 @@
         14
       ],
       "parent_id": "UU_11_2008__PASAL_27",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__AYAT_3",
@@ -1026,7 +1086,8 @@
         14
       ],
       "parent_id": "UU_11_2008__PASAL_27",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__AYAT_4",
@@ -1039,7 +1100,8 @@
         14
       ],
       "parent_id": "UU_11_2008__PASAL_27",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_28",
@@ -1052,7 +1114,8 @@
         15
       ],
       "parent_id": "UU_11_2008__BAB_VII",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_29",
@@ -1065,7 +1128,8 @@
         15
       ],
       "parent_id": "UU_11_2008__BAB_VII",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_30",
@@ -1078,7 +1142,8 @@
         15
       ],
       "parent_id": "UU_11_2008__BAB_VII",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_31",
@@ -1093,7 +1158,8 @@
       "parent_id": "UU_11_2008__BAB_VII",
       "children": [
         "UU_11_2008__AYAT_2__PASAL_31"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__AYAT_2__PASAL_31",
@@ -1106,7 +1172,8 @@
         16
       ],
       "parent_id": "UU_11_2008__PASAL_31",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_32",
@@ -1119,7 +1186,8 @@
         16
       ],
       "parent_id": "UU_11_2008__BAB_VII",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_33",
@@ -1132,7 +1200,8 @@
         16
       ],
       "parent_id": "UU_11_2008__BAB_VII",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_34",
@@ -1148,7 +1217,8 @@
       "children": [
         "UU_11_2008__HURUF_a__PASAL_34",
         "UU_11_2008__HURUF_b__PASAL_34"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__HURUF_a__PASAL_34",
@@ -1162,16 +1232,7 @@
       ],
       "parent_id": "UU_11_2008__PASAL_34",
       "children": [],
-      "references": [
-        {
-          "type": "MERUJUK_PASAL",
-          "pattern_name": "INTERNAL_PASAL_REF",
-          "source_component": "UU_11_2008__HURUF_a__PASAL_34",
-          "source_text": "sebagaimana dimaksud dalam\nPasal 27",
-          "match_position": 123,
-          "target_article": "Pasal 27"
-        }
-      ]
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__HURUF_b__PASAL_34",
@@ -1185,16 +1246,7 @@
       ],
       "parent_id": "UU_11_2008__PASAL_34",
       "children": [],
-      "references": [
-        {
-          "type": "MERUJUK_PASAL",
-          "pattern_name": "INTERNAL_PASAL_REF",
-          "source_component": "UU_11_2008__HURUF_b__PASAL_34",
-          "source_text": "sebagaimana dimaksud dalam Pasal 27",
-          "match_position": 165,
-          "target_article": "Pasal 27"
-        }
-      ]
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_35",
@@ -1207,7 +1259,8 @@
         17
       ],
       "parent_id": "UU_11_2008__BAB_VII",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_36",
@@ -1221,16 +1274,7 @@
       ],
       "parent_id": "UU_11_2008__BAB_VII",
       "children": [],
-      "references": [
-        {
-          "type": "MERUJUK_PASAL",
-          "pattern_name": "INTERNAL_PASAL_REF",
-          "source_component": "UU_11_2008__PASAL_36",
-          "source_text": "sebagaimana dimaksud dalam\nPasal 27",
-          "match_position": 81,
-          "target_article": "Pasal 27"
-        }
-      ]
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_37",
@@ -1244,16 +1288,7 @@
       ],
       "parent_id": "UU_11_2008__BAB_VII",
       "children": [],
-      "references": [
-        {
-          "type": "MERUJUK_PASAL",
-          "pattern_name": "INTERNAL_PASAL_REF",
-          "source_component": "UU_11_2008__PASAL_37",
-          "source_text": "sebagaimana dimaksud dalam Pasal 27",
-          "match_position": 62,
-          "target_article": "Pasal 27"
-        }
-      ]
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__BAB_VIII",
@@ -1269,7 +1304,8 @@
       "children": [
         "UU_11_2008__PASAL_38",
         "UU_11_2008__PASAL_39"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_38",
@@ -1282,7 +1318,8 @@
         18
       ],
       "parent_id": "UU_11_2008__BAB_VIII",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_39",
@@ -1295,7 +1332,8 @@
         18
       ],
       "parent_id": "UU_11_2008__BAB_VIII",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__BAB_IX",
@@ -1311,7 +1349,8 @@
       "children": [
         "UU_11_2008__PASAL_40",
         "UU_11_2008__PASAL_41"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_40",
@@ -1326,7 +1365,8 @@
       "parent_id": "UU_11_2008__BAB_IX",
       "children": [
         "UU_11_2008__AYAT_5"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__AYAT_5",
@@ -1339,7 +1379,8 @@
         19
       ],
       "parent_id": "UU_11_2008__PASAL_40",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_41",
@@ -1352,7 +1393,8 @@
         19
       ],
       "parent_id": "UU_11_2008__BAB_IX",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__BAB_X",
@@ -1369,7 +1411,8 @@
         "UU_11_2008__PASAL_42",
         "UU_11_2008__PASAL_43",
         "UU_11_2008__PASAL_44"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_42",
@@ -1382,7 +1425,8 @@
         19
       ],
       "parent_id": "UU_11_2008__BAB_X",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_43",
@@ -1397,7 +1441,8 @@
       "parent_id": "UU_11_2008__BAB_X",
       "children": [
         "UU_11_2008__AYAT_2__PASAL_43"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__AYAT_2__PASAL_43",
@@ -1420,7 +1465,8 @@
         "UU_11_2008__HURUF_g__PASAL_43",
         "UU_11_2008__HURUF_h",
         "UU_11_2008__HURUF_i"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__HURUF_a__PASAL_43",
@@ -1433,7 +1479,8 @@
         20
       ],
       "parent_id": "UU_11_2008__AYAT_2__PASAL_43",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__HURUF_b__PASAL_43",
@@ -1446,7 +1493,8 @@
         20
       ],
       "parent_id": "UU_11_2008__AYAT_2__PASAL_43",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__HURUF_c__PASAL_43",
@@ -1459,7 +1507,8 @@
         20
       ],
       "parent_id": "UU_11_2008__AYAT_2__PASAL_43",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__HURUF_d__PASAL_43",
@@ -1472,7 +1521,8 @@
         20
       ],
       "parent_id": "UU_11_2008__AYAT_2__PASAL_43",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__HURUF_e__PASAL_43",
@@ -1485,7 +1535,8 @@
         20
       ],
       "parent_id": "UU_11_2008__AYAT_2__PASAL_43",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__HURUF_f__PASAL_43",
@@ -1498,7 +1549,8 @@
         20
       ],
       "parent_id": "UU_11_2008__AYAT_2__PASAL_43",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__HURUF_g__PASAL_43",
@@ -1511,7 +1563,8 @@
         20
       ],
       "parent_id": "UU_11_2008__AYAT_2__PASAL_43",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__HURUF_h",
@@ -1524,7 +1577,8 @@
         21
       ],
       "parent_id": "UU_11_2008__AYAT_2__PASAL_43",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__HURUF_i",
@@ -1537,7 +1591,8 @@
         21
       ],
       "parent_id": "UU_11_2008__AYAT_2__PASAL_43",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_44",
@@ -1551,16 +1606,7 @@
       ],
       "parent_id": "UU_11_2008__BAB_X",
       "children": [],
-      "references": [
-        {
-          "type": "MERUJUK_PASAL",
-          "pattern_name": "INTERNAL_PASAL_REF",
-          "source_component": "UU_11_2008__PASAL_44",
-          "source_text": "sebagaimana dimaksud dalam Pasal 1",
-          "match_position": 281,
-          "target_article": "Pasal 1"
-        }
-      ]
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__BAB_XI",
@@ -1582,7 +1628,8 @@
         "UU_11_2008__PASAL_50",
         "UU_11_2008__PASAL_51",
         "UU_11_2008__PASAL_52"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_45",
@@ -1599,16 +1646,7 @@
         "UU_11_2008__AYAT_4__PASAL_45",
         "UU_11_2008__AYAT_2__PASAL_45"
       ],
-      "references": [
-        {
-          "type": "MERUJUK_PASAL",
-          "pattern_name": "INTERNAL_PASAL_REF",
-          "source_component": "UU_11_2008__PASAL_45",
-          "source_text": "sebagaimana\ndimaksud dalam Pasal 27",
-          "match_position": 37,
-          "target_article": "Pasal 27"
-        }
-      ]
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__AYAT_4__PASAL_45",
@@ -1621,7 +1659,8 @@
         21
       ],
       "parent_id": "UU_11_2008__PASAL_45",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__AYAT_2__PASAL_45",
@@ -1635,24 +1674,7 @@
       ],
       "parent_id": "UU_11_2008__PASAL_45",
       "children": [],
-      "references": [
-        {
-          "type": "MERUJUK_PASAL",
-          "pattern_name": "INTERNAL_PASAL_REF",
-          "source_component": "UU_11_2008__AYAT_2__PASAL_45",
-          "source_text": "sebagaimana\ndimaksud dalam Pasal 28",
-          "match_position": 72,
-          "target_article": "Pasal 28"
-        },
-        {
-          "type": "MERUJUK_PASAL",
-          "pattern_name": "INTERNAL_PASAL_REF",
-          "source_component": "UU_11_2008__AYAT_2__PASAL_45",
-          "source_text": "sebagaimana\ndimaksud dalam Pasal 29",
-          "match_position": 296,
-          "target_article": "Pasal 29"
-        }
-      ]
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_46",
@@ -1666,32 +1688,7 @@
       ],
       "parent_id": "UU_11_2008__BAB_XI",
       "children": [],
-      "references": [
-        {
-          "type": "MERUJUK_PASAL",
-          "pattern_name": "INTERNAL_PASAL_REF",
-          "source_component": "UU_11_2008__PASAL_46",
-          "source_text": "sebagaimana\ndimaksud dalam Pasal 30",
-          "match_position": 37,
-          "target_article": "Pasal 30"
-        },
-        {
-          "type": "MERUJUK_PASAL",
-          "pattern_name": "INTERNAL_PASAL_REF",
-          "source_component": "UU_11_2008__PASAL_46",
-          "source_text": "sebagaimana\ndimaksud dalam Pasal 30",
-          "match_position": 249,
-          "target_article": "Pasal 30"
-        },
-        {
-          "type": "MERUJUK_PASAL",
-          "pattern_name": "INTERNAL_PASAL_REF",
-          "source_component": "UU_11_2008__PASAL_46",
-          "source_text": "sebagaimana\ndimaksud dalam Pasal 30",
-          "match_position": 463,
-          "target_article": "Pasal 30"
-        }
-      ]
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_47",
@@ -1705,16 +1702,7 @@
       ],
       "parent_id": "UU_11_2008__BAB_XI",
       "children": [],
-      "references": [
-        {
-          "type": "MERUJUK_PASAL",
-          "pattern_name": "INTERNAL_PASAL_REF",
-          "source_component": "UU_11_2008__PASAL_47",
-          "source_text": "sebagaimana dimaksud\ndalam Pasal 31",
-          "match_position": 33,
-          "target_article": "Pasal 31"
-        }
-      ]
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_48",
@@ -1730,16 +1718,7 @@
       "children": [
         "UU_11_2008__AYAT_2__PASAL_48"
       ],
-      "references": [
-        {
-          "type": "MERUJUK_PASAL",
-          "pattern_name": "INTERNAL_PASAL_REF",
-          "source_component": "UU_11_2008__PASAL_48",
-          "source_text": "sebagaimana\ndimaksud dalam Pasal 32",
-          "match_position": 37,
-          "target_article": "Pasal 32"
-        }
-      ]
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__AYAT_2__PASAL_48",
@@ -1753,24 +1732,7 @@
       ],
       "parent_id": "UU_11_2008__PASAL_48",
       "children": [],
-      "references": [
-        {
-          "type": "MERUJUK_PASAL",
-          "pattern_name": "INTERNAL_PASAL_REF",
-          "source_component": "UU_11_2008__AYAT_2__PASAL_48",
-          "source_text": "sebagaimana\ndimaksud dalam Pasal 32",
-          "match_position": 72,
-          "target_article": "Pasal 32"
-        },
-        {
-          "type": "MERUJUK_PASAL",
-          "pattern_name": "INTERNAL_PASAL_REF",
-          "source_component": "UU_11_2008__AYAT_2__PASAL_48",
-          "source_text": "sebagaimana\ndimaksud dalam Pasal 32",
-          "match_position": 286,
-          "target_article": "Pasal 32"
-        }
-      ]
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_49",
@@ -1784,16 +1746,7 @@
       ],
       "parent_id": "UU_11_2008__BAB_XI",
       "children": [],
-      "references": [
-        {
-          "type": "MERUJUK_PASAL",
-          "pattern_name": "INTERNAL_PASAL_REF",
-          "source_component": "UU_11_2008__PASAL_49",
-          "source_text": "sebagaimana dimaksud\ndalam Pasal 33",
-          "match_position": 33,
-          "target_article": "Pasal 33"
-        }
-      ]
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_50",
@@ -1807,16 +1760,7 @@
       ],
       "parent_id": "UU_11_2008__BAB_XI",
       "children": [],
-      "references": [
-        {
-          "type": "MERUJUK_PASAL",
-          "pattern_name": "INTERNAL_PASAL_REF",
-          "source_component": "UU_11_2008__PASAL_50",
-          "source_text": "sebagaimana dimaksud\ndalam Pasal 34",
-          "match_position": 33,
-          "target_article": "Pasal 34"
-        }
-      ]
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_51",
@@ -1830,24 +1774,7 @@
       ],
       "parent_id": "UU_11_2008__BAB_XI",
       "children": [],
-      "references": [
-        {
-          "type": "MERUJUK_PASAL",
-          "pattern_name": "INTERNAL_PASAL_REF",
-          "source_component": "UU_11_2008__PASAL_51",
-          "source_text": "sebagaimana\ndimaksud dalam Pasal 35",
-          "match_position": 37,
-          "target_article": "Pasal 35"
-        },
-        {
-          "type": "MERUJUK_PASAL",
-          "pattern_name": "INTERNAL_PASAL_REF",
-          "source_component": "UU_11_2008__PASAL_51",
-          "source_text": "sebagaimana\ndimaksud dalam Pasal 36",
-          "match_position": 250,
-          "target_article": "Pasal 36"
-        }
-      ]
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_52",
@@ -1863,16 +1790,7 @@
       "children": [
         "UU_11_2008__AYAT_2__PASAL_52"
       ],
-      "references": [
-        {
-          "type": "MERUJUK_PASAL",
-          "pattern_name": "INTERNAL_PASAL_REF",
-          "source_component": "UU_11_2008__PASAL_52",
-          "source_text": "sebagaimana dimaksud dalam\nPasal 27",
-          "match_position": 28,
-          "target_article": "Pasal 27"
-        }
-      ]
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__AYAT_2__PASAL_52",
@@ -1886,32 +1804,7 @@
       ],
       "parent_id": "UU_11_2008__PASAL_52",
       "children": [],
-      "references": [
-        {
-          "type": "MERUJUK_PASAL",
-          "pattern_name": "INTERNAL_PASAL_REF",
-          "source_component": "UU_11_2008__AYAT_2__PASAL_52",
-          "source_text": "sebagaimana dimaksud dalam Pasal\n30",
-          "match_position": 59,
-          "target_article": "Pasal 30"
-        },
-        {
-          "type": "MERUJUK_PASAL",
-          "pattern_name": "INTERNAL_PASAL_REF",
-          "source_component": "UU_11_2008__AYAT_2__PASAL_52",
-          "source_text": "sebagaimana dimaksud dalam Pasal\n30",
-          "match_position": 364,
-          "target_article": "Pasal 30"
-        },
-        {
-          "type": "MERUJUK_PASAL",
-          "pattern_name": "INTERNAL_PASAL_REF",
-          "source_component": "UU_11_2008__AYAT_2__PASAL_52",
-          "source_text": "sebagaimana dimaksud dalam\nPasal 27",
-          "match_position": 829,
-          "target_article": "Pasal 27"
-        }
-      ]
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__BAB_XII",
@@ -1926,7 +1819,8 @@
       "parent_id": null,
       "children": [
         "UU_11_2008__PASAL_53"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_53",
@@ -1939,7 +1833,8 @@
         24
       ],
       "parent_id": "UU_11_2008__BAB_XII",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__BAB_XIII",
@@ -1960,20 +1855,22 @@
         "UU_11_2008__PASAL_7__BAB_XIII",
         "UU_11_2008__PASAL_12__BAB_XIII",
         "UU_11_2008__PASAL_24__BAB_XIII"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_54",
       "component_type": "PASAL",
       "number": "54",
       "title": null,
-      "content": "(1)\nUndang-Undang ini mulai berlaku pada tanggal\ndiundangkan.\n(2)\nPeraturan Pemerintah harus sudah ditetapkan paling lama 2 (dua)\ntahun setelah diundangkannya Undang-Undang ini.\nAgar. . .\nPRESIDEN\nREPUBLIK INDONESIA Agar setiap orang mengetahuinya, memerintahkan\npengundangan Undang-Undang ini dengan penempatannya\ndalam Lembaran Negara Republik Indonesia.\nDisahkan di Jakarta pada\ntanggal 21 April 2008\nPRESIDEN REPUBLIK INDONESIA,\nDR. H. SUSILO BAMBANG YUDHOYONO\nDiundangkan di Jakarta pada\ntanggal 21 April 2008\nMENTERI HUKUM DAN HAK ASASI MANUSIA\nREPUBLIK INDONESIA,\nANDI MATTALATA\nLEMBARAN NEGARA REPUBLIK INDONESIA TAHUN 2008 NOMOR 58\nPRESIDEN\nREPUBLIK INDONESIA\nATAS\nUNDANG-UNDANG REPUBLIK INDONESIA\nNOMOR 11 TAHUN 2008\nTENTANG\nINFORMASI DAN TRANSAKSI ELEKTRONIK\nI. UMUM\nPemanfaatan Teknologi Informasi, media, dan komunikasi telah mengubah\nbaik perilaku masyarakat maupun peradaban manusia secara global.\nPerkembangan teknologi informasi dan komunikasi telah pula menyebabkan\nhubungan dunia menjadi tanpa batas (borderless) dan menyebabkan\nperubahan sosial, ekonomi, dan budaya secara signifikan berlangsung\ndemikian cepat. Teknologi Informasi saat ini menjadi pedang bermata dua\nkarena selain memberikan kontribusi bagi peningkatan kesejahteraan,\nkemajuan, dan peradaban manusia, sekaligus menjadi sarana efektif\nperbuatan melawan hukum.\nSaat ini telah lahir suatu rezim hukum baru yang dikenal dengan hukum siber\natau hukum telematika. Hukum siber atau cyber law, secara\ninternasional digunakan untuk istilah hukum yang terkait dengan\npemanfaatan teknologi informasi dan komunikasi. Demikian pula, hukum\ntelematika yang merupakan perwujudan dari konvergensi hukum\ntelekomunikasi, hukum media, dan hukum informatika. Istilah lain yang juga\ndigunakan adalah hukum teknologi informasi (law of information technology),\nhukum dunia maya (virtual world law), dan hukum mayantara. Istilah-istilah\ntersebut lahir mengingat kegiatan yang dilakukan melalui jaringan sistem\nkomputer dan sistem komunikasi baik dalam lingkup lokal maupun global\n(Internet) dengan memanfaatkan teknologi informasi berbasis sistem komputer\nyang merupakan sistem elektronik yang dapat dilihat secara virtual.\nPermasalahan hukum yang seringkali dihadapi adalah ketika terkait dengan\npenyampaian informasi, komunikasi, dan/atau transaksi secara elektronik,\nkhususnya dalam hal pembuktian dan hal yang terkait dengan perbuatan hukum\nyang dilaksanakan melalui sistem elektronik.\nYang dimaksud dengan sistem elektronik adalah sistem komputer dalam arti luas,\nyang tidak hanya mencakup perangkat keras dan perangkat lunak komputer,\ntetapi juga mencakup jaringan telekomunikasi dan/atau sistem komunikasi\nelektronik. Perangkat lunak atau program komputer adalah sekumpulan\ninstruksi yang diwujudkan dalam bentuk bahasa, kode, skema, ataupun bentuk\nlain, yang apabila digabungkan dengan media yang dapat dibaca dengan komputer\nakan mampu membuat komputer bekerja untuk melakukan fungsi khusus\natau untuk mencapai hasil yang khusus, termasuk persiapan dalam\nmerancang instruksi tersebut.\nSistem\nPRESIDEN\nREPUBLIK INDONESIA Sistem elektronik juga digunakan untuk menjelaskan keberadaan sistem\ninformasi yang merupakan penerapan teknologi informasi yang berbasis\njaringan telekomunikasi dan media elektronik, yang berfungsi merancang,\nmemproses, menganalisis, menampilkan, dan mengirimkan atau\nmenyebarkan informasi elektronik. Sistem informasi secara teknis dan\nmanajemen sebenarnya adalah perwujudan penerapan produk teknologi\ninformasi ke dalam suatu bentuk organisasi dan manajemen sesuai dengan\nkarakteristik kebutuhan pada organisasi tersebut dan sesuai dengan tujuan\nperuntukannya. Pada sisi yang lain, sistem informasi secara teknis dan\nfungsional adalah keterpaduan sistem antara manusia dan mesin yang\nmencakup komponen perangkat keras, perangkat lunak, prosedur, sumber daya\nmanusia, dan substansi informasi yang dalam pemanfaatannya mencakup\nfungsi input, process, output, storage, dan communication.\nSehubungan dengan itu, dunia hukum sebenarnya sudah sejak lama\nmemperluas penafsiran asas dan normanya ketika menghadapi persoalan\nkebendaan yang tidak berwujud, misalnya dalam kasus pencurian listrik\nsebagai perbuatan pidana. Dalam kenyataan kegiatan siber tidak lagi\nsederhana karena kegiatannya tidak lagi dibatasi oleh teritori suatu negara,\nyang mudah diakses kapan pun dan dari mana pun. Kerugian dapat terjadi\nbaik pada pelaku transaksi maupun pada orang lain yang tidak pernah\nmelakukan transaksi, misalnya pencurian dana kartu kredit melalui\npembelanjaan di Internet. Di samping itu, pembuktian merupakan faktor\nyang sangat penting, mengingat informasi elektronik bukan saja belum\nterakomodasi dalam sistem hukum acara Indonesia secara komprehensif,\nmelainkan juga ternyata sangat rentan untuk diubah, disadap, dipalsukan,\ndan dikirim ke berbagai penjuru dunia dalam waktu hitungan detik. Dengan\ndemikian, dampak yang diakibatkannya pun bisa demikian kompleks dan\nrumit.\nPermasalahan yang lebih luas terjadi pada bidang keperdataan karena\ntransaksi elektronik untuk kegiatan perdagangan melalui sistem elektronik\n(electronic commerce) telah menjadi bagian dari perniagaan nasional dan\ninternasional. Kenyataan ini menunjukkan bahwa konvergensi di bidang\nteknologi informasi, media, dan informatika (telematika) berkembang terus\ntanpa dapat dibendung, seiring dengan ditemukannya perkembangan baru di\nbidang teknologi informasi, media, dan komunikasi.\nKegiatan melalui media sistem elektronik, yang disebut juga ruang siber\n(cyber space), meskipun bersifat virtual dapat dikategorikan sebagai\ntindakan atau perbuatan hukum yang nyata. Secara yuridis kegiatan pada\nruang siber tidak dapat didekati dengan ukuran dan kualifikasi hukum\nkonvensional saja sebab jika cara ini yang ditempuh akan terlalu banyak\nkesulitan dan hal yang lolos dari pemberlakuan hukum. Kegiatan dalam\nruang siber adalah kegiatan virtual yang berdampak sangat nyata meskipun\nalat buktinya bersifat elektronik.\nDengan\nPRESIDEN\nREPUBLIK INDONESIA Dengan demikian, subjek pelakunya harus dikualifikasikan pula sebagai\nOrang yang telah melakukan perbuatan hukum secara nyata. Dalam kegiatan\ne-commerce antara lain dikenal adanya dokumen elektronik yang kedudukannya\ndisetarakan dengan dokumen yang dibuat di atas kertas.\nBerkaitan dengan hal itu, perlu diperhatikan sisi keamanan dan kepastian hukum\ndalam pemanfaatan teknologi informasi, media, dan komunikasi agar dapat\nberkembang secara optimal. Oleh karena itu, terdapat tiga pendekatan untuk\nmenjaga keamanan di cyber space, yaitu pendekatan aspek hukum, aspek\nteknologi, aspek sosial, budaya, dan etika. Untuk mengatasi gangguan\nkeamanan dalam penyelenggaraan sistem secara elektronik, pendekatan\nhukum bersifat mutlak karena tanpa kepastian hukum, persoalan pemanfaatan\nteknologi informasi menjadi tidak optimal.\nII. PASAL DEMI PASAL",
+      "content": "(1)\nUndang-Undang ini mulai berlaku pada tanggal\ndiundangkan.\n(2)\nPeraturan Pemerintah harus sudah ditetapkan paling lama 2 (dua)\ntahun setelah diundangkannya Undang-Undang ini.\nAgar. . .\nPRESIDEN\nREPUBLIK INDONESIA Agar setiap orang mengetahuinya, memerintahkan\npengundangan Undang-Undang ini dengan penempatannya\ndalam Lembaran Negara Republik Indonesia.\nDisahkan di Jakarta pada\ntanggal 21 April 2008\nPRESIDEN REPUBLIK INDONESIA,\nDR. H. SUSILO BAMBANG YUDHOYONO\nDiundangkan di Jakarta pada\ntanggal 21 April 2008\nMENTERI HUKUM DAN HAK ASASI MANUSIA\nREPUBLIK INDONESIA,\nANDI MATTALATA\nLEMBARAN NEGARA REPUBLIK INDONESIA TAHUN 2008 NOMOR 58\nPRESIDEN\nREPUBLIK INDONESIA\nPENJELASAN\nATAS\nUNDANG-UNDANG REPUBLIK INDONESIA\nNOMOR 11 TAHUN 2008\nTENTANG\nINFORMASI DAN TRANSAKSI ELEKTRONIK\nI. UMUM\nPemanfaatan Teknologi Informasi, media, dan komunikasi telah mengubah\nbaik perilaku masyarakat maupun peradaban manusia secara global.\nPerkembangan teknologi informasi dan komunikasi telah pula menyebabkan\nhubungan dunia menjadi tanpa batas (borderless) dan menyebabkan\nperubahan sosial, ekonomi, dan budaya secara signifikan berlangsung\ndemikian cepat. Teknologi Informasi saat ini menjadi pedang bermata dua\nkarena selain memberikan kontribusi bagi peningkatan kesejahteraan,\nkemajuan, dan peradaban manusia, sekaligus menjadi sarana efektif\nperbuatan melawan hukum.\nSaat ini telah lahir suatu rezim hukum baru yang dikenal dengan hukum siber\natau hukum telematika. Hukum siber atau cyber law, secara\ninternasional digunakan untuk istilah hukum yang terkait dengan\npemanfaatan teknologi informasi dan komunikasi. Demikian pula, hukum\ntelematika yang merupakan perwujudan dari konvergensi hukum\ntelekomunikasi, hukum media, dan hukum informatika. Istilah lain yang juga\ndigunakan adalah hukum teknologi informasi (law of information technology),\nhukum dunia maya (virtual world law), dan hukum mayantara. Istilah-istilah\ntersebut lahir mengingat kegiatan yang dilakukan melalui jaringan sistem\nkomputer dan sistem komunikasi baik dalam lingkup lokal maupun global\n(Internet) dengan memanfaatkan teknologi informasi berbasis sistem komputer\nyang merupakan sistem elektronik yang dapat dilihat secara virtual.\nPermasalahan hukum yang seringkali dihadapi adalah ketika terkait dengan\npenyampaian informasi, komunikasi, dan/atau transaksi secara elektronik,\nkhususnya dalam hal pembuktian dan hal yang terkait dengan perbuatan hukum\nyang dilaksanakan melalui sistem elektronik.\nYang dimaksud dengan sistem elektronik adalah sistem komputer dalam arti luas,\nyang tidak hanya mencakup perangkat keras dan perangkat lunak komputer,\ntetapi juga mencakup jaringan telekomunikasi dan/atau sistem komunikasi\nelektronik. Perangkat lunak atau program komputer adalah sekumpulan\ninstruksi yang diwujudkan dalam bentuk bahasa, kode, skema, ataupun bentuk\nlain, yang apabila digabungkan dengan media yang dapat dibaca dengan komputer\nakan mampu membuat komputer bekerja untuk melakukan fungsi khusus\natau untuk mencapai hasil yang khusus, termasuk persiapan dalam\nmerancang instruksi tersebut.\nSistem\nPRESIDEN\nREPUBLIK INDONESIA Sistem elektronik juga digunakan untuk menjelaskan keberadaan sistem\ninformasi yang merupakan penerapan teknologi informasi yang berbasis\njaringan telekomunikasi dan media elektronik, yang berfungsi merancang,\nmemproses, menganalisis, menampilkan, dan mengirimkan atau\nmenyebarkan informasi elektronik. Sistem informasi secara teknis dan\nmanajemen sebenarnya adalah perwujudan penerapan produk teknologi\ninformasi ke dalam suatu bentuk organisasi dan manajemen sesuai dengan\nkarakteristik kebutuhan pada organisasi tersebut dan sesuai dengan tujuan\nperuntukannya. Pada sisi yang lain, sistem informasi secara teknis dan\nfungsional adalah keterpaduan sistem antara manusia dan mesin yang\nmencakup komponen perangkat keras, perangkat lunak, prosedur, sumber daya\nmanusia, dan substansi informasi yang dalam pemanfaatannya mencakup\nfungsi input, process, output, storage, dan communication.\nSehubungan dengan itu, dunia hukum sebenarnya sudah sejak lama\nmemperluas penafsiran asas dan normanya ketika menghadapi persoalan\nkebendaan yang tidak berwujud, misalnya dalam kasus pencurian listrik\nsebagai perbuatan pidana. Dalam kenyataan kegiatan siber tidak lagi\nsederhana karena kegiatannya tidak lagi dibatasi oleh teritori suatu negara,\nyang mudah diakses kapan pun dan dari mana pun. Kerugian dapat terjadi\nbaik pada pelaku transaksi maupun pada orang lain yang tidak pernah\nmelakukan transaksi, misalnya pencurian dana kartu kredit melalui\npembelanjaan di Internet. Di samping itu, pembuktian merupakan faktor\nyang sangat penting, mengingat informasi elektronik bukan saja belum\nterakomodasi dalam sistem hukum acara Indonesia secara komprehensif,\nmelainkan juga ternyata sangat rentan untuk diubah, disadap, dipalsukan,\ndan dikirim ke berbagai penjuru dunia dalam waktu hitungan detik. Dengan\ndemikian, dampak yang diakibatkannya pun bisa demikian kompleks dan\nrumit.\nPermasalahan yang lebih luas terjadi pada bidang keperdataan karena\ntransaksi elektronik untuk kegiatan perdagangan melalui sistem elektronik\n(electronic commerce) telah menjadi bagian dari perniagaan nasional dan\ninternasional. Kenyataan ini menunjukkan bahwa konvergensi di bidang\nteknologi informasi, media, dan informatika (telematika) berkembang terus\ntanpa dapat dibendung, seiring dengan ditemukannya perkembangan baru di\nbidang teknologi informasi, media, dan komunikasi.\nKegiatan melalui media sistem elektronik, yang disebut juga ruang siber\n(cyber space), meskipun bersifat virtual dapat dikategorikan sebagai\ntindakan atau perbuatan hukum yang nyata. Secara yuridis kegiatan pada\nruang siber tidak dapat didekati dengan ukuran dan kualifikasi hukum\nkonvensional saja sebab jika cara ini yang ditempuh akan terlalu banyak\nkesulitan dan hal yang lolos dari pemberlakuan hukum. Kegiatan dalam\nruang siber adalah kegiatan virtual yang berdampak sangat nyata meskipun\nalat buktinya bersifat elektronik.\nDengan\nPRESIDEN\nREPUBLIK INDONESIA Dengan demikian, subjek pelakunya harus dikualifikasikan pula sebagai\nOrang yang telah melakukan perbuatan hukum secara nyata. Dalam kegiatan\ne-commerce antara lain dikenal adanya dokumen elektronik yang kedudukannya\ndisetarakan dengan dokumen yang dibuat di atas kertas.\nBerkaitan dengan hal itu, perlu diperhatikan sisi keamanan dan kepastian hukum\ndalam pemanfaatan teknologi informasi, media, dan komunikasi agar dapat\nberkembang secara optimal. Oleh karena itu, terdapat tiga pendekatan untuk\nmenjaga keamanan di cyber space, yaitu pendekatan aspek hukum, aspek\nteknologi, aspek sosial, budaya, dan etika. Untuk mengatasi gangguan\nkeamanan dalam penyelenggaraan sistem secara elektronik, pendekatan\nhukum bersifat mutlak karena tanpa kepastian hukum, persoalan pemanfaatan\nteknologi informasi menjadi tidak optimal.\nII. PASAL DEMI PASAL",
       "page_range": [
         24,
         28
       ],
       "parent_id": "UU_11_2008__BAB_XIII",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_11_2008__PASAL_1__BAB_XIII",
@@ -1986,7 +1883,8 @@
         28
       ],
       "parent_id": "UU_11_2008__BAB_XIII",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "UU_11_2008__PASAL_2__BAB_XIII",
@@ -1999,7 +1897,8 @@
         28
       ],
       "parent_id": "UU_11_2008__BAB_XIII",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "UU_11_2008__PASAL_3__BAB_XIII",
@@ -2012,7 +1911,8 @@
         29
       ],
       "parent_id": "UU_11_2008__BAB_XIII",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "UU_11_2008__PASAL_7__BAB_XIII",
@@ -2028,7 +1928,8 @@
       "children": [
         "UU_11_2008__HURUF_a__BAB_XIII",
         "UU_11_2008__HURUF_b__BAB_XIII"
-      ]
+      ],
+      "is_penjelasan": true
     },
     {
       "component_id": "UU_11_2008__HURUF_a__BAB_XIII",
@@ -2041,7 +1942,8 @@
         30
       ],
       "parent_id": "UU_11_2008__PASAL_7__BAB_XIII",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "UU_11_2008__HURUF_b__BAB_XIII",
@@ -2054,7 +1956,8 @@
         30
       ],
       "parent_id": "UU_11_2008__PASAL_7__BAB_XIII",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "UU_11_2008__PASAL_12__BAB_XIII",
@@ -2067,7 +1970,8 @@
         33
       ],
       "parent_id": "UU_11_2008__BAB_XIII",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "UU_11_2008__PASAL_24__BAB_XIII",
@@ -2082,7 +1986,8 @@
       "parent_id": "UU_11_2008__BAB_XIII",
       "children": [
         "UU_11_2008__HURUF_b__BAB_XIII"
-      ]
+      ],
+      "is_penjelasan": true
     },
     {
       "component_id": "UU_11_2008__HURUF_b__BAB_XIII",
@@ -2096,22 +2001,7 @@
       ],
       "parent_id": "UU_11_2008__PASAL_24__BAB_XIII",
       "children": [],
-      "references": [
-        {
-          "type": "MERUJUK_PASAL",
-          "pattern_name": "INTERNAL_PASAL_REF",
-          "source_component": "UU_11_2008__HURUF_b__BAB_XIII",
-          "source_text": "sebagaimana dimaksud\ndalam Pasal 27",
-          "match_position": 2477,
-          "target_article": "Pasal 27"
-        }
-      ]
+      "is_penjelasan": true
     }
-  ],
-  "reference_summary": {
-    "total_references": 25,
-    "by_type": {
-      "MERUJUK_PASAL": 25
-    }
-  }
+  ]
 }

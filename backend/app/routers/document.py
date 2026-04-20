@@ -17,41 +17,27 @@ async def get_document(doc_id: str):
 
 @router.get("/documents")
 async def list_documents():
-    """List all available documents — both UndangUndang and Peraturan nodes."""
+    """List all available documents — Regulasi nodes."""
     with Neo4jService.get_driver().session() as s:
-        # Get Peraturan nodes (multi-document cluster)
-        peraturan = s.run("""
-            MATCH (p:Peraturan)
-            OPTIONAL MATCH (n:Entity {source_document_id: p.id})
-            WITH p, count(n) AS entity_count
-            RETURN p.id AS doc_id,
-                   p.label AS label,
-                   p.short_name AS short_name,
-                   p.regulation_type AS regulation_type,
-                   p.number AS number,
-                   p.year AS year,
-                   p.status AS status,
+        regulasi = s.run("""
+            MATCH (r:Regulasi)
+            OPTIONAL MATCH (n:Entity {source_document_id: r.source_document_id})
+            WHERE n <> r
+            WITH r, count(n) AS entity_count
+            RETURN r.id AS doc_id,
+                   r.label AS label,
+                   r.source_document_id AS source_document_id,
+                   r.jenis AS regulation_type,
+                   r.node_type AS node_type,
                    entity_count
-            ORDER BY p.year
-        """).data()
-
-        # Fallback: also get UndangUndang nodes not in Peraturan
-        uu_fallback = s.run("""
-            MATCH (u:UndangUndang)
-            WHERE NOT EXISTS { MATCH (p:Peraturan {id: u.source_document_id}) }
-            OPTIONAL MATCH (u)-[:MEMUAT]->(b:Bab)
-            WITH u, count(b) AS bab_count
-            OPTIONAL MATCH (u)-[:MEMUAT]->(:Bab)-[:MEMUAT|MEMILIKI_PASAL]->(p:Pasal)
-            RETURN elementId(u) AS id,
-                   u.label AS label,
-                   bab_count,
-                   count(p) AS pasal_count
+            ORDER BY r.label
         """).data()
 
     return {
-        "regulations": peraturan,
-        "documents": uu_fallback,  # backward compatible
+        "regulations": regulasi,
+        "documents": regulasi,
     }
+
 
 
 @router.get("/regulations/graph")

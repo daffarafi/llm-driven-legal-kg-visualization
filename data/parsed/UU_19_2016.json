@@ -34,18 +34,7 @@
         "UU_19_2016__ANGKA_22",
         "UU_19_2016__ANGKA_23"
       ],
-      "references": [
-        {
-          "type": "MERUJUK_DOKUMEN",
-          "pattern_name": "UU_REF",
-          "source_component": "UU_19_2016__HURUF_b",
-          "source_text": "Undang_Undang Nomor\n11 Tahun 2008",
-          "match_position": 121,
-          "target_doc_id": "UU_11_2008",
-          "target_number": "11",
-          "target_year": "2008"
-        }
-      ]
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_19_2016__ANGKA_2",
@@ -59,18 +48,7 @@
       ],
       "parent_id": "UU_19_2016__HURUF_b",
       "children": [],
-      "references": [
-        {
-          "type": "MERUJUK_DOKUMEN",
-          "pattern_name": "UU_REF",
-          "source_component": "UU_19_2016__ANGKA_2",
-          "source_text": "Undang-Undang Nomor l1 Tahun\n2008",
-          "match_position": 481,
-          "target_doc_id": "UU_11_2008",
-          "target_number": "11",
-          "target_year": "2008"
-        }
-      ]
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_19_2016__ANGKA_1",
@@ -83,7 +61,8 @@
         2
       ],
       "parent_id": "UU_19_2016__HURUF_b",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_19_2016__ANGKA_1__HURUF_b",
@@ -96,7 +75,8 @@
         2
       ],
       "parent_id": "UU_19_2016__HURUF_b",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_19_2016__ANGKA_3",
@@ -109,7 +89,8 @@
         3
       ],
       "parent_id": "UU_19_2016__HURUF_b",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_19_2016__ANGKA_7",
@@ -122,7 +103,8 @@
         3
       ],
       "parent_id": "UU_19_2016__HURUF_b",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_19_2016__ANGKA_8",
@@ -135,7 +117,8 @@
         3
       ],
       "parent_id": "UU_19_2016__HURUF_b",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_19_2016__ANGKA_9",
@@ -148,7 +131,8 @@
         4
       ],
       "parent_id": "UU_19_2016__HURUF_b",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_19_2016__ANGKA_13",
@@ -161,7 +145,8 @@
         4
       ],
       "parent_id": "UU_19_2016__HURUF_b",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_19_2016__ANGKA_19",
@@ -174,7 +159,8 @@
         5
       ],
       "parent_id": "UU_19_2016__HURUF_b",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_19_2016__ANGKA_20",
@@ -187,7 +173,8 @@
         5
       ],
       "parent_id": "UU_19_2016__HURUF_b",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_19_2016__ANGKA_21",
@@ -200,7 +187,8 @@
         5
       ],
       "parent_id": "UU_19_2016__HURUF_b",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_19_2016__ANGKA_22",
@@ -213,7 +201,8 @@
         5
       ],
       "parent_id": "UU_19_2016__HURUF_b",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_19_2016__ANGKA_23",
@@ -227,16 +216,7 @@
       ],
       "parent_id": "UU_19_2016__HURUF_b",
       "children": [],
-      "references": [
-        {
-          "type": "MENGUBAH_PASAL",
-          "pattern_name": "AMEND_UBAH",
-          "source_component": "UU_19_2016__ANGKA_23",
-          "source_text": "Ketentuan Pasal 5 tetap dengan perubahan",
-          "match_position": 76,
-          "target_article": "Pasal 5"
-        }
-      ]
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_19_2016__PASAL_26",
@@ -253,7 +233,8 @@
         "UU_19_2016__AYAT_3",
         "UU_19_2016__AYAT_5",
         "UU_19_2016__AYAT_3__PASAL_26"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_19_2016__AYAT_3",
@@ -266,7 +247,8 @@
         6
       ],
       "parent_id": "UU_19_2016__PASAL_26",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_19_2016__AYAT_5",
@@ -280,24 +262,7 @@
       ],
       "parent_id": "UU_19_2016__PASAL_26",
       "children": [],
-      "references": [
-        {
-          "type": "MENGUBAH_PASAL",
-          "pattern_name": "AMEND_UBAH",
-          "source_component": "UU_19_2016__AYAT_5",
-          "source_text": "Ketentuan Pasal 27 tetap dengan perubahan",
-          "match_position": 174,
-          "target_article": "Pasal 27"
-        },
-        {
-          "type": "MENGUBAH_PASAL",
-          "pattern_name": "AMEND_UBAH",
-          "source_component": "UU_19_2016__AYAT_5",
-          "source_text": "Pasal 31 diubah",
-          "match_position": 405,
-          "target_article": "Pasal 31"
-        }
-      ]
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_19_2016__AYAT_3__PASAL_26",
@@ -312,7 +277,8 @@
       "parent_id": "UU_19_2016__PASAL_26",
       "children": [
         "UU_19_2016__ANGKA_6"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_19_2016__ANGKA_6",
@@ -326,24 +292,7 @@
       ],
       "parent_id": "UU_19_2016__AYAT_3__PASAL_26",
       "children": [],
-      "references": [
-        {
-          "type": "MENGUBAH_PASAL",
-          "pattern_name": "AMEND_UBAH",
-          "source_component": "UU_19_2016__ANGKA_6",
-          "source_text": "Pasal 40 diubah",
-          "match_position": 116,
-          "target_article": "Pasal 40"
-        },
-        {
-          "type": "MENGUBAH_PASAL",
-          "pattern_name": "AMEND_UBAH",
-          "source_component": "UU_19_2016__ANGKA_6",
-          "source_text": "pasal 4O\ndiubah",
-          "match_position": 159,
-          "target_article": "Pasal 4O"
-        }
-      ]
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_19_2016__PASAL_40",
@@ -364,7 +313,8 @@
         "UU_19_2016__AYAT_3__PASAL_40",
         "UU_19_2016__AYAT_6",
         "UU_19_2016__AYAT_8"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_19_2016__AYAT_1",
@@ -377,7 +327,8 @@
         7
       ],
       "parent_id": "UU_19_2016__PASAL_40",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_19_2016__AYAT_3__PASAL_40",
@@ -390,7 +341,8 @@
         8
       ],
       "parent_id": "UU_19_2016__PASAL_40",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_19_2016__AYAT_4",
@@ -403,7 +355,8 @@
         8
       ],
       "parent_id": "UU_19_2016__PASAL_40",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_19_2016__AYAT_5__PASAL_40",
@@ -416,7 +369,8 @@
         8
       ],
       "parent_id": "UU_19_2016__PASAL_40",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_19_2016__AYAT_3__PASAL_40",
@@ -429,7 +383,8 @@
         8
       ],
       "parent_id": "UU_19_2016__PASAL_40",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_19_2016__AYAT_6",
@@ -444,7 +399,8 @@
       "parent_id": "UU_19_2016__PASAL_40",
       "children": [
         "UU_19_2016__ANGKA_7__AYAT_6"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_19_2016__ANGKA_7__AYAT_6",
@@ -458,16 +414,7 @@
       ],
       "parent_id": "UU_19_2016__AYAT_6",
       "children": [],
-      "references": [
-        {
-          "type": "MENGUBAH_PASAL",
-          "pattern_name": "AMEND_UBAH",
-          "source_component": "UU_19_2016__ANGKA_7__AYAT_6",
-          "source_text": "Pasal 43 diubah",
-          "match_position": 73,
-          "target_article": "Pasal 43"
-        }
-      ]
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_19_2016__AYAT_8",
@@ -481,16 +428,7 @@
       ],
       "parent_id": "UU_19_2016__PASAL_40",
       "children": [],
-      "references": [
-        {
-          "type": "MENGUBAH_PASAL",
-          "pattern_name": "AMEND_UBAH",
-          "source_component": "UU_19_2016__AYAT_8",
-          "source_text": "Pasal 43 diubah",
-          "match_position": 78,
-          "target_article": "Pasal 43"
-        }
-      ]
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_19_2016__PASAL_43",
@@ -506,7 +444,8 @@
       "children": [
         "UU_19_2016__AYAT_1__PASAL_43",
         "UU_19_2016__AYAT_3__PASAL_43"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_19_2016__AYAT_1__PASAL_43",
@@ -519,7 +458,8 @@
         8
       ],
       "parent_id": "UU_19_2016__PASAL_43",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_19_2016__AYAT_3__PASAL_43",
@@ -542,7 +482,8 @@
         "UU_19_2016__HURUF_g__PASAL_43",
         "UU_19_2016__HURUF_h",
         "UU_19_2016__HURUF_k"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_19_2016__HURUF_a",
@@ -555,7 +496,8 @@
         9
       ],
       "parent_id": "UU_19_2016__AYAT_3__PASAL_43",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_19_2016__HURUF_b__PASAL_43",
@@ -568,7 +510,8 @@
         9
       ],
       "parent_id": "UU_19_2016__AYAT_3__PASAL_43",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_19_2016__HURUF_c",
@@ -581,7 +524,8 @@
         9
       ],
       "parent_id": "UU_19_2016__AYAT_3__PASAL_43",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_19_2016__HURUF_d",
@@ -594,7 +538,8 @@
         9
       ],
       "parent_id": "UU_19_2016__AYAT_3__PASAL_43",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_19_2016__HURUF_e",
@@ -607,7 +552,8 @@
         9
       ],
       "parent_id": "UU_19_2016__AYAT_3__PASAL_43",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_19_2016__HURUF_g",
@@ -620,7 +566,8 @@
         10
       ],
       "parent_id": "UU_19_2016__AYAT_3__PASAL_43",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_19_2016__HURUF_g__PASAL_43",
@@ -633,7 +580,8 @@
         10
       ],
       "parent_id": "UU_19_2016__AYAT_3__PASAL_43",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_19_2016__HURUF_h",
@@ -646,7 +594,8 @@
         10
       ],
       "parent_id": "UU_19_2016__AYAT_3__PASAL_43",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_19_2016__HURUF_k",
@@ -662,7 +611,8 @@
       "children": [
         "UU_19_2016__ANGKA_8__HURUF_k",
         "UU_19_2016__ANGKA_8__HURUF_k"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_19_2016__ANGKA_8__HURUF_k",
@@ -675,7 +625,8 @@
         11
       ],
       "parent_id": "UU_19_2016__HURUF_k",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_19_2016__ANGKA_8__HURUF_k",
@@ -689,16 +640,7 @@
       ],
       "parent_id": "UU_19_2016__HURUF_k",
       "children": [],
-      "references": [
-        {
-          "type": "MENGUBAH_PASAL",
-          "pattern_name": "AMEND_UBAH",
-          "source_component": "UU_19_2016__ANGKA_8__HURUF_k",
-          "source_text": "Ketentuan Pasal 45 diubah",
-          "match_position": 0,
-          "target_article": "Pasal 45"
-        }
-      ]
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_19_2016__PASAL_45",
@@ -714,32 +656,7 @@
       "children": [
         "UU_19_2016__AYAT_5__PASAL_45"
       ],
-      "references": [
-        {
-          "type": "MERUJUK_PASAL",
-          "pattern_name": "INTERNAL_PASAL_REF",
-          "source_component": "UU_19_2016__PASAL_45",
-          "source_text": "sebagaimana dimaksud dalam Pasal 27",
-          "match_position": 220,
-          "target_article": "Pasal 27"
-        },
-        {
-          "type": "MERUJUK_PASAL",
-          "pattern_name": "INTERNAL_PASAL_REF",
-          "source_component": "UU_19_2016__PASAL_45",
-          "source_text": "sebagaimana dimaksud dalam Pasal 27",
-          "match_position": 1005,
-          "target_article": "Pasal 27"
-        },
-        {
-          "type": "MERUJUK_PASAL",
-          "pattern_name": "INTERNAL_PASAL_REF",
-          "source_component": "UU_19_2016__PASAL_45",
-          "source_text": "sebagaimana dimaksud dalam Pasal\n27",
-          "match_position": 1419,
-          "target_article": "Pasal 27"
-        }
-      ]
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_19_2016__AYAT_5__PASAL_45",
@@ -752,7 +669,8 @@
         12
       ],
       "parent_id": "UU_19_2016__PASAL_45",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_19_2016__PASAL_45A",
@@ -766,67 +684,21 @@
       ],
       "parent_id": null,
       "children": [],
-      "references": [
-        {
-          "type": "MERUJUK_PASAL",
-          "pattern_name": "INTERNAL_PASAL_REF",
-          "source_component": "UU_19_2016__PASAL_45A",
-          "source_text": "sebagaimana dimaksud dalam\nPasal 28",
-          "match_position": 153,
-          "target_article": "Pasal 28"
-        },
-        {
-          "type": "MERUJUK_PASAL",
-          "pattern_name": "INTERNAL_PASAL_REF",
-          "source_component": "UU_19_2016__PASAL_45A",
-          "source_text": "sebagaimana dimaksud dalam\nPasal 28",
-          "match_position": 568,
-          "target_article": "Pasal 28"
-        }
-      ]
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_19_2016__PASAL_458",
       "component_type": "PASAL",
       "number": "458",
       "title": null,
-      "content": "Setiap Orang yang dengan sengaja dan tanpa hak\nmengirimkan Informasi Elektronik dan/atau Dokumen\nElektronik yang berisi ancaman kekerasan atau\nmenakut-nakuti yang ditujukan secara pribadi\nsebagaimana dimaksud dalam Pasal 29 dipidana dengan\npidana penjara paling lama 4 (empat) tahun dan/ atau\ndenda paling banyak Rp750.000.000,00 (tujuh ratus lima\npuluh juta rupiah).\nPasal II\nUndang-Undang ini mulai berlaku pada tanggal diundangkan.\n(s)\n(1)\n(21\nAgar\nPRES IDEN\nREPUBLIK INDONESIA\nAgar setiap orang mengetahuinya, memerintahkan\npengundangan Undang-Undang ini dengan penempatannya\ndalam Lembaran Negara Republik Indonesia.\nDisahkan di Jakarta\npada tanggal 25 November 2016\nPRESIDEN REPUBLIK INDONESIA,\nttd\nJOKO WIDODO\nDiundangkan di Jakarta\npada tan[gal 25 November 2016\nMENTERI HUKUM DAN HAKASASI MANUSIA\nREPUBLIK INDONESIA,\nttd\nYASONNA H. LAOLY\nLEMBARAN NEGARA REPUBLIK INDONESIA TAHUN 2016 NOMOR 251\nSalinan sesuai dengan aslinya\nKEMENTERIAN SEKRETARIAT NEGARA\nREPUBLIK INDONESIA\nDeputi Bidang Perekonomian,\n<um dan Perundang-undangan,\nDjaman\nqD\nFRESIDEN\n]\nREPUBLIK INDONESIA\nATAS\nUNDANG-UNDANG REPUBLIK INDONESIA\nNOMOR 19 TAHUN 2016\nTENTANG\nPERUBAHAN ATAS UNDANG-UNDANG\nNOMOR 11 TAHUN 2OO8\nTENTANG INFORMASI DAN TRANSAKSI ELEKTRONIK\nI. UMUM\nBahwa kemerdekaan menyatakan pikiran dan kebebasan berpendapat\nserta hak memperoleh informasi melalui penggunaan dan pemanfaatan\nTeknologi Informasi dan komunikasi ditqiukan untuk memajukan\nkesejahteraan umum, dan mencerdaskan kehidupan bangsa serta\nmemberikan rasa aman, keadilan, dan kepastian hukum bagi pengguna dan\nPenyelenggara Sistem Elektronik.\nDalam kehidupan bermasyarakat, berbangsa, dan bernegara, hak dan\nkebebasan melalui penggunaan dan pemanfaatan Teknologi Informasi\ntersebut dilakukan dengan mempertimbangkan pembatasan yang ditetapkan\ndengan undang-undang dengan maksud semata-mata untuk menjamin\npengakuan serta penghormatan atas hak dan kebebasan orang lain dan\nuntuk memenuhi tuntutan yang adil sesuai dengan pertimbangan moral,\nnilai-nilai agama, keamanan, dan ketertiban umum dalam suatu masyarakat\ndemokratis.\nUndang-Undang Nomor 11 Tahun 2008 tentang Informasi dan\nTransaksi Elektronik (UU ITE) adalah undang-undang pertama di bidang\nTeknologi Informasi dan Transaksi Elektronik sebagai produk legislasi yang\nsangat dibutuhkan dan telah menjadi pionir yang meletakkan dasar\npengaturan di bidang pemanfaatan Teknologi Informasi dan Transaksi\nElektronik. Akan tetapi, dalam kenyataannya, perjalanan implementasi dari\nUU ITE mengalami persoalan-persoalan.\nPertama, terhadap Undang-Undang ini telah diajukan beberapa kali\nuji materiil di Mahkamah Konstitusi dengan Putusan Mahkamah Konstitusi\nNomor 50 / PUU-VI / 2008, Nomor 2 I PUU -VII I 2009, Nomor S / PUU-UII / 20 I O,\ndan Nomor 20IPUU-X.IV /2016.\nBerdasarkan\nPRES IDEI{\nREPUBLIK INDONESIA Berdasarkan Putusan Mahkamah Konstitusi Nomor SO/PUU-VII2OOS\ndan Nomor 2/PUU-VII|2OO9, tindak pidana penghinaan dan pencemaran\nnama baik dalam bidang Informasi Elektronik dan Transaksi Elektronik\nbukan semata-mata sebagai tindak pidana umum, melainkan sebagai delik\naduan. Penegasan mengenai delik aduan dimaksudkan agar selaras dengan\nasas'kepastian hukum dan rasa keadilan masyarakat.\nBerdasarkan Putusan Mahkamah Konstitusi Nomor s/PUU-Vfil I 2OLO,\nMahkamah Konstitusi berpendapat bahwa kegiatan dan kewenangan\npenyadapan merupakan hal yang sangat sensitif karena di satu sisi\nmerupakan pembatasan hak asasi manusia, tetapi di sisi lain memiliki aspek\nkepentingan hukum. Oleh karena itu, pengaturan (regutation) mengenai\nlegalitas penyadapan harus dibentuk dan diformulasikan secara tepat sesuai\ndengan Undang-Undang Dasar Negara Republik Indonesia Tahun 1945. Di\nsamping itu, Mahkamah berpendapat bahwa karena penyadapan merupakan\npelanggaran atas hak asasi manusia sebagaimana ditegaskan dalam Pasal\n28J ayat (2) Undang-Undang Dasar Negara Republik Indonesia Tahun 1945,\nsangat wajar dan sudah sepatutnya jika negara ingin menyimpangi hak\nprivasi warga negara tersebut, negara harrrslah menyimpanginya dalam\nbentuk undang-undang dan bukan dalam bentuk peraturan pemerintah.\nSelain itu, berdasarkan Putusan Mahkamah Konstitusi Nomor\n20lPUU-xrv l2oL6, Mahkamah Konstitusi berpendapat bahwa untuk\nmencegah terjadinya perbedaan penafsiran terhadap Pasal 5 ayat (1) dan\nayat (21 UU ITE, Mahkamah menegaskan bahwa setiap intersepsi harus\ndilakukan secara sah, terlebih lagi dalam rangka penegakan hukum. Oleh\nkarena itu, Mahkamah dalam amar putusannya menambahkan kata atau\nfrasa \"khususnya\" terhadap frasa \"Informasi Elektronik dan/atau Dokumen\nElektronik\". Agar tidak terjadi penafsiran bahwa putusan tersebut akan\nmempersempit makna atau arti yang terdapat di dalam Pasal 5 ayat (1) dan\nayat (2) UU ITE, untuk memberikan kepastian hukum keberadaan Informasi\nElektronik dan/atau Dokumen Elektronik sebagai alat bukti perlu dipertegas\nkembali dalam Penjelasan Pasal 5 UU ITE.\nKedua, ketentuan mengenai penggeledahan, penyitaan, penangkapan,\ndan penahanan yang diatur dalam UU ITE menimbulkan permasalahln bagi\npenyidik karena tindak pidana di bidang Teknologi Informasi dan Transaksi\nElektronik begitu cepat dan pelaku dapat dengan mudah mengaburkan\nperbuatan atau alat bukti kejahatan.\nKetiga . .\nPRES IDEN\nREPUBLIK INDONESIA Ketiga, karakteristik virtualitas ruang siber memungkinkan konten\nilegal seperti Informasi dan/atau Dokumen Elektronik yang memiliki muatan\nyang melanggar kesusilaan, perjudian, penghinaan atau pencemaran nama\nbaik, pemerasan dan/ atau pengancaman, penyebaran berita bohong dan\nmenyesatkan sehingga mengakibatkan kerugian konsumen dalam Transaksi\nElektronik, serta perbuatan menyebarkan kebencian atau permusuhan\nberdasarkan suku, agama, ras, dan golongan, dan pengiriman ancaman\nkekerasan atau menakut-nakuti yang ditujukan secara pribadi dapat\ndiakses, didistribusikan, ditransmisikan, disalin, disimpan untuk\ndidiseminasi kembali dari mana saja dan kapan saja. Dalam rangka\nmelindungi kepentingan umum dari segala jenis gangguan sebagai akibat\npenyalahgunaan Informasi Elektronik dan Transaksi Elektronik, diperlukan\npenegasan peran Pemerintah dalam mencegah penyebarluasan konten ilegal\ndengan melakukan tindakan pemutusan akses terhadap Informasi\nElektronik dan/ atau Dokumen Elektronik yang memiliki muatan yang\nmelanggar hukum agar tidak dapat diakses dari yurisdiksi Indonesia serta\ndibutuhkan kewenangan bagi penyidik untuk meminta informasi yang\nterdapat dalam Penyelenggara Sistem Elektronik untuk kepentingan\npenegakan hukum tindak pidana di bidang Teknologi Informasi dan\nTransaksi Elektronik.\nKeempat, penggunaan setiap informasi melalui media atau Sistem\nElektronik yang menyangkut data pribadi seseorang harus dilakukan atas\npersetujuan Orang yang bersangkutan. Untuk itu, dibutuhkan jaminan\npemenuhan perlindungan diri pribadi dengan mewajibkan setiap\nPenyelenggara Sistem Elektronik untuk menghapus Informasi Elektronik\ndan/ atau Dokumen Elektronik yang tidak relevan yang berada di bawah\nkendalinya atas permintaan Orang yang bersangkutan berdasarkan\npenetapan pengadilan.\nBerdasarkan pertimbangan tersebut, perlu membentuk Undang-\nUndang tentang Perubahan atas Undang-Undang Nomor 1l Tahun 2008\ntentang Informasi dan Transaksi Elektronik yang menegaskan kembali\nketentuan keberadaan Informasi Elektronik dan/atau Dokumen Elektronik\ndalam Penjelasan Pasal 5, menambah ketentuan kewajiban penghapusan\nInformasi Elektronik dan/ atau Dokumen Elektronik yang tidak relevan\ndalam Pasal 26, mengubah ketentuan Pasal 31 ayat (41 mengenai\npendelegasian penJrusunan tata cara intersepsi ke dalam unding-unilang,\nmenambah peran Pemerintah dalam melakukan pencegahan penyebarluasan\ndan penggunaan Informasi Elektronik dan/atau Dokumen Elektronik yang\nmemiliki muatan yang dilarang dalam Pasal 40, mengubah beberapa\nketentuan mengenai penyidikan yang terkait dengan dugaah tindak pidana\ndi bidang Teknologi Informasi dan Transaksi Elektronik dahm Pasal 43, dan\nmenambah penjelasan Pasal 27 ayat (1), ayat (3), dan ayat (4) agar lebih\nharmonis dengan sistem hukum pidana materiil yang diatur di Indonesia.\nII, PASAL. . .\nPRES IDEN\nREPUBLIK INDONESIA II. PASAL DEMI PASAL\nPasal I\nAngka 1",
+      "content": "Setiap Orang yang dengan sengaja dan tanpa hak\nmengirimkan Informasi Elektronik dan/atau Dokumen\nElektronik yang berisi ancaman kekerasan atau\nmenakut-nakuti yang ditujukan secara pribadi\nsebagaimana dimaksud dalam Pasal 29 dipidana dengan\npidana penjara paling lama 4 (empat) tahun dan/ atau\ndenda paling banyak Rp750.000.000,00 (tujuh ratus lima\npuluh juta rupiah).\nPasal II\nUndang-Undang ini mulai berlaku pada tanggal diundangkan.\n(s)\n(1)\n(21\nAgar\nPRES IDEN\nREPUBLIK INDONESIA\nAgar setiap orang mengetahuinya, memerintahkan\npengundangan Undang-Undang ini dengan penempatannya\ndalam Lembaran Negara Republik Indonesia.\nDisahkan di Jakarta\npada tanggal 25 November 2016\nPRESIDEN REPUBLIK INDONESIA,\nttd\nJOKO WIDODO\nDiundangkan di Jakarta\npada tan[gal 25 November 2016\nMENTERI HUKUM DAN HAKASASI MANUSIA\nREPUBLIK INDONESIA,\nttd\nYASONNA H. LAOLY\nLEMBARAN NEGARA REPUBLIK INDONESIA TAHUN 2016 NOMOR 251\nSalinan sesuai dengan aslinya\nKEMENTERIAN SEKRETARIAT NEGARA\nREPUBLIK INDONESIA\nDeputi Bidang Perekonomian,\n<um dan Perundang-undangan,\nDjaman\nqD\nFRESIDEN\n]\nREPUBLIK INDONESIA\nPENJELASAN\nATAS\nUNDANG-UNDANG REPUBLIK INDONESIA\nNOMOR 19 TAHUN 2016\nTENTANG\nPERUBAHAN ATAS UNDANG-UNDANG\nNOMOR 11 TAHUN 2OO8\nTENTANG INFORMASI DAN TRANSAKSI ELEKTRONIK\nI. UMUM\nBahwa kemerdekaan menyatakan pikiran dan kebebasan berpendapat\nserta hak memperoleh informasi melalui penggunaan dan pemanfaatan\nTeknologi Informasi dan komunikasi ditqiukan untuk memajukan\nkesejahteraan umum, dan mencerdaskan kehidupan bangsa serta\nmemberikan rasa aman, keadilan, dan kepastian hukum bagi pengguna dan\nPenyelenggara Sistem Elektronik.\nDalam kehidupan bermasyarakat, berbangsa, dan bernegara, hak dan\nkebebasan melalui penggunaan dan pemanfaatan Teknologi Informasi\ntersebut dilakukan dengan mempertimbangkan pembatasan yang ditetapkan\ndengan undang-undang dengan maksud semata-mata untuk menjamin\npengakuan serta penghormatan atas hak dan kebebasan orang lain dan\nuntuk memenuhi tuntutan yang adil sesuai dengan pertimbangan moral,\nnilai-nilai agama, keamanan, dan ketertiban umum dalam suatu masyarakat\ndemokratis.\nUndang-Undang Nomor 11 Tahun 2008 tentang Informasi dan\nTransaksi Elektronik (UU ITE) adalah undang-undang pertama di bidang\nTeknologi Informasi dan Transaksi Elektronik sebagai produk legislasi yang\nsangat dibutuhkan dan telah menjadi pionir yang meletakkan dasar\npengaturan di bidang pemanfaatan Teknologi Informasi dan Transaksi\nElektronik. Akan tetapi, dalam kenyataannya, perjalanan implementasi dari\nUU ITE mengalami persoalan-persoalan.\nPertama, terhadap Undang-Undang ini telah diajukan beberapa kali\nuji materiil di Mahkamah Konstitusi dengan Putusan Mahkamah Konstitusi\nNomor 50 / PUU-VI / 2008, Nomor 2 I PUU -VII I 2009, Nomor S / PUU-UII / 20 I O,\ndan Nomor 20IPUU-X.IV /2016.\nBerdasarkan\nPRES IDEI{\nREPUBLIK INDONESIA Berdasarkan Putusan Mahkamah Konstitusi Nomor SO/PUU-VII2OOS\ndan Nomor 2/PUU-VII|2OO9, tindak pidana penghinaan dan pencemaran\nnama baik dalam bidang Informasi Elektronik dan Transaksi Elektronik\nbukan semata-mata sebagai tindak pidana umum, melainkan sebagai delik\naduan. Penegasan mengenai delik aduan dimaksudkan agar selaras dengan\nasas'kepastian hukum dan rasa keadilan masyarakat.\nBerdasarkan Putusan Mahkamah Konstitusi Nomor s/PUU-Vfil I 2OLO,\nMahkamah Konstitusi berpendapat bahwa kegiatan dan kewenangan\npenyadapan merupakan hal yang sangat sensitif karena di satu sisi\nmerupakan pembatasan hak asasi manusia, tetapi di sisi lain memiliki aspek\nkepentingan hukum. Oleh karena itu, pengaturan (regutation) mengenai\nlegalitas penyadapan harus dibentuk dan diformulasikan secara tepat sesuai\ndengan Undang-Undang Dasar Negara Republik Indonesia Tahun 1945. Di\nsamping itu, Mahkamah berpendapat bahwa karena penyadapan merupakan\npelanggaran atas hak asasi manusia sebagaimana ditegaskan dalam Pasal\n28J ayat (2) Undang-Undang Dasar Negara Republik Indonesia Tahun 1945,\nsangat wajar dan sudah sepatutnya jika negara ingin menyimpangi hak\nprivasi warga negara tersebut, negara harrrslah menyimpanginya dalam\nbentuk undang-undang dan bukan dalam bentuk peraturan pemerintah.\nSelain itu, berdasarkan Putusan Mahkamah Konstitusi Nomor\n20lPUU-xrv l2oL6, Mahkamah Konstitusi berpendapat bahwa untuk\nmencegah terjadinya perbedaan penafsiran terhadap Pasal 5 ayat (1) dan\nayat (21 UU ITE, Mahkamah menegaskan bahwa setiap intersepsi harus\ndilakukan secara sah, terlebih lagi dalam rangka penegakan hukum. Oleh\nkarena itu, Mahkamah dalam amar putusannya menambahkan kata atau\nfrasa \"khususnya\" terhadap frasa \"Informasi Elektronik dan/atau Dokumen\nElektronik\". Agar tidak terjadi penafsiran bahwa putusan tersebut akan\nmempersempit makna atau arti yang terdapat di dalam Pasal 5 ayat (1) dan\nayat (2) UU ITE, untuk memberikan kepastian hukum keberadaan Informasi\nElektronik dan/atau Dokumen Elektronik sebagai alat bukti perlu dipertegas\nkembali dalam Penjelasan Pasal 5 UU ITE.\nKedua, ketentuan mengenai penggeledahan, penyitaan, penangkapan,\ndan penahanan yang diatur dalam UU ITE menimbulkan permasalahln bagi\npenyidik karena tindak pidana di bidang Teknologi Informasi dan Transaksi\nElektronik begitu cepat dan pelaku dapat dengan mudah mengaburkan\nperbuatan atau alat bukti kejahatan.\nKetiga . .\nPRES IDEN\nREPUBLIK INDONESIA Ketiga, karakteristik virtualitas ruang siber memungkinkan konten\nilegal seperti Informasi dan/atau Dokumen Elektronik yang memiliki muatan\nyang melanggar kesusilaan, perjudian, penghinaan atau pencemaran nama\nbaik, pemerasan dan/ atau pengancaman, penyebaran berita bohong dan\nmenyesatkan sehingga mengakibatkan kerugian konsumen dalam Transaksi\nElektronik, serta perbuatan menyebarkan kebencian atau permusuhan\nberdasarkan suku, agama, ras, dan golongan, dan pengiriman ancaman\nkekerasan atau menakut-nakuti yang ditujukan secara pribadi dapat\ndiakses, didistribusikan, ditransmisikan, disalin, disimpan untuk\ndidiseminasi kembali dari mana saja dan kapan saja. Dalam rangka\nmelindungi kepentingan umum dari segala jenis gangguan sebagai akibat\npenyalahgunaan Informasi Elektronik dan Transaksi Elektronik, diperlukan\npenegasan peran Pemerintah dalam mencegah penyebarluasan konten ilegal\ndengan melakukan tindakan pemutusan akses terhadap Informasi\nElektronik dan/ atau Dokumen Elektronik yang memiliki muatan yang\nmelanggar hukum agar tidak dapat diakses dari yurisdiksi Indonesia serta\ndibutuhkan kewenangan bagi penyidik untuk meminta informasi yang\nterdapat dalam Penyelenggara Sistem Elektronik untuk kepentingan\npenegakan hukum tindak pidana di bidang Teknologi Informasi dan\nTransaksi Elektronik.\nKeempat, penggunaan setiap informasi melalui media atau Sistem\nElektronik yang menyangkut data pribadi seseorang harus dilakukan atas\npersetujuan Orang yang bersangkutan. Untuk itu, dibutuhkan jaminan\npemenuhan perlindungan diri pribadi dengan mewajibkan setiap\nPenyelenggara Sistem Elektronik untuk menghapus Informasi Elektronik\ndan/ atau Dokumen Elektronik yang tidak relevan yang berada di bawah\nkendalinya atas permintaan Orang yang bersangkutan berdasarkan\npenetapan pengadilan.\nBerdasarkan pertimbangan tersebut, perlu membentuk Undang-\nUndang tentang Perubahan atas Undang-Undang Nomor 1l Tahun 2008\ntentang Informasi dan Transaksi Elektronik yang menegaskan kembali\nketentuan keberadaan Informasi Elektronik dan/atau Dokumen Elektronik\ndalam Penjelasan Pasal 5, menambah ketentuan kewajiban penghapusan\nInformasi Elektronik dan/ atau Dokumen Elektronik yang tidak relevan\ndalam Pasal 26, mengubah ketentuan Pasal 31 ayat (41 mengenai\npendelegasian penJrusunan tata cara intersepsi ke dalam unding-unilang,\nmenambah peran Pemerintah dalam melakukan pencegahan penyebarluasan\ndan penggunaan Informasi Elektronik dan/atau Dokumen Elektronik yang\nmemiliki muatan yang dilarang dalam Pasal 40, mengubah beberapa\nketentuan mengenai penyidikan yang terkait dengan dugaah tindak pidana\ndi bidang Teknologi Informasi dan Transaksi Elektronik dahm Pasal 43, dan\nmenambah penjelasan Pasal 27 ayat (1), ayat (3), dan ayat (4) agar lebih\nharmonis dengan sistem hukum pidana materiil yang diatur di Indonesia.\nII, PASAL. . .\nPRES IDEN\nREPUBLIK INDONESIA II. PASAL DEMI PASAL\nPasal I\nAngka 1",
       "page_range": [
         12,
         17
       ],
       "parent_id": null,
       "children": [],
-      "references": [
-        {
-          "type": "MERUJUK_DOKUMEN",
-          "pattern_name": "UU_REF",
-          "source_component": "UU_19_2016__PASAL_458",
-          "source_text": "Undang-Undang Nomor 11 Tahun 2008",
-          "match_position": 2078,
-          "target_doc_id": "UU_11_2008",
-          "target_number": "11",
-          "target_year": "2008"
-        },
-        {
-          "type": "MERUJUK_DOKUMEN",
-          "pattern_name": "UU_REF",
-          "source_component": "UU_19_2016__PASAL_458",
-          "source_text": "Undang-Undang Nomor 1l Tahun 2008",
-          "match_position": 7118,
-          "target_doc_id": "UU_11_2008",
-          "target_number": "11",
-          "target_year": "2008"
-        },
-        {
-          "type": "MERUJUK_PASAL",
-          "pattern_name": "INTERNAL_PASAL_REF",
-          "source_component": "UU_19_2016__PASAL_458",
-          "source_text": "sebagaimana dimaksud dalam Pasal 29",
-          "match_position": 188,
-          "target_article": "Pasal 29"
-        }
-      ]
+      "is_penjelasan": false
     },
     {
       "component_id": "UU_19_2016__PASAL_1",
@@ -839,7 +711,8 @@
         17
       ],
       "parent_id": null,
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "UU_19_2016__PASAL_5",
@@ -852,7 +725,8 @@
         18
       ],
       "parent_id": null,
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "UU_19_2016__PASAL_26",
@@ -869,7 +743,8 @@
         "UU_19_2016__HURUF_a__PASAL_26",
         "UU_19_2016__HURUF_b__PASAL_26",
         "UU_19_2016__HURUF_c__PASAL_26"
-      ]
+      ],
+      "is_penjelasan": true
     },
     {
       "component_id": "UU_19_2016__HURUF_a__PASAL_26",
@@ -882,7 +757,8 @@
         18
       ],
       "parent_id": "UU_19_2016__PASAL_26",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "UU_19_2016__HURUF_b__PASAL_26",
@@ -895,7 +771,8 @@
         18
       ],
       "parent_id": "UU_19_2016__PASAL_26",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "UU_19_2016__HURUF_c__PASAL_26",
@@ -908,7 +785,8 @@
         19
       ],
       "parent_id": "UU_19_2016__PASAL_26",
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "UU_19_2016__PASAL_31",
@@ -921,7 +799,8 @@
         19
       ],
       "parent_id": null,
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "UU_19_2016__PASAL_40",
@@ -934,7 +813,8 @@
         20
       ],
       "parent_id": null,
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "UU_19_2016__PASAL_43",
@@ -947,7 +827,8 @@
         21
       ],
       "parent_id": null,
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "UU_19_2016__PASAL_45",
@@ -960,7 +841,8 @@
         21
       ],
       "parent_id": null,
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     },
     {
       "component_id": "UU_19_2016__PASAL_45A",
@@ -973,15 +855,8 @@
         21
       ],
       "parent_id": null,
-      "children": []
+      "children": [],
+      "is_penjelasan": true
     }
-  ],
-  "reference_summary": {
-    "total_references": 18,
-    "by_type": {
-      "MERUJUK_DOKUMEN": 4,
-      "MENGUBAH_PASAL": 8,
-      "MERUJUK_PASAL": 6
-    }
-  }
+  ]
 }

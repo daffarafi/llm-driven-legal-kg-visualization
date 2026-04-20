@@ -51,7 +51,8 @@ HEADER_FOOTER_PATTERNS = [
     r"^LEMBARAN\s+NEGARA\s+REPUBLIK\s+INDONESIA$",   # gazette header  
     r"^\s*\.{3,}\s*$",                                # dots separator
     r"^TAMBAHAN\s+LEMBARAN\s+NEGARA",                 # supplement gazette
-    r"^PENJELASAN\s*(ATAS)?$",                         # explanation header
+    # NOTE: PENJELASAN is intentionally NOT stripped here.
+    # It is detected by the structure_parser to mark Penjelasan sections.
 ]
 
 HEADER_FOOTER_RE = [re.compile(p, re.IGNORECASE | re.MULTILINE) for p in HEADER_FOOTER_PATTERNS]
@@ -124,6 +125,8 @@ def parse_uu_metadata_from_filename(pdf_path: str) -> dict:
     PATTERNS = [
         # "UU Nomor X Tahun YYYY"
         (r"(?:UU|Undang.Undang)\s*(?:Nomor|No\.?)\s*(\d+)\s*(?:Tahun)\s*(\d{4})", "UU"),
+        # "POJK 11 - 03 - 2022" or "POJK Nomor 11/POJK.03/2022"
+        (r"POJK\s*(\d+)\s*[-/]\s*(?:POJK\.?)?\s*0?3?\s*[-/]\s*(\d{4})", "POJK"),
         # "PP Nomor X Tahun YYYY"
         (r"PP\s*(?:Nomor|No\.?)\s*(\d+)\s*(?:Tahun)\s*(\d{4})", "PP"),
         # "Perpres Nomor X Tahun YYYY"
@@ -233,6 +236,14 @@ def extract_pdf(pdf_path: str, scanned_threshold: int = 50) -> ExtractedDocument
     )
     if title_match:
         metadata["title"] = f"Undang-Undang Nomor {metadata['uu_number']} tentang {title_match.group(1).strip()}"
+    else:
+        # Try POJK title pattern
+        pojk_match = re.search(
+            r"PERATURAN\s+OTORITAS\s+JASA\s+KEUANGAN.*?TENTANG\s+(.+?)(?:\n|$)",
+            first_page_text, re.IGNORECASE | re.DOTALL
+        )
+        if pojk_match:
+            metadata["title"] = f"POJK Nomor {metadata['uu_number']} tentang {pojk_match.group(1).strip()}"
     
     return ExtractedDocument(
         **metadata,

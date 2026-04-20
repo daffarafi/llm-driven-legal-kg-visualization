@@ -152,15 +152,15 @@ class Neo4jLoader:
                         tqdm.write(f"  [WARN] Edge {source_id} -[{edge_type}]-> {target_id}: {e}")
     
     def load_amendment_kg(self, amendments: list[dict]):
-        """Load amendment relationships between UU nodes.
+        """Load amendment relationships between regulation nodes.
         
         Types: MENGAMANDEMEN, MENGAMANDEMEN_SEBAGIAN, MENCABUT, MENCABUT_SEBAGIAN
         """
         with self._session() as session:
             for amend in amendments:
                 cypher = f"""
-                    MERGE (a:Entity:UndangUndang {{uu_number: $source_uu}})
-                    MERGE (b:Entity:UndangUndang {{uu_number: $target_uu}})
+                    MERGE (a:Entity:Regulasi {{uu_number: $source_uu}})
+                    MERGE (b:Entity:Regulasi {{uu_number: $target_uu}})
                     MERGE (a)-[:{amend['relation_type']}]->(b)
                 """
                 session.run(

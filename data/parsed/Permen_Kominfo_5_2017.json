@@ -17,7 +17,8 @@
         3
       ],
       "parent_id": null,
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "Permen_Kominfo_5_2017__ANGKA_11",
@@ -30,7 +31,8 @@
         3
       ],
       "parent_id": null,
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "Permen_Kominfo_5_2017__ANGKA_12",
@@ -43,7 +45,8 @@
         4
       ],
       "parent_id": null,
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "Permen_Kominfo_5_2017__PASAL_1",
@@ -61,7 +64,8 @@
         "Permen_Kominfo_5_2017__ANGKA_11__PASAL_1",
         "Permen_Kominfo_5_2017__ANGKA_12__PASAL_1",
         "Permen_Kominfo_5_2017__ANGKA_13"
-      ]
+      ],
+      "is_penjelasan": false
     },
     {
       "component_id": "Permen_Kominfo_5_2017__ANGKA_10__PASAL_1",
@@ -74,7 +78,8 @@
         6
       ],
       "parent_id": "Permen_Kominfo_5_2017__PASAL_1",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "Permen_Kominfo_5_2017__ANGKA_11__PASAL_1",
@@ -87,7 +92,8 @@
         6
       ],
       "parent_id": "Permen_Kominfo_5_2017__PASAL_1",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "Permen_Kominfo_5_2017__ANGKA_12__PASAL_1",
@@ -100,7 +106,8 @@
         6
       ],
       "parent_id": "Permen_Kominfo_5_2017__PASAL_1",
-      "children": []
+      "children": [],
+      "is_penjelasan": false
     },
     {
       "component_id": "Permen_Kominfo_5_2017__ANGKA_13",
@@ -114,16 +121,7 @@
       ],
       "parent_id": "Permen_Kominfo_5_2017__PASAL_1",
       "children": [],
-      "references": [
-        {
-          "type": "MENGUBAH_PASAL",
-          "pattern_name": "AMEND_UBAH",
-          "source_component": "Permen_Kominfo_5_2017__ANGKA_13",
-          "source_text": "Pasal 12 diubah",
-          "match_position": 137,
-          "target_article": "Pasal 12"
-        }
-      ]
+      "is_penjelasan": false
     },
     {
       "component_id": "Permen_Kominfo_5_2017__PASAL_12",
@@ -137,32 +135,7 @@
       ],
       "parent_id": null,
       "children": [],
-      "references": [
-        {
-          "type": "MENGUBAH_PASAL",
-          "pattern_name": "AMEND_UBAH",
-          "source_component": "Permen_Kominfo_5_2017__PASAL_12",
-          "source_text": "Ketentuan Pasal 17 diubah",
-          "match_position": 330,
-          "target_article": "Pasal 17"
-        },
-        {
-          "type": "MERUJUK_PASAL",
-          "pattern_name": "INTERNAL_PASAL_REF",
-          "source_component": "Permen_Kominfo_5_2017__PASAL_12",
-          "source_text": "sebagaimana\ndimaksud dalam Pasal 11",
-          "match_position": 76,
-          "target_article": "Pasal 11"
-        },
-        {
-          "type": "MERUJUK_PASAL",
-          "pattern_name": "INTERNAL_PASAL_REF",
-          "source_component": "Permen_Kominfo_5_2017__PASAL_12",
-          "source_text": "sebagaimana dimaksud dalam Pasal 11",
-          "match_position": 164,
-          "target_article": "Pasal 11"
-        }
-      ]
+      "is_penjelasan": false
     },
     {
       "component_id": "Permen_Kominfo_5_2017__PASAL_17",
@@ -176,23 +149,7 @@
       ],
       "parent_id": null,
       "children": [],
-      "references": [
-        {
-          "type": "MERUJUK_PASAL",
-          "pattern_name": "INTERNAL_PASAL_REF",
-          "source_component": "Permen_Kominfo_5_2017__PASAL_17",
-          "source_text": "sebagaimana dimaksud dalam Pasal 6",
-          "match_position": 45,
-          "target_article": "Pasal 6"
-        }
-      ]
+      "is_penjelasan": false
     }
-  ],
-  "reference_summary": {
-    "total_references": 5,
-    "by_type": {
-      "MENGUBAH_PASAL": 2,
-      "MERUJUK_PASAL": 3
-    }
-  }
+  ]
 }

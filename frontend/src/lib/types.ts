@@ -159,7 +159,7 @@ export interface ForceGraphNode extends GraphNode {
 
 // Node type color mapping
 export const NODE_COLORS: Record<string, string> = {
-  UndangUndang: "#3b82f6",   // blue
+  Regulasi: "#3b82f6",       // blue
   Bab: "#8b5cf6",            // purple
   Bagian: "#a78bfa",         // light purple
   Pasal: "#22c55e",          // green
@@ -168,20 +168,19 @@ export const NODE_COLORS: Record<string, string> = {
   PerbuatanHukum: "#ef4444", // red
   Sanksi: "#dc2626",         // dark red
   KonsepHukum: "#eab308",    // yellow
-  Peraturan: "#06b6d4",      // cyan
   VersiPasal: "#14b8a6",     // teal
 };
 
 export const NODE_SIZES: Record<string, number> = {
-  UndangUndang: 8,
+  Regulasi: 8,
   Bab: 5,
+  Bagian: 4,
   Pasal: 4,
   Ayat: 3,
   EntitasHukum: 5,
   PerbuatanHukum: 4,
   Sanksi: 4,
   KonsepHukum: 4,
-  Peraturan: 10,
   VersiPasal: 5,
 };
 
@@ -197,4 +196,5 @@ export const DOC_COLORS: Record<string, string> = {
   Perpres_95_2018: "#f97316",
   Perpres_132_2022: "#ea580c",
   Permen_Kominfo_5_2017: "#eab308",
+  POJK_11_2022: "#06b6d4",
 };
