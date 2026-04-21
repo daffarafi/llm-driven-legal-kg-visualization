@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect, useCallback, useMemo } from "react";
 import dynamic from "next/dynamic";
+import ReactMarkdown from "react-markdown";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
@@ -62,31 +63,87 @@ function ProcessSteps({ steps }: { steps: QAProcessStep[] }) {
   );
 }
 
-/* ─── Answer Content ─── */
+/* ─── Answer Content (with Markdown rendering) ─── */
 function AnswerContent({ text, references, onNodeSelect }: {
   text: string;
   references: string[];
   onNodeSelect?: (label: string) => void;
 }) {
-  const parts = text.split(/(Pasal\s+\d+(?:\s+ayat\s+\(\d+\))?)/gi);
+  // Custom renderer: make "Pasal X" clickable inside markdown
+  const renderTextWithRefs = useCallback((text: string) => {
+    const parts = text.split(/(Pasal\s+\d+(?:\s+ayat\s+\(\d+\))?)/gi);
+    return parts.map((part, i) => {
+      const isRef = /^Pasal\s+\d+/i.test(part);
+      if (isRef) {
+        return (
+          <button
+            key={i}
+            onClick={() => onNodeSelect?.(part)}
+            className="text-amber-500 font-medium hover:underline hover:text-amber-400 cursor-pointer transition-colors"
+          >
+            {part}
+          </button>
+        );
+      }
+      return <span key={i}>{part}</span>;
+    });
+  }, [onNodeSelect]);
+
+  // Custom markdown components to inject Pasal reference handling
+  const mdComponents = useMemo(() => ({
+    p: ({ children, ...props }: any) => {
+      return (
+        <p className="mb-2 last:mb-0" {...props}>
+          {processChildren(children)}
+        </p>
+      );
+    },
+    li: ({ children, ...props }: any) => {
+      return (
+        <li className="ml-4 mb-1" {...props}>
+          {processChildren(children)}
+        </li>
+      );
+    },
+    strong: ({ children, ...props }: any) => (
+      <strong className="font-semibold text-foreground" {...props}>{children}</strong>
+    ),
+    ul: ({ children, ...props }: any) => (
+      <ul className="list-disc pl-4 mb-2" {...props}>{children}</ul>
+    ),
+    ol: ({ children, ...props }: any) => (
+      <ol className="list-decimal pl-4 mb-2" {...props}>{children}</ol>
+    ),
+    h1: ({ children, ...props }: any) => (
+      <h1 className="text-base font-bold mb-2 mt-3" {...props}>{children}</h1>
+    ),
+    h2: ({ children, ...props }: any) => (
+      <h2 className="text-sm font-bold mb-1.5 mt-2" {...props}>{children}</h2>
+    ),
+    h3: ({ children, ...props }: any) => (
+      <h3 className="text-sm font-semibold mb-1 mt-2" {...props}>{children}</h3>
+    ),
+  }), []);
+
+  // Process children to make Pasal references clickable
+  function processChildren(children: any): any {
+    if (!children) return children;
+    if (typeof children === "string") {
+      return renderTextWithRefs(children);
+    }
+    if (Array.isArray(children)) {
+      return children.map((child, i) => {
+        if (typeof child === "string") return renderTextWithRefs(child);
+        return child;
+      });
+    }
+    return children;
+  }
+
   return (
     <div>
-      <div className="text-sm leading-relaxed whitespace-pre-wrap">
-        {parts.map((part, i) => {
-          const isRef = /^Pasal\s+\d+/i.test(part);
-          if (isRef) {
-            return (
-              <button
-                key={i}
-                onClick={() => onNodeSelect?.(part)}
-                className="text-amber-500 font-medium hover:underline hover:text-amber-400 cursor-pointer transition-colors"
-              >
-                {part}
-              </button>
-            );
-          }
-          return <span key={i}>{part}</span>;
-        })}
+      <div className="text-sm leading-relaxed prose-sm">
+        <ReactMarkdown components={mdComponents}>{text}</ReactMarkdown>
       </div>
       {references.length > 0 && (
         <div className="mt-3 pt-2 border-t border-border/40">

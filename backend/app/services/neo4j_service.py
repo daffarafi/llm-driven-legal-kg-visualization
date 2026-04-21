@@ -340,8 +340,18 @@ class Neo4jService:
     @classmethod
     def execute_cypher(cls, cypher: str) -> list[dict]:
         """Execute a Cypher query and return results."""
+        import logging
+        logger = logging.getLogger(__name__)
+        logger.info(f"=== EXECUTE CYPHER ===")
+        logger.info(f"Query ({len(cypher)} chars): {cypher[:300]}")
         with cls.get_session() as s:
             try:
-                return s.run(cypher).data()
+                results = s.run(cypher).data()
+                logger.info(f"Results: {len(results)} rows")
+                if results:
+                    logger.info(f"First row keys: {list(results[0].keys())}")
+                    logger.info(f"First row: {str(results[0])[:200]}")
+                return results
             except Exception as e:
+                logger.error(f"Cypher execution error: {e}")
                 return [{"error": str(e)}]

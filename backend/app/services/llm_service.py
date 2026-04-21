@@ -156,28 +156,35 @@ class LLMService:
     @classmethod
     async def generate_cypher(cls, question: str) -> dict:
         """Generate Cypher query from natural language question."""
+        import logging
+        logger = logging.getLogger(__name__)
+
         model = cls._get_model()
 
-        prompt = f"Question: {question}\n\nGenerate a Cypher query to answer the above question. Output ONLY the raw query."
+        prompt = f"Question: {question}\n\nGenerate a Cypher query to answer the above question. Output ONLY the raw Cypher query, nothing else."
 
         try:
             response = model.generate_content(
                 [QUERY_SYSTEM, prompt],
-                generation_config={"temperature": 0.1, "max_output_tokens": 1024},
+                generation_config={"temperature": 0.0, "max_output_tokens": 2048},
             )
             cypher = cls._clean_cypher(response.text.strip())
+            logger.info(f"Generated Cypher (attempt 1): {cypher}")
 
             # Validate: must contain RETURN and have balanced parentheses
             if not cls._is_valid_cypher(cypher):
+                logger.warning(f"Invalid Cypher (attempt 1), retrying: {cypher}")
                 # Retry with simpler prompt
                 retry_prompt = (
-                    f"Question: {question}\n\nWrite a SIMPLE Cypher query (1-3 lines) for Neo4j. Write MATCH ... RETURN ... LIMIT 10 directly. NO markdown, NO explanation."
+                    f"Question: {question}\n\nWrite a SIMPLE Cypher query (1-3 lines) for Neo4j. "
+                    f"Write MATCH ... RETURN ... LIMIT 25 directly. NO markdown, NO explanation, NO thinking."
                 )
                 response = model.generate_content(
                     [QUERY_SYSTEM, retry_prompt],
-                    generation_config={"temperature": 0.0, "max_output_tokens": 512},
+                    generation_config={"temperature": 0.0, "max_output_tokens": 2048},
                 )
                 cypher = cls._clean_cypher(response.text.strip())
+                logger.info(f"Generated Cypher (attempt 2): {cypher[:200]}")
 
             return {"cypher": cypher, "status": "ok"}
         except Exception as e:

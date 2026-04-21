@@ -106,7 +106,7 @@ cd pipeline
 pip install -r requirements.txt
 python run_pipeline.py --config config.yaml
 
-# 3. Backend (Task 4)
+# 3. Backend (Task 4)     
 cd backend
 pip install -r requirements.txt
 uvicorn app.main:app --reload --port 8000
