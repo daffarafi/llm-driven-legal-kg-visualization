@@ -18,7 +18,7 @@ def _format_kg_context(records: list[dict]) -> str:
         parts = []
         for k, v in r.items():
             if v is not None and k != "error":
-                val = str(v)[:300]
+                val = str(v)
                 parts.append(f"{k}: {val}")
         lines.append(f"{i}. " + " | ".join(parts))
     return "\n".join(lines)

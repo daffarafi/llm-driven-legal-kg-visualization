@@ -86,7 +86,7 @@ def fetch_question_to_cypher_prompt(prompt_id: str) -> Dict[str, str]:
     Returns:
         Dict with keys: PROMPT_ID, SYSTEM_PROMPT, USER_PROMPT
     """
-    return fetch_prompt("QUESTION_TO_CYPHER_PROMPT", prompt_id)
+    return fetch_prompt("QUESTION_TO_CYPHER_QUERY_PROMPT_TEMPLATE", prompt_id)
 
 
 def fetch_query_result_to_answer_prompt(prompt_id: str) -> Dict[str, str]:

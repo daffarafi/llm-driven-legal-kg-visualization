@@ -67,10 +67,11 @@ Given a user question about Indonesian law, generate a Cypher query to retrieve 
 
 ## STRICT OUTPUT RULES
 1. Output ONLY the raw Cypher query. NO markdown, NO ```, NO explanation.
-2. ALWAYS use CONTAINS (case-insensitive matching) for label/content filters. NEVER use exact match (=) on labels.
+2. For label filters: use toLower() with exact match (=) for Bab labels (e.g., toLower(b.label) = 'bab vii') and single-number Pasal labels (e.g., toLower(p.label) = 'pasal 3'). Use CONTAINS only for multi-word/ayat searches (e.g., p.label CONTAINS 'Pasal 27').
 3. ALWAYS end with LIMIT 25.
 4. Query must be syntactically valid (balanced parentheses, MATCH + RETURN).
 5. Use toLower() for case-insensitive matching.
+6. Node labels do NOT contain regulation names like "UU ITE" or "UU No. 11 Tahun 2008". Strip these from the search filter. Example: "Pasal 1 UU ITE" → filter by 'pasal 1' only.
 
 ## QUERY PATTERNS
 
@@ -90,14 +91,16 @@ MATCH (a)-[:MERUJUK]->(target), (a)-[:MENETAPKAN_SANKSI]->(sk:Sanksi) WHERE toLo
 
 ### Pattern 3: What articles are in a chapter?
 Note: Some Bab have Bagian sub-sections. Use OPTIONAL MATCH for both direct and Bagian-contained Pasal.
+IMPORTANT: Use EXACT MATCH (=) for Bab labels to avoid substring collisions (e.g., 'bab vii' CONTAINS also matches 'bab viii').
 Question: "Pasal apa saja di Bab XI?"
-MATCH (b:Bab) WHERE toLower(b.label) CONTAINS 'xi' OPTIONAL MATCH (b)-[:MEMUAT]->(p1:Pasal) OPTIONAL MATCH (b)-[:MEMUAT]->(bg:Bagian)-[:MEMUAT]->(p2:Pasal) WITH b, COLLECT(DISTINCT p1) + COLLECT(DISTINCT p2) AS pasals UNWIND pasals AS p RETURN b.label AS bab, p.label AS pasal, p.content AS isi ORDER BY p.label LIMIT 25
+MATCH (b:Bab) WHERE toLower(b.label) = 'bab xi' OPTIONAL MATCH (b)-[:MEMUAT]->(p1:Pasal) OPTIONAL MATCH (b)-[:MEMUAT]->(bg:Bagian)-[:MEMUAT]->(p2:Pasal) WITH b, COLLECT(DISTINCT p1) + COLLECT(DISTINCT p2) AS pasals UNWIND pasals AS p RETURN b.label AS bab, p.label AS pasal, p.content AS isi ORDER BY p.label LIMIT 25
 
 ### Pattern 4: What is the definition of a concept?
 Question: "Apa definisi Informasi Elektronik?"
 MATCH (p)-[:MENDEFINISIKAN]->(k:KonsepHukum) WHERE toLower(k.label) CONTAINS 'informasi elektronik' RETURN p.label AS pasal, k.label AS konsep, k.content AS definisi LIMIT 25
 
 ### Pattern 5: Who does a provision apply to?
+IMPORTANT: BERLAKU_UNTUK edges are usually on Ayat nodes (e.g., "Pasal 45 ayat (1)"), NOT on Pasal nodes directly. Always use CONTAINS to match both Pasal and Ayat.
 Question: "Pasal 45 berlaku untuk siapa?"
 MATCH (a)-[:BERLAKU_UNTUK]->(e:EntitasHukum) WHERE a.label CONTAINS 'Pasal 45' RETURN a.label AS pasal_ayat, e.label AS subjek LIMIT 25
 
@@ -113,15 +116,31 @@ MATCH (n) WHERE toLower(n.label) CONTAINS 'transaksi elektronik' OR toLower(n.co
 Question: "Apa saja perbuatan yang dilarang?"
 MATCH (p)-[:MENGATUR]->(ph:PerbuatanHukum) RETURN p.label AS pasal, ph.label AS perbuatan LIMIT 25
 
+### Pattern 9: List ayat in a Pasal
+IMPORTANT: Use [:MEMILIKI_AYAT] (NOT [:MEMUAT]) for the Pasal→Ayat relationship.
+Question: "Pasal 27 ayat berapa saja?"
+MATCH (p:Pasal)-[:MEMILIKI_AYAT]->(a:Ayat) WHERE toLower(p.label) CONTAINS 'pasal 27' RETURN p.label AS pasal, a.label AS ayat, a.content AS isi ORDER BY a.label LIMIT 25
+
+### Pattern 10: Which Bab contains a Pasal?
+Question: "Pasal 3 ada di bab berapa?"
+MATCH (b:Bab)-[:MEMUAT]->(p:Pasal) WHERE toLower(p.label) = 'pasal 3' RETURN b.label AS bab, p.label AS pasal LIMIT 25
+
+### Pattern 11: Read content of a Pasal
+Question: "Apa bunyi Pasal 1?"
+MATCH (p:Pasal) WHERE toLower(p.label) = 'pasal 1' RETURN p.label AS pasal, p.content AS isi LIMIT 25
+
 ## COMMON MISTAKES TO AVOID
-- Do NOT use exact match: WHERE n.label = 'Pasal 27' (WRONG — use CONTAINS)
+- Do NOT use CONTAINS for Bab labels: WHERE toLower(b.label) CONTAINS 'bab vii' (WRONG — also matches 'bab viii'). Use exact match: = 'bab vii'
+- Do NOT use CONTAINS for single-digit Pasal: WHERE toLower(p.label) CONTAINS 'pasal 3' (WRONG — also matches 'pasal 30'-'pasal 39'). Use exact match: = 'pasal 3'
 - Do NOT forget LIMIT: Always add LIMIT 25
 - Do NOT assume MENGATUR and MENETAPKAN_SANKSI are on the SAME node — they are usually on DIFFERENT nodes connected by MERUJUK
 - Do NOT query only Pasal for sanctions — most MENETAPKAN_SANKSI edges are on Ayat nodes
 - Do NOT use node types that don't exist (e.g., Peraturan, VersiPasal are NOT in this database)
+- Do NOT use [:MEMUAT] for Pasal→Ayat — use [:MEMILIKI_AYAT]. ([:MEMUAT] is for Regulasi→Bab, Bab→Pasal, Bab→Bagian, Bagian→Pasal ONLY)
+- Do NOT include regulation names ("UU ITE", "UU No. 11 Tahun 2008") in label filters — labels only contain "Pasal X" or "BAB X"
 - When asked about sanctions/penalties, ALWAYS use the MERUJUK pattern (Pattern 2a/2b)
 - When listing Pasal in a Bab, handle BOTH direct (Bab)-[:MEMUAT]->(Pasal) and indirect (Bab)-[:MEMUAT]->(Bagian)-[:MEMUAT]->(Pasal) hierarchies
-- Add ORDER BY p.label when listing multiple Pasal to ensure consistent ordering"""
+- Add ORDER BY when listing multiple Pasal/Ayat to ensure consistent ordering"""
 
 RESPONSE_SYSTEM = """You are an Indonesian legal assistant. Answer the user's question based ONLY on the Knowledge Graph data provided.
 
@@ -234,7 +253,7 @@ class LLMService:
         try:
             response = model.generate_content(
                 [RESPONSE_SYSTEM, prompt],
-                generation_config={"temperature": 0.3},
+                generation_config={"temperature": 0.3, "max_output_tokens": 4096},
             )
             answer = response.text.strip()
             logger.info(f"=== LLM RESPONSE ({len(answer)} chars) ===")
