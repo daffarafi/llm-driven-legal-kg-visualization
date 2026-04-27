@@ -3,10 +3,10 @@
 import { useEffect, useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Database, GitBranch, Layers, TrendingUp } from "lucide-react";
-import { getStats } from "@/lib/api";
-import type { StatsData, TypeCount } from "@/lib/types";
-import { NODE_COLORS } from "@/lib/types";
+import { Database, GitBranch, Layers, TrendingUp, FileText } from "lucide-react";
+import { getStats, getDocuments } from "@/lib/api";
+import type { StatsData, TypeCount, Regulation } from "@/lib/types";
+import { NODE_COLORS, DOC_COLORS } from "@/lib/types";
 import {
   BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer,
   PieChart, Pie, Cell, Legend,
@@ -20,13 +20,27 @@ const CHART_COLORS = [
 export default function AnalyticsPage() {
   const [stats, setStats] = useState<StatsData | null>(null);
   const [loading, setLoading] = useState(true);
+  const [availableDocs, setAvailableDocs] = useState<Regulation[]>([]);
+  const [selectedDocId, setSelectedDocId] = useState<string | null>(null); // null = semua
 
+  // Fetch documents on mount
   useEffect(() => {
-    getStats()
+    getDocuments()
+      .then((data) => {
+        const d = data as { regulations?: Regulation[] };
+        setAvailableDocs(d.regulations || []);
+      })
+      .catch(() => {});
+  }, []);
+
+  // Fetch stats (re-fetch when selectedDocId changes)
+  useEffect(() => {
+    setLoading(true);
+    getStats(selectedDocId || undefined)
       .then((data) => setStats(data as StatsData))
       .catch(console.error)
       .finally(() => setLoading(false));
-  }, []);
+  }, [selectedDocId]);
 
   if (loading) {
     return (
@@ -46,7 +60,48 @@ export default function AnalyticsPage() {
 
   return (
     <div className="max-w-[1100px] mx-auto px-4 py-8">
-      <h1 className="text-2xl font-bold mb-6">Analytics Dashboard</h1>
+      <div className="flex items-center justify-between mb-6">
+        <h1 className="text-2xl font-bold">Analytics Dashboard</h1>
+      </div>
+
+      {/* Document selector */}
+      {availableDocs.length > 0 && (
+        <div className="flex items-center gap-2 mb-6">
+          <span className="text-xs text-muted-foreground uppercase tracking-wider">Filter:</span>
+          <button
+            onClick={() => setSelectedDocId(null)}
+            className={`text-xs px-3 py-1 rounded-full border transition-all ${
+              selectedDocId === null
+                ? "bg-amber-500/15 border-amber-500/40 text-amber-400"
+                : "border-border/40 text-muted-foreground hover:text-foreground"
+            }`}
+          >
+            Semua Dokumen
+          </button>
+          {availableDocs.map((doc) => {
+            const docId = doc.source_document_id || doc.doc_id;
+            const shortName = doc.short_name || doc.label?.split(' tentang ')[0] || docId;
+            const isActive = selectedDocId === docId;
+            return (
+              <button
+                key={docId}
+                onClick={() => setSelectedDocId(docId)}
+                className={`text-xs px-3 py-1 rounded-full border transition-all flex items-center gap-1.5 ${
+                  isActive
+                    ? "bg-amber-500/15 border-amber-500/40 text-amber-400"
+                    : "border-border/40 text-muted-foreground hover:text-foreground"
+                }`}
+              >
+                <span
+                  className="w-2 h-2 rounded-full"
+                  style={{ backgroundColor: DOC_COLORS[docId] || "#888" }}
+                />
+                {shortName}
+              </button>
+            );
+          })}
+        </div>
+      )}
 
       {/* Overview cards */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">

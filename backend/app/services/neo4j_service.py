@@ -34,31 +34,38 @@ class Neo4jService:
     # ------------------------------------------------------------------
 
     @classmethod
-    def get_stats(cls) -> dict:
-        """Get KG overview statistics."""
+    def get_stats(cls, doc_id: str | None = None) -> dict:
+        """Get KG overview statistics, optionally filtered by document."""
+        doc_filter = "WHERE n.source_document_id = $doc_id" if doc_id else ""
+        edge_doc_filter = "WHERE a.source_document_id = $doc_id" if doc_id else ""
+        params = {"doc_id": doc_id} if doc_id else {}
+
         with cls.get_session() as s:
             # Node counts by label
-            node_counts = s.run("""
+            node_counts = s.run(f"""
                 MATCH (n)
+                {doc_filter}
                 WITH labels(n) AS lbls, count(n) AS cnt
                 UNWIND lbls AS lbl
                 RETURN lbl AS label, sum(cnt) AS count
                 ORDER BY count DESC
-            """).data()
+            """, params).data()
 
             # Edge counts by type
-            edge_counts = s.run("""
-                MATCH ()-[r]->()
+            edge_counts = s.run(f"""
+                MATCH (a)-[r]->()
+                {edge_doc_filter}
                 RETURN type(r) AS label, count(r) AS count
                 ORDER BY count DESC
-            """).data()
+            """, params).data()
 
             # Totals
-            totals = s.run("""
-                MATCH (n) WITH count(n) AS nodes
-                MATCH ()-[r]->() WITH nodes, count(r) AS edges
+            totals = s.run(f"""
+                MATCH (n) {doc_filter} WITH count(n) AS nodes
+                OPTIONAL MATCH (a)-[r]->() {'WHERE a.source_document_id = $doc_id' if doc_id else ''}
+                WITH nodes, count(r) AS edges
                 RETURN nodes, edges
-            """).single()
+            """, params).single()
 
         return {
             "total_nodes": totals["nodes"],
@@ -76,6 +83,7 @@ class Neo4jService:
         cls,
         node_types: list[str] | None = None,
         relation_types: list[str] | None = None,
+        doc_ids: list[str] | None = None,
         limit: int = 2000,
     ) -> dict:
         """Get a subgraph with optional filters.
@@ -90,6 +98,10 @@ class Neo4jService:
         if node_types:
             label_checks = " OR ".join(f"n:{t}" for t in node_types)
             where_clauses.append(f"({label_checks})")
+
+        if doc_ids:
+            where_clauses.append("n.source_document_id IN $doc_ids")
+            params["doc_ids"] = doc_ids
 
         where = ("WHERE " + " AND ".join(where_clauses)) if where_clauses else ""
 
@@ -325,13 +337,40 @@ class Neo4jService:
 
         doc = dict(reg["r"].items())
         doc["id"] = doc_id
-
         return {
             "document": doc,
             "bab": [b for b in reg["bab_list"] if b.get("id")],
             "bagian": [bg for bg in reg["bagian_list"] if bg.get("id")],
             "pasal": [p for p in reg["pasal_list"] if p.get("id")],
         }
+
+    @classmethod
+    def get_regulations(cls) -> list[dict]:
+        """Return all Regulasi nodes with metadata.
+
+        Uses COALESCE to provide sensible fallbacks when optional
+        properties are absent on a node.
+        """
+        cypher = """
+            MATCH (r:Regulasi)
+            RETURN coalesce(r.doc_id, r.source_document_id, r.id) AS doc_id,
+                   r.label                                         AS label,
+                   coalesce(r.short_name, r.label)                 AS short_name,
+                   r.source_document_id                            AS source_document_id,
+                   coalesce(r.jenis, r.regulation_type,
+                       CASE
+                           WHEN r.source_document_id STARTS WITH 'UU'   THEN 'UU'
+                           WHEN r.source_document_id STARTS WITH 'POJK' THEN 'POJK'
+                           WHEN r.source_document_id STARTS WITH 'PP'   THEN 'PP'
+                           ELSE 'Lainnya'
+                       END)                                        AS regulation_type,
+                   r.year                                          AS year,
+                   r.status                                        AS status
+            ORDER BY r.label
+        """
+        with cls.get_session() as s:
+            return s.run(cypher).data()
+
 
     # ------------------------------------------------------------------
     # Execute raw Cypher (for QA pipeline)

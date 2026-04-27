@@ -18,21 +18,7 @@ async def get_document(doc_id: str):
 @router.get("/documents")
 async def list_documents():
     """List all available documents — Regulasi nodes."""
-    with Neo4jService.get_driver().session() as s:
-        regulasi = s.run("""
-            MATCH (r:Regulasi)
-            OPTIONAL MATCH (n:Entity {source_document_id: r.source_document_id})
-            WHERE n <> r
-            WITH r, count(n) AS entity_count
-            RETURN r.id AS doc_id,
-                   r.label AS label,
-                   r.source_document_id AS source_document_id,
-                   r.jenis AS regulation_type,
-                   r.node_type AS node_type,
-                   entity_count
-            ORDER BY r.label
-        """).data()
-
+    regulasi = Neo4jService.get_regulations()
     return {
         "regulations": regulasi,
         "documents": regulasi,

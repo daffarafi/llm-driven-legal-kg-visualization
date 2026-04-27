@@ -10,10 +10,10 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import {
   Send, User, Bot, ChevronDown, ChevronRight,
   Search, CheckCircle2, AlertCircle, Loader2, Code,
-  GitBranch,
+  GitBranch, FileText, X,
 } from "lucide-react";
-import { askQuestion, getNodeDetail } from "@/lib/api";
-import type { ChatMessage, QAResponse, QAProcessStep, NodeDetail } from "@/lib/types";
+import { askQuestion, getNodeDetail, getDocuments } from "@/lib/api";
+import type { ChatMessage, QAResponse, QAProcessStep, NodeDetail, Regulation } from "@/lib/types";
 import { NODE_COLORS, NODE_SIZES } from "@/lib/types";
 
 const ForceGraph2D = dynamic(() => import("react-force-graph-2d"), { ssr: false });
@@ -473,6 +473,18 @@ function LiveGraph({ graphNodes, graphEdges, selectTriggerRef }: {
   );
 }
 
+/* ─── Template Questions (flat, tagged by doc_id) ─── */
+interface TemplateQ { text: string; doc_ids: string[]; }
+const TEMPLATE_QUESTIONS: TemplateQ[] = [
+  { text: "Apa sanksi pencemaran nama baik di UU ITE?", doc_ids: ["UU_11_2008"] },
+  { text: "Pasal apa saja di Bab VII UU ITE?", doc_ids: ["UU_11_2008"] },
+  { text: "Apa itu informasi elektronik menurut UU ITE?", doc_ids: ["UU_11_2008"] },
+  { text: "Apa kewajiban tata kelola TI Bank menurut POJK?", doc_ids: ["POJK_11_2022"] },
+  { text: "Sanksi apa jika Bank melanggar penyelenggaraan TI?", doc_ids: ["POJK_11_2022"] },
+  { text: "Apa saja ketentuan ketahanan dan keamanan siber Bank menurut POJK?", doc_ids: ["POJK_11_2022"] },
+  { text: "Apa perbedaan definisi Sistem Elektronik di UU ITE dan POJK?", doc_ids: ["UU_11_2008", "POJK_11_2022"] },
+];
+
 /* ─── Main QA Page ─── */
 export default function QAPage() {
   const [messages, setMessages] = useState<ChatMessage[]>([]);
@@ -480,14 +492,68 @@ export default function QAPage() {
   const [loading, setLoading] = useState(false);
   const scrollRef = useRef<HTMLDivElement>(null);
 
+  // Document source filter
+  const [availableDocs, setAvailableDocs] = useState<Regulation[]>([]);
+  const [selectedDocIds, setSelectedDocIds] = useState<Set<string>>(new Set());
+  const [docSearch, setDocSearch] = useState("");
+  const [docDropdownOpen, setDocDropdownOpen] = useState(false);
+
   // Accumulated graph data across all responses
   const [allGraphNodes, setAllGraphNodes] = useState<Map<string, { id: string; labels: string[]; label?: string }>>(new Map());
   const [allGraphEdges, setAllGraphEdges] = useState<{ source: string; target: string; type: string }[]>([]);
   const graphSelectRef = useRef<((label: string) => void) | null>(null);
 
+  // Fetch available documents on mount
+  useEffect(() => {
+    getDocuments()
+      .then((data) => {
+        const d = data as { regulations?: Regulation[] };
+        const regs = d.regulations || [];
+        setAvailableDocs(regs);
+        // Select all by default
+        setSelectedDocIds(new Set(regs.map((r) => r.source_document_id || r.doc_id)));
+      })
+      .catch(() => {});
+  }, []);
+
   useEffect(() => {
     scrollRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages]);
+
+  const toggleDocFilter = (docId: string) => {
+    setSelectedDocIds((prev) => {
+      const next = new Set(prev);
+      if (next.has(docId)) {
+        next.delete(docId);
+      } else {
+        next.add(docId);
+      }
+      return next;
+    });
+  };
+
+  const selectAllDocs = () => {
+    setSelectedDocIds(new Set(availableDocs.map((r) => r.source_document_id || r.doc_id)));
+  };
+
+  // Searchable filtered docs for dropdown
+  const filteredDocs = useMemo(() => {
+    if (!docSearch.trim()) return availableDocs;
+    const q = docSearch.toLowerCase();
+    return availableDocs.filter((d) => {
+      const name = (d.short_name || d.label || d.doc_id || "").toLowerCase();
+      const sid = (d.source_document_id || "").toLowerCase();
+      return name.includes(q) || sid.includes(q);
+    });
+  }, [availableDocs, docSearch]);
+
+  // Filter template questions based on selected docs — show up to 3
+  const filteredTemplateQuestions = useMemo(() => {
+    if (selectedDocIds.size === 0) return [];
+    return TEMPLATE_QUESTIONS
+      .filter((q) => q.doc_ids.every((id) => selectedDocIds.has(id)))
+      .slice(0, 3);
+  }, [selectedDocIds]);
 
   const handleSubmit = async () => {
     const q = input.trim();
@@ -499,7 +565,10 @@ export default function QAPage() {
     setLoading(true);
 
     try {
-      const data = (await askQuestion(q)) as QAResponse;
+      // Pass selected doc_ids if not all are selected
+      const allSelected = selectedDocIds.size === availableDocs.length;
+      const docFilter = allSelected ? undefined : Array.from(selectedDocIds);
+      const data = (await askQuestion(q, docFilter)) as QAResponse;
       const assistantMsg: ChatMessage = {
         role: "assistant",
         content: data.answer,
@@ -554,21 +623,22 @@ export default function QAPage() {
                 Tanyakan apa saja tentang hukum Indonesia. Sistem akan mencari di Knowledge Graph
                 dan memberikan jawaban dengan referensi pasal.
               </p>
-              <div className="flex flex-wrap gap-2 mt-6 justify-center">
-                {[
-                  "Apa sanksi pencemaran nama baik di UU ITE?",
-                  "Pasal apa saja di Bab VII UU ITE?",
-                  "Apa itu informasi elektronik menurut UU ITE?",
-                ].map((q) => (
-                  <button
-                    key={q}
-                    onClick={() => { setInput(q); }}
-                    className="text-xs border border-border/40 rounded-full px-3 py-1.5 text-muted-foreground hover:text-foreground hover:border-amber-500/40 transition-colors"
-                  >
-                    {q}
-                  </button>
-                ))}
-              </div>
+              {filteredTemplateQuestions.length > 0 && (
+                <div className="mt-8 text-left max-w-[500px] w-full">
+                  <p className="text-xs text-muted-foreground mb-3">Contoh pertanyaan:</p>
+                  <div className="flex flex-wrap gap-1.5">
+                    {filteredTemplateQuestions.map((q) => (
+                      <button
+                        key={q.text}
+                        onClick={() => { setInput(q.text); }}
+                        className="text-xs border border-amber-500/30 rounded-full px-3 py-1.5 text-muted-foreground hover:text-foreground hover:border-amber-500/50 transition-colors"
+                      >
+                        {q.text}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           )}
 
@@ -619,8 +689,90 @@ export default function QAPage() {
           </div>
         </ScrollArea>
 
-        {/* Input */}
-        <div className="border-t border-border/40 p-4">
+        {/* Input with Document Filter */}
+        <div className="border-t border-border/40 p-3">
+          {/* Document source filter — searchable dropdown */}
+          {availableDocs.length > 0 && (
+            <div className="mb-2 max-w-[700px] mx-auto relative">
+              <button
+                onClick={() => setDocDropdownOpen((v) => !v)}
+                className="flex items-center gap-2 w-full text-left text-xs px-3 py-1.5 rounded-lg border border-border/40 hover:border-amber-500/40 transition-colors bg-card/30"
+              >
+                <FileText className="h-3 w-3 text-amber-500 shrink-0" />
+                <span className="text-muted-foreground shrink-0">Sumber:</span>
+                <span className="truncate text-foreground">
+                  {selectedDocIds.size === availableDocs.length
+                    ? "Semua dokumen"
+                    : `${selectedDocIds.size} dari ${availableDocs.length} dokumen`}
+                </span>
+                <ChevronDown className={`h-3 w-3 ml-auto shrink-0 text-muted-foreground transition-transform ${docDropdownOpen ? "rotate-180" : ""}`} />
+              </button>
+
+              {docDropdownOpen && (
+                <div className="absolute bottom-full mb-1 left-0 right-0 z-50 bg-card border border-border/60 rounded-lg shadow-xl max-h-64 flex flex-col">
+                  {/* Search input */}
+                  <div className="p-2 border-b border-border/30">
+                    <div className="relative">
+                      <Search className="absolute left-2 top-1/2 -translate-y-1/2 h-3 w-3 text-muted-foreground" />
+                      <input
+                        type="text"
+                        value={docSearch}
+                        onChange={(e) => setDocSearch(e.target.value)}
+                        placeholder="Cari dokumen..."
+                        className="w-full pl-7 pr-7 py-1.5 text-xs rounded-md bg-background border border-border/40 focus:outline-none focus:border-amber-500/50"
+                        autoFocus
+                      />
+                      {docSearch && (
+                        <button onClick={() => setDocSearch("")} className="absolute right-2 top-1/2 -translate-y-1/2">
+                          <X className="h-3 w-3 text-muted-foreground hover:text-foreground" />
+                        </button>
+                      )}
+                    </div>
+                  </div>
+
+                  {/* Select all / none */}
+                  <div className="flex items-center justify-between px-3 py-1.5 border-b border-border/20">
+                    <span className="text-[10px] text-muted-foreground">{filteredDocs.length} dokumen</span>
+                    <div className="flex gap-2">
+                      <button onClick={selectAllDocs} className="text-[10px] text-amber-500 hover:underline">Pilih Semua</button>
+                      <button onClick={() => setSelectedDocIds(new Set())} className="text-[10px] text-muted-foreground hover:underline">Hapus Semua</button>
+                    </div>
+                  </div>
+
+                  {/* Document list */}
+                  <div className="overflow-y-auto flex-1 py-1">
+                    {filteredDocs.map((doc) => {
+                      const docId = doc.source_document_id || doc.doc_id;
+                      const isActive = selectedDocIds.has(docId);
+                      const shortName = doc.short_name || doc.label?.split(" tentang ")[0] || docId;
+                      return (
+                        <button
+                          key={docId}
+                          onClick={() => toggleDocFilter(docId)}
+                          className="flex items-center gap-2 w-full text-left px-3 py-1.5 text-xs hover:bg-accent/50 transition-colors"
+                        >
+                          <div className={`w-3.5 h-3.5 rounded border flex items-center justify-center shrink-0 transition-colors ${
+                            isActive ? "bg-amber-500 border-amber-500" : "border-border/60"
+                          }`}>
+                            {isActive && <CheckCircle2 className="h-2.5 w-2.5 text-white" />}
+                          </div>
+                          <div className="min-w-0">
+                            <p className="truncate font-medium">{shortName}</p>
+                            {doc.label && doc.label !== shortName && (
+                              <p className="truncate text-[10px] text-muted-foreground">{doc.label}</p>
+                            )}
+                          </div>
+                        </button>
+                      );
+                    })}
+                    {filteredDocs.length === 0 && (
+                      <p className="text-xs text-muted-foreground text-center py-3">Tidak ditemukan</p>
+                    )}
+                  </div>
+                </div>
+              )}
+            </div>
+          )}
           <div className="flex gap-2 max-w-[700px] mx-auto">
             <Input
               value={input}

@@ -16,7 +16,7 @@ KG_SCHEMA = """
 | Sanksi | ~15 | Penalties/sanctions with full detail |
 | Bab | ~20 | Chapters (e.g., "BAB VII PERBUATAN YANG DILARANG") |
 | Bagian | ~10 | Sections within a Bab (e.g., "Bagian Kedua") |
-| Regulasi | 2 | The regulation document itself. Has "jenis" property (Undang-Undang, POJK, etc.) |
+| Regulasi | ~5 | The regulation document itself. Has "jenis" property (Undang-Undang, POJK, etc.) and "source_document_id" |
 
 ## Relationship Types (with counts and directions)
 | Relationship | Typical Pattern | Count |
@@ -33,18 +33,19 @@ KG_SCHEMA = """
 All nodes have: id, label, content, source_document_id, embedding
 - label: The display name (e.g., "Pasal 27", "Setiap Orang")
 - content: Description or original text excerpt
+- source_document_id: Identifies which regulation this node belongs to (e.g., "UU_11_2008", "POJK_11_2022")
 - Regulasi nodes also have: jenis (e.g., "Undang-Undang", "POJK")
 
 ## Sample Node Labels
-- Regulasi: "UNDANG-UNDANG TENTANG INFORMASI DAN TRANSAKSI ELEKTRONIK" (jenis: Undang-Undang), "POJK tentang Penyelenggaraan TI" (jenis: POJK)
-- Bab: "BAB VII PERBUATAN YANG DILARANG", "BAB XI KETENTUAN PIDANA"
-- Bagian: "Bagian Kedua Penyelenggaraan Sistem Elektronik"
+- Regulasi: "UNDANG-UNDANG TENTANG INFORMASI DAN TRANSAKSI ELEKTRONIK" (jenis: Undang-Undang, source_document_id: UU_11_2008), "Peraturan Otoritas Jasa Keuangan Nomor 11/POJK.03/2022 tentang Penyelenggaraan Teknologi Informasi oleh Bank Umum" (jenis: POJK, source_document_id: POJK_11_2022)
+- Bab: "BAB VII PERBUATAN YANG DILARANG", "BAB XI KETENTUAN PIDANA", "BAB II TATA KELOLA TI BANK"
+- Bagian: "Bagian Kedua Penyelenggaraan Sistem Elektronik", "Bagian Kesatu Umum"
 - Pasal: "Pasal 1", "Pasal 27", "Pasal 45"
 - Ayat: "Pasal 27 ayat (1)", "Pasal 45 ayat (3)"
-- EntitasHukum: "Setiap Orang", "Penyelenggara Sistem Elektronik", "Pemerintah", "Bank", "Direksi"
-- PerbuatanHukum: "mendistribusikan dan/atau mentransmisikan ... muatan penghinaan dan/atau pencemaran nama baik"
-- Sanksi: "pidana penjara paling lama 6 (enam) tahun dan/atau denda paling banyak Rp1.000.000.000,00"
-- KonsepHukum: "Informasi Elektronik", "Dokumen Elektronik", "Tanda Tangan Elektronik", "Teknologi Informasi"
+- EntitasHukum: "Setiap Orang", "Penyelenggara Sistem Elektronik", "Pemerintah", "Bank", "Direksi", "Dewan Komisaris"
+- PerbuatanHukum: "mendistribusikan dan/atau mentransmisikan ... muatan penghinaan dan/atau pencemaran nama baik", "penyelenggaraan Teknologi Informasi"
+- Sanksi: "pidana penjara paling lama 6 (enam) tahun dan/atau denda paling banyak Rp1.000.000.000,00", "sanksi administratif"
+- KonsepHukum: "Informasi Elektronik", "Dokumen Elektronik", "Tanda Tangan Elektronik", "Teknologi Informasi", "Bank Umum", "Sistem Elektronik"
 
 ## Key Graph Patterns
 1. Hierarchy: (Regulasi)-[:MEMUAT]->(Bab)-[:MEMUAT]->(Bagian)-[:MEMUAT]->(Pasal), or (Bab)-[:MEMUAT]->(Pasal)
@@ -58,6 +59,13 @@ All nodes have: id, label, content, source_document_id, embedding
 IMPORTANT: Most MENGATUR, BERLAKU_UNTUK, and MENETAPKAN_SANKSI edges originate from Ayat nodes, NOT Pasal.
 When searching for what an article regulates, query BOTH Pasal and Ayat.
 Use (r:Regulasi) instead of (u:UndangUndang) in all queries.
+
+## Multi-Document Filtering
+The KG contains multiple regulations. To filter by document, use:
+  WHERE n.source_document_id = 'UU_11_2008'  (for UU ITE)
+  WHERE n.source_document_id = 'POJK_11_2022' (for POJK TI Bank)
+When the user asks about a specific regulation (e.g., "menurut POJK", "di UU ITE"), filter with source_document_id.
+Note: Pasal labels like "Pasal 1" can appear in multiple regulations, so filtering is important for disambiguation.
 """
 
 QUERY_SYSTEM = f"""You are a Cypher query generator for an Indonesian legal Knowledge Graph in Neo4j.
@@ -173,14 +181,29 @@ class LLMService:
         return cls._model
 
     @classmethod
-    async def generate_cypher(cls, question: str) -> dict:
-        """Generate Cypher query from natural language question."""
+    async def generate_cypher(cls, question: str, doc_ids: list[str] | None = None) -> dict:
+        """Generate Cypher query from natural language question.
+        
+        Args:
+            question: Natural language question
+            doc_ids: If provided, restrict query to these source_document_ids
+        """
         import logging
         logger = logging.getLogger(__name__)
 
         model = cls._get_model()
 
-        prompt = f"Question: {question}\n\nGenerate a Cypher query to answer the above question. Output ONLY the raw Cypher query, nothing else."
+        doc_filter_instruction = ""
+        if doc_ids:
+            ids_str = ", ".join(f"'{d}'" for d in doc_ids)
+            doc_filter_instruction = (
+                f"\n\nCRITICAL: The user has selected specific document sources. "
+                f"You MUST add this filter to your first MATCH clause: "
+                f"WHERE <node>.source_document_id IN [{ids_str}]\n"
+                f"Apply this to the main entity node (Pasal, Ayat, Bab, or Regulasi) in the query."
+            )
+
+        prompt = f"Question: {question}{doc_filter_instruction}\n\nGenerate a Cypher query to answer the above question. Output ONLY the raw Cypher query, nothing else."
 
         try:
             response = model.generate_content(

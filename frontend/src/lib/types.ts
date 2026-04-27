@@ -124,6 +124,7 @@ export interface Regulation {
   year?: number;
   status?: string;
   entity_count?: number;
+  source_document_id?: string;
 }
 
 export interface RegulationEdge {

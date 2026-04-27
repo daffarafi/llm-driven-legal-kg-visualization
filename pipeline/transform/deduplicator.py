@@ -58,9 +58,21 @@ def deduplicate_entities(
         Tuple of (deduped_nodes, updated_edges, merge_map)
     """
     # Step 1: Group by (normalized_label, type)
+    # For structural nodes (Bab, Bagian, Pasal, Ayat), use ID as additional
+    # key to prevent merging nodes that share a label but are structurally
+    # distinct (e.g., "Bagian Kesatu Umum" in BAB II vs BAB IV).
+    STRUCTURAL_TYPES = {"Bab", "Bagian", "Pasal", "Ayat"}
     groups = defaultdict(list)
     for node in nodes:
-        key = (normalize_label(node["label"]), node["type"])
+        if node["type"] == "Regulasi":
+            # Group Regulasi by source_document_id so all extractions of the
+            # same regulation merge into a single canonical node.
+            src_doc = node.get("provenance", {}).get("source_document_id", node["id"])
+            key = (src_doc, "Regulasi")
+        elif node["type"] in STRUCTURAL_TYPES:
+            key = (node["id"], node["type"])  # unique per structural node
+        else:
+            key = (normalize_label(node["label"]), node["type"])
         groups[key].append(node)
     
     # Step 2: Merge each group

@@ -62,6 +62,7 @@ class SearchResponse(BaseModel):
 
 class QARequest(BaseModel):
     question: str = Field(..., min_length=3, max_length=500)
+    doc_ids: list[str] | None = Field(None, description="Filter KG context to these source_document_ids. None = all documents.")
 
 
 class QAProcessStep(BaseModel):

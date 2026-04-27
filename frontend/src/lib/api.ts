@@ -21,11 +21,13 @@ async function fetchAPI<T>(path: string, options?: RequestInit): Promise<T> {
 export async function getGraph(params?: {
   types?: string;
   relations?: string;
+  doc_ids?: string;
   limit?: number;
 }) {
   const searchParams = new URLSearchParams();
   if (params?.types) searchParams.set("types", params.types);
   if (params?.relations) searchParams.set("relations", params.relations);
+  if (params?.doc_ids) searchParams.set("doc_ids", params.doc_ids);
   if (params?.limit) searchParams.set("limit", params.limit.toString());
   const qs = searchParams.toString();
   return fetchAPI(`/api/graph${qs ? `?${qs}` : ""}`);
@@ -51,17 +53,18 @@ export async function searchNodes(query: string, mode = "keyword", limit = 20) {
 
 // --- QA ---
 
-export async function askQuestion(question: string) {
+export async function askQuestion(question: string, doc_ids?: string[]) {
   return fetchAPI("/api/qa", {
     method: "POST",
-    body: JSON.stringify({ question }),
+    body: JSON.stringify({ question, doc_ids: doc_ids?.length ? doc_ids : null }),
   });
 }
 
 // --- Stats ---
 
-export async function getStats() {
-  return fetchAPI("/api/stats");
+export async function getStats(doc_id?: string) {
+  const qs = doc_id ? `?doc_id=${encodeURIComponent(doc_id)}` : "";
+  return fetchAPI(`/api/stats${qs}`);
 }
 
 // --- Documents ---

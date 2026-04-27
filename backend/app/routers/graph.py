@@ -10,15 +10,18 @@ router = APIRouter()
 async def get_graph(
     types: str | None = Query(None, description="Comma-separated node types"),
     relations: str | None = Query(None, description="Comma-separated relation types"),
+    doc_ids: str | None = Query(None, description="Comma-separated source_document_ids"),
     limit: int = Query(100, ge=1, le=1000),
 ):
-    """Get subgraph with optional node type and relation type filters."""
+    """Get subgraph with optional node type, relation type, and document filters."""
     node_types = types.split(",") if types else None
     relation_types = relations.split(",") if relations else None
+    doc_id_list = doc_ids.split(",") if doc_ids else None
 
     result = Neo4jService.get_graph(
         node_types=node_types,
         relation_types=relation_types,
+        doc_ids=doc_id_list,
         limit=limit,
     )
     return result

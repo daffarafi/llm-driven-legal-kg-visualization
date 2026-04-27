@@ -9,9 +9,9 @@ import { Badge } from "@/components/ui/badge";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
 import { Search, X, ExternalLink, Filter } from "lucide-react";
-import { getGraph, getNodeDetail, searchNodes } from "@/lib/api";
-import { NODE_COLORS, NODE_SIZES } from "@/lib/types";
-import type { GraphNode, GraphEdge, NodeDetail, SearchResult } from "@/lib/types";
+import { getGraph, getNodeDetail, searchNodes, getDocuments } from "@/lib/api";
+import { NODE_COLORS, NODE_SIZES, DOC_COLORS } from "@/lib/types";
+import type { GraphNode, GraphEdge, NodeDetail, SearchResult, Regulation } from "@/lib/types";
 
 // Dynamic import for react-force-graph (SSR incompatible)
 const ForceGraph2D = dynamic(() => import("react-force-graph-2d"), { ssr: false });
@@ -33,6 +33,10 @@ export default function ExplorePage() {
   const [showFilters, setShowFilters] = useState(true);
   const [loading, setLoading] = useState(true);
 
+  // Document filter
+  const [availableDocs, setAvailableDocs] = useState<Regulation[]>([]);
+  const [activeDocIds, setActiveDocIds] = useState<Set<string>>(new Set());
+
   // Compute neighbor IDs for the selected node
   const neighborIds = useMemo(() => {
     if (!selectedNodeId) return new Set<string>();
@@ -47,14 +51,22 @@ export default function ExplorePage() {
   }, [selectedNodeId, edges]);
 
 
-  // Load initial graph
+  // Load initial graph + documents
   useEffect(() => {
     setLoading(true);
-    getGraph({ limit: 200 })
-      .then((data: unknown) => {
-        const d = data as { nodes: GraphNode[]; edges: GraphEdge[] };
+    Promise.all([
+      getGraph({ limit: 200 }),
+      getDocuments(),
+    ])
+      .then(([graphRaw, docsRaw]) => {
+        const d = graphRaw as { nodes: GraphNode[]; edges: GraphEdge[] };
         setNodes(d.nodes || []);
         setEdges(d.edges || []);
+
+        const dd = docsRaw as { regulations?: Regulation[] };
+        const regs = dd.regulations || [];
+        setAvailableDocs(regs);
+        setActiveDocIds(new Set(regs.map((r) => r.source_document_id || r.doc_id)));
       })
       .catch(console.error)
       .finally(() => setLoading(false));
@@ -66,11 +78,26 @@ export default function ExplorePage() {
     return labels.find((l) => l !== "Entity") || labels[0] || "";
   }, []);
 
-  // Filter graph data
+  // Document filter toggle
+  const toggleDoc = (docId: string) => {
+    setActiveDocIds((prev) => {
+      const next = new Set(prev);
+      if (next.has(docId)) {
+        if (next.size > 1) next.delete(docId);
+      } else {
+        next.add(docId);
+      }
+      return next;
+    });
+  };
+
+  // Filter graph data by node type AND document
   const graphData = useMemo(() => {
-    const filteredNodes = nodes.filter((n) =>
-      n.labels?.some((l) => l !== "Entity" && activeTypes.has(l))
-    );
+    const filteredNodes = nodes.filter((n) => {
+      const typeMatch = n.labels?.some((l) => l !== "Entity" && activeTypes.has(l));
+      const docMatch = activeDocIds.size === 0 || !n.source_document_id || activeDocIds.has(n.source_document_id);
+      return typeMatch && docMatch;
+    });
     const nodeIds = new Set(filteredNodes.map((n) => n.id));
     const filteredEdges = edges.filter(
       (e) => nodeIds.has(e.source) && nodeIds.has(e.target)
@@ -91,7 +118,7 @@ export default function ExplorePage() {
         label: e.type,
       })),
     };
-  }, [nodes, edges, activeTypes, getNodeType]);
+  }, [nodes, edges, activeTypes, activeDocIds, getNodeType]);
 
   // Handle node click — toggle: click same node = deselect
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -260,6 +287,36 @@ export default function ExplorePage() {
           )}
 
           <Separator />
+
+          {/* Document filter */}
+          {availableDocs.length > 0 && (
+            <>
+              <h4 className="text-xs text-muted-foreground">Documents</h4>
+              <div className="flex flex-col gap-1">
+                {availableDocs.map((doc) => {
+                  const docId = doc.source_document_id || doc.doc_id;
+                  const isActive = activeDocIds.has(docId);
+                  const shortName = doc.short_name || doc.label?.split(' tentang ')[0] || docId;
+                  return (
+                    <button
+                      key={docId}
+                      onClick={() => toggleDoc(docId)}
+                      className={`flex items-center gap-2 px-2 py-1 text-xs rounded transition-colors ${
+                        isActive ? "bg-accent" : "opacity-40"
+                      }`}
+                    >
+                      <span
+                        className="w-2.5 h-2.5 rounded-full"
+                        style={{ backgroundColor: DOC_COLORS[docId] || "#888" }}
+                      />
+                      <span className="truncate">{shortName}</span>
+                    </button>
+                  );
+                })}
+              </div>
+              <Separator />
+            </>
+          )}
 
           {/* Node type toggles */}
           <h4 className="text-xs text-muted-foreground">Node Types</h4>

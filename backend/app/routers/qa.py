@@ -34,7 +34,7 @@ def _extract_references(text: str) -> list[str]:
     return sorted(refs)
 
 
-def _search_kg_by_keywords(question: str) -> list[dict]:
+def _search_kg_by_keywords(question: str, doc_ids: list[str] | None = None) -> list[dict]:
     """Search KG using multiple keyword strategies to find relevant nodes."""
     all_results = {}
 
@@ -51,6 +51,9 @@ def _search_kg_by_keywords(question: str) -> list[dict]:
         results = Neo4jService.search(kw, mode="keyword", limit=5)
         for r in results:
             if r.get("id") and r["id"] not in all_results:
+                # Filter by doc_ids if specified
+                if doc_ids and r.get("source_document_id") and r["source_document_id"] not in doc_ids:
+                    continue
                 all_results[r["id"]] = r
 
     # Strategy 2: Search for pasal references (e.g. "Pasal 27")
@@ -59,6 +62,8 @@ def _search_kg_by_keywords(question: str) -> list[dict]:
         results = Neo4jService.search(pm, mode="keyword", limit=3)
         for r in results:
             if r.get("id") and r["id"] not in all_results:
+                if doc_ids and r.get("source_document_id") and r["source_document_id"] not in doc_ids:
+                    continue
                 all_results[r["id"]] = r
 
     # Strategy 3: Search full question if few results
@@ -70,11 +75,72 @@ def _search_kg_by_keywords(question: str) -> list[dict]:
             results = Neo4jService.search(phrase, mode="keyword", limit=3)
             for r in results:
                 if r.get("id") and r["id"] not in all_results:
+                    if doc_ids and r.get("source_document_id") and r["source_document_id"] not in doc_ids:
+                        continue
                     all_results[r["id"]] = r
             if len(all_results) >= 5:
                 break
 
     return list(all_results.values())[:10]
+
+
+def _build_graph_from_cypher(cypher_query: str, cypher_results: list[dict]) -> dict:
+    """Build a mini-graph from Cypher query results.
+
+    Re-runs a modified query that returns elementId, labels, and label
+    for every node mentioned in the original results so the frontend
+    can render them correctly.
+    """
+    graph_nodes: dict[str, dict] = {}
+    graph_edges: list[dict] = []
+
+    # Extract node labels from results to search for them
+    node_labels: list[str] = []
+    for row in cypher_results:
+        for v in row.values():
+            if isinstance(v, str) and v.strip():
+                node_labels.append(v.strip())
+
+    # Search for each label to get full node info
+    for label_text in node_labels:
+        results = Neo4jService.search(label_text, mode="keyword", limit=1)
+        for r in results:
+            nid = r.get("id", "")
+            if nid and nid not in graph_nodes:
+                graph_nodes[nid] = {
+                    "id": nid,
+                    "labels": r.get("labels", []),
+                    "label": r.get("label", ""),
+                }
+
+    # Get relationships between found nodes
+    node_ids = list(graph_nodes.keys())
+    if len(node_ids) >= 2:
+        try:
+            id_list = "[" + ",".join(f'"{nid}"' for nid in node_ids) + "]"
+            rel_query = f"""
+                MATCH (a)-[r]->(b)
+                WHERE elementId(a) IN {id_list}
+                  AND elementId(b) IN {id_list}
+                RETURN elementId(a) AS source,
+                       elementId(b) AS target,
+                       type(r) AS type
+            """
+            rels = Neo4jService.execute_cypher(rel_query)
+            for rel in rels:
+                if rel.get("source") and rel.get("target") and not rel.get("error"):
+                    graph_edges.append({
+                        "source": rel["source"],
+                        "target": rel["target"],
+                        "type": rel.get("type", ""),
+                    })
+        except Exception:
+            pass  # Relationship query is optional
+
+    return {
+        "nodes": list(graph_nodes.values()),
+        "edges": graph_edges,
+    }
 
 
 def _enrich_with_relations(nodes: list[dict]) -> tuple[list[dict], dict]:
@@ -165,6 +231,7 @@ async def ask_question(request: QARequest):
     """Hybrid QA pipeline: question → Cypher → keyword search → context → answer."""
     steps = []
     question = request.question
+    doc_ids = request.doc_ids
     mini_graph = {"nodes": [], "edges": []}
     cypher_query = ""
     cypher_results_raw = []
@@ -176,7 +243,7 @@ async def ask_question(request: QARequest):
     ))
 
     # Step 2: Generate Cypher query via LLM
-    cypher_result = await LLMService.generate_cypher(question)
+    cypher_result = await LLMService.generate_cypher(question, doc_ids=doc_ids)
     cypher_query = cypher_result.get("cypher", "")
 
     if cypher_result["status"] == "ok" and cypher_query:
@@ -237,7 +304,7 @@ async def ask_question(request: QARequest):
         ))
 
     # Step 4: Search KG by keywords (existing flow, unchanged)
-    search_results = _search_kg_by_keywords(question)
+    search_results = _search_kg_by_keywords(question, doc_ids=doc_ids)
     search_labels = [r.get("label", "?") for r in search_results]
 
     steps.append(QAProcessStep(
@@ -261,6 +328,13 @@ async def ask_question(request: QARequest):
             detail="Skipped — tidak ada node ditemukan",
             status="skipped",
         ))
+
+    # Build graph from Cypher results (more accurate) — replaces keyword graph
+    if cypher_results_raw:
+        cypher_graph = _build_graph_from_cypher(cypher_query, cypher_results_raw)
+        if cypher_graph["nodes"]:
+            # Cypher results are the actual answer — use them exclusively
+            mini_graph = cypher_graph
 
     # Step 6: Generate response
     # Merge BOTH cypher results and keyword search results into context

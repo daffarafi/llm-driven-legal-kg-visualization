@@ -19,6 +19,7 @@ import type { Regulation } from "@/lib/types";
 const REG_TYPE_COLORS: Record<string, string> = {
   UU: "bg-blue-500/10 text-blue-400 border-blue-500/20",
   PP: "bg-green-500/10 text-green-400 border-green-500/20",
+  POJK: "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
   Perpres: "bg-orange-500/10 text-orange-400 border-orange-500/20",
   Permen: "bg-yellow-500/10 text-yellow-400 border-yellow-500/20",
 };
@@ -53,7 +54,7 @@ export default function DocumentsListPage() {
     {} as Record<string, Regulation[]>
   );
 
-  const typeOrder = ["UU", "PP", "Perpres", "Permen", "Lainnya"];
+  const typeOrder = ["UU", "POJK", "PP", "Perpres", "Permen", "Lainnya"];
 
   return (
     <div className="max-w-[900px] mx-auto px-4 py-8">
