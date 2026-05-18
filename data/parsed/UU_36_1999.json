@@ -1,11 +1,11 @@
 {
   "document_id": "UU_36_1999",
-  "total_components": 275,
+  "total_components": 276,
   "component_types": {
     "HURUF": 64,
+    "BAB": 9,
     "PASAL": 113,
     "ANGKA": 9,
-    "BAB": 8,
     "AYAT": 72,
     "BAGIAN": 9
   },
@@ -71,13 +71,29 @@
       "component_type": "HURUF",
       "number": "e",
       "title": null,
-      "content": "bahwa\nsehubungan\ndengan\nhal-hal\ntersebut\ndi\natas,\nmaka\nUndang-Undang Nomor 3 Tahun 1989 tentang Telekomunikasi\ndipandang tidak sesuai lagi, sehingga perlu diganti.\nMengingat\n:\nPasal 5 ayat (1), Pasal 20 ayat (1) dan Pasal 33 Undang-Undang Dasar\n1945;\nDengan persetujuan\nDEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA\nMEMUTUSKAN :\nMenetapkan :\nUNDANG-UNDANG TENTANG TELEKOMUNIKASI.\nPRESIDEN\nREPUBLIK INDONESIA BAB I\nKETENTUAN UMUM",
+      "content": "bahwa\nsehubungan\ndengan\nhal-hal\ntersebut\ndi\natas,\nmaka\nUndang-Undang Nomor 3 Tahun 1989 tentang Telekomunikasi\ndipandang tidak sesuai lagi, sehingga perlu diganti.\nMengingat\n:\nPasal 5 ayat (1), Pasal 20 ayat (1) dan Pasal 33 Undang-Undang Dasar\n1945;\nDengan persetujuan\nDEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA\nMEMUTUSKAN :\nMenetapkan :\nUNDANG-UNDANG TENTANG TELEKOMUNIKASI.\nPRESIDEN",
       "page_range": [
         1,
         2
       ],
       "parent_id": null,
       "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "UU_36_1999__BAB_I",
+      "component_type": "BAB",
+      "number": "I",
+      "title": "KETENTUAN UMUM",
+      "content": "",
+      "page_range": [
+        2,
+        2
+      ],
+      "parent_id": null,
+      "children": [
+        "UU_36_1999__PASAL_1"
+      ],
       "is_penjelasan": false
     },
     {
@@ -90,7 +106,7 @@
         2,
         2
       ],
-      "parent_id": null,
+      "parent_id": "UU_36_1999__BAB_I",
       "children": [
         "UU_36_1999__ANGKA_1",
         "UU_36_1999__ANGKA_2",

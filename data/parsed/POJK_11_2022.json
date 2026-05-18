@@ -1,10 +1,10 @@
 {
   "document_id": "POJK_11_2022",
-  "total_components": 177,
+  "total_components": 164,
   "component_types": {
     "BAB": 14,
     "PASAL": 146,
-    "BAGIAN": 17
+    "BAGIAN": 4
   },
   "components": [
     {
@@ -67,7 +67,17 @@
       "parent_id": "POJK_11_2022__BAB_II",
       "children": [
         "POJK_11_2022__PASAL_2",
-        "POJK_11_2022__PASAL_3"
+        "POJK_11_2022__PASAL_3",
+        "POJK_11_2022__PASAL_11",
+        "POJK_11_2022__PASAL_15",
+        "POJK_11_2022__PASAL_35",
+        "POJK_11_2022__PASAL_36",
+        "POJK_11_2022__PASAL_37",
+        "POJK_11_2022__PASAL_38",
+        "POJK_11_2022__PASAL_43",
+        "POJK_11_2022__PASAL_53",
+        "POJK_11_2022__PASAL_58",
+        "POJK_11_2022__PASAL_59"
       ],
       "is_penjelasan": false
     },
@@ -117,7 +127,25 @@
         "POJK_11_2022__PASAL_7",
         "POJK_11_2022__PASAL_8",
         "POJK_11_2022__PASAL_9",
-        "POJK_11_2022__PASAL_10"
+        "POJK_11_2022__PASAL_10",
+        "POJK_11_2022__PASAL_12",
+        "POJK_11_2022__PASAL_13",
+        "POJK_11_2022__PASAL_14",
+        "POJK_11_2022__PASAL_16",
+        "POJK_11_2022__PASAL_17",
+        "POJK_11_2022__PASAL_18",
+        "POJK_11_2022__PASAL_19",
+        "POJK_11_2022__PASAL_20",
+        "POJK_11_2022__PASAL_39",
+        "POJK_11_2022__PASAL_44",
+        "POJK_11_2022__PASAL_45",
+        "POJK_11_2022__PASAL_46",
+        "POJK_11_2022__PASAL_47",
+        "POJK_11_2022__PASAL_54",
+        "POJK_11_2022__PASAL_55",
+        "POJK_11_2022__PASAL_56",
+        "POJK_11_2022__PASAL_57",
+        "POJK_11_2022__PASAL_60"
       ],
       "is_penjelasan": false
     },
@@ -230,26 +258,7 @@
         9
       ],
       "parent_id": null,
-      "children": [
-        "POJK_11_2022__BAGIAN_Kesatu__BAB_III",
-        "POJK_11_2022__BAGIAN_Kedua__BAB_III"
-      ],
-      "is_penjelasan": false
-    },
-    {
-      "component_id": "POJK_11_2022__BAGIAN_Kesatu__BAB_III",
-      "component_type": "BAGIAN",
-      "number": "Kesatu",
-      "title": "Penyusunan Arsitektur TI Bank",
-      "content": "",
-      "page_range": [
-        9,
-        9
-      ],
-      "parent_id": "POJK_11_2022__BAB_III",
-      "children": [
-        "POJK_11_2022__PASAL_11"
-      ],
+      "children": [],
       "is_penjelasan": false
     },
     {
@@ -262,26 +271,8 @@
         9,
         10
       ],
-      "parent_id": "POJK_11_2022__BAGIAN_Kesatu__BAB_III",
+      "parent_id": "POJK_11_2022__BAGIAN_Kesatu",
       "children": [],
-      "is_penjelasan": false
-    },
-    {
-      "component_id": "POJK_11_2022__BAGIAN_Kedua__BAB_III",
-      "component_type": "BAGIAN",
-      "number": "Kedua",
-      "title": "Penyusunan Rencana Strategis TI Bank",
-      "content": "",
-      "page_range": [
-        10,
-        10
-      ],
-      "parent_id": "POJK_11_2022__BAB_III",
-      "children": [
-        "POJK_11_2022__PASAL_12",
-        "POJK_11_2022__PASAL_13",
-        "POJK_11_2022__PASAL_14"
-      ],
       "is_penjelasan": false
     },
     {
@@ -294,7 +285,7 @@
         10,
         10
       ],
-      "parent_id": "POJK_11_2022__BAGIAN_Kedua__BAB_III",
+      "parent_id": "POJK_11_2022__BAGIAN_Kedua",
       "children": [],
       "is_penjelasan": false
     },
@@ -308,7 +299,7 @@
         10,
         11
       ],
-      "parent_id": "POJK_11_2022__BAGIAN_Kedua__BAB_III",
+      "parent_id": "POJK_11_2022__BAGIAN_Kedua",
       "children": [],
       "is_penjelasan": false
     },
@@ -322,7 +313,7 @@
         11,
         11
       ],
-      "parent_id": "POJK_11_2022__BAGIAN_Kedua__BAB_III",
+      "parent_id": "POJK_11_2022__BAGIAN_Kedua",
       "children": [],
       "is_penjelasan": false
     },
@@ -337,26 +328,7 @@
         11
       ],
       "parent_id": null,
-      "children": [
-        "POJK_11_2022__BAGIAN_Kesatu__BAB_IV",
-        "POJK_11_2022__BAGIAN_Kedua__BAB_IV"
-      ],
-      "is_penjelasan": false
-    },
-    {
-      "component_id": "POJK_11_2022__BAGIAN_Kesatu__BAB_IV",
-      "component_type": "BAGIAN",
-      "number": "Kesatu",
-      "title": "Umum",
-      "content": "",
-      "page_range": [
-        11,
-        11
-      ],
-      "parent_id": "POJK_11_2022__BAB_IV",
-      "children": [
-        "POJK_11_2022__PASAL_15"
-      ],
+      "children": [],
       "is_penjelasan": false
     },
     {
@@ -369,28 +341,8 @@
         11,
         12
       ],
-      "parent_id": "POJK_11_2022__BAGIAN_Kesatu__BAB_IV",
+      "parent_id": "POJK_11_2022__BAGIAN_Kesatu",
       "children": [],
-      "is_penjelasan": false
-    },
-    {
-      "component_id": "POJK_11_2022__BAGIAN_Kedua__BAB_IV",
-      "component_type": "BAGIAN",
-      "number": "Kedua",
-      "title": "Pengamanan Informasi dalam Penyelenggaraan TI Bank",
-      "content": "",
-      "page_range": [
-        12,
-        12
-      ],
-      "parent_id": "POJK_11_2022__BAB_IV",
-      "children": [
-        "POJK_11_2022__PASAL_16",
-        "POJK_11_2022__PASAL_17",
-        "POJK_11_2022__PASAL_18",
-        "POJK_11_2022__PASAL_19",
-        "POJK_11_2022__PASAL_20"
-      ],
       "is_penjelasan": false
     },
     {
@@ -403,7 +355,7 @@
         12,
         12
       ],
-      "parent_id": "POJK_11_2022__BAGIAN_Kedua__BAB_IV",
+      "parent_id": "POJK_11_2022__BAGIAN_Kedua",
       "children": [],
       "is_penjelasan": false
     },
@@ -417,7 +369,7 @@
         13,
         13
       ],
-      "parent_id": "POJK_11_2022__BAGIAN_Kedua__BAB_IV",
+      "parent_id": "POJK_11_2022__BAGIAN_Kedua",
       "children": [],
       "is_penjelasan": false
     },
@@ -431,7 +383,7 @@
         13,
         13
       ],
-      "parent_id": "POJK_11_2022__BAGIAN_Kedua__BAB_IV",
+      "parent_id": "POJK_11_2022__BAGIAN_Kedua",
       "children": [],
       "is_penjelasan": false
     },
@@ -445,7 +397,7 @@
         13,
         13
       ],
-      "parent_id": "POJK_11_2022__BAGIAN_Kedua__BAB_IV",
+      "parent_id": "POJK_11_2022__BAGIAN_Kedua",
       "children": [],
       "is_penjelasan": false
     },
@@ -459,7 +411,7 @@
         13,
         14
       ],
-      "parent_id": "POJK_11_2022__BAGIAN_Kedua__BAB_IV",
+      "parent_id": "POJK_11_2022__BAGIAN_Kedua",
       "children": [],
       "is_penjelasan": false
     },
@@ -715,28 +667,7 @@
       ],
       "parent_id": null,
       "children": [
-        "POJK_11_2022__BAGIAN_Kesatu__BAB_VII",
-        "POJK_11_2022__BAGIAN_Kedua__BAB_VII",
         "POJK_11_2022__BAGIAN_Ketiga"
-      ],
-      "is_penjelasan": false
-    },
-    {
-      "component_id": "POJK_11_2022__BAGIAN_Kesatu__BAB_VII",
-      "component_type": "BAGIAN",
-      "number": "Kesatu",
-      "title": "Penempatan Sistem Elektronik",
-      "content": "",
-      "page_range": [
-        22,
-        22
-      ],
-      "parent_id": "POJK_11_2022__BAB_VII",
-      "children": [
-        "POJK_11_2022__PASAL_35",
-        "POJK_11_2022__PASAL_36",
-        "POJK_11_2022__PASAL_37",
-        "POJK_11_2022__PASAL_38"
       ],
       "is_penjelasan": false
     },
@@ -750,7 +681,7 @@
         22,
         24
       ],
-      "parent_id": "POJK_11_2022__BAGIAN_Kesatu__BAB_VII",
+      "parent_id": "POJK_11_2022__BAGIAN_Kesatu",
       "children": [],
       "is_penjelasan": false
     },
@@ -764,7 +695,7 @@
         24,
         26
       ],
-      "parent_id": "POJK_11_2022__BAGIAN_Kesatu__BAB_VII",
+      "parent_id": "POJK_11_2022__BAGIAN_Kesatu",
       "children": [],
       "is_penjelasan": false
     },
@@ -778,7 +709,7 @@
         26,
         26
       ],
-      "parent_id": "POJK_11_2022__BAGIAN_Kesatu__BAB_VII",
+      "parent_id": "POJK_11_2022__BAGIAN_Kesatu",
       "children": [],
       "is_penjelasan": false
     },
@@ -792,24 +723,8 @@
         26,
         26
       ],
-      "parent_id": "POJK_11_2022__BAGIAN_Kesatu__BAB_VII",
+      "parent_id": "POJK_11_2022__BAGIAN_Kesatu",
       "children": [],
-      "is_penjelasan": false
-    },
-    {
-      "component_id": "POJK_11_2022__BAGIAN_Kedua__BAB_VII",
-      "component_type": "BAGIAN",
-      "number": "Kedua",
-      "title": "Pemrosesan Transaksi Berbasis TI",
-      "content": "",
-      "page_range": [
-        26,
-        26
-      ],
-      "parent_id": "POJK_11_2022__BAB_VII",
-      "children": [
-        "POJK_11_2022__PASAL_39"
-      ],
       "is_penjelasan": false
     },
     {
@@ -822,7 +737,7 @@
         26,
         27
       ],
-      "parent_id": "POJK_11_2022__BAGIAN_Kedua__BAB_VII",
+      "parent_id": "POJK_11_2022__BAGIAN_Kedua",
       "children": [],
       "is_penjelasan": false
     },
@@ -840,7 +755,8 @@
       "children": [
         "POJK_11_2022__PASAL_40",
         "POJK_11_2022__PASAL_41",
-        "POJK_11_2022__PASAL_42"
+        "POJK_11_2022__PASAL_42",
+        "POJK_11_2022__PASAL_61"
       ],
       "is_penjelasan": false
     },
@@ -897,26 +813,7 @@
         29
       ],
       "parent_id": null,
-      "children": [
-        "POJK_11_2022__BAGIAN_Kesatu__BAB_VIII",
-        "POJK_11_2022__BAGIAN_Kedua__BAB_VIII"
-      ],
-      "is_penjelasan": false
-    },
-    {
-      "component_id": "POJK_11_2022__BAGIAN_Kesatu__BAB_VIII",
-      "component_type": "BAGIAN",
-      "number": "Kesatu",
-      "title": "Pengelolaan Data oleh Bank",
-      "content": "",
-      "page_range": [
-        29,
-        29
-      ],
-      "parent_id": "POJK_11_2022__BAB_VIII",
-      "children": [
-        "POJK_11_2022__PASAL_43"
-      ],
+      "children": [],
       "is_penjelasan": false
     },
     {
@@ -929,27 +826,8 @@
         29,
         29
       ],
-      "parent_id": "POJK_11_2022__BAGIAN_Kesatu__BAB_VIII",
+      "parent_id": "POJK_11_2022__BAGIAN_Kesatu",
       "children": [],
-      "is_penjelasan": false
-    },
-    {
-      "component_id": "POJK_11_2022__BAGIAN_Kedua__BAB_VIII",
-      "component_type": "BAGIAN",
-      "number": "Kedua",
-      "title": "Pelindungan Data Pribadi oleh Bank",
-      "content": "",
-      "page_range": [
-        29,
-        29
-      ],
-      "parent_id": "POJK_11_2022__BAB_VIII",
-      "children": [
-        "POJK_11_2022__PASAL_44",
-        "POJK_11_2022__PASAL_45",
-        "POJK_11_2022__PASAL_46",
-        "POJK_11_2022__PASAL_47"
-      ],
       "is_penjelasan": false
     },
     {
@@ -962,7 +840,7 @@
         29,
         30
       ],
-      "parent_id": "POJK_11_2022__BAGIAN_Kedua__BAB_VIII",
+      "parent_id": "POJK_11_2022__BAGIAN_Kedua",
       "children": [],
       "is_penjelasan": false
     },
@@ -976,7 +854,7 @@
         30,
         30
       ],
-      "parent_id": "POJK_11_2022__BAGIAN_Kedua__BAB_VIII",
+      "parent_id": "POJK_11_2022__BAGIAN_Kedua",
       "children": [],
       "is_penjelasan": false
     },
@@ -990,7 +868,7 @@
         30,
         30
       ],
-      "parent_id": "POJK_11_2022__BAGIAN_Kedua__BAB_VIII",
+      "parent_id": "POJK_11_2022__BAGIAN_Kedua",
       "children": [],
       "is_penjelasan": false
     },
@@ -1004,7 +882,7 @@
         31,
         31
       ],
-      "parent_id": "POJK_11_2022__BAGIAN_Kedua__BAB_VIII",
+      "parent_id": "POJK_11_2022__BAGIAN_Kedua",
       "children": [],
       "is_penjelasan": false
     },
@@ -1109,26 +987,7 @@
         33
       ],
       "parent_id": null,
-      "children": [
-        "POJK_11_2022__BAGIAN_Kesatu__BAB_X",
-        "POJK_11_2022__BAGIAN_Kedua__BAB_X"
-      ],
-      "is_penjelasan": false
-    },
-    {
-      "component_id": "POJK_11_2022__BAGIAN_Kesatu__BAB_X",
-      "component_type": "BAGIAN",
-      "number": "Kesatu",
-      "title": "Pengendalian Intern Bank dalam Penyelenggaraan TI",
-      "content": "",
-      "page_range": [
-        33,
-        33
-      ],
-      "parent_id": "POJK_11_2022__BAB_X",
-      "children": [
-        "POJK_11_2022__PASAL_53"
-      ],
+      "children": [],
       "is_penjelasan": false
     },
     {
@@ -1141,27 +1000,8 @@
         33,
         34
       ],
-      "parent_id": "POJK_11_2022__BAGIAN_Kesatu__BAB_X",
+      "parent_id": "POJK_11_2022__BAGIAN_Kesatu",
       "children": [],
-      "is_penjelasan": false
-    },
-    {
-      "component_id": "POJK_11_2022__BAGIAN_Kedua__BAB_X",
-      "component_type": "BAGIAN",
-      "number": "Kedua",
-      "title": "Audit Intern dalam Penyelenggaraan TI",
-      "content": "",
-      "page_range": [
-        34,
-        34
-      ],
-      "parent_id": "POJK_11_2022__BAB_X",
-      "children": [
-        "POJK_11_2022__PASAL_54",
-        "POJK_11_2022__PASAL_55",
-        "POJK_11_2022__PASAL_56",
-        "POJK_11_2022__PASAL_57"
-      ],
       "is_penjelasan": false
     },
     {
@@ -1174,7 +1014,7 @@
         34,
         34
       ],
-      "parent_id": "POJK_11_2022__BAGIAN_Kedua__BAB_X",
+      "parent_id": "POJK_11_2022__BAGIAN_Kedua",
       "children": [],
       "is_penjelasan": false
     },
@@ -1188,7 +1028,7 @@
         35,
         35
       ],
-      "parent_id": "POJK_11_2022__BAGIAN_Kedua__BAB_X",
+      "parent_id": "POJK_11_2022__BAGIAN_Kedua",
       "children": [],
       "is_penjelasan": false
     },
@@ -1202,7 +1042,7 @@
         35,
         35
       ],
-      "parent_id": "POJK_11_2022__BAGIAN_Kedua__BAB_X",
+      "parent_id": "POJK_11_2022__BAGIAN_Kedua",
       "children": [],
       "is_penjelasan": false
     },
@@ -1216,7 +1056,7 @@
         35,
         35
       ],
-      "parent_id": "POJK_11_2022__BAGIAN_Kedua__BAB_X",
+      "parent_id": "POJK_11_2022__BAGIAN_Kedua",
       "children": [],
       "is_penjelasan": false
     },
@@ -1232,27 +1072,7 @@
       ],
       "parent_id": null,
       "children": [
-        "POJK_11_2022__BAGIAN_Kesatu__BAB_XI",
-        "POJK_11_2022__BAGIAN_Kedua__BAB_XI",
-        "POJK_11_2022__BAGIAN_Ketiga__BAB_XI",
         "POJK_11_2022__BAGIAN_Keempat"
-      ],
-      "is_penjelasan": false
-    },
-    {
-      "component_id": "POJK_11_2022__BAGIAN_Kesatu__BAB_XI",
-      "component_type": "BAGIAN",
-      "number": "Kesatu",
-      "title": "Laporan Penyelenggaraan TI",
-      "content": "",
-      "page_range": [
-        36,
-        36
-      ],
-      "parent_id": "POJK_11_2022__BAB_XI",
-      "children": [
-        "POJK_11_2022__PASAL_58",
-        "POJK_11_2022__PASAL_59"
       ],
       "is_penjelasan": false
     },
@@ -1266,7 +1086,7 @@
         36,
         36
       ],
-      "parent_id": "POJK_11_2022__BAGIAN_Kesatu__BAB_XI",
+      "parent_id": "POJK_11_2022__BAGIAN_Kesatu",
       "children": [],
       "is_penjelasan": false
     },
@@ -1280,24 +1100,8 @@
         36,
         36
       ],
-      "parent_id": "POJK_11_2022__BAGIAN_Kesatu__BAB_XI",
+      "parent_id": "POJK_11_2022__BAGIAN_Kesatu",
       "children": [],
-      "is_penjelasan": false
-    },
-    {
-      "component_id": "POJK_11_2022__BAGIAN_Kedua__BAB_XI",
-      "component_type": "BAGIAN",
-      "number": "Kedua",
-      "title": "Laporan Insidentil",
-      "content": "",
-      "page_range": [
-        36,
-        36
-      ],
-      "parent_id": "POJK_11_2022__BAB_XI",
-      "children": [
-        "POJK_11_2022__PASAL_60"
-      ],
       "is_penjelasan": false
     },
     {
@@ -1310,24 +1114,8 @@
         36,
         37
       ],
-      "parent_id": "POJK_11_2022__BAGIAN_Kedua__BAB_XI",
+      "parent_id": "POJK_11_2022__BAGIAN_Kedua",
       "children": [],
-      "is_penjelasan": false
-    },
-    {
-      "component_id": "POJK_11_2022__BAGIAN_Ketiga__BAB_XI",
-      "component_type": "BAGIAN",
-      "number": "Ketiga",
-      "title": "Laporan Realisasi Penyelenggaraan TI Bank",
-      "content": "",
-      "page_range": [
-        38,
-        38
-      ],
-      "parent_id": "POJK_11_2022__BAB_XI",
-      "children": [
-        "POJK_11_2022__PASAL_61"
-      ],
       "is_penjelasan": false
     },
     {
@@ -1340,7 +1128,7 @@
         38,
         38
       ],
-      "parent_id": "POJK_11_2022__BAGIAN_Ketiga__BAB_XI",
+      "parent_id": "POJK_11_2022__BAGIAN_Ketiga",
       "children": [],
       "is_penjelasan": false
     },

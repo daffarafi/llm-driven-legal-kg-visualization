@@ -1,0 +1,2327 @@
+{
+  "document_id": "UU_19_2016",
+  "total_nodes": 95,
+  "total_edges": 107,
+  "errors": [],
+  "nodes": [
+    {
+      "id": "Regulasi_UU_19_2016",
+      "type": "Regulasi",
+      "label": "Undang-Undang tentang perubahan atas Undang-Undang Nomor 11 Tahun 2008 tentang Informasi dan Transaksi Elektronik",
+      "content": "bahwa berdasarkan pertimbangan sebagaimana dimaksud dalam huruf a, perlu membentuk Undang_Undang tentang perubahan atas Undang_Undang Nomor 11 Tahun 2008 tentang Informasi dan Transaksi Elektronik; Mengingat : 1. Pasal 5 ayat (l), pasal 20, pasal 25A, pasal 2gD ayat (1), Pasal 28E ayat (21, pasal 28E ayat (3), pasal 28F, pasal 28G ayat (1), pasal 28J ayat (2), dan pasal 33 ayat (2) Undang-Undang Dasar Negara Republik Indonesia Tahun 1945;",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Pasal_26",
+      "type": "Pasal",
+      "label": "Pasal 26",
+      "content": "Kecuali ditentukan lain oleh peraturan perundang-undangan, penggunaan setiap informasi melalui media elektronik yang menyangkut data pribadi seseorang harus dilakukan atas persetujuan Orang yang bersangkutan. Setiap Orang yang dilanggar haknya sebagaimana dimaksud pada ayat (1) dapat mengajukan gugatan atas kerugian yang ditimbulkan berdasarkan Undang-Undang ini.",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Ayat_26_1",
+      "type": "Ayat",
+      "label": "Pasal 26 ayat (1)",
+      "content": "Kecuali ditentukan lain oleh peraturan perundang-undangan, penggunaan setiap informasi melalui media elektronik yang menyangkut data pribadi seseorang harus dilakukan atas persetujuan Orang yang bersangkutan.",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Ayat_26_2",
+      "type": "Ayat",
+      "label": "Pasal 26 ayat (2)",
+      "content": "Setiap Orang yang dilanggar haknya sebagaimana dimaksud pada ayat (1) dapat mengajukan gugatan atas kerugian yang ditimbulkan berdasarkan Undang-Undang ini.",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "EntitasHukum_Orang_yang_bersangkutan",
+      "type": "EntitasHukum",
+      "label": "Orang yang bersangkutan",
+      "content": "",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "EntitasHukum_Setiap_Orang",
+      "type": "EntitasHukum",
+      "label": "Setiap Orang",
+      "content": "",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "PerbuatanHukum_penggunaan_data_pribadi_tanpa_persetujuan",
+      "type": "PerbuatanHukum",
+      "label": "penggunaan setiap informasi melalui media elektronik yang menyangkut data pribadi seseorang harus dilakukan atas persetujuan Orang yang bersangkutan",
+      "content": "",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "PerbuatanHukum_mengajukan_gugatan_atas_kerugian",
+      "type": "PerbuatanHukum",
+      "label": "mengajukan gugatan atas kerugian yang ditimbulkan",
+      "content": "",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Pasal_45",
+      "type": "Pasal",
+      "label": "Pasal 45",
+      "content": "Setiap Orang yang dengan sengaja dan tanpa hak mendistribusikan dan/atau mentransmisikan dan/ atau membuat dapat diaksesnya Informasi Elektronik dan/atau Dokumen Elektronik yang memiliki muatan yang melanggar kesusilaan sebagaimana dimaksud dalam Pasal 27 ayat (ll dipidana dengan pidana penjara paling lama 6 (enam) tahun dan/ atau denda paling banyak Rp 1.000.000.000,00 (satu miliar rupiah). Setiap Orang yang dengan sengaja dan tanpa hak mendistribusikan dan/atau mentransmisikan dan/atau membuat dapat diaksesnya Informasi Elektronik dan/atau Dokumen Elektronik yang memiliki muatan perjudian sebagaimana dimaLsud dalam Pasal 27 ayat (2) dipidana dengan pidana penjara paling lama 6 (enam) tahun dan/atau denda paling banyak Rp1.000.000.000,00 (satu miliar rupiah). Setiap Orang yang dengan sengaja dan tanpa hak mendistribusikan dan/atau mentransmisikan dan/atau membuat dapat diaksesnya Informasi Elektronik dan/atau Dokumen Elektronik yang memiliki muatan penghinaan dan/atau pencemaran nama baik sebagaimana dimaksud dalam Pasal 27 ayat (3) dipidana dengan pidana penjara paling lama 4 (empat) tahun dan/atau denda paling banyak Rp750.000.000,00 (tujuh ratus lima puluh juta rupiah). Setiap Orang yang dengan sengaja dan tanpa hak mendistribusikan dan/atau mentransmisikan dan/ atau membuat dapat diaksesnya Informasi Elektronik dan/ atau Dokumen Elektronik yang memiliki muatan pemerasan dan/atau pengancaman sebagaimana dimaksud dalam Pasal 27 ayat (4) dipidana dengan pidana penjara paling lama 6 (enam) tahun dan/atau denda paling banyak Rp 1.000.000.000,00 (satu miliar rupiah).",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Ayat_45_1",
+      "type": "Ayat",
+      "label": "Pasal 45 ayat (1)",
+      "content": "Setiap Orang yang dengan sengaja dan tanpa hak mendistribusikan dan/atau mentransmisikan dan/ atau membuat dapat diaksesnya Informasi Elektronik dan/atau Dokumen Elektronik yang memiliki muatan yang melanggar kesusilaan sebagaimana dimaksud dalam Pasal 27 ayat (ll dipidana dengan pidana penjara paling lama 6 (enam) tahun dan/ atau denda paling banyak Rp 1.000.000.000,00 (satu miliar rupiah).",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Ayat_45_2",
+      "type": "Ayat",
+      "label": "Pasal 45 ayat (2)",
+      "content": "Setiap Orang yang dengan sengaja dan tanpa hak mendistribusikan dan/atau mentransmisikan dan/atau membuat dapat diaksesnya Informasi Elektronik dan/atau Dokumen Elektronik yang memiliki muatan perjudian sebagaimana dimaLsud dalam Pasal 27 ayat (2) dipidana dengan pidana penjara paling lama 6 (enam) tahun dan/atau denda paling banyak Rp1.000.000.000,00 (satu miliar rupiah).",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Ayat_45_3",
+      "type": "Ayat",
+      "label": "Pasal 45 ayat (3)",
+      "content": "Setiap Orang yang dengan sengaja dan tanpa hak mendistribusikan dan/atau mentransmisikan dan/atau membuat dapat diaksesnya Informasi Elektronik dan/atau Dokumen Elektronik yang memiliki muatan penghinaan dan/atau pencemaran nama baik sebagaimana dimaksud dalam Pasal 27 ayat (3) dipidana dengan pidana penjara paling lama 4 (empat) tahun dan/atau denda paling banyak Rp750.000.000,00 (tujuh ratus lima puluh juta rupiah).",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Ayat_45_4",
+      "type": "Ayat",
+      "label": "Pasal 45 ayat (4)",
+      "content": "Setiap Orang yang dengan sengaja dan tanpa hak mendistribusikan dan/atau mentransmisikan dan/ atau membuat dapat diaksesnya Informasi Elektronik dan/ atau Dokumen Elektronik yang memiliki muatan pemerasan dan/atau pengancaman sebagaimana dimaksud dalam Pasal 27 ayat (4) dipidana dengan pidana penjara paling lama 6 (enam) tahun dan/atau denda paling banyak Rp 1.000.000.000,00 (satu miliar rupiah).",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "PerbuatanHukum_distribusi_konten_kesusilaan",
+      "type": "PerbuatanHukum",
+      "label": "mendistribusikan dan/atau mentransmisikan dan/atau membuat dapat diaksesnya Informasi Elektronik dan/atau Dokumen Elektronik yang memiliki muatan yang melanggar kesusilaan",
+      "content": "",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "PerbuatanHukum_distribusi_konten_perjudian",
+      "type": "PerbuatanHukum",
+      "label": "mendistribusikan dan/atau mentransmisikan dan/atau membuat dapat diaksesnya Informasi Elektronik dan/atau Dokumen Elektronik yang memiliki muatan perjudian",
+      "content": "",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "PerbuatanHukum_distribusi_konten_penghinaan",
+      "type": "PerbuatanHukum",
+      "label": "mendistribusikan dan/atau mentransmisikan dan/atau membuat dapat diaksesnya Informasi Elektronik dan/atau Dokumen Elektronik yang memiliki muatan penghinaan dan/atau pencemaran nama baik",
+      "content": "",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "PerbuatanHukum_distribusi_konten_pemerasan_pengancaman",
+      "type": "PerbuatanHukum",
+      "label": "mendistribusikan dan/atau mentransmisikan dan/atau membuat dapat diaksesnya Informasi Elektronik dan/atau Dokumen Elektronik yang memiliki muatan pemerasan dan/atau pengancaman",
+      "content": "",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Sanksi_pidana_penjara_6_tahun_denda_1M",
+      "type": "Sanksi",
+      "label": "pidana penjara paling lama 6 (enam) tahun dan/atau denda paling banyak Rp 1.000.000.000,00 (satu miliar rupiah)",
+      "content": "",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Sanksi_pidana_penjara_4_tahun_denda_750jt",
+      "type": "Sanksi",
+      "label": "pidana penjara paling lama 4 (empat) tahun dan/atau denda paling banyak Rp750.000.000,00 (tujuh ratus lima puluh juta rupiah)",
+      "content": "",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Pasal_27",
+      "type": "Pasal",
+      "label": "Pasal 27",
+      "content": "Referenced in Pasal 45",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Ayat_27_1",
+      "type": "Ayat",
+      "label": "Pasal 27 ayat (1)",
+      "content": "Referenced in Pasal 45 ayat (1)",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Ayat_27_2",
+      "type": "Ayat",
+      "label": "Pasal 27 ayat (2)",
+      "content": "Referenced in Pasal 45 ayat (2)",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Ayat_27_3",
+      "type": "Ayat",
+      "label": "Pasal 27 ayat (3)",
+      "content": "Referenced in Pasal 45 ayat (3)",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Ayat_27_4",
+      "type": "Ayat",
+      "label": "Pasal 27 ayat (4)",
+      "content": "Referenced in Pasal 45 ayat (4)",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Pasal_45A",
+      "type": "Pasal",
+      "label": "Pasal 45A",
+      "content": "Setiap Orang yang dengan sengaja dan tanpa hak menyebarkan berita bohong dan menyesatkan yang mengakibatkan kerugian konsumen dalam Transaksi Elektronik sebagaimana dimaksud dalam Pasal 28 ayat (1) dipidana dengan pidana penjara paling lama 6 (enam) tahun dan/atau denda paling banyak Rp 1.000. 000.000,00 (satu miliar rupiah). Setiap Orang yang dengan sengaja dan tanpa hak menyebarkan informasi yang ditujukan untuk menimbulkan rasa kebencian atau permusuhan individu dan/atau kelompok masyarakat tertentu berdasarkan atas suku, agama, ras, dan antargolongan (SARA) sebagaimana dimaksud dalam Pasal 28 ayat (21 dipidana dengan pidana penjara paling lama 6 (enam) tahun dan/ atau denda paling banyak Rp 1. 000.O00. 000,00 (satu miliar rupiah).",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Ayat_45A_1",
+      "type": "Ayat",
+      "label": "Pasal 45A ayat (1)",
+      "content": "Setiap Orang yang dengan sengaja dan tanpa hak menyebarkan berita bohong dan menyesatkan yang mengakibatkan kerugian konsumen dalam Transaksi Elektronik sebagaimana dimaksud dalam Pasal 28 ayat (1) dipidana dengan pidana penjara paling lama 6 (enam) tahun dan/atau denda paling banyak Rp 1.000. 000.000,00 (satu miliar rupiah).",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Ayat_45A_2",
+      "type": "Ayat",
+      "label": "Pasal 45A ayat (2)",
+      "content": "Setiap Orang yang dengan sengaja dan tanpa hak menyebarkan informasi yang ditujukan untuk menimbulkan rasa kebencian atau permusuhan individu dan/atau kelompok masyarakat tertentu berdasarkan atas suku, agama, ras, dan antargolongan (SARA) sebagaimana dimaksud dalam Pasal 28 ayat (21 dipidana dengan pidana penjara paling lama 6 (enam) tahun dan/ atau denda paling banyak Rp 1. 000.O00. 000,00 (satu miliar rupiah).",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "PerbuatanHukum_menyebar_berita_bohong_menyesatkan",
+      "type": "PerbuatanHukum",
+      "label": "menyebarkan berita bohong dan menyesatkan yang mengakibatkan kerugian konsumen dalam Transaksi Elektronik",
+      "content": "",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "PerbuatanHukum_menyebar_informasi_SARA",
+      "type": "PerbuatanHukum",
+      "label": "menyebarkan informasi yang ditujukan untuk menimbulkan rasa kebencian atau permusuhan individu dan/atau kelompok masyarakat tertentu berdasarkan atas suku, agama, ras, dan antargolongan (SARA)",
+      "content": "",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Pasal_28",
+      "type": "Pasal",
+      "label": "Pasal 28",
+      "content": "Referenced in Pasal 45A",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Ayat_28_1",
+      "type": "Ayat",
+      "label": "Pasal 28 ayat (1)",
+      "content": "Referenced in Pasal 45A ayat (1)",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Ayat_28_2",
+      "type": "Ayat",
+      "label": "Pasal 28 ayat (2)",
+      "content": "Referenced in Pasal 45A ayat (2)",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Regulasi_UU_19_2016",
+      "type": "Regulasi",
+      "label": "Undang-Undang Republik Indonesia Nomor 19 Tahun 2016 tentang Perubahan atas Undang-Undang Nomor 11 Tahun 2008 tentang Informasi dan Transaksi Elektronik",
+      "content": "Bahwa kemerdekaan menyatakan pikiran dan kebebasan berpendapat serta hak memperoleh informasi melalui penggunaan dan pemanfaatan Teknologi Informasi dan komunikasi ditujukan untuk memajukan kesejahteraan umum, dan mencerdaskan kehidupan bangsa serta memberikan rasa aman, keadilan, dan kepastian hukum bagi pengguna dan Penyelenggara Sistem Elektronik.",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_003,UU_19_2016__struct_chunk_004,UU_19_2016__struct_chunk_005",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Pasal_458",
+      "type": "Pasal",
+      "label": "Pasal 458",
+      "content": "Setiap Orang yang dengan sengaja dan tanpa hak mengirimkan Informasi Elektronik dan/atau Dokumen Elektronik yang berisi ancaman kekerasan atau menakut-nakuti yang ditujukan secara pribadi sebagaimana dimaksud dalam Pasal 29 dipidana dengan pidana penjara paling lama 4 (empat) tahun dan/ atau denda paling banyak Rp750.000.000,00 (tujuh ratus lima puluh juta rupiah).",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_003,UU_19_2016__struct_chunk_004,UU_19_2016__struct_chunk_005",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Pasal_II",
+      "type": "Pasal",
+      "label": "Pasal II",
+      "content": "Undang-Undang ini mulai berlaku pada tanggal diundangkan.",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_003,UU_19_2016__struct_chunk_004,UU_19_2016__struct_chunk_005",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "EntitasHukum_Setiap_Orang",
+      "type": "EntitasHukum",
+      "label": "Setiap Orang",
+      "content": null,
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_003,UU_19_2016__struct_chunk_004,UU_19_2016__struct_chunk_005",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "PerbuatanHukum_mengirimkan_ancaman_kekerasan",
+      "type": "PerbuatanHukum",
+      "label": "mengirimkan Informasi Elektronik dan/atau Dokumen Elektronik yang berisi ancaman kekerasan atau menakut-nakuti yang ditujukan secara pribadi",
+      "content": null,
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_003,UU_19_2016__struct_chunk_004,UU_19_2016__struct_chunk_005",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Sanksi_pidana_penjara_4_tahun_denda_750_juta",
+      "type": "Sanksi",
+      "label": "pidana penjara paling lama 4 (empat) tahun dan/ atau denda paling banyak Rp750.000.000,00 (tujuh ratus lima puluh juta rupiah)",
+      "content": null,
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_003,UU_19_2016__struct_chunk_004,UU_19_2016__struct_chunk_005",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Pasal_29",
+      "type": "Pasal",
+      "label": "Pasal 29",
+      "content": null,
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_003,UU_19_2016__struct_chunk_004,UU_19_2016__struct_chunk_005",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Pasal_28J",
+      "type": "Pasal",
+      "label": "Pasal 28J",
+      "content": null,
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_003,UU_19_2016__struct_chunk_004,UU_19_2016__struct_chunk_005",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Ayat_28J_2",
+      "type": "Ayat",
+      "label": "Pasal 28J ayat (2)",
+      "content": null,
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_003,UU_19_2016__struct_chunk_004,UU_19_2016__struct_chunk_005",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Pasal_5",
+      "type": "Pasal",
+      "label": "Pasal 5",
+      "content": null,
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_003,UU_19_2016__struct_chunk_004,UU_19_2016__struct_chunk_005",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Ayat_5_1",
+      "type": "Ayat",
+      "label": "Pasal 5 ayat (1)",
+      "content": null,
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_003,UU_19_2016__struct_chunk_004,UU_19_2016__struct_chunk_005",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Ayat_5_2",
+      "type": "Ayat",
+      "label": "Pasal 5 ayat (2)",
+      "content": null,
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_003,UU_19_2016__struct_chunk_004,UU_19_2016__struct_chunk_005",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Regulasi_UU_19_2016",
+      "type": "Regulasi",
+      "label": "Undang-Undang tentang Perubahan atas Undang-Undang Nomor 11 Tahun 2008 tentang Informasi dan Transaksi Elektronik",
+      "content": "Berdasarkan pertimbangan tersebut, perlu membentuk Undang-Undang tentang Perubahan atas Undang-Undang Nomor 1l Tahun 2008 tentang Informasi dan Transaksi Elektronik yang menegaskan kembali ketentuan keberadaan Informasi Elektronik dan/atau Dokumen Elektronik dalam Penjelasan Pasal 5, menambah ketentuan kewajiban penghapusan Informasi Elektronik dan/ atau Dokumen Elektronik yang tidak relevan dalam Pasal 26, mengubah ketentuan Pasal 31 ayat (41 mengenai pendelegasian penJrusunan tata cara intersepsi ke dalam unding-unilang, menambah peran Pemerintah dalam melakukan pencegahan penyebarluasan dan penggunaan Informasi Elektronik dan/atau Dokumen Elektronik yang memiliki muatan yang dilarang dalam Pasal 40, mengubah beberapa ketentuan mengenai penyidikan yang terkait dengan dugaah tindak pidana di bidang Teknologi Informasi dan Transaksi Elektronik dahm Pasal 43, dan menambah penjelasan Pasal 27 ayat (1), ayat (3), dan ayat (4) agar lebih harmonis dengan sistem hukum pidana materiil yang diatur di Indonesia.",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Pasal_1",
+      "type": "Pasal",
+      "label": "Pasal 1",
+      "content": "Cukup jelas.",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Pasal_5",
+      "type": "Pasal",
+      "label": "Pasal 5",
+      "content": "Penjelasan Pasal 5",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Ayat_5_1",
+      "type": "Ayat",
+      "label": "Ayat (1)",
+      "content": "Bahwa keberadaan Informasi Elektronik dan/ atau Dokumen Elektronik mengikat dan diakui sebagai alat bukti yang sah untuk memberikan kepastian hukum terhadap Penyelenggaraan Sistem Elektronik dan Transaksi Elektronik, terutama dalam pembuktian dan hal yang berkaitan dengan perbuatan hukum yang dilakukan melalui Sistem Elektronik.",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Ayat_5_2",
+      "type": "Ayat",
+      "label": "Ayat (2)",
+      "content": "Khusus untuk Informasi Elektronik dan/atau Dokumen Elektronik berupa hasil intersepsi atau penyadapan atau perekaman yang merupakan b\"gian dari penyadapan harus dilakukan dalam rangka penegakan hukum atas permintaan kepolisian, kejaksaan, dan/ atau institusi lainnya yang kewenangannya ditetapkan berdasarkan undang-undang.",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Ayat_5_3",
+      "type": "Ayat",
+      "label": "Ayat (3)",
+      "content": "Cukup jelas.",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Ayat_5_4",
+      "type": "Ayat",
+      "label": "Ayat (4)",
+      "content": "Penjelasan Ayat (4)",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Pasal_26",
+      "type": "Pasal",
+      "label": "Pasal 26",
+      "content": "Penjelasan Pasal 26",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Ayat_26_1",
+      "type": "Ayat",
+      "label": "Ayat (l)",
+      "content": "Dalam pemanfaatan Teknologi Informasi, perlindungan data pribadi merupakan salah satu bagian dari hak pribadi (piuacg nqfus). Hak pribadi mengandung pengertian sebagai berikut:",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Pasal_31",
+      "type": "Pasal",
+      "label": "Pasal 31",
+      "content": "Penjelasan Pasal 31",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Ayat_31_1",
+      "type": "Ayat",
+      "label": "Ayat (r)",
+      "content": "Yang dimaksud dengan \"intersepsi atau penyadapan\" adalah kegiatan untuk mendengarkan, merekam, membelokkan, mengu.bah, menghambat, dan/atau mencatat transmisi Informasi Elektronik dan/atau Dokumen Elektronik yang tidak bersifat publik, baik menggunakan jaringan kabel komunikasi maupun jaringan nirkabel, seperti pancaran elektromagnetis atau radio frekuensi.",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Ayat_31_2",
+      "type": "Ayat",
+      "label": "Ayat (2)",
+      "content": "Cukup jelas.",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Ayat_31_3",
+      "type": "Ayat",
+      "label": "Ayat (3)",
+      "content": "Cukup jelas.",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Ayat_31_4",
+      "type": "Ayat",
+      "label": "Ayat (4)",
+      "content": "Cukup jelas.",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Pasal_40",
+      "type": "Pasal",
+      "label": "Pasal 40",
+      "content": "Penjelasan Pasal 40",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Ayat_40_1",
+      "type": "Ayat",
+      "label": "Ayat (1)",
+      "content": "Fasilitasi pemanfaatan Teknologi Informasi, termasuk tata kelola Teknologi Informasi dan Transaksi Elektronik yang aman, beretika, cerdas, kreatif, produktif, dan inovatif. Ketentuan ini termasuk memfasilitasi masyarakat luas, instansi pemerintah, dan pelaku usaha dalam mengembangkan produk dan jasa Teknologi Informasi dan komunikasi.",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Ayat_40_2",
+      "type": "Ayat",
+      "label": "Ayat (2)",
+      "content": "Cukup jelas.",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Ayat_40_2a",
+      "type": "Ayat",
+      "label": "Ayat (2a)",
+      "content": "Cukup jelas.",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Ayat_40_2b",
+      "type": "Ayat",
+      "label": "Ayat (2b)",
+      "content": "Cukup jelas.",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Ayat_40_3",
+      "type": "Ayat",
+      "label": "Ayat (3)",
+      "content": "Cukup jelas.",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Ayat_40_a",
+      "type": "Ayat",
+      "label": "Ayat (a)",
+      "content": "Cukup jelas.",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Ayat_40_s",
+      "type": "Ayat",
+      "label": "Ayat (s)",
+      "content": "Cukup jelas.",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Ayat_40_6",
+      "type": "Ayat",
+      "label": "Ayat (6)",
+      "content": "Cukup jelas.",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Pasal_43",
+      "type": "Pasal",
+      "label": "Pasal 43",
+      "content": "Penjelasan Pasal 43",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Ayat_43_1",
+      "type": "Ayat",
+      "label": "Ayat (l)",
+      "content": "Yang dimaksud dengan \"Pejabat Pegawai Negeri Sipil tertentu\" adalah Pejabat Pegawai Negeri Sipil kementerian yang menyelenggarakan urusan pemerintahan di bidang komunikasi dan informatika yang telah memenuhi persyaratan berdasarkan ketentuan peraturan perundang-undangan.",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Ayat_43_2",
+      "type": "Ayat",
+      "label": "Ayat (2)",
+      "content": "Cukup jelas.",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Ayat_43_s",
+      "type": "Ayat",
+      "label": "Ayat (s)",
+      "content": "Cukup jelas.",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Ayat_43_41",
+      "type": "Ayat",
+      "label": "Ayat (41",
+      "content": "Cukup jelas.",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Ayat_43_5",
+      "type": "Ayat",
+      "label": "Ayat (5)",
+      "content": "Penjelasan Ayat (5)",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Ayat_43_6",
+      "type": "Ayat",
+      "label": "Ayat (6)",
+      "content": "Cukup jelas.",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Ayat_43_7",
+      "type": "Ayat",
+      "label": "Ayat (7)",
+      "content": "Cukup jelas.",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Ayat_43_7a",
+      "type": "Ayat",
+      "label": "Ayat (7a)",
+      "content": "Cukup jelas.",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Ayat_43_8",
+      "type": "Ayat",
+      "label": "Ayat (8)",
+      "content": "Cukup jelas.",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Pasal_45",
+      "type": "Pasal",
+      "label": "Pasal 45",
+      "content": "Cukup jelas.",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Pasal_45A",
+      "type": "Pasal",
+      "label": "Pasal 45A",
+      "content": "Cukup jelas.",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Pasal_45El",
+      "type": "Pasal",
+      "label": "Pasal 45El",
+      "content": "Ketentuan dalam Pasal ini termasuk juga di dalamnya perundungan di dunia siber (cgber bullyingl yang mengandung unsur ancaman kekerasan atau menakut-nakuti dan mengakibatkan kekerasan fisik, psikis, dan/ atau kerugian materiil.",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "KonsepHukum_intersepsi_penyadapan",
+      "type": "KonsepHukum",
+      "label": "intersepsi atau penyadapan",
+      "content": "kegiatan untuk mendengarkan, merekam, membelokkan, mengu.bah, menghambat, dan/atau mencatat transmisi Informasi Elektronik dan/atau Dokumen Elektronik yang tidak bersifat publik, baik menggunakan jaringan kabel komunikasi maupun jaringan nirkabel, seperti pancaran elektromagnetis atau radio frekuensi.",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "KonsepHukum_Pejabat_Pegawai_Negeri_Sipil_tertentu",
+      "type": "KonsepHukum",
+      "label": "Pejabat Pegawai Negeri Sipil tertentu",
+      "content": "Pejabat Pegawai Negeri Sipil kementerian yang menyelenggarakan urusan pemerintahan di bidang komunikasi dan informatika yang telah memenuhi persyaratan berdasarkan ketentuan peraturan perundang-undangan.",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "KonsepHukum_ahli",
+      "type": "KonsepHukum",
+      "label": "ahli",
+      "content": "seseorang yang memiliki keahlian khusus di bidang Teknologi Informasi yang dapat dipertanggungjawabkan secara akademis maupun praktis mengenai pengetahuannya tersebut.",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "EntitasHukum_Penyelenggara_Sistem_Elektronik",
+      "type": "EntitasHukum",
+      "label": "Penyelenggara Sistem Elektronik",
+      "content": "Penyelenggara Sistem Elektronik",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "EntitasHukum_Orang_yang_bersangkutan",
+      "type": "EntitasHukum",
+      "label": "Orang yang bersangkutan",
+      "content": "Orang yang bersangkutan",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "EntitasHukum_kepolisian_kejaksaan_institusi_lainnya",
+      "type": "EntitasHukum",
+      "label": "kepolisian, kejaksaan, dan/ atau institusi lainnya",
+      "content": "kepolisian, kejaksaan, dan/ atau institusi lainnya",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "EntitasHukum_masyarakat_instansi_pemerintah_pelaku_usaha",
+      "type": "EntitasHukum",
+      "label": "masyarakat luas, instansi pemerintah, dan pelaku usaha",
+      "content": "masyarakat luas, instansi pemerintah, dan pelaku usaha",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "EntitasHukum_Pemerintah",
+      "type": "EntitasHukum",
+      "label": "Pemerintah",
+      "content": "Pemerintah",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "PerbuatanHukum_Informasi_Elektronik_Dokumen_Elektronik_alat_bukti_sah",
+      "type": "PerbuatanHukum",
+      "label": "keberadaan Informasi Elektronik dan/ atau Dokumen Elektronik mengikat dan diakui sebagai alat bukti yang sah",
+      "content": "keberadaan Informasi Elektronik dan/ atau Dokumen Elektronik mengikat dan diakui sebagai alat bukti yang sah",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "PerbuatanHukum_intersepsi_penyadapan_perekaman_penegakan_hukum",
+      "type": "PerbuatanHukum",
+      "label": "intersepsi atau penyadapan atau perekaman ... dilakukan dalam rangka penegakan hukum",
+      "content": "intersepsi atau penyadapan atau perekaman yang merupakan b\"gian dari penyadapan harus dilakukan dalam rangka penegakan hukum",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "PerbuatanHukum_fasilitasi_pemanfaatan_TI_tata_kelola_TI",
+      "type": "PerbuatanHukum",
+      "label": "Fasilitasi pemanfaatan Teknologi Informasi, termasuk tata kelola Teknologi Informasi dan Transaksi Elektronik yang aman, beretika, cerdas, kreatif, produktif, dan inovatif",
+      "content": "Fasilitasi pemanfaatan Teknologi Informasi, termasuk tata kelola Teknologi Informasi dan Transaksi Elektronik yang aman, beretika, cerdas, kreatif, produktif, dan inovatif",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "PerbuatanHukum_memfasilitasi_pengembangan_produk_jasa_TIK",
+      "type": "PerbuatanHukum",
+      "label": "memfasilitasi masyarakat luas, instansi pemerintah, dan pelaku usaha dalam mengembangkan produk dan jasa Teknologi Informasi dan komunikasi",
+      "content": "memfasilitasi masyarakat luas, instansi pemerintah, dan pelaku usaha dalam mengembangkan produk dan jasa Teknologi Informasi dan komunikasi",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "PerbuatanHukum_perundungan_siber_ancaman_kekerasan",
+      "type": "PerbuatanHukum",
+      "label": "perundungan di dunia siber (cyber bullying) yang mengandung unsur ancaman kekerasan atau menakut-nakuti dan mengakibatkan kekerasan fisik, psikis, dan/ atau kerugian materiil",
+      "content": "perundungan di dunia siber (cgber bullyingl yang mengandung unsur ancaman kekerasan atau menakut-nakuti dan mengakibatkan kekerasan fisik, psikis, dan/ atau kerugian materiil",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "PerbuatanHukum_menghapus_Informasi_Elektronik_tidak_relevan",
+      "type": "PerbuatanHukum",
+      "label": "menghapus Informasi Elektronik dan/ atau Dokumen Elektronik yang tidak relevan",
+      "content": "menghapus Informasi Elektronik dan/ atau Dokumen Elektronik yang tidak relevan yang berada di bawah kendalinya atas permintaan Orang yang bersangkutan berdasarkan penetapan pengadilan.",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "PerbuatanHukum_pencegahan_penyebarluasan_penggunaan_Informasi_Elektronik_dilarang",
+      "type": "PerbuatanHukum",
+      "label": "melakukan pencegahan penyebarluasan dan penggunaan Informasi Elektronik dan/atau Dokumen Elektronik yang memiliki muatan yang dilarang",
+      "content": "melakukan pencegahan penyebarluasan dan penggunaan Informasi Elektronik dan/atau Dokumen Elektronik yang memiliki muatan yang dilarang",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source_id": "Regulasi_UU_19_2016",
+      "target_id": "Pasal_26",
+      "type": "MEMUAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_26",
+      "target_id": "Ayat_26_1",
+      "type": "MEMILIKI_AYAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_26",
+      "target_id": "Ayat_26_2",
+      "type": "MEMILIKI_AYAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Ayat_26_1",
+      "target_id": "PerbuatanHukum_penggunaan_data_pribadi_tanpa_persetujuan",
+      "type": "MENGATUR",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Ayat_26_1",
+      "target_id": "EntitasHukum_Orang_yang_bersangkutan",
+      "type": "BERLAKU_UNTUK",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Ayat_26_2",
+      "target_id": "PerbuatanHukum_mengajukan_gugatan_atas_kerugian",
+      "type": "MENGATUR",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Ayat_26_2",
+      "target_id": "EntitasHukum_Setiap_Orang",
+      "type": "BERLAKU_UNTUK",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Ayat_26_2",
+      "target_id": "Ayat_26_1",
+      "type": "MERUJUK",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Regulasi_UU_19_2016",
+      "target_id": "Pasal_45",
+      "type": "MEMUAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_45",
+      "target_id": "Ayat_45_1",
+      "type": "MEMILIKI_AYAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_45",
+      "target_id": "Ayat_45_2",
+      "type": "MEMILIKI_AYAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_45",
+      "target_id": "Ayat_45_3",
+      "type": "MEMILIKI_AYAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_45",
+      "target_id": "Ayat_45_4",
+      "type": "MEMILIKI_AYAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Ayat_45_1",
+      "target_id": "EntitasHukum_Setiap_Orang",
+      "type": "BERLAKU_UNTUK",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Ayat_45_1",
+      "target_id": "PerbuatanHukum_distribusi_konten_kesusilaan",
+      "type": "MENGATUR",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Ayat_45_1",
+      "target_id": "Sanksi_pidana_penjara_6_tahun_denda_1M",
+      "type": "MENETAPKAN_SANKSI",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Ayat_45_1",
+      "target_id": "Ayat_27_1",
+      "type": "MERUJUK",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Ayat_45_2",
+      "target_id": "EntitasHukum_Setiap_Orang",
+      "type": "BERLAKU_UNTUK",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Ayat_45_2",
+      "target_id": "PerbuatanHukum_distribusi_konten_perjudian",
+      "type": "MENGATUR",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Ayat_45_2",
+      "target_id": "Sanksi_pidana_penjara_6_tahun_denda_1M",
+      "type": "MENETAPKAN_SANKSI",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Ayat_45_2",
+      "target_id": "Ayat_27_2",
+      "type": "MERUJUK",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Ayat_45_3",
+      "target_id": "EntitasHukum_Setiap_Orang",
+      "type": "BERLAKU_UNTUK",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Ayat_45_3",
+      "target_id": "PerbuatanHukum_distribusi_konten_penghinaan",
+      "type": "MENGATUR",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Ayat_45_3",
+      "target_id": "Sanksi_pidana_penjara_4_tahun_denda_750jt",
+      "type": "MENETAPKAN_SANKSI",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Ayat_45_3",
+      "target_id": "Ayat_27_3",
+      "type": "MERUJUK",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Ayat_45_4",
+      "target_id": "EntitasHukum_Setiap_Orang",
+      "type": "BERLAKU_UNTUK",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Ayat_45_4",
+      "target_id": "PerbuatanHukum_distribusi_konten_pemerasan_pengancaman",
+      "type": "MENGATUR",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Ayat_45_4",
+      "target_id": "Sanksi_pidana_penjara_6_tahun_denda_1M",
+      "type": "MENETAPKAN_SANKSI",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Ayat_45_4",
+      "target_id": "Ayat_27_4",
+      "type": "MERUJUK",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_27",
+      "target_id": "Ayat_27_1",
+      "type": "MEMILIKI_AYAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_27",
+      "target_id": "Ayat_27_2",
+      "type": "MEMILIKI_AYAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_27",
+      "target_id": "Ayat_27_3",
+      "type": "MEMILIKI_AYAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_27",
+      "target_id": "Ayat_27_4",
+      "type": "MEMILIKI_AYAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Regulasi_UU_19_2016",
+      "target_id": "Pasal_45A",
+      "type": "MEMUAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_45A",
+      "target_id": "Ayat_45A_1",
+      "type": "MEMILIKI_AYAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_45A",
+      "target_id": "Ayat_45A_2",
+      "type": "MEMILIKI_AYAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Ayat_45A_1",
+      "target_id": "EntitasHukum_Setiap_Orang",
+      "type": "BERLAKU_UNTUK",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Ayat_45A_1",
+      "target_id": "PerbuatanHukum_menyebar_berita_bohong_menyesatkan",
+      "type": "MENGATUR",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Ayat_45A_1",
+      "target_id": "Sanksi_pidana_penjara_6_tahun_denda_1M",
+      "type": "MENETAPKAN_SANKSI",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Ayat_45A_1",
+      "target_id": "Ayat_28_1",
+      "type": "MERUJUK",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Ayat_45A_2",
+      "target_id": "EntitasHukum_Setiap_Orang",
+      "type": "BERLAKU_UNTUK",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Ayat_45A_2",
+      "target_id": "PerbuatanHukum_menyebar_informasi_SARA",
+      "type": "MENGATUR",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Ayat_45A_2",
+      "target_id": "Sanksi_pidana_penjara_6_tahun_denda_1M",
+      "type": "MENETAPKAN_SANKSI",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Ayat_45A_2",
+      "target_id": "Ayat_28_2",
+      "type": "MERUJUK",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_28",
+      "target_id": "Ayat_28_1",
+      "type": "MEMILIKI_AYAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_28",
+      "target_id": "Ayat_28_2",
+      "type": "MEMILIKI_AYAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_000,UU_19_2016__struct_chunk_001,UU_19_2016__struct_chunk_002",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Regulasi_UU_19_2016",
+      "target_id": "Pasal_458",
+      "type": "MEMUAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_003,UU_19_2016__struct_chunk_004,UU_19_2016__struct_chunk_005",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Regulasi_UU_19_2016",
+      "target_id": "Pasal_II",
+      "type": "MEMUAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_003,UU_19_2016__struct_chunk_004,UU_19_2016__struct_chunk_005",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_458",
+      "target_id": "PerbuatanHukum_mengirimkan_ancaman_kekerasan",
+      "type": "MENGATUR",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_003,UU_19_2016__struct_chunk_004,UU_19_2016__struct_chunk_005",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_458",
+      "target_id": "EntitasHukum_Setiap_Orang",
+      "type": "BERLAKU_UNTUK",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_003,UU_19_2016__struct_chunk_004,UU_19_2016__struct_chunk_005",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_458",
+      "target_id": "Sanksi_pidana_penjara_4_tahun_denda_750_juta",
+      "type": "MENETAPKAN_SANKSI",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_003,UU_19_2016__struct_chunk_004,UU_19_2016__struct_chunk_005",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_458",
+      "target_id": "Pasal_29",
+      "type": "MERUJUK",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_003,UU_19_2016__struct_chunk_004,UU_19_2016__struct_chunk_005",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_28J",
+      "target_id": "Ayat_28J_2",
+      "type": "MEMILIKI_AYAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_003,UU_19_2016__struct_chunk_004,UU_19_2016__struct_chunk_005",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_5",
+      "target_id": "Ayat_5_1",
+      "type": "MEMILIKI_AYAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_003,UU_19_2016__struct_chunk_004,UU_19_2016__struct_chunk_005",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_5",
+      "target_id": "Ayat_5_2",
+      "type": "MEMILIKI_AYAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_003,UU_19_2016__struct_chunk_004,UU_19_2016__struct_chunk_005",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Regulasi_UU_19_2016",
+      "target_id": "Pasal_1",
+      "type": "MEMUAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Regulasi_UU_19_2016",
+      "target_id": "Pasal_5",
+      "type": "MEMUAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Regulasi_UU_19_2016",
+      "target_id": "Pasal_26",
+      "type": "MEMUAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Regulasi_UU_19_2016",
+      "target_id": "Pasal_31",
+      "type": "MEMUAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Regulasi_UU_19_2016",
+      "target_id": "Pasal_40",
+      "type": "MEMUAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Regulasi_UU_19_2016",
+      "target_id": "Pasal_43",
+      "type": "MEMUAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Regulasi_UU_19_2016",
+      "target_id": "Pasal_45",
+      "type": "MEMUAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Regulasi_UU_19_2016",
+      "target_id": "Pasal_45A",
+      "type": "MEMUAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Regulasi_UU_19_2016",
+      "target_id": "Pasal_45El",
+      "type": "MEMUAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_5",
+      "target_id": "Ayat_5_1",
+      "type": "MEMILIKI_AYAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_5",
+      "target_id": "Ayat_5_2",
+      "type": "MEMILIKI_AYAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_5",
+      "target_id": "Ayat_5_3",
+      "type": "MEMILIKI_AYAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_5",
+      "target_id": "Ayat_5_4",
+      "type": "MEMILIKI_AYAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_26",
+      "target_id": "Ayat_26_1",
+      "type": "MEMILIKI_AYAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_31",
+      "target_id": "Ayat_31_1",
+      "type": "MEMILIKI_AYAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_31",
+      "target_id": "Ayat_31_2",
+      "type": "MEMILIKI_AYAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_31",
+      "target_id": "Ayat_31_3",
+      "type": "MEMILIKI_AYAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_31",
+      "target_id": "Ayat_31_4",
+      "type": "MEMILIKI_AYAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_40",
+      "target_id": "Ayat_40_1",
+      "type": "MEMILIKI_AYAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_40",
+      "target_id": "Ayat_40_2",
+      "type": "MEMILIKI_AYAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_40",
+      "target_id": "Ayat_40_2a",
+      "type": "MEMILIKI_AYAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_40",
+      "target_id": "Ayat_40_2b",
+      "type": "MEMILIKI_AYAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_40",
+      "target_id": "Ayat_40_3",
+      "type": "MEMILIKI_AYAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_40",
+      "target_id": "Ayat_40_a",
+      "type": "MEMILIKI_AYAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_40",
+      "target_id": "Ayat_40_s",
+      "type": "MEMILIKI_AYAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_40",
+      "target_id": "Ayat_40_6",
+      "type": "MEMILIKI_AYAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_43",
+      "target_id": "Ayat_43_1",
+      "type": "MEMILIKI_AYAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_43",
+      "target_id": "Ayat_43_2",
+      "type": "MEMILIKI_AYAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_43",
+      "target_id": "Ayat_43_s",
+      "type": "MEMILIKI_AYAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_43",
+      "target_id": "Ayat_43_41",
+      "type": "MEMILIKI_AYAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_43",
+      "target_id": "Ayat_43_5",
+      "type": "MEMILIKI_AYAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_43",
+      "target_id": "Ayat_43_6",
+      "type": "MEMILIKI_AYAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_43",
+      "target_id": "Ayat_43_7",
+      "type": "MEMILIKI_AYAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_43",
+      "target_id": "Ayat_43_7a",
+      "type": "MEMILIKI_AYAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_43",
+      "target_id": "Ayat_43_8",
+      "type": "MEMILIKI_AYAT",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Ayat_31_1",
+      "target_id": "KonsepHukum_intersepsi_penyadapan",
+      "type": "MENDEFINISIKAN",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Ayat_43_1",
+      "target_id": "KonsepHukum_Pejabat_Pegawai_Negeri_Sipil_tertentu",
+      "type": "MENDEFINISIKAN",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Ayat_43_5",
+      "target_id": "KonsepHukum_ahli",
+      "type": "MENDEFINISIKAN",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Ayat_5_1",
+      "target_id": "PerbuatanHukum_Informasi_Elektronik_Dokumen_Elektronik_alat_bukti_sah",
+      "type": "MENGATUR",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Ayat_5_2",
+      "target_id": "PerbuatanHukum_intersepsi_penyadapan_perekaman_penegakan_hukum",
+      "type": "MENGATUR",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Ayat_40_1",
+      "target_id": "PerbuatanHukum_fasilitasi_pemanfaatan_TI_tata_kelola_TI",
+      "type": "MENGATUR",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Ayat_40_1",
+      "target_id": "PerbuatanHukum_memfasilitasi_pengembangan_produk_jasa_TIK",
+      "type": "MENGATUR",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_45El",
+      "target_id": "PerbuatanHukum_perundungan_siber_ancaman_kekerasan",
+      "type": "MENGATUR",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Ayat_26_1",
+      "target_id": "PerbuatanHukum_menghapus_Informasi_Elektronik_tidak_relevan",
+      "type": "MENGATUR",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_40",
+      "target_id": "PerbuatanHukum_pencegahan_penyebarluasan_penggunaan_Informasi_Elektronik_dilarang",
+      "type": "MENGATUR",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Ayat_5_1",
+      "target_id": "EntitasHukum_Penyelenggara_Sistem_Elektronik",
+      "type": "BERLAKU_UNTUK",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Ayat_5_2",
+      "target_id": "EntitasHukum_kepolisian_kejaksaan_institusi_lainnya",
+      "type": "BERLAKU_UNTUK",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Ayat_40_1",
+      "target_id": "EntitasHukum_masyarakat_instansi_pemerintah_pelaku_usaha",
+      "type": "BERLAKU_UNTUK",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Ayat_43_1",
+      "target_id": "EntitasHukum_Pejabat_Pegawai_Negeri_Sipil_tertentu",
+      "type": "BERLAKU_UNTUK",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Ayat_26_1",
+      "target_id": "EntitasHukum_Penyelenggara_Sistem_Elektronik",
+      "type": "BERLAKU_UNTUK",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Ayat_26_1",
+      "target_id": "EntitasHukum_Orang_yang_bersangkutan",
+      "type": "BERLAKU_UNTUK",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_40",
+      "target_id": "EntitasHukum_Pemerintah",
+      "type": "BERLAKU_UNTUK",
+      "provenance": {
+        "source_document_id": "UU_19_2016",
+        "source_chunk_id": "UU_19_2016__struct_chunk_006,UU_19_2016__struct_chunk_007,UU_19_2016__struct_chunk_008",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    }
+  ]
+}

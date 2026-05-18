@@ -98,8 +98,97 @@ def _make_component_id(document_id: str, comp_type: str, number: str, parent_id:
     return base
 
 
+# Regex to detect BAB headers embedded in noisy OCR lines.
+# Matches "BAB" followed by roman numerals (with or without space),
+# optionally preceded by OCR noise like "REPUBLIK INDONESIA".
+_BAB_IN_NOISE_RE = re.compile(
+    r'BAB\s*([IVXLCDMivxlcdm]+)',
+    re.IGNORECASE
+)
+
+# Known OCR noise prefixes that appear before BAB headers on the same line.
+# These come from page headers/footers that get merged with the BAB line.
+# We match both specific known noise words AND the general pattern of
+# ALL-CAPS words (typical of "PRESIDEN REPUBLIK INDONESIA" header noise).
+_OCR_NOISE_PREFIXES = re.compile(
+    r'^(?:.*(?:REPUBLIK|PRESIDEN|INDONESIA|INDONES|UALIK|REPUB|FRESIDEN|REPUE|REFUE|REPUBT|TNDON))\s*',
+    re.IGNORECASE
+)
+
+# Fallback: if the prefix is mostly uppercase single words (page header noise)
+_ALL_CAPS_PREFIX_RE = re.compile(r'^[A-Z0-9\s.,]+$')
+
+# Trailing noise after BAB number (dots, ellipsis, etc.)
+_TRAILING_NOISE_RE = re.compile(r'[\s.]+$')
+
+
+def normalize_structural_headers(line: str) -> str:
+    """Normalize a single line to fix OCR noise in BAB headers.
+    
+    Handles common OCR issues:
+    - Missing space: "BABVIII ..." → "BAB VIII"
+    - Prefix noise: "REPUBLIK INDONESIA BAB VIII" → "BAB VIII"
+    - Trailing dots: "BAB IX. . ." → "BAB IX"
+    - Lowercase roman: "BAB Ix" → "BAB IX"
+    
+    Returns the cleaned line, or the original if no BAB header is found.
+    """
+    stripped = line.strip()
+    if not stripped:
+        return line
+    
+    # Quick check: does this line contain "BAB" at all?
+    if 'BAB' not in stripped.upper():
+        return line
+    
+    # Skip lines where "bab" is part of a regular word (e.g., "disebabkan", "sub bab")
+    # These are content lines, not structural headers.
+    lower = stripped.lower()
+    if any(word in lower for word in ['disebabkan', 'menyebabkan', 'penyebab', 'sebab ',
+                                       'sub bab', 'pada bab', 'dalam bab', 'oleh sebab']):
+        return line
+    
+    match = _BAB_IN_NOISE_RE.search(stripped)
+    if not match:
+        return line
+    
+    roman = match.group(1).upper()
+    
+    # Check if the line is already clean: "BAB VIII" with nothing else
+    clean_check = re.match(r'^\s*BAB\s+[IVXLCDM]+\s*$', stripped, re.IGNORECASE)
+    if clean_check:
+        return line  # Already clean
+    
+    # Determine if this is a structural BAB header (not a reference in text).
+    # Structural headers have:
+    # 1. BAB at or near the start, OR preceded by known OCR noise
+    # 2. No substantial text after the roman numeral (just dots/noise)
+    before_bab = stripped[:match.start()].strip()
+    after_num = stripped[match.end():].strip()
+    after_num_clean = _TRAILING_NOISE_RE.sub('', after_num)
+    
+    is_noise_prefix = (not before_bab) or bool(_OCR_NOISE_PREFIXES.match(before_bab + ' ')) or bool(_ALL_CAPS_PREFIX_RE.match(before_bab))
+    is_short_after = len(after_num_clean) == 0  # Nothing meaningful after number
+    
+    if is_noise_prefix and is_short_after:
+        # This is a standalone BAB header line — normalize it
+        return f"BAB {roman}"
+    
+    # If there's a title after the number (e.g., "REPUBLIK INDONESIA BAB VIII\nSANKSI ADMINISTRATIF")
+    # We normalize to "BAB {roman}" and the title stays on the original next line
+    if is_noise_prefix and after_num_clean:
+        # Title text follows BAB number on same line
+        return f"BAB {roman}\n{after_num_clean}"
+    
+    # Not a structural header — it's a reference in text, leave unchanged
+    return line
+
+
 def merge_pages_to_text(pages: list[dict]) -> tuple[str, dict]:
     """Merge all pages into a single text with page tracking.
+    
+    Applies OCR noise normalization on each line to ensure structural
+    headers (BAB, etc.) are in a clean format for the parser.
     
     Returns:
         text: Combined text from all pages
@@ -112,9 +201,12 @@ def merge_pages_to_text(pages: list[dict]) -> tuple[str, dict]:
         text = page.get("clean_text", "") or page.get("selectable_text", "")
         page_lines = text.split("\n")
         for line in page_lines:
-            line_num = len(lines)
-            line_to_page[line_num] = page["page_number"]
-            lines.append(line)
+            normalized = normalize_structural_headers(line)
+            # Normalization may produce multiple lines (e.g., BAB + title)
+            for norm_line in normalized.split("\n"):
+                line_num = len(lines)
+                line_to_page[line_num] = page["page_number"]
+                lines.append(norm_line)
     
     return "\n".join(lines), line_to_page
 
@@ -227,10 +319,37 @@ def parse_document_structure(extracted_doc: dict) -> list[LegalComponent]:
                 
                 # Handle duplicate IDs (e.g. multiple HURUF "a" in different Ayats)
                 if comp_id in component_map:
-                    # Make unique by appending parent context
-                    if parent_id:
-                        parent_suffix = parent_id.split("__")[-1]
-                        comp_id = f"{comp_id}__{parent_suffix}"
+                    if comp_type in ("BAB", "BAGIAN"):
+                        # Skip duplicate BAB/BAGIAN — OCR often produces two lines
+                        # for the same header (e.g. "BABVIII" on p24 + "BAB VIII" on p25).
+                        # Keep the first one; redirect current context to existing component
+                        # so subsequent Pasal/content gets assigned to the original.
+                        existing = component_map[comp_id]
+                        current_component = existing
+                        current_content_lines = []
+                        
+                        # Update stack to point to existing component
+                        while stack and stack[-1][2] >= level:
+                            stack.pop()
+                        stack.append((comp_type, comp_id, level))
+                        
+                        # Look ahead to skip title lines of this duplicate
+                        j = i + 1
+                        while j < len(lines) and j < i + 3:
+                            next_stripped = lines[j].strip()
+                            if next_stripped and not any(p.match(next_stripped) for p in PATTERNS.values()):
+                                j += 1
+                            else:
+                                break
+                        i = j - 1
+                        
+                        matched = True
+                        break
+                    else:
+                        # Make unique by appending parent context
+                        if parent_id:
+                            parent_suffix = parent_id.split("__")[-1]
+                            comp_id = f"{comp_id}__{parent_suffix}"
                 
                 # Check for title on next line(s) for BAB/BAGIAN
                 title = None

@@ -1,9 +1,9 @@
 {
   "document_id": "UU_11_2008",
-  "total_components": 132,
+  "total_components": 135,
   "component_types": {
     "HURUF": 29,
-    "BAB": 13,
+    "BAB": 16,
     "PASAL": 60,
     "ANGKA": 15,
     "AYAT": 13,
@@ -703,10 +703,24 @@
       "component_id": "UU_11_2008__BAB_IV",
       "component_type": "BAB",
       "number": "IV",
-      "title": "PRESIDEN REPUBLIK INDONESIA BAB IV",
-      "content": "PENYELENGGARAAN SERTIFIKASI ELEKTRONIK DAN SISTEM ELEKTRONIK",
+      "title": "PRESIDEN",
+      "content": "",
       "page_range": [
         8,
+        8
+      ],
+      "parent_id": null,
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "UU_11_2008__BAB_IV",
+      "component_type": "BAB",
+      "number": "IV",
+      "title": null,
+      "content": "PENYELENGGARAAN SERTIFIKASI ELEKTRONIK DAN SISTEM ELEKTRONIK",
+      "page_range": [
+        9,
         9
       ],
       "parent_id": null,
@@ -826,10 +840,24 @@
       "component_id": "UU_11_2008__BAB_V",
       "component_type": "BAB",
       "number": "V",
-      "title": "PRESIDEN REPUBLIK INDONESIA BAB V",
-      "content": "TRANSAKSI ELEKTRONIK",
+      "title": "PRESIDEN",
+      "content": "",
       "page_range": [
         10,
+        10
+      ],
+      "parent_id": null,
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "UU_11_2008__BAB_V",
+      "component_type": "BAB",
+      "number": "V",
+      "title": null,
+      "content": "TRANSAKSI ELEKTRONIK",
+      "page_range": [
+        11,
         11
       ],
       "parent_id": null,
@@ -1294,10 +1322,24 @@
       "component_id": "UU_11_2008__BAB_VIII",
       "component_type": "BAB",
       "number": "VIII",
-      "title": "PRESIDEN REPUBLIK INDONESIA BAB VIII",
-      "content": "PENYELESAIAN SENGKETA",
+      "title": "PRESIDEN",
+      "content": "",
       "page_range": [
         17,
+        17
+      ],
+      "parent_id": null,
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "UU_11_2008__BAB_VIII",
+      "component_type": "BAB",
+      "number": "VIII",
+      "title": null,
+      "content": "PENYELESAIAN SENGKETA",
+      "page_range": [
+        18,
         18
       ],
       "parent_id": null,

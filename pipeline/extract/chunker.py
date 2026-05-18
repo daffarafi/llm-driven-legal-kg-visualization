@@ -456,7 +456,7 @@ def create_structure_aware_chunks(
                     chunk_index += 1
     
     # Handle top-level components that are NOT under any Bab
-    # (e.g., preamble, konsiderans)
+    # (e.g., preamble, konsiderans, or entire UU Perubahan with no BAB)
     orphans = [c for c in components
                if not c.get("parent_id") and c["component_type"] != "BAB"
                and c.get("content", "").strip()]
@@ -467,16 +467,102 @@ def create_structure_aware_chunks(
         if orphan_text.strip():
             header = f"[DOKUMEN: {doc_title}]\n[BAGIAN: PEMBUKAAN]\n---\n"
             full = header + orphan_text
-            chunks.insert(0, Chunk(
-                chunk_id=f"{document_id}__struct_chunk_preamble",
-                document_id=document_id,
-                text=full.strip(),
-                token_count=_count_tokens(full, encoder),
-                page_range=[],
-                parent_component_id="",
-                parent_component_type="PREAMBLE",
-                chunk_index=-1,
-            ))
+            full_tokens = _count_tokens(full, encoder)
+            
+            if full_tokens <= max_tokens:
+                # Fits in one chunk
+                chunks.insert(0, Chunk(
+                    chunk_id=f"{document_id}__struct_chunk_preamble",
+                    document_id=document_id,
+                    text=full.strip(),
+                    token_count=full_tokens,
+                    page_range=[],
+                    parent_component_id="",
+                    parent_component_type="PREAMBLE",
+                    chunk_index=-1,
+                ))
+            else:
+                # Too large — split at component (Pasal) boundaries.
+                # Group orphan components into chunks that fit max_tokens.
+                header = f"[DOKUMEN: {doc_title}]\n[BAGIAN: PEMBUKAAN]\n---\n"
+                header_tokens = _count_tokens(header, encoder)
+                
+                buffer_parts = []
+                buffer_tokens = header_tokens
+                
+                for orphan in orphans:
+                    content = orphan.get("content", "").strip()
+                    if not content:
+                        continue
+                    
+                    # Build segment label (e.g., "Pasal 26")
+                    comp_type = orphan.get("component_type", "")
+                    comp_num = orphan.get("number", "")
+                    if comp_type == "PASAL":
+                        seg_label = f"\nPasal {comp_num}\n"
+                    elif comp_type:
+                        seg_label = f"\n{comp_type} {comp_num}\n"
+                    else:
+                        seg_label = "\n"
+                    
+                    seg_text = seg_label + content
+                    seg_tokens = _count_tokens(seg_text, encoder)
+                    
+                    if buffer_tokens + seg_tokens <= max_tokens:
+                        # Fits — add to current buffer
+                        buffer_parts.append(seg_text)
+                        buffer_tokens += seg_tokens
+                    else:
+                        # Flush current buffer as a chunk
+                        if buffer_parts:
+                            chunk_text = header + "\n".join(buffer_parts)
+                            chunks.append(Chunk(
+                                chunk_id=f"{document_id}__struct_chunk_preamble",
+                                document_id=document_id,
+                                text=chunk_text.strip(),
+                                token_count=_count_tokens(chunk_text, encoder),
+                                page_range=[],
+                                parent_component_id="",
+                                parent_component_type="PREAMBLE",
+                                chunk_index=-1,
+                            ))
+                        
+                        # Start new buffer with this segment
+                        if seg_tokens + header_tokens <= max_tokens:
+                            buffer_parts = [seg_text]
+                            buffer_tokens = header_tokens + seg_tokens
+                        else:
+                            # Single component still too large — split by tokens
+                            sub_texts = _split_large_text(
+                                header + seg_text, max_tokens, 100, encoder
+                            )
+                            for sub in sub_texts:
+                                chunks.append(Chunk(
+                                    chunk_id=f"{document_id}__struct_chunk_preamble",
+                                    document_id=document_id,
+                                    text=sub.strip(),
+                                    token_count=_count_tokens(sub, encoder),
+                                    page_range=[],
+                                    parent_component_id="",
+                                    parent_component_type="PREAMBLE",
+                                    chunk_index=-1,
+                                ))
+                            buffer_parts = []
+                            buffer_tokens = header_tokens
+                
+                # Flush remaining buffer
+                if buffer_parts:
+                    chunk_text = header + "\n".join(buffer_parts)
+                    chunks.append(Chunk(
+                        chunk_id=f"{document_id}__struct_chunk_preamble",
+                        document_id=document_id,
+                        text=chunk_text.strip(),
+                        token_count=_count_tokens(chunk_text, encoder),
+                        page_range=[],
+                        parent_component_id="",
+                        parent_component_type="PREAMBLE",
+                        chunk_index=-1,
+                    ))
     
     # Re-index
     for i, c in enumerate(chunks):

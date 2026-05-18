@@ -1,0 +1,137 @@
+{
+  "document_id": "Perpres_132_2022",
+  "total_nodes": 6,
+  "total_edges": 5,
+  "errors": [],
+  "nodes": [
+    {
+      "id": "Regulasi_Perpres_132_2022",
+      "type": "Regulasi",
+      "label": "Peraturan Presiden Nomor 132 Tahun 2022 tentang Arsitektur Sistem Pemerintahan Berbasis Elektronik Nasional",
+      "content": "PERATURAN PRESIDEN REPUBLIK INDONESIA NOMOR 132 TAHUN 2022 TENTANG ARSITEKTUR SISTEM PEMERINTAHAN BERBASIS ELEKTRONIK NASIONAL",
+      "provenance": {
+        "source_document_id": "Perpres_132_2022",
+        "source_chunk_id": "Perpres_132_2022__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Pasal_2",
+      "type": "Pasal",
+      "label": "Pasal 2",
+      "content": "Arsitektur SPBE Nasional memuat:",
+      "provenance": {
+        "source_document_id": "Perpres_132_2022",
+        "source_chunk_id": "Perpres_132_2022__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Pasal_4",
+      "type": "Pasal",
+      "label": "Pasal 4",
+      "content": "Peraturan Presiden ini mulai berlaku pada tanggal diundangkan.",
+      "provenance": {
+        "source_document_id": "Perpres_132_2022",
+        "source_chunk_id": "Perpres_132_2022__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "EntitasHukum_Setiap_Orang",
+      "type": "EntitasHukum",
+      "label": "Setiap Orang",
+      "content": "Setiap Orang",
+      "provenance": {
+        "source_document_id": "Perpres_132_2022",
+        "source_chunk_id": "Perpres_132_2022__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "EntitasHukum_Presiden_RI",
+      "type": "EntitasHukum",
+      "label": "PRESIDEN REPUBLIK INDONESIA",
+      "content": "PRESIDEN REPUBLIK INDONESIA",
+      "provenance": {
+        "source_document_id": "Perpres_132_2022",
+        "source_chunk_id": "Perpres_132_2022__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "EntitasHukum_Menteri_Sekretaris_Negara_RI",
+      "type": "EntitasHukum",
+      "label": "MENTERI SEKRETARIS NEGARA REPUBLIK INDONESIA",
+      "content": "MENTERI SEKRETARIS NEGARA REPUBLIK INDONESIA",
+      "provenance": {
+        "source_document_id": "Perpres_132_2022",
+        "source_chunk_id": "Perpres_132_2022__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source_id": "Regulasi_Perpres_132_2022",
+      "target_id": "Pasal_2",
+      "type": "MEMUAT",
+      "provenance": {
+        "source_document_id": "Perpres_132_2022",
+        "source_chunk_id": "Perpres_132_2022__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Regulasi_Perpres_132_2022",
+      "target_id": "Pasal_4",
+      "type": "MEMUAT",
+      "provenance": {
+        "source_document_id": "Perpres_132_2022",
+        "source_chunk_id": "Perpres_132_2022__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Regulasi_Perpres_132_2022",
+      "target_id": "EntitasHukum_Setiap_Orang",
+      "type": "BERLAKU_UNTUK",
+      "provenance": {
+        "source_document_id": "Perpres_132_2022",
+        "source_chunk_id": "Perpres_132_2022__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Regulasi_Perpres_132_2022",
+      "target_id": "EntitasHukum_Presiden_RI",
+      "type": "BERLAKU_UNTUK",
+      "provenance": {
+        "source_document_id": "Perpres_132_2022",
+        "source_chunk_id": "Perpres_132_2022__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Regulasi_Perpres_132_2022",
+      "target_id": "EntitasHukum_Menteri_Sekretaris_Negara_RI",
+      "type": "BERLAKU_UNTUK",
+      "provenance": {
+        "source_document_id": "Perpres_132_2022",
+        "source_chunk_id": "Perpres_132_2022__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    }
+  ]
+}

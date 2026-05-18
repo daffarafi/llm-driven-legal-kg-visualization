@@ -29,6 +29,7 @@ class ExtractedNode:
     type: str           # Regulasi | Bab | Bagian | Pasal | Ayat | EntitasHukum | PerbuatanHukum | Sanksi | KonsepHukum
     label: str          # e.g. "Pasal 27", "Pencemaran Nama Baik"
     content: str        # description or original text
+    jenis_perubahan: str = ""  # "mengubah"/"menyisipkan"/"menghapus"/"" (for amendment docs)
     provenance: dict = field(default_factory=dict)
 
 
@@ -52,14 +53,15 @@ Given a chunk of legal text, extract entities (nodes) and relationships (edges) 
 
 | Type | Description | Example Labels |
 |------|-------------|----------------|
-| Regulasi | The regulation being processed. Create exactly ONE per document. Include a "jenis" property: one of [Undang-Undang, POJK, PP, Perpres, Perda, Permen]. | "Undang-Undang tentang Informasi dan Transaksi Elektronik", "POJK tentang Penyelenggaraan TI oleh Bank Umum" |
-| Bab | A chapter (Bab) within the regulation. | "BAB VII PERBUATAN YANG DILARANG" |
+| Regulasi | The regulation being processed. Create exactly ONE per document. Include a "jenis" property: one of [Undang-Undang, POJK, PP, Perpres, Perda, Permen]. | "Undang-Undang tentang Informasi dan Transaksi Elektronik", "Peraturan OJK tentang Penyelenggaraan Teknologi Informasi oleh Bank Umum" |
+| Bab | A chapter (Bab) within the regulation. | "BAB VII PERBUATAN YANG DILARANG", "BAB II TATA KELOLA TI BANK" |
+| Bagian | A section (Bagian) within a Bab. Only create if explicitly present in the text. | "Bagian Kedua Penyelenggaraan Sistem Elektronik", "Bagian Kesatu Umum" |
 | Pasal | An article (Pasal) within the regulation. | "Pasal 27", "Pasal 45" |
 | Ayat | A sub-article (Ayat) within a Pasal. Only create if the text explicitly refers to a specific ayat. | "Pasal 27 ayat (1)", "Pasal 45 ayat (3)" |
-| EntitasHukum | A legal subject or object — a person, institution, or legal body explicitly named as a party in a provision. | "Setiap Orang", "Penyelenggara Sistem Elektronik", "Pemerintah" |
-| PerbuatanHukum | A specific legal act that is regulated, prohibited, or required. Must be a concrete action, not an abstract concept. | "mendistribusikan informasi yang memiliki muatan penghinaan", "mengakses Komputer dan/atau Sistem Elektronik milik Orang lain" |
-| Sanksi | A penalty or sanction stated in the text. Always include the FULL penalty detail in the label. | "pidana penjara paling lama 6 tahun dan/atau denda paling banyak Rp1.000.000.000,00" |
-| KonsepHukum | A legal concept or term that is **formally defined** in the text (e.g., in Pasal 1 definitions section). Do NOT create KonsepHukum for general terms that are merely mentioned. | "Informasi Elektronik", "Dokumen Elektronik", "Tanda Tangan Elektronik" |
+| EntitasHukum | A legal subject or object — a person, institution, or legal body explicitly named as a party in a provision. | "Setiap Orang", "Penyelenggara Sistem Elektronik", "Pemerintah", "Bank", "Direksi" |
+| PerbuatanHukum | A specific legal act that is regulated, prohibited, or required. Must be a concrete action, not an abstract concept. | "mendistribusikan informasi yang memiliki muatan penghinaan", "mengakses Komputer dan/atau Sistem Elektronik milik Orang lain", "menerapkan tata kelola TI yang baik" |
+| Sanksi | A penalty or sanction stated in the text. Always include the FULL penalty detail in the label. May not exist in all regulation types. | "pidana penjara paling lama 6 tahun dan/atau denda paling banyak Rp1.000.000.000,00" |
+| KonsepHukum | A legal concept or term that is **formally defined** in the text (e.g., in Pasal 1 definitions section). Do NOT create KonsepHukum for general terms that are merely mentioned. | "Informasi Elektronik", "Dokumen Elektronik", "Tanda Tangan Elektronik", "Teknologi Informasi", "Pusat Data" |
 
 ## Valid Relation Types
 
@@ -69,9 +71,9 @@ Given a chunk of legal text, extract entities (nodes) and relationships (edges) 
 | MEMILIKI_AYAT | Pasal → Ayat | Pasal contains Ayat |
 | MENGATUR | Pasal/Ayat → PerbuatanHukum | An article regulates an act |
 | MENETAPKAN_SANKSI | Pasal/Ayat → Sanksi | An article establishes a sanction |
-| BERLAKU_UNTUK | Pasal/Ayat → EntitasHukum | A provision applies to a legal entity |
-| MERUJUK | Pasal → Pasal | Explicit cross-reference to another article (only when the text says "sebagaimana dimaksud dalam Pasal X") |
-| MENDEFINISIKAN | Pasal → KonsepHukum | An article formally defines a concept (typically in Pasal 1) |
+| BERLAKU_UNTUK | Pasal/Ayat/Regulasi → EntitasHukum | A provision applies to a legal entity |
+| MERUJUK | Pasal/Ayat → Pasal/Ayat/Regulasi | Explicit cross-reference to another article (only when the text says "sebagaimana dimaksud dalam Pasal X") |
+| MENDEFINISIKAN | Pasal/Ayat → KonsepHukum | An article formally defines a concept (typically in Pasal 1) |
 
 ## Critical Rules
 
@@ -79,7 +81,7 @@ Given a chunk of legal text, extract entities (nodes) and relationships (edges) 
 1. Every node MUST have a unique `id`, `type`, and `label`.
 2. Use the format `{Type}_{short_label}` for ids (e.g., `Pasal_27`, `Sanksi_pidana_penjara_6_tahun`).
 3. If the same entity appears multiple times in the text, reuse the SAME id — do NOT create duplicates.
-4. Create only ONE `Regulasi` node for the entire document. Use the **exact same id and label** across all chunks. Other laws referenced in the text (e.g., UUD 1945, UU Telekomunikasi) should NOT get their own Regulasi node; instead, mention them in the `content` field of the MERUJUK edge or the referencing Pasal.
+4. Create only ONE `Regulasi` node for the document being processed. Other laws referenced in the text (e.g., UUD 1945, UU Telekomunikasi) should NOT get their own Regulasi node; instead, mention them in the `content` field of the MERUJUK edge or the referencing Pasal.
 
 ### Quality over Quantity
 5. Prefer fewer, high-quality nodes over many low-quality ones.
@@ -87,21 +89,24 @@ Given a chunk of legal text, extract entities (nodes) and relationships (edges) 
 7. `PerbuatanHukum` must be a **specific, concrete action** (e.g., "mendistribusikan konten bermuatan penghinaan"), not a vague description.
 8. Every `Sanksi` node must contain the FULL penalty text including duration and/or fine amount.
 
-### Hierarchy (VERY IMPORTANT)
+### Hierarchy
 9. Maintain strict hierarchy: Regulasi → Bab → Bagian (if exists) → Pasal → Ayat.
-10. **EVERY Pasal MUST be connected to its parent Bab via a MEMUAT edge.** This is mandatory — no Pasal should exist without a MEMUAT edge from its Bab. If the current chunk mentions "BAB VII" at the top, then ALL Pasal nodes extracted from that chunk MUST have a `(Bab_VII)-[:MEMUAT]->(Pasal_X)` edge.
+10. Every Pasal should be connected to its parent Bab (or Bagian) via MEMUAT if the Bab/Bagian is known from the text.
 11. If a Pasal has multiple ayat, create Ayat nodes and connect them via MEMILIKI_AYAT.
-12. If the text contains a "Bagian" (e.g., "Bagian Kedua"), create a Bagian node and connect Pasal nodes within that Bagian via `(Bagian)-[:MEMUAT]->(Pasal)` instead of directly to the Bab.
-13. **Every Bab MUST be connected to the Regulasi node via a MEMUAT edge.** Always include `(Regulasi_X)-[:MEMUAT]->(Bab_Y)` for each Bab encountered.
 
 ### Relationships
-14. Each Pasal/Ayat that regulates an action MUST have a MENGATUR edge.
-15. Each Pasal/Ayat that specifies a sanction MUST have both MENGATUR (to the prohibited act) and MENETAPKAN_SANKSI (to the penalty).
-16. MERUJUK edges should only be created for **explicit cross-references** (e.g., "sebagaimana dimaksud dalam Pasal 27").
+12. Each Pasal/Ayat that regulates an action MUST have a MENGATUR edge.
+13. Each Pasal/Ayat that specifies a sanction MUST have both MENGATUR (to the prohibited act) and MENETAPKAN_SANKSI (to the penalty).
+14. MERUJUK edges should only be created for **explicit cross-references** (e.g., "sebagaimana dimaksud dalam Pasal 27").
 
-### Completeness Check
-17. Before finalizing your output, verify: Does every Pasal in the text have a MEMUAT edge from its parent Bab? If not, add the missing edges.
-18. Count the Pasal nodes you extracted — if the text mentions Pasal numbers that you did not extract, go back and extract them.
+### Amendment Detection
+15. If the document is an amendment law (title contains "Perubahan atas"):
+    - Determine `jenis_perubahan` for each Pasal/Ayat/Bab node:
+      - "mengubah": text contains "diubah sehingga berbunyi", "diubah", "ditambah ayat/huruf"
+      - "menyisipkan": text contains "disisipkan", or the label is a new article (e.g., Pasal 45A, Pasal 45B)
+      - "menghapus": text contains "dihapus"
+    - Add `"jenis_perubahan"` property to the node JSON output.
+    - If the component is NOT part of an amendment change, do NOT set jenis_perubahan.
 
 ## Output Format
 
@@ -109,43 +114,14 @@ Output MUST be valid JSON:
 ```json
 {
   "nodes": [
-    {"id": "Pasal_27", "type": "Pasal", "label": "Pasal 27", "content": "brief description or original text excerpt"}
+    {"id": "Regulasi_UU_ITE", "type": "Regulasi", "jenis": "Undang-Undang", "label": "UU tentang ITE", "content": "..."},
+    {"id": "Pasal_27", "type": "Pasal", "label": "Pasal 27", "content": "...", "jenis_perubahan": "mengubah"},
+    {"id": "Pasal_45A", "type": "Pasal", "label": "Pasal 45A", "content": "...", "jenis_perubahan": "menyisipkan"}
   ],
   "edges": [
     {"source": "Pasal_27", "target": "PerbuatanHukum_distribusi_konten_ilegal", "type": "MENGATUR"}
   ]
-}
-```
-
-## Example
-
-**Input text:**
-"Pasal 45
-(1) Setiap Orang yang dengan sengaja dan tanpa hak mendistribusikan dan/atau mentransmisikan dan/atau membuat dapat diaksesnya Informasi Elektronik dan/atau Dokumen Elektronik yang memiliki muatan yang melanggar kesusilaan sebagaimana dimaksud dalam Pasal 27 ayat (1) dipidana dengan pidana penjara paling lama 6 (enam) tahun dan/atau denda paling banyak Rp1.000.000.000,00 (satu miliar rupiah)."
-
-**Expected output:**
-```json
-{
-  "nodes": [
-    {"id": "Pasal_45", "type": "Pasal", "label": "Pasal 45", "content": "Ketentuan pidana untuk pelanggaran Pasal 27"},
-    {"id": "Ayat_45_1", "type": "Ayat", "label": "Pasal 45 ayat (1)", "content": "Sanksi pidana untuk distribusi konten melanggar kesusilaan"},
-    {"id": "EntitasHukum_Setiap_Orang", "type": "EntitasHukum", "label": "Setiap Orang", "content": "Subjek hukum umum"},
-    {"id": "PerbuatanHukum_distribusi_konten_asusila", "type": "PerbuatanHukum", "label": "mendistribusikan dan/atau mentransmisikan Informasi Elektronik yang memiliki muatan melanggar kesusilaan", "content": ""},
-    {"id": "Sanksi_penjara_6_tahun_denda_1M", "type": "Sanksi", "label": "pidana penjara paling lama 6 tahun dan/atau denda paling banyak Rp1.000.000.000,00", "content": ""},
-    {"id": "Pasal_27", "type": "Pasal", "label": "Pasal 27", "content": ""},
-    {"id": "Ayat_27_1", "type": "Ayat", "label": "Pasal 27 ayat (1)", "content": ""}
-  ],
-  "edges": [
-    {"source": "Pasal_45", "target": "Ayat_45_1", "type": "MEMILIKI_AYAT"},
-    {"source": "Ayat_45_1", "target": "PerbuatanHukum_distribusi_konten_asusila", "type": "MENGATUR"},
-    {"source": "Ayat_45_1", "target": "Sanksi_penjara_6_tahun_denda_1M", "type": "MENETAPKAN_SANKSI"},
-    {"source": "Ayat_45_1", "target": "EntitasHukum_Setiap_Orang", "type": "BERLAKU_UNTUK"},
-    {"source": "Ayat_45_1", "target": "Ayat_27_1", "type": "MERUJUK"},
-    {"source": "Pasal_27", "target": "Ayat_27_1", "type": "MEMILIKI_AYAT"}
-  ]
-}
-```
-"""
+}"""
 
 
 USER_PROMPT_TEMPLATE = """Extract all entities and relationships from the following Indonesian legal text.
@@ -228,6 +204,7 @@ def extract_triples_from_chunk(
             type=n.get("type", "KonsepHukum"),
             label=n.get("label", ""),
             content=n.get("content", ""),
+            jenis_perubahan=n.get("jenis_perubahan", ""),
             provenance=provenance.copy(),
         ))
     

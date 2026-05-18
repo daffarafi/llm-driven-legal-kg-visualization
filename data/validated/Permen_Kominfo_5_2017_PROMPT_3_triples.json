@@ -1,0 +1,552 @@
+{
+  "document_id": "Permen_Kominfo_5_2017",
+  "total_nodes": 24,
+  "total_edges": 23,
+  "removed_nodes": 0,
+  "removed_edges": 0,
+  "nodes": [
+    {
+      "id": "Regulasi_Permen_Kominfo_5_2017",
+      "type": "Regulasi",
+      "label": "Peraturan Menteri Komunikasi dan Informatika Nomor 5 Tahun 2017",
+      "content": "PERATURAN MENTERI KOMUNIKASI DAN INFORMATIKA TENTANG PERUBAHAN KEEMPAT ATAS PERATURAN MENTERI KOMUNIKASI DAN INFORMATIKA NOMOR 26/PER/M.KOMINFO/5/2007 TENTANG PENGAMANAN PEMANFAATAN JARINGAN TELEKOMUNIKASI BERBASIS PROTOKOL INTERNET.",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Pasal_I",
+      "type": "Pasal",
+      "label": "Pasal I",
+      "content": "Beberapa ketentuan dalam peraturan Menteri Komunikasi dan Informatika Nomor 26/PER/M.KOMINFO/5/2007 tentang Pengamanan Pemanfaatan Jaringan Telekomunikasi Berbasis Protokol Internet sebagaimana telah beberapa kali diubah terakhir dengan Peraturan Menteri Komunikasi dan Informatika Nomor 24/PER/M.KOMINFO/12/2011 tentang Perubahan Ketiga atas Peraturan Menteri Komunikasi dan Informatika Nomor 26/PER/M.KOMINFO/5/2007 tentang Pengamanan Pemanfaatan Jaringan Telekomunikasi Berbasis Protokol Internet diubah sebagai berikut:\n1. Ketentuan angka 12 dan angka 13 Pasal 1, diubah sehingga Pasal 1 berbunyi sebagai berikut:\nDalam Peraturan Menteri ini yang dimaksud dengan:\n1. Protokol Internet adalah sekumpulan protokol yang didefinisikan oleh Internet Engineering Task Force (IETF).\n2. Jaringan Berbasis Protokol Internet adalah jaringan telekomunikasi yang digunakan penyelenggaraan jaringan dan jasa telekomunikasi dengan memanfaatkan protokol internet dalam melakukan kegiatan telekomunikasi.\n3. Indonesia-Security Incident Response Team on Internet Infrastructure yang selanjutnya disebut ID-SIRTII adalah tim yang ditugaskan Menteri untuk membantu pengawasan keamanan jaringan telekomunikasi berbasis protokol internet.\n4. Rekaman Aktivitas Transaksi Koneksi (Log File) adalah suatu file yang mencatat akses pengguna pada saluran akses operator penyelenggara jasa akses berdasarkan alamat asal Protokol Internet (source), alamat tujuan (destination), jenis protokol yang digunakan, port asal (source), port tujuan (destination), dan waktu (time stamp) serta durasi terjadinya transaksi.\n5. Monitoring Jaringan adalah fasilitas pemantau dan pendeteksi pola (pattern) akses dan transaksi yang berpotensi mengganggu atau menyerang jaringan untuk tujuan memantau kondisi jaringan, memberikan peringatan dini (early warning) dan melakukan tindakan pencegahan (prevent).\n6. Penyelenggara Akses Internet (Internet Service Provider/ISP) adalah penyelenggara jasa multimedia yang menyelenggarakan jasa akses internet kepada masyarakat.\n7. Penyelenggaraan Jasa Interkoneksi Internet (Network Access Point/NAP) adalah penyelenggara jasa multimedia yang menyelenggarakan jasa akses dan/atau routing kepada Penyelenggara Akses Internet (Internet Service Provider/ISP) untuk melakukan koneksi ke jaringan internet global.\n8. Hot Spot adalah tempat tersedianya akses internet untuk publik yang menggunakan teknologi nirkabel (wireless).\n9. Internet Exchange Point adalah titik dimana routing internet nasional berkumpul untuk saling berinterkoneksi.\n(1) Ketua dan Wakil Ketua Kelompok Pimpinan Pelaksana/Koordinator ID-SIRTII sebagaimana dimaksud dalam Pasal 11 ayat (1) ditetapkan melalui seleksi.\n(2) Sekretaris sebagaimana dimaksud dalam Pasal 11 ayat (2) adalah staf atau pejabat di lingkungan Direktorat Jenderal Aplikasi Informatika yang diangkat oleh Direktur Jenderal.\n3. Ketentuan Pasal 17 diubah sehingga Pasal 17 berbunyi sebagai berikut:\nUntuk kelancaran pelaksanaan tugas ID-SIRTII sebagaimana dimaksud dalam Pasal 6 ayat (1) dan Pasal 16 diberikan honorarium yang dibebankan kepada anggaran Direktorat Jenderal Aplikasi Informatika yang besarannya ditetapkan dengan keputusan Direktur Jenderal sesuai dengan ketentuan peraturan perundang-undangan.",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "Pasal_II",
+      "type": "Pasal",
+      "label": "Pasal II",
+      "content": "Peraturan Menteri ini mulai berlaku pada tanggal diundangkan. Agar setiap orang mengetahuinya, memerintahkan pengundangan Peraturan Menteri ini dengan penempatannya dalam Berita Negara Republik Indonesia.",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "KonsepHukum_Protokol_Internet",
+      "type": "KonsepHukum",
+      "label": "Protokol Internet",
+      "content": "sekumpulan protokol yang didefinisikan oleh Internet Engineering Task Force (IETF).",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "KonsepHukum_Jaringan_Berbasis_Protokol_Internet",
+      "type": "KonsepHukum",
+      "label": "Jaringan Berbasis Protokol Internet",
+      "content": "jaringan telekomunikasi yang digunakan penyelenggaraan jaringan dan jasa telekomunikasi dengan memanfaatkan protokol internet dalam melakukan kegiatan telekomunikasi.",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "KonsepHukum_ID_SIRTII",
+      "type": "KonsepHukum",
+      "label": "Indonesia-Security Incident Response Team on Internet Infrastructure (ID-SIRTII)",
+      "content": "tim yang ditugaskan Menteri untuk membantu pengawasan keamanan jaringan telekomunikasi berbasis protokol internet.",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "KonsepHukum_Rekaman_Aktivitas_Transaksi_Koneksi",
+      "type": "KonsepHukum",
+      "label": "Rekaman Aktivitas Transaksi Koneksi (Log File)",
+      "content": "suatu file yang mencatat akses pengguna pada saluran akses operator penyelenggara jasa akses berdasarkan alamat asal Protokol Internet (source), alamat tujuan (destination), jenis protokol yang digunakan, port asal (source), port tujuan (destination), dan waktu (time stamp) serta durasi terjadinya transaksi.",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "KonsepHukum_Monitoring_Jaringan",
+      "type": "KonsepHukum",
+      "label": "Monitoring Jaringan",
+      "content": "fasilitas pemantau dan pendeteksi pola (pattern) akses dan transaksi yang berpotensi mengganggu atau menyerang jaringan untuk tujuan memantau kondisi jaringan, memberikan peringatan dini (early warning) dan melakukan tindakan pencegahan (prevent).",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "KonsepHukum_Penyelenggara_Akses_Internet",
+      "type": "KonsepHukum",
+      "label": "Penyelenggara Akses Internet (Internet Service Provider/ISP)",
+      "content": "penyelenggara jasa multimedia yang menyelenggarakan jasa akses internet kepada masyarakat.",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "KonsepHukum_Penyelenggaraan_Jasa_Interkoneksi_Internet",
+      "type": "KonsepHukum",
+      "label": "Penyelenggaraan Jasa Interkoneksi Internet (Network Access Point/NAP)",
+      "content": "penyelenggara jasa multimedia yang menyelenggarakan jasa akses dan/atau routing kepada Penyelenggara Akses Internet (Internet Service Provider/ISP) untuk melakukan koneksi ke jaringan internet global.",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "KonsepHukum_Hot_Spot",
+      "type": "KonsepHukum",
+      "label": "Hot Spot",
+      "content": "tempat tersedianya akses internet untuk publik yang menggunakan teknologi nirkabel (wireless).",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "KonsepHukum_Internet_Exchange_Point",
+      "type": "KonsepHukum",
+      "label": "Internet Exchange Point",
+      "content": "titik dimana routing internet nasional berkumpul untuk saling berinterkoneksi.",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "EntitasHukum_Ketua_Wakil_Ketua_ID_SIRTII",
+      "type": "EntitasHukum",
+      "label": "Ketua dan Wakil Ketua Kelompok Pimpinan Pelaksana/Koordinator ID-SIRTII",
+      "content": "Ketua dan Wakil Ketua Kelompok Pimpinan Pelaksana/Koordinator ID-SIRTII",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "EntitasHukum_Sekretaris_ID_SIRTII",
+      "type": "EntitasHukum",
+      "label": "Sekretaris ID-SIRTII",
+      "content": "Sekretaris sebagaimana dimaksud dalam Pasal 11 ayat (2)",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "EntitasHukum_Direktorat_Jenderal_Aplikasi_Informatika",
+      "type": "EntitasHukum",
+      "label": "Direktorat Jenderal Aplikasi Informatika",
+      "content": "Direktorat Jenderal Aplikasi Informatika",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "EntitasHukum_Direktur_Jenderal",
+      "type": "EntitasHukum",
+      "label": "Direktur Jenderal",
+      "content": "Direktur Jenderal",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "EntitasHukum_ID_SIRTII_entity",
+      "type": "EntitasHukum",
+      "label": "ID-SIRTII",
+      "content": "ID-SIRTII",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "EntitasHukum_Menteri_Komunikasi_dan_Informatika",
+      "type": "EntitasHukum",
+      "label": "Menteri Komunikasi dan Informatika",
+      "content": "Menteri Komunikasi dan Informatika",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "EntitasHukum_Setiap_Orang",
+      "type": "EntitasHukum",
+      "label": "Setiap Orang",
+      "content": "setiap orang",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "PerbuatanHukum_ditetapkan_melalui_seleksi",
+      "type": "PerbuatanHukum",
+      "label": "ditetapkan melalui seleksi",
+      "content": "Ketua dan Wakil Ketua Kelompok Pimpinan Pelaksana/Koordinator ID-SIRTII sebagaimana dimaksud dalam Pasal 11 ayat (1) ditetapkan melalui seleksi.",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "PerbuatanHukum_diangkat_oleh_Direktur_Jenderal",
+      "type": "PerbuatanHukum",
+      "label": "diangkat oleh Direktur Jenderal",
+      "content": "Sekretaris sebagaimana dimaksud dalam Pasal 11 ayat (2) adalah staf atau pejabat di lingkungan Direktorat Jenderal Aplikasi Informatika yang diangkat oleh Direktur Jenderal.",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "PerbuatanHukum_diberikan_honorarium",
+      "type": "PerbuatanHukum",
+      "label": "diberikan honorarium",
+      "content": "Untuk kelancaran pelaksanaan tugas ID-SIRTII sebagaimana dimaksud dalam Pasal 6 ayat (1) dan Pasal 16 diberikan honorarium yang dibebankan kepada anggaran Direktorat Jenderal Aplikasi Informatika yang besarannya ditetapkan dengan keputusan Direktur Jenderal sesuai dengan ketentuan peraturan perundang-undangan.",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "PerbuatanHukum_memerintahkan_pengundangan",
+      "type": "PerbuatanHukum",
+      "label": "memerintahkan pengundangan Peraturan Menteri ini",
+      "content": "memerintahkan pengundangan Peraturan Menteri ini dengan penempatannya dalam Berita Negara Republik Indonesia.",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "id": "PerbuatanHukum_mengetahui_peraturan",
+      "type": "PerbuatanHukum",
+      "label": "mengetahui Peraturan Menteri ini",
+      "content": "Agar setiap orang mengetahuinya",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source_id": "Regulasi_Permen_Kominfo_5_2017",
+      "target_id": "Pasal_I",
+      "type": "MEMUAT",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Regulasi_Permen_Kominfo_5_2017",
+      "target_id": "Pasal_II",
+      "type": "MEMUAT",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_I",
+      "target_id": "KonsepHukum_Protokol_Internet",
+      "type": "MENDEFINISIKAN",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_I",
+      "target_id": "KonsepHukum_Jaringan_Berbasis_Protokol_Internet",
+      "type": "MENDEFINISIKAN",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_I",
+      "target_id": "KonsepHukum_ID_SIRTII",
+      "type": "MENDEFINISIKAN",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_I",
+      "target_id": "KonsepHukum_Rekaman_Aktivitas_Transaksi_Koneksi",
+      "type": "MENDEFINISIKAN",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_I",
+      "target_id": "KonsepHukum_Monitoring_Jaringan",
+      "type": "MENDEFINISIKAN",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_I",
+      "target_id": "KonsepHukum_Penyelenggara_Akses_Internet",
+      "type": "MENDEFINISIKAN",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_I",
+      "target_id": "KonsepHukum_Penyelenggaraan_Jasa_Interkoneksi_Internet",
+      "type": "MENDEFINISIKAN",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_I",
+      "target_id": "KonsepHukum_Hot_Spot",
+      "type": "MENDEFINISIKAN",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_I",
+      "target_id": "KonsepHukum_Internet_Exchange_Point",
+      "type": "MENDEFINISIKAN",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_I",
+      "target_id": "PerbuatanHukum_ditetapkan_melalui_seleksi",
+      "type": "MENGATUR",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_I",
+      "target_id": "PerbuatanHukum_diangkat_oleh_Direktur_Jenderal",
+      "type": "MENGATUR",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_I",
+      "target_id": "PerbuatanHukum_diberikan_honorarium",
+      "type": "MENGATUR",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_II",
+      "target_id": "PerbuatanHukum_memerintahkan_pengundangan",
+      "type": "MENGATUR",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_II",
+      "target_id": "PerbuatanHukum_mengetahui_peraturan",
+      "type": "MENGATUR",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_I",
+      "target_id": "EntitasHukum_Ketua_Wakil_Ketua_ID_SIRTII",
+      "type": "BERLAKU_UNTUK",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_I",
+      "target_id": "EntitasHukum_Sekretaris_ID_SIRTII",
+      "type": "BERLAKU_UNTUK",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_I",
+      "target_id": "EntitasHukum_ID_SIRTII_entity",
+      "type": "BERLAKU_UNTUK",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_I",
+      "target_id": "EntitasHukum_Direktorat_Jenderal_Aplikasi_Informatika",
+      "type": "BERLAKU_UNTUK",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_I",
+      "target_id": "EntitasHukum_Direktur_Jenderal",
+      "type": "BERLAKU_UNTUK",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_II",
+      "target_id": "EntitasHukum_Setiap_Orang",
+      "type": "BERLAKU_UNTUK",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    },
+    {
+      "source_id": "Pasal_II",
+      "target_id": "EntitasHukum_Menteri_Komunikasi_dan_Informatika",
+      "type": "BERLAKU_UNTUK",
+      "provenance": {
+        "source_document_id": "Permen_Kominfo_5_2017",
+        "source_chunk_id": "Permen_Kominfo_5_2017__struct_chunk_000",
+        "source_pages": [],
+        "extraction_model": "gemini-2.5-flash"
+      }
+    }
+  ]
+}

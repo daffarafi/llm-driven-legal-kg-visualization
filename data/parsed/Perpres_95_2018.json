@@ -1,16 +1,48 @@
 {
   "document_id": "Perpres_95_2018",
-  "total_components": 762,
+  "total_components": 768,
   "component_types": {
+    "BAB": 19,
     "PASAL": 75,
     "ANGKA": 78,
     "AYAT": 250,
     "HURUF": 295,
-    "BAB": 13,
     "BAGIAN": 28,
     "PARAGRAF": 23
   },
   "components": [
+    {
+      "component_id": "Perpres_95_2018__BAB_I",
+      "component_type": "BAB",
+      "number": "I",
+      "title": "PRES I DEN",
+      "content": "",
+      "page_range": [
+        1,
+        1
+      ],
+      "parent_id": null,
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "Perpres_95_2018__BAB_I",
+      "component_type": "BAB",
+      "number": "I",
+      "title": "KETENTUAN UMUM",
+      "content": "",
+      "page_range": [
+        2,
+        2
+      ],
+      "parent_id": null,
+      "children": [
+        "Perpres_95_2018__PASAL_1",
+        "Perpres_95_2018__PASAL_2",
+        "Perpres_95_2018__PASAL_3"
+      ],
+      "is_penjelasan": false
+    },
     {
       "component_id": "Perpres_95_2018__PASAL_1",
       "component_type": "PASAL",
@@ -21,7 +53,7 @@
         2,
         2
       ],
-      "parent_id": null,
+      "parent_id": "Perpres_95_2018__BAB_I",
       "children": [
         "Perpres_95_2018__ANGKA_1",
         "Perpres_95_2018__ANGKA_2",
@@ -426,7 +458,7 @@
         5,
         5
       ],
-      "parent_id": null,
+      "parent_id": "Perpres_95_2018__BAB_I",
       "children": [
         "Perpres_95_2018__AYAT_1",
         "Perpres_95_2018__AYAT_2",
@@ -667,7 +699,7 @@
         6,
         6
       ],
-      "parent_id": null,
+      "parent_id": "Perpres_95_2018__BAB_I",
       "children": [
         "Perpres_95_2018__HURUF_a__PASAL_3",
         "Perpres_95_2018__HURUF_b__PASAL_3",
@@ -9034,29 +9066,57 @@
       "component_type": "HURUF",
       "number": "p",
       "title": null,
-      "content": "Instruksi Presiden Nomor 3 Tahun 2O03 tentang Kebijakan dan\nStrate gi Nasional Pengembangan E-Gouernment.\nBABII ...\nPRES I DEN\nREPUBLIK INDONESIA BAB II\nVISI, MISI, TUJUAN, DAN SASARAN SPBE\n2.1. Visi SPBE\nVisi SPBE adalah \"Terwujudnya sistem pemerintahan berbasis\nelektronik yang terpadu dan menyeluruh untuk mencapai birokrasi\ndan pelayanan publik yang berkinerja tinggi\".\nVisi tersebut menjadi acuan dalam mewujudkan pelaksanaan SPBE\nyang terpadu di Instansi Pusat dan Pemerintah Daerah untuk\nmenghasilkan birokrasi pemerintah yang integratif, dinamis,\ntransparan, dan inovatif, serta peningkatan kualitas pelayanan\npublik yang terpadu, efektif, responsif, dan adaptif.\n2.2. Misi SPBE\nUntuk mencapai visi SPBE, misi SPBE adalah:",
+      "content": "Instruksi Presiden Nomor 3 Tahun 2O03 tentang Kebijakan dan\nStrate gi Nasional Pengembangan E-Gouernment.",
       "page_range": [
         76,
-        77
+        76
       ],
       "parent_id": "Perpres_95_2018__BAB_I",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "Perpres_95_2018__BAB_II",
+      "component_type": "BAB",
+      "number": "II",
+      "title": "PRES I DEN",
+      "content": "",
+      "page_range": [
+        76,
+        76
+      ],
+      "parent_id": null,
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "Perpres_95_2018__BAB_II",
+      "component_type": "BAB",
+      "number": "II",
+      "title": "VISI, MISI, TUJUAN, DAN SASARAN SPBE 2.1. Visi SPBE",
+      "content": "Visi SPBE adalah \"Terwujudnya sistem pemerintahan berbasis\nelektronik yang terpadu dan menyeluruh untuk mencapai birokrasi\ndan pelayanan publik yang berkinerja tinggi\".\nVisi tersebut menjadi acuan dalam mewujudkan pelaksanaan SPBE\nyang terpadu di Instansi Pusat dan Pemerintah Daerah untuk\nmenghasilkan birokrasi pemerintah yang integratif, dinamis,\ntransparan, dan inovatif, serta peningkatan kualitas pelayanan\npublik yang terpadu, efektif, responsif, dan adaptif.\n2.2. Misi SPBE\nUntuk mencapai visi SPBE, misi SPBE adalah:",
+      "page_range": [
+        77,
+        77
+      ],
+      "parent_id": null,
       "children": [
-        "Perpres_95_2018__ANGKA_1__HURUF_p",
-        "Perpres_95_2018__ANGKA_2__HURUF_p",
-        "Perpres_95_2018__ANGKA_3__HURUF_p",
-        "Perpres_95_2018__ANGKA_4__HURUF_p",
-        "Perpres_95_2018__ANGKA_1__HURUF_p",
-        "Perpres_95_2018__ANGKA_2__HURUF_p",
-        "Perpres_95_2018__ANGKA_3__HURUF_p",
-        "Perpres_95_2018__ANGKA_1__HURUF_p",
-        "Perpres_95_2018__ANGKA_2__HURUF_p",
-        "Perpres_95_2018__ANGKA_3__HURUF_p",
-        "Perpres_95_2018__ANGKA_4__HURUF_p"
+        "Perpres_95_2018__ANGKA_1__BAB_II",
+        "Perpres_95_2018__ANGKA_2__BAB_II",
+        "Perpres_95_2018__ANGKA_3__BAB_II",
+        "Perpres_95_2018__ANGKA_4__BAB_II",
+        "Perpres_95_2018__ANGKA_1__BAB_II",
+        "Perpres_95_2018__ANGKA_2__BAB_II",
+        "Perpres_95_2018__ANGKA_3__BAB_II",
+        "Perpres_95_2018__ANGKA_1__BAB_II",
+        "Perpres_95_2018__ANGKA_2__BAB_II",
+        "Perpres_95_2018__ANGKA_3__BAB_II",
+        "Perpres_95_2018__ANGKA_4__BAB_II"
       ],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_95_2018__ANGKA_1__HURUF_p",
+      "component_id": "Perpres_95_2018__ANGKA_1__BAB_II",
       "component_type": "ANGKA",
       "number": "1",
       "title": null,
@@ -9065,12 +9125,12 @@
         77,
         77
       ],
-      "parent_id": "Perpres_95_2018__HURUF_p",
+      "parent_id": "Perpres_95_2018__BAB_II",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_95_2018__ANGKA_2__HURUF_p",
+      "component_id": "Perpres_95_2018__ANGKA_2__BAB_II",
       "component_type": "ANGKA",
       "number": "2",
       "title": null,
@@ -9079,12 +9139,12 @@
         77,
         77
       ],
-      "parent_id": "Perpres_95_2018__HURUF_p",
+      "parent_id": "Perpres_95_2018__BAB_II",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_95_2018__ANGKA_3__HURUF_p",
+      "component_id": "Perpres_95_2018__ANGKA_3__BAB_II",
       "component_type": "ANGKA",
       "number": "3",
       "title": null,
@@ -9093,12 +9153,12 @@
         77,
         77
       ],
-      "parent_id": "Perpres_95_2018__HURUF_p",
+      "parent_id": "Perpres_95_2018__BAB_II",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_95_2018__ANGKA_4__HURUF_p",
+      "component_id": "Perpres_95_2018__ANGKA_4__BAB_II",
       "component_type": "ANGKA",
       "number": "4",
       "title": null,
@@ -9107,12 +9167,12 @@
         77,
         77
       ],
-      "parent_id": "Perpres_95_2018__HURUF_p",
+      "parent_id": "Perpres_95_2018__BAB_II",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_95_2018__ANGKA_1__HURUF_p",
+      "component_id": "Perpres_95_2018__ANGKA_1__BAB_II",
       "component_type": "ANGKA",
       "number": "1",
       "title": null,
@@ -9121,12 +9181,12 @@
         77,
         77
       ],
-      "parent_id": "Perpres_95_2018__HURUF_p",
+      "parent_id": "Perpres_95_2018__BAB_II",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_95_2018__ANGKA_2__HURUF_p",
+      "component_id": "Perpres_95_2018__ANGKA_2__BAB_II",
       "component_type": "ANGKA",
       "number": "2",
       "title": null,
@@ -9135,12 +9195,12 @@
         77,
         78
       ],
-      "parent_id": "Perpres_95_2018__HURUF_p",
+      "parent_id": "Perpres_95_2018__BAB_II",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_95_2018__ANGKA_3__HURUF_p",
+      "component_id": "Perpres_95_2018__ANGKA_3__BAB_II",
       "component_type": "ANGKA",
       "number": "3",
       "title": null,
@@ -9149,12 +9209,12 @@
         78,
         78
       ],
-      "parent_id": "Perpres_95_2018__HURUF_p",
+      "parent_id": "Perpres_95_2018__BAB_II",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_95_2018__ANGKA_1__HURUF_p",
+      "component_id": "Perpres_95_2018__ANGKA_1__BAB_II",
       "component_type": "ANGKA",
       "number": "1",
       "title": null,
@@ -9163,12 +9223,12 @@
         78,
         78
       ],
-      "parent_id": "Perpres_95_2018__HURUF_p",
+      "parent_id": "Perpres_95_2018__BAB_II",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_95_2018__ANGKA_2__HURUF_p",
+      "component_id": "Perpres_95_2018__ANGKA_2__BAB_II",
       "component_type": "ANGKA",
       "number": "2",
       "title": null,
@@ -9177,12 +9237,12 @@
         78,
         78
       ],
-      "parent_id": "Perpres_95_2018__HURUF_p",
+      "parent_id": "Perpres_95_2018__BAB_II",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_95_2018__ANGKA_3__HURUF_p",
+      "component_id": "Perpres_95_2018__ANGKA_3__BAB_II",
       "component_type": "ANGKA",
       "number": "3",
       "title": null,
@@ -9191,12 +9251,12 @@
         78,
         78
       ],
-      "parent_id": "Perpres_95_2018__HURUF_p",
+      "parent_id": "Perpres_95_2018__BAB_II",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_95_2018__ANGKA_4__HURUF_p",
+      "component_id": "Perpres_95_2018__ANGKA_4__BAB_II",
       "component_type": "ANGKA",
       "number": "4",
       "title": null,
@@ -9205,7 +9265,7 @@
         78,
         78
       ],
-      "parent_id": "Perpres_95_2018__HURUF_p",
+      "parent_id": "Perpres_95_2018__BAB_II",
       "children": [],
       "is_penjelasan": false
     },
@@ -10004,10 +10064,24 @@
       "component_id": "Perpres_95_2018__BAB_IV",
       "component_type": "BAB",
       "number": "IV",
-      "title": "PRES I DEN REPUBLIK INDONESIA BAB IV",
-      "content": "PETA RENCANA STRATEGIS\nPeta rencana strategis SPBE berisi berbagai inisiatif yang digunakan\nsebagai pedoman untuk melakukan pembangunan, pengembangan, dan\npenerapan SPBE nasional dan diuraikan dalam tahapan rencana\nstrategis, deskripsi inisiatif strategis, dan rencana strategis.\n4.I. Tahapan Rencana Strategis\nRencana strategis dilaksanakan dalam dua tahapan, yaitu",
+      "title": "PRES I DEN",
+      "content": "",
       "page_range": [
         87,
+        87
+      ],
+      "parent_id": null,
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "Perpres_95_2018__BAB_IV",
+      "component_type": "BAB",
+      "number": "IV",
+      "title": "PETA RENCANA STRATEGIS Peta rencana strategis SPBE berisi berbagai inisiatif yang digunakan",
+      "content": "sebagai pedoman untuk melakukan pembangunan, pengembangan, dan\npenerapan SPBE nasional dan diuraikan dalam tahapan rencana\nstrategis, deskripsi inisiatif strategis, dan rencana strategis.\n4.I. Tahapan Rencana Strategis\nRencana strategis dilaksanakan dalam dua tahapan, yaitu",
+      "page_range": [
+        88,
         88
       ],
       "parent_id": null,
@@ -11552,10 +11626,24 @@
       "component_id": "Perpres_95_2018__BAB_V",
       "component_type": "BAB",
       "number": "V",
-      "title": "PRES I DEN REPUBLIK INDONESIA BAB V",
-      "content": "PENUTUP\nRencana Induk SPBE Nasional disusun dengan mengacu pada arah\nkebijakan RPJP Nasional 2005 - 2025, Grand Design Reformasi Birokrasi\n2OlO - 2025, dan RPJM Nasional 2OI4 - 2OI9. Pencapaian visi SPBE yang\nterpadu dan menyeluruh memiliki peran yang sangat penting di dalam\npenyelenggaraan pemerintahan untuk mewujudkan birokrasi\npemerintahan yang terpadu dan berkinerja tinggi, meningkatkan kualitas\npelayanan publik, mewujudkan tata kelola pemerintahan yang bersih,\nefektif, efisien, transparan, dan akuntabel, dan pada akhirnya mampu\nmewujudkan bangsa yang berdaya saing.\nSinergi yang kuat antara Instansi Pusat dan Pemerintah Daerah menjadi\nprasyarat untuk mencapai SPBE yang terpadu dan menyeluruh. Arah\nkebijakan, strategi, dan peta rencana strategis SPBE dijabarkan ke dalam\n4 (empat) area, yaitu:",
+      "title": "PRES I DEN",
+      "content": "",
       "page_range": [
         107,
+        107
+      ],
+      "parent_id": null,
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "Perpres_95_2018__BAB_V",
+      "component_type": "BAB",
+      "number": "V",
+      "title": "PENUTUP Rencana Induk SPBE Nasional disusun dengan mengacu pada arah",
+      "content": "kebijakan RPJP Nasional 2005 - 2025, Grand Design Reformasi Birokrasi\n2OlO - 2025, dan RPJM Nasional 2OI4 - 2OI9. Pencapaian visi SPBE yang\nterpadu dan menyeluruh memiliki peran yang sangat penting di dalam\npenyelenggaraan pemerintahan untuk mewujudkan birokrasi\npemerintahan yang terpadu dan berkinerja tinggi, meningkatkan kualitas\npelayanan publik, mewujudkan tata kelola pemerintahan yang bersih,\nefektif, efisien, transparan, dan akuntabel, dan pada akhirnya mampu\nmewujudkan bangsa yang berdaya saing.\nSinergi yang kuat antara Instansi Pusat dan Pemerintah Daerah menjadi\nprasyarat untuk mencapai SPBE yang terpadu dan menyeluruh. Arah\nkebijakan, strategi, dan peta rencana strategis SPBE dijabarkan ke dalam\n4 (empat) area, yaitu:",
+      "page_range": [
+        108,
         108
       ],
       "parent_id": null,

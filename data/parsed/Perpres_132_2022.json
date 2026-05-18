@@ -1,12 +1,12 @@
 {
   "document_id": "Perpres_132_2022",
-  "total_components": 231,
+  "total_components": 242,
   "component_types": {
     "PASAL": 6,
     "ANGKA": 113,
     "HURUF": 98,
     "AYAT": 11,
-    "BAB": 3
+    "BAB": 14
   },
   "components": [
     {
@@ -554,12 +554,26 @@
       "component_type": "ANGKA",
       "number": "2",
       "title": null,
-      "content": "mendeskripsikan integrasi proses bisnis, data dan informasi, aplikasi\nSPBE, infrastruktur SPBE, dan keamanan SPBE untuk menghasilkan\nlayanan pemerintah yang terintegrasi.\nBABII ...\nSK No 158115 A\nPRESIDEN\nREPLIBLIK INDONESIA",
+      "content": "mendeskripsikan integrasi proses bisnis, data dan informasi, aplikasi\nSPBE, infrastruktur SPBE, dan keamanan SPBE untuk menghasilkan\nlayanan pemerintah yang terintegrasi.",
+      "page_range": [
+        8,
+        8
+      ],
+      "parent_id": "Perpres_132_2022__BAB_I",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "Perpres_132_2022__BAB_II",
+      "component_type": "BAB",
+      "number": "II",
+      "title": "SK No 158115 A PRESIDEN",
+      "content": "REPLIBLIK INDONESIA",
       "page_range": [
         8,
         9
       ],
-      "parent_id": "Perpres_132_2022__BAB_I",
+      "parent_id": null,
       "children": [],
       "is_penjelasan": false
     },
@@ -627,66 +641,7 @@
         "Perpres_132_2022__HURUF_e__BAB_II",
         "Perpres_132_2022__HURUF_f__BAB_II",
         "Perpres_132_2022__HURUF_g__BAB_II",
-        "Perpres_132_2022__HURUF_h__BAB_II",
-        "Perpres_132_2022__HURUF_a__BAB_II",
-        "Perpres_132_2022__HURUF_b__BAB_II",
-        "Perpres_132_2022__HURUF_c__BAB_II",
-        "Perpres_132_2022__HURUF_d__BAB_II",
-        "Perpres_132_2022__HURUF_e__BAB_II",
-        "Perpres_132_2022__HURUF_f__BAB_II",
-        "Perpres_132_2022__HURUF_g__BAB_II",
-        "Perpres_132_2022__HURUF_h__BAB_II",
-        "Perpres_132_2022__HURUF_i",
-        "Perpres_132_2022__HURUF_j",
-        "Perpres_132_2022__HURUF_a__BAB_II",
-        "Perpres_132_2022__HURUF_b__BAB_II",
-        "Perpres_132_2022__HURUF_c__BAB_II",
-        "Perpres_132_2022__HURUF_d__BAB_II",
-        "Perpres_132_2022__HURUF_e__BAB_II",
-        "Perpres_132_2022__HURUF_f__BAB_II",
-        "Perpres_132_2022__HURUF_a__BAB_II",
-        "Perpres_132_2022__HURUF_b__BAB_II",
-        "Perpres_132_2022__HURUF_c__BAB_II",
-        "Perpres_132_2022__HURUF_d__BAB_II",
-        "Perpres_132_2022__HURUF_e__BAB_II",
-        "Perpres_132_2022__HURUF_f__BAB_II",
-        "Perpres_132_2022__HURUF_a__BAB_II",
-        "Perpres_132_2022__HURUF_b__BAB_II",
-        "Perpres_132_2022__HURUF_c__BAB_II",
-        "Perpres_132_2022__HURUF_d__BAB_II",
-        "Perpres_132_2022__HURUF_e__BAB_II",
-        "Perpres_132_2022__HURUF_f__BAB_II",
-        "Perpres_132_2022__HURUF_a__BAB_II",
-        "Perpres_132_2022__HURUF_b__BAB_II",
-        "Perpres_132_2022__HURUF_c__BAB_II",
-        "Perpres_132_2022__HURUF_d__BAB_II",
-        "Perpres_132_2022__HURUF_a__BAB_II",
-        "Perpres_132_2022__HURUF_b__BAB_II",
-        "Perpres_132_2022__HURUF_d__BAB_II",
-        "Perpres_132_2022__HURUF_a__BAB_II",
-        "Perpres_132_2022__HURUF_b__BAB_II",
-        "Perpres_132_2022__HURUF_c__BAB_II",
-        "Perpres_132_2022__HURUF_d__BAB_II",
-        "Perpres_132_2022__HURUF_a__BAB_II",
-        "Perpres_132_2022__HURUF_b__BAB_II",
-        "Perpres_132_2022__HURUF_c__BAB_II",
-        "Perpres_132_2022__HURUF_d__BAB_II",
-        "Perpres_132_2022__HURUF_a__BAB_II",
-        "Perpres_132_2022__HURUF_b__BAB_II",
-        "Perpres_132_2022__HURUF_c__BAB_II",
-        "Perpres_132_2022__HURUF_d__BAB_II",
-        "Perpres_132_2022__HURUF_f__BAB_II",
-        "Perpres_132_2022__HURUF_a__BAB_II",
-        "Perpres_132_2022__HURUF_b__BAB_II",
-        "Perpres_132_2022__HURUF_c__BAB_II",
-        "Perpres_132_2022__HURUF_a__BAB_II",
-        "Perpres_132_2022__HURUF_b__BAB_II",
-        "Perpres_132_2022__HURUF_c__BAB_II",
-        "Perpres_132_2022__HURUF_d__BAB_II",
-        "Perpres_132_2022__HURUF_e__BAB_II",
-        "Perpres_132_2022__HURUF_f__BAB_II",
-        "Perpres_132_2022__HURUF_a__BAB_II",
-        "Perpres_132_2022__HURUF_b__BAB_II"
+        "Perpres_132_2022__HURUF_h__BAB_II"
       ],
       "is_penjelasan": false
     },
@@ -1455,17 +1410,105 @@
       "component_type": "HURUF",
       "number": "h",
       "title": null,
-      "content": "Satu Data Indonesia\nKebijakan pembangunan SPBE lainnya adalah pelaksanaan kebijakan\nSatu Data Indonesia sebagaimana telah diamanatkan dalam Peraturan\nPresiden Nomor 39 Tahun 2Ol9 tentang Satu Data Indonesia. Strategi\ndalam pelaksanaan kebijakan ini adalah dengan melakukan\npeningkatan kualitas data dalam kerangka Satu Data Indonesia\nmelalui perbaikan tata kelola data dan pembangunan portal Satu Data\nIndonesia. Dalam mendukung kebijakan Satu Data lndonesia ini,\nmaka terdapat 4 (empat) inisiatif strategis yang akan dilaksanakan,\nantara lain tata kelola satu data statistik, tata kelola satu data\ngeospasial, tata kelola satu data keuangan, dan pembangunan portal\nSatu Data Indonesia sebagai layanan data terbuka.\nBABIII ...\nSK No 158129 A\nPRES IDEN\nREPUBLIK INDONESIA BAB III\nKERANGKA KERJA ARSITEKTUR SPBE NASIONAL\nDalam rangka melaksanakan prioritas agenda pembangunan (pembangunan\nsumber daya manusia, pembangunan infrastruktur, penyederhanaan regulasi,\npenyederhanaan birokrasi, dan transformasi ekonomi) perlu ditentukan metode\npelaksanaan untuk kelima agenda tersebut secara cepat, tepat, dan temkur.\nPenerapan SPBE dalam menyelenggarakan pemerintahan diharapkan dapat\nmenjawab tuntutan tersebut. Pelaksanaan penerapan SPBE tersebut\ndilaksanakan sesuai dengan kerangka kerja SPBE sebagaimana diamanatkan\ndalam Peraturan Presiden Nomor 95 Tahun 2018 tentang Sistem Pemerintahan\nBerbasis Elektronik.\nA. Kerangka Kerja SPBE\nKerangka kerja SPBE pada dasarnya merupakan sebuah strrrktur yang\ndidesain sedemikian rupa, sebagai konseptualisasi atas pelaksanaan tata\nkelola SPBE, yang digunakan sebagai panduan dalam melakukan penerapan\nSPBE, baik di level nasional, maupun di Instansi Pusat dan Pemerintah\nDaerah. Penyelenggaraan pemerintahan yang bersih, efektif, transparan, dan\nakuntabel serta peningkatan pelayanan publik yang berkualitas dan\nterpercaya diharapkan dapat diwujudkan melalui tata kelola SPBE. Tata\nkelola SPBE diterapkan untuk memastikan penerapan unsur-unsur SPBE\nsecara terpadu. Unsur-unsur SPBE ini antara lain:",
+      "content": "Satu Data Indonesia\nKebijakan pembangunan SPBE lainnya adalah pelaksanaan kebijakan\nSatu Data Indonesia sebagaimana telah diamanatkan dalam Peraturan\nPresiden Nomor 39 Tahun 2Ol9 tentang Satu Data Indonesia. Strategi\ndalam pelaksanaan kebijakan ini adalah dengan melakukan\npeningkatan kualitas data dalam kerangka Satu Data Indonesia\nmelalui perbaikan tata kelola data dan pembangunan portal Satu Data\nIndonesia. Dalam mendukung kebijakan Satu Data lndonesia ini,\nmaka terdapat 4 (empat) inisiatif strategis yang akan dilaksanakan,\nantara lain tata kelola satu data statistik, tata kelola satu data\ngeospasial, tata kelola satu data keuangan, dan pembangunan portal\nSatu Data Indonesia sebagai layanan data terbuka.",
       "page_range": [
         20,
-        21
+        20
       ],
       "parent_id": "Perpres_132_2022__BAB_II",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_a__BAB_II",
+      "component_id": "Perpres_132_2022__BAB_III",
+      "component_type": "BAB",
+      "number": "III",
+      "title": "SK No 158129 A PRES IDEN",
+      "content": "",
+      "page_range": [
+        20,
+        20
+      ],
+      "parent_id": null,
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "Perpres_132_2022__BAB_III",
+      "component_type": "BAB",
+      "number": "III",
+      "title": "KERANGKA KERJA ARSITEKTUR SPBE NASIONAL Dalam rangka melaksanakan prioritas agenda pembangunan (pembangunan",
+      "content": "sumber daya manusia, pembangunan infrastruktur, penyederhanaan regulasi,\npenyederhanaan birokrasi, dan transformasi ekonomi) perlu ditentukan metode\npelaksanaan untuk kelima agenda tersebut secara cepat, tepat, dan temkur.\nPenerapan SPBE dalam menyelenggarakan pemerintahan diharapkan dapat\nmenjawab tuntutan tersebut. Pelaksanaan penerapan SPBE tersebut\ndilaksanakan sesuai dengan kerangka kerja SPBE sebagaimana diamanatkan\ndalam Peraturan Presiden Nomor 95 Tahun 2018 tentang Sistem Pemerintahan\nBerbasis Elektronik.\nA. Kerangka Kerja SPBE\nKerangka kerja SPBE pada dasarnya merupakan sebuah strrrktur yang\ndidesain sedemikian rupa, sebagai konseptualisasi atas pelaksanaan tata\nkelola SPBE, yang digunakan sebagai panduan dalam melakukan penerapan\nSPBE, baik di level nasional, maupun di Instansi Pusat dan Pemerintah\nDaerah. Penyelenggaraan pemerintahan yang bersih, efektif, transparan, dan\nakuntabel serta peningkatan pelayanan publik yang berkualitas dan\nterpercaya diharapkan dapat diwujudkan melalui tata kelola SPBE. Tata\nkelola SPBE diterapkan untuk memastikan penerapan unsur-unsur SPBE\nsecara terpadu. Unsur-unsur SPBE ini antara lain:",
+      "page_range": [
+        21,
+        21
+      ],
+      "parent_id": null,
+      "children": [
+        "Perpres_132_2022__HURUF_a__BAB_III",
+        "Perpres_132_2022__HURUF_b__BAB_III",
+        "Perpres_132_2022__HURUF_c__BAB_III",
+        "Perpres_132_2022__HURUF_d__BAB_III",
+        "Perpres_132_2022__HURUF_e__BAB_III",
+        "Perpres_132_2022__HURUF_f__BAB_III",
+        "Perpres_132_2022__HURUF_g__BAB_III",
+        "Perpres_132_2022__HURUF_h__BAB_III",
+        "Perpres_132_2022__HURUF_i",
+        "Perpres_132_2022__HURUF_j",
+        "Perpres_132_2022__HURUF_a__BAB_III",
+        "Perpres_132_2022__HURUF_b__BAB_III",
+        "Perpres_132_2022__HURUF_c__BAB_III",
+        "Perpres_132_2022__HURUF_d__BAB_III",
+        "Perpres_132_2022__HURUF_e__BAB_III",
+        "Perpres_132_2022__HURUF_f__BAB_III",
+        "Perpres_132_2022__HURUF_a__BAB_III",
+        "Perpres_132_2022__HURUF_b__BAB_III",
+        "Perpres_132_2022__HURUF_c__BAB_III",
+        "Perpres_132_2022__HURUF_d__BAB_III",
+        "Perpres_132_2022__HURUF_e__BAB_III",
+        "Perpres_132_2022__HURUF_f__BAB_III",
+        "Perpres_132_2022__HURUF_a__BAB_III",
+        "Perpres_132_2022__HURUF_b__BAB_III",
+        "Perpres_132_2022__HURUF_c__BAB_III",
+        "Perpres_132_2022__HURUF_d__BAB_III",
+        "Perpres_132_2022__HURUF_e__BAB_III",
+        "Perpres_132_2022__HURUF_f__BAB_III",
+        "Perpres_132_2022__HURUF_a__BAB_III",
+        "Perpres_132_2022__HURUF_b__BAB_III",
+        "Perpres_132_2022__HURUF_c__BAB_III",
+        "Perpres_132_2022__HURUF_d__BAB_III",
+        "Perpres_132_2022__HURUF_a__BAB_III",
+        "Perpres_132_2022__HURUF_b__BAB_III",
+        "Perpres_132_2022__HURUF_d__BAB_III",
+        "Perpres_132_2022__HURUF_a__BAB_III",
+        "Perpres_132_2022__HURUF_b__BAB_III",
+        "Perpres_132_2022__HURUF_c__BAB_III",
+        "Perpres_132_2022__HURUF_d__BAB_III",
+        "Perpres_132_2022__HURUF_a__BAB_III",
+        "Perpres_132_2022__HURUF_b__BAB_III",
+        "Perpres_132_2022__HURUF_c__BAB_III",
+        "Perpres_132_2022__HURUF_d__BAB_III",
+        "Perpres_132_2022__HURUF_a__BAB_III",
+        "Perpres_132_2022__HURUF_b__BAB_III",
+        "Perpres_132_2022__HURUF_c__BAB_III",
+        "Perpres_132_2022__HURUF_d__BAB_III",
+        "Perpres_132_2022__HURUF_f__BAB_III",
+        "Perpres_132_2022__HURUF_a__BAB_III",
+        "Perpres_132_2022__HURUF_b__BAB_III",
+        "Perpres_132_2022__HURUF_c__BAB_III",
+        "Perpres_132_2022__HURUF_a__BAB_III",
+        "Perpres_132_2022__HURUF_b__BAB_III",
+        "Perpres_132_2022__HURUF_c__BAB_III",
+        "Perpres_132_2022__HURUF_d__BAB_III",
+        "Perpres_132_2022__HURUF_e__BAB_III",
+        "Perpres_132_2022__HURUF_f__BAB_III",
+        "Perpres_132_2022__HURUF_a__BAB_III",
+        "Perpres_132_2022__HURUF_b__BAB_III"
+      ],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "Perpres_132_2022__HURUF_a__BAB_III",
       "component_type": "HURUF",
       "number": "a",
       "title": null,
@@ -1474,12 +1517,12 @@
         21,
         21
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_b__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_b__BAB_III",
       "component_type": "HURUF",
       "number": "b",
       "title": null,
@@ -1488,12 +1531,12 @@
         21,
         21
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_c__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_c__BAB_III",
       "component_type": "HURUF",
       "number": "c",
       "title": null,
@@ -1502,12 +1545,12 @@
         21,
         21
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_d__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_d__BAB_III",
       "component_type": "HURUF",
       "number": "d",
       "title": null,
@@ -1516,12 +1559,12 @@
         21,
         21
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_e__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_e__BAB_III",
       "component_type": "HURUF",
       "number": "e",
       "title": null,
@@ -1530,12 +1573,12 @@
         21,
         21
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_f__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_f__BAB_III",
       "component_type": "HURUF",
       "number": "f",
       "title": null,
@@ -1544,12 +1587,12 @@
         21,
         21
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_g__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_g__BAB_III",
       "component_type": "HURUF",
       "number": "g",
       "title": null,
@@ -1558,12 +1601,12 @@
         21,
         21
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_h__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_h__BAB_III",
       "component_type": "HURUF",
       "number": "h",
       "title": null,
@@ -1572,7 +1615,7 @@
         21,
         21
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
@@ -1586,7 +1629,7 @@
         21,
         21
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
@@ -1600,12 +1643,12 @@
         21,
         22
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_a__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_a__BAB_III",
       "component_type": "HURUF",
       "number": "a",
       "title": null,
@@ -1614,12 +1657,12 @@
         22,
         22
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_b__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_b__BAB_III",
       "component_type": "HURUF",
       "number": "b",
       "title": null,
@@ -1628,12 +1671,12 @@
         22,
         22
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_c__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_c__BAB_III",
       "component_type": "HURUF",
       "number": "c",
       "title": null,
@@ -1642,12 +1685,12 @@
         22,
         22
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_d__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_d__BAB_III",
       "component_type": "HURUF",
       "number": "d",
       "title": null,
@@ -1656,12 +1699,12 @@
         22,
         22
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_e__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_e__BAB_III",
       "component_type": "HURUF",
       "number": "e",
       "title": null,
@@ -1670,12 +1713,12 @@
         22,
         22
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_f__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_f__BAB_III",
       "component_type": "HURUF",
       "number": "f",
       "title": null,
@@ -1684,12 +1727,12 @@
         22,
         24
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_a__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_a__BAB_III",
       "component_type": "HURUF",
       "number": "a",
       "title": null,
@@ -1698,12 +1741,12 @@
         24,
         24
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_b__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_b__BAB_III",
       "component_type": "HURUF",
       "number": "b",
       "title": null,
@@ -1712,12 +1755,12 @@
         24,
         24
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_c__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_c__BAB_III",
       "component_type": "HURUF",
       "number": "c",
       "title": null,
@@ -1726,12 +1769,12 @@
         24,
         24
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_d__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_d__BAB_III",
       "component_type": "HURUF",
       "number": "d",
       "title": null,
@@ -1740,12 +1783,12 @@
         24,
         24
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_e__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_e__BAB_III",
       "component_type": "HURUF",
       "number": "e",
       "title": null,
@@ -1754,12 +1797,12 @@
         24,
         24
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_f__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_f__BAB_III",
       "component_type": "HURUF",
       "number": "f",
       "title": null,
@@ -1768,12 +1811,12 @@
         24,
         24
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_a__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_a__BAB_III",
       "component_type": "HURUF",
       "number": "a",
       "title": null,
@@ -1782,12 +1825,12 @@
         24,
         24
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_b__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_b__BAB_III",
       "component_type": "HURUF",
       "number": "b",
       "title": null,
@@ -1796,12 +1839,12 @@
         24,
         24
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_c__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_c__BAB_III",
       "component_type": "HURUF",
       "number": "c",
       "title": null,
@@ -1810,12 +1853,12 @@
         24,
         24
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_d__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_d__BAB_III",
       "component_type": "HURUF",
       "number": "d",
       "title": null,
@@ -1824,12 +1867,12 @@
         24,
         24
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_e__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_e__BAB_III",
       "component_type": "HURUF",
       "number": "e",
       "title": null,
@@ -1838,12 +1881,12 @@
         24,
         24
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_f__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_f__BAB_III",
       "component_type": "HURUF",
       "number": "f",
       "title": null,
@@ -1852,12 +1895,12 @@
         24,
         26
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_a__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_a__BAB_III",
       "component_type": "HURUF",
       "number": "a",
       "title": null,
@@ -1866,12 +1909,12 @@
         26,
         26
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_b__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_b__BAB_III",
       "component_type": "HURUF",
       "number": "b",
       "title": null,
@@ -1880,12 +1923,12 @@
         26,
         26
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_c__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_c__BAB_III",
       "component_type": "HURUF",
       "number": "c",
       "title": null,
@@ -1894,12 +1937,12 @@
         26,
         26
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_d__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_d__BAB_III",
       "component_type": "HURUF",
       "number": "d",
       "title": null,
@@ -1908,12 +1951,12 @@
         26,
         28
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_a__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_a__BAB_III",
       "component_type": "HURUF",
       "number": "a",
       "title": null,
@@ -1922,12 +1965,12 @@
         28,
         28
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_b__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_b__BAB_III",
       "component_type": "HURUF",
       "number": "b",
       "title": null,
@@ -1936,12 +1979,12 @@
         28,
         29
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_d__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_d__BAB_III",
       "component_type": "HURUF",
       "number": "d",
       "title": null,
@@ -1950,12 +1993,12 @@
         29,
         31
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_a__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_a__BAB_III",
       "component_type": "HURUF",
       "number": "a",
       "title": null,
@@ -1964,12 +2007,12 @@
         31,
         31
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_b__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_b__BAB_III",
       "component_type": "HURUF",
       "number": "b",
       "title": null,
@@ -1978,12 +2021,12 @@
         31,
         31
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_c__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_c__BAB_III",
       "component_type": "HURUF",
       "number": "c",
       "title": null,
@@ -1992,12 +2035,12 @@
         31,
         31
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_d__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_d__BAB_III",
       "component_type": "HURUF",
       "number": "d",
       "title": null,
@@ -2006,17 +2049,17 @@
         31,
         32
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [
-        "Perpres_132_2022__ANGKA_1__BAB_II",
-        "Perpres_132_2022__ANGKA_1__BAB_II",
-        "Perpres_132_2022__ANGKA_2__BAB_II",
-        "Perpres_132_2022__ANGKA_3__BAB_II"
+        "Perpres_132_2022__ANGKA_1__BAB_III",
+        "Perpres_132_2022__ANGKA_1__BAB_III",
+        "Perpres_132_2022__ANGKA_2__BAB_III",
+        "Perpres_132_2022__ANGKA_3__BAB_III"
       ],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_1__BAB_II",
+      "component_id": "Perpres_132_2022__ANGKA_1__BAB_III",
       "component_type": "ANGKA",
       "number": "1",
       "title": null,
@@ -2025,12 +2068,12 @@
         32,
         33
       ],
-      "parent_id": "Perpres_132_2022__HURUF_d__BAB_II",
+      "parent_id": "Perpres_132_2022__HURUF_d__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_1__BAB_II",
+      "component_id": "Perpres_132_2022__ANGKA_1__BAB_III",
       "component_type": "ANGKA",
       "number": "1",
       "title": null,
@@ -2039,12 +2082,12 @@
         33,
         33
       ],
-      "parent_id": "Perpres_132_2022__HURUF_d__BAB_II",
+      "parent_id": "Perpres_132_2022__HURUF_d__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_2__BAB_II",
+      "component_id": "Perpres_132_2022__ANGKA_2__BAB_III",
       "component_type": "ANGKA",
       "number": "2",
       "title": null,
@@ -2053,12 +2096,12 @@
         33,
         33
       ],
-      "parent_id": "Perpres_132_2022__HURUF_d__BAB_II",
+      "parent_id": "Perpres_132_2022__HURUF_d__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_3__BAB_II",
+      "component_id": "Perpres_132_2022__ANGKA_3__BAB_III",
       "component_type": "ANGKA",
       "number": "3",
       "title": null,
@@ -2067,12 +2110,12 @@
         33,
         33
       ],
-      "parent_id": "Perpres_132_2022__HURUF_d__BAB_II",
+      "parent_id": "Perpres_132_2022__HURUF_d__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_a__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_a__BAB_III",
       "component_type": "HURUF",
       "number": "a",
       "title": null,
@@ -2081,12 +2124,12 @@
         33,
         33
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_b__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_b__BAB_III",
       "component_type": "HURUF",
       "number": "b",
       "title": null,
@@ -2095,12 +2138,12 @@
         33,
         33
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_c__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_c__BAB_III",
       "component_type": "HURUF",
       "number": "c",
       "title": null,
@@ -2109,12 +2152,12 @@
         33,
         33
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_d__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_d__BAB_III",
       "component_type": "HURUF",
       "number": "d",
       "title": null,
@@ -2123,12 +2166,12 @@
         33,
         34
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_a__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_a__BAB_III",
       "component_type": "HURUF",
       "number": "a",
       "title": null,
@@ -2137,12 +2180,12 @@
         34,
         34
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_b__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_b__BAB_III",
       "component_type": "HURUF",
       "number": "b",
       "title": null,
@@ -2151,12 +2194,12 @@
         34,
         34
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_c__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_c__BAB_III",
       "component_type": "HURUF",
       "number": "c",
       "title": null,
@@ -2165,12 +2208,12 @@
         34,
         34
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_d__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_d__BAB_III",
       "component_type": "HURUF",
       "number": "d",
       "title": null,
@@ -2179,12 +2222,12 @@
         34,
         35
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_f__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_f__BAB_III",
       "component_type": "HURUF",
       "number": "f",
       "title": null,
@@ -2193,20 +2236,20 @@
         35,
         35
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [
-        "Perpres_132_2022__ANGKA_2__BAB_II",
-        "Perpres_132_2022__ANGKA_3__BAB_II",
-        "Perpres_132_2022__ANGKA_4__BAB_II",
-        "Perpres_132_2022__ANGKA_5__BAB_II",
-        "Perpres_132_2022__ANGKA_6__BAB_II",
-        "Perpres_132_2022__ANGKA_7__BAB_II",
-        "Perpres_132_2022__ANGKA_8__BAB_II"
+        "Perpres_132_2022__ANGKA_2__BAB_III",
+        "Perpres_132_2022__ANGKA_3__BAB_III",
+        "Perpres_132_2022__ANGKA_4__BAB_III",
+        "Perpres_132_2022__ANGKA_5__BAB_III",
+        "Perpres_132_2022__ANGKA_6__BAB_III",
+        "Perpres_132_2022__ANGKA_7__BAB_III",
+        "Perpres_132_2022__ANGKA_8__BAB_III"
       ],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_2__BAB_II",
+      "component_id": "Perpres_132_2022__ANGKA_2__BAB_III",
       "component_type": "ANGKA",
       "number": "2",
       "title": null,
@@ -2215,12 +2258,12 @@
         35,
         35
       ],
-      "parent_id": "Perpres_132_2022__HURUF_f__BAB_II",
+      "parent_id": "Perpres_132_2022__HURUF_f__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_3__BAB_II",
+      "component_id": "Perpres_132_2022__ANGKA_3__BAB_III",
       "component_type": "ANGKA",
       "number": "3",
       "title": null,
@@ -2229,12 +2272,12 @@
         35,
         35
       ],
-      "parent_id": "Perpres_132_2022__HURUF_f__BAB_II",
+      "parent_id": "Perpres_132_2022__HURUF_f__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_4__BAB_II",
+      "component_id": "Perpres_132_2022__ANGKA_4__BAB_III",
       "component_type": "ANGKA",
       "number": "4",
       "title": null,
@@ -2243,12 +2286,12 @@
         35,
         35
       ],
-      "parent_id": "Perpres_132_2022__HURUF_f__BAB_II",
+      "parent_id": "Perpres_132_2022__HURUF_f__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_5__BAB_II",
+      "component_id": "Perpres_132_2022__ANGKA_5__BAB_III",
       "component_type": "ANGKA",
       "number": "5",
       "title": null,
@@ -2257,12 +2300,12 @@
         35,
         35
       ],
-      "parent_id": "Perpres_132_2022__HURUF_f__BAB_II",
+      "parent_id": "Perpres_132_2022__HURUF_f__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_6__BAB_II",
+      "component_id": "Perpres_132_2022__ANGKA_6__BAB_III",
       "component_type": "ANGKA",
       "number": "6",
       "title": null,
@@ -2271,12 +2314,12 @@
         35,
         35
       ],
-      "parent_id": "Perpres_132_2022__HURUF_f__BAB_II",
+      "parent_id": "Perpres_132_2022__HURUF_f__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_7__BAB_II",
+      "component_id": "Perpres_132_2022__ANGKA_7__BAB_III",
       "component_type": "ANGKA",
       "number": "7",
       "title": null,
@@ -2285,12 +2328,12 @@
         35,
         35
       ],
-      "parent_id": "Perpres_132_2022__HURUF_f__BAB_II",
+      "parent_id": "Perpres_132_2022__HURUF_f__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_8__BAB_II",
+      "component_id": "Perpres_132_2022__ANGKA_8__BAB_III",
       "component_type": "ANGKA",
       "number": "8",
       "title": null,
@@ -2299,12 +2342,12 @@
         35,
         35
       ],
-      "parent_id": "Perpres_132_2022__HURUF_f__BAB_II",
+      "parent_id": "Perpres_132_2022__HURUF_f__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_a__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_a__BAB_III",
       "component_type": "HURUF",
       "number": "a",
       "title": null,
@@ -2313,12 +2356,12 @@
         35,
         35
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_b__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_b__BAB_III",
       "component_type": "HURUF",
       "number": "b",
       "title": null,
@@ -2327,12 +2370,12 @@
         35,
         36
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_c__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_c__BAB_III",
       "component_type": "HURUF",
       "number": "c",
       "title": null,
@@ -2341,12 +2384,12 @@
         36,
         37
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_a__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_a__BAB_III",
       "component_type": "HURUF",
       "number": "a",
       "title": null,
@@ -2355,12 +2398,12 @@
         37,
         37
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_b__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_b__BAB_III",
       "component_type": "HURUF",
       "number": "b",
       "title": null,
@@ -2369,12 +2412,12 @@
         37,
         37
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_c__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_c__BAB_III",
       "component_type": "HURUF",
       "number": "c",
       "title": null,
@@ -2383,12 +2426,12 @@
         37,
         37
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_d__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_d__BAB_III",
       "component_type": "HURUF",
       "number": "d",
       "title": null,
@@ -2397,12 +2440,12 @@
         37,
         37
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_e__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_e__BAB_III",
       "component_type": "HURUF",
       "number": "e",
       "title": null,
@@ -2411,12 +2454,12 @@
         37,
         37
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_f__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_f__BAB_III",
       "component_type": "HURUF",
       "number": "f",
       "title": null,
@@ -2425,12 +2468,12 @@
         37,
         38
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_a__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_a__BAB_III",
       "component_type": "HURUF",
       "number": "a",
       "title": null,
@@ -2439,12 +2482,12 @@
         38,
         38
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_b__BAB_II",
+      "component_id": "Perpres_132_2022__HURUF_b__BAB_III",
       "component_type": "HURUF",
       "number": "b",
       "title": null,
@@ -2453,7 +2496,7 @@
         38,
         39
       ],
-      "parent_id": "Perpres_132_2022__BAB_II",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
@@ -2462,9 +2505,23 @@
       "component_type": "BAB",
       "number": "IV",
       "title": null,
-      "content": "Gambar 19. Relasi langsung pada Domain Keamanan SPBE.\nPRES IDEN\nREPUBLIK INDONESIA BAB IV\nREFERENSI ARSITEKTUR SISTEM PEMERINTAHAN BERBASIS\nELEKTRONIK NASIONAL\nArsitektur SPBE Nasional seperti telah dijelaskan pada bab sebelumnya,\ndiperlukan dalam melakukan penerapan SPBE untuk membentuk layanan\ndigital pemerintah yang terintegrasi. Dalam upayanya penerapan arsitektur\nSPBE memerlukan komponen berupa referensi di tingkat nasional yang menjadi\nacuan oleh setiap Instansi Pusat dan Pemerintah Daerah, dalam menJrusun\nsetiap domain arsitektur SPBE masing-masing sesuai dengan struktur yang\ntelah ditentukan.\nA. Referensi Arsitektur Proses Bisnis\nDomain proses bisnis sebagaimana yang telah ditentukan pada sub bab III.A,\ndimana memiliki struktur dengan 4 (empat) tingkat, dimana terdapat tingkat\n1 (pertama) dan tingkat 2 (kedua) merupakan struktur di tingkat nasional.\nBerdasarkan hal tersebut, maka ditentukan referensi arsitektur proses\nbisnis tingkat nasional dengan ilustrasi pada Gambar 20 dan daftar referensi\npada Tabel2.\nTabel 2. Referensi Arsitektur Proses Bisnis\nNasional.\nKode\nReferensi\nArsitektur\nDeskripsi Referensi Arsitektur Proses Bisnis\nPertahanan dan Luar Negeri (01)\n01.o 1\nPertahanan\nPenyelenggaraa.n urusan pemerintahan dalam\nbidane pertahana.n negara.\n01.02\nHubungan Luar\nNegeri\nPenyelenggaraan urusan pemerintahan dalam\nbidane hubungan luar negeri.\nSK No 158234A\nKode\nGambar 20. Struktur Referensi Arsitektur Proses Bisnis Tingkat Nasional.\nTata Kelola SPBE\nManajemen SPBE\nDomain Keamanan SPBE\nDomain\nAplikasi\nSPBE\nDomain Layanan SPBE\nTujuan dan Sasaran SPBE\nVisi dan Misi SPBE\nArsitektur SPBE\nDomain\nInfrastruktur SPBE\nDomain Data dan\nInformasi\nDomain Proses\nBisnis\nSektor Pemerintahan\n(Tingkat 1)\nUrusan Pemerintahan\n(Tingkat 2)\nReferensi Arsitektur Proses Bisnis\n9 Sektor Pemerintahan dan\n46 Urusan Pemerintahan\nPRESIDEN\nREPUBLIK TNDONESIA Kode\nReferensi\nArsitektur\nDeskripsi Referensi Arsitektur Proses Bisnis\nEkonomi dan Industri (O2)\n02.o1\nIndustri\nPenyelenggaraan urusan pemerintahan dalam\nbidane pengelolaan industri.\n02.42\nPerdagangan\nPenyelenggaraan urusan pemerintahan dalam\nbidang perdaqangan.\n02.03\nPertanian\nPenyelenggaraan urusan pemerintahan dalam\nbidang pertanian.\n02.o4\nPerkebunan\nPenyelenggaraan urusan pemerintahan dalam\nbidane perkebunan.\n02.05\nPeternakan\nPenyelenggaraan urusan pemerintahan dalam\nbidang peternakan.\n02.06\nPerikanan\nPenyelenggaraan urusan pemerintahan dalam\nbidans perikanan.\n02.o7\nBadan Usaha\nMilik Nesara\nPenyelenggaraan urusan pemerintahan dalam\nbidane peneelolaan badan usaha milik nesara.\n02.08\nInvestasi\nPenyelenggaraan urusan pemerintahan dalam\nbidang pembinaan penanaman modal.\n02.o9\nKoperasi\nPenyelenggaraan urusan pemerintahan dalam\nbidane pembinaan koperasi.\n02.10\nUsaha Kecil dan\nMenengah\nPenyelenggaraan urusan pemerintahan dalam\nbidang pembinaan usaha kecil dan menengah.\n02.7L\nPariwisata\nPenyelenggaraan urusan pemerintahan dalam\nbidane kepariwisataan.\nPembangunan Kewilayahan (03)\n03.01\nPekerjaan Umum\nPenyelenggaraan urusan pemerintahan dalam\nbidane pekeriaan umum.\n03.02\nTransmigrasi\nPenyelenggara€rn urusan pemerintahan dalam\nbidane transmigrasi.\n03.o3\nTransportasi\nPenyelenggaraan urusan pemerintahan dalam\nbidane transportasi.\n03.04\nPerumahan\nPenyelenggaraan urusan pemerintahan dalam\nbidane perumahan.\n03.05\nPembangunan\nKawasan atau\nDaerah Tertingsal\nPenyelenggaraan urusan pemerintahan dalam\nbidang pembangunan kawasan atau daerah\ntertineeal.\n03.06\nPertanahan\nPenyelenggaraan urusan pemerintahan dalam\nbidane pertanahan.\n03.o7\nKependudukan\nPenyelenggaraan urusan pemerintahan dalam\nbidane kependudukan.\nPerlindungan Sosial dan Kesehatan (Oa)\nSK No 158135 A\nKode\nPRESIDEN\nREPUBLIK INDONESIA Kode\nReferensi\nArsitektur\nDeskripsi Referensi Arsitektur Proses Bisnis\n04.o1\nKesehatan\nPenyelenggaraan urusan pemerintahan dalam\nbidang kesehatan.\n04.42\nSosial\nPenyelenggaraan urusan pemerintahan dalam\nbidang sosial.\n04.03\nPemberdayaan\nPerempuan\nPenyelenggaraan urusa.n pemerintahan dalam\nbidang pemberdayaan perempuan.\nKetertiban Umum dan Keselamatan (O5)\n05.o 1\nHukum\nPenyelenggaraan urusan pemerintahan dalam\nbidans hukum.\n05.o2\nKeamanan\nPenyelenggaraan urusan pemerintahan dalam\nbidans keamanan.\n05.03\nHak Asasi Manusia\nPenyelenggaraan urusan pemerintahan dalam\nbidane hak asasi manusia.\nPendidikan dan Tenaga Kerja (06)\n06.01\nPendidikan\nPenyelenggaraan urusan pemerintahan dalam\nbidang pendidikan.\n06.o2\nKetenagakerjaan\nPenyelenggaraan urusan pemerintahan dalam\nbidang ketenagakeriaan.\n06.03\nIlmu Pengetahuan\ndan Teknologi\nPenyelenggaraan urusan pemerintahan dalam\nbidang ilmu pengetahuan dan teknologi.\n06.04\nPemuda\nPenyelenggaraan urusan pemerintahan dalam\nbidang pemberdayaan dan pengembangan\npemuda.\n06.05\nOlahraga\nPenyelenggaraan urusan pemerintahan dalam\nbidang keolahragaan.\nLingkungan dan Sumber Daya Alam (07)\n07.01\nPertambangan\nPenyelenggaraan urusan pemerintahan dalam\nbidane pertambangan.\n07.o2\nEnergi\nPenyelenggaraan urusan pemerintahan dalam\nbidane enerqi.\n07.03\nKehutanan\nPenyelenggaraan urusan pemerintahan dalam\nbidane kehutanan.\n07.o4\nKelautan\nPenyelenggaraan urusan pemerintahan dalam\nbidane kelautan.\n07.05\nLingkungan Hidup\nPenyelenggaraan urusan pemerintahan dalam\nbidang lingkungan hidup.\nBudaya dan Agama (O8)\n08.01\nAgama\nPenyelenggaraan urusan pemerintahan dalam\nbidang agama.\n08.02\nKebudayaan\nPenyelenggaraan urusan pemerintahan dalam\nbidans kebudavaan.\nSK No 15816l A\nKode\nPRESIDEN\nREPUBLTK INDONESIA B. Referensi Arsitektur Data dan Informasi\nDomain data dan informasi sebagaimana yang telah ditentukan pada sub bab\nIII.B, dimana memiliki strrrktur dengan 4 (empat) tingkat, dimana terdapat\ntingkat 1 (pertama) dan tingkat 2 (kedua) merupakan struktur di tingkat\nnasional. Berdasarkan hal tersebut, maka ditentukan referensi arsitektur\ndata tingkat nasional dengan ilustrasi pada Gambar 2l dan daftar referensi\npada Tabel 3.\nKode\nReferensi\nArsitektur\nDeskripsi Referensi Arsitektur Proses Bisnis\nPemerintahan Umum (09)\n09.o1\nDalam Negeri\nPenyelenggaraan urusan pemerintahan dalam\nbidang dalam negeri.\n09.o2\nKeuangan\nPenyelenggaraan urusan pemerintahan dalam\nbidane keuangan negara.\n09.03\nInformasi\nPenyelenggaraan urusan pemerintahan dalam\nbidang informasi.\n09.o4\nKomunikasi\nPenyelenggaraan urusan pemerintahan dalam\nbidang komunikasi.\n09.05\nPerencanaan\nPembangunan\nNasional\nPenyelen ggaraan urusan pemerintahan dalam\nbidang perencanaan pembangunan nasional.\n09.06\nAparatur Negara\nPenyelenggaraan urusan pemerintahan dalam\nbidang pengelola arl aparatur negara.\n09.o7\nKesekretariata.n\nNegara\nPenyelenggaraan urusan pemerintahan dalam\nbidane kesekretariatan negara.\nSK No 158160 A\nTabel 3. . .\nGambar 21. Struktur Referensi Arsitektur Data dan Informasi Tingkat Nasional.\nData Pokok\n(Tingkat 1)\nReferensi Arsitektur Data dan Informasi\n10 Data Pokok dan 50 Data Tematik\nTata Kelola SPBE\nManajemen SPBE\nDomain Keamanan SPBE\nDomain\nAplikasi\nSPBE\nDomain Layanan SPBE\nTujuan dan Sasaran SPBE\nVisi dan Misi SPBE\nArsitektur SPBE\nDomain\nInfrastruktur SPBE\nDomain Data dan\nInformasi\nDomain Proses\nBisnis\nData Tematik\n(Tingkat 2)\nPRESIDEN\nREPUBLIK INDONESIA Tabel 3. Referensi Arsitektur Data dan Informasi Tingkat Nasional.\nKode\nReferensi\nArsitektur\nDeskripsi Referensi Arsitektur Data dan\nInformasi\nInformasi Pertahanan dan Luar Negeri (O1)\n01 .01\nData pertahanan\nData yang merepresentasikan bidang\npertahanan negara.\noL.o2\nData hubungan\nluar negeri\nData yang merepresentasikan bidang\nhubungan luar negeri.\nInformasi Ekonomi dan Industri (02)\n02.ot\nData industri\nData yang merepresentasikan bidang\npengelolaan industri.\n02.o2\nData perdagangan\nData yang merepresentasikan bidang\nperdagangan,\n02.o3\nData pertanian\nData yang merepresentasikan bidang\npertanian.\n02.o4\nData perkebunan\nData yang merepresentasikan bidang\nperkebunan.\n02.05\nData peternakan\nData yang merepresentasikan bidang\npeternakan.\n02.06\nData perikanan\nData yang merepresentasikan bidang\nperikanan.\n02.o7\nData badan usaha\nmilik negara\nData yang merepresentasikan bidang\npengelolaan badan usaha milik negara.\n02.o8\nData investasi\nData yang merepresentasikan bidang\npembinaan penanaman modal.\n02.o9\nData koperasi\nData yang merepresentasikan bidang\npembinaan koperasi.\n02.10\nData usaha kecil\ndan menengah\nData yang merepresentasikan bidang\npembinaan usaha kecil dan menengah.\n02.lL\nData pariwisata\nData yang merepresentasikan bidang\nkepariwisataan.\nInformasi Pembangunan Kewilayahan (03)\n03.o1\nData pekerjaan\numum\nData yang merepresentasikan bidang\npekeriaan umum.\n03.02\nData transmigrasi\nData yang merepresentasikan bidang\ntransmigrasi.\n03.03\nData transportasi\nData yang merepresentasikan bidang\ntransportasi.\n03.04\nData perumahan\nData yang merepresentasikan bidang\nperumahan.\nSK No 158159A\nKode\ntrRES tDEN\nREPUBLIK INDONESIA Kode\nReferensi\nArsitektur\nDeskripsi Referensi Arsitektur Data dan\nInformasi\n03.05\nData\npembangunan\nkawasan atau\ndaerah tertinggal\nData yang merepresentasikan bidang\npembangunan kawasan atau daerah\ntertinggal.\n03.06\nData pertanahan\nData yang merepresentasikan bidang\npertanahan.\n03.07\nData\nkependudukan\nData yang merepresentasikan bidang\nkependudukan.\nInformasi Perlindungan Sosial dan Kesehatan (04)\no4.01\nData kesehatan\nData yang merepresentasikan bidang\nkesehatan.\n04.o2\nData sosial\nData yang merepresentasikan bidang sosial.\n04.03\nData\npemberdayaan\nperempuan\nData yang merepresentasikan bidang\npemberdayaan perempuan.\nInformasi Ketertiban Umum dan Keselamatan (05)\n05.01\nData hukum\nData yang merepresentasikan bidane hukum.\n05.02\nData keamanan\nData yang merepresentasikan bidang\nkeamanan.\n05.03\nData hak asasi\nmanusia\nData yang merepresentasikan bidang hak\nasasi manusia.\nInformasi Pendidikan dan Tenaga Kerja (06)\n06.0 1\nData pendidikan\nData yang merepresentasikan bidang\npendidikan.\n06.o2\nData\nketenagakeriaan\nData yang merepresentasikan bidang\nketenagakeriaan.\n06.o3\nData ilmu\npengetahuan dan\nteknolosi\nData yang merepresentasikan bidang ilmu\npengetahuan dan teknologi.\n06.04\nData pemuda\nData yang merepresentasikan bidang\npemberdayaan dan pengemb&flgan pemuda.\n06.05\nData olahraga\nData yang merepresentasikan bidang\nkeolahragaan.\nInformasi Lingkungan dan Sumber Daya Alam (07)\n07.o1\nData\npertambangan\nData yang merepresentasikan bidang\npertambangan.\n07.o2\nData energi\nData vang merepresentasikan bidane energi.\n07.03\nData kehutanan\nData yang merepresentasikan bidang\nkehutanan.\nSK No 158158 A\nKode\nPRES IDEN\nREPUBLIK INDONESIA\n-4L-\nKode\nReferensi\nArsitektur\nDeskripsi Referensi Arsitektur Data dan\nInformasi\n07.o4\nData kelautan\nData yang merepresentasikan bidang\nkelautan.\n07.05\nData lingkungan\nhidup\nData yang merepresentasikan bidang\nlingkungan hidup.\nlnformasi Budaya dan Agama (08)\n08.01\nData agama\nData yang merepresentasikan bidane agama.\n08.02\nData kebudayaan\nData yang\nkebudayaan.\nmerepresentasikan bidang\nInformasi Pemerintahan Umum (O9)\n09.o1\nData dalam negeri\nData yang merepresentasikan bidang dalam\nnegeri.\n09.o2\nData keuangan\nData yang merepresentasikan bidang\nkeuangan negara.\n09.03\nData informasi\nData yang merepresentasikan bidang\ninformasi.\n09.04\nData komunikasi\nData yang merepresentasikan bidang\nkomunikasi.\n09.05\nData perenc€rnaan\npembangunan\nnasional\nData yang merepresentasikan bidang\nperencanaan pembangunan nasional.\n09.06\nData aparatur\nnegara\nData yang merepresentasikan bidang\npengelolaan aparatur negara.\n09.o7\nData\nkesekretariatan\nnegara\nData yang merepresentasikan bidang\nkesekretariatan negara.\nData Pendukung Umum (10)\n10.01\nData Kebijakan\nPemerintah\nData yang merepresentasikan informasi terkait\nkebiiakan pemerintah.\n10.o2\nData Manajemen\nKegiatan\nData yang merepresentasikan informasi terkait\nmanaiemen kegiatan pemerintahan.\n10.03\nData Kewilayahan\nData yang merepresentasikan informasi\nkewilayahan.\n10.04\nData Dukung\nLainnya\nData yang merepresentasikan informasi yang\ntidak tercakup dalam definisi lainnya.\nC. Referensi Arsitektur Layanan SPBE\nDomain layanan sebagaimana yang telah ditentukan pada sub bab III.C,\ndimana memiliki struktur dengan 4 (ernpat) tingkat, dimana terdapat tingkat\n1 (pertama) dan tingkat 2 (kedua) merupakan struktur di tingkat nasional.\nBerdasarkan\nSK No 158157 A\nPRES IDEN\nREPUBLIK INDONESIA Berdasarkan hal tersebut, maka ditentukan referensi arsitektur layanan\nSPBE tingkat nasional dengan ilustrasi pada Gambar 22 dan daftar referensi\npada Tabel 4.\nTabel 4. Referensi Arsitektur Layanan Tingkat Nasional.\nKode\nReferensi\nArsitektur\nDeskripsi Referensi Arsitektur Layanan SPBE\nl,ayanan fubtik (O1)\nol.o1\nPertahanan\nKegiatan pelayanan dalam bidang pertahanan\nnegara.\n01.02\nHubungan\nNegeri\nLuar\nKegiatan pelayanan dalam bidang hubungan\nluar negeri.\n01.o3\nKenegaraan\nKegiatan dalam rangka pemenuhan\nkebutuhan pelavanan kenegaraan.\no1.o4\nEkonomi\nKegiatan pelayanan dalam bidang\nperekonomian.\n01.0s\nIndustri\nKegiatan pelayanan dalam bidang pengelolaan\nindustri.\no 1.06\nPerdagangan\nKegiatan pelayanan dalam bidang\nperdagangan.\no1.07\nPertanian\nKeeiatan pelavanan dalam bidane pertanian.\no1.08\nPerkebunan\nKegiatan pelayanan dalam bidang\nperkebunan.\no 1.09\nPeternakan\nKegiatan pelayanan dalam bidans peternakan.\n01.10\nPerikanan\nKegiatan pelavanan dalam bidane perikanan.\n01.11\nBadan Usaha\nMilik Negara\nKegiatan pelayanan dalam bidang pengelolaan\nbadan usaha r,nilik negara.\n01,.12\nInvestasi\nKegiatan pelayanan dalam bidang pembinaan\npenanaman modal.\nSK No 158156 A\nKode\nGambar 22. Struktur Referensi Arsitektur Layanan Tingkat Nasional.\nDomain Layanan\n(Tingkat 1)\nDomain Layanan SPBE\nArea Layanan\n(Tingkat 2)\nTata Kelola SPBE\nManajemen SPBE\nDomain Keamanan SPBE\nDomain\nAplikasi\nSPBE\nDomain Layanan SPBE\nTujuan dan Sasaran SPBE\nVisi dan Misi SPBE\nArsitektur SPBE\nDomain\nInfrastruktur SPBE\nDomain Data dan\nInformasi\nDomain Proses\nBisnis\nLayanan Publik (45 Area)\nLayanan Administrasi\nPemerintahan (9 Area)\nPRESIDEN\nREPUBLIK TNDONESIA Kode\nReferensi\nArsitektur\nDeskripsi Referensi Arsitektur Layanan SPBE\n01.13\nKoperasi\nKegiatan pelayanan dalam bidang pembinaan\nkoperasi.",
+      "content": "Gambar 19. Relasi langsung pada Domain Keamanan SPBE.\nPRES IDEN",
       "page_range": [
         39,
+        40
+      ],
+      "parent_id": null,
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "Perpres_132_2022__BAB_IV",
+      "component_type": "BAB",
+      "number": "IV",
+      "title": "REFERENSI ARSITEKTUR SISTEM PEMERINTAHAN BERBASIS ELEKTRONIK NASIONAL",
+      "content": "Arsitektur SPBE Nasional seperti telah dijelaskan pada bab sebelumnya,\ndiperlukan dalam melakukan penerapan SPBE untuk membentuk layanan\ndigital pemerintah yang terintegrasi. Dalam upayanya penerapan arsitektur\nSPBE memerlukan komponen berupa referensi di tingkat nasional yang menjadi\nacuan oleh setiap Instansi Pusat dan Pemerintah Daerah, dalam menJrusun\nsetiap domain arsitektur SPBE masing-masing sesuai dengan struktur yang\ntelah ditentukan.\nA. Referensi Arsitektur Proses Bisnis\nDomain proses bisnis sebagaimana yang telah ditentukan pada sub bab III.A,\ndimana memiliki struktur dengan 4 (empat) tingkat, dimana terdapat tingkat\n1 (pertama) dan tingkat 2 (kedua) merupakan struktur di tingkat nasional.\nBerdasarkan hal tersebut, maka ditentukan referensi arsitektur proses\nbisnis tingkat nasional dengan ilustrasi pada Gambar 20 dan daftar referensi\npada Tabel2.\nTabel 2. Referensi Arsitektur Proses Bisnis\nNasional.\nKode\nReferensi\nArsitektur\nDeskripsi Referensi Arsitektur Proses Bisnis\nPertahanan dan Luar Negeri (01)\n01.o 1\nPertahanan\nPenyelenggaraa.n urusan pemerintahan dalam\nbidane pertahana.n negara.\n01.02\nHubungan Luar\nNegeri\nPenyelenggaraan urusan pemerintahan dalam\nbidane hubungan luar negeri.\nSK No 158234A\nKode\nGambar 20. Struktur Referensi Arsitektur Proses Bisnis Tingkat Nasional.\nTata Kelola SPBE\nManajemen SPBE\nDomain Keamanan SPBE\nDomain\nAplikasi\nSPBE\nDomain Layanan SPBE\nTujuan dan Sasaran SPBE\nVisi dan Misi SPBE\nArsitektur SPBE\nDomain\nInfrastruktur SPBE\nDomain Data dan\nInformasi\nDomain Proses\nBisnis\nSektor Pemerintahan\n(Tingkat 1)\nUrusan Pemerintahan\n(Tingkat 2)\nReferensi Arsitektur Proses Bisnis\n9 Sektor Pemerintahan dan\n46 Urusan Pemerintahan\nPRESIDEN\nREPUBLIK TNDONESIA Kode\nReferensi\nArsitektur\nDeskripsi Referensi Arsitektur Proses Bisnis\nEkonomi dan Industri (O2)\n02.o1\nIndustri\nPenyelenggaraan urusan pemerintahan dalam\nbidane pengelolaan industri.\n02.42\nPerdagangan\nPenyelenggaraan urusan pemerintahan dalam\nbidang perdaqangan.\n02.03\nPertanian\nPenyelenggaraan urusan pemerintahan dalam\nbidang pertanian.\n02.o4\nPerkebunan\nPenyelenggaraan urusan pemerintahan dalam\nbidane perkebunan.\n02.05\nPeternakan\nPenyelenggaraan urusan pemerintahan dalam\nbidang peternakan.\n02.06\nPerikanan\nPenyelenggaraan urusan pemerintahan dalam\nbidans perikanan.\n02.o7\nBadan Usaha\nMilik Nesara\nPenyelenggaraan urusan pemerintahan dalam\nbidane peneelolaan badan usaha milik nesara.\n02.08\nInvestasi\nPenyelenggaraan urusan pemerintahan dalam\nbidang pembinaan penanaman modal.\n02.o9\nKoperasi\nPenyelenggaraan urusan pemerintahan dalam\nbidane pembinaan koperasi.\n02.10\nUsaha Kecil dan\nMenengah\nPenyelenggaraan urusan pemerintahan dalam\nbidang pembinaan usaha kecil dan menengah.\n02.7L\nPariwisata\nPenyelenggaraan urusan pemerintahan dalam\nbidane kepariwisataan.\nPembangunan Kewilayahan (03)\n03.01\nPekerjaan Umum\nPenyelenggaraan urusan pemerintahan dalam\nbidane pekeriaan umum.\n03.02\nTransmigrasi\nPenyelenggara€rn urusan pemerintahan dalam\nbidane transmigrasi.\n03.o3\nTransportasi\nPenyelenggaraan urusan pemerintahan dalam\nbidane transportasi.\n03.04\nPerumahan\nPenyelenggaraan urusan pemerintahan dalam\nbidane perumahan.\n03.05\nPembangunan\nKawasan atau\nDaerah Tertingsal\nPenyelenggaraan urusan pemerintahan dalam\nbidang pembangunan kawasan atau daerah\ntertineeal.\n03.06\nPertanahan\nPenyelenggaraan urusan pemerintahan dalam\nbidane pertanahan.\n03.o7\nKependudukan\nPenyelenggaraan urusan pemerintahan dalam\nbidane kependudukan.\nPerlindungan Sosial dan Kesehatan (Oa)\nSK No 158135 A\nKode\nPRESIDEN\nREPUBLIK INDONESIA Kode\nReferensi\nArsitektur\nDeskripsi Referensi Arsitektur Proses Bisnis\n04.o1\nKesehatan\nPenyelenggaraan urusan pemerintahan dalam\nbidang kesehatan.\n04.42\nSosial\nPenyelenggaraan urusan pemerintahan dalam\nbidang sosial.\n04.03\nPemberdayaan\nPerempuan\nPenyelenggaraan urusa.n pemerintahan dalam\nbidang pemberdayaan perempuan.\nKetertiban Umum dan Keselamatan (O5)\n05.o 1\nHukum\nPenyelenggaraan urusan pemerintahan dalam\nbidans hukum.\n05.o2\nKeamanan\nPenyelenggaraan urusan pemerintahan dalam\nbidans keamanan.\n05.03\nHak Asasi Manusia\nPenyelenggaraan urusan pemerintahan dalam\nbidane hak asasi manusia.\nPendidikan dan Tenaga Kerja (06)\n06.01\nPendidikan\nPenyelenggaraan urusan pemerintahan dalam\nbidang pendidikan.\n06.o2\nKetenagakerjaan\nPenyelenggaraan urusan pemerintahan dalam\nbidang ketenagakeriaan.\n06.03\nIlmu Pengetahuan\ndan Teknologi\nPenyelenggaraan urusan pemerintahan dalam\nbidang ilmu pengetahuan dan teknologi.\n06.04\nPemuda\nPenyelenggaraan urusan pemerintahan dalam\nbidang pemberdayaan dan pengembangan\npemuda.\n06.05\nOlahraga\nPenyelenggaraan urusan pemerintahan dalam\nbidang keolahragaan.\nLingkungan dan Sumber Daya Alam (07)\n07.01\nPertambangan\nPenyelenggaraan urusan pemerintahan dalam\nbidane pertambangan.\n07.o2\nEnergi\nPenyelenggaraan urusan pemerintahan dalam\nbidane enerqi.\n07.03\nKehutanan\nPenyelenggaraan urusan pemerintahan dalam\nbidane kehutanan.\n07.o4\nKelautan\nPenyelenggaraan urusan pemerintahan dalam\nbidane kelautan.\n07.05\nLingkungan Hidup\nPenyelenggaraan urusan pemerintahan dalam\nbidang lingkungan hidup.\nBudaya dan Agama (O8)\n08.01\nAgama\nPenyelenggaraan urusan pemerintahan dalam\nbidang agama.\n08.02\nKebudayaan\nPenyelenggaraan urusan pemerintahan dalam\nbidans kebudavaan.\nSK No 15816l A\nKode\nPRESIDEN\nREPUBLTK INDONESIA B. Referensi Arsitektur Data dan Informasi\nDomain data dan informasi sebagaimana yang telah ditentukan pada sub bab\nIII.B, dimana memiliki strrrktur dengan 4 (empat) tingkat, dimana terdapat\ntingkat 1 (pertama) dan tingkat 2 (kedua) merupakan struktur di tingkat\nnasional. Berdasarkan hal tersebut, maka ditentukan referensi arsitektur\ndata tingkat nasional dengan ilustrasi pada Gambar 2l dan daftar referensi\npada Tabel 3.\nKode\nReferensi\nArsitektur\nDeskripsi Referensi Arsitektur Proses Bisnis\nPemerintahan Umum (09)\n09.o1\nDalam Negeri\nPenyelenggaraan urusan pemerintahan dalam\nbidang dalam negeri.\n09.o2\nKeuangan\nPenyelenggaraan urusan pemerintahan dalam\nbidane keuangan negara.\n09.03\nInformasi\nPenyelenggaraan urusan pemerintahan dalam\nbidang informasi.\n09.o4\nKomunikasi\nPenyelenggaraan urusan pemerintahan dalam\nbidang komunikasi.\n09.05\nPerencanaan\nPembangunan\nNasional\nPenyelen ggaraan urusan pemerintahan dalam\nbidang perencanaan pembangunan nasional.\n09.06\nAparatur Negara\nPenyelenggaraan urusan pemerintahan dalam\nbidang pengelola arl aparatur negara.\n09.o7\nKesekretariata.n\nNegara\nPenyelenggaraan urusan pemerintahan dalam\nbidane kesekretariatan negara.\nSK No 158160 A\nTabel 3. . .\nGambar 21. Struktur Referensi Arsitektur Data dan Informasi Tingkat Nasional.\nData Pokok\n(Tingkat 1)\nReferensi Arsitektur Data dan Informasi\n10 Data Pokok dan 50 Data Tematik\nTata Kelola SPBE\nManajemen SPBE\nDomain Keamanan SPBE\nDomain\nAplikasi\nSPBE\nDomain Layanan SPBE\nTujuan dan Sasaran SPBE\nVisi dan Misi SPBE\nArsitektur SPBE\nDomain\nInfrastruktur SPBE\nDomain Data dan\nInformasi\nDomain Proses\nBisnis\nData Tematik\n(Tingkat 2)\nPRESIDEN\nREPUBLIK INDONESIA Tabel 3. Referensi Arsitektur Data dan Informasi Tingkat Nasional.\nKode\nReferensi\nArsitektur\nDeskripsi Referensi Arsitektur Data dan\nInformasi\nInformasi Pertahanan dan Luar Negeri (O1)\n01 .01\nData pertahanan\nData yang merepresentasikan bidang\npertahanan negara.\noL.o2\nData hubungan\nluar negeri\nData yang merepresentasikan bidang\nhubungan luar negeri.\nInformasi Ekonomi dan Industri (02)\n02.ot\nData industri\nData yang merepresentasikan bidang\npengelolaan industri.\n02.o2\nData perdagangan\nData yang merepresentasikan bidang\nperdagangan,\n02.o3\nData pertanian\nData yang merepresentasikan bidang\npertanian.\n02.o4\nData perkebunan\nData yang merepresentasikan bidang\nperkebunan.\n02.05\nData peternakan\nData yang merepresentasikan bidang\npeternakan.\n02.06\nData perikanan\nData yang merepresentasikan bidang\nperikanan.\n02.o7\nData badan usaha\nmilik negara\nData yang merepresentasikan bidang\npengelolaan badan usaha milik negara.\n02.o8\nData investasi\nData yang merepresentasikan bidang\npembinaan penanaman modal.\n02.o9\nData koperasi\nData yang merepresentasikan bidang\npembinaan koperasi.\n02.10\nData usaha kecil\ndan menengah\nData yang merepresentasikan bidang\npembinaan usaha kecil dan menengah.\n02.lL\nData pariwisata\nData yang merepresentasikan bidang\nkepariwisataan.\nInformasi Pembangunan Kewilayahan (03)\n03.o1\nData pekerjaan\numum\nData yang merepresentasikan bidang\npekeriaan umum.\n03.02\nData transmigrasi\nData yang merepresentasikan bidang\ntransmigrasi.\n03.03\nData transportasi\nData yang merepresentasikan bidang\ntransportasi.\n03.04\nData perumahan\nData yang merepresentasikan bidang\nperumahan.\nSK No 158159A\nKode\ntrRES tDEN\nREPUBLIK INDONESIA Kode\nReferensi\nArsitektur\nDeskripsi Referensi Arsitektur Data dan\nInformasi\n03.05\nData\npembangunan\nkawasan atau\ndaerah tertinggal\nData yang merepresentasikan bidang\npembangunan kawasan atau daerah\ntertinggal.\n03.06\nData pertanahan\nData yang merepresentasikan bidang\npertanahan.\n03.07\nData\nkependudukan\nData yang merepresentasikan bidang\nkependudukan.\nInformasi Perlindungan Sosial dan Kesehatan (04)\no4.01\nData kesehatan\nData yang merepresentasikan bidang\nkesehatan.\n04.o2\nData sosial\nData yang merepresentasikan bidang sosial.\n04.03\nData\npemberdayaan\nperempuan\nData yang merepresentasikan bidang\npemberdayaan perempuan.\nInformasi Ketertiban Umum dan Keselamatan (05)\n05.01\nData hukum\nData yang merepresentasikan bidane hukum.\n05.02\nData keamanan\nData yang merepresentasikan bidang\nkeamanan.\n05.03\nData hak asasi\nmanusia\nData yang merepresentasikan bidang hak\nasasi manusia.\nInformasi Pendidikan dan Tenaga Kerja (06)\n06.0 1\nData pendidikan\nData yang merepresentasikan bidang\npendidikan.\n06.o2\nData\nketenagakeriaan\nData yang merepresentasikan bidang\nketenagakeriaan.\n06.o3\nData ilmu\npengetahuan dan\nteknolosi\nData yang merepresentasikan bidang ilmu\npengetahuan dan teknologi.\n06.04\nData pemuda\nData yang merepresentasikan bidang\npemberdayaan dan pengemb&flgan pemuda.\n06.05\nData olahraga\nData yang merepresentasikan bidang\nkeolahragaan.\nInformasi Lingkungan dan Sumber Daya Alam (07)\n07.o1\nData\npertambangan\nData yang merepresentasikan bidang\npertambangan.\n07.o2\nData energi\nData vang merepresentasikan bidane energi.\n07.03\nData kehutanan\nData yang merepresentasikan bidang\nkehutanan.\nSK No 158158 A\nKode\nPRES IDEN\nREPUBLIK INDONESIA\n-4L-\nKode\nReferensi\nArsitektur\nDeskripsi Referensi Arsitektur Data dan\nInformasi\n07.o4\nData kelautan\nData yang merepresentasikan bidang\nkelautan.\n07.05\nData lingkungan\nhidup\nData yang merepresentasikan bidang\nlingkungan hidup.\nlnformasi Budaya dan Agama (08)\n08.01\nData agama\nData yang merepresentasikan bidane agama.\n08.02\nData kebudayaan\nData yang\nkebudayaan.\nmerepresentasikan bidang\nInformasi Pemerintahan Umum (O9)\n09.o1\nData dalam negeri\nData yang merepresentasikan bidang dalam\nnegeri.\n09.o2\nData keuangan\nData yang merepresentasikan bidang\nkeuangan negara.\n09.03\nData informasi\nData yang merepresentasikan bidang\ninformasi.\n09.04\nData komunikasi\nData yang merepresentasikan bidang\nkomunikasi.\n09.05\nData perenc€rnaan\npembangunan\nnasional\nData yang merepresentasikan bidang\nperencanaan pembangunan nasional.\n09.06\nData aparatur\nnegara\nData yang merepresentasikan bidang\npengelolaan aparatur negara.\n09.o7\nData\nkesekretariatan\nnegara\nData yang merepresentasikan bidang\nkesekretariatan negara.\nData Pendukung Umum (10)\n10.01\nData Kebijakan\nPemerintah\nData yang merepresentasikan informasi terkait\nkebiiakan pemerintah.\n10.o2\nData Manajemen\nKegiatan\nData yang merepresentasikan informasi terkait\nmanaiemen kegiatan pemerintahan.\n10.03\nData Kewilayahan\nData yang merepresentasikan informasi\nkewilayahan.\n10.04\nData Dukung\nLainnya\nData yang merepresentasikan informasi yang\ntidak tercakup dalam definisi lainnya.\nC. Referensi Arsitektur Layanan SPBE\nDomain layanan sebagaimana yang telah ditentukan pada sub bab III.C,\ndimana memiliki struktur dengan 4 (ernpat) tingkat, dimana terdapat tingkat\n1 (pertama) dan tingkat 2 (kedua) merupakan struktur di tingkat nasional.\nBerdasarkan\nSK No 158157 A\nPRES IDEN\nREPUBLIK INDONESIA Berdasarkan hal tersebut, maka ditentukan referensi arsitektur layanan\nSPBE tingkat nasional dengan ilustrasi pada Gambar 22 dan daftar referensi\npada Tabel 4.\nTabel 4. Referensi Arsitektur Layanan Tingkat Nasional.\nKode\nReferensi\nArsitektur\nDeskripsi Referensi Arsitektur Layanan SPBE\nl,ayanan fubtik (O1)\nol.o1\nPertahanan\nKegiatan pelayanan dalam bidang pertahanan\nnegara.\n01.02\nHubungan\nNegeri\nLuar\nKegiatan pelayanan dalam bidang hubungan\nluar negeri.\n01.o3\nKenegaraan\nKegiatan dalam rangka pemenuhan\nkebutuhan pelavanan kenegaraan.\no1.o4\nEkonomi\nKegiatan pelayanan dalam bidang\nperekonomian.\n01.0s\nIndustri\nKegiatan pelayanan dalam bidang pengelolaan\nindustri.\no 1.06\nPerdagangan\nKegiatan pelayanan dalam bidang\nperdagangan.\no1.07\nPertanian\nKeeiatan pelavanan dalam bidane pertanian.\no1.08\nPerkebunan\nKegiatan pelayanan dalam bidang\nperkebunan.\no 1.09\nPeternakan\nKegiatan pelayanan dalam bidans peternakan.\n01.10\nPerikanan\nKegiatan pelavanan dalam bidane perikanan.\n01.11\nBadan Usaha\nMilik Negara\nKegiatan pelayanan dalam bidang pengelolaan\nbadan usaha r,nilik negara.\n01,.12\nInvestasi\nKegiatan pelayanan dalam bidang pembinaan\npenanaman modal.\nSK No 158156 A\nKode\nGambar 22. Struktur Referensi Arsitektur Layanan Tingkat Nasional.\nDomain Layanan\n(Tingkat 1)\nDomain Layanan SPBE\nArea Layanan\n(Tingkat 2)\nTata Kelola SPBE\nManajemen SPBE\nDomain Keamanan SPBE\nDomain\nAplikasi\nSPBE\nDomain Layanan SPBE\nTujuan dan Sasaran SPBE\nVisi dan Misi SPBE\nArsitektur SPBE\nDomain\nInfrastruktur SPBE\nDomain Data dan\nInformasi\nDomain Proses\nBisnis\nLayanan Publik (45 Area)\nLayanan Administrasi\nPemerintahan (9 Area)\nPRESIDEN\nREPUBLIK TNDONESIA Kode\nReferensi\nArsitektur\nDeskripsi Referensi Arsitektur Layanan SPBE\n01.13\nKoperasi\nKegiatan pelayanan dalam bidang pembinaan\nkoperasi.",
+      "page_range": [
+        40,
         48
       ],
       "parent_id": null,
@@ -2472,10 +2529,6 @@
         "Perpres_132_2022__ANGKA_01",
         "Perpres_132_2022__ANGKA_01__BAB_IV",
         "Perpres_132_2022__HURUF_a__BAB_IV",
-        "Perpres_132_2022__HURUF_b__BAB_IV",
-        "Perpres_132_2022__HURUF_c__BAB_IV",
-        "Perpres_132_2022__HURUF_a__BAB_IV",
-        "Perpres_132_2022__HURUF_b__BAB_IV",
         "Perpres_132_2022__HURUF_b__BAB_IV",
         "Perpres_132_2022__HURUF_c__BAB_IV"
       ],
@@ -2542,17 +2595,36 @@
       "component_type": "HURUF",
       "number": "c",
       "title": null,
-      "content": "Aplikasi Khusus Misi Tertentu\nl,apisan aplikasi khusus misi tertentu (RAA A2.Ol) mendukung misi\ntertentu pemerintahan sesuai dengan peraturan dan perundang-\nundangan atau berkaitan dengan keadaan darurat dengan manfaat\ndalam jangka waktu tertentu. Aplikasi khusus hanya dikembangkan dan\ndigunakan oleh Instansi Pusat dan Pemerintah Daerah tertentu untuk\nmemenuhi kebutuhan khusus yang bukan kebutuhan Instansi Pusat dan\nPemerintah Daerah lain. Hal ini digunakan secara vertikal dalam satu\nInstansi Pusat dan Pemerintah Daerah. Lapisan ini menggunakan lapisan\ndi bawahnya sebagai pendukung pengembangan dan operasional aplikasi\natau sebaliknya dalam hasil dapat mendukung lapisan di bawahnya.\nd.Aplikasi...\nKode\nReferensi\nArsitektur\nDeskripsi Referensi Arsitektur Aplikasi SPBE\n02.o2\nAplikasi Fungsi\nTertentu\nAplikasi yang dibangun, dikembangkan,\ndigunakan, dan dikelola oleh Instansi Pusat dan\nPemerintah Daerah tertentu untuk memenuhi\nfungsi khusus yang bukan fungsi Instansi Pusat\ndan Pemerintah Daerah lain, dapat berupa\naplikasi layanan publik dan/atau aplikasi\nadministrasi pemerintahan untuk fungsi\nkhusus pada instansi pemerintahan tertentu.\nSK No 158150 A\nPRESIDEN\nREPUBLIK INDONESIA d. Aplikasi Khusus Fungsi Tertentu\nAplikasi khusus fungsi tertentu (RAA O2.Aq ini hanya dikembangkan dan\ndigunakan oleh Instansi Pusat dan Pemerintah Daerah tertentu untuk\nmemenuhi fungsi khusus yang bukan fungsi Instansi Pusat dan\nPemerintah Daerah lain. Hal ini digunakan secara vertikal dalam satu\nInstansi Pusat dan Pemerintah Daerah. Lapisan ini menggunakan lapisan\ndi bawahnya sebagai pendukung pengembangan dan operasional aplikasi\natau sebaliknya dalam hasil dapat mendukung lapisan di bawahnya.\nE. Referensi Arsitektur Infrastruktur SPBE\nDomain infrastruktur SPBE sebagaimana yang telah ditentukan pada sub\nbab III.E, dimana memiliki struktur dengan 3 (tiga) tingkat, dimana\nkeseluruhan tingkat merupakan stmktur di tingkat nasional. Berdasarkan\nhal tersebut, maka ditentukan referensi arsitektur infrastruktur tingkat 1\n(pertama) dan tingkat 2 (kedua) dengan ilustrasi pada Gambar 24 dan daftar\nSub Bab SPBE pada Tabel 6.\nTabel 6. Referensi Arsitektur Infrastruktur Tingkat Nasional.\nKode\nReferensi\nArsitektur\nDeskripsi Referensi Arsitektur SPBE\nFasilitas Komputasi (O1)\n01.01\nhrsat Data\nNasional\nFasilitas yang digunakan keperluan\npenempatan, penyimpanan dan pengolahan\ndata dan pemulihan data.\nSK No 158149 A\nKode\nGambar 24. Struktur Referensi Arsitektur Infrastruktur Tingkat Nasional.\nReferensi Arsitektur Infrastruktur SPBE\nPlatform\nSistem Integrasi\nFasilitas Komputasi\nPusat Data Nasional\nPusat Kendali\nSistem Penghubung Layanan (SPL) Pemerintah\nJaringan Intra Pemerintah\nJaringan Intra Instansi Pusat\nJaringan Intra Pemerintah Daerah\nPusat Komputasi\nKerangka Infrastruktur dan Aplikasi\nSPL Instansi Pusat\nSPL Pemerintah Daerah\nKomputasi Awan\nTata Kelola SPBE\nManajemen SPBE\nDomain Keamanan SPBE\nDomain\nAplikasi\nSPBE\nDomain Layanan SPBE\nTujuan dan Sasaran SPBE\nVisi dan Misi SPBE\nArsitektur SPBE\nDomain\nInfrastruktur SPBE\nDomain Data dan\nInformasi\nDomain Proses\nBisnis\nPRESIDEN\nREPUBLIK INDONESIA Penjelasan pada setiap komponen dalam referensi arsitektur infrastruktur\nSPBE tingkat 1 (pertama) dan tingkat 2 (kedua) sebagai berikut:",
+      "content": "Aplikasi Khusus Misi Tertentu\nl,apisan aplikasi khusus misi tertentu (RAA A2.Ol) mendukung misi\ntertentu pemerintahan sesuai dengan peraturan dan perundang-\nundangan atau berkaitan dengan keadaan darurat dengan manfaat\ndalam jangka waktu tertentu. Aplikasi khusus hanya dikembangkan dan\ndigunakan oleh Instansi Pusat dan Pemerintah Daerah tertentu untuk\nmemenuhi kebutuhan khusus yang bukan kebutuhan Instansi Pusat dan\nPemerintah Daerah lain. Hal ini digunakan secara vertikal dalam satu\nInstansi Pusat dan Pemerintah Daerah. Lapisan ini menggunakan lapisan\ndi bawahnya sebagai pendukung pengembangan dan operasional aplikasi\natau sebaliknya dalam hasil dapat mendukung lapisan di bawahnya.\nd.Aplikasi...\nKode\nReferensi\nArsitektur\nDeskripsi Referensi Arsitektur Aplikasi SPBE\n02.o2\nAplikasi Fungsi\nTertentu\nAplikasi yang dibangun, dikembangkan,\ndigunakan, dan dikelola oleh Instansi Pusat dan\nPemerintah Daerah tertentu untuk memenuhi\nfungsi khusus yang bukan fungsi Instansi Pusat\ndan Pemerintah Daerah lain, dapat berupa\naplikasi layanan publik dan/atau aplikasi\nadministrasi pemerintahan untuk fungsi\nkhusus pada instansi pemerintahan tertentu.\nSK No 158150 A\nPRESIDEN\nREPUBLIK INDONESIA d. Aplikasi Khusus Fungsi Tertentu\nAplikasi khusus fungsi tertentu (RAA O2.Aq ini hanya dikembangkan dan\ndigunakan oleh Instansi Pusat dan Pemerintah Daerah tertentu untuk\nmemenuhi fungsi khusus yang bukan fungsi Instansi Pusat dan\nPemerintah Daerah lain. Hal ini digunakan secara vertikal dalam satu\nInstansi Pusat dan Pemerintah Daerah. Lapisan ini menggunakan lapisan\ndi bawahnya sebagai pendukung pengembangan dan operasional aplikasi\natau sebaliknya dalam hasil dapat mendukung lapisan di bawahnya.\nE. Referensi Arsitektur Infrastruktur SPBE\nDomain infrastruktur SPBE sebagaimana yang telah ditentukan pada sub",
       "page_range": [
         51,
-        53
+        52
       ],
       "parent_id": "Perpres_132_2022__BAB_IV",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_a__BAB_IV",
+      "component_id": "Perpres_132_2022__BAB_III",
+      "component_type": "BAB",
+      "number": "III",
+      "title": ".E, dimana memiliki struktur dengan 3 (tiga) tingkat, dimana keseluruhan tingkat merupakan stmktur di tingkat nasional. Berdasarkan",
+      "content": "hal tersebut, maka ditentukan referensi arsitektur infrastruktur tingkat 1\n(pertama) dan tingkat 2 (kedua) dengan ilustrasi pada Gambar 24 dan daftar\nSub Bab SPBE pada Tabel 6.\nTabel 6. Referensi Arsitektur Infrastruktur Tingkat Nasional.\nKode\nReferensi\nArsitektur\nDeskripsi Referensi Arsitektur SPBE\nFasilitas Komputasi (O1)\n01.01\nhrsat Data\nNasional\nFasilitas yang digunakan keperluan\npenempatan, penyimpanan dan pengolahan\ndata dan pemulihan data.\nSK No 158149 A\nKode\nGambar 24. Struktur Referensi Arsitektur Infrastruktur Tingkat Nasional.\nReferensi Arsitektur Infrastruktur SPBE\nPlatform\nSistem Integrasi\nFasilitas Komputasi\nPusat Data Nasional\nPusat Kendali\nSistem Penghubung Layanan (SPL) Pemerintah\nJaringan Intra Pemerintah\nJaringan Intra Instansi Pusat\nJaringan Intra Pemerintah Daerah\nPusat Komputasi\nKerangka Infrastruktur dan Aplikasi\nSPL Instansi Pusat\nSPL Pemerintah Daerah\nKomputasi Awan\nTata Kelola SPBE\nManajemen SPBE\nDomain Keamanan SPBE\nDomain\nAplikasi\nSPBE\nDomain Layanan SPBE\nTujuan dan Sasaran SPBE\nVisi dan Misi SPBE\nArsitektur SPBE\nDomain\nInfrastruktur SPBE\nDomain Data dan\nInformasi\nDomain Proses\nBisnis\nPRESIDEN\nREPUBLIK INDONESIA Penjelasan pada setiap komponen dalam referensi arsitektur infrastruktur\nSPBE tingkat 1 (pertama) dan tingkat 2 (kedua) sebagai berikut:",
+      "page_range": [
+        52,
+        53
+      ],
+      "parent_id": null,
+      "children": [
+        "Perpres_132_2022__HURUF_a__BAB_III",
+        "Perpres_132_2022__HURUF_b__BAB_III",
+        "Perpres_132_2022__HURUF_b__BAB_III",
+        "Perpres_132_2022__HURUF_c__BAB_III"
+      ],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "Perpres_132_2022__HURUF_a__BAB_III",
       "component_type": "HURUF",
       "number": "a",
       "title": null,
@@ -2561,12 +2633,12 @@
         53,
         53
       ],
-      "parent_id": "Perpres_132_2022__BAB_IV",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_b__BAB_IV",
+      "component_id": "Perpres_132_2022__HURUF_b__BAB_III",
       "component_type": "HURUF",
       "number": "b",
       "title": null,
@@ -2575,20 +2647,20 @@
         53,
         53
       ],
-      "parent_id": "Perpres_132_2022__BAB_IV",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [
-        "Perpres_132_2022__ANGKA_1__BAB_IV",
-        "Perpres_132_2022__ANGKA_2__BAB_IV",
-        "Perpres_132_2022__ANGKA_1__BAB_IV",
-        "Perpres_132_2022__ANGKA_2__BAB_IV",
-        "Perpres_132_2022__ANGKA_1__BAB_IV",
-        "Perpres_132_2022__ANGKA_2__BAB_IV",
-        "Perpres_132_2022__ANGKA_3__BAB_IV"
+        "Perpres_132_2022__ANGKA_1__BAB_III",
+        "Perpres_132_2022__ANGKA_2__BAB_III",
+        "Perpres_132_2022__ANGKA_1__BAB_III",
+        "Perpres_132_2022__ANGKA_2__BAB_III",
+        "Perpres_132_2022__ANGKA_1__BAB_III",
+        "Perpres_132_2022__ANGKA_2__BAB_III",
+        "Perpres_132_2022__ANGKA_3__BAB_III"
       ],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_1__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_1__BAB_III",
       "component_type": "ANGKA",
       "number": "1",
       "title": null,
@@ -2597,12 +2669,12 @@
         53,
         54
       ],
-      "parent_id": "Perpres_132_2022__HURUF_b__BAB_IV",
+      "parent_id": "Perpres_132_2022__HURUF_b__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_2__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_2__BAB_III",
       "component_type": "ANGKA",
       "number": "2",
       "title": null,
@@ -2611,12 +2683,12 @@
         54,
         54
       ],
-      "parent_id": "Perpres_132_2022__HURUF_b__BAB_IV",
+      "parent_id": "Perpres_132_2022__HURUF_b__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_1__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_1__BAB_III",
       "component_type": "ANGKA",
       "number": "1",
       "title": null,
@@ -2625,12 +2697,12 @@
         54,
         54
       ],
-      "parent_id": "Perpres_132_2022__HURUF_b__BAB_IV",
+      "parent_id": "Perpres_132_2022__HURUF_b__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_2__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_2__BAB_III",
       "component_type": "ANGKA",
       "number": "2",
       "title": null,
@@ -2639,12 +2711,12 @@
         54,
         57
       ],
-      "parent_id": "Perpres_132_2022__HURUF_b__BAB_IV",
+      "parent_id": "Perpres_132_2022__HURUF_b__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_1__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_1__BAB_III",
       "component_type": "ANGKA",
       "number": "1",
       "title": null,
@@ -2653,12 +2725,12 @@
         57,
         57
       ],
-      "parent_id": "Perpres_132_2022__HURUF_b__BAB_IV",
+      "parent_id": "Perpres_132_2022__HURUF_b__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_2__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_2__BAB_III",
       "component_type": "ANGKA",
       "number": "2",
       "title": null,
@@ -2667,12 +2739,12 @@
         57,
         57
       ],
-      "parent_id": "Perpres_132_2022__HURUF_b__BAB_IV",
+      "parent_id": "Perpres_132_2022__HURUF_b__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_3__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_3__BAB_III",
       "component_type": "ANGKA",
       "number": "3",
       "title": null,
@@ -2681,12 +2753,12 @@
         57,
         57
       ],
-      "parent_id": "Perpres_132_2022__HURUF_b__BAB_IV",
+      "parent_id": "Perpres_132_2022__HURUF_b__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_b__BAB_IV",
+      "component_id": "Perpres_132_2022__HURUF_b__BAB_III",
       "component_type": "HURUF",
       "number": "b",
       "title": null,
@@ -2695,22 +2767,22 @@
         57,
         57
       ],
-      "parent_id": "Perpres_132_2022__BAB_IV",
+      "parent_id": "Perpres_132_2022__BAB_III",
       "children": [
-        "Perpres_132_2022__ANGKA_1__BAB_IV",
-        "Perpres_132_2022__ANGKA_2__BAB_IV",
-        "Perpres_132_2022__ANGKA_4__BAB_IV",
-        "Perpres_132_2022__ANGKA_5__BAB_IV",
-        "Perpres_132_2022__ANGKA_1__BAB_IV",
-        "Perpres_132_2022__ANGKA_2__BAB_IV",
-        "Perpres_132_2022__ANGKA_3__BAB_IV",
-        "Perpres_132_2022__ANGKA_4__BAB_IV",
-        "Perpres_132_2022__ANGKA_5__BAB_IV"
+        "Perpres_132_2022__ANGKA_1__BAB_III",
+        "Perpres_132_2022__ANGKA_2__BAB_III",
+        "Perpres_132_2022__ANGKA_4__BAB_III",
+        "Perpres_132_2022__ANGKA_5__BAB_III",
+        "Perpres_132_2022__ANGKA_1__BAB_III",
+        "Perpres_132_2022__ANGKA_2__BAB_III",
+        "Perpres_132_2022__ANGKA_3__BAB_III",
+        "Perpres_132_2022__ANGKA_4__BAB_III",
+        "Perpres_132_2022__ANGKA_5__BAB_III"
       ],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_1__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_1__BAB_III",
       "component_type": "ANGKA",
       "number": "1",
       "title": null,
@@ -2719,12 +2791,12 @@
         57,
         57
       ],
-      "parent_id": "Perpres_132_2022__HURUF_b__BAB_IV",
+      "parent_id": "Perpres_132_2022__HURUF_b__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_2__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_2__BAB_III",
       "component_type": "ANGKA",
       "number": "2",
       "title": null,
@@ -2733,12 +2805,12 @@
         57,
         58
       ],
-      "parent_id": "Perpres_132_2022__HURUF_b__BAB_IV",
+      "parent_id": "Perpres_132_2022__HURUF_b__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_4__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_4__BAB_III",
       "component_type": "ANGKA",
       "number": "4",
       "title": null,
@@ -2747,12 +2819,12 @@
         58,
         58
       ],
-      "parent_id": "Perpres_132_2022__HURUF_b__BAB_IV",
+      "parent_id": "Perpres_132_2022__HURUF_b__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_5__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_5__BAB_III",
       "component_type": "ANGKA",
       "number": "5",
       "title": null,
@@ -2761,12 +2833,12 @@
         58,
         58
       ],
-      "parent_id": "Perpres_132_2022__HURUF_b__BAB_IV",
+      "parent_id": "Perpres_132_2022__HURUF_b__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_1__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_1__BAB_III",
       "component_type": "ANGKA",
       "number": "1",
       "title": null,
@@ -2775,12 +2847,12 @@
         58,
         58
       ],
-      "parent_id": "Perpres_132_2022__HURUF_b__BAB_IV",
+      "parent_id": "Perpres_132_2022__HURUF_b__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_2__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_2__BAB_III",
       "component_type": "ANGKA",
       "number": "2",
       "title": null,
@@ -2789,12 +2861,12 @@
         58,
         58
       ],
-      "parent_id": "Perpres_132_2022__HURUF_b__BAB_IV",
+      "parent_id": "Perpres_132_2022__HURUF_b__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_3__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_3__BAB_III",
       "component_type": "ANGKA",
       "number": "3",
       "title": null,
@@ -2803,12 +2875,12 @@
         58,
         58
       ],
-      "parent_id": "Perpres_132_2022__HURUF_b__BAB_IV",
+      "parent_id": "Perpres_132_2022__HURUF_b__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_4__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_4__BAB_III",
       "component_type": "ANGKA",
       "number": "4",
       "title": null,
@@ -2817,12 +2889,12 @@
         58,
         58
       ],
-      "parent_id": "Perpres_132_2022__HURUF_b__BAB_IV",
+      "parent_id": "Perpres_132_2022__HURUF_b__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_5__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_5__BAB_III",
       "component_type": "ANGKA",
       "number": "5",
       "title": null,
@@ -2831,64 +2903,88 @@
         58,
         59
       ],
-      "parent_id": "Perpres_132_2022__HURUF_b__BAB_IV",
+      "parent_id": "Perpres_132_2022__HURUF_b__BAB_III",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__HURUF_c__BAB_IV",
+      "component_id": "Perpres_132_2022__HURUF_c__BAB_III",
       "component_type": "HURUF",
       "number": "c",
       "title": null,
-      "content": "Kelaikan Keamanan (RAK O3)\nKelaikan keamanan dilakukan melalui proses penilaian kerentanan dan\nrisiko keamanan terhadap Aplikasi Umum dan infrastnrktur SPBE\nnasional. Proses pelaksanaan kelaikan keamana.n dilakukan secara sef\nassessment (penilaian mandiri) oleh setiap Instansi Rrsat dan\nPemerintah Daerah yang menjadi pemrakarsa terhadap Aplikasi Umum\ndan infrastnrktur SPBE nasional yang akan ditetapkan. Selanjutnya\ndilakukan verifikasi terhadap self assessment tersebut sebagai tahapan\nuntuk mendapatkan pertimbangan kelaikan keamanan oleh lembaga\nyang menyelenggarakan tugas pemerintahan di bidang keamanan siber.\nBABV...\nSK No 158170 A\nPRESIDEN\nREPUBLIK INDONESIA BAB V\nDOMAIN ARSITEKTUR SISTEM PEMERINTAHAN BERBASIS\nELEKTRONIK NASIONAL\nDomain Arsitektur SPBE yang dideskripsikan dalam sub bab ini merupakan\nsubstansi Arsitektur SPBE yang ditargetkan akan dicapai sampai dengan tahun",
+      "content": "Kelaikan Keamanan (RAK O3)\nKelaikan keamanan dilakukan melalui proses penilaian kerentanan dan\nrisiko keamanan terhadap Aplikasi Umum dan infrastnrktur SPBE\nnasional. Proses pelaksanaan kelaikan keamana.n dilakukan secara sef\nassessment (penilaian mandiri) oleh setiap Instansi Rrsat dan\nPemerintah Daerah yang menjadi pemrakarsa terhadap Aplikasi Umum\ndan infrastnrktur SPBE nasional yang akan ditetapkan. Selanjutnya\ndilakukan verifikasi terhadap self assessment tersebut sebagai tahapan\nuntuk mendapatkan pertimbangan kelaikan keamanan oleh lembaga\nyang menyelenggarakan tugas pemerintahan di bidang keamanan siber.",
       "page_range": [
         59,
+        59
+      ],
+      "parent_id": "Perpres_132_2022__BAB_III",
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "Perpres_132_2022__BAB_V",
+      "component_type": "BAB",
+      "number": "V",
+      "title": "SK No 158170 A PRESIDEN",
+      "content": "",
+      "page_range": [
+        59,
+        59
+      ],
+      "parent_id": null,
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "Perpres_132_2022__BAB_V",
+      "component_type": "BAB",
+      "number": "V",
+      "title": "DOMAIN ARSITEKTUR SISTEM PEMERINTAHAN BERBASIS ELEKTRONIK NASIONAL",
+      "content": "Domain Arsitektur SPBE yang dideskripsikan dalam sub bab ini merupakan\nsubstansi Arsitektur SPBE yang ditargetkan akan dicapai sampai dengan tahun",
+      "page_range": [
+        60,
         60
       ],
-      "parent_id": "Perpres_132_2022__BAB_IV",
+      "parent_id": null,
       "children": [
         "Perpres_132_2022__ANGKA_2024",
-        "Perpres_132_2022__ANGKA_1__BAB_IV",
-        "Perpres_132_2022__ANGKA_2__BAB_IV",
-        "Perpres_132_2022__ANGKA_3__BAB_IV",
-        "Perpres_132_2022__ANGKA_4__BAB_IV",
-        "Perpres_132_2022__ANGKA_5__BAB_IV",
-        "Perpres_132_2022__ANGKA_6__BAB_IV",
-        "Perpres_132_2022__ANGKA_7__BAB_IV",
-        "Perpres_132_2022__ANGKA_8__BAB_IV",
-        "Perpres_132_2022__ANGKA_1__BAB_IV",
-        "Perpres_132_2022__ANGKA_3__BAB_IV",
-        "Perpres_132_2022__ANGKA_4__BAB_IV",
-        "Perpres_132_2022__ANGKA_5__BAB_IV",
-        "Perpres_132_2022__ANGKA_6__BAB_IV",
-        "Perpres_132_2022__ANGKA_7__BAB_IV",
-        "Perpres_132_2022__ANGKA_8__BAB_IV",
-        "Perpres_132_2022__ANGKA_1__BAB_IV",
-        "Perpres_132_2022__ANGKA_2__BAB_IV",
-        "Perpres_132_2022__ANGKA_3__BAB_IV",
-        "Perpres_132_2022__ANGKA_4__BAB_IV",
-        "Perpres_132_2022__ANGKA_5__BAB_IV",
-        "Perpres_132_2022__ANGKA_6__BAB_IV",
-        "Perpres_132_2022__ANGKA_7__BAB_IV",
-        "Perpres_132_2022__ANGKA_8__BAB_IV",
-        "Perpres_132_2022__ANGKA_1__BAB_IV",
-        "Perpres_132_2022__ANGKA_2__BAB_IV",
-        "Perpres_132_2022__ANGKA_4__BAB_IV",
-        "Perpres_132_2022__ANGKA_5__BAB_IV",
-        "Perpres_132_2022__ANGKA_6__BAB_IV",
-        "Perpres_132_2022__ANGKA_7__BAB_IV",
-        "Perpres_132_2022__ANGKA_8__BAB_IV",
-        "Perpres_132_2022__ANGKA_1__BAB_IV",
-        "Perpres_132_2022__ANGKA_2__BAB_IV",
-        "Perpres_132_2022__ANGKA_3__BAB_IV",
-        "Perpres_132_2022__ANGKA_1__BAB_IV",
-        "Perpres_132_2022__ANGKA_2__BAB_IV",
-        "Perpres_132_2022__ANGKA_3__BAB_IV",
-        "Perpres_132_2022__ANGKA_4__BAB_IV",
-        "Perpres_132_2022__ANGKA_1__BAB_IV",
-        "Perpres_132_2022__ANGKA_2__BAB_IV",
-        "Perpres_132_2022__ANGKA_3__BAB_IV",
-        "Perpres_132_2022__ANGKA_4__BAB_IV"
+        "Perpres_132_2022__ANGKA_1__BAB_V",
+        "Perpres_132_2022__ANGKA_2__BAB_V",
+        "Perpres_132_2022__ANGKA_3__BAB_V",
+        "Perpres_132_2022__ANGKA_4__BAB_V",
+        "Perpres_132_2022__ANGKA_5__BAB_V",
+        "Perpres_132_2022__ANGKA_6__BAB_V",
+        "Perpres_132_2022__ANGKA_7__BAB_V",
+        "Perpres_132_2022__ANGKA_8__BAB_V",
+        "Perpres_132_2022__ANGKA_1__BAB_V",
+        "Perpres_132_2022__ANGKA_3__BAB_V",
+        "Perpres_132_2022__ANGKA_4__BAB_V",
+        "Perpres_132_2022__ANGKA_5__BAB_V",
+        "Perpres_132_2022__ANGKA_6__BAB_V",
+        "Perpres_132_2022__ANGKA_7__BAB_V",
+        "Perpres_132_2022__ANGKA_8__BAB_V",
+        "Perpres_132_2022__ANGKA_1__BAB_V",
+        "Perpres_132_2022__ANGKA_2__BAB_V",
+        "Perpres_132_2022__ANGKA_3__BAB_V",
+        "Perpres_132_2022__ANGKA_4__BAB_V",
+        "Perpres_132_2022__ANGKA_5__BAB_V",
+        "Perpres_132_2022__ANGKA_6__BAB_V",
+        "Perpres_132_2022__ANGKA_7__BAB_V",
+        "Perpres_132_2022__ANGKA_8__BAB_V",
+        "Perpres_132_2022__ANGKA_1__BAB_V",
+        "Perpres_132_2022__ANGKA_2__BAB_V",
+        "Perpres_132_2022__ANGKA_4__BAB_V",
+        "Perpres_132_2022__ANGKA_5__BAB_V",
+        "Perpres_132_2022__ANGKA_6__BAB_V",
+        "Perpres_132_2022__ANGKA_7__BAB_V",
+        "Perpres_132_2022__ANGKA_8__BAB_V",
+        "Perpres_132_2022__ANGKA_1__BAB_V",
+        "Perpres_132_2022__ANGKA_2__BAB_V",
+        "Perpres_132_2022__ANGKA_3__BAB_V",
+        "Perpres_132_2022__ANGKA_1__BAB_V",
+        "Perpres_132_2022__ANGKA_2__BAB_V",
+        "Perpres_132_2022__ANGKA_3__BAB_V",
+        "Perpres_132_2022__ANGKA_4__BAB_V"
       ],
       "is_penjelasan": false
     },
@@ -2902,12 +2998,12 @@
         60,
         60
       ],
-      "parent_id": "Perpres_132_2022__HURUF_c__BAB_IV",
+      "parent_id": "Perpres_132_2022__BAB_V",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_1__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_1__BAB_V",
       "component_type": "ANGKA",
       "number": "1",
       "title": null,
@@ -2916,12 +3012,12 @@
         60,
         60
       ],
-      "parent_id": "Perpres_132_2022__HURUF_c__BAB_IV",
+      "parent_id": "Perpres_132_2022__BAB_V",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_2__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_2__BAB_V",
       "component_type": "ANGKA",
       "number": "2",
       "title": null,
@@ -2930,12 +3026,12 @@
         60,
         60
       ],
-      "parent_id": "Perpres_132_2022__HURUF_c__BAB_IV",
+      "parent_id": "Perpres_132_2022__BAB_V",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_3__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_3__BAB_V",
       "component_type": "ANGKA",
       "number": "3",
       "title": null,
@@ -2944,12 +3040,12 @@
         60,
         60
       ],
-      "parent_id": "Perpres_132_2022__HURUF_c__BAB_IV",
+      "parent_id": "Perpres_132_2022__BAB_V",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_4__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_4__BAB_V",
       "component_type": "ANGKA",
       "number": "4",
       "title": null,
@@ -2958,12 +3054,12 @@
         60,
         60
       ],
-      "parent_id": "Perpres_132_2022__HURUF_c__BAB_IV",
+      "parent_id": "Perpres_132_2022__BAB_V",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_5__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_5__BAB_V",
       "component_type": "ANGKA",
       "number": "5",
       "title": null,
@@ -2972,12 +3068,12 @@
         60,
         60
       ],
-      "parent_id": "Perpres_132_2022__HURUF_c__BAB_IV",
+      "parent_id": "Perpres_132_2022__BAB_V",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_6__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_6__BAB_V",
       "component_type": "ANGKA",
       "number": "6",
       "title": null,
@@ -2986,12 +3082,12 @@
         60,
         60
       ],
-      "parent_id": "Perpres_132_2022__HURUF_c__BAB_IV",
+      "parent_id": "Perpres_132_2022__BAB_V",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_7__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_7__BAB_V",
       "component_type": "ANGKA",
       "number": "7",
       "title": null,
@@ -3000,12 +3096,12 @@
         60,
         60
       ],
-      "parent_id": "Perpres_132_2022__HURUF_c__BAB_IV",
+      "parent_id": "Perpres_132_2022__BAB_V",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_8__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_8__BAB_V",
       "component_type": "ANGKA",
       "number": "8",
       "title": null,
@@ -3014,12 +3110,12 @@
         60,
         67
       ],
-      "parent_id": "Perpres_132_2022__HURUF_c__BAB_IV",
+      "parent_id": "Perpres_132_2022__BAB_V",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_1__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_1__BAB_V",
       "component_type": "ANGKA",
       "number": "1",
       "title": null,
@@ -3028,12 +3124,12 @@
         67,
         67
       ],
-      "parent_id": "Perpres_132_2022__HURUF_c__BAB_IV",
+      "parent_id": "Perpres_132_2022__BAB_V",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_3__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_3__BAB_V",
       "component_type": "ANGKA",
       "number": "3",
       "title": null,
@@ -3042,12 +3138,12 @@
         67,
         67
       ],
-      "parent_id": "Perpres_132_2022__HURUF_c__BAB_IV",
+      "parent_id": "Perpres_132_2022__BAB_V",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_4__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_4__BAB_V",
       "component_type": "ANGKA",
       "number": "4",
       "title": null,
@@ -3056,12 +3152,12 @@
         67,
         67
       ],
-      "parent_id": "Perpres_132_2022__HURUF_c__BAB_IV",
+      "parent_id": "Perpres_132_2022__BAB_V",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_5__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_5__BAB_V",
       "component_type": "ANGKA",
       "number": "5",
       "title": null,
@@ -3070,12 +3166,12 @@
         67,
         67
       ],
-      "parent_id": "Perpres_132_2022__HURUF_c__BAB_IV",
+      "parent_id": "Perpres_132_2022__BAB_V",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_6__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_6__BAB_V",
       "component_type": "ANGKA",
       "number": "6",
       "title": null,
@@ -3084,12 +3180,12 @@
         67,
         67
       ],
-      "parent_id": "Perpres_132_2022__HURUF_c__BAB_IV",
+      "parent_id": "Perpres_132_2022__BAB_V",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_7__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_7__BAB_V",
       "component_type": "ANGKA",
       "number": "7",
       "title": null,
@@ -3098,12 +3194,12 @@
         67,
         67
       ],
-      "parent_id": "Perpres_132_2022__HURUF_c__BAB_IV",
+      "parent_id": "Perpres_132_2022__BAB_V",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_8__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_8__BAB_V",
       "component_type": "ANGKA",
       "number": "8",
       "title": null,
@@ -3112,12 +3208,12 @@
         67,
         74
       ],
-      "parent_id": "Perpres_132_2022__HURUF_c__BAB_IV",
+      "parent_id": "Perpres_132_2022__BAB_V",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_1__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_1__BAB_V",
       "component_type": "ANGKA",
       "number": "1",
       "title": null,
@@ -3126,12 +3222,12 @@
         74,
         74
       ],
-      "parent_id": "Perpres_132_2022__HURUF_c__BAB_IV",
+      "parent_id": "Perpres_132_2022__BAB_V",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_2__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_2__BAB_V",
       "component_type": "ANGKA",
       "number": "2",
       "title": null,
@@ -3140,12 +3236,12 @@
         74,
         74
       ],
-      "parent_id": "Perpres_132_2022__HURUF_c__BAB_IV",
+      "parent_id": "Perpres_132_2022__BAB_V",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_3__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_3__BAB_V",
       "component_type": "ANGKA",
       "number": "3",
       "title": null,
@@ -3154,12 +3250,12 @@
         74,
         74
       ],
-      "parent_id": "Perpres_132_2022__HURUF_c__BAB_IV",
+      "parent_id": "Perpres_132_2022__BAB_V",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_4__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_4__BAB_V",
       "component_type": "ANGKA",
       "number": "4",
       "title": null,
@@ -3168,12 +3264,12 @@
         74,
         74
       ],
-      "parent_id": "Perpres_132_2022__HURUF_c__BAB_IV",
+      "parent_id": "Perpres_132_2022__BAB_V",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_5__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_5__BAB_V",
       "component_type": "ANGKA",
       "number": "5",
       "title": null,
@@ -3182,12 +3278,12 @@
         74,
         74
       ],
-      "parent_id": "Perpres_132_2022__HURUF_c__BAB_IV",
+      "parent_id": "Perpres_132_2022__BAB_V",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_6__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_6__BAB_V",
       "component_type": "ANGKA",
       "number": "6",
       "title": null,
@@ -3196,12 +3292,12 @@
         74,
         74
       ],
-      "parent_id": "Perpres_132_2022__HURUF_c__BAB_IV",
+      "parent_id": "Perpres_132_2022__BAB_V",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_7__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_7__BAB_V",
       "component_type": "ANGKA",
       "number": "7",
       "title": null,
@@ -3210,12 +3306,12 @@
         74,
         74
       ],
-      "parent_id": "Perpres_132_2022__HURUF_c__BAB_IV",
+      "parent_id": "Perpres_132_2022__BAB_V",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_8__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_8__BAB_V",
       "component_type": "ANGKA",
       "number": "8",
       "title": null,
@@ -3224,12 +3320,12 @@
         74,
         80
       ],
-      "parent_id": "Perpres_132_2022__HURUF_c__BAB_IV",
+      "parent_id": "Perpres_132_2022__BAB_V",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_1__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_1__BAB_V",
       "component_type": "ANGKA",
       "number": "1",
       "title": null,
@@ -3238,12 +3334,12 @@
         80,
         80
       ],
-      "parent_id": "Perpres_132_2022__HURUF_c__BAB_IV",
+      "parent_id": "Perpres_132_2022__BAB_V",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_2__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_2__BAB_V",
       "component_type": "ANGKA",
       "number": "2",
       "title": null,
@@ -3252,12 +3348,12 @@
         80,
         81
       ],
-      "parent_id": "Perpres_132_2022__HURUF_c__BAB_IV",
+      "parent_id": "Perpres_132_2022__BAB_V",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_4__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_4__BAB_V",
       "component_type": "ANGKA",
       "number": "4",
       "title": null,
@@ -3266,12 +3362,12 @@
         81,
         81
       ],
-      "parent_id": "Perpres_132_2022__HURUF_c__BAB_IV",
+      "parent_id": "Perpres_132_2022__BAB_V",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_5__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_5__BAB_V",
       "component_type": "ANGKA",
       "number": "5",
       "title": null,
@@ -3280,12 +3376,12 @@
         81,
         81
       ],
-      "parent_id": "Perpres_132_2022__HURUF_c__BAB_IV",
+      "parent_id": "Perpres_132_2022__BAB_V",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_6__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_6__BAB_V",
       "component_type": "ANGKA",
       "number": "6",
       "title": null,
@@ -3294,12 +3390,12 @@
         81,
         81
       ],
-      "parent_id": "Perpres_132_2022__HURUF_c__BAB_IV",
+      "parent_id": "Perpres_132_2022__BAB_V",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_7__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_7__BAB_V",
       "component_type": "ANGKA",
       "number": "7",
       "title": null,
@@ -3308,12 +3404,12 @@
         81,
         81
       ],
-      "parent_id": "Perpres_132_2022__HURUF_c__BAB_IV",
+      "parent_id": "Perpres_132_2022__BAB_V",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_8__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_8__BAB_V",
       "component_type": "ANGKA",
       "number": "8",
       "title": null,
@@ -3322,12 +3418,12 @@
         81,
         83
       ],
-      "parent_id": "Perpres_132_2022__HURUF_c__BAB_IV",
+      "parent_id": "Perpres_132_2022__BAB_V",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_1__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_1__BAB_V",
       "component_type": "ANGKA",
       "number": "1",
       "title": null,
@@ -3336,12 +3432,12 @@
         83,
         83
       ],
-      "parent_id": "Perpres_132_2022__HURUF_c__BAB_IV",
+      "parent_id": "Perpres_132_2022__BAB_V",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_2__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_2__BAB_V",
       "component_type": "ANGKA",
       "number": "2",
       "title": null,
@@ -3350,12 +3446,12 @@
         83,
         83
       ],
-      "parent_id": "Perpres_132_2022__HURUF_c__BAB_IV",
+      "parent_id": "Perpres_132_2022__BAB_V",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_3__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_3__BAB_V",
       "component_type": "ANGKA",
       "number": "3",
       "title": null,
@@ -3364,12 +3460,12 @@
         83,
         84
       ],
-      "parent_id": "Perpres_132_2022__HURUF_c__BAB_IV",
+      "parent_id": "Perpres_132_2022__BAB_V",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_1__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_1__BAB_V",
       "component_type": "ANGKA",
       "number": "1",
       "title": null,
@@ -3378,12 +3474,12 @@
         84,
         84
       ],
-      "parent_id": "Perpres_132_2022__HURUF_c__BAB_IV",
+      "parent_id": "Perpres_132_2022__BAB_V",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_2__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_2__BAB_V",
       "component_type": "ANGKA",
       "number": "2",
       "title": null,
@@ -3392,12 +3488,12 @@
         84,
         84
       ],
-      "parent_id": "Perpres_132_2022__HURUF_c__BAB_IV",
+      "parent_id": "Perpres_132_2022__BAB_V",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_3__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_3__BAB_V",
       "component_type": "ANGKA",
       "number": "3",
       "title": null,
@@ -3406,26 +3502,87 @@
         84,
         84
       ],
-      "parent_id": "Perpres_132_2022__HURUF_c__BAB_IV",
+      "parent_id": "Perpres_132_2022__BAB_V",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_4__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_4__BAB_V",
       "component_type": "ANGKA",
       "number": "4",
       "title": null,
-      "content": "audit keamanan pada Aplikasi Umum SPBE.\nRincian dari domain arsitektur infrastrurktur SPBE yang menjadi target\npenerapan arsitektur sampai dengan tahun 2024, terdapat pada Tabel 13.\nDomain Arsitektur\nInfrastruktur SPBE\nDeskripsi Infrastruktur\nSPBE\nReferensi Arsitektur\nInfrastruktur SPBE\nKode\nDomain\nArsitektur\nTerkait\nlDAro2I\nIntegrasi\nSistem Penyelenggaraan sistem\nintegrasi, berupa Jaringan\nIntra Pemerintah dan Sistem\nPenghubung\nLayanan\nPemerintah, yang menjadi\ninfrastruktur berbagi pakai\nyang dapat dimanfaatkan\noleh seluruh Instansi Rrsat\ndan Pemerintah Daerah\n[02] Sistem Integrasi\n[02.01] Jaringan Intra\nPemerintah\nlO2.O2l\nSistem\nPenghubung Layanan\nPemerintah\nIDADo1-341\nIDAAo1-Oel\nIDAKO 1-o3l\n[DAIO3] Platform\nPenyelenggaraan platform\nberupa\nkerangka\ninfrastruktur aplikasi dan\nkomputasi awan, untuk\nmewujudkan gouernment\ncloud, menjadi infrastruktur\nberbagi pakai yang dapat\ndimanfaatkan oleh seluruh\nInstansi Pusat\ndan\nPemerintah Daerah\n[03] Platform\n[03.01] Kerangka\nInfrastruktur dan\nAplikasi\n[03.02] Komputasi\nAwan\nIDADO1-341\n[DAAO1-oel\nIDAKO1-03I\nSK No 158208 A\nTabel\nPRESIDEN\nREPUtsLlK TNDONESIA\n_80_\nTabel 13. Identifikasi Target Domain Keamanan SPBE\nDomain\nArsitektur\nKeamanan\nSPBE\nDeskripsi Keamanan\nSPBE\nReferensi Arsitektur\nKeamanan SPBE\nKode Domain\nArsitektur\nTerkait\nlDAKoll\nStandar\nKeamanan\nPersyaratan keamanan\nyang diacu oleh Instansi\nPusat dan Pemerintah\nDaerah masing-masing.\nStandar keamanan\nmemastikan penerapan\nfungsi keamanan pada\ndata dan informasi,\naplikasi SPBE, dan\ninfrastruktur SPBE\nsesuai dengan\npersyaratan keamanan\nyang telah ditetapkan.\n[01] Standar Keamanan\n[01.01] Standar Teknis\ndan Prosedur Keamanan\nSPBE\n[01.O2] Standar\nnasional / internasional\nterkait keamanan APBE\n[0 1.03] Regulasi lainnya\n[DADO1-341\n[DAA0l -Oel\nlDAro1-0el\nlDAKO2l\nPenerapan\nKeamanan\nPenyelenggaraan\nkeamanan SPBE melalui\nprogram kerja\nkesadaran keamanan,\nidentifi kasi kerentanan\nkeamanan, dan\npeningkatan keamanan,\npenanganan insiden\nkeamanan SPBE serta\naudit keamanan SPBE.\n[02] Penerapan\nKeamanan\n[02.01] Edukasi\nKesadaran Keamanan\nSPBE\nIO2.O2l Identifikasi\nKerentanan Keamanan\nSPBE\n[02.03] Peningkatan\nKeamanan SPBE\nlO2.O4l Penanganan\nInsiden Keamanan SPBE\n[02.05] Audit Keamanan\nSPBE\n[DADO1-s4l\nIDAA01-Oel\nlDArOl -Oel\nlDAKo3l\nKelaikan\nKeamanan\nSPBE\nPemberian rekomendasi\nkelaikan keamanan\nAplikasi Umum SPBE\ndan infrastruktur SPBE\nnasional.\n[03] Kelaikan Keamanan\n[03.01] Kelaikan\nKeamanan Aplikasi\nUmum\n[03.02] Kelaikan\nKeamanan I nfrastruktur\nSPBE Nasional\n[DADo1-341\nIDAAOl-Oel\nlDArO1-Oel\nSK No 160121A\nBABVI...\nPRESIDEN\nREPUBLIK INDONESIA BAB VI\nINISIATIF STRATEGIS ARSITEKTUR SISTEM PEMERINTAHAN BERBASIS\nELEKTRONIK NASIONAL\nInisiatif strategis Arsitektur SPBE Nasional sesuai dengan tematik layanan\ndigital, sebagaimana telah dijelaskan pada Bab V, maka memiliki target keluaran\ndan pimpinan instansi sebagai penanggung jawab kegiatan, sebagaimana\nterdapat pada Tabel 14.\nTabel 14. Inisiatif Strategis Arsitektur SPBE Nasional.\nNo.\nInisiatif Strategis\nKeluaran\nPenanggung\nJawab\nI\n[,ayanan\nperizinan\nberusaha dan\nakreditasi\nterintegrasi\nPenyelenggaraan layanan perizinan\nberusaha dan akreditasi terpadu\nberbasis elektronik, melalui Aplikasi\nUmum SPBE bidang perizinan berusaha\ndan akreditasi yang terintegrasi pada\nportal pelayanan publik dan portal\nadministrasi pemerintahan\nMenteri\nInvestasi/\nKepala Badan\nKoordinasi\nPenanaman\nModal\nLayanan\nmonitoring\npembangunan\npekerjaan umum\ndan pertrmahan\nrakyat\nPenyelenggaraan layanan pekerjaan\numum, antara lain bempa pemantauan\npembangunan pekerjaan umum dan\nperumahan ralgrat berbasis elektronik,\nmelalui Aplikasi Umum SPBE bidang\npekerjaan umum dan perumahan rakyat\nyang terintegrasi pada portal pelayanan\npublik dan portal administrasi\npemerintahan\nMenteri\nPekerjaan\nUmum dan\nPerumahan\nRalryat\nLayanan\nkesehatan\nterintegrasi\nPenyelenggaraan layanan kesehatan\nberbasis elektronik, melalui Aplikasi\nUmum SPBE bidang kesehatan yang\nterintegrasi pada portal pelayanan\npublik dan portal administrasi\npemerintahan\nMenteri\nKesehatan\nLayanan\nbantuan sosial\nterintegrasi\nPenyelenggaraan layanan bantuan\nsosial terpadu berbasis elektronik,\nmelalui Aplikasi Umum SPBE bidang\nsosial yang terintegrasi pada portal\npelayanan publik dan\nportal\nadministrasi pemerintahan\nMenteri Sosial\nSK No 158206 A\nLayanan\nPRESIDEN\nREPUBLIK INDONESIA No.\nInisiatif Strategis\nKeluaran\nPenanggung\nJawab\nLayanan\npenerbitan SIM\nOnline\nPenyelenggaraan layanan perlindungan\nmasyarakat antara lain berupa SIM\nonline, melalui Aplikasi Umum SPBE\nbidang perlindungan masyarakat yang\nterintegrasi pada portal pelayanan\npublik dan portal administrasi\npemerintahan\nKepala\nKepolisian\nNegara\nRepublik\nIndonesia\nLayanan\npenanganan\nperkara tindak\npidana terpadu\nberbasis\nteknologi\ninformasi\nPenyelenggaraan layanan penanga.nan\nperkara tindak pidana terpadu berbasis\nteknologi informasi melalui integrasi\naplikasi administrasi penangana.n\nperkara di lembaga penegak hukum.\nMenteri\nKoordinator\nBidang Politik,\nHukum, dan\nKeamanan\nLayanan\npendidikan\nterintegrasi\nPenyelenggaraan layanan pendidikan\nberbasis elektronik melalui Aplikasi\nUmum SPBE bidang pendidikan yang\nterintegrasi pada portal pelayanan\npublik dan portal administrasi\npemerintahan\nMenteri\nPendidikan,\nkebudayaan,\nRiset, dan\nTeknologi\n8.\nPenerapan\nlayanan\nadministrasi\npemerintahan di\nPemerintah\nDaerah\nPenyelenggaraan layanan administrasi\npemerintahan di lingkungan pemerintah\ndaerah, melalui Aplikasi Umum SPBE\nbidang perencanaan pembangunan dan\nanggaran Pemerintah Daerah, dengan\nfitur perencanaan pembangunan dan\npenganggaran yang terintegrasi dengan\nperencanaan pembangunan dan\npenganggaran nasional yang terintegrasi\npada portal pelayanan administrasi\npemerintahan\nMenteri Dalam\nNegeri\nLayanan\nadministrasi\npemerintahan di\nbidang keuangan\nnegara\nPenyelenggaraa.n layanan administrasi\npemerintahan di bidang keuangan\nnegara melalui Aplikasi Umum SPBE\nyang mengintegrasikan penganggaran\nanggaran pendapatan dan belanja\nnegara berbasis elektronik yang\nterintegrasi pada portal pelayanan\nadministrasi pemerintahan\nMenteri\nKeuangan\nSK No 158231A\nl,ayanan\nPRES IDEN\nREPUBLIK INDONESIA No.\nInisiatif Strategis\nKeluaran\nPenanggung\nJawab\n10.\nLayanan\nadministrasi\npemerintahan di\nbidang\nperencanaan\npembangunan\nnasional\nPenyelenggaraa.n layanan administrasi\npemerintahan di bidang perencan€ran\npembangunan nasional,\nserta\npemantauan\ndan\nevaluasi\npembangunan nasional berbasis\nelektronik, melalui Aplikasi Umum\nSPBE\nbidang\nperencanaan\npembangunan nasional\nyang\nmengintegrasikan\nperencanaan\npembangunan nasional\nserta\nterintegrasi pada portal pelayanan\nadministrasi pemerintahan\nMenteri\nPerencanaan\nPembangunan\nNasional/\nKepala Badan\nPerencanaan\nPembangunan\nNasional\nLayanan\nadministrasi\npemerintahan di\nbidang aparatur\nnegara\nPenyelenggaraan layanan administrasi\npemerintahan di bidang pengelolaan\naparatur negara, termasuk didalamnya\nkegiatan dukungan operasional\norganisasi, akuntabilitas kinerja,\norganisasi dan tata kelola, serta\npemantauan dan evaluasi tata kelola\npemerintahan, melalui Aplikasi Umum\nSPBE bidang aparatur negara yang\nterintegrasi pada portal pelayanan\nadministrasi pemerintahan\nMenteri\nPendayagunaan\nAparatur\nNegara dan\nReformasi\nBirokrasi\n12.\nLayanan\nadministrasi\npemerintahan di\nbidang\nkesekretariatan\nnegara\nPenyelenggaraan layanan administrasi\npemerintahan di bidang pengelolaan\nkesekretariatan negara, termasuk\ndidalamnya berupa pengelolaan\nexeqftiue information system,\nterintegrasi pada portal pelayanan\nadministrasi pemerintahan\nMenteri\nSekretaris\nNegara\n13.\nLayanan\nadministrasi\npemerintahan di\nbidang informasi\npemerintahan\nPenyelenggaraan layanan administrasi\npemerintahan di bidang pengelolaan\ninformasi\ndan\nkomunikasi\npemerintahan, termasuk didalamnya\npenyampaian kepada publik serta\nanalisis media sosial, melalui Aplikasi\nUmum SPBE bidang informasi dan\nkomunikasi publik, terintegrasi pada\nportal\npelayanan administrasi\npemerintahan\nMenteri\nKomunikasi\ndan\nInformatika\nSK No 158204A\nLayanart\nFRES IDEN\nREPUBLIK INDONESIA No.\nInisiatif Strategis\nKeluaran\nPenanggung\nJawab\nt4.\nLayanan\nadministrasi\npemerintahan di\nbidang riset dan\ninovasi\nPenyelenggaraan layanan administrasi\npemerintahan di bidang riset dan inovasi\npemerinta.h, termasuk didalamnya\npelaksanaan penelitian, pengembangan,\npengkajian, dan penerapan teknologi\ndigital pemerintah, serta mendukung\npenerapan BU Data dan Kecerdasan\nArtifisial pemerintah, dalam rangka\npeningkatan kualitas pelayanan publik\ndan administrasi pemerintah\nKepala Badan\nRiset dan\nInovasi\nNasional\n15.\nLayanan\nmanajemen data\nstatistik\nPenyelenggaraan layanan manajemen\ndata statistik dalam bentuk sistem\ninfrastruktur statistik nasional yang\nberbagi pakai dalam rangka mendukung\nBU Data pemerintah, Satu Data\nIndonesia, dan sistem statistik nasional\nKepala Badan\nPusat Statistik\n16.\nLayanan\nmanajemen data\ngeospasial\nPenyelenggaraan layanan manajemen\ndata geospasial sesuai kerangka\nkebijakan Satu Data Indonesia,\npenerapan Big Data dan Kecerdasan\nArtifisial Pemerintah untuk data\ngeospasial\nKepala Badan\nInformasi\nGeospasial\nt7.\nLayanan\nmanqiemen data\nkeuangan negara\nPenyelenggaraan layanan manajemen\ndata keuangan negara sesuai kerangka\nkebijakan Satu Data Indonesia,\npenerapan Big Data dan Kecerdasan\nArtifisial Pemerintah untuk data\nkeuangan negara\nMenteri\nKeuangan\n18.\nLayanan\ninfrastruktur\nSPBE\nterintegrasi\nPenyelenggaraan operasionalisasi hrsat\nData Nasional, Jaringan Intra\nPemerintah, Sistem Penghubung\nlayanan pemerintah dan komputasi\nawan untuk dukungan operasional\nAplikasi Umum SPBE\nMenteri\nKomunikasi\ndan\nlnformatika\n19.\nLayanan\nkeamanan SPBE\nterintegrasi\nPenyelenggaraan asistensi penerapan\nkeamanan SPBE dan penanganan\npermasalahan keamanan SPBE,\npemberian rekomendasi kelaikan\nkeamanan SPBE dan Audit Keamanan\nSPBE pada Aplikasi Umum dan\ninfrastmktur SPBE nasional\nKepala Badan\nSiber dan\nSandi Negara\nSK No 158203 A\nBABVII ...\nPRES IDEN\nREPUBLIK INDONESIA BAB VII\nPENUTUP\nArsitektur SPBE Nasional ini merupakan panduan dalam pelaksanaan\nPeraturan Presiden Nomor 95 Tahun 2018 tentang Sistem Pemerintahan\nBerbasis Elektronik. Mengenai berbagai kegiatan yang akan dilaksanakan,\ndiatur dalam peraturan tersendiri tentang peta rencana SPBE. Reviu dilakukan\npada paruh waktu dan tahun terakhir pelaksanaan atau sewaktu-waktu sesuai\ndengan kebutuhan. Sebagaimana diamanatkan dalam Peraturan Presiden\nmengenai SPBE, Instansi Pusat dan Pemerintah Daerah perlu men5rusun\narsitektur organisasinya masing-masing dengan mengacu pada Arsitektur SPBE\nNasional. Perlu diperhatikan dalam penyusunan arsitektur ini adalah Arsitektur\nSPBE Instansi Pusat ataupun Arsitektur SPBE Pemerintah Daerah merupakan\nbagian dari Arsitektur SPBE Nasional. Sehingga wawasan yang perlu dibangun\nperlu dikembangkan pada lingkup nasional (bukan sektoral). Dengan demikian\nInstansi Pusat dan Pemerintah Daerah yang membangun arsitekturnya perlu\nmemastikan keselarasan arsitektur yang disusun dengan Arsitektur SPBE\nNasional. Dalam hal ini, penggunaan referensi arsitektur sebagai pemersatu\nbahasa, sangat membantu untuk melakukan penyelarasan tersebut.\nUntuk beberapa referensi arsitektur perlu diurai lebih jauh oleh Instansi Pusat\ndan Pemerintah Daerah yaitu tingkat 3 (ketiga) dan tingkat 4 (keempat) sesuai\ndengan referensi arsitektur tingkat di atasnya pada referensi arsitektur berikut\nini:",
+      "content": "audit keamanan pada Aplikasi Umum SPBE.\nRincian dari domain arsitektur infrastrurktur SPBE yang menjadi target\npenerapan arsitektur sampai dengan tahun 2024, terdapat pada Tabel 13.\nDomain Arsitektur\nInfrastruktur SPBE\nDeskripsi Infrastruktur\nSPBE\nReferensi Arsitektur\nInfrastruktur SPBE\nKode\nDomain\nArsitektur\nTerkait\nlDAro2I\nIntegrasi\nSistem Penyelenggaraan sistem\nintegrasi, berupa Jaringan\nIntra Pemerintah dan Sistem\nPenghubung\nLayanan\nPemerintah, yang menjadi\ninfrastruktur berbagi pakai\nyang dapat dimanfaatkan\noleh seluruh Instansi Rrsat\ndan Pemerintah Daerah\n[02] Sistem Integrasi\n[02.01] Jaringan Intra\nPemerintah\nlO2.O2l\nSistem\nPenghubung Layanan\nPemerintah\nIDADo1-341\nIDAAo1-Oel\nIDAKO 1-o3l\n[DAIO3] Platform\nPenyelenggaraan platform\nberupa\nkerangka\ninfrastruktur aplikasi dan\nkomputasi awan, untuk\nmewujudkan gouernment\ncloud, menjadi infrastruktur\nberbagi pakai yang dapat\ndimanfaatkan oleh seluruh\nInstansi Pusat\ndan\nPemerintah Daerah\n[03] Platform\n[03.01] Kerangka\nInfrastruktur dan\nAplikasi\n[03.02] Komputasi\nAwan\nIDADO1-341\n[DAAO1-oel\nIDAKO1-03I\nSK No 158208 A\nTabel\nPRESIDEN\nREPUtsLlK TNDONESIA\n_80_\nTabel 13. Identifikasi Target Domain Keamanan SPBE\nDomain\nArsitektur\nKeamanan\nSPBE\nDeskripsi Keamanan\nSPBE\nReferensi Arsitektur\nKeamanan SPBE\nKode Domain\nArsitektur\nTerkait\nlDAKoll\nStandar\nKeamanan\nPersyaratan keamanan\nyang diacu oleh Instansi\nPusat dan Pemerintah\nDaerah masing-masing.\nStandar keamanan\nmemastikan penerapan\nfungsi keamanan pada\ndata dan informasi,\naplikasi SPBE, dan\ninfrastruktur SPBE\nsesuai dengan\npersyaratan keamanan\nyang telah ditetapkan.\n[01] Standar Keamanan\n[01.01] Standar Teknis\ndan Prosedur Keamanan\nSPBE\n[01.O2] Standar\nnasional / internasional\nterkait keamanan APBE\n[0 1.03] Regulasi lainnya\n[DADO1-341\n[DAA0l -Oel\nlDAro1-0el\nlDAKO2l\nPenerapan\nKeamanan\nPenyelenggaraan\nkeamanan SPBE melalui\nprogram kerja\nkesadaran keamanan,\nidentifi kasi kerentanan\nkeamanan, dan\npeningkatan keamanan,\npenanganan insiden\nkeamanan SPBE serta\naudit keamanan SPBE.\n[02] Penerapan\nKeamanan\n[02.01] Edukasi\nKesadaran Keamanan\nSPBE\nIO2.O2l Identifikasi\nKerentanan Keamanan\nSPBE\n[02.03] Peningkatan\nKeamanan SPBE\nlO2.O4l Penanganan\nInsiden Keamanan SPBE\n[02.05] Audit Keamanan\nSPBE\n[DADO1-s4l\nIDAA01-Oel\nlDArOl -Oel\nlDAKo3l\nKelaikan\nKeamanan\nSPBE\nPemberian rekomendasi\nkelaikan keamanan\nAplikasi Umum SPBE\ndan infrastruktur SPBE\nnasional.\n[03] Kelaikan Keamanan\n[03.01] Kelaikan\nKeamanan Aplikasi\nUmum\n[03.02] Kelaikan\nKeamanan I nfrastruktur\nSPBE Nasional\n[DADo1-341\nIDAAOl-Oel\nlDArO1-Oel\nSK No 160121A",
       "page_range": [
         84,
-        90
+        85
       ],
-      "parent_id": "Perpres_132_2022__HURUF_c__BAB_IV",
+      "parent_id": "Perpres_132_2022__BAB_V",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_1__BAB_IV",
+      "component_id": "Perpres_132_2022__BAB_VI",
+      "component_type": "BAB",
+      "number": "VI",
+      "title": "PRESIDEN",
+      "content": "",
+      "page_range": [
+        85,
+        85
+      ],
+      "parent_id": null,
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "Perpres_132_2022__BAB_VI",
+      "component_type": "BAB",
+      "number": "VI",
+      "title": "INISIATIF STRATEGIS ARSITEKTUR SISTEM PEMERINTAHAN BERBASIS ELEKTRONIK NASIONAL",
+      "content": "Inisiatif strategis Arsitektur SPBE Nasional sesuai dengan tematik layanan\ndigital, sebagaimana telah dijelaskan pada Bab V, maka memiliki target keluaran\ndan pimpinan instansi sebagai penanggung jawab kegiatan, sebagaimana\nterdapat pada Tabel 14.\nTabel 14. Inisiatif Strategis Arsitektur SPBE Nasional.\nNo.\nInisiatif Strategis\nKeluaran\nPenanggung\nJawab\nI\n[,ayanan\nperizinan\nberusaha dan\nakreditasi\nterintegrasi\nPenyelenggaraan layanan perizinan\nberusaha dan akreditasi terpadu\nberbasis elektronik, melalui Aplikasi\nUmum SPBE bidang perizinan berusaha\ndan akreditasi yang terintegrasi pada\nportal pelayanan publik dan portal\nadministrasi pemerintahan\nMenteri\nInvestasi/\nKepala Badan\nKoordinasi\nPenanaman\nModal\nLayanan\nmonitoring\npembangunan\npekerjaan umum\ndan pertrmahan\nrakyat\nPenyelenggaraan layanan pekerjaan\numum, antara lain bempa pemantauan\npembangunan pekerjaan umum dan\nperumahan ralgrat berbasis elektronik,\nmelalui Aplikasi Umum SPBE bidang\npekerjaan umum dan perumahan rakyat\nyang terintegrasi pada portal pelayanan\npublik dan portal administrasi\npemerintahan\nMenteri\nPekerjaan\nUmum dan\nPerumahan\nRalryat\nLayanan\nkesehatan\nterintegrasi\nPenyelenggaraan layanan kesehatan\nberbasis elektronik, melalui Aplikasi\nUmum SPBE bidang kesehatan yang\nterintegrasi pada portal pelayanan\npublik dan portal administrasi\npemerintahan\nMenteri\nKesehatan\nLayanan\nbantuan sosial\nterintegrasi\nPenyelenggaraan layanan bantuan\nsosial terpadu berbasis elektronik,\nmelalui Aplikasi Umum SPBE bidang\nsosial yang terintegrasi pada portal\npelayanan publik dan\nportal\nadministrasi pemerintahan\nMenteri Sosial\nSK No 158206 A\nLayanan\nPRESIDEN\nREPUBLIK INDONESIA No.\nInisiatif Strategis\nKeluaran\nPenanggung\nJawab\nLayanan\npenerbitan SIM\nOnline\nPenyelenggaraan layanan perlindungan\nmasyarakat antara lain berupa SIM\nonline, melalui Aplikasi Umum SPBE\nbidang perlindungan masyarakat yang\nterintegrasi pada portal pelayanan\npublik dan portal administrasi\npemerintahan\nKepala\nKepolisian\nNegara\nRepublik\nIndonesia\nLayanan\npenanganan\nperkara tindak\npidana terpadu\nberbasis\nteknologi\ninformasi\nPenyelenggaraan layanan penanga.nan\nperkara tindak pidana terpadu berbasis\nteknologi informasi melalui integrasi\naplikasi administrasi penangana.n\nperkara di lembaga penegak hukum.\nMenteri\nKoordinator\nBidang Politik,\nHukum, dan\nKeamanan\nLayanan\npendidikan\nterintegrasi\nPenyelenggaraan layanan pendidikan\nberbasis elektronik melalui Aplikasi\nUmum SPBE bidang pendidikan yang\nterintegrasi pada portal pelayanan\npublik dan portal administrasi\npemerintahan\nMenteri\nPendidikan,\nkebudayaan,\nRiset, dan\nTeknologi\n8.\nPenerapan\nlayanan\nadministrasi\npemerintahan di\nPemerintah\nDaerah\nPenyelenggaraan layanan administrasi\npemerintahan di lingkungan pemerintah\ndaerah, melalui Aplikasi Umum SPBE\nbidang perencanaan pembangunan dan\nanggaran Pemerintah Daerah, dengan\nfitur perencanaan pembangunan dan\npenganggaran yang terintegrasi dengan\nperencanaan pembangunan dan\npenganggaran nasional yang terintegrasi\npada portal pelayanan administrasi\npemerintahan\nMenteri Dalam\nNegeri\nLayanan\nadministrasi\npemerintahan di\nbidang keuangan\nnegara\nPenyelenggaraa.n layanan administrasi\npemerintahan di bidang keuangan\nnegara melalui Aplikasi Umum SPBE\nyang mengintegrasikan penganggaran\nanggaran pendapatan dan belanja\nnegara berbasis elektronik yang\nterintegrasi pada portal pelayanan\nadministrasi pemerintahan\nMenteri\nKeuangan\nSK No 158231A\nl,ayanan\nPRES IDEN\nREPUBLIK INDONESIA No.\nInisiatif Strategis\nKeluaran\nPenanggung\nJawab\n10.\nLayanan\nadministrasi\npemerintahan di\nbidang\nperencanaan\npembangunan\nnasional\nPenyelenggaraa.n layanan administrasi\npemerintahan di bidang perencan€ran\npembangunan nasional,\nserta\npemantauan\ndan\nevaluasi\npembangunan nasional berbasis\nelektronik, melalui Aplikasi Umum\nSPBE\nbidang\nperencanaan\npembangunan nasional\nyang\nmengintegrasikan\nperencanaan\npembangunan nasional\nserta\nterintegrasi pada portal pelayanan\nadministrasi pemerintahan\nMenteri\nPerencanaan\nPembangunan\nNasional/\nKepala Badan\nPerencanaan\nPembangunan\nNasional\nLayanan\nadministrasi\npemerintahan di\nbidang aparatur\nnegara\nPenyelenggaraan layanan administrasi\npemerintahan di bidang pengelolaan\naparatur negara, termasuk didalamnya\nkegiatan dukungan operasional\norganisasi, akuntabilitas kinerja,\norganisasi dan tata kelola, serta\npemantauan dan evaluasi tata kelola\npemerintahan, melalui Aplikasi Umum\nSPBE bidang aparatur negara yang\nterintegrasi pada portal pelayanan\nadministrasi pemerintahan\nMenteri\nPendayagunaan\nAparatur\nNegara dan\nReformasi\nBirokrasi\n12.\nLayanan\nadministrasi\npemerintahan di\nbidang\nkesekretariatan\nnegara\nPenyelenggaraan layanan administrasi\npemerintahan di bidang pengelolaan\nkesekretariatan negara, termasuk\ndidalamnya berupa pengelolaan\nexeqftiue information system,\nterintegrasi pada portal pelayanan\nadministrasi pemerintahan\nMenteri\nSekretaris\nNegara\n13.\nLayanan\nadministrasi\npemerintahan di\nbidang informasi\npemerintahan\nPenyelenggaraan layanan administrasi\npemerintahan di bidang pengelolaan\ninformasi\ndan\nkomunikasi\npemerintahan, termasuk didalamnya\npenyampaian kepada publik serta\nanalisis media sosial, melalui Aplikasi\nUmum SPBE bidang informasi dan\nkomunikasi publik, terintegrasi pada\nportal\npelayanan administrasi\npemerintahan\nMenteri\nKomunikasi\ndan\nInformatika\nSK No 158204A\nLayanart\nFRES IDEN\nREPUBLIK INDONESIA No.\nInisiatif Strategis\nKeluaran\nPenanggung\nJawab\nt4.\nLayanan\nadministrasi\npemerintahan di\nbidang riset dan\ninovasi\nPenyelenggaraan layanan administrasi\npemerintahan di bidang riset dan inovasi\npemerinta.h, termasuk didalamnya\npelaksanaan penelitian, pengembangan,\npengkajian, dan penerapan teknologi\ndigital pemerintah, serta mendukung\npenerapan BU Data dan Kecerdasan\nArtifisial pemerintah, dalam rangka\npeningkatan kualitas pelayanan publik\ndan administrasi pemerintah\nKepala Badan\nRiset dan\nInovasi\nNasional\n15.\nLayanan\nmanajemen data\nstatistik\nPenyelenggaraan layanan manajemen\ndata statistik dalam bentuk sistem\ninfrastruktur statistik nasional yang\nberbagi pakai dalam rangka mendukung\nBU Data pemerintah, Satu Data\nIndonesia, dan sistem statistik nasional\nKepala Badan\nPusat Statistik\n16.\nLayanan\nmanajemen data\ngeospasial\nPenyelenggaraan layanan manajemen\ndata geospasial sesuai kerangka\nkebijakan Satu Data Indonesia,\npenerapan Big Data dan Kecerdasan\nArtifisial Pemerintah untuk data\ngeospasial\nKepala Badan\nInformasi\nGeospasial\nt7.\nLayanan\nmanqiemen data\nkeuangan negara\nPenyelenggaraan layanan manajemen\ndata keuangan negara sesuai kerangka\nkebijakan Satu Data Indonesia,\npenerapan Big Data dan Kecerdasan\nArtifisial Pemerintah untuk data\nkeuangan negara\nMenteri\nKeuangan\n18.\nLayanan\ninfrastruktur\nSPBE\nterintegrasi\nPenyelenggaraan operasionalisasi hrsat\nData Nasional, Jaringan Intra\nPemerintah, Sistem Penghubung\nlayanan pemerintah dan komputasi\nawan untuk dukungan operasional\nAplikasi Umum SPBE\nMenteri\nKomunikasi\ndan\nlnformatika\n19.\nLayanan\nkeamanan SPBE\nterintegrasi\nPenyelenggaraan asistensi penerapan\nkeamanan SPBE dan penanganan\npermasalahan keamanan SPBE,\npemberian rekomendasi kelaikan\nkeamanan SPBE dan Audit Keamanan\nSPBE pada Aplikasi Umum dan\ninfrastmktur SPBE nasional\nKepala Badan\nSiber dan\nSandi Negara\nSK No 158203 A",
+      "page_range": [
+        86,
+        89
+      ],
+      "parent_id": null,
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "Perpres_132_2022__BAB_VII",
+      "component_type": "BAB",
+      "number": "VII",
+      "title": "PRES IDEN",
+      "content": "",
+      "page_range": [
+        89,
+        89
+      ],
+      "parent_id": null,
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "Perpres_132_2022__BAB_VII",
+      "component_type": "BAB",
+      "number": "VII",
+      "title": "PENUTUP Arsitektur SPBE Nasional ini merupakan panduan dalam pelaksanaan",
+      "content": "Peraturan Presiden Nomor 95 Tahun 2018 tentang Sistem Pemerintahan\nBerbasis Elektronik. Mengenai berbagai kegiatan yang akan dilaksanakan,\ndiatur dalam peraturan tersendiri tentang peta rencana SPBE. Reviu dilakukan\npada paruh waktu dan tahun terakhir pelaksanaan atau sewaktu-waktu sesuai\ndengan kebutuhan. Sebagaimana diamanatkan dalam Peraturan Presiden\nmengenai SPBE, Instansi Pusat dan Pemerintah Daerah perlu men5rusun\narsitektur organisasinya masing-masing dengan mengacu pada Arsitektur SPBE\nNasional. Perlu diperhatikan dalam penyusunan arsitektur ini adalah Arsitektur\nSPBE Instansi Pusat ataupun Arsitektur SPBE Pemerintah Daerah merupakan\nbagian dari Arsitektur SPBE Nasional. Sehingga wawasan yang perlu dibangun\nperlu dikembangkan pada lingkup nasional (bukan sektoral). Dengan demikian\nInstansi Pusat dan Pemerintah Daerah yang membangun arsitekturnya perlu\nmemastikan keselarasan arsitektur yang disusun dengan Arsitektur SPBE\nNasional. Dalam hal ini, penggunaan referensi arsitektur sebagai pemersatu\nbahasa, sangat membantu untuk melakukan penyelarasan tersebut.\nUntuk beberapa referensi arsitektur perlu diurai lebih jauh oleh Instansi Pusat\ndan Pemerintah Daerah yaitu tingkat 3 (ketiga) dan tingkat 4 (keempat) sesuai\ndengan referensi arsitektur tingkat di atasnya pada referensi arsitektur berikut\nini:",
+      "page_range": [
+        90,
+        90
+      ],
+      "parent_id": null,
+      "children": [
+        "Perpres_132_2022__ANGKA_1__BAB_VII",
+        "Perpres_132_2022__ANGKA_2__BAB_VII",
+        "Perpres_132_2022__ANGKA_3__BAB_VII",
+        "Perpres_132_2022__ANGKA_4__BAB_VII"
+      ],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "Perpres_132_2022__ANGKA_1__BAB_VII",
       "component_type": "ANGKA",
       "number": "1",
       "title": null,
@@ -3434,12 +3591,12 @@
         90,
         90
       ],
-      "parent_id": "Perpres_132_2022__HURUF_c__BAB_IV",
+      "parent_id": "Perpres_132_2022__BAB_VII",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_2__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_2__BAB_VII",
       "component_type": "ANGKA",
       "number": "2",
       "title": null,
@@ -3448,12 +3605,12 @@
         90,
         90
       ],
-      "parent_id": "Perpres_132_2022__HURUF_c__BAB_IV",
+      "parent_id": "Perpres_132_2022__BAB_VII",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_3__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_3__BAB_VII",
       "component_type": "ANGKA",
       "number": "3",
       "title": null,
@@ -3462,12 +3619,12 @@
         90,
         90
       ],
-      "parent_id": "Perpres_132_2022__HURUF_c__BAB_IV",
+      "parent_id": "Perpres_132_2022__BAB_VII",
       "children": [],
       "is_penjelasan": false
     },
     {
-      "component_id": "Perpres_132_2022__ANGKA_4__BAB_IV",
+      "component_id": "Perpres_132_2022__ANGKA_4__BAB_VII",
       "component_type": "ANGKA",
       "number": "4",
       "title": null,
@@ -3476,7 +3633,7 @@
         90,
         91
       ],
-      "parent_id": "Perpres_132_2022__HURUF_c__BAB_IV",
+      "parent_id": "Perpres_132_2022__BAB_VII",
       "children": [],
       "is_penjelasan": false
     }

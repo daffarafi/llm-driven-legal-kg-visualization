@@ -1,9 +1,9 @@
 {
   "document_id": "UU_27_2022",
-  "total_components": 387,
+  "total_components": 393,
   "component_types": {
     "HURUF": 123,
-    "BAB": 13,
+    "BAB": 19,
     "ANGKA": 10,
     "PASAL": 121,
     "AYAT": 115,
@@ -3614,12 +3614,7 @@
       ],
       "parent_id": "UU_27_2022__BAB_VII",
       "children": [
-        "UU_27_2022__PASAL_56",
-        "UU_27_2022__PASAL_57",
-        "UU_27_2022__PASAL_58",
-        "UU_27_2022__PASAL_59",
-        "UU_27_2022__PASAL_60",
-        "UU_27_2022__PASAL_61"
+        "UU_27_2022__PASAL_56"
       ],
       "is_penjelasan": false
     },
@@ -3704,13 +3699,43 @@
       "component_type": "AYAT",
       "number": "5",
       "title": null,
-      "content": "Ketentuan lebih lanjut mengenai transfer Data Pribadi\n' diatur dalam Peraturan Pemerintah.\nSK No 155225 A\nBABVIII ...\nPRESIDEN\nREPUBLIK INDONESIA BAB VIII\nSANKSI ADMINISTRATIF",
+      "content": "Ketentuan lebih lanjut mengenai transfer Data Pribadi\n' diatur dalam Peraturan Pemerintah.\nSK No 155225 A",
       "page_range": [
         24,
-        25
+        24
       ],
       "parent_id": "UU_27_2022__PASAL_56",
       "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "UU_27_2022__BAB_VIII",
+      "component_type": "BAB",
+      "number": "VIII",
+      "title": "PRESIDEN",
+      "content": "",
+      "page_range": [
+        24,
+        24
+      ],
+      "parent_id": null,
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "UU_27_2022__BAB_VIII",
+      "component_type": "BAB",
+      "number": "VIII",
+      "title": "SANKSI ADMINISTRATIF",
+      "content": "",
+      "page_range": [
+        25,
+        25
+      ],
+      "parent_id": null,
+      "children": [
+        "UU_27_2022__PASAL_57"
+      ],
       "is_penjelasan": false
     },
     {
@@ -3723,7 +3748,7 @@
         25,
         25
       ],
-      "parent_id": "UU_27_2022__BAGIAN_Kedua__BAB_VII",
+      "parent_id": "UU_27_2022__BAB_VIII",
       "children": [
         "UU_27_2022__AYAT_1__PASAL_57",
         "UU_27_2022__AYAT_2__PASAL_57",
@@ -3855,13 +3880,46 @@
       "component_type": "AYAT",
       "number": "5",
       "title": null,
-      "content": "Ketentuan lebih lanjut mengenai tata cara pengenaan\nsanksi administratif selagaimana dimaksud pada\nayat (3) diatur dalam Peraturan Pemerintah.\nBAB IX. . .\nSK No 155226A\nFRESIDEN\nUALIK INDONES BAB Ix\nKELEMBAGAAN",
+      "content": "Ketentuan lebih lanjut mengenai tata cara pengenaan\nsanksi administratif selagaimana dimaksud pada\nayat (3) diatur dalam Peraturan Pemerintah.",
       "page_range": [
         25,
-        26
+        25
       ],
       "parent_id": "UU_27_2022__PASAL_57",
       "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "UU_27_2022__BAB_IX",
+      "component_type": "BAB",
+      "number": "IX",
+      "title": "SK No 155226A FRESIDEN",
+      "content": "",
+      "page_range": [
+        25,
+        25
+      ],
+      "parent_id": null,
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "UU_27_2022__BAB_IX",
+      "component_type": "BAB",
+      "number": "IX",
+      "title": "KELEMBAGAAN",
+      "content": "",
+      "page_range": [
+        26,
+        26
+      ],
+      "parent_id": null,
+      "children": [
+        "UU_27_2022__PASAL_58",
+        "UU_27_2022__PASAL_59",
+        "UU_27_2022__PASAL_60",
+        "UU_27_2022__PASAL_61"
+      ],
       "is_penjelasan": false
     },
     {
@@ -3874,7 +3932,7 @@
         26,
         26
       ],
-      "parent_id": "UU_27_2022__BAGIAN_Kedua__BAB_VII",
+      "parent_id": "UU_27_2022__BAB_IX",
       "children": [
         "UU_27_2022__AYAT_1__PASAL_58",
         "UU_27_2022__AYAT_2__PASAL_58",
@@ -3964,7 +4022,7 @@
         26,
         26
       ],
-      "parent_id": "UU_27_2022__BAGIAN_Kedua__BAB_VII",
+      "parent_id": "UU_27_2022__BAB_IX",
       "children": [
         "UU_27_2022__HURUF_a__PASAL_59",
         "UU_27_2022__HURUF_b__PASAL_59",
@@ -4039,7 +4097,7 @@
         26,
         26
       ],
-      "parent_id": "UU_27_2022__BAGIAN_Kedua__BAB_VII",
+      "parent_id": "UU_27_2022__BAB_IX",
       "children": [
         "UU_27_2022__HURUF_b__PASAL_60",
         "UU_27_2022__HURUF_c__PASAL_60",
@@ -4249,7 +4307,7 @@
         28,
         28
       ],
-      "parent_id": "UU_27_2022__BAGIAN_Kedua__BAB_VII",
+      "parent_id": "UU_27_2022__BAB_IX",
       "children": [],
       "is_penjelasan": false
     },
@@ -4326,8 +4384,7 @@
       ],
       "parent_id": null,
       "children": [
-        "UU_27_2022__PASAL_63",
-        "UU_27_2022__PASAL_64"
+        "UU_27_2022__PASAL_63"
       ],
       "is_penjelasan": false
     },
@@ -4367,13 +4424,43 @@
       "component_type": "AYAT",
       "number": "2",
       "title": null,
-      "content": "Pelaksanaan peran sebagaimana dimaksud pada\nayat (1) dapat dilakukan melalui pendidikan,\npelatihan, advokasi, sssialis4si, dan/ atau pengawasan\nsesuai dengan ketentuan peraturan perundang-\nundangan.\nSK No 155229 A\nBABxII ...\nFRESIDEN\nREPUBLIK INDONESIA BAB xII\nPEI{YELESAI,AN SENGKETA DAN HUKUM ACARA",
+      "content": "Pelaksanaan peran sebagaimana dimaksud pada\nayat (1) dapat dilakukan melalui pendidikan,\npelatihan, advokasi, sssialis4si, dan/ atau pengawasan\nsesuai dengan ketentuan peraturan perundang-\nundangan.\nSK No 155229 A",
       "page_range": [
         28,
-        29
+        28
       ],
       "parent_id": "UU_27_2022__PASAL_63",
       "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "UU_27_2022__BAB_XII",
+      "component_type": "BAB",
+      "number": "XII",
+      "title": "FRESIDEN",
+      "content": "",
+      "page_range": [
+        28,
+        28
+      ],
+      "parent_id": null,
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "UU_27_2022__BAB_XII",
+      "component_type": "BAB",
+      "number": "XII",
+      "title": "PEI{YELESAI,AN SENGKETA DAN HUKUM ACARA",
+      "content": "",
+      "page_range": [
+        29,
+        29
+      ],
+      "parent_id": null,
+      "children": [
+        "UU_27_2022__PASAL_64"
+      ],
       "is_penjelasan": false
     },
     {
@@ -4386,7 +4473,7 @@
         29,
         29
       ],
-      "parent_id": "UU_27_2022__BAB_xI",
+      "parent_id": "UU_27_2022__BAB_XII",
       "children": [
         "UU_27_2022__AYAT_1__PASAL_64"
       ],

@@ -206,5 +206,16 @@
         "description": "Merujuk UU Telekomunikasi"
       }
     ]
+  },
+  {
+    "doc_id": "POJK_11_2022",
+    "filename": "POJK 11 - 03 - 2022.pdf",
+    "type": "POJK",
+    "number": "11",
+    "year": 2022,
+    "title": "Penyelenggaraan Teknologi Informasi oleh Bank Umum",
+    "short_name": "POJK TI Bank Umum",
+    "status": "berlaku",
+    "relations": []
   }
 ]

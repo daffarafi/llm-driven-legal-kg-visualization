@@ -48,3 +48,6 @@ _agent/
 # Misc
 *.log
 .cache/
+
+.vercel
+.env*.local

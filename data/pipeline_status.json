@@ -88,5 +88,14 @@
     "updated_at": "2026-04-05T18:34:10.356910",
     "nodes": 0,
     "edges": 0
+  },
+  "POJK_11_2022": {
+    "step": 9,
+    "step_name": "load_neo4j",
+    "status": "complete",
+    "last_error": null,
+    "updated_at": "2026-05-17T13:10:00.831347",
+    "nodes": 1550,
+    "edges": 2545
   }
 }

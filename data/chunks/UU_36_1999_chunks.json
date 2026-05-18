@@ -1,13 +1,13 @@
 {
   "document_id": "UU_36_1999",
-  "total_chunks": 18,
+  "total_chunks": 23,
   "chunking_strategy": "structure_aware",
   "chunks": [
     {
       "chunk_id": "UU_36_1999__struct_chunk_000",
       "document_id": "UU_36_1999",
-      "text": "[DOKUMEN: ]\n[BAGIAN: PEMBUKAAN]\n---\nbahwa\ntujuan\npembangunan\nnasional\nadalah\nmewujudkan\nmasyarakat adil dan makmur yang merata meteriil dan spiritual\nberdasarkan Pancasila dan Undang-Undang Dasar 1945;\n\nbahwa penyelenggaraan telekomunikasi mempunyai arti strategis\ndalam\nupaya\nmemperkukuh\npersatuan\ndan\nkesatuan\nbangsa,\nmemperlancar kegiatan pemerintahan, mendukung terciptanya tujuan\npemerataan pembangunan dan hasil-hasilnya, serta meningkatkan\nhubungan antar bangsa;\n\nbahwa\npengaruh\nglobalisasi\ndan\nperkembangan\nteknologi\ntelekomukasi yang sangat pesat telah mengakibatkan perubahan yang\nmendasar\ndalam penyelenggaraan\ndan\ncara\npandang terhadap\ntelekomunikasi;\n\nbahwa segala sesuatu yang berkaitan dengan perubahan mendasar\ndalam penyelenggaraan dan cara pandang terhadap telekomunikasi\ntersebut,\nperlu\ndilakukan\npenataan\ndan\npengaturan\nkembali\npenyelenggaraan telekomunikasi nasional;\n\nbahwa\nsehubungan\ndengan\nhal-hal\ntersebut\ndi\natas,\nmaka\nUndang-Undang Nomor 3 Tahun 1989 tentang Telekomunikasi\ndipandang tidak sesuai lagi, sehingga perlu diganti.\nMengingat\n:\nPasal 5 ayat (1), Pasal 20 ayat (1) dan Pasal 33 Undang-Undang Dasar\n1945;\nDengan persetujuan\nDEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA\nMEMUTUSKAN :\nMenetapkan :\nUNDANG-UNDANG TENTANG TELEKOMUNIKASI.\nPRESIDEN\nREPUBLIK INDONESIA BAB I\nKETENTUAN UMUM\n\nDalam Undang-undang ini yang dimaksud dengan:",
-      "token_count": 502,
+      "text": "[DOKUMEN: ]\n[BAGIAN: PEMBUKAAN]\n---\nbahwa\ntujuan\npembangunan\nnasional\nadalah\nmewujudkan\nmasyarakat adil dan makmur yang merata meteriil dan spiritual\nberdasarkan Pancasila dan Undang-Undang Dasar 1945;\n\nbahwa penyelenggaraan telekomunikasi mempunyai arti strategis\ndalam\nupaya\nmemperkukuh\npersatuan\ndan\nkesatuan\nbangsa,\nmemperlancar kegiatan pemerintahan, mendukung terciptanya tujuan\npemerataan pembangunan dan hasil-hasilnya, serta meningkatkan\nhubungan antar bangsa;\n\nbahwa\npengaruh\nglobalisasi\ndan\nperkembangan\nteknologi\ntelekomukasi yang sangat pesat telah mengakibatkan perubahan yang\nmendasar\ndalam penyelenggaraan\ndan\ncara\npandang terhadap\ntelekomunikasi;\n\nbahwa segala sesuatu yang berkaitan dengan perubahan mendasar\ndalam penyelenggaraan dan cara pandang terhadap telekomunikasi\ntersebut,\nperlu\ndilakukan\npenataan\ndan\npengaturan\nkembali\npenyelenggaraan telekomunikasi nasional;\n\nbahwa\nsehubungan\ndengan\nhal-hal\ntersebut\ndi\natas,\nmaka\nUndang-Undang Nomor 3 Tahun 1989 tentang Telekomunikasi\ndipandang tidak sesuai lagi, sehingga perlu diganti.\nMengingat\n:\nPasal 5 ayat (1), Pasal 20 ayat (1) dan Pasal 33 Undang-Undang Dasar\n1945;\nDengan persetujuan\nDEWAN PERWAKILAN RAKYAT REPUBLIK INDONESIA\nMEMUTUSKAN :\nMenetapkan :\nUNDANG-UNDANG TENTANG TELEKOMUNIKASI.\nPRESIDEN",
+      "token_count": 470,
       "page_range": [],
       "parent_component_id": "",
       "parent_component_type": "PREAMBLE",
@@ -16,6 +16,18 @@
     {
       "chunk_id": "UU_36_1999__struct_chunk_000",
       "document_id": "UU_36_1999",
+      "text": "[DOKUMEN: ]\n[BAB: BAB I KETENTUAN UMUM]\n---\n\n\nPasal 1\nDalam Undang-undang ini yang dimaksud dengan:\n1. Telekomunikasi adalah setiap pemancaran, pengiriman dan atau\npenerimaan dari hasil informasi dalam bentuk tanda-tanda, isyarat,\ntulisan, gambar, suara dan bunyi melalui sistem kawat, optik, radio,\natau sistem elektromagnetik lainnya;\n2. Alat telekomunikasi adalah setiap alat perlengkapan yang digunakan\ndalam bertelekomunikasi;\n3. Perangkat telekomunikasi adalah sekelompok alat telekomunikasi\nyang memungkinkan bertelekomunikasi;\n4. Sarana dan prasarana telekomunikasi adalah segala sesuatu yang\nmemungkinkan dan mendukung berfungsinya telekomunikasi;\n5. Pemancar radio adalah alat telekomunikasi yang menggunakan dan\nmemancarkan gelombang radio;\n6. Jaringan\ntelekomunikasi\nadalah\nrangkaian\ntelekomunikasi\ndan\nkelengkapannya yang digunakan dalam bertelekomunikasi;\n7. Jasa telekomunikasi adalah layanan telekomunikasi untuk memenuhi\nkebutuhan\nbertelekomunikasi\ndengan\nmenggunakan\njaringan\ntelekomunikasi;\n8. Penyelanggara telekomunikasi adalah perseroan, koperasi, Badan\nUsaha Milik Daerah (BUMD), Badan Usaha Milik Negara (BUMN),\nbadan usaha swasta, instansi pemerintah, dan instansi pertahanan\nkeamanan negara;\n9. Pelanggan adalah perseorangan, badan hukum, instansi pemerintah\nyang\nmenggunakan\njaringan\ntelekomunikasi\ndan\natau\njasa\ntelekomunikasi berdasarkan kontrak;\n10.Pemakai adalah perseorangan, badan hukum, instansi pemerintah\nyang\nmenggunakan\njaringan\ntelekomunikasi\ndan\natau\njasa\ntelekomunikasi yang tidak berdasarkan kontrak;\n11.Pengguna adalah pelanggan dan pemakai;\n12.Penyelenggaraan telekomunikasi adalah kegiatan penyediaan dan\npelayanan telekomunikasi sehingga memungkinkan terselenggaranya\ntelekomunikasi;\n13.Penyelenggaraan\njaringan\ntelekomunikasi\nadalah\nkegiatan\npenyediaan\ndan\natau\npelayanan\njasa\ntelekomunikasi\nyang\nmemungkinkan terselenggaranya telekomunikasi;\nPRESIDEN\nREPUBLIK INDONESIA 14.Penyelenggaraan jasa telekomunikasi adalah kegiatan penyediaan\ndan\natau\npelayanan\njasa\ntelekomunikasi\nyang\nmemungkinkan\nterselenggaranya telekomunikasi;\n15.Penyelenggaraan telekomunikasi khusus adalah penyelenggaraan\ntelekomunikasi\nyang\nsifat,\nperuntukan,\ndan\npengoperasiannya\nkhusus;\n16.Interkoneksi adalah keterhubungan antar jaringan telekomunikasi\ndari penyelenggara jaringan telekomunikasi yang berbeda;\n17.Menteri\nadalah\nMenteri\nyang\nruang\nlingkup\ntugas\ndan\ntanggungjawabnya di bidang telekomunikasi.",
+      "token_count": 825,
+      "page_range": [
+        2
+      ],
+      "parent_component_id": "UU_36_1999__BAB_I",
+      "parent_component_type": "BAB",
+      "chunk_index": 1
+    },
+    {
+      "chunk_id": "UU_36_1999__struct_chunk_001",
+      "document_id": "UU_36_1999",
       "text": "[DOKUMEN: ]\n[BAB: BAB II ASAS DAN TUJUAN]\n---\nPasal 2\nTelekomunikasi diselenggarakan berdasarkan asas manfaat, adil dan\nmerata, kepastian hukum, keamanan, kemitraan, etika dan kepercayaan\npada diri sendiri.\n\nPasal 3\nTelekomunikasi diselenggarakan dengan tujuan untuk mendukung\npersatuan\ndan\nkesatuan\nbangsa,\nmeningkatkan kesejahteraan dan\nkemakmuran rakyat secara adil dan merata, mendukung kehidupan\nekonomi dan kegiatan pemerintahan, serta meningkatkan hubungan\nantarbangsa.",
       "token_count": 173,
       "page_range": [
@@ -23,10 +35,10 @@
       ],
       "parent_component_id": "UU_36_1999__BAB_II",
       "parent_component_type": "BAB",
-      "chunk_index": 1
+      "chunk_index": 2
     },
     {
-      "chunk_id": "UU_36_1999__struct_chunk_001",
+      "chunk_id": "UU_36_1999__struct_chunk_002",
       "document_id": "UU_36_1999",
       "text": "[DOKUMEN: ]\n[BAB: BAB III PEMBINAAN]\n---\nPasal 4\n(1) Telekomunikasi dikuasai oleh Negara dan pembinaannya dilakukan\noleh Pemerintah.\n(2) Pembinaan\ntelekomunikasi\ndiarahkan\nuntuk\nmeningkatkan\npenyelenggaraan telekomunikasi yang meliputi penetapan kebijakan,\npengaturan, pengawasan dan pengendalian.\n(3) Dalam\npenetapan\nkebijakan,\npengaturan,\npengawasan\ndan\npengendalian di bidang telekomunikasi, sebagaimana dimaksud pada\nayat\n(2),\ndilakukan\nsecara\nmenyeluruh\ndan\nterpadu\ndengan\nmemperhatikan pemikiran dan pandangan yang berkembang dalam\nmasyarakat serta perkembangan global.\nPRESIDEN\nREPUBLIK INDONESIA Pasal 5\n(1) Dalam rangka pelaksanan pembinaan telekomunikasi sebagaimana\ndimaksud dalam Pasal 4, Pemerintahan melibatkan peran serta\nmasyarakat.\n(2) Peran serta masyarakat sebagaimana dimaksud pada ayat (1), berupa\npenyampaian pemikiran dan pandangan yang berkembang dalam\nmasyarakat\nmengenai\narah\npengembangan\npertelekomunikasian\ndalam rangka penetapan kebijakan, pengaturan, pengendalian dan\npengawasan di bidang telekomunikasi.\n(3) Pelaksanaan peran serta masyarakat sebagaimana dimaksud pada\nayat (2), diselenggarakan oleh lembaga mandiri yang dibentuk untuk\nmaksud tersebut.\n(4) Lembaga sebagaimana dimaksud pada ayat (3) keanggotaannya\nterdiri dari asosiasi yang bergerak di bidang usaha telekomunikasi,\nasosiasi\nprofesi\nkomunikasi,\nasosiasi\nprodusen\nperalatan\ntelekomunikasi, asosiasi pengguna jaringan, dan jasa telekomunikasi\nintelektual di bidang telekomunikasi.\n(5) Ketentuan\nmengenai\ntata\ncara\nperan\nserta\nmasyarakat\ndan\npembetulan lembaga sebagaimana dimaksud pada ayat (3) diatur\ndengan Peraturan Pemerintah.\n\nPasal 6\nMenteri\nbertindak\nsebagai\npenanggung\njawab\nadministrasi\ntelekomunikasi Indonesia.",
       "token_count": 601,
@@ -36,10 +48,10 @@
       ],
       "parent_component_id": "UU_36_1999__BAB_III",
       "parent_component_type": "BAB",
-      "chunk_index": 2
+      "chunk_index": 3
     },
     {
-      "chunk_id": "UU_36_1999__struct_chunk_002",
+      "chunk_id": "UU_36_1999__struct_chunk_003",
       "document_id": "UU_36_1999",
       "text": "[DOKUMEN: ]\n[BAB: BAB IV PENYELENGGARAAN Bagian Pertama]\n---\nPasal 7\n(1) Penyelenggaraan telekomunikasi meliputi :",
       "token_count": 47,
@@ -48,10 +60,10 @@
       ],
       "parent_component_id": "UU_36_1999__BAB_IV",
       "parent_component_type": "BAB",
-      "chunk_index": 3
+      "chunk_index": 4
     },
     {
-      "chunk_id": "UU_36_1999__struct_chunk_003",
+      "chunk_id": "UU_36_1999__struct_chunk_004",
       "document_id": "UU_36_1999",
       "text": "[DOKUMEN: ]\n[BAB: BAB IV PENYELENGGARAAN Bagian Pertama]\n[BAGIAN: Bagian Kedua Penyelenggara]\n---\nPasal 8\n(1) Penyelenggaraan jaringan telekomunikasi dan atau penyelenggaraan\njasa telekomunikasi sebagaimana dimaksud dalam Pasal 7 ayat (1)\nhuruf a dan huruf b, dapat dilakukan oleh badan hukum yang\ndidirikan\nuntuk\nmaksud\ntersebut\nberdasarkan\nperaturan\nperundang-undangan yang berlaku, yaitu :\n(2) Penyelenggaraan telekomunikasi khusus sebagaimana dimaksud\ndalam Pasal 7 ayat (1) huruf c, dapat dilakukan oleh :\n(3) Ketentuan mengenai penyelenggaraan sebagaimana dimaksud pada\nayat (1) dan ayat (2) diatur dengan Peraturan Pemerintah.\n\nPasal 9\n(1) Penyelenggara\njaringan\ntelekomunikasi\nsebagaimana\ndimaksud\ndalam Pasal 8 ayat (1) dapat menyelenggarakan jasa telekomunikasi.\n(2) Penyelenggara jasa telekomunikasi sebagaimana dimaksud dalam\nPasal 8 ayat (1) dalam menyelenggarakan jasa telekomunikasi,\nmenggunakan dan atau menyewa jaringan telekomunikasi milik\npenyelenggara jaringan telekomunikasi.\n(3) Penyelenggara telekomunikasi khusus sebagaimana dimaksud dalam\nPasal 8 ayat (2), dapat menyelenggarakan telekomunikasi untuk :\nPRESIDEN\nREPUBLIK INDONESIA a. keperluan sendiri;\n(4) Penyelenggaraan telekomunikasi khusus sebagaimana dimaksud\npada ayat (3) huruf a, tersendiri dari penyelenggaraan telekomunikasi\nuntuk keperluan :\n(5) Ketentuan mengenai persyaratan penyelenggaraan telekomunikasi\nsebagaimana dimaksud pada ayat (1), ayat (2), ayat (3) dan ayat (4)\ndiatur dengan Peraturan Pemerintah.",
       "token_count": 565,
@@ -60,25 +72,13 @@
       ],
       "parent_component_id": "UU_36_1999__BAB_IV",
       "parent_component_type": "BAB",
-      "chunk_index": 4
-    },
-    {
-      "chunk_id": "UU_36_1999__struct_chunk_004",
-      "document_id": "UU_36_1999",
-      "text": "[DOKUMEN: ]\n[BAB: BAB IV PENYELENGGARAAN Bagian Pertama]\n[BAGIAN: Bagian Ketiga Larangan Praktek Monopoli]\n---\nPasal 10\n(1) Dalam\npenyelenggaraan\ntelekomunikasi\ndilarang\nmelakukan\nkegiatan yang dapat mengakibatkan terjadiya praktek monopoli dan\npersaingan\nusaha\ntidak\nsehat\ndi\nantara\npenyelenggara\ntelekomunikasi.\n(2) Larangan sebagaimana dimaksud pada ayat (1) sesuai dengan\nperaturan perundang-undangan yang berlaku.",
-      "token_count": 158,
-      "page_range": [
-        6
-      ],
-      "parent_component_id": "UU_36_1999__BAB_IV",
-      "parent_component_type": "BAB",
       "chunk_index": 5
     },
     {
       "chunk_id": "UU_36_1999__struct_chunk_005",
       "document_id": "UU_36_1999",
-      "text": "[DOKUMEN: ]\n[BAB: BAB IV PENYELENGGARAAN Bagian Pertama]\n[BAGIAN: Bagian Keempat Perizinan]\n---\nPasal 11\n(1) Penyelenggaraan telekomunikasi sebagaimana dalam Pasal 7 dapat\ndiselenggarakan setelah mendapat izin dari Menteri.\n(2) Izin\nsebagaimana\ndimaksud\npada\nayat\n(1)\ndiberikan\ndengan\nmemperhatikan :",
-      "token_count": 119,
+      "text": "[DOKUMEN: ]\n[BAB: BAB IV PENYELENGGARAAN Bagian Pertama]\n[BAGIAN: Bagian Ketiga Larangan Praktek Monopoli]\n---\nPasal 10\n(1) Dalam\npenyelenggaraan\ntelekomunikasi\ndilarang\nmelakukan\nkegiatan yang dapat mengakibatkan terjadiya praktek monopoli dan\npersaingan\nusaha\ntidak\nsehat\ndi\nantara\npenyelenggara\ntelekomunikasi.\n(2) Larangan sebagaimana dimaksud pada ayat (1) sesuai dengan\nperaturan perundang-undangan yang berlaku.",
+      "token_count": 158,
       "page_range": [
         6
       ],
@@ -89,12 +89,10 @@
     {
       "chunk_id": "UU_36_1999__struct_chunk_006",
       "document_id": "UU_36_1999",
-      "text": "[DOKUMEN: ]\n[BAB: BAB IV PENYELENGGARAAN Bagian Pertama]\n[BAGIAN: Bagian Kelima Hak dan Kewajiban Penyelenggara dan Masyarakat]\n---\nPasal 12\n(1) Dalam rangka pembangunan, pengoperasian, dan atau pemeliharaan\njaringan\ntelekomunikasi,\npenyelenggara\ntelekomunikasi\ndapat\nmemanfaatkan atau melintasi tanah negara dan atau bangunan yang\ndimiliki atau dikuasai Pemerintah.\n(2) Pemanfaatan atau pelintasan tanah negara dan atau bangunan\nsebagaimana dimaksud pada ayat (1), berlaku pula terhadap sungai,\ndanau, atau laut, baik permukaan maupun dasar.\n(3) Pembangunan,\npengoperasian\ndan\natau\npemeliharaan\njaringan\ntelekomunikasi sebagaimana dimaksud pada ayat (1), dilaksanakan\nsetelah mendapatkan persetujuan dari instansi pemerintah yang\nbertanggung\njawab\ndengan\nmemperhatikan\nperaturan\nperundang-undangan yang berlaku.\n\nPasal 13\nPenyelenggara telekomunikasi dapat memanfaatkan atau melintasi tanah\ndan atau bangunan milik perseorangan untuk tujuan pembangunan,\npengoperasian\natau\npemeliharaan\njaringan\ntelekomunikasi\nsetelah\nterdapat persetujuan di antara para pihak.\n\nPasal 14\nSetiap pengguna telekomunikasi mempunyai hak yang sama untuk\nmenggunakan jaringan telekomunikasi dan jasa telekomunikasi dengan\nmemperhatikan peraturan perundang-undangan yang berlaku.\n\nPasal 15\n(1) Atas kesalahan dan atau kelalaian penyelenggara telekomunikasi\nyang menimbulkan kerugian, maka pihak-pihak yang dirugikan\nberhak mengajukan tuntutan ganti rugi kepada penyelenggara\ntelekomunikasi.\nPRESIDEN\nREPUBLIK INDONESIA (2) Penyelenggara\ntelekomunikasi\nwajib\nmemberikan\nganti\nrugi\nsebagaimana\ndimaksud\npada\nayat\n(1),\nkecuali\npenyelenggara\ntelekomunikasi dapat membuktikan bahwa kerugian tersebut bukan\ndiakibatkan oleh kesalahan dan atau kelalainnya.\n(3) Ketentuan mengenai tata cara pengajuan dan penyelesaian ganti rugi\nsebagaimana dimaksud pada ayat (1) dan ayat (2) diatur dengan\nPeraturan Pemerintah.\n\nPasal 16\n(1) Setiap\npenyelenggara\njaringan\ntelekomunikasi\ndan\natau\npenyelenggara jasa telekomunikasi wajib memberikan kontribusi\ndalam pelayanan universal.\n(2) Kontribusi pelayanan universal sebagaimana dimaksud pada ayat (1)\nberbentuk penyediaan sarana dan prasarana telekomunikasi dan atau\nkompensasi lain.\n(3) Ketentuan kontribusi pelayanan universal sebagaimana dimaksud\npada ayat (2) diatur dengan Peraturan Pemerintah.\n\nPasal 17\nPenyelenggaraan jaringan telekomunikasi dan atau penyelenggaraan jasa\ntelekomunikasi\nwajib\nmenyediakan\npelayanan\ntelekomunikasi\nberdasarkan prinsip :\na. perlakuan yang sama dan pelayanan yang sebaik-baiknya bagi semua\npengguna;\nb. peningkatan efisiensi dalam penyelenggaraan telekomunikasi; dan\nc. pemenuhan standar pelayanan serta standar penyediaan sarana dan\nprasarana.\n\nPasal 18\n(1) Penyelenggara jasa telekomunikasi wajib mencatat/merekam secara\nrinci pemakaian jasa telekomunikasi yang digunakan oleh pengguna\ntelekomunikasi.\n(2) Apabila pengguna memerlukan catatan/rekaman pemakaian jasa\ntelekomunikasi sebagaimana dimaksud pada ayat (1), penyelenggara\ntelekomunikasi wajib memberikannya.\n(3) Ketentuan\nmengenai\npencatatan/perekaman\npemakaian\njasa\ntelekomunikasi sebagaimana dimaksud pada ayat (1) diatur dengan\nPeraturan Pemerintah.\nPRESIDEN\nREPUBLIK INDONESIA Pasal 19\nPenyelenggara jaringan telekomunikasi wajib menjamin kebebasan\npenggunanya memilih jaringan telekomunikasi lain untuk pemenuhan\nkebutuhan telekomunikasi.\n\nPasal 20\nSetiap penyelenggara telekomunikasi wajib memberikan prioritas untuk\npengiriman, penyaluran dan penyampaian informasi penting yang\nmenyangkut :\na. keamanan negara;\nb. keselamatan jiwa manusia dan harta benda;\nc. bencana alam;\nd. marabahaya; dan atau\ne. wabah penyakit;\n\nPasal 21\nPenyelenggara telekomunikasi dilarang melakukan kegiatan usaha\npenyelenggaraan telekomunikasi yang bertentangan dengan kepentingan\numum, kesusilaan, keamanan atau ketertiban umum.\n\nPasal 22\nSetiap orang dilarang melakukan perbuatan tanpa hak, tidak sah atau\nmemanipulasi :\na. akses ke jaringan telekomunikasi; dan atau\nb. akses ke jasa telekomunikasi; dan atau\nc. akses ke jaringan telekomunikasi khusus.",
-      "token_count": 1415,
+      "text": "[DOKUMEN: ]\n[BAB: BAB IV PENYELENGGARAAN Bagian Pertama]\n[BAGIAN: Bagian Keempat Perizinan]\n---\nPasal 11\n(1) Penyelenggaraan telekomunikasi sebagaimana dalam Pasal 7 dapat\ndiselenggarakan setelah mendapat izin dari Menteri.\n(2) Izin\nsebagaimana\ndimaksud\npada\nayat\n(1)\ndiberikan\ndengan\nmemperhatikan :",
+      "token_count": 119,
       "page_range": [
-        7,
-        8,
-        9
+        6
       ],
       "parent_component_id": "UU_36_1999__BAB_IV",
       "parent_component_type": "BAB",
@@ -102,6 +100,31 @@
     },
     {
       "chunk_id": "UU_36_1999__struct_chunk_007",
+      "document_id": "UU_36_1999",
+      "text": "[DOKUMEN: ]\n[BAB: BAB IV PENYELENGGARAAN Bagian Pertama]\n[BAGIAN: Bagian Kelima Hak dan Kewajiban Penyelenggara dan Masyarakat]\n---\n\n\nPasal 12\n(1) Dalam rangka pembangunan, pengoperasian, dan atau pemeliharaan\njaringan\ntelekomunikasi,\npenyelenggara\ntelekomunikasi\ndapat\nmemanfaatkan atau melintasi tanah negara dan atau bangunan yang\ndimiliki atau dikuasai Pemerintah.\n(2) Pemanfaatan atau pelintasan tanah negara dan atau bangunan\nsebagaimana dimaksud pada ayat (1), berlaku pula terhadap sungai,\ndanau, atau laut, baik permukaan maupun dasar.\n(3) Pembangunan,\npengoperasian\ndan\natau\npemeliharaan\njaringan\ntelekomunikasi sebagaimana dimaksud pada ayat (1), dilaksanakan\nsetelah mendapatkan persetujuan dari instansi pemerintah yang\nbertanggung\njawab\ndengan\nmemperhatikan\nperaturan\nperundang-undangan yang berlaku.\n\nPasal 13\nPenyelenggara telekomunikasi dapat memanfaatkan atau melintasi tanah\ndan atau bangunan milik perseorangan untuk tujuan pembangunan,\npengoperasian\natau\npemeliharaan\njaringan\ntelekomunikasi\nsetelah\nterdapat persetujuan di antara para pihak.\n\nPasal 14\nSetiap pengguna telekomunikasi mempunyai hak yang sama untuk\nmenggunakan jaringan telekomunikasi dan jasa telekomunikasi dengan\nmemperhatikan peraturan perundang-undangan yang berlaku.\n\nPasal 15\n(1) Atas kesalahan dan atau kelalaian penyelenggara telekomunikasi\nyang menimbulkan kerugian, maka pihak-pihak yang dirugikan\nberhak mengajukan tuntutan ganti rugi kepada penyelenggara\ntelekomunikasi.\nPRESIDEN\nREPUBLIK INDONESIA (2) Penyelenggara\ntelekomunikasi\nwajib\nmemberikan\nganti\nrugi\nsebagaimana\ndimaksud\npada\nayat\n(1),\nkecuali\npenyelenggara\ntelekomunikasi dapat membuktikan bahwa kerugian tersebut bukan\ndiakibatkan oleh kesalahan dan atau kelalainnya.\n(3) Ketentuan mengenai tata cara pengajuan dan penyelesaian ganti rugi\nsebagaimana dimaksud pada ayat (1) dan ayat (2) diatur dengan\nPeraturan Pemerintah.",
+      "token_count": 667,
+      "page_range": [
+        7
+      ],
+      "parent_component_id": "UU_36_1999__BAB_IV",
+      "parent_component_type": "BAB",
+      "chunk_index": 8
+    },
+    {
+      "chunk_id": "UU_36_1999__struct_chunk_008",
+      "document_id": "UU_36_1999",
+      "text": "[DOKUMEN: ]\n[BAB: BAB IV PENYELENGGARAAN Bagian Pertama]\n[BAGIAN: Bagian Kelima Hak dan Kewajiban Penyelenggara dan Masyarakat]\n---\n\n\nPasal 16\n(1) Setiap\npenyelenggara\njaringan\ntelekomunikasi\ndan\natau\npenyelenggara jasa telekomunikasi wajib memberikan kontribusi\ndalam pelayanan universal.\n(2) Kontribusi pelayanan universal sebagaimana dimaksud pada ayat (1)\nberbentuk penyediaan sarana dan prasarana telekomunikasi dan atau\nkompensasi lain.\n(3) Ketentuan kontribusi pelayanan universal sebagaimana dimaksud\npada ayat (2) diatur dengan Peraturan Pemerintah.\n\nPasal 17\nPenyelenggaraan jaringan telekomunikasi dan atau penyelenggaraan jasa\ntelekomunikasi\nwajib\nmenyediakan\npelayanan\ntelekomunikasi\nberdasarkan prinsip :\na. perlakuan yang sama dan pelayanan yang sebaik-baiknya bagi semua\npengguna;\nb. peningkatan efisiensi dalam penyelenggaraan telekomunikasi; dan\nc. pemenuhan standar pelayanan serta standar penyediaan sarana dan\nprasarana.\n\nPasal 18\n(1) Penyelenggara jasa telekomunikasi wajib mencatat/merekam secara\nrinci pemakaian jasa telekomunikasi yang digunakan oleh pengguna\ntelekomunikasi.\n(2) Apabila pengguna memerlukan catatan/rekaman pemakaian jasa\ntelekomunikasi sebagaimana dimaksud pada ayat (1), penyelenggara\ntelekomunikasi wajib memberikannya.\n(3) Ketentuan\nmengenai\npencatatan/perekaman\npemakaian\njasa\ntelekomunikasi sebagaimana dimaksud pada ayat (1) diatur dengan\nPeraturan Pemerintah.\nPRESIDEN\nREPUBLIK INDONESIA Pasal 19\nPenyelenggara jaringan telekomunikasi wajib menjamin kebebasan\npenggunanya memilih jaringan telekomunikasi lain untuk pemenuhan\nkebutuhan telekomunikasi.\n\nPasal 20\nSetiap penyelenggara telekomunikasi wajib memberikan prioritas untuk\npengiriman, penyaluran dan penyampaian informasi penting yang\nmenyangkut :\na. keamanan negara;\nb. keselamatan jiwa manusia dan harta benda;\nc. bencana alam;\nd. marabahaya; dan atau\ne. wabah penyakit;\n\nPasal 21\nPenyelenggara telekomunikasi dilarang melakukan kegiatan usaha\npenyelenggaraan telekomunikasi yang bertentangan dengan kepentingan\numum, kesusilaan, keamanan atau ketertiban umum.\n\nPasal 22\nSetiap orang dilarang melakukan perbuatan tanpa hak, tidak sah atau\nmemanipulasi :\na. akses ke jaringan telekomunikasi; dan atau\nb. akses ke jasa telekomunikasi; dan atau\nc. akses ke jaringan telekomunikasi khusus.",
+      "token_count": 798,
+      "page_range": [
+        8,
+        9
+      ],
+      "parent_component_id": "UU_36_1999__BAB_IV",
+      "parent_component_type": "BAB",
+      "chunk_index": 9
+    },
+    {
+      "chunk_id": "UU_36_1999__struct_chunk_009",
       "document_id": "UU_36_1999",
       "text": "[DOKUMEN: ]\n[BAB: BAB IV PENYELENGGARAAN Bagian Pertama]\n[BAGIAN: Bagian Keenam Penomoran]\n---\nPasal 23\n(1)\nDalam\npenyelenggaraan\njaringan\ntelekomunikasi\ndan\njasa\ntelekomunikasi ditetapkan dan digunakan sistem penomoran.\n(2)\nSistem\npenomoran\nsebagaimana\ndimaksud\npada\nayat\n(1)\nditetapkan oleh Menteri.\nPRESIDEN\nREPUBLIK INDONESIA Pasal 24\nPermintaan penomoran oleh penyelenggara jaringan telekomunikasi dan\natau penyelenggara jasa telekomunikasi diberikan berdasarkan sistem\npenomoran sebagaimana dimaksud dalam Pasal 23.",
       "token_count": 197,
@@ -111,10 +134,10 @@
       ],
       "parent_component_id": "UU_36_1999__BAB_IV",
       "parent_component_type": "BAB",
-      "chunk_index": 8
+      "chunk_index": 10
     },
     {
-      "chunk_id": "UU_36_1999__struct_chunk_008",
+      "chunk_id": "UU_36_1999__struct_chunk_010",
       "document_id": "UU_36_1999",
       "text": "[DOKUMEN: ]\n[BAB: BAB IV PENYELENGGARAAN Bagian Pertama]\n[BAGIAN: Bagian Ketujuh Interkoneksi dan Biaya Hak Penyelenggaraan]\n---\nPasal 25\n(1) Setiap\npenyelenggara\njaringan\ntelekomunikasi\nberhak\nuntuk\nmendapatkan\ninterkoneksi\ndari\npenyelenggara\njaringan\ntelekomunikasi lainnya.\n(2) Setiap penyelenggara jaringan telekomunikasi wajib menyediakan\ninterkoneksi\napabila\ndiminta\noleh\npenyelenggara\njaringan\ntelekomunikasi lainnya.\n(3) Pelaksanaan hak dan kewajiban sebagaimana dimaksud pada yat (1)\ndan ayat (2) dilakukan berdasarkan prinsip :\n(4) Ketentuan mengenai interkoneksi jaringan telekomunikasi, hak dan\nkewajiban sebagaimana dimaksud pada ayat (1), ayat (2) dan ayat (3)\ndiatur dengan Peraturan Pemerintah.\n\nPasal 26\n(1) Setiap\npenyelenggara\njaringan\ntelekomunikasi\ndan\natau\npenyelenggara jasa telekomunikasi wajib membayar biaya hak\npenyelenggaraan\ntelekomunikasi\nyang\ndiambil\ndari\nprosentase\npendapatan.\n(2) Ketentuan mengenai biaya hak penyelenggaraan telekomunikasi\nsebagaimana dimaksud pada ayat (1) diatur dengan Peraturan\nPemerintah.\nPRESIDEN\nREPUBLIK INDONESIA Bagian Kedelapan\nTarif\n\nPasal 27\nSusunan tarif penyelenggaraan jaringan telekomunikasi dan atau tarif\npenyelenggaraan\njasa\ntelekomunikasi\ndiatur\ndengan\nPeraturan\nPemerintah.\n\nPasal 28\nBesaran tarif penyelenggaraan jaringan telekomunikasi dan atau jasa\ntelekomunikasi ditetapkan oleh penyelenggara jaringan telekomunikasi\ndan\natau\njasa telekomunikasi dengan berdasarkan formula yang\nditetapkan oleh Pemerintah.",
       "token_count": 552,
@@ -124,10 +147,10 @@
       ],
       "parent_component_id": "UU_36_1999__BAB_IV",
       "parent_component_type": "BAB",
-      "chunk_index": 9
+      "chunk_index": 11
     },
     {
-      "chunk_id": "UU_36_1999__struct_chunk_009",
+      "chunk_id": "UU_36_1999__struct_chunk_011",
       "document_id": "UU_36_1999",
       "text": "[DOKUMEN: ]\n[BAB: BAB IV PENYELENGGARAAN Bagian Pertama]\n[BAGIAN: Bagian Kesembilan Telekomunikasi Khusus]\n---\nPasal 29\n(1) Penyelenggaraan telekomunikasi khusus sebagaimana dimaksud\ndalam Pasal 9 ayat (3) huruf a dan huruf b, dilarang disambungkan\nke jaringan penyelenggara telekomunikasi lainnya.\n(2) Penyelenggaraan telekomunikasi khusus sebagaimana dimaksud\ndalam Pasal 9 ayat (3) huruf c, dapat disambungkan ke jaringan\npenyelenggara telekomunikasi lainnya sepanjang digunakan untuk\nkeperluan penyiaran.\n\nPasal 30\n(1) Dalam hal penyelenggaraan jaringan telekomunikasi dan atau\npenyelenggara jasa telekomunikasi belum dapat menyediakan akses\ndi daerah tertentu, maka penyelenggara telekomunikai khusus\nsebagaimana dimaksud dalam Pasal 9 ayat (3) huruf a, dapat\nmenyelenggarakan\njaringan\ntelekomunikasi\ndan\natau\njasa\ntelekomunikasi dan atau jasa telekomunikasi sebagaimana dimaksud\ndalam Pasal 7 ayat (1) huruf a dan huruf b setelah mendapat izin\nMenteri.\n(2) Dalam\nhal\npenyelenggara\njaringan\ntelekomunikasi\ndan\natau\npenyelenggara jasa telekomunikasi sudah dapat menyediakan akses\nPRESIDEN\nREPUBLIK INDONESIA di daerah sebagaimana dimaksud pada ayat (1), maka penyelenggara\ntelekomunikasi\nkhusus\ndimaksud\ntetap\ndapat\nmelakukan\npenyelenggaraan\njaringan\ntelekomunikasi\ndan\natau\njasa\ntelekomunikasi.\n(3) Syarat-syarat untuk mendapatkan izin sebagaimana dimaksud pada\nayat (1) diatur dengan Peraturan Pemerintah.\n\nPasal 31\n(1) Dalam\nkeadaan\npenyelenggara\ntelekomunikasi\nkhusus\nuntuk\nkeperluan pertahanan keamanan negara sebagaimana dimaksud\ndalam Pasal 9 ayat (3) huruf b belum atau tidak mampu mendukung\nkegiatannya, penyelenggara telekomunikasi khusus dimaksud dapat\nmenggunakan atau memanfaatkan jaringan telekomunikasi yang\ndimiliki dan atau digunakan oleh penyelenggara telekomunikasi\nlainnya.\n(2) Ketentuan lebih lanjut sebagaimana dimaksud pada ayat (1) diatur\ndengan Peraturan Pemerintah.",
       "token_count": 702,
@@ -137,24 +160,36 @@
       ],
       "parent_component_id": "UU_36_1999__BAB_IV",
       "parent_component_type": "BAB",
-      "chunk_index": 10
+      "chunk_index": 12
     },
     {
-      "chunk_id": "UU_36_1999__struct_chunk_010",
+      "chunk_id": "UU_36_1999__struct_chunk_012",
       "document_id": "UU_36_1999",
-      "text": "[DOKUMEN: ]\n[BAB: BAB IV PENYELENGGARAAN Bagian Pertama]\n[BAGIAN: Bagian Kesepuluh Perangkat Telekomunikasi Spektrum, Frekuensi Radio, dan Orbit Satelit]\n---\nPasal 32\n(1) Perangkat\ntelekomunikasi\nyang\ndiperdagangkan,\ndibuat,dirakit,\ndimasukkan dan atau digunakan di wilayah Republik Indonesia\nwajib memperhatikan persyaratan teknis dan berdasarkan izin sesuai\ndengan peraturan perundang-undangan yang berlaku.\n(2) Ketentuan mengenai persyaratan teknis perangkat telekomunikasi\nsebagaimana dimaksud pada ayat (1) diatur dengan Peraturan\nPemerintah.\n\nPasal 33\n(1) Penggunaan spektrum frekuensi radio dan orbit satelit wajib\nmendapatkan izin Pemerintah.\n(2) Penggunaan spektrum frekuensi radio dan orbit satelit harus sesuai\ndengan peruntukannya dan tidak saling mengganggu.\n(3) Pemerintah melakukan pengawasan dan pengendalian penggunaan\nspektrum frekuensi radio dan orbit satelit.\n(4) Ketentuan penggunaan spektrum frekuensi radio dan orbit satelit\nyang\ndigunakan\ndalam\npenyelenggaraan\ntelekomunikasi\ndiatur\ndengan Peraturan Pemerintah.\nPRESIDEN\nREPUBLIK INDONESIA Pasal 34\n(1) Pengguna\nspektrum\nfrekuensi\nradio\nwajib\nmembayar\nbiaya\npenggunaan, frekuensi yang besarannya didasarkan atas penggunaan\njenis dan lebar pita frekuensi.\n(2) Penggunaan orbit satelit wajib membayar biaya hak penggunaan\norbit satelit.\n(3) Ketentuan mengenai biaya sebagaimana dimaksud pada ayat (1) dan\nayat (2) diatur dengan Peraturan Pemerintah.\n\nPasal 35\n(1) Perangkat telekomunikasi yang digunakan oleh kapal berbendera\nasing dari dan ke wilayah perairan Indonesia dan atau yang\ndioperasikan\ndi\nwilayah\nperairan\nIndonesia,\ntidak\ndiwajibkan\nmemenuhi persyaratan teknis sebagaimana dimaksud dalam Pasal 32.\n(2) Spektrum frekuensi radio dilarang digunakan oleh kapal berbendera\nasing\nyang\nberada\ndi\nwilayah\nperairan\nIndonesia\ndi\nluar\nperuntukannya, kecuali :\n(3) Ketentuan\nmengenai\npenggunaan\nspektrum\nfrekuensi\nradio\nsebagaimana dimaksud pada ayat (2) diatur dengan Peraturan\nPemerintah.\n\nPasal 36\n(1) Perangkat telekomunikasi yang digunakan oleh pesawat udara sipil\nasing dari dan ke wilayah udara Indonesia diwajibkan memenuhi\npersyaratan teknis sebagaimana dimaksud dalam Pasal 32.\n(2) Spektrum frekuensi radio dilarang digunakan oleh pesawat udara\nsipil\nasing\ndari\ndan\nke\nwilayah\nudara\nIndonesia\ndi\nluar\nperuntukkannya, kecuali :\n(3) Ketentuan\nmengenai\npenggunaan\nspektrum\nfrekuensi\nradio\nsebagaimana dimaksud pada ayat (2) diatur dengan Peraturan\nPemerintah.\n\nPasal 37\nPemberian\nizin\npenggunaan\nperangkat\ntelekomunikasi\nyang\nmenggunakan spektrum frekuensi radio untuk perwakilan diplomatik di\nIndonesia dilakukan dengan memperhatikan asas timbal balik.",
-      "token_count": 925,
+      "text": "[DOKUMEN: ]\n[BAB: BAB IV PENYELENGGARAAN Bagian Pertama]\n[BAGIAN: Bagian Kesepuluh Perangkat Telekomunikasi Spektrum, Frekuensi Radio, dan Orbit Satelit]\n---\n\n\nPasal 32\n(1) Perangkat\ntelekomunikasi\nyang\ndiperdagangkan,\ndibuat,dirakit,\ndimasukkan dan atau digunakan di wilayah Republik Indonesia\nwajib memperhatikan persyaratan teknis dan berdasarkan izin sesuai\ndengan peraturan perundang-undangan yang berlaku.\n(2) Ketentuan mengenai persyaratan teknis perangkat telekomunikasi\nsebagaimana dimaksud pada ayat (1) diatur dengan Peraturan\nPemerintah.\n\nPasal 33\n(1) Penggunaan spektrum frekuensi radio dan orbit satelit wajib\nmendapatkan izin Pemerintah.\n(2) Penggunaan spektrum frekuensi radio dan orbit satelit harus sesuai\ndengan peruntukannya dan tidak saling mengganggu.\n(3) Pemerintah melakukan pengawasan dan pengendalian penggunaan\nspektrum frekuensi radio dan orbit satelit.\n(4) Ketentuan penggunaan spektrum frekuensi radio dan orbit satelit\nyang\ndigunakan\ndalam\npenyelenggaraan\ntelekomunikasi\ndiatur\ndengan Peraturan Pemerintah.\nPRESIDEN\nREPUBLIK INDONESIA Pasal 34\n(1) Pengguna\nspektrum\nfrekuensi\nradio\nwajib\nmembayar\nbiaya\npenggunaan, frekuensi yang besarannya didasarkan atas penggunaan\njenis dan lebar pita frekuensi.\n(2) Penggunaan orbit satelit wajib membayar biaya hak penggunaan\norbit satelit.\n(3) Ketentuan mengenai biaya sebagaimana dimaksud pada ayat (1) dan\nayat (2) diatur dengan Peraturan Pemerintah.\n\nPasal 35\n(1) Perangkat telekomunikasi yang digunakan oleh kapal berbendera\nasing dari dan ke wilayah perairan Indonesia dan atau yang\ndioperasikan\ndi\nwilayah\nperairan\nIndonesia,\ntidak\ndiwajibkan\nmemenuhi persyaratan teknis sebagaimana dimaksud dalam Pasal 32.\n(2) Spektrum frekuensi radio dilarang digunakan oleh kapal berbendera\nasing\nyang\nberada\ndi\nwilayah\nperairan\nIndonesia\ndi\nluar\nperuntukannya, kecuali :\n(3) Ketentuan\nmengenai\npenggunaan\nspektrum\nfrekuensi\nradio\nsebagaimana dimaksud pada ayat (2) diatur dengan Peraturan\nPemerintah.",
+      "token_count": 690,
       "page_range": [
         12,
+        13
+      ],
+      "parent_component_id": "UU_36_1999__BAB_IV",
+      "parent_component_type": "BAB",
+      "chunk_index": 13
+    },
+    {
+      "chunk_id": "UU_36_1999__struct_chunk_013",
+      "document_id": "UU_36_1999",
+      "text": "[DOKUMEN: ]\n[BAB: BAB IV PENYELENGGARAAN Bagian Pertama]\n[BAGIAN: Bagian Kesepuluh Perangkat Telekomunikasi Spektrum, Frekuensi Radio, dan Orbit Satelit]\n---\n\n\nPasal 36\n(1) Perangkat telekomunikasi yang digunakan oleh pesawat udara sipil\nasing dari dan ke wilayah udara Indonesia diwajibkan memenuhi\npersyaratan teknis sebagaimana dimaksud dalam Pasal 32.\n(2) Spektrum frekuensi radio dilarang digunakan oleh pesawat udara\nsipil\nasing\ndari\ndan\nke\nwilayah\nudara\nIndonesia\ndi\nluar\nperuntukkannya, kecuali :\n(3) Ketentuan\nmengenai\npenggunaan\nspektrum\nfrekuensi\nradio\nsebagaimana dimaksud pada ayat (2) diatur dengan Peraturan\nPemerintah.\n\nPasal 37\nPemberian\nizin\npenggunaan\nperangkat\ntelekomunikasi\nyang\nmenggunakan spektrum frekuensi radio untuk perwakilan diplomatik di\nIndonesia dilakukan dengan memperhatikan asas timbal balik.",
+      "token_count": 294,
+      "page_range": [
         13,
         14
       ],
       "parent_component_id": "UU_36_1999__BAB_IV",
       "parent_component_type": "BAB",
-      "chunk_index": 11
+      "chunk_index": 14
     },
     {
-      "chunk_id": "UU_36_1999__struct_chunk_011",
+      "chunk_id": "UU_36_1999__struct_chunk_014",
       "document_id": "UU_36_1999",
       "text": "[DOKUMEN: ]\n[BAB: BAB IV PENYELENGGARAAN Bagian Pertama]\n[BAGIAN: Bagian Kesebelas Pengamanan Telekomunikasi]\n---\nPasal 38\nSetiap orang dilarang melakukan perbuatan yang dapat menimbulkan\ngangguan\nfisik\ndan\nelektromagnetik\nterhadap\npenyelenggaraan\ntelekomunikasi.\n\nPasal 39\n(1) Penyelenggara telekomunikasi wajib melakukan pengamanan dan\nperlindungan terhadap instalasi dalam jaringan telekomunikasi yang\ndigunakan untuk penyelenggaraan telekomunikasi.\n(2) Ketentuan pengamanan dan perlindungan sebagaimana dimaksud\npada ayat (1) diatur dengan Peraturan Pemerintah.\n\nPasal 40\nSetiap orang dilarang melakukan kegiatan penyadapan atas informasi\nyang disalurkan melalui jaringan telekomunikasi dalam bentuk apapun.\n\nPasal 41\nDalam\nrangka\npembuktian\nkebenaran\npemakaian\nfasilitas\ntelekomunikasi\natas\npermintaan\npengguna\njasa\ntelekomunikas,\nPRESIDEN\nREPUBLIK INDONESIA penyelenggara\njasa\ntelekomunikasi\nwajib\nmelakukan\nperekaman\npemakaian fasilitas telekomunikasi yang digunakan oleh pengguna jasa\ntelekomunikasi dan dapat melakukan perekaman informasi sesuai\ndengan peraturan perundang-undangan yang berlaku.\n\nPasal 42\n(1) Penyelenggara jasa telekomunikasi wajib merahasiakan informasi\nyang dikirim dan atau diterima, oleh pelanggan jasa telekomunikasi\nmelalui jaringan telekomunikasi dan atau jasa telekomunikasi yang\ndiselenggarakannya.\n(2) Untuk keperluan proses peradilan pidana, penyelenggara jasa\ntelekomunikasi dapat merekam informasi yang dikirim dan atau\nditerima\noleh\npenyelenggara\njasa\ntelekomunikasi\nserta\ndapat\nmemberikan informasi yang diperlukan atas :\n(3) Ketentuan mengenai tata cara permintaan dan pemberian rekaman\ninformasi sebagaimana dimaksud pada ayat (2) diatur dengan\nPeraturan Pemerintah.\n\nPasal 43\nPemberian rekaman informasi oleh penyelenggara jasa telekomunikasi\nkepada pengguna jasa telekomunikasi sebagaimana dimaksud dalam\nPasal 41 dan untuk kepentingan proses peradilan pidana sebagaimana\ndimaksud dalam Pasal 42\nayat (2),\ntidak\nmerupakan\npelanggaran\nPasal 40.",
       "token_count": 678,
@@ -164,10 +199,10 @@
       ],
       "parent_component_id": "UU_36_1999__BAB_IV",
       "parent_component_type": "BAB",
-      "chunk_index": 12
+      "chunk_index": 15
     },
     {
-      "chunk_id": "UU_36_1999__struct_chunk_012",
+      "chunk_id": "UU_36_1999__struct_chunk_015",
       "document_id": "UU_36_1999",
       "text": "[DOKUMEN: ]\n[BAB: BAB V PENYIDIKAN]\n---\nPasal 44\n(1) Selain Penyidik Pejabat Polisi Negara Republik Indonesia, juga\nPejabat Pegawai Negeri Sipil tertentu di lingkungan Departemen\nyang\nlingkup\ntugas\ndan\ntanggung\njawabnya\ndi\nbidang\ntelekomunikasi,\ndiberi\nwewenang\nkhusus\nsebagai\npenyidik\nsebagaimana dimaksud dalam Undang-undang Hukum Acara Pidana\nuntuk\nmelakukan\npenyidikan\ntindak\npidana\ndi\nbidang\ntelekomunikasi.\nPRESIDEN\nREPUBLIK INDONESIA (2) Penyidik Pegawai Negeri Sipil sebagaimana dimaksud pada ayat (1)\nberwenang :\n(3) Kewenangan penyidikan sebagaimana dimaksud pada ayat (2)\ndilaksanakan sesuai dengan ketentuan Undang-undang Hukum Acara\nPidana.",
       "token_count": 259,
@@ -176,10 +211,10 @@
       ],
       "parent_component_id": "UU_36_1999__BAB_V",
       "parent_component_type": "BAB",
-      "chunk_index": 13
+      "chunk_index": 16
     },
     {
-      "chunk_id": "UU_36_1999__struct_chunk_013",
+      "chunk_id": "UU_36_1999__struct_chunk_016",
       "document_id": "UU_36_1999",
       "text": "[DOKUMEN: ]\n[BAB: BAB VI SANKSI ADMINISTRASI]\n---\nPasal 45\nBarang siapa melanggar ketentuan Pasal 16 ayat (1), Pasal 18 ayat (2),\nPasal 19, Pasal 21, Pasal 25 ayat (2), Pasal 26 ayat (1), Pasal 29 ayat (1),\nPasal 29 ayat (2), Pasal 33 ayat (1), Pasal 33 ayat (2), Pasal 34 ayat (1),\natau Pasal 34 ayat (2) dikenai sanksi administrasi.\n\nPasal 46\nPRESIDEN\nREPUBLIK INDONESIA (1) Sanksi administrasi sebagaimana dimaksud dalam Pasal 45 berupa\npencabutan izin.\n(2) Pencabutan izin sebagaimana dimaksud pada ayat (1) dilakukan\nsetelah diberi peringatan tertulis.",
       "token_count": 227,
@@ -189,24 +224,36 @@
       ],
       "parent_component_id": "UU_36_1999__BAB_VI",
       "parent_component_type": "BAB",
-      "chunk_index": 14
+      "chunk_index": 17
     },
     {
-      "chunk_id": "UU_36_1999__struct_chunk_014",
+      "chunk_id": "UU_36_1999__struct_chunk_017",
       "document_id": "UU_36_1999",
-      "text": "[DOKUMEN: ]\n[BAB: BAB VII KETENTUAN PIDANA]\n---\nPasal 47\nBarang siapa yang melanggar ketentuan sebagaimana dimaksud dalam\nPasal 11 ayat (1), dipidana dengan pidana penjara paling lama 6 (enam)\ntahun datau denda paling banyak Rp. 600.000.000,00 (enam ratus juta\nrupiah).\n\nPasal 48\nPenyelenggara jaringan telekomunikasi yang melanggar ketentuan\nsebagaimana dimaksud dalam Pasal 19 dipidana dengan pidana penjara\npaling lama 1 (satu) tahun dan atau denda paling banyak Rp.\n100.000.000,00 (seratus juta rupiah).\n\nPasal 49\nPenyelenggara telekomunikasi yang melanggar ketentuan sebagaimana\ndimaksud dalam Pasal 20, dipidana dengan pidana penjara paling lama 2\n(dua) tahun dan atau denda paling banyak Rp. 200.000.000,00 (dua ratus\njuta rupiah).\n\nPasal 50\nBarang siapa melanggar ketentuan sebagaimana dimaksud dalam Pasal\n22, dipidana dengan pidana penjara paling lama 6 (enam) tahun dan atau\ndenda paling banyak Rp. 600.000.000,00(enam ratus juta rupiah).\n\nPasal 51\nPenyelenggara\ntelekomunikasi\nkhusus\nyang\nmelanggar\nketentuan\nsebagaimana dimaksud dalam Pasal 29 ayat (1) atau Pasal 29 (ayat 2),\ndipidana dengan pidana penjara paling lama 4 (empat) tahun dan atau\ndenda paling banyak Rp. 400.000.000,00 (empat ratus juta rupiah)\nPRESIDEN\nREPUBLIK INDONESIA Pasal 52\nBarang siapa memperdagangkan, membuat, merakit, memasukkan atau\nmenggunakan perangkat telekomunikasi di wilayah Negara Republik\nIndonesia yang tidak sesuai dengan persyaratan teknis sebagaimana\ndimaksud dalam Pasal 32 ayat (1), dipidana dengan pidana paling lama 1\n(satu) tahun dan atau denda paling banyak Rp. 100.000.000,00 (seratus\njuta rupiah).\n\nPasal 53\n(1) Barang siapa yang melanggar ketentuan sebagaimana dimaksud\ndalam Pasal 33 ayat (1) atau Pasal 33 ayat (2) dipidana dengan\npidana penjara paling lama 4 (empat) tahun dan atau denda paling\nbanyak Rp. 400.000.000,00 (empat ratus juta rupiah).\n(2) apabila\ntindak\npidana\nsebagaimana\ndimaksud\npada\nayat\n(1)\nmengakibatkan matinya seseorang, dipidana dengan pidana penjara\npaling lama 15 (lima belas) tahun.\n\nPasal 54\nBarang siapa yang melanggar ketentuan sebagaimana dimaksud dalam\nPasal 35 ayat (2) atau Pasal 36 ayat (2), dipidana dengan pidana penjara\npaling lama 2 (dua) tahun dan atau denda paling banyak Rp.\n200.000.000,00 (dua ratus juta rupiah).\n\nPasal 55\nBarang siapa yang melanggar ketentuan sebagaimana dimaksud dalam\nPasal 38, dipidana dengan pidana penjara paling lama 6 (enam) tahun\ndan atau denda paling banyak Rp. 600.000.000,00 (enam ratus juta\nrupiah).\n\nPasal 56\n]Barang siapa yang melanggar ketentuan sebagaimana dimaksud dalam\nPasal 40, dipidana dengan pidana penjara paling lama 15 (lima belas)\ntahun.\nPRESIDEN\nREPUBLIK INDONESIA Pasal 57\nPenyelenggara\njasa\ntelekomunikasi\nyang\nmelanggar\nketentuan\nsebagaimana dimaksud dalam Pasal 42 ayat (1), dipidana dengan pidana\npenjara paling lama 2 (dua) tahun dan atau denda paling banyak Rp.\n200.000.000,00 (dua ratus juta rupiah).\n\nPasal 58\nAlat dan perangkat telekomunikasi yang digunakan dalam tindak pidana\nsebagaimana dimaksud dalam Pasal 17, Pasal 48, Pasal 52 atau Pasal 56\ndirampas untuk negara dan atau dimusnahkan sesuai dengan peraturan\nperundang-undangan yang berlaku.\n\nPasal 59\nPerbuatan sebagaimana dimaksud dalam Pasal 47, Pasal 48, Pasal 49,\nPasal 50, Pasal 51, Pasal 52, Pasal 53, Pasal 54, Pasal 55, Pasal 56 dan\nPasal 57 adalah kejahatan.",
-      "token_count": 1241,
+      "text": "[DOKUMEN: ]\n[BAB: BAB VII KETENTUAN PIDANA]\n---\n\n\nPasal 47\nBarang siapa yang melanggar ketentuan sebagaimana dimaksud dalam\nPasal 11 ayat (1), dipidana dengan pidana penjara paling lama 6 (enam)\ntahun datau denda paling banyak Rp. 600.000.000,00 (enam ratus juta\nrupiah).\n\nPasal 48\nPenyelenggara jaringan telekomunikasi yang melanggar ketentuan\nsebagaimana dimaksud dalam Pasal 19 dipidana dengan pidana penjara\npaling lama 1 (satu) tahun dan atau denda paling banyak Rp.\n100.000.000,00 (seratus juta rupiah).\n\nPasal 49\nPenyelenggara telekomunikasi yang melanggar ketentuan sebagaimana\ndimaksud dalam Pasal 20, dipidana dengan pidana penjara paling lama 2\n(dua) tahun dan atau denda paling banyak Rp. 200.000.000,00 (dua ratus\njuta rupiah).\n\nPasal 50\nBarang siapa melanggar ketentuan sebagaimana dimaksud dalam Pasal\n22, dipidana dengan pidana penjara paling lama 6 (enam) tahun dan atau\ndenda paling banyak Rp. 600.000.000,00(enam ratus juta rupiah).\n\nPasal 51\nPenyelenggara\ntelekomunikasi\nkhusus\nyang\nmelanggar\nketentuan\nsebagaimana dimaksud dalam Pasal 29 ayat (1) atau Pasal 29 (ayat 2),\ndipidana dengan pidana penjara paling lama 4 (empat) tahun dan atau\ndenda paling banyak Rp. 400.000.000,00 (empat ratus juta rupiah)\nPRESIDEN\nREPUBLIK INDONESIA Pasal 52\nBarang siapa memperdagangkan, membuat, merakit, memasukkan atau\nmenggunakan perangkat telekomunikasi di wilayah Negara Republik\nIndonesia yang tidak sesuai dengan persyaratan teknis sebagaimana\ndimaksud dalam Pasal 32 ayat (1), dipidana dengan pidana paling lama 1\n(satu) tahun dan atau denda paling banyak Rp. 100.000.000,00 (seratus\njuta rupiah).\n\nPasal 53\n(1) Barang siapa yang melanggar ketentuan sebagaimana dimaksud\ndalam Pasal 33 ayat (1) atau Pasal 33 ayat (2) dipidana dengan\npidana penjara paling lama 4 (empat) tahun dan atau denda paling\nbanyak Rp. 400.000.000,00 (empat ratus juta rupiah).\n(2) apabila\ntindak\npidana\nsebagaimana\ndimaksud\npada\nayat\n(1)\nmengakibatkan matinya seseorang, dipidana dengan pidana penjara\npaling lama 15 (lima belas) tahun.",
+      "token_count": 752,
       "page_range": [
         17,
+        18
+      ],
+      "parent_component_id": "UU_36_1999__BAB_VII",
+      "parent_component_type": "BAB",
+      "chunk_index": 18
+    },
+    {
+      "chunk_id": "UU_36_1999__struct_chunk_018",
+      "document_id": "UU_36_1999",
+      "text": "[DOKUMEN: ]\n[BAB: BAB VII KETENTUAN PIDANA]\n---\n\n\nPasal 54\nBarang siapa yang melanggar ketentuan sebagaimana dimaksud dalam\nPasal 35 ayat (2) atau Pasal 36 ayat (2), dipidana dengan pidana penjara\npaling lama 2 (dua) tahun dan atau denda paling banyak Rp.\n200.000.000,00 (dua ratus juta rupiah).\n\nPasal 55\nBarang siapa yang melanggar ketentuan sebagaimana dimaksud dalam\nPasal 38, dipidana dengan pidana penjara paling lama 6 (enam) tahun\ndan atau denda paling banyak Rp. 600.000.000,00 (enam ratus juta\nrupiah).\n\nPasal 56\n]Barang siapa yang melanggar ketentuan sebagaimana dimaksud dalam\nPasal 40, dipidana dengan pidana penjara paling lama 15 (lima belas)\ntahun.\nPRESIDEN\nREPUBLIK INDONESIA Pasal 57\nPenyelenggara\njasa\ntelekomunikasi\nyang\nmelanggar\nketentuan\nsebagaimana dimaksud dalam Pasal 42 ayat (1), dipidana dengan pidana\npenjara paling lama 2 (dua) tahun dan atau denda paling banyak Rp.\n200.000.000,00 (dua ratus juta rupiah).\n\nPasal 58\nAlat dan perangkat telekomunikasi yang digunakan dalam tindak pidana\nsebagaimana dimaksud dalam Pasal 17, Pasal 48, Pasal 52 atau Pasal 56\ndirampas untuk negara dan atau dimusnahkan sesuai dengan peraturan\nperundang-undangan yang berlaku.\n\nPasal 59\nPerbuatan sebagaimana dimaksud dalam Pasal 47, Pasal 48, Pasal 49,\nPasal 50, Pasal 51, Pasal 52, Pasal 53, Pasal 54, Pasal 55, Pasal 56 dan\nPasal 57 adalah kejahatan.",
+      "token_count": 511,
+      "page_range": [
         18,
         19
       ],
       "parent_component_id": "UU_36_1999__BAB_VII",
       "parent_component_type": "BAB",
-      "chunk_index": 15
+      "chunk_index": 19
     },
     {
-      "chunk_id": "UU_36_1999__struct_chunk_015",
+      "chunk_id": "UU_36_1999__struct_chunk_019",
       "document_id": "UU_36_1999",
       "text": "[DOKUMEN: ]\n[BAB: BAB VIII KETENTUAN PERALIHAN]\n---\nPasal 60\nPasa saat berlakunya Undang-undang ini, penyelenggara telekomunikasi\nsebagaimana dimaksud dalam Undang-undang Nomor 3 Tahun 1989\ntentang Telekomunikasi, tetap dapat menjalankan kegiatannya dengan\nketentuan dalam waktu selambat-lambatnya 1 (satu) tahun sejak\nUndang-undang ini dinyatakan berlaku wajib menyesuaikan dengan\nUndang-undang ini.\nPRESIDEN\nREPUBLIK INDONESIA Pasal 61\n(1) Dengan berlakunya Undang-undang ini, hak-hak tertentu yang telah\ndiberikan oleh Pemerintah kepada Badan Penyelenggara untuk\njangka waktu tertentu berdasarkan Undang-undang Nomor 3 Tahun\n1989 masih berlaku.\n(2) Jangka waktu hak tertentu sebagaimana dimaksud pada ayat (1),\ndapat dipersingkat sesuai dengan kesepakatan antara Pemerintah dan\nBadan Penyelenggara.\n\nPasal 62\nPada saat Undang-undang ini berlaku, semua peraturan pelaksanaan\nUndang-undang\nNomor\nTahun\ntentang\nTelekomunikasi\n(Lembaran Negara Tahun 1989 Nomor 11, Tambahan Lembaran Negara\nNomor 3391) masih tetap berlaku sepanjang tidak bertentangan dan atau\nbelum diganti dengan peraturan baru berdasarkan Undang-undang ini.",
       "token_count": 397,
@@ -216,25 +263,37 @@
       ],
       "parent_component_id": "UU_36_1999__BAB_VIII",
       "parent_component_type": "BAB",
-      "chunk_index": 16
+      "chunk_index": 20
     },
     {
-      "chunk_id": "UU_36_1999__struct_chunk_016",
+      "chunk_id": "UU_36_1999__struct_chunk_020",
       "document_id": "UU_36_1999",
-      "text": "[DOKUMEN: ]\n[BAB: BAB IX KETENTUAN PENUTUP]\n---\nPasal 63\nDengan berlakunya Undang-undang ini, Undang-undang Nomor 3\nTahun 1989 tentang Telekomunikasi dinyatakan tidak berlaku.\n\nPasal 64\nUndang-undang ini mulai berlaku 1 (satu) tahun terhitung sejak tanggal\ndiundangkan.\nPRESIDEN\nREPUBLIK INDONESIA Agar\nsetiap\norang\nmengetahuinya,\nmemerintahkan\npengundangan\nUndang-undang ini dengan penempatannya dalam Lembaran Negara\nRepublik Indonesia.\nDisahkan di Jakarta\npada tanggal 8 September 1999\nttd.\nBACHARUDDIN JUSUF HABIBIE\nDiundangkan di Jakarta\npada tanggal 8 September 1999\nMENTERI NEGARA SEKRETARIS NEGARA\nREPUBLIK INDONESIA,\nttd.\nMULADI\nLEMBARAN NEGARA REPUBLIK INDONESIA TAHUN 1999 NOMOR 154\nPRESIDEN\nREPUBLIK INDONESIA\nPENJELASAN\nATAS\nUNDANG-UNDANG REPUBLIK INDONESIA\nNOMOR 36 TAHUN 1999\nTENTANG\nTELEKOMUNIKASI\nUMUM\nSejak diundangkannya Undang-undang Nomor 3 Tahun 1989 tentang Telekomunikasi,\npembangunan dan penyelenggaraan telekomunikasi telah menunjukkan peningkatan\nperan penting dan strategis dalam menunjang dan mendorong kegiatan perekonomian,\nmemantapkan pertahanan dan keamanan, mencerdaskan kehidupan bangsa, memperlancar\nkegiatan pemerintah, memperkukuh persatuan dan kesatuan bangsa dalam kerangka\nwawasan nusantara, dan memantapkan ketahanan nasional serta meningkatkan hubungan\nantarbangsa.\nPerubahan\nlingkungan\nglobal\ndan\nperkembangan\nteknologi\ntelekomunikasi\nyang\nberlangsung sangat cepat telah mendorong terjadinya perubahan mendasar, melahirkan\nlingkungan\ntelekomunikasi\nyang\nbaru,\ndan\nperubahan\ncara\npandang\ndalam\npenyelenggaraan\ntelekomunikasi,\ntermasuk\nhasil\nkonvergensi\ndengan\ntekhnologi\ninformasi dan penyiaran, sehingga dipandang perlu mengadakan penataan kembali\npenyelenggaraan telekomunikasi nasional.\nPenyesuaian dalam penyelenggaraan telekomunikasi di tingkat nasional sudah merupakan\nkebutuhan\nnyata,\nmengingat\nmeningkatnya\nkemampuan\nsektor\nswasta\ndalam\npenyelenggaraan telekomunikasi, penguasaan teknologi telekomunikasi, dan keunggulan\nkompetitif dalam rangka memenuhi kebutuhan masyarakat.\nPerkembangan teknologi telekomunikasi di tingkat internasional yang diikuti dengan\npeningkatan penggunaannya sebagai salah satu komoditas perdagangan, yang memiliki\nnilai komersial tinggi, telah mendorong terjadinya berbagai kesepakatan multilateral.\nSebagai negara yang aktif dalam membina hubungan antarnegara atas dasar kepentingan\nnasional, keikutsertaan Indonesia dalam berbagai kesepakatan multilateral menimbulkan\nkonsekuensi yang harus dihadapi dan diikuti. Sejak penandatanganan General Agreement\non Trade and Services (GATS) di Marrakesh, Maroko, pada tanggal 15 april 1994, yang\ntelah diratifikasi dengan Undang-undang Nomor 7 Tahun 1994, penyelenggaraan\ntelekomunikasi nasional menjadi bagian yang tidak terpisahkan dari sistem perdagangan\nglobal.\nSesuai dengan prinsip perdagangan global, yang menitikberatkan pada asas perdagangan\nbebas dan tidak diskriminatif, Indonesia harus menyiapkan diri untuk menyesuaikan\npenyelenggaraan telekomunikasi.\nDengan memperhatikan hal-hal tersebut di atas, maka peran Pemerintah dititikberatkan\npada pembinaan yang meliputi penentuan kebijakan, pengaturan, pengawasan, dan\npengendalian dengan mengikutsertakan peran masyarakat.\nPRESIDEN\nREPUBLIK INDONESIA Peningkatan peran masyarakat dalam penyelenggaraan telekomunikasi tidak mengurangi\nprinsip dasar yang terkandung dalam pasal 33 ayat(3) Undang-undang Dasar 1945, yaitu\nbahwa bumi dan air dan kekayaan alam yang terkandung di dalamnya dikuasai oleh\nnegara dan dipergunakan sebesar-besarnya bagi kemakmuran rakyat.\nOleh karena itu,\nhal-hal yang menyangkut pemanfaatan spektrum frekuensi radio dan orbit satelit yang\nmerupakan sumber daya alam yang terbatas dikuasai oleh negara.\nDengan tetap berpijak pada arah dan kebijakan pembangunan nasional serta dengan\nmemperhatikan\nperkembangan\nyang\nberlangsung\nbaik\nsecara\nnasional\nmaupun\ninternasional, terutama di bidang telekomunikasi, norma hukum bagi pembinaan dan\npenyelenggaraan telekomunikasi yang diatur dalam Undang-undang Nomor 3 Tahun 1989\ntentang Telekomunikasi perlu diganti.\nPASAL DEMI PASAL",
-      "token_count": 1355,
+      "text": "[DOKUMEN: ]\n[BAB: BAB IX KETENTUAN PENUTUP]\n---\n\n\nPasal 63\nDengan berlakunya Undang-undang ini, Undang-undang Nomor 3\nTahun 1989 tentang Telekomunikasi dinyatakan tidak berlaku.",
+      "token_count": 69,
+      "page_range": [
+        20
+      ],
+      "parent_component_id": "UU_36_1999__BAB_IX",
+      "parent_component_type": "BAB",
+      "chunk_index": 21
+    },
+    {
+      "chunk_id": "UU_36_1999__struct_chunk_021",
+      "document_id": "UU_36_1999",
+      "text": "[DOKUMEN: ]\n[BAB: BAB IX KETENTUAN PENUTUP]\n---\n\n\nPasal 64\nUndang-undang ini mulai berlaku 1 (satu) tahun terhitung sejak tanggal\ndiundangkan.\nPRESIDEN\nREPUBLIK INDONESIA Agar\nsetiap\norang\nmengetahuinya,\nmemerintahkan\npengundangan\nUndang-undang ini dengan penempatannya dalam Lembaran Negara\nRepublik Indonesia.\nDisahkan di Jakarta\npada tanggal 8 September 1999\nttd.\nBACHARUDDIN JUSUF HABIBIE\nDiundangkan di Jakarta\npada tanggal 8 September 1999\nMENTERI NEGARA SEKRETARIS NEGARA\nREPUBLIK INDONESIA,\nttd.\nMULADI\nLEMBARAN NEGARA REPUBLIK INDONESIA TAHUN 1999 NOMOR 154\nPRESIDEN\nREPUBLIK INDONESIA\nPENJELASAN\nATAS\nUNDANG-UNDANG REPUBLIK INDONESIA\nNOMOR 36 TAHUN 1999\nTENTANG\nTELEKOMUNIKASI\nUMUM\nSejak diundangkannya Undang-undang Nomor 3 Tahun 1989 tentang Telekomunikasi,\npembangunan dan penyelenggaraan telekomunikasi telah menunjukkan peningkatan\nperan penting dan strategis dalam menunjang dan mendorong kegiatan perekonomian,\nmemantapkan pertahanan dan keamanan, mencerdaskan kehidupan bangsa, memperlancar\nkegiatan pemerintah, memperkukuh persatuan dan kesatuan bangsa dalam kerangka\nwawasan nusantara, dan memantapkan ketahanan nasional serta meningkatkan hubungan\nantarbangsa.\nPerubahan\nlingkungan\nglobal\ndan\nperkembangan\nteknologi\ntelekomunikasi\nyang\nberlangsung sangat cepat telah mendorong terjadinya perubahan mendasar, melahirkan\nlingkungan\ntelekomunikasi\nyang\nbaru,\ndan\nperubahan\ncara\npandang\ndalam\npenyelenggaraan\ntelekomunikasi,\ntermasuk\nhasil\nkonvergensi\ndengan\ntekhnologi\ninformasi dan penyiaran, sehingga dipandang perlu mengadakan penataan kembali\npenyelenggaraan telekomunikasi nasional.\nPenyesuaian dalam penyelenggaraan telekomunikasi di tingkat nasional sudah merupakan\nkebutuhan\nnyata,\nmengingat\nmeningkatnya\nkemampuan\nsektor\nswasta\ndalam\npenyelenggaraan telekomunikasi, penguasaan teknologi telekomunikasi, dan keunggulan\nkompetitif dalam rangka memenuhi kebutuhan masyarakat.\nPerkembangan teknologi telekomunikasi di tingkat internasional yang diikuti dengan\npeningkatan penggunaannya sebagai salah satu komoditas perdagangan, yang memiliki\nnilai komersial tinggi, telah mendorong terjadinya berbagai kesepakatan multilateral.\nSebagai negara yang aktif dalam membina hubungan antarnegara atas dasar kepentingan\nnasional, keikutsertaan Indonesia dalam berbagai kesepakatan multilateral menimbulkan\nkonsekuensi yang harus dihadapi dan diikuti. Sejak penandatanganan General Agreement\non Trade and Services (GATS) di Marrakesh, Maroko, pada tanggal 15 april 1994, yang\ntelah diratifikasi dengan Undang-undang Nomor 7 Tahun 1994, penyelenggaraan\ntelekomunikasi nasional menjadi bagian yang tidak terpisahkan dari sistem perdagangan\nglobal.\nSesuai dengan prinsip perdagangan global, yang menitikberatkan pada asas perdagangan\nbebas dan tidak diskriminatif, Indonesia harus menyiapkan diri untuk menyesuaikan\npenyelenggaraan telekomunikasi.\nDengan memperhatikan hal-hal tersebut di atas, maka peran Pemerintah dititikberatkan\npada pembinaan yang meliputi penentuan kebijakan, pengaturan, pengawasan, dan\npengendalian dengan mengikutsertakan peran masyarakat.\nPRESIDEN\nREPUBLIK INDONESIA Peningkatan peran masyarakat dalam penyelenggaraan telekomunikasi tidak mengurangi\nprinsip dasar yang terkandung dalam pasal 33 ayat(3) Undang-undang Dasar 1945, yaitu\nbahwa bumi dan air dan kekayaan alam yang terkandung di dalamnya dikuasai oleh\nnegara dan dipergunakan sebesar-besarnya bagi kemakmuran rakyat.\nOleh karena itu,\nhal-hal yang menyangkut pemanfaatan spektrum frekuensi radio dan orbit satelit yang\nmerupakan sumber daya alam yang terbatas dikuasai oleh negara.\nDengan tetap berpijak pada arah dan kebijakan pembangunan nasional serta dengan\nmemperhatikan\nperkembangan\nyang\nberlangsung\nbaik\nsecara\nnasional\nmaupun\ninternasional, terutama di bidang telekomunikasi, norma hukum bagi pembinaan dan\npenyelenggaraan telekomunikasi yang diatur dalam Undang-undang Nomor 3 Tahun 1989\ntentang Telekomunikasi perlu diganti.\nPASAL DEMI PASAL",
+      "token_count": 1309,
       "page_range": [
         20,
         23
       ],
       "parent_component_id": "UU_36_1999__BAB_IX",
       "parent_component_type": "BAB",
-      "chunk_index": 17
+      "chunk_index": 22
     }
   ],
   "stats": {
     "min_tokens": 47,
-    "max_tokens": 1415,
-    "avg_tokens": 561.8
+    "max_tokens": 1309,
+    "avg_tokens": 480.9
   }
 }

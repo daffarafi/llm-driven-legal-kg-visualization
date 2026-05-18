@@ -28,6 +28,7 @@ KG_SCHEMA = """
 | MEMILIKI_AYAT | (Pasal) -> (Ayat) | ~100 |
 | MENDEFINISIKAN | (Pasal/Ayat) -> (KonsepHukum) | ~60 |
 | MENETAPKAN_SANKSI | (Ayat/Pasal) -> (Sanksi) | ~18 |
+| MENGAMANDEMEN | (Regulasi) -> (Regulasi) | ~2 |
 
 ## Node Properties
 All nodes have: id, label, content, source_document_id, embedding
@@ -35,10 +36,12 @@ All nodes have: id, label, content, source_document_id, embedding
 - content: Description or original text excerpt
 - source_document_id: Identifies which regulation this node belongs to (e.g., "UU_11_2008", "POJK_11_2022")
 - Regulasi nodes also have: jenis (e.g., "Undang-Undang", "POJK")
+- Some nodes (in amendment documents) have: jenis_perubahan ("mengubah"/"menyisipkan"/"menghapus")
 
 ## Sample Node Labels
 - Regulasi: "UNDANG-UNDANG TENTANG INFORMASI DAN TRANSAKSI ELEKTRONIK" (jenis: Undang-Undang, source_document_id: UU_11_2008), "Peraturan Otoritas Jasa Keuangan Nomor 11/POJK.03/2022 tentang Penyelenggaraan Teknologi Informasi oleh Bank Umum" (jenis: POJK, source_document_id: POJK_11_2022)
-- Bab: "BAB VII PERBUATAN YANG DILARANG", "BAB XI KETENTUAN PIDANA", "BAB II TATA KELOLA TI BANK"
+- Bab: "BAB VII PERBUATAN YANG DILARANG", "BAB XI KETENTUAN PIDANA", "BAB II TATA KELOLA TI BANK", "BAB V KETAHANAN DAN KEAMANAN SIBER BANK", "BAB VIII PENGELOLAAN DATA DAN PELINDUNGAN DATA PRIBADI DALAM PENYELENGGARAAN TI BANK"
+  NOTE: Bab labels may be short ("BAB VII") or include a title ("BAB V KETAHANAN DAN KEAMANAN SIBER BANK"). Always use regex matching.
 - Bagian: "Bagian Kedua Penyelenggaraan Sistem Elektronik", "Bagian Kesatu Umum"
 - Pasal: "Pasal 1", "Pasal 27", "Pasal 45"
 - Ayat: "Pasal 27 ayat (1)", "Pasal 45 ayat (3)"
@@ -55,6 +58,7 @@ All nodes have: id, label, content, source_document_id, embedding
 5. Cross-ref: (Ayat)-[:MERUJUK]->(Ayat), (Pasal)-[:MERUJUK]->(Pasal)
 6. Definition: (Pasal)-[:MENDEFINISIKAN]->(KonsepHukum)
 7. Applicability: (Ayat)-[:BERLAKU_UNTUK]->(EntitasHukum)
+8. Amendment: (Regulasi)-[:MENGAMANDEMEN]->(Regulasi) — direction: amender -> original
 
 IMPORTANT: Most MENGATUR, BERLAKU_UNTUK, and MENETAPKAN_SANKSI edges originate from Ayat nodes, NOT Pasal.
 When searching for what an article regulates, query BOTH Pasal and Ayat.
@@ -75,7 +79,10 @@ Given a user question about Indonesian law, generate a Cypher query to retrieve 
 
 ## STRICT OUTPUT RULES
 1. Output ONLY the raw Cypher query. NO markdown, NO ```, NO explanation.
-2. For label filters: use toLower() with exact match (=) for Bab labels (e.g., toLower(b.label) = 'bab vii') and single-number Pasal labels (e.g., toLower(p.label) = 'pasal 3'). Use CONTAINS only for multi-word/ayat searches (e.g., p.label CONTAINS 'Pasal 27').
+2. For Pasal label filters, the strategy depends on the RELATIONSHIP being queried:
+   - For MENGATUR, BERLAKU_UNTUK, MENETAPKAN_SANKSI, MERUJUK: ALWAYS use CONTAINS (e.g., p.label CONTAINS 'Pasal 2') because these edges are mostly on Ayat nodes ("Pasal 2 ayat (1)"), not on the Pasal node itself.
+   - For MEMUAT, MEMILIKI_AYAT, MENDEFINISIKAN, or reading Pasal content: use exact match with toLower() (e.g., toLower(p.label) = 'pasal 2').
+   - For Bab labels: ALWAYS use regex (e.g., b.label =~ '(?i)^BAB VII(\\s.*|$)') because Bab labels may include titles.
 3. ALWAYS end with LIMIT 25.
 4. Query must be syntactically valid (balanced parentheses, MATCH + RETURN).
 5. Use toLower() for case-insensitive matching.
@@ -85,61 +92,70 @@ Given a user question about Indonesian law, generate a Cypher query to retrieve 
 
 ### Pattern 1: What does an article regulate?
 Question: "Apa yang diatur Pasal 27?"
-MATCH (p)-[:MENGATUR]->(ph:PerbuatanHukum) WHERE p.label CONTAINS 'Pasal 27' RETURN p.label AS pasal, ph.label AS perbuatan, ph.content AS detail LIMIT 25
+MATCH (p)-[:MENGATUR]->(ph:PerbuatanHukum) WHERE p.label CONTAINS 'Pasal 27' RETURN p.label AS pasal, ph.label AS perbuatan, ph.content AS detail, p.source_document_id AS regulasi LIMIT 25
 
 ### Pattern 2a: What is the penalty for something? (INDIRECT — via MERUJUK)
 CRITICAL: In Indonesian law, prohibitions (Pasal 27-37) and sanctions (Pasal 45-52) are in DIFFERENT chapters.
 Sanction articles MERUJUK (cross-reference) back to prohibition articles. You MUST use this pattern:
 Question: "Apa sanksi pencemaran nama baik?"
-MATCH (a)-[:MERUJUK]->(target), (a)-[:MENETAPKAN_SANKSI]->(sk:Sanksi) WHERE toLower(target.label) CONTAINS 'pasal 27' RETURN a.label AS pasal_sanksi, target.label AS pasal_larangan, sk.label AS sanksi LIMIT 25
+MATCH (a)-[:MERUJUK]->(target), (a)-[:MENETAPKAN_SANKSI]->(sk:Sanksi) WHERE toLower(target.label) CONTAINS 'pasal 27' RETURN a.label AS pasal_sanksi, target.label AS pasal_larangan, sk.label AS sanksi, a.source_document_id AS regulasi LIMIT 25
 
 ### Pattern 2b: What is the penalty for something? (by keyword in sanction article)
 Question: "Berapa denda untuk pelanggaran Pasal 30?"
-MATCH (a)-[:MERUJUK]->(target), (a)-[:MENETAPKAN_SANKSI]->(sk:Sanksi) WHERE toLower(target.label) CONTAINS 'pasal 30' RETURN a.label AS pasal_sanksi, target.label AS pasal_larangan, sk.label AS sanksi LIMIT 25
+MATCH (a)-[:MERUJUK]->(target), (a)-[:MENETAPKAN_SANKSI]->(sk:Sanksi) WHERE toLower(target.label) CONTAINS 'pasal 30' RETURN a.label AS pasal_sanksi, target.label AS pasal_larangan, sk.label AS sanksi, a.source_document_id AS regulasi LIMIT 25
 
 ### Pattern 3: What articles are in a chapter?
 Note: Some Bab have Bagian sub-sections. Use OPTIONAL MATCH for both direct and Bagian-contained Pasal.
-IMPORTANT: Use EXACT MATCH (=) for Bab labels to avoid substring collisions (e.g., 'bab vii' CONTAINS also matches 'bab viii').
+IMPORTANT: Bab labels can be short ("BAB VII") or include a title ("BAB V KETAHANAN DAN KEAMANAN SIBER BANK"). Use regex to match the roman numeral precisely and avoid substring collisions (e.g., 'bab v' must NOT match 'bab vii').
 Question: "Pasal apa saja di Bab XI?"
-MATCH (b:Bab) WHERE toLower(b.label) = 'bab xi' OPTIONAL MATCH (b)-[:MEMUAT]->(p1:Pasal) OPTIONAL MATCH (b)-[:MEMUAT]->(bg:Bagian)-[:MEMUAT]->(p2:Pasal) WITH b, COLLECT(DISTINCT p1) + COLLECT(DISTINCT p2) AS pasals UNWIND pasals AS p RETURN b.label AS bab, p.label AS pasal, p.content AS isi ORDER BY p.label LIMIT 25
+MATCH (b:Bab) WHERE b.label =~ '(?i)^BAB XI(\\s.*|$)' OPTIONAL MATCH (b)-[:MEMUAT]->(p1:Pasal) OPTIONAL MATCH (b)-[:MEMUAT]->(bg:Bagian)-[:MEMUAT]->(p2:Pasal) WITH b, COLLECT(DISTINCT p1) + COLLECT(DISTINCT p2) AS pasals UNWIND pasals AS p RETURN b.label AS bab, p.label AS pasal, p.content AS isi, b.source_document_id AS regulasi ORDER BY p.label LIMIT 25
 
 ### Pattern 4: What is the definition of a concept?
 Question: "Apa definisi Informasi Elektronik?"
-MATCH (p)-[:MENDEFINISIKAN]->(k:KonsepHukum) WHERE toLower(k.label) CONTAINS 'informasi elektronik' RETURN p.label AS pasal, k.label AS konsep, k.content AS definisi LIMIT 25
+MATCH (p)-[:MENDEFINISIKAN]->(k:KonsepHukum) WHERE toLower(k.label) CONTAINS 'informasi elektronik' RETURN p.label AS pasal, k.label AS konsep, k.content AS definisi, p.source_document_id AS regulasi LIMIT 25
 
 ### Pattern 5: Who does a provision apply to?
 IMPORTANT: BERLAKU_UNTUK edges are usually on Ayat nodes (e.g., "Pasal 45 ayat (1)"), NOT on Pasal nodes directly. Always use CONTAINS to match both Pasal and Ayat.
 Question: "Pasal 45 berlaku untuk siapa?"
-MATCH (a)-[:BERLAKU_UNTUK]->(e:EntitasHukum) WHERE a.label CONTAINS 'Pasal 45' RETURN a.label AS pasal_ayat, e.label AS subjek LIMIT 25
+MATCH (a)-[:BERLAKU_UNTUK]->(e:EntitasHukum) WHERE a.label CONTAINS 'Pasal 45' RETURN a.label AS pasal_ayat, e.label AS subjek, a.source_document_id AS regulasi LIMIT 25
 
 ### Pattern 6: Cross-reference between articles
 Question: "Pasal apa yang merujuk ke Pasal 27?"
-MATCH (a)-[:MERUJUK]->(target) WHERE target.label CONTAINS 'Pasal 27' RETURN a.label AS sumber, target.label AS tujuan LIMIT 25
+MATCH (a)-[:MERUJUK]->(target) WHERE target.label CONTAINS 'Pasal 27' RETURN a.label AS sumber, target.label AS tujuan, a.source_document_id AS regulasi LIMIT 25
 
 ### Pattern 7: General keyword search
 Question: "Informasi tentang transaksi elektronik"
-MATCH (n) WHERE toLower(n.label) CONTAINS 'transaksi elektronik' OR toLower(n.content) CONTAINS 'transaksi elektronik' RETURN labels(n) AS tipe, n.label AS label, n.content AS isi LIMIT 25
+MATCH (n) WHERE toLower(n.label) CONTAINS 'transaksi elektronik' OR toLower(n.content) CONTAINS 'transaksi elektronik' RETURN labels(n) AS tipe, n.label AS label, n.content AS isi, n.source_document_id AS regulasi LIMIT 25
 
 ### Pattern 8: List all prohibited acts
 Question: "Apa saja perbuatan yang dilarang?"
-MATCH (p)-[:MENGATUR]->(ph:PerbuatanHukum) RETURN p.label AS pasal, ph.label AS perbuatan LIMIT 25
+MATCH (p)-[:MENGATUR]->(ph:PerbuatanHukum) RETURN p.label AS pasal, ph.label AS perbuatan, p.source_document_id AS regulasi LIMIT 25
 
 ### Pattern 9: List ayat in a Pasal
 IMPORTANT: Use [:MEMILIKI_AYAT] (NOT [:MEMUAT]) for the Pasal→Ayat relationship.
 Question: "Pasal 27 ayat berapa saja?"
-MATCH (p:Pasal)-[:MEMILIKI_AYAT]->(a:Ayat) WHERE toLower(p.label) CONTAINS 'pasal 27' RETURN p.label AS pasal, a.label AS ayat, a.content AS isi ORDER BY a.label LIMIT 25
+MATCH (p:Pasal)-[:MEMILIKI_AYAT]->(a:Ayat) WHERE toLower(p.label) CONTAINS 'pasal 27' RETURN p.label AS pasal, a.label AS ayat, a.content AS isi, p.source_document_id AS regulasi ORDER BY a.label LIMIT 25
 
 ### Pattern 10: Which Bab contains a Pasal?
+Note: A Pasal may be directly under a Bab OR inside a Bagian. Use variable-length path to handle both.
 Question: "Pasal 3 ada di bab berapa?"
-MATCH (b:Bab)-[:MEMUAT]->(p:Pasal) WHERE toLower(p.label) = 'pasal 3' RETURN b.label AS bab, p.label AS pasal LIMIT 25
+MATCH (b:Bab)-[:MEMUAT*1..2]->(p:Pasal) WHERE toLower(p.label) = 'pasal 3' RETURN b.label AS bab, p.label AS pasal, p.source_document_id AS regulasi LIMIT 25
 
 ### Pattern 11: Read content of a Pasal
 Question: "Apa bunyi Pasal 1?"
-MATCH (p:Pasal) WHERE toLower(p.label) = 'pasal 1' RETURN p.label AS pasal, p.content AS isi LIMIT 25
+MATCH (p:Pasal) WHERE toLower(p.label) = 'pasal 1' RETURN p.label AS pasal, p.content AS isi, p.source_document_id AS regulasi LIMIT 25
+
+### Pattern 12: What articles were amended by a law?
+Question: "Pasal apa saja yang diubah oleh UU 19/2016?"
+MATCH (p {{source_document_id:'UU_19_2016'}}) WHERE p.jenis_perubahan IS NOT NULL RETURN p.label AS pasal, p.jenis_perubahan AS jenis ORDER BY p.label LIMIT 25
+
+### Pattern 13: Has this article been amended?
+Question: "Apakah Pasal 27 sudah diubah?"
+MATCH (r1:Regulasi {{source_document_id:'UU_11_2008'}})<-[:MENGAMANDEMEN]-(r2:Regulasi) MATCH (p2 {{source_document_id: r2.source_document_id}}) WHERE p2.label CONTAINS 'Pasal 27' AND p2.jenis_perubahan IS NOT NULL RETURN r2.source_document_id AS dokumen_pengubah, p2.label AS pasal, p2.jenis_perubahan AS jenis, p2.content AS isi_baru LIMIT 25
 
 ## COMMON MISTAKES TO AVOID
-- Do NOT use CONTAINS for Bab labels: WHERE toLower(b.label) CONTAINS 'bab vii' (WRONG — also matches 'bab viii'). Use exact match: = 'bab vii'
-- Do NOT use CONTAINS for single-digit Pasal: WHERE toLower(p.label) CONTAINS 'pasal 3' (WRONG — also matches 'pasal 30'-'pasal 39'). Use exact match: = 'pasal 3'
+- Do NOT use CONTAINS or exact match (=) for Bab labels — labels may include titles (e.g., "BAB V KETAHANAN DAN KEAMANAN SIBER BANK"). Use REGEX: b.label =~ '(?i)^BAB VII(\\s.*|$)' to match the roman numeral precisely without substring collisions.
+- CAUTION with CONTAINS for single-digit Pasal: WHERE p.label CONTAINS 'Pasal 3' also matches 'Pasal 30'-'Pasal 39'. This is ACCEPTABLE for MENGATUR/BERLAKU_UNTUK/MENETAPKAN_SANKSI/MERUJUK queries (returns more data, better recall). For structural queries (MEMUAT, content read), use exact match: toLower(p.label) = 'pasal 3'.
 - Do NOT forget LIMIT: Always add LIMIT 25
 - Do NOT assume MENGATUR and MENETAPKAN_SANKSI are on the SAME node — they are usually on DIFFERENT nodes connected by MERUJUK
 - Do NOT query only Pasal for sanctions — most MENETAPKAN_SANKSI edges are on Ayat nodes
@@ -159,13 +175,37 @@ RESPONSE_SYSTEM = """You are an Indonesian legal assistant. Answer the user's qu
 4. Answer in formal Indonesian (Bahasa Indonesia).
 5. If the data truly does not contain enough information, state this clearly — but check ALL provided data first before saying this.
 6. Structure your answer clearly: start with the direct answer, then provide supporting details.
+7. MULTI-DOCUMENT ATTRIBUTION: When data contains nodes from MULTIPLE regulations (different "regulasi" or "source_document_id" values), you MUST:
+   a. Group your answer BY REGULATION — present each regulation's content in a clearly labeled section.
+   b. Clearly label each section with the regulation name (e.g., "Menurut UU No. 11 Tahun 2008 tentang ITE: ...", "Menurut POJK No. 11/POJK.03/2022: ...").
+   c. NEVER mix content from different regulations in the same bullet point or paragraph.
+   Use this source_document_id to regulation name mapping:
+   - UU_11_2008 = "UU No. 11 Tahun 2008 tentang Informasi dan Transaksi Elektronik (UU ITE)"
+   - UU_19_2016 = "UU No. 19 Tahun 2016 tentang Perubahan atas UU ITE"
+   - POJK_11_2022 = "POJK No. 11/POJK.03/2022 tentang Penyelenggaraan Teknologi Informasi oleh Bank Umum"
+8. When counting items (e.g., "berapa ayat?"), if data comes from multiple regulations, report counts SEPARATELY per regulation.
 
-## Example
-Data: pasal_sanksi: Pasal 45 ayat (1) | pasal_larangan: Pasal 27 ayat (3) | sanksi: pidana penjara paling lama 6 (enam) tahun dan/atau denda paling banyak Rp1.000.000.000,00
+## Example 1: Single Document
+Data: pasal_sanksi: Pasal 45 ayat (1) | pasal_larangan: Pasal 27 ayat (3) | sanksi: pidana penjara paling lama 6 (enam) tahun dan/atau denda paling banyak Rp1.000.000.000,00 | regulasi: UU_11_2008
 
 Good answer: "Menurut Pasal 45 ayat (1) UU ITE, pelanggaran terhadap Pasal 27 ayat (3) tentang pencemaran nama baik diancam dengan **pidana penjara paling lama 6 (enam) tahun dan/atau denda paling banyak Rp1.000.000.000,00 (satu miliar rupiah)**."
 
-Bad answer: "Sanksi yang ditetapkan adalah pidana tanpa rincian lebih lanjut." (WRONG — the data clearly contains the full penalty details)"""
+Bad answer: "Sanksi yang ditetapkan adalah pidana tanpa rincian lebih lanjut." (WRONG — the data clearly contains the full penalty details)
+
+## Example 2: Multi-Document
+Data contains:
+1. pasal: Pasal 27 ayat (1) | perbuatan: muatan melanggar kesusilaan | regulasi: UU_11_2008
+2. pasal: Pasal 27 ayat (1) | perbuatan: sanksi administratif teguran tertulis | regulasi: POJK_11_2022
+
+Good answer: "Pasal 27 diatur dalam beberapa regulasi:
+
+**Menurut UU No. 11 Tahun 2008 (UU ITE):**
+Pasal 27 ayat (1) melarang setiap Orang mendistribusikan konten yang melanggar kesusilaan.
+
+**Menurut POJK No. 11/POJK.03/2022:**
+Pasal 27 ayat (1) mengatur sanksi administratif berupa teguran tertulis bagi Bank."
+
+Bad answer: "Pasal 27 ayat (1) mengatur tentang muatan kesusilaan dan sanksi administratif teguran tertulis." (WRONG — mixes two different regulations without labeling which is which)"""
 
 
 class LLMService:
@@ -208,7 +248,7 @@ class LLMService:
         try:
             response = model.generate_content(
                 [QUERY_SYSTEM, prompt],
-                generation_config={"temperature": 0.0, "max_output_tokens": 2048},
+                generation_config={"temperature": 0.0, "max_output_tokens": 4096},
             )
             cypher = cls._clean_cypher(response.text.strip())
             logger.info(f"Generated Cypher (attempt 1): {cypher}")
@@ -223,7 +263,7 @@ class LLMService:
                 )
                 response = model.generate_content(
                     [QUERY_SYSTEM, retry_prompt],
-                    generation_config={"temperature": 0.0, "max_output_tokens": 2048},
+                    generation_config={"temperature": 0.0, "max_output_tokens": 4096},
                 )
                 cypher = cls._clean_cypher(response.text.strip())
                 logger.info(f"Generated Cypher (attempt 2): {cypher[:200]}")

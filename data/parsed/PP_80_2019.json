@@ -1,9 +1,9 @@
 {
   "document_id": "PP_80_2019",
-  "total_components": 515,
+  "total_components": 521,
   "component_types": {
     "ANGKA": 43,
-    "BAB": 16,
+    "BAB": 22,
     "PASAL": 139,
     "HURUF": 180,
     "AYAT": 137
@@ -3529,14 +3529,7 @@
         "PP_80_2019__PASAL_44",
         "PP_80_2019__PASAL_46",
         "PP_80_2019__PASAL_48",
-        "PP_80_2019__PASAL_49",
-        "PP_80_2019__PASAL_50",
-        "PP_80_2019__PASAL_51",
-        "PP_80_2019__PASAL_52",
-        "PP_80_2019__PASAL_53",
-        "PP_80_2019__PASAL_54",
-        "PP_80_2019__PASAL_55",
-        "PP_80_2019__PASAL_57"
+        "PP_80_2019__PASAL_49"
       ],
       "is_penjelasan": false
     },
@@ -4159,13 +4152,49 @@
       "component_type": "AYAT",
       "number": "3",
       "title": null,
-      "content": "Bukti transaksi yang menggunakan tanda tangan\nelektronik tersertifikasi melalui sertifikat elektronik yang\nditerbitkan oleh penyelenggara sertifikasi elektronik\ntersertifikasi atau berinduk dapat dianggap sebagai bukti\ntertulis yang autentik.\nBABX...\nSK No 019135 A\nPRESIDEN\nREPUBTIK TNDONESIA BAB X\nKONTRAK ELEKTRONIK",
+      "content": "Bukti transaksi yang menggunakan tanda tangan\nelektronik tersertifikasi melalui sertifikat elektronik yang\nditerbitkan oleh penyelenggara sertifikasi elektronik\ntersertifikasi atau berinduk dapat dianggap sebagai bukti\ntertulis yang autentik.",
       "page_range": [
         24,
-        25
+        24
       ],
       "parent_id": "PP_80_2019__PASAL_49",
       "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "PP_80_2019__BAB_X",
+      "component_type": "BAB",
+      "number": "X",
+      "title": "SK No 019135 A PRESIDEN",
+      "content": "",
+      "page_range": [
+        24,
+        24
+      ],
+      "parent_id": null,
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "PP_80_2019__BAB_X",
+      "component_type": "BAB",
+      "number": "X",
+      "title": "KONTRAK ELEKTRONIK",
+      "content": "",
+      "page_range": [
+        25,
+        25
+      ],
+      "parent_id": null,
+      "children": [
+        "PP_80_2019__PASAL_50",
+        "PP_80_2019__PASAL_51",
+        "PP_80_2019__PASAL_52",
+        "PP_80_2019__PASAL_53",
+        "PP_80_2019__PASAL_54",
+        "PP_80_2019__PASAL_55",
+        "PP_80_2019__PASAL_57"
+      ],
       "is_penjelasan": false
     },
     {
@@ -4178,7 +4207,7 @@
         25,
         25
       ],
-      "parent_id": "PP_80_2019__BAB_IX",
+      "parent_id": "PP_80_2019__BAB_X",
       "children": [],
       "is_penjelasan": false
     },
@@ -4192,7 +4221,7 @@
         25,
         25
       ],
-      "parent_id": "PP_80_2019__BAB_IX",
+      "parent_id": "PP_80_2019__BAB_X",
       "children": [
         "PP_80_2019__AYAT_1__PASAL_51",
         "PP_80_2019__AYAT_2__PASAL_51"
@@ -4313,7 +4342,7 @@
         25,
         25
       ],
-      "parent_id": "PP_80_2019__BAB_IX",
+      "parent_id": "PP_80_2019__BAB_X",
       "children": [
         "PP_80_2019__HURUF_a__PASAL_52",
         "PP_80_2019__HURUF_b__PASAL_52",
@@ -4403,7 +4432,7 @@
         26,
         26
       ],
-      "parent_id": "PP_80_2019__BAB_IX",
+      "parent_id": "PP_80_2019__BAB_X",
       "children": [
         "PP_80_2019__AYAT_1__PASAL_53",
         "PP_80_2019__AYAT_2__PASAL_53"
@@ -4584,7 +4613,7 @@
         26,
         26
       ],
-      "parent_id": "PP_80_2019__BAB_IX",
+      "parent_id": "PP_80_2019__BAB_X",
       "children": [],
       "is_penjelasan": false
     },
@@ -4598,7 +4627,7 @@
         26,
         27
       ],
-      "parent_id": "PP_80_2019__BAB_IX",
+      "parent_id": "PP_80_2019__BAB_X",
       "children": [],
       "is_penjelasan": false
     },
@@ -4612,7 +4641,7 @@
         27,
         27
       ],
-      "parent_id": "PP_80_2019__BAB_IX",
+      "parent_id": "PP_80_2019__BAB_X",
       "children": [
         "PP_80_2019__AYAT_1__PASAL_57",
         "PP_80_2019__AYAT_2__PASAL_57",
@@ -4675,9 +4704,7 @@
       "parent_id": null,
       "children": [
         "PP_80_2019__PASAL_58",
-        "PP_80_2019__PASAL_59",
-        "PP_80_2019__PASAL_60",
-        "PP_80_2019__PASAL_61"
+        "PP_80_2019__PASAL_59"
       ],
       "is_penjelasan": false
     },
@@ -4898,13 +4925,44 @@
       "component_type": "AYAT",
       "number": "4",
       "title": null,
-      "content": "Atas permintaan pemilik data pribadi sebagaimana\ndimaksud pada ayat (3), Pelaku Usaha harus menghapus\nseluruh data pribadi yang bersangkutan pada sistem yang\ndikelola oleh Pelaku Usaha tersebut.\nBABXII ...\nSK No 019139 A\nFRESIDEN\nREPUBtlK INDONESIA BAB XII\nPEMBAYARAN DALAM PERDAGANGAN MELALUI SISTEM ELEKTRONIK",
+      "content": "Atas permintaan pemilik data pribadi sebagaimana\ndimaksud pada ayat (3), Pelaku Usaha harus menghapus\nseluruh data pribadi yang bersangkutan pada sistem yang\ndikelola oleh Pelaku Usaha tersebut.",
       "page_range": [
         28,
-        29
+        28
       ],
       "parent_id": "PP_80_2019__PASAL_59",
       "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "PP_80_2019__BAB_XII",
+      "component_type": "BAB",
+      "number": "XII",
+      "title": "SK No 019139 A FRESIDEN",
+      "content": "",
+      "page_range": [
+        28,
+        28
+      ],
+      "parent_id": null,
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "PP_80_2019__BAB_XII",
+      "component_type": "BAB",
+      "number": "XII",
+      "title": "PEMBAYARAN DALAM PERDAGANGAN MELALUI SISTEM ELEKTRONIK",
+      "content": "",
+      "page_range": [
+        29,
+        29
+      ],
+      "parent_id": null,
+      "children": [
+        "PP_80_2019__PASAL_60",
+        "PP_80_2019__PASAL_61"
+      ],
       "is_penjelasan": false
     },
     {
@@ -4917,7 +4975,7 @@
         29,
         29
       ],
-      "parent_id": "PP_80_2019__BAB_XI",
+      "parent_id": "PP_80_2019__BAB_XII",
       "children": [
         "PP_80_2019__AYAT_1__PASAL_60",
         "PP_80_2019__AYAT_3__PASAL_60",
@@ -5007,7 +5065,7 @@
         29,
         29
       ],
-      "parent_id": "PP_80_2019__BAB_XI",
+      "parent_id": "PP_80_2019__BAB_XII",
       "children": [
         "PP_80_2019__AYAT_1__PASAL_61"
       ],
@@ -5407,11 +5465,7 @@
       "children": [
         "PP_80_2019__PASAL_69",
         "PP_80_2019__PASAL_7O",
-        "PP_80_2019__PASAL_71",
-        "PP_80_2019__PASAL_72",
-        "PP_80_2019__PASAL_73",
-        "PP_80_2019__PASAL_74",
-        "PP_80_2019__PASAL_75"
+        "PP_80_2019__PASAL_71"
       ],
       "is_penjelasan": false
     },
@@ -5586,13 +5640,46 @@
       "component_type": "PASAL",
       "number": "71",
       "title": null,
-      "content": "Setiap PPMSE dalam negeri dan/atau PPMSE luar negeri yang\nmenerima pembayaran wajib memiliki atau menyediakan\nmekanisme yang dapat memastikan pengembalian dana\nKonsumen apabila terjadi pembatalan pembelian oleh\nKonsumen.\nBABXV...\nSK No 019144 A\nPRESIDEN\nREPUELIK INDONE5IA BAB XV\nPENYELESAIAN SENGKETA DALAM PERDAGANGAN MELALUI SISTEM\nELEKTRONIK",
+      "content": "Setiap PPMSE dalam negeri dan/atau PPMSE luar negeri yang\nmenerima pembayaran wajib memiliki atau menyediakan\nmekanisme yang dapat memastikan pengembalian dana\nKonsumen apabila terjadi pembatalan pembelian oleh\nKonsumen.",
       "page_range": [
         33,
-        34
+        33
       ],
       "parent_id": "PP_80_2019__BAB_XIV",
       "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "PP_80_2019__BAB_XV",
+      "component_type": "BAB",
+      "number": "XV",
+      "title": "SK No 019144 A PRESIDEN",
+      "content": "",
+      "page_range": [
+        33,
+        33
+      ],
+      "parent_id": null,
+      "children": [],
+      "is_penjelasan": false
+    },
+    {
+      "component_id": "PP_80_2019__BAB_XV",
+      "component_type": "BAB",
+      "number": "XV",
+      "title": "PENYELESAIAN SENGKETA DALAM PERDAGANGAN MELALUI SISTEM ELEKTRONIK",
+      "content": "",
+      "page_range": [
+        34,
+        34
+      ],
+      "parent_id": null,
+      "children": [
+        "PP_80_2019__PASAL_72",
+        "PP_80_2019__PASAL_73",
+        "PP_80_2019__PASAL_74",
+        "PP_80_2019__PASAL_75"
+      ],
       "is_penjelasan": false
     },
     {
@@ -5605,7 +5692,7 @@
         34,
         34
       ],
-      "parent_id": "PP_80_2019__BAB_XIV",
+      "parent_id": "PP_80_2019__BAB_XV",
       "children": [
         "PP_80_2019__AYAT_1__PASAL_72",
         "PP_80_2019__AYAT_2__PASAL_72",
@@ -5665,7 +5752,7 @@
         34,
         34
       ],
-      "parent_id": "PP_80_2019__BAB_XIV",
+      "parent_id": "PP_80_2019__BAB_XV",
       "children": [
         "PP_80_2019__AYAT_1__PASAL_73",
         "PP_80_2019__AYAT_2__PASAL_73"
@@ -5710,7 +5797,7 @@
         34,
         34
       ],
-      "parent_id": "PP_80_2019__BAB_XIV",
+      "parent_id": "PP_80_2019__BAB_XV",
       "children": [
         "PP_80_2019__AYAT_1__PASAL_74",
         "PP_80_2019__AYAT_2__PASAL_74",
@@ -5801,7 +5888,7 @@
         35,
         35
       ],
-      "parent_id": "PP_80_2019__BAB_XIV",
+      "parent_id": "PP_80_2019__BAB_XV",
       "children": [
         "PP_80_2019__HURUF_a__PASAL_75",
         "PP_80_2019__HURUF_b__PASAL_75"

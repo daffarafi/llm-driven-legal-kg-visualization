@@ -81,8 +81,22 @@ class Neo4jLoader:
         
         print("Indexes created.")
     
+    @staticmethod
+    def _scoped_id(node_id: str, source_document_id: str) -> str:
+        """Create a document-scoped node ID to avoid cross-document collisions.
+        
+        e.g., 'Pasal_27' + 'UU_11_2008' → 'UU_11_2008__Pasal_27'
+        """
+        if source_document_id and not node_id.startswith(source_document_id):
+            return f"{source_document_id}__{node_id}"
+        return node_id
+
     def load_nodes(self, nodes: list[dict], show_progress: bool = True):
-        """Load nodes into Neo4j. Each node gets both :Entity and :{type} labels."""
+        """Load nodes into Neo4j. Each node gets both :Entity and :{type} labels.
+        
+        Node IDs are prefixed with source_document_id to ensure isolation
+        between documents (e.g., 'Pasal_27' → 'UU_11_2008__Pasal_27').
+        """
         iterator = tqdm(nodes, desc="Loading nodes") if show_progress else nodes
         
         with self._session() as session:
@@ -90,6 +104,10 @@ class Neo4jLoader:
                 node_type = node.get("type", "Entity")
                 embedding = node.get("embedding", [])
                 provenance = node.get("provenance", {})
+                source_doc = provenance.get("source_document_id", "")
+                
+                # Scope ID to document to avoid cross-document collisions
+                scoped_id = self._scoped_id(node["id"], source_doc)
                 
                 # Use MERGE to avoid duplicates
                 cypher = f"""
@@ -104,11 +122,11 @@ class Neo4jLoader:
                 """
                 
                 params = {
-                    "id": node["id"],
+                    "id": scoped_id,
                     "label": node.get("label", ""),
                     "content": node.get("content", ""),
                     "node_type": node_type,
-                    "source_doc": provenance.get("source_document_id", ""),
+                    "source_doc": source_doc,
                     "source_pages": provenance.get("source_pages", []),
                     "model": provenance.get("extraction_model", ""),
                 }
@@ -118,10 +136,20 @@ class Neo4jLoader:
                     cypher += ",\n                        n.embedding = $embedding"
                     params["embedding"] = embedding
                 
+                # Add jenis_perubahan if present (for amendment documents)
+                jenis = node.get("jenis_perubahan", "")
+                if jenis:
+                    cypher += ",\n                        n.jenis_perubahan = $jenis_perubahan"
+                    params["jenis_perubahan"] = jenis
+                
                 session.run(cypher, **params)
     
     def load_edges(self, edges: list[dict], show_progress: bool = True):
-        """Load edges/relationships into Neo4j."""
+        """Load edges/relationships into Neo4j.
+        
+        Edge source/target IDs are scoped to their source_document_id
+        to match the document-scoped node IDs.
+        """
         iterator = tqdm(edges, desc="Loading edges") if show_progress else edges
         
         with self._session() as session:
@@ -130,6 +158,11 @@ class Neo4jLoader:
                 target_id = edge.get("target_id", "") or edge.get("target", "")
                 edge_type = edge.get("type", "RELATED_TO")
                 provenance = edge.get("provenance", {})
+                source_doc = provenance.get("source_document_id", "")
+                
+                # Scope IDs to document
+                scoped_source = self._scoped_id(source_id, source_doc)
+                scoped_target = self._scoped_id(target_id, source_doc)
                 
                 # Dynamic relationship type
                 cypher = f"""
@@ -143,13 +176,13 @@ class Neo4jLoader:
                 try:
                     session.run(
                         cypher,
-                        source_id=source_id,
-                        target_id=target_id,
-                        source_doc=provenance.get("source_document_id", ""),
+                        source_id=scoped_source,
+                        target_id=scoped_target,
+                        source_doc=source_doc,
                     )
                 except Exception as e:
                     if show_progress:
-                        tqdm.write(f"  [WARN] Edge {source_id} -[{edge_type}]-> {target_id}: {e}")
+                        tqdm.write(f"  [WARN] Edge {scoped_source} -[{edge_type}]-> {scoped_target}: {e}")
     
     def load_amendment_kg(self, amendments: list[dict]):
         """Load amendment relationships between regulation nodes.
