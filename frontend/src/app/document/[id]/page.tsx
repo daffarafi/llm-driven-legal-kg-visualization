@@ -42,7 +42,7 @@ function formatLegalContent(text: string, depth: number = 0) {
     listMatch = numberedMatch;
     isNumbered = true;
   } else {
-    listMatch = letteredMatch;
+    listMatch = letteredMatch!;
     isNumbered = false;
   }
 
