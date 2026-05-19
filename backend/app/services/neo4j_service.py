@@ -298,6 +298,70 @@ class Neo4jService:
     # Document
     # ------------------------------------------------------------------
 
+    @staticmethod
+    def _roman_to_int(roman: str) -> int:
+        """Convert Roman numeral string to integer for sorting."""
+        vals = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100}
+        result = 0
+        for i, c in enumerate(roman):
+            if i + 1 < len(roman) and vals.get(c, 0) < vals.get(roman[i + 1], 0):
+                result -= vals.get(c, 0)
+            else:
+                result += vals.get(c, 0)
+        return result
+
+    @classmethod
+    def _sort_by_roman(cls, items: list[dict], label_key: str = "label") -> list[dict]:
+        """Sort items by Roman numeral extracted from BAB label."""
+        import re
+        def sort_key(item):
+            label = item.get(label_key, "") or ""
+            m = re.match(r'BAB\s+([IVXLC]+)', label)
+            return cls._roman_to_int(m.group(1)) if m else 999
+        return sorted(items, key=sort_key)
+
+    @staticmethod
+    def _sort_by_pasal_num(items: list[dict], label_key: str = "label") -> list[dict]:
+        """Sort items by Pasal number extracted from label."""
+        import re
+        def sort_key(item):
+            label = item.get(label_key, "") or ""
+            m = re.search(r'Pasal\s+(\d+)', label)
+            num = int(m.group(1)) if m else 999
+            # Handle sub-labels like '45A', '45B'
+            suffix = re.search(r'Pasal\s+\d+([A-Z])', label)
+            suffix_val = ord(suffix.group(1)) - ord('A') + 1 if suffix else 0
+            # Handle ayat numbers like 'ayat (2a)', 'ayat (7a)'
+            ayat = re.search(r'ayat\s*\((\d+)([a-z]?)\)', label)
+            ayat_num = int(ayat.group(1)) * 10 + (ord(ayat.group(2)) - ord('a') + 1 if ayat.group(2) else 0) if ayat else 0
+            return (num, suffix_val, ayat_num)
+        return sorted(items, key=sort_key)
+
+    @classmethod
+    def _sort_by_bagian(cls, items: list[dict], label_key: str = "label") -> list[dict]:
+        """Sort items by Indonesian ordinal number in Bagian label."""
+        import re
+        ordinals = {
+            "kesatu": 1, "kedua": 2, "ketiga": 3, "keempat": 4, "kelima": 5,
+            "keenam": 6, "ketujuh": 7, "kedelapan": 8, "kesembilan": 9, "kesepuluh": 10,
+            "kesebelas": 11, "keduabelas": 12, "ketigabelas": 13, "keempatbelas": 14,
+            "kelimabelas": 15, "keenambelas": 16, "ketujuhbelas": 17, "kedelapanbelas": 18,
+            "kesembilanbelas": 19, "kedua belas": 12, "ketiga belas": 13, "keempat belas": 14,
+            "kelima belas": 15, "keenam belas": 16, "ketujuh belas": 17, "kedelapan belas": 18,
+            "kesembilan belas": 19
+        }
+        def sort_key(item):
+            label = (item.get(label_key, "") or "").lower()
+            # E.g. "bagian kesatu umum" -> extract words after "bagian"
+            m = re.search(r'bagian\s+([a-z\s]+?)(?:\s+|$)', label)
+            if m:
+                word = m.group(1).strip()
+                for ord_word, val in ordinals.items():
+                    if word.startswith(ord_word):
+                        return val
+            return 999
+        return sorted(items, key=sort_key)
+
     @classmethod
     def get_document(cls, doc_id: str) -> dict | None:
         """Get document with its hierarchical structure.
@@ -305,54 +369,95 @@ class Neo4jService:
         Uses Regulasi nodes with hierarchy: Regulasi → Bab → Bagian → Pasal → Ayat.
         """
         with cls.get_session() as s:
-            # Try matching Regulasi node
-            reg = s.run("""
+            # Get Regulasi node
+            reg_result = s.run("""
                 MATCH (r:Regulasi)
                 WHERE r.id = $id OR r.source_document_id = $id
                    OR toLower(r.label) CONTAINS toLower($id)
-                OPTIONAL MATCH (r)-[:MEMUAT]->(bab:Bab)
-                OPTIONAL MATCH (bab)-[:MEMUAT]->(bagian:Bagian)
-                OPTIONAL MATCH (bab)-[:MEMUAT]->(pasal_direct:Pasal)
-                OPTIONAL MATCH (bagian)-[:MEMUAT]->(pasal_bagian:Pasal)
-                WITH r,
-                     collect(DISTINCT {
-                         id: elementId(bab), label: bab.label, content: bab.content
-                     }) AS bab_list,
-                     collect(DISTINCT {
-                         id: elementId(bagian), label: bagian.label, content: bagian.content,
-                         bab: bab.label
-                     }) AS bagian_list,
-                     collect(DISTINCT {
-                         id: elementId(pasal_direct), label: pasal_direct.label,
-                         content: pasal_direct.content, bab: bab.label
-                     }) + collect(DISTINCT {
-                         id: elementId(pasal_bagian), label: pasal_bagian.label,
-                         content: pasal_bagian.content, bab: bab.label
-                     }) AS pasal_list
-                RETURN r, bab_list, bagian_list, pasal_list
+                RETURN r
             """, {"id": doc_id}).single()
 
-        if not reg or not reg["r"]:
-            return None
+            if not reg_result or not reg_result["r"]:
+                return None
 
-        doc = dict(reg["r"].items())
+            reg_node = reg_result["r"]
+            source_doc = reg_node.get("source_document_id", doc_id)
+
+            # Get BABs
+            bab_list = s.run("""
+                MATCH (r:Regulasi)-[:MEMUAT]->(b:Bab)
+                WHERE r.source_document_id = $d
+                RETURN elementId(b) AS id, b.label AS label, b.content AS content
+            """, {"d": source_doc}).data()
+
+            # Get Bagian with parent BAB
+            bagian_list = s.run("""
+                MATCH (b:Bab {source_document_id: $d})-[:MEMUAT]->(bg:Bagian)
+                RETURN elementId(bg) AS id, bg.label AS label, bg.content AS content,
+                       b.label AS bab
+            """, {"d": source_doc}).data()
+
+            # Get Pasal — direct under BAB (no Bagian)
+            pasal_direct = s.run("""
+                MATCH (b:Bab {source_document_id: $d})-[:MEMUAT]->(p:Pasal)
+                WHERE NOT EXISTS { (b)-[:MEMUAT]->(:Bagian)-[:MEMUAT]->(p) }
+                RETURN elementId(p) AS id, p.label AS label, p.content AS content,
+                       b.label AS bab, null AS bagian
+            """, {"d": source_doc}).data()
+
+            # Get Pasal — under Bagian
+            pasal_bagian = s.run("""
+                MATCH (bg:Bagian {source_document_id: $d})-[:MEMUAT]->(p:Pasal)
+                OPTIONAL MATCH (b:Bab {source_document_id: $d})-[:MEMUAT]->(bg)
+                RETURN elementId(p) AS id, p.label AS label, p.content AS content,
+                       b.label AS bab, bg.label AS bagian
+            """, {"d": source_doc}).data()
+
+            # Get Pasal — directly under Regulasi (no BAB, e.g. UU_19_2016)
+            pasal_regulasi = s.run("""
+                MATCH (r:Regulasi {source_document_id: $d})-[:MEMUAT]->(p:Pasal)
+                RETURN elementId(p) AS id, p.label AS label, p.content AS content,
+                       null AS bab, null AS bagian
+            """, {"d": source_doc}).data()
+
+            # Merge pasal lists, deduplicate by id
+            pasal_map = {}
+            for p in pasal_direct + pasal_bagian + pasal_regulasi:
+                if p.get("id") and p["id"] not in pasal_map:
+                    pasal_map[p["id"]] = p
+            pasal_list = list(pasal_map.values())
+
+            # Get Ayat
+            ayat_list = s.run("""
+                MATCH (p:Pasal {source_document_id: $d})-[:MEMILIKI_AYAT]->(a:Ayat)
+                RETURN elementId(a) AS id, a.label AS label, a.content AS content,
+                       p.label AS pasal
+            """, {"d": source_doc}).data()
+
+        # Sort everything properly
+        bab_list = cls._sort_by_roman(bab_list)
+        bagian_list = cls._sort_by_bagian(bagian_list)
+        pasal_list = cls._sort_by_pasal_num(pasal_list)
+        ayat_list = cls._sort_by_pasal_num(ayat_list)
+
+        doc = dict(reg_node.items())
         doc["id"] = doc_id
         return {
             "document": doc,
-            "bab": [b for b in reg["bab_list"] if b.get("id")],
-            "bagian": [bg for bg in reg["bagian_list"] if bg.get("id")],
-            "pasal": [p for p in reg["pasal_list"] if p.get("id")],
+            "bab": [b for b in bab_list if b.get("id")],
+            "bagian": [bg for bg in bagian_list if bg.get("id")],
+            "pasal": pasal_list,
+            "ayat": ayat_list,
         }
 
     @classmethod
     def get_regulations(cls) -> list[dict]:
-        """Return all Regulasi nodes with metadata.
-
-        Uses COALESCE to provide sensible fallbacks when optional
-        properties are absent on a node.
-        """
+        """Return all Regulasi nodes with metadata and entity counts."""
         cypher = """
             MATCH (r:Regulasi)
+            OPTIONAL MATCH (e {source_document_id: r.source_document_id})
+              WHERE e:PerbuatanHukum OR e:EntitasHukum OR e:KonsepHukum OR e:Sanksi
+            WITH r, count(DISTINCT e) AS entity_count
             RETURN coalesce(r.doc_id, r.source_document_id, r.id) AS doc_id,
                    r.label                                         AS label,
                    coalesce(r.short_name, r.label)                 AS short_name,
@@ -365,7 +470,8 @@ class Neo4jService:
                            ELSE 'Lainnya'
                        END)                                        AS regulation_type,
                    r.year                                          AS year,
-                   r.status                                        AS status
+                   r.status                                        AS status,
+                   entity_count
             ORDER BY r.label
         """
         with cls.get_session() as s:

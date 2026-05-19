@@ -101,16 +101,16 @@ export interface DocumentSection {
   label?: string;
   content?: string;
   bab?: string;
+  bagian?: string;
   pasal?: string;
 }
 
 export interface DocumentData {
   document: Record<string, unknown>;
   bab?: DocumentSection[];
+  bagian?: DocumentSection[];
   pasal?: DocumentSection[];
   ayat?: DocumentSection[];
-  entities_by_type?: Record<string, DocumentSection[]>;
-  total_entities?: number;
 }
 
 // --- Regulations (Multi-document) ---

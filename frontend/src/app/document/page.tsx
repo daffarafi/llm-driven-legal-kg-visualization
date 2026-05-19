@@ -69,11 +69,6 @@ export default function DocumentsListPage() {
             eksplorasi
           </p>
         </div>
-        <Link href="/document/regulations-graph">
-          <div className="flex items-center gap-1 text-sm text-amber-500 hover:text-amber-400 transition-colors cursor-pointer">
-            <GitBranch className="h-4 w-4" /> Lihat Relasi
-          </div>
-        </Link>
       </div>
 
       {loading ? (
