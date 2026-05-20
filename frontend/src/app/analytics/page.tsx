@@ -157,23 +157,25 @@ export default function AnalyticsPage() {
           <CardContent>
             <ResponsiveContainer width="100%" height={300}>
               <BarChart data={stats.node_types} layout="vertical" margin={{ left: 20 }}>
-                <XAxis type="number" stroke="#666" fontSize={11} />
+                <XAxis type="number" stroke="#94a3b8" fontSize={11} />
                 <YAxis
                   dataKey="label"
                   type="category"
                   width={120}
-                  stroke="#666"
+                  stroke="#94a3b8"
                   fontSize={11}
+                  interval={0}
                   tick={// eslint-disable-next-line @typescript-eslint/no-explicit-any
                   ((props: any) => (
-                    <text x={props.x} y={props.y} dy={4} textAnchor="end" fill={NODE_COLORS[props.payload?.value] || "#888"} fontSize={11}>
+                    <text x={props.x} y={props.y} dy={4} textAnchor="end" fill={NODE_COLORS[props.payload?.value] || "#cbd5e1"} fontSize={11}>
                       {props.payload?.value}
                     </text>
                   )) as any}
                 />
-                <Tooltip
-                  contentStyle={{ backgroundColor: "#1a1a2e", border: "1px solid #333", borderRadius: "8px" }}
-                  labelStyle={{ color: "#fff" }}
+                 <Tooltip
+                  contentStyle={{ backgroundColor: "#0f172a", border: "1px solid #334155", borderRadius: "8px" }}
+                  itemStyle={{ color: "#f1f5f9" }}
+                  labelStyle={{ color: "#94a3b8" }}
                 />
                 <Bar dataKey="count" radius={[0, 4, 4, 0]}>
                   {stats.node_types.map((entry: TypeCount, i: number) => (
@@ -203,18 +205,29 @@ export default function AnalyticsPage() {
                   innerRadius={50}
                   paddingAngle={2}
                   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-                  label={((props: any) => `${props.label} (${props.count || props.value})`) as any}
-                  labelLine={false}
+                  label={((props: any) => (
+                    <text
+                      x={props.x}
+                      y={props.y}
+                      fill="#f1f5f9"
+                      textAnchor={props.x > props.cx ? "start" : "end"}
+                      dominantBaseline="central"
+                      fontSize={11}
+                    >
+                      {props.payload?.label} ({props.value})
+                    </text>
+                  )) as any}
+                  labelLine={{ stroke: "#475569" }}
                   fontSize={10}
                 >
                   {stats.edge_types.map((_: TypeCount, i: number) => (
                     <Cell key={i} fill={CHART_COLORS[i % CHART_COLORS.length]} />
                   ))}
                 </Pie>
-                <Tooltip
-                  contentStyle={{ backgroundColor: "#1a1a2e", border: "1px solid #333", borderRadius: "8px" }}
+                 <Tooltip
+                  contentStyle={{ backgroundColor: "#0f172a", border: "1px solid #334155", borderRadius: "8px" }}
+                  itemStyle={{ color: "#f1f5f9" }}
                 />
-                <Legend fontSize={11} />
               </PieChart>
             </ResponsiveContainer>
           </CardContent>
@@ -277,7 +290,10 @@ export default function AnalyticsPage() {
                       <Badge
                         variant="outline"
                         className="text-[10px] px-1.5"
-                        style={{ borderColor: CHART_COLORS[i % CHART_COLORS.length] }}
+                        style={{
+                          borderColor: CHART_COLORS[i % CHART_COLORS.length],
+                          color: CHART_COLORS[i % CHART_COLORS.length]
+                        }}
                       >
                         {t.label}
                       </Badge>

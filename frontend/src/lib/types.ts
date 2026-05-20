@@ -189,13 +189,5 @@ export const NODE_SIZES: Record<string, number> = {
 export const DOC_COLORS: Record<string, string> = {
   UU_11_2008: "#3b82f6",
   UU_19_2016: "#6366f1",
-  UU_27_2022: "#8b5cf6",
-  UU_36_1999: "#a855f7",
-  PP_71_2019: "#22c55e",
-  PP_80_2019: "#16a34a",
-  PP_82_2012: "#15803d",
-  Perpres_95_2018: "#f97316",
-  Perpres_132_2022: "#ea580c",
-  Permen_Kominfo_5_2017: "#eab308",
   POJK_11_2022: "#06b6d4",
 };

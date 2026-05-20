@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useCallback, useMemo } from "react";
+import { useEffect, useState, useCallback, useMemo, useRef } from "react";
 import dynamic from "next/dynamic";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -14,12 +14,27 @@ import { NODE_COLORS, NODE_SIZES, DOC_COLORS } from "@/lib/types";
 import type { GraphNode, GraphEdge, NodeDetail, SearchResult, Regulation } from "@/lib/types";
 
 // Dynamic import for react-force-graph (SSR incompatible)
-const ForceGraph2D = dynamic(() => import("react-force-graph-2d"), { ssr: false });
+const ForceGraph2D = dynamic(
+  () => import("react-force-graph-2d"),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="flex items-center justify-center h-full text-muted-foreground">
+        Initializing graph engine...
+      </div>
+    ),
+  }
+);
 
 // All available node types
 const ALL_NODE_TYPES = [
   "Regulasi", "Bab", "Bagian", "Pasal", "Ayat",
   "EntitasHukum", "PerbuatanHukum", "Sanksi", "KonsepHukum",
+];
+
+// Default active node types (structural only)
+const DEFAULT_NODE_TYPES = [
+  "Regulasi", "Bab", "Bagian", "Pasal", "Ayat",
 ];
 
 export default function ExplorePage() {
@@ -29,13 +44,41 @@ export default function ExplorePage() {
   const [selectedNodeId, setSelectedNodeId] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
   const [searchResults, setSearchResults] = useState<SearchResult[]>([]);
-  const [activeTypes, setActiveTypes] = useState<Set<string>>(new Set(ALL_NODE_TYPES));
+  const [activeTypes, setActiveTypes] = useState<Set<string>>(new Set(DEFAULT_NODE_TYPES));
   const [showFilters, setShowFilters] = useState(true);
   const [loading, setLoading] = useState(true);
+  const [mounted, setMounted] = useState(false);
 
   // Document filter
   const [availableDocs, setAvailableDocs] = useState<Regulation[]>([]);
   const [activeDocIds, setActiveDocIds] = useState<Set<string>>(new Set());
+
+  // Container ref for sizing
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [dimensions, setDimensions] = useState({ width: 800, height: 600 });
+
+  // Track mount for SSR safety
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  // Measure container dimensions using ResizeObserver for reliability
+  useEffect(() => {
+    if (!mounted || !containerRef.current) return;
+
+    const el = containerRef.current;
+    const observer = new ResizeObserver((entries) => {
+      for (const entry of entries) {
+        const { width, height } = entry.contentRect;
+        if (width > 0 && height > 0) {
+          setDimensions({ width: Math.floor(width), height: Math.floor(height) });
+        }
+      }
+    });
+
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [mounted]);
 
   // Compute neighbor IDs for the selected node
   const neighborIds = useMemo(() => {
@@ -50,12 +93,11 @@ export default function ExplorePage() {
     return ids;
   }, [selectedNodeId, edges]);
 
-
   // Load initial graph + documents
   useEffect(() => {
     setLoading(true);
     Promise.all([
-      getGraph({ limit: 200 }),
+      getGraph({ limit: 2000 }),
       getDocuments(),
     ])
       .then(([graphRaw, docsRaw]) => {
@@ -66,7 +108,8 @@ export default function ExplorePage() {
         const dd = docsRaw as { regulations?: Regulation[] };
         const regs = dd.regulations || [];
         setAvailableDocs(regs);
-        setActiveDocIds(new Set(regs.map((r) => r.source_document_id || r.doc_id)));
+        // Default: only UU_11_2008 checked
+        setActiveDocIds(new Set(["UU_11_2008"]));
       })
       .catch(console.error)
       .finally(() => setLoading(false));
@@ -236,10 +279,10 @@ export default function ExplorePage() {
   }, [selectedNodeId, neighborIds]);
 
   return (
-    <div className="flex h-[calc(100vh-3.5rem)]">
+    <div className="flex h-[calc(100vh-3.5rem)] overflow-hidden">
       {/* Left: Filters */}
       {showFilters && (
-        <div className="w-56 border-r border-border/40 bg-card/30 p-3 flex flex-col gap-3">
+        <div className="w-56 flex-shrink-0 border-r border-border/40 bg-card/30 p-3 flex flex-col gap-3 overflow-y-auto">
           <div className="flex items-center justify-between">
             <h3 className="text-sm font-semibold flex items-center gap-1.5">
               <Filter className="h-3.5 w-3.5" /> Filters
@@ -346,7 +389,7 @@ export default function ExplorePage() {
       )}
 
       {/* Center: Graph Canvas */}
-      <div className="flex-1 relative">
+      <div className="flex-1 min-w-0 relative" ref={containerRef}>
         {!showFilters && (
           <Button
             size="sm"
@@ -361,7 +404,7 @@ export default function ExplorePage() {
           <div className="flex items-center justify-center h-full text-muted-foreground">
             Loading graph...
           </div>
-        ) : (
+        ) : mounted && dimensions.width > 0 && dimensions.height > 0 ? (
           <ForceGraph2D
             graphData={graphData}
             nodeCanvasObject={paintNode}
@@ -377,14 +420,14 @@ export default function ExplorePage() {
               const src = typeof link.source === "object" ? link.source.id : link.source;
               const tgt = typeof link.target === "object" ? link.target.id : link.target;
               if (src === selectedNodeId || tgt === selectedNodeId) return "rgba(255,180,50,0.8)";
-              return "rgba(255,255,255,0.35)"; // normal brightness
+              return "rgba(255,255,255,0.35)";
             }}
             linkWidth={(link: any) => {
               if (!selectedNodeId) return 1.2;
               const src = typeof link.source === "object" ? link.source.id : link.source;
               const tgt = typeof link.target === "object" ? link.target.id : link.target;
               if (src === selectedNodeId || tgt === selectedNodeId) return 2.5;
-              return 1.2; // normal width
+              return 1.2;
             }}
             linkDirectionalArrowLength={4}
             linkDirectionalArrowRelPos={0.9}
@@ -400,15 +443,19 @@ export default function ExplorePage() {
               node.fy = node.y;
             }}
             backgroundColor="transparent"
-            width={typeof window !== "undefined" ? window.innerWidth - (showFilters ? 224 : 0) - (selectedNode ? 350 : 0) : 800}
-            height={typeof window !== "undefined" ? window.innerHeight - 56 : 600}
+            width={dimensions.width}
+            height={dimensions.height}
           />
+        ) : (
+          <div className="flex items-center justify-center h-full text-muted-foreground">
+            Initializing graph engine...
+          </div>
         )}
       </div>
 
       {/* Right: Node Detail */}
       {selectedNode && (
-        <div className="w-[350px] border-l border-border/40 bg-card/30">
+        <div className="w-[350px] flex-shrink-0 border-l border-border/40 bg-card/30">
           <ScrollArea className="h-[calc(100vh-3.5rem)]">
             <div className="p-4">
               <div className="flex items-start justify-between mb-3">
@@ -423,7 +470,7 @@ export default function ExplorePage() {
                     {(selectedNode.properties?.label as string) || selectedNode.id}
                   </h2>
                 </div>
-                <Button size="sm" variant="ghost" className="h-6 w-6 p-0" onClick={() => setSelectedNode(null)}>
+                <Button size="sm" variant="ghost" className="h-6 w-6 p-0" onClick={() => { setSelectedNode(null); setSelectedNodeId(null); }}>
                   <X className="h-3 w-3" />
                 </Button>
               </div>
@@ -435,10 +482,9 @@ export default function ExplorePage() {
                     <CardTitle className="text-xs text-muted-foreground">Isi</CardTitle>
                   </CardHeader>
                   <CardContent className="px-3 pb-3">
-                    <p className="text-sm leading-relaxed">
-                      {String(selectedNode.properties.content).slice(0, 500)}
-                      {String(selectedNode.properties.content).length > 500 && "..."}
-                    </p>
+                    <div className="text-xs leading-relaxed max-h-[220px] overflow-y-auto custom-scrollbar whitespace-pre-wrap text-muted-foreground pr-1">
+                      {String(selectedNode.properties.content)}
+                    </div>
                   </CardContent>
                 </Card>
               )}
@@ -484,7 +530,7 @@ export default function ExplorePage() {
               {selectedNode.labels?.some(l => l === "Regulasi") && (
                 <>
                   <Separator className="my-3" />
-                  <a href={`/document/${encodeURIComponent(selectedNode.id)}`}>
+                  <a href={`/document/${encodeURIComponent(selectedNode.properties?.source_document_id || selectedNode.id)}`}>
                     <Button size="sm" variant="outline" className="w-full">
                       <ExternalLink className="h-3 w-3 mr-1" /> Lihat Dokumen
                     </Button>

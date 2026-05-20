@@ -29,6 +29,12 @@ def _extract_references(text: str) -> list[str]:
     refs = set()
     for m in re.finditer(r"Pasal\s+\d+(?:\s+ayat\s+\(\d+\))?", text):
         refs.add(m.group())
+    for m in re.finditer(r"Bab\s+[IVXLCDM\d]+", text, re.IGNORECASE):
+        # Normalise to uppercase like "BAB VII" to match database node labels
+        ref_upper = m.group().upper()
+        # Clean any double spaces if any
+        ref_upper = re.sub(r'\s+', ' ', ref_upper)
+        refs.add(ref_upper)
     for m in re.finditer(r"UU\s+(?:No\.\s*)?\d+(?:\s+Tahun\s+\d+)?", text):
         refs.add(m.group())
     return sorted(refs)
@@ -226,6 +232,71 @@ def _enrich_with_relations(nodes: list[dict]) -> tuple[list[dict], dict]:
     return enriched, graph
 
 
+def _connect_to_regulasi(mini_graph: dict) -> dict:
+    """For each node in the mini_graph, query its path up to its Regulasi node,
+    and add the parent nodes (Bab, Bagian, Regulasi) and their edges to the graph.
+    """
+    if not mini_graph or not mini_graph.get("nodes"):
+        return mini_graph
+
+    graph_nodes = {n["id"]: n for n in mini_graph["nodes"]}
+    graph_edges = list(mini_graph.get("edges", []))
+    existing_edges = set(f"{e['source']}->{e['target']}" for e in graph_edges)
+
+    # Find structural nodes (Pasal, Ayat, Bagian, Bab) to trace upwards
+    target_node_ids = []
+    for node in mini_graph["nodes"]:
+        labels = node.get("labels", [])
+        if any(l in labels for l in ["Pasal", "Ayat", "Bagian", "Bab"]):
+            target_node_ids.append(node["id"])
+
+    if not target_node_ids:
+        return mini_graph
+
+    # Query paths up to Regulasi in a single neo4j query or loop
+    with Neo4jService.get_session() as s:
+        for nid in target_node_ids:
+            # Match path from Regulasi to this node
+            # The relationship can be MEMUAT or MEMILIKI_AYAT
+            result = s.run("""
+                MATCH path = (r:Regulasi)-[:MEMUAT|MEMILIKI_AYAT*1..4]->(n)
+                WHERE elementId(n) = $nid
+                RETURN path
+            """, {"nid": nid})
+            for record in result:
+                path = record["path"]
+                if not path:
+                    continue
+                # Add all nodes in path
+                for node in path.nodes:
+                    node_id = node.element_id
+                    if node_id not in graph_nodes:
+                        labels = list(node.labels)
+                        label = node.get("label") or node.get("name") or node_id
+                        graph_nodes[node_id] = {
+                            "id": node_id,
+                            "labels": labels,
+                            "label": label,
+                        }
+                # Add all relationships in path
+                for rel in path.relationships:
+                    src_id = rel.start_node.element_id
+                    tgt_id = rel.end_node.element_id
+                    edge_key = f"{src_id}->{tgt_id}"
+                    if edge_key not in existing_edges:
+                        existing_edges.add(edge_key)
+                        graph_edges.append({
+                            "source": src_id,
+                            "target": tgt_id,
+                            "type": rel.type,
+                        })
+
+    return {
+        "nodes": list(graph_nodes.values()),
+        "edges": graph_edges,
+    }
+
+
 @router.post("/qa", response_model=QAResponse)
 async def ask_question(request: QARequest):
     """Hybrid QA pipeline: question → Cypher → keyword search → context → answer."""
@@ -335,6 +406,9 @@ async def ask_question(request: QARequest):
         if cypher_graph["nodes"]:
             # Cypher results are the actual answer — use them exclusively
             mini_graph = cypher_graph
+
+    # Connect all nodes in the mini graph to their parent Regulasi
+    mini_graph = _connect_to_regulasi(mini_graph)
 
     # Step 6: Generate response
     # Merge BOTH cypher results and keyword search results into context

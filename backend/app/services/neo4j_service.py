@@ -373,6 +373,7 @@ class Neo4jService:
             reg_result = s.run("""
                 MATCH (r:Regulasi)
                 WHERE r.id = $id OR r.source_document_id = $id
+                   OR elementId(r) = $id
                    OR toLower(r.label) CONTAINS toLower($id)
                 RETURN r
             """, {"id": doc_id}).single()

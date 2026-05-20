@@ -71,9 +71,9 @@ function AnswerContent({ text, references, onNodeSelect }: {
 }) {
   // Custom renderer: make "Pasal X" clickable inside markdown
   const renderTextWithRefs = useCallback((text: string) => {
-    const parts = text.split(/(Pasal\s+\d+(?:\s+ayat\s+\(\d+\))?)/gi);
+    const parts = text.split(/(Pasal\s+\d+(?:\s+ayat\s+\(\d+\))?|Bab\s+[IVXLCDM\d]+)/gi);
     return parts.map((part, i) => {
-      const isRef = /^Pasal\s+\d+/i.test(part);
+      const isRef = /^(Pasal\s+\d+|Bab\s+[IVXLCDM\d]+)/i.test(part);
       if (isRef) {
         return (
           <button
@@ -421,9 +421,9 @@ function LiveGraph({ graphNodes, graphEdges, selectTriggerRef }: {
               </div>
 
               {!!selectedDetail.properties?.content && (
-                <p className="text-[11px] text-muted-foreground mb-2 line-clamp-3">
+                <div className="text-[11px] text-muted-foreground mb-3 p-2 bg-background/50 rounded-md border border-border/20 max-h-[140px] overflow-y-auto custom-scrollbar whitespace-pre-wrap">
                   {String(selectedDetail.properties.content)}
-                </p>
+                </div>
               )}
 
               {selectedDetail.outgoing?.length > 0 && (
@@ -611,10 +611,10 @@ export default function QAPage() {
   };
 
   return (
-    <div className="flex h-[calc(100vh-3.5rem)]">
+    <div className="flex h-[calc(100vh-3.5rem)] overflow-hidden">
       {/* Left: Chat Panel */}
-      <div className="flex flex-col flex-1 min-w-0">
-        <ScrollArea className="flex-1 px-4">
+      <div className="flex flex-col flex-1 min-w-0 h-full overflow-hidden">
+        <div className="flex-1 overflow-y-auto px-4 custom-scrollbar">
           {messages.length === 0 && (
             <div className="flex flex-col items-center justify-center h-full text-center py-20">
               <Search className="h-12 w-12 text-amber-500/30 mb-4" />
@@ -687,7 +687,7 @@ export default function QAPage() {
             )}
             <div ref={scrollRef} />
           </div>
-        </ScrollArea>
+        </div>
 
         {/* Input with Document Filter */}
         <div className="border-t border-border/40 p-3">
@@ -790,7 +790,7 @@ export default function QAPage() {
       </div>
 
       {/* Right: Live Knowledge Graph Panel */}
-      <div className="w-[40%] max-w-[500px] border-l border-border/40 bg-card/20">
+      <div className="w-[40%] max-w-[500px] flex-shrink-0 border-l border-border/40 bg-card/20 h-full overflow-hidden">
         <LiveGraph graphNodes={allGraphNodes} graphEdges={allGraphEdges} selectTriggerRef={graphSelectRef} />
       </div>
     </div>

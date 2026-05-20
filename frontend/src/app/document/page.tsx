@@ -54,7 +54,7 @@ export default function DocumentsListPage() {
     {} as Record<string, Regulation[]>
   );
 
-  const typeOrder = ["UU", "POJK", "PP", "Perpres", "Permen", "Lainnya"];
+  const typeOrder = ["POJK", "UU", "PP", "Perpres", "Permen", "Lainnya"];
 
   return (
     <div className="max-w-[900px] mx-auto px-4 py-8">
@@ -123,9 +123,6 @@ export default function DocumentsListPage() {
                                   <p className="font-medium text-sm truncate">
                                     {reg.short_name || reg.label}
                                   </p>
-                                  <StatusIcon
-                                    className={`h-3.5 w-3.5 shrink-0 ${statusConf.color}`}
-                                  />
                                 </div>
                                 <p className="text-xs text-muted-foreground truncate">
                                   {reg.label}

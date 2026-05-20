@@ -11,7 +11,7 @@ async def get_graph(
     types: str | None = Query(None, description="Comma-separated node types"),
     relations: str | None = Query(None, description="Comma-separated relation types"),
     doc_ids: str | None = Query(None, description="Comma-separated source_document_ids"),
-    limit: int = Query(100, ge=1, le=1000),
+    limit: int = Query(100, ge=1, le=5000),
 ):
     """Get subgraph with optional node type, relation type, and document filters."""
     node_types = types.split(",") if types else None
