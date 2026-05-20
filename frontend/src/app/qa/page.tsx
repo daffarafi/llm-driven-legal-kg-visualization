@@ -476,13 +476,14 @@ function LiveGraph({ graphNodes, graphEdges, selectTriggerRef }: {
 /* ─── Template Questions (flat, tagged by doc_id) ─── */
 interface TemplateQ { text: string; doc_ids: string[]; }
 const TEMPLATE_QUESTIONS: TemplateQ[] = [
-  { text: "Apa sanksi pencemaran nama baik di UU ITE?", doc_ids: ["UU_11_2008"] },
-  { text: "Pasal apa saja di Bab VII UU ITE?", doc_ids: ["UU_11_2008"] },
-  { text: "Apa itu informasi elektronik menurut UU ITE?", doc_ids: ["UU_11_2008"] },
+  { text: "Apa sanksi pencemaran nama baik di UU ITE?", doc_ids: ["UU_11_2008", "UU_19_2016"] },
+  { text: "Pasal apa saja di Bab VII UU ITE?", doc_ids: ["UU_11_2008", "UU_19_2016"] },
+  { text: "Apa itu informasi elektronik menurut UU ITE?", doc_ids: ["UU_11_2008", "UU_19_2016"] },
+  { text: "Apa saja perubahan ketentuan dalam UU ITE Amandemen (UU 19/2016)?", doc_ids: ["UU_19_2016"] },
   { text: "Apa kewajiban tata kelola TI Bank menurut POJK?", doc_ids: ["POJK_11_2022"] },
   { text: "Sanksi apa jika Bank melanggar penyelenggaraan TI?", doc_ids: ["POJK_11_2022"] },
   { text: "Apa saja ketentuan ketahanan dan keamanan siber Bank menurut POJK?", doc_ids: ["POJK_11_2022"] },
-  { text: "Apa perbedaan definisi Sistem Elektronik di UU ITE dan POJK?", doc_ids: ["UU_11_2008", "POJK_11_2022"] },
+  { text: "Apa perbedaan definisi Sistem Elektronik di UU ITE dan POJK?", doc_ids: ["UU_11_2008", "UU_19_2016", "POJK_11_2022"] },
 ];
 
 /* ─── Main QA Page ─── */

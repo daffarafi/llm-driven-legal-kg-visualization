@@ -62,7 +62,7 @@ export default function DocumentsListPage() {
         <div>
           <h1 className="text-2xl font-bold flex items-center gap-2">
             <Scale className="h-6 w-6 text-amber-500" /> Klaster Regulasi ITE &
-            PDP
+            POJK
           </h1>
           <p className="text-sm text-muted-foreground mt-1">
             {regulations.length} peraturan dalam Knowledge Graph — klik untuk

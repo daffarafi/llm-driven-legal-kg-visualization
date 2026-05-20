@@ -48,7 +48,7 @@ export default function HomePage() {
           </h1>
           <p className="text-lg text-muted-foreground max-w-[600px] mb-8">
             Eksplorasi interaktif Knowledge Graph multi-dokumen hukum Indonesia.
-            Meliputi {docCount > 0 ? `${docCount} peraturan` : "klaster peraturan"} ITE & Perlindungan Data Pribadi
+            Meliputi {docCount > 0 ? `${docCount} peraturan` : "klaster peraturan"} ITE & Penyelenggaraan TI Perbankan (POJK)
             dengan pelacakan amandemen dan relasi antar-dokumen.
           </p>
           <div className="flex gap-3">
@@ -140,7 +140,7 @@ export default function HomePage() {
               href: "/document",
               icon: FileText,
               title: "Regulasi",
-              desc: "Jelajahi klaster regulasi ITE & PDP — relasi antar-dokumen, amandemen, versi pasal.",
+              desc: "Jelajahi klaster regulasi ITE & POJK — relasi antar-dokumen, amandemen, versi pasal.",
               color: "text-cyan-500",
             },
           ].map((f) => (
