@@ -88,9 +88,10 @@ class Neo4jService:
     ) -> dict:
         """Get a subgraph with optional filters.
         
-        Fetches all nodes (typically <1000 for legal KGs) to ensure
-        rare but important structural nodes (Regulasi, Bab, Bagian)
-        are always included.
+        Fetches nodes first, and then retrieves edges between them.
+        This avoids slow, memory-intensive nested collect(DISTINCT ...)
+        operations in Neo4j, making it significantly faster and safer
+        for larger limits.
         """
         where_clauses = []
         params: dict = {"limit": limit}
@@ -105,52 +106,60 @@ class Neo4jService:
 
         where = ("WHERE " + " AND ".join(where_clauses)) if where_clauses else ""
 
-        query = f"""
+        # Step 1: Query nodes matching criteria
+        nodes_query = f"""
             MATCH (n)
             {where}
-            WITH n LIMIT $limit
-            OPTIONAL MATCH (n)-[r]->(m)
-            RETURN collect(DISTINCT {{
-                id: elementId(n),
-                labels: labels(n),
-                label: n.label,
-                node_type: coalesce(n.node_type, head(labels(n))),
-                source_document_id: n.source_document_id,
-                content: substring(coalesce(n.content, ''), 0, 200)
-            }}) AS source_nodes,
-            collect(DISTINCT {{
-                id: elementId(m),
-                labels: labels(m),
-                label: m.label,
-                node_type: coalesce(m.node_type, head(labels(m))),
-                source_document_id: m.source_document_id,
-                content: substring(coalesce(m.content, ''), 0, 200)
-            }}) AS target_nodes,
-            collect(DISTINCT {{
-                source: elementId(n),
-                target: elementId(m),
-                type: type(r)
-            }}) AS edges
+            RETURN elementId(n) AS id,
+                   labels(n) AS labels,
+                   n.label AS label,
+                   coalesce(n.node_type, head(labels(n))) AS node_type,
+                   n.source_document_id AS source_document_id,
+                   substring(coalesce(n.content, ''), 0, 200) AS content
+            LIMIT $limit
         """
 
         with cls.get_session() as s:
-            result = s.run(query, params).single()
+            nodes_records = s.run(nodes_query, params).data()
 
-        # Merge source and target nodes, deduplicate
-        nodes_map = {}
-        for n in (result["source_nodes"] or []) + (result["target_nodes"] or []):
-            if n and n.get("id"):
-                nodes_map[n["id"]] = n
+        if not nodes_records:
+            return {"nodes": [], "edges": []}
 
-        # Filter edges
+        # Build nodes list and collect IDs
+        nodes = []
+        node_ids = []
+        for r in nodes_records:
+            nid = r["id"]
+            node_ids.append(nid)
+            nodes.append({
+                "id": nid,
+                "labels": r["labels"],
+                "label": r["label"],
+                "node_type": r["node_type"],
+                "source_document_id": r["source_document_id"],
+                "content": r["content"],
+            })
+
+        # Step 2: Query edges connecting the retrieved nodes
+        edges_query = """
+            MATCH (n)-[r]->(m)
+            WHERE elementId(n) IN $node_ids AND elementId(m) IN $node_ids
+            RETURN elementId(n) AS source,
+                   elementId(m) AS target,
+                   type(r) AS type
+        """
+
+        with cls.get_session() as s:
+            edges_records = s.run(edges_query, {"node_ids": node_ids}).data()
+
+        # Build and optionally filter edges by relation type
         edges = []
-        for e in result["edges"] or []:
-            if e and e.get("source") and e.get("target"):
-                if relation_types is None or e["type"] in relation_types:
-                    edges.append(e)
+        for e in edges_records:
+            if relation_types is None or e["type"] in relation_types:
+                edges.append(e)
 
         return {
-            "nodes": list(nodes_map.values()),
+            "nodes": nodes,
             "edges": edges,
         }
 
