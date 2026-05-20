@@ -117,6 +117,7 @@ def _build_graph_from_cypher(cypher_query: str, cypher_results: list[dict]) -> d
                     "id": nid,
                     "labels": r.get("labels", []),
                     "label": r.get("label", ""),
+                    "source_document_id": r.get("source_document_id", ""),
                 }
 
     # Get relationships between found nodes
@@ -163,6 +164,7 @@ def _enrich_with_relations(nodes: list[dict]) -> tuple[list[dict], dict]:
                 "id": nid,
                 "labels": node.get("labels", []),
                 "label": node.get("label", ""),
+                "source_document_id": node.get("source_document_id") or node.get("properties", {}).get("source_document_id", ""),
             }
 
     for node in nodes[:5]:  # Limit to avoid too many queries
@@ -195,6 +197,7 @@ def _enrich_with_relations(nodes: list[dict]) -> tuple[list[dict], dict]:
                             "id": tid,
                             "labels": r.get("target_type", []),
                             "label": r.get("target_label", ""),
+                            "source_document_id": r.get("target_source_document_id", ""),
                         }
                     graph_edges.append({
                         "source": node_id,
@@ -216,6 +219,7 @@ def _enrich_with_relations(nodes: list[dict]) -> tuple[list[dict], dict]:
                             "id": sid,
                             "labels": r.get("source_type", []),
                             "label": r.get("source_label", ""),
+                            "source_document_id": r.get("source_source_document_id", ""),
                         }
                     graph_edges.append({
                         "source": sid,
@@ -277,6 +281,7 @@ def _connect_to_regulasi(mini_graph: dict) -> dict:
                             "id": node_id,
                             "labels": labels,
                             "label": label,
+                            "source_document_id": node.get("source_document_id", ""),
                         }
                 # Add all relationships in path
                 for rel in path.relationships:

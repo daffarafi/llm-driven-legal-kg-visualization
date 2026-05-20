@@ -180,14 +180,16 @@ class Neo4jService:
                     direction: 'outgoing',
                     target_id: elementId(m_out),
                     target_label: m_out.label,
-                    target_type: labels(m_out)
+                    target_type: labels(m_out),
+                    target_source_document_id: m_out.source_document_id
                 }) AS outgoing,
                 collect(DISTINCT {
                     type: type(r_in),
                     direction: 'incoming',
                     source_id: elementId(m_in),
                     source_label: m_in.label,
-                    source_type: labels(m_in)
+                    source_type: labels(m_in),
+                    source_source_document_id: m_in.source_document_id
                 }) AS incoming
         """
         with cls.get_session() as s:
@@ -290,6 +292,7 @@ class Neo4jService:
             RETURN elementId(n) AS id,
                    labels(n) AS labels,
                    n.label AS label,
+                   n.source_document_id AS source_document_id,
                    substring(coalesce(n.content, ''), 0, 200) AS content
             LIMIT $limit
         """

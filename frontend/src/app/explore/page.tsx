@@ -12,6 +12,7 @@ import { Search, X, ExternalLink, Filter } from "lucide-react";
 import { getGraph, getNodeDetail, searchNodes, getDocuments } from "@/lib/api";
 import { NODE_COLORS, NODE_SIZES, DOC_COLORS } from "@/lib/types";
 import type { GraphNode, GraphEdge, NodeDetail, SearchResult, Regulation } from "@/lib/types";
+import { forceCollide } from "d3-force";
 
 // Dynamic import for react-force-graph (SSR incompatible)
 const ForceGraph2D = dynamic(
@@ -56,6 +57,7 @@ export default function ExplorePage() {
   // Container ref for sizing
   const containerRef = useRef<HTMLDivElement>(null);
   const [dimensions, setDimensions] = useState({ width: 800, height: 600 });
+  const fgRef = useRef<any>(null);
 
   // Track mount for SSR safety
   useEffect(() => {
@@ -163,6 +165,16 @@ export default function ExplorePage() {
     };
   }, [nodes, edges, activeTypes, activeDocIds, getNodeType]);
 
+  // Configure forces for Explore page graph
+  useEffect(() => {
+    if (fgRef.current) {
+      const fg = fgRef.current;
+      fg.d3Force("charge").strength(-150);
+      fg.d3Force("link").distance(65);
+      fg.d3Force("collide", forceCollide((node: any) => (node.val || 3) * 1.5 + 6));
+    }
+  }, [graphData]);
+
   // Handle node click — toggle: click same node = deselect
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const handleNodeClick = useCallback(async (node: any) => {
@@ -258,7 +270,19 @@ export default function ExplorePage() {
     // Draw label text (when zoomed in, or always for selected/neighbors)
     const showLabel = globalScale > 1.2 || isSelected || isNeighbor;
     if (showLabel) {
-      const displayLabel = label.length > 20 ? label.slice(0, 18) + "…" : label;
+      let displayLabel = label;
+      if (nodeType === "Regulasi" && node.source_document_id) {
+        displayLabel = node.source_document_id.replace(/_/g, " ");
+      } else if (nodeType === "Bab" && displayLabel.includes(" ")) {
+        const parts = displayLabel.split(" ");
+        if (parts[0].toUpperCase() === "BAB" && parts[1]) {
+          displayLabel = parts[0] + " " + parts[1];
+        }
+      }
+
+      if (displayLabel.length > 20) {
+        displayLabel = displayLabel.slice(0, 18) + "…";
+      }
       ctx.font = `${fontSize}px Inter, sans-serif`;
       ctx.textAlign = "center";
       ctx.textBaseline = "top";
@@ -406,6 +430,7 @@ export default function ExplorePage() {
           </div>
         ) : mounted && dimensions.width > 0 && dimensions.height > 0 ? (
           <ForceGraph2D
+            ref={fgRef}
             graphData={graphData}
             nodeCanvasObject={paintNode}
             nodePointerAreaPaint={(node: any, color: string, ctx: CanvasRenderingContext2D) => {

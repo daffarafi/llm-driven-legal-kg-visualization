@@ -15,6 +15,7 @@ import {
 import { askQuestion, getNodeDetail, getDocuments } from "@/lib/api";
 import type { ChatMessage, QAResponse, QAProcessStep, NodeDetail, Regulation } from "@/lib/types";
 import { NODE_COLORS, NODE_SIZES } from "@/lib/types";
+import { forceCollide } from "d3-force";
 
 const ForceGraph2D = dynamic(() => import("react-force-graph-2d"), { ssr: false });
 
@@ -180,7 +181,7 @@ function LiveGraph({ graphNodes, graphEdges, selectTriggerRef }: {
 
   // Build graph data
   const graphData = useMemo(() => {
-    const nodes = Array.from(graphNodes.values()).map((n) => {
+    const nodes = Array.from(graphNodes.values()).map((n: any) => {
       const nodeType = getNodeType(n.labels);
       return {
         id: n.id,
@@ -188,6 +189,7 @@ function LiveGraph({ graphNodes, graphEdges, selectTriggerRef }: {
         nodeType,
         color: NODE_COLORS[nodeType] || "#888",
         val: NODE_SIZES[nodeType] || 3,
+        source_document_id: n.source_document_id || "",
       };
     });
     const nodeIds = new Set(nodes.map(n => n.id));
@@ -258,6 +260,16 @@ function LiveGraph({ graphNodes, graphEdges, selectTriggerRef }: {
     selectTriggerRef.current = selectNodeByLabel;
   }, [selectNodeByLabel, selectTriggerRef]);
 
+  // Configure forces for QA graph
+  useEffect(() => {
+    if (fgRef.current) {
+      const fg = fgRef.current;
+      fg.d3Force("charge").strength(-120);
+      fg.d3Force("link").distance(60);
+      fg.d3Force("collide", forceCollide((node: any) => (node.val || 3) * 1.5 + 5));
+    }
+  }, [graphData]);
+
   const handleDeselect = useCallback(() => {
     selectedNodeIdRef.current = null;
     neighborIdsRef.current = new Set();
@@ -308,7 +320,20 @@ function LiveGraph({ graphNodes, graphEdges, selectTriggerRef }: {
     if (showLabel) {
       const fontSize = Math.max(10 / globalScale, 1.5);
       const label = node.label || "";
-      const displayLabel = label.length > 16 ? label.slice(0, 14) + "…" : label;
+      let displayLabel = label;
+
+      if (nodeType === "Regulasi" && node.source_document_id) {
+        displayLabel = node.source_document_id.replace(/_/g, " ");
+      } else if (nodeType === "Bab" && displayLabel.includes(" ")) {
+        const parts = displayLabel.split(" ");
+        if (parts[0].toUpperCase() === "BAB" && parts[1]) {
+          displayLabel = parts[0] + " " + parts[1];
+        }
+      }
+
+      if (displayLabel.length > 16) {
+        displayLabel = displayLabel.slice(0, 14) + "…";
+      }
       ctx.font = `${fontSize}px Inter, sans-serif`;
       ctx.textAlign = "center";
       ctx.textBaseline = "top";
