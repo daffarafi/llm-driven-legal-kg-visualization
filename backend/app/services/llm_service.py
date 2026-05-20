@@ -8,40 +8,45 @@ KG_SCHEMA = """
 ## Node Types (with counts)
 | Label | Count | Description |
 |-------|-------|-------------|
-| PerbuatanHukum | ~200 | Specific legal actions that are regulated/prohibited |
-| Ayat | ~150 | Sub-article within a Pasal (e.g., "Pasal 27 ayat (1)") |
-| EntitasHukum | ~100 | Legal subjects/objects (persons, institutions) |
-| Pasal | ~80 | Articles in the regulation (e.g., "Pasal 27") |
-| KonsepHukum | ~60 | Formally defined legal concepts (e.g., "Informasi Elektronik") |
-| Sanksi | ~15 | Penalties/sanctions with full detail |
-| Bab | ~20 | Chapters (e.g., "BAB VII PERBUATAN YANG DILARANG") |
-| Bagian | ~10 | Sections within a Bab (e.g., "Bagian Kedua") |
-| Regulasi | ~5 | The regulation document itself. Has "jenis" property (Undang-Undang, POJK, etc.) and "source_document_id" |
+| PerbuatanHukum | 385 | Specific legal actions that are regulated/prohibited |
+| Ayat | 294 | Sub-article within a Pasal (e.g., "Pasal 27 ayat (1)") |
+| EntitasHukum | 129 | Legal subjects/objects (persons, institutions) |
+| Pasal | 139 | Articles in the regulation (e.g., "Pasal 27") |
+| KonsepHukum | 38 | Formally defined legal concepts (e.g., "Informasi Elektronik") |
+| Sanksi | 29 | Penalties/sanctions with full detail |
+| Bab | 27 | Chapters (e.g., "BAB VII PERBUATAN YANG DILARANG") |
+| Bagian | 19 | Sections within a Bab (e.g., "Bagian Kedua") |
+| Regulasi | 3 | The regulation document itself. Identified by source_document_id property |
 
 ## Relationship Types (with counts and directions)
 | Relationship | Typical Pattern | Count |
 |-------------|-----------------|-------|
-| MENGATUR | (Ayat/Pasal) -> (PerbuatanHukum) | ~200 |
-| BERLAKU_UNTUK | (Ayat/Pasal) -> (EntitasHukum) | ~180 |
-| MERUJUK | (Ayat) -> (Ayat/Pasal), (Pasal) -> (Pasal/Ayat) | ~150 |
-| MEMUAT | (Regulasi) -> (Bab), (Bab) -> (Bagian), (Bab) -> (Pasal), (Bagian) -> (Pasal) | ~100 |
-| MEMILIKI_AYAT | (Pasal) -> (Ayat) | ~100 |
-| MENDEFINISIKAN | (Pasal/Ayat) -> (KonsepHukum) | ~60 |
-| MENETAPKAN_SANKSI | (Ayat/Pasal) -> (Sanksi) | ~18 |
-| MENGAMANDEMEN | (Regulasi) -> (Regulasi) | ~2 |
+| BERLAKU_UNTUK | (Ayat/Pasal) -> (EntitasHukum) | 421 |
+| MENGATUR | (Ayat/Pasal) -> (PerbuatanHukum) | 394 |
+| MEMILIKI_AYAT | (Pasal) -> (Ayat) | 294 |
+| MERUJUK | (Ayat) -> (Ayat/Pasal), (Pasal) -> (Pasal/Ayat) | 280 |
+| MEMUAT | (Regulasi) -> (Bab), (Bab) -> (Bagian), (Bab) -> (Pasal), (Bagian) -> (Pasal) | 185 |
+| MENETAPKAN_SANKSI | (Ayat/Pasal) -> (Sanksi) | 68 |
+| MENDEFINISIKAN | (Pasal/Ayat) -> (KonsepHukum) | 34 |
+| MENGAMANDEMEN | (Regulasi) -> (Regulasi) | 1 |
+"""
+
+QUERY_SYSTEM = f"""You are a Cypher query generator for an Indonesian legal Knowledge Graph in Neo4j.
+Given a user question about Indonesian law, generate a Cypher query to retrieve the relevant data.
+
+## Database Schema (Nodes and Relationships)
+{KG_SCHEMA}
 
 ## Node Properties
 All nodes have: id, label, content, source_document_id, embedding
 - label: The display name (e.g., "Pasal 27", "Setiap Orang")
 - content: Description or original text excerpt
-- source_document_id: Identifies which regulation this node belongs to (e.g., "UU_11_2008", "POJK_11_2022")
-- Regulasi nodes also have: jenis (e.g., "Undang-Undang", "POJK")
+- source_document_id: Identifies which regulation this node belongs to (values: 'UU_11_2008' for UU ITE, 'UU_19_2016' for Perubahan UU ITE, 'POJK_11_2022' for POJK TI Bank)
 - Some nodes (in amendment documents) have: jenis_perubahan ("mengubah"/"menyisipkan"/"menghapus")
 
 ## Sample Node Labels
-- Regulasi: "UNDANG-UNDANG TENTANG INFORMASI DAN TRANSAKSI ELEKTRONIK" (jenis: Undang-Undang, source_document_id: UU_11_2008), "Peraturan Otoritas Jasa Keuangan Nomor 11/POJK.03/2022 tentang Penyelenggaraan Teknologi Informasi oleh Bank Umum" (jenis: POJK, source_document_id: POJK_11_2022)
+- Regulasi: "UNDANG-UNDANG TENTANG INFORMASI DAN TRANSAKSI ELEKTRONIK" (source_document_id: UU_11_2008), "Peraturan Otoritas Jasa Keuangan Nomor 11/POJK.03/2022 tentang Penyelenggaraan Teknologi Informasi oleh Bank Umum" (source_document_id: POJK_11_2022)
 - Bab: "BAB VII PERBUATAN YANG DILARANG", "BAB XI KETENTUAN PIDANA", "BAB II TATA KELOLA TI BANK", "BAB V KETAHANAN DAN KEAMANAN SIBER BANK", "BAB VIII PENGELOLAAN DATA DAN PELINDUNGAN DATA PRIBADI DALAM PENYELENGGARAAN TI BANK"
-  NOTE: Bab labels may be short ("BAB VII") or include a title ("BAB V KETAHANAN DAN KEAMANAN SIBER BANK"). Always use regex matching.
 - Bagian: "Bagian Kedua Penyelenggaraan Sistem Elektronik", "Bagian Kesatu Umum"
 - Pasal: "Pasal 1", "Pasal 27", "Pasal 45"
 - Ayat: "Pasal 27 ayat (1)", "Pasal 45 ayat (3)"
@@ -62,7 +67,6 @@ All nodes have: id, label, content, source_document_id, embedding
 
 IMPORTANT: Most MENGATUR, BERLAKU_UNTUK, and MENETAPKAN_SANKSI edges originate from Ayat nodes, NOT Pasal.
 When searching for what an article regulates, query BOTH Pasal and Ayat.
-Use (r:Regulasi) instead of (u:UndangUndang) in all queries.
 
 ## Multi-Document Filtering
 The KG contains multiple regulations. To filter by document, use:
@@ -70,23 +74,15 @@ The KG contains multiple regulations. To filter by document, use:
   WHERE n.source_document_id = 'POJK_11_2022' (for POJK TI Bank)
 When the user asks about a specific regulation (e.g., "menurut POJK", "di UU ITE"), filter with source_document_id.
 Note: Pasal labels like "Pasal 1" can appear in multiple regulations, so filtering is important for disambiguation.
-"""
-
-QUERY_SYSTEM = f"""You are a Cypher query generator for an Indonesian legal Knowledge Graph in Neo4j.
-Given a user question about Indonesian law, generate a Cypher query to retrieve the relevant data.
-
-{KG_SCHEMA}
 
 ## STRICT OUTPUT RULES
 1. Output ONLY the raw Cypher query. NO markdown, NO ```, NO explanation.
 2. For Pasal label filters, the strategy depends on the RELATIONSHIP being queried:
    - For MENGATUR, BERLAKU_UNTUK, MENETAPKAN_SANKSI, MERUJUK: ALWAYS use CONTAINS (e.g., p.label CONTAINS 'Pasal 2') because these edges are mostly on Ayat nodes ("Pasal 2 ayat (1)"), not on the Pasal node itself.
    - For MEMUAT, MEMILIKI_AYAT, MENDEFINISIKAN, or reading Pasal content: use exact match with toLower() (e.g., toLower(p.label) = 'pasal 2').
-   - For Bab labels: ALWAYS use regex (e.g., b.label =~ '(?i)^BAB VII(\\s.*|$)') because Bab labels may include titles.
 3. ALWAYS end with a LIMIT clause (default to LIMIT 100 to avoid overloading, but if the user asks for 'semua'/'all', 'list semua', or a complete list of items, use a higher limit like LIMIT 300 or do not use a LIMIT clause at all).
 4. Query must be syntactically valid (balanced parentheses, MATCH + RETURN).
 5. Use toLower() for case-insensitive matching.
-6. Node labels do NOT contain regulation names like "UU ITE" or "UU No. 11 Tahun 2008". Strip these from the search filter. Example: "Pasal 1 UU ITE" → filter by 'pasal 1' only.
 
 ## QUERY PATTERNS
 
@@ -154,7 +150,6 @@ Question: "Apakah Pasal 27 sudah diubah?"
 MATCH (r1:Regulasi {{source_document_id:'UU_11_2008'}})<-[:MENGAMANDEMEN]-(r2:Regulasi) MATCH (p2 {{source_document_id: r2.source_document_id}}) WHERE p2.label CONTAINS 'Pasal 27' AND p2.jenis_perubahan IS NOT NULL RETURN r2.source_document_id AS dokumen_pengubah, p2.label AS pasal, p2.jenis_perubahan AS jenis, p2.content AS isi_baru LIMIT 100
 
 ## COMMON MISTAKES TO AVOID
-- Do NOT use CONTAINS or exact match (=) for Bab labels — labels may include titles (e.g., "BAB V KETAHANAN DAN KEAMANAN SIBER BANK"). Use REGEX: b.label =~ '(?i)^BAB VII(\\s.*|$)' to match the roman numeral precisely without substring collisions.
 - CAUTION with CONTAINS for single-digit Pasal: WHERE p.label CONTAINS 'Pasal 3' also matches 'Pasal 30'-'Pasal 39'. This is ACCEPTABLE for MENGATUR/BERLAKU_UNTUK/MENETAPKAN_SANKSI/MERUJUK queries (returns more data, better recall). For structural queries (MEMUAT, content read), use exact match: toLower(p.label) = 'pasal 3'.
 - Do NOT forget LIMIT: Use LIMIT 100 by default. Adjust to higher limits (e.g., LIMIT 300) or omit it only when a complete list of everything is requested.
 - Do NOT assume MENGATUR and MENETAPKAN_SANKSI are on the SAME node — they are usually on DIFFERENT nodes connected by MERUJUK
@@ -197,9 +192,7 @@ Data contains:
 1. pasal: Pasal 27 ayat (1) | perbuatan: muatan melanggar kesusilaan | regulasi: UU_11_2008
 2. pasal: Pasal 27 ayat (1) | perbuatan: sanksi administratif teguran tertulis | regulasi: POJK_11_2022
 
-Good answer: "Pasal 27 diatur dalam beberapa regulasi:
-
-**Menurut UU No. 11 Tahun 2008 (UU ITE):**
+Good answer: "**Menurut UU No. 11 Tahun 2008 (UU ITE):**
 Pasal 27 ayat (1) melarang setiap Orang mendistribusikan konten yang melanggar kesusilaan.
 
 **Menurut POJK No. 11/POJK.03/2022:**
