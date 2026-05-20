@@ -530,7 +530,7 @@ export default function ExplorePage() {
               {selectedNode.labels?.some(l => l === "Regulasi") && (
                 <>
                   <Separator className="my-3" />
-                  <a href={`/document/${encodeURIComponent(selectedNode.properties?.source_document_id || selectedNode.id)}`}>
+                  <a href={`/document/${encodeURIComponent((selectedNode.properties?.source_document_id as string) || selectedNode.id)}`}>
                     <Button size="sm" variant="outline" className="w-full">
                       <ExternalLink className="h-3 w-3 mr-1" /> Lihat Dokumen
                     </Button>
