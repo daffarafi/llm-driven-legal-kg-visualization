@@ -83,6 +83,13 @@ Note: Pasal labels like "Pasal 1" can appear in multiple regulations, so filteri
 3. ALWAYS end with a LIMIT clause (default to LIMIT 100 to avoid overloading, but if the user asks for 'semua'/'all', 'list semua', or a complete list of items, use a higher limit like LIMIT 300 or do not use a LIMIT clause at all).
 4. Query must be syntactically valid (balanced parentheses, MATCH + RETURN).
 5. Use toLower() for case-insensitive matching.
+6. For queries asking for lists, complete lists of articles, or articles with paragraphs (e.g., "daftar pasal", "list pasal yang lengkap", "semua pasal", "semua pasal beserta ayat-ayatnya"), ALWAYS use `OPTIONAL MATCH` to retrieve both Pasal and their optional Ayat (e.g., `MATCH (p:Pasal) OPTIONAL MATCH (p)-[:MEMILIKI_AYAT]->(a:Ayat)`) rather than just matching `MATCH (p:Pasal)`. This ensures that the RAG pipeline retrieves the complete structural information about which articles have paragraphs, while articles without sub-articles (like Pasal 1, 2) are not excluded from the results.
+7. OPTIMIZE FOR STRUCTURAL LISTINGS: If the user is asking about MULTIPLE or ALL articles/paragraphs/chapters at once — whether listing, explaining, or describing them in bulk — do NOT return the `.content` property of the nodes. ONLY return labels (e.g., `p.label`, `a.label`) and metadata (e.g., `source_document_id`).
+   This rule applies to ALL of the following query types:
+   - Listing queries: "sebutkan semua pasal", "daftar pasal beserta ayat", "pasal apa saja di bab X"
+   - Bulk explanation queries: "jelaskan pasal-pasal yang ada satu persatu", "jelaskan semua pasal", "uraikan pasal-pasal di sistem"
+   - General enumeration: "pasal apa saja yang ada", "berikan semua pasal beserta ayatnya"
+   CRITICAL DISTINCTION: Only return `.content` when the user asks about a SPECIFIC, SINGLE article (e.g., "jelaskan Pasal 27", "apa isi Pasal 1", "apa bunyi Pasal 45 ayat (1)"). If the question refers to multiple/all articles (indicated by plural forms like "pasal-pasal", "semua pasal", or absence of a specific article number), treat it as a structural listing and OMIT `.content`.
 
 ## QUERY PATTERNS
 
@@ -104,7 +111,7 @@ MATCH (a)-[:MERUJUK]->(target), (a)-[:MENETAPKAN_SANKSI]->(sk:Sanksi) WHERE toLo
 Note: Some Bab have Bagian sub-sections. Use OPTIONAL MATCH for both direct and Bagian-contained Pasal.
 IMPORTANT: Bab labels can be short ("BAB VII") or include a title ("BAB V KETAHANAN DAN KEAMANAN SIBER BANK"). Use regex to match the roman numeral precisely and avoid substring collisions (e.g., 'bab v' must NOT match 'bab vii').
 Question: "Pasal apa saja di Bab XI?"
-MATCH (b:Bab) WHERE b.label =~ '(?i)^BAB XI(\\s.*|$)' OPTIONAL MATCH (b)-[:MEMUAT]->(p1:Pasal) OPTIONAL MATCH (b)-[:MEMUAT]->(bg:Bagian)-[:MEMUAT]->(p2:Pasal) WITH b, COLLECT(DISTINCT p1) + COLLECT(DISTINCT p2) AS pasals UNWIND pasals AS p RETURN b.label AS bab, p.label AS pasal, p.content AS isi, b.source_document_id AS regulasi ORDER BY p.label LIMIT 100
+MATCH (b:Bab) WHERE b.label =~ '(?i)^BAB XI(\\s.*|$)' OPTIONAL MATCH (b)-[:MEMUAT]->(p1:Pasal) OPTIONAL MATCH (b)-[:MEMUAT]->(bg:Bagian)-[:MEMUAT]->(p2:Pasal) WITH b, COLLECT(DISTINCT p1) + COLLECT(DISTINCT p2) AS pasals UNWIND pasals AS p RETURN b.label AS bab, p.label AS pasal, b.source_document_id AS regulasi ORDER BY p.label LIMIT 100
 
 ### Pattern 4: What is the definition of a concept?
 Question: "Apa definisi Informasi Elektronik?"
@@ -130,7 +137,11 @@ MATCH (p)-[:MENGATUR]->(ph:PerbuatanHukum) RETURN p.label AS pasal, ph.label AS 
 ### Pattern 9: List ayat in a Pasal
 IMPORTANT: Use [:MEMILIKI_AYAT] (NOT [:MEMUAT]) for the Pasal→Ayat relationship.
 Question: "Pasal 27 ayat berapa saja?"
-MATCH (p:Pasal)-[:MEMILIKI_AYAT]->(a:Ayat) WHERE toLower(p.label) CONTAINS 'pasal 27' RETURN p.label AS pasal, a.label AS ayat, a.content AS isi, p.source_document_id AS regulasi ORDER BY a.label LIMIT 100
+MATCH (p:Pasal)-[:MEMILIKI_AYAT]->(a:Ayat) WHERE toLower(p.label) CONTAINS 'pasal 27' RETURN p.label AS pasal, a.label AS ayat, p.source_document_id AS regulasi ORDER BY a.label LIMIT 100
+
+### Pattern 9b: List all articles along with their paragraphs / list of articles
+Question: "Tolong berikan semua Pasal beserta dengan ayat-ayatnya juga" or "Coba berikan list pasal yang lengkap terkait UU nomor 11 tahun 2008"
+MATCH (p:Pasal) OPTIONAL MATCH (p)-[:MEMILIKI_AYAT]->(a:Ayat) RETURN p.label AS pasal, a.label AS ayat, p.source_document_id AS regulasi ORDER BY p.label, a.label LIMIT 300
 
 ### Pattern 10: Which Bab contains a Pasal?
 Note: A Pasal may be directly under a Bab OR inside a Bagian. Use variable-length path to handle both.
@@ -179,6 +190,13 @@ RESPONSE_SYSTEM = """You are an Indonesian legal assistant. Answer the user's qu
    - UU_19_2016 = "UU No. 19 Tahun 2016 tentang Perubahan atas UU ITE"
    - POJK_11_2022 = "POJK No. 11/POJK.03/2022 tentang Penyelenggaraan Teknologi Informasi oleh Bank Umum"
 8. When counting items (e.g., "berapa ayat?"), if data comes from multiple regulations, report counts SEPARATELY per regulation.
+9. AVOID REDUNDANCY & DOUBLE INTRODUCTIONS: Do not repeat introductory phrases.
+   - If the question or retrieved context only concerns a SINGLE regulation, state that regulation once in a direct opening sentence (e.g., "Menurut UU No. 11 Tahun 2008 tentang ITE, Pasal 45 berbunyi...") and proceed directly with the content. Do NOT create another redundant "Menurut UU No. 11 Tahun 2008..." heading or sub-section below it.
+   - Only create separate "Menurut [Nama Regulasi]:" sections/headings when the retrieved context actually contains data from MULTIPLE different regulations that must be distinguished.
+10. CONCISENESS & LISTING LIMITS: If the retrieved data contains a large list of articles or clauses (e.g., more than 8 items) and the user asks to "list", "mention", "enumerate", or "provide" them, do NOT write the full raw content, detailed text, or exact sanction details of every single article or clause. Instead, list the article/clause numbers and their main titles/topics/short summaries in a clean, concise numbered or bulleted list (e.g., "Pasal 45: Ketentuan Pidana"). In this listing mode, Rule 3 is OVERRIDDEN — do not quote exact prison terms or denda amounts. Specifically, if the user asks for all articles along with their paragraphs, you MUST list only the article numbers and the list of their paragraph numbers in a highly condensed, single-line format for each article (e.g., "Pasal 5: memiliki Ayat (1), (2), (3), (4)" or "Pasal 6: tidak memiliki ayat"). You MUST NOT include any descriptions, summaries, definitions, or explanations of the article/paragraph contents. Keep the entire response extremely compact to avoid hitting output token limits. ONLY provide full, detailed contents and exact sanctions if the user explicitly asks for the full text, explanation, or specific sanction details of a specific article/clause.
+11. GRACEFUL DEGRADATION FOR BULK CONTENT REQUESTS: This rule ONLY applies when the Knowledge Graph Data provided to you contains FULL raw text/content of articles (i.e., fields like `pasal_content`, `ayat_content`, `isi`, or `content` with long paragraph text). If the data only contains structural labels (e.g., `pasal: Pasal 27`, `ayat: Pasal 27 ayat (1)`, `regulasi: UU_11_2008`) WITHOUT detailed content text, this rule does NOT apply — use Rule 10 (compact listing) instead.
+    When this rule DOES apply: If the user asks for bulk full text of more than 5 articles/clauses (e.g., "berikan seluruh isi pasal secara lengkap"), you MUST NOT attempt to write all full texts. Instead, provide brief summaries/topics per article and conclude by telling the user to ask for specific articles individually (e.g., "Jika Anda membutuhkan isi lengkap dari pasal tertentu, silakan tanyakan secara spesifik, contoh: 'Apa isi lengkap Pasal 27?'").
+12. ALWAYS COMPLETE YOUR RESPONSE: Never stop mid-list or mid-sentence. If you are listing items, you MUST list ALL of them from the provided data. If you realize the list would be too long, switch to a more compact format (e.g., group articles by chapter or regulation) but ALWAYS finish with a complete closing statement. An abruptly truncated response is UNACCEPTABLE.
 
 ## Example 1: Single Document
 Data: pasal_sanksi: Pasal 45 ayat (1) | pasal_larangan: Pasal 27 ayat (3) | sanksi: pidana penjara paling lama 6 (enam) tahun dan/atau denda paling banyak Rp1.000.000.000,00 | regulasi: UU_11_2008
@@ -309,7 +327,7 @@ class LLMService:
         try:
             response = model.generate_content(
                 [RESPONSE_SYSTEM, prompt],
-                generation_config={"temperature": 0.3, "max_output_tokens": 4096},
+                generation_config={"temperature": 0.3, "max_output_tokens": 16384},
             )
             answer = response.text.strip()
             logger.info(f"=== LLM RESPONSE ({len(answer)} chars) ===")

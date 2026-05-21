@@ -13,8 +13,53 @@ def _format_kg_context(records: list[dict]) -> str:
     """Format Neo4j results into readable text."""
     if not records:
         return "(tidak ada hasil)"
+
+    # Smart Numerical Sorting: detect if records contain Pasal or Bab references and sort them naturally
+    sort_key_name = None
+    first_rec = records[0]
+    for k in ["pasal", "ayat", "label", "sumber", "tujuan", "pasal_sanksi", "pasal_larangan"]:
+        if k in first_rec and isinstance(first_rec[k], str) and any(kw in first_rec[k] for kw in ["Pasal", "Bab", "BAB"]):
+            sort_key_name = k
+            break
+
+    if sort_key_name:
+        import re
+        roman_vals = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100}
+        def roman_to_int(roman: str) -> int:
+            res = 0
+            for idx, char in enumerate(roman):
+                if idx + 1 < len(roman) and roman_vals.get(char, 0) < roman_vals.get(roman[idx + 1], 0):
+                    res -= roman_vals.get(char, 0)
+                else:
+                    res += roman_vals.get(char, 0)
+            return res
+
+        def extract_sort_key(item):
+            val = str(item.get(sort_key_name, "") or "")
+            # Check Bab
+            m_bab = re.search(r'(?i)BAB\s+([IVXLC]+)', val)
+            if m_bab:
+                return (0, roman_to_int(m_bab.group(1).upper()), 0, 0)
+            # Check Pasal
+            m_pasal = re.search(r'(?i)Pasal\s+(\d+)', val)
+            if m_pasal:
+                num = int(m_pasal.group(1))
+                # Suffix e.g. 45A -> A
+                m_suffix = re.search(r'(?i)Pasal\s+\d+([A-Z])', val)
+                suffix_val = ord(m_suffix.group(1).upper()) - ord('A') + 1 if m_suffix else 0
+                # Ayat e.g. ayat (2)
+                m_ayat = re.search(r'(?i)ayat\s*\((\d+)', val)
+                ayat_num = int(m_ayat.group(1)) if m_ayat else 0
+                return (1, num, suffix_val, ayat_num)
+            return (2, 0, 0, 0)
+
+        try:
+            records = sorted(records, key=extract_sort_key)
+        except Exception:
+            pass
+
     lines = []
-    for i, r in enumerate(records[:20], 1):
+    for i, r in enumerate(records[:300], 1):
         parts = []
         for k, v in r.items():
             if v is not None and k != "error":
@@ -180,7 +225,7 @@ def _enrich_with_relations(nodes: list[dict]) -> tuple[list[dict], dict]:
         entry = {
             "label": node.get("label", ""),
             "type": ", ".join(detail.get("labels", [])),
-            "content": str(detail.get("properties", {}).get("content", ""))[:500],
+            "content": str(detail.get("properties", {}).get("content", ""))[:10000],
         }
 
         # Add outgoing relations
@@ -343,7 +388,7 @@ async def ask_question(request: QARequest):
         try:
             exec_results = Neo4jService.execute_cypher(cypher_query)
             if exec_results and not any(r.get("error") for r in exec_results):
-                cypher_results_raw = exec_results[:20]
+                cypher_results_raw = exec_results[:300]
                 columns = list(cypher_results_raw[0].keys()) if cypher_results_raw else []
                 steps.append(QAProcessStep(
                     step=3, label="Eksekusi Cypher di Neo4j",
@@ -425,6 +470,14 @@ async def ask_question(request: QARequest):
         context_parts.append("\n=== Hasil Pencarian Keyword ===")
         context_parts.append(_format_kg_context(enriched))
     kg_context_text = "\n".join(context_parts) if context_parts else "(tidak ada data)"
+
+    # Safety net: cap context size to prevent overwhelming the LLM
+    MAX_CONTEXT_CHARS = 30000
+    if len(kg_context_text) > MAX_CONTEXT_CHARS:
+        kg_context_text = kg_context_text[:MAX_CONTEXT_CHARS] + \
+            "\n\n[... konteks dipotong karena terlalu panjang. " \
+            "Berikan rangkuman/ringkasan dari data di atas saja.]"
+
     response_result = await LLMService.generate_response(question, kg_context_text)
     answer = response_result.get("answer", "Maaf, terjadi kesalahan saat memproses pertanyaan.")
 
