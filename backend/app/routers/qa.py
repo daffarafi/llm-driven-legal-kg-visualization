@@ -89,28 +89,26 @@ def _search_kg_by_keywords(question: str, doc_ids: list[str] | None = None) -> l
     """Search KG using multiple keyword strategies to find relevant nodes."""
     all_results = {}
 
-    # Strategy 1: Extract key phrases and search
-    # Remove common question words
+    # Strategy 1: Extract key phrases
     cleaned = re.sub(
         r'\b(apa|siapa|bagaimana|mengapa|dimana|kapan|berapa|yang|di|dan|atau|itu|ini|adalah|menurut|dalam|untuk|dari|ke|pada|dengan|oleh|tentang|saja)\b',
         ' ', question.lower()
     )
     keywords = [w.strip() for w in cleaned.split() if len(w.strip()) > 2]
 
-    # Search each keyword
-    for kw in keywords[:5]:
-        results = Neo4jService.search(kw, mode="keyword", limit=5)
-        for r in results:
-            if r.get("id") and r["id"] not in all_results:
-                # Filter by doc_ids if specified
-                if doc_ids and r.get("source_document_id") and r["source_document_id"] not in doc_ids:
-                    continue
-                all_results[r["id"]] = r
-
     # Strategy 2: Search for pasal references (e.g. "Pasal 27")
     pasal_matches = re.findall(r'[Pp]asal\s+\d+', question)
+
+    # Collect search queries for Batch 1 (Strategy 1 & 2)
+    batch1_queries = []
+    for kw in keywords[:5]:
+        batch1_queries.append({"term": kw})
     for pm in pasal_matches:
-        results = Neo4jService.search(pm, mode="keyword", limit=3)
+        batch1_queries.append({"term": pm})
+
+    # Run Batch 1
+    if batch1_queries:
+        results = Neo4jService.batch_keyword_search(batch1_queries)
         for r in results:
             if r.get("id") and r["id"] not in all_results:
                 if doc_ids and r.get("source_document_id") and r["source_document_id"] not in doc_ids:
@@ -121,16 +119,19 @@ def _search_kg_by_keywords(question: str, doc_ids: list[str] | None = None) -> l
     if len(all_results) < 3:
         # Try 2-word phrases from the question
         words = [w for w in question.split() if len(w) > 2]
+        batch2_queries = []
         for i in range(len(words) - 1):
             phrase = f"{words[i]} {words[i+1]}"
-            results = Neo4jService.search(phrase, mode="keyword", limit=3)
+            batch2_queries.append({"term": phrase})
+        
+        # Run Batch 2
+        if batch2_queries:
+            results = Neo4jService.batch_keyword_search(batch2_queries[:5])  # limit to first 5 phrases to avoid too large query
             for r in results:
                 if r.get("id") and r["id"] not in all_results:
                     if doc_ids and r.get("source_document_id") and r["source_document_id"] not in doc_ids:
                         continue
                     all_results[r["id"]] = r
-            if len(all_results) >= 5:
-                break
 
     return list(all_results.values())[:10]
 
@@ -152,17 +153,30 @@ def _build_graph_from_cypher(cypher_query: str, cypher_results: list[dict]) -> d
             if isinstance(v, str) and v.strip():
                 node_labels.append(v.strip())
 
-    # Search for each label to get full node info
-    for label_text in node_labels:
-        results = Neo4jService.search(label_text, mode="keyword", limit=1)
-        for r in results:
-            nid = r.get("id", "")
+    if not node_labels:
+        return {"nodes": [], "edges": []}
+
+    # Normalize labels and find all matching nodes in a single batch query
+    labels_lower = list(set(lbl.lower().strip() for lbl in node_labels if lbl and lbl.strip()))
+
+    with Neo4jService.get_session() as s:
+        nodes_res = s.run("""
+            MATCH (n)
+            WHERE toLower(n.label) IN $labels_lower
+            RETURN elementId(n) AS id,
+                   labels(n) AS labels,
+                   n.label AS label,
+                   n.source_document_id AS source_document_id
+        """, {"labels_lower": labels_lower})
+
+        for r in nodes_res:
+            nid = r["id"]
             if nid and nid not in graph_nodes:
                 graph_nodes[nid] = {
                     "id": nid,
-                    "labels": r.get("labels", []),
-                    "label": r.get("label", ""),
-                    "source_document_id": r.get("source_document_id", ""),
+                    "labels": r["labels"],
+                    "label": r["label"],
+                    "source_document_id": r["source_document_id"],
                 }
 
     # Get relationships between found nodes
@@ -212,16 +226,52 @@ def _enrich_with_relations(nodes: list[dict]) -> tuple[list[dict], dict]:
                 "source_document_id": node.get("source_document_id") or node.get("properties", {}).get("source_document_id", ""),
             }
 
-    for node in nodes[:5]:  # Limit to avoid too many queries
-        node_id = node.get("id", "")
-        if not node_id:
-            continue
+    # Extract up to 5 node IDs to fetch in a single batch query
+    node_ids = [n.get("id") for n in nodes[:5] if n.get("id")]
+    if not node_ids:
+        return enriched, {"nodes": list(graph_nodes.values()), "edges": graph_edges}
 
-        detail = Neo4jService.get_node(node_id)
-        if not detail:
+    details_map = {}
+    with Neo4jService.get_session() as s:
+        res = s.run("""
+            MATCH (n) WHERE elementId(n) IN $ids
+            OPTIONAL MATCH (n)-[r_out]->(m_out)
+            OPTIONAL MATCH (m_in)-[r_in]->(n)
+            RETURN elementId(n) AS node_id,
+                n,
+                collect(DISTINCT {
+                    type: type(r_out),
+                    target_id: elementId(m_out),
+                    target_label: m_out.label,
+                    target_type: labels(m_out),
+                    target_source_document_id: m_out.source_document_id
+                }) AS outgoing,
+                collect(DISTINCT {
+                    type: type(r_in),
+                    source_id: elementId(m_in),
+                    source_label: m_in.label,
+                    source_type: labels(m_in),
+                    source_source_document_id: m_in.source_document_id
+                }) AS incoming
+        """, {"ids": node_ids})
+        for r in res:
+            nid = r["node_id"]
+            node = r["n"]
+            details_map[nid] = {
+                "id": nid,
+                "labels": list(node.labels),
+                "properties": dict(node.items()),
+                "outgoing": [o for o in r["outgoing"] if o.get("target_id")],
+                "incoming": [i for i in r["incoming"] if i.get("source_id")],
+            }
+
+    for node in nodes[:5]:
+        node_id = node.get("id", "")
+        if not node_id or node_id not in details_map:
             enriched.append(node)
             continue
 
+        detail = details_map[node_id]
         entry = {
             "label": node.get("label", ""),
             "type": ", ".join(detail.get("labels", [])),
@@ -302,44 +352,46 @@ def _connect_to_regulasi(mini_graph: dict) -> dict:
     if not target_node_ids:
         return mini_graph
 
-    # Query paths up to Regulasi in a single neo4j query or loop
+    # Query paths up to Regulasi in a single batch neo4j query
     with Neo4jService.get_session() as s:
-        for nid in target_node_ids:
-            # Match path from Regulasi to this node
-            # The relationship can be MEMUAT or MEMILIKI_AYAT
-            result = s.run("""
-                MATCH path = (r:Regulasi)-[:MEMUAT|MEMILIKI_AYAT*1..4]->(n)
-                WHERE elementId(n) = $nid
-                RETURN path
-            """, {"nid": nid})
-            for record in result:
-                path = record["path"]
-                if not path:
-                    continue
-                # Add all nodes in path
-                for node in path.nodes:
-                    node_id = node.element_id
-                    if node_id not in graph_nodes:
-                        labels = list(node.labels)
-                        label = node.get("label") or node.get("name") or node_id
-                        graph_nodes[node_id] = {
-                            "id": node_id,
-                            "labels": labels,
-                            "label": label,
-                            "source_document_id": node.get("source_document_id", ""),
-                        }
-                # Add all relationships in path
-                for rel in path.relationships:
-                    src_id = rel.start_node.element_id
-                    tgt_id = rel.end_node.element_id
-                    edge_key = f"{src_id}->{tgt_id}"
-                    if edge_key not in existing_edges:
-                        existing_edges.add(edge_key)
-                        graph_edges.append({
-                            "source": src_id,
-                            "target": tgt_id,
-                            "type": rel.type,
-                        })
+        result = s.run("""
+            MATCH path = (r:Regulasi)-[:MEMUAT|MEMILIKI_AYAT*1..4]->(n)
+            WHERE elementId(n) IN $nids
+            RETURN path
+        """, {"nids": target_node_ids})
+        for record in result:
+            path = record["path"]
+            if not path:
+                continue
+            # Add all nodes in path
+            for node in path.nodes:
+                node_id = node.element_id
+                if node_id not in graph_nodes:
+                    labels = list(node.labels)
+                    label = node.get("label") or node.get("name") or node_id
+                    graph_nodes[node_id] = {
+                        "id": node_id,
+                        "labels": labels,
+                        "label": label,
+                        "source_document_id": node.get("source_document_id", ""),
+                    }
+            # Add all relationships in path
+            for rel in path.relationships:
+                src_id = rel.start_node.element_id
+                tgt_id = rel.end_node.element_id
+                edge_key = f"{src_id}->{tgt_id}"
+                if edge_key not in existing_edges:
+                    existing_edges.add(edge_key)
+                    graph_edges.append({
+                        "source": src_id,
+                        "target": tgt_id,
+                        "type": rel.type,
+                    })
+
+    return {
+        "nodes": list(graph_nodes.values()),
+        "edges": graph_edges,
+    }
 
     return {
         "nodes": list(graph_nodes.values()),
@@ -491,10 +543,10 @@ async def ask_question(request: QARequest):
     enriched = []
     if search_results:
         enriched, mini_graph = _enrich_with_relations(search_results)
-        step5_detail = f"Mengambil detail dan relasi dari {len(enriched)} node → {len(mini_graph['nodes'])} nodes, {len(mini_graph['edges'])} edges"
+        step5_detail = f"Mengambil detail dan relasi dari {len(enriched)} node -> {len(mini_graph['nodes'])} nodes, {len(mini_graph['edges'])} edges"
         step5_status = "done"
     else:
-        step5_detail = "Skipped — tidak ada node ditemukan"
+        step5_detail = "Skipped - tidak ada node ditemukan"
         step5_status = "skipped"
 
     # Build graph from Cypher results (more accurate) — replaces keyword graph

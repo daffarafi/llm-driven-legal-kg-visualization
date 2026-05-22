@@ -84,12 +84,11 @@ Note: Pasal labels like "Pasal 1" can appear in multiple regulations, so filteri
 4. Query must be syntactically valid (balanced parentheses, MATCH + RETURN).
 5. Use toLower() for case-insensitive matching.
 6. For queries asking for lists, complete lists of articles, or articles with paragraphs (e.g., "daftar pasal", "list pasal yang lengkap", "semua pasal", "semua pasal beserta ayat-ayatnya"), ALWAYS use `OPTIONAL MATCH` to retrieve both Pasal and their optional Ayat (e.g., `MATCH (p:Pasal) OPTIONAL MATCH (p)-[:MEMILIKI_AYAT]->(a:Ayat)`) rather than just matching `MATCH (p:Pasal)`. This ensures that the RAG pipeline retrieves the complete structural information about which articles have paragraphs, while articles without sub-articles (like Pasal 1, 2) are not excluded from the results.
-7. OPTIMIZE FOR STRUCTURAL LISTINGS: If the user is asking about MULTIPLE or ALL articles/paragraphs/chapters at once — whether listing, explaining, or describing them in bulk — do NOT return the `.content` property of the nodes. ONLY return labels (e.g., `p.label`, `a.label`) and metadata (e.g., `source_document_id`).
-   This rule applies to ALL of the following query types:
-   - Listing queries: "sebutkan semua pasal", "daftar pasal beserta ayat", "pasal apa saja di bab X"
-   - Bulk explanation queries: "jelaskan pasal-pasal yang ada satu persatu", "jelaskan semua pasal", "uraikan pasal-pasal di sistem"
-   - General enumeration: "pasal apa saja yang ada", "berikan semua pasal beserta ayatnya"
-   CRITICAL DISTINCTION: Only return `.content` when the user asks about a SPECIFIC, SINGLE article (e.g., "jelaskan Pasal 27", "apa isi Pasal 1", "apa bunyi Pasal 45 ayat (1)"). If the question refers to multiple/all articles (indicated by plural forms like "pasal-pasal", "semua pasal", or absence of a specific article number), treat it as a structural listing and OMIT `.content`.
+7. OPTIMIZE FOR STRUCTURAL LISTINGS: If the user is asking about MULTIPLE or ALL articles/paragraphs/chapters at once in a document-wide bulk query, do NOT return the `.content` property of the nodes to avoid exceeding context limits.
+    This rule applies to the following query types:
+    - Document-wide listing/enumeration: "sebutkan semua pasal", "daftar pasal beserta ayat", "list pasal yang lengkap"
+    - Document-wide bulk explanation: "jelaskan pasal-pasal yang ada satu persatu", "jelaskan semua pasal", "uraikan pasal-pasal di sistem"
+    CRITICAL DISTINCTION: You SHOULD return `.content` properties when the user asks about a SPECIFIC, SINGLE article (e.g., "jelaskan Pasal 27", "apa isi Pasal 1") OR a SPECIFIC, SINGLE chapter/section (e.g., "detailkan Bab V", "pasal apa saja di Bab kelima", "apa isi Bagian Kedua"). Since a single chapter or section contains a localized, small number of articles, returning their content (e.g. `p.content` and `a.content`) is necessary to detail the chapter and does not exceed limits.
 
 ## QUERY PATTERNS
 
@@ -107,11 +106,11 @@ MATCH (a)-[:MERUJUK]->(target), (a)-[:MENETAPKAN_SANKSI]->(sk:Sanksi) WHERE toLo
 Question: "Berapa denda untuk pelanggaran Pasal 30?"
 MATCH (a)-[:MERUJUK]->(target), (a)-[:MENETAPKAN_SANKSI]->(sk:Sanksi) WHERE toLower(target.label) CONTAINS 'pasal 30' RETURN a.label AS pasal_sanksi, target.label AS pasal_larangan, sk.label AS sanksi, a.source_document_id AS regulasi LIMIT 100
 
-### Pattern 3: What articles are in a chapter?
-Note: Some Bab have Bagian sub-sections. Use OPTIONAL MATCH for both direct and Bagian-contained Pasal.
-IMPORTANT: Bab labels can be short ("BAB VII") or include a title ("BAB V KETAHANAN DAN KEAMANAN SIBER BANK"). Use regex to match the roman numeral precisely and avoid substring collisions (e.g., 'bab v' must NOT match 'bab vii').
-Question: "Pasal apa saja di Bab XI?"
-MATCH (b:Bab) WHERE b.label =~ '(?i)^BAB XI(\\s.*|$)' OPTIONAL MATCH (b)-[:MEMUAT]->(p1:Pasal) OPTIONAL MATCH (b)-[:MEMUAT]->(bg:Bagian)-[:MEMUAT]->(p2:Pasal) WITH b, COLLECT(DISTINCT p1) + COLLECT(DISTINCT p2) AS pasals UNWIND pasals AS p RETURN b.label AS bab, p.label AS pasal, b.source_document_id AS regulasi ORDER BY p.label LIMIT 100
+### Pattern 3: What is the content of a chapter / Bab?
+Note: Some Bab have Bagian sub-sections. Use a variable-length path ([:MEMUAT*1..2]) to retrieve all Pasal under a Bab, and OPTIONAL MATCH to retrieve their Ayat. Always return their content (e.g., `p.content`, `a.content`) to allow full detailing of the chapter.
+IMPORTANT: Bab labels can be short ("BAB VII") or include a title ("BAB V TRANSAKSI ELEKTRONIK"). Use regex to match the roman numeral precisely and avoid substring collisions (e.g., 'bab v' must NOT match 'bab vii').
+Question: "Coba detailkan Bab kelima" or "Pasal apa saja di Bab V?"
+MATCH (b:Bab)-[:MEMUAT*1..2]->(p:Pasal) WHERE b.label =~ '(?i)^BAB V(\\s.*|$)' OPTIONAL MATCH (p)-[:MEMILIKI_AYAT]->(a:Ayat) RETURN b.label AS bab, p.label AS pasal, p.content AS isi_pasal, a.label AS ayat, a.content AS isi_ayat, b.source_document_id AS regulasi ORDER BY p.label, a.label LIMIT 150
 
 ### Pattern 4: What is the definition of a concept?
 Question: "Apa definisi Informasi Elektronik?"
