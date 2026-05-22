@@ -70,6 +70,7 @@ class QAProcessStep(BaseModel):
     label: str
     detail: str
     status: str = "done"
+    duration: float | None = None
 
 
 class QAGraphNode(BaseModel):

@@ -350,6 +350,11 @@ def _connect_to_regulasi(mini_graph: dict) -> dict:
 @router.post("/qa", response_model=QAResponse)
 async def ask_question(request: QARequest):
     """Hybrid QA pipeline: question → Cypher → keyword search → context → answer."""
+    import time
+    import logging
+    logger = logging.getLogger("uvicorn")
+
+    start_total_time = time.perf_counter()
     steps = []
     question = request.question
     doc_ids = request.doc_ids
@@ -357,15 +362,33 @@ async def ask_question(request: QARequest):
     cypher_query = ""
     cypher_results_raw = []
 
+    msg = f"=== QA Pipeline Started for question: '{question}' ==="
+    logger.info(msg)
+    print(msg, flush=True)
+
     # Step 1: Understand question
+    t1_start = time.perf_counter()
+    # Step 1 parsing is instant, but timed for completeness
+    t1_end = time.perf_counter()
+    duration_step1 = t1_end - t1_start
+    msg = f"Step 1: Understand question - took {duration_step1:.4f} seconds"
+    logger.info(msg)
+    print(msg, flush=True)
     steps.append(QAProcessStep(
         step=1, label="Memahami pertanyaan",
         detail=f'Pertanyaan: "{question}"',
+        duration=round(duration_step1, 4),
     ))
 
     # Step 2: Generate Cypher query via LLM
+    t2_start = time.perf_counter()
     cypher_result = await LLMService.generate_cypher(question, doc_ids=doc_ids)
     cypher_query = cypher_result.get("cypher", "")
+    t2_end = time.perf_counter()
+    duration_step2 = t2_end - t2_start
+    msg = f"Step 2: Generate Cypher query - took {duration_step2:.4f} seconds"
+    logger.info(msg)
+    print(msg, flush=True)
 
     if cypher_result["status"] == "ok" and cypher_query:
         steps.append(QAProcessStep(
@@ -373,6 +396,7 @@ async def ask_question(request: QARequest):
             detail=cypher_query,
             status="done",
             data={"type": "cypher", "cypher": cypher_query},
+            duration=round(duration_step2, 4),
         ))
     else:
         error_msg = cypher_result.get("error", "Gagal membuat Cypher query")
@@ -381,12 +405,19 @@ async def ask_question(request: QARequest):
             detail=f"Error: {error_msg}",
             status="error",
             data={"type": "cypher", "cypher": "", "error": error_msg},
+            duration=round(duration_step2, 4),
         ))
 
     # Step 3: Execute Cypher on Neo4j
+    t3_start = time.perf_counter()
     if cypher_query:
         try:
             exec_results = Neo4jService.execute_cypher(cypher_query)
+            t3_end = time.perf_counter()
+            duration_step3 = t3_end - t3_start
+            msg = f"Step 3: Execute Cypher on Neo4j - took {duration_step3:.4f} seconds"
+            logger.info(msg)
+            print(msg, flush=True)
             if exec_results and not any(r.get("error") for r in exec_results):
                 cypher_results_raw = exec_results[:300]
                 columns = list(cypher_results_raw[0].keys()) if cypher_results_raw else []
@@ -400,6 +431,7 @@ async def ask_question(request: QARequest):
                         "rows": cypher_results_raw[:10],
                         "total": len(cypher_results_raw),
                     },
+                    duration=round(duration_step3, 4),
                 ))
             else:
                 error_detail = str(exec_results[0]["error"]) if exec_results and exec_results[0].get("error") else ""
@@ -408,47 +440,62 @@ async def ask_question(request: QARequest):
                     detail=f"Query error: {error_detail}" if error_detail else "Tidak ada hasil",
                     status="error" if error_detail else "done",
                     data={"type": "results", "columns": [], "rows": [], "total": 0, "error": error_detail},
+                    duration=round(duration_step3, 4),
                 ))
         except Exception as e:
+            t3_end = time.perf_counter()
+            duration_step3 = t3_end - t3_start
+            msg = f"Step 3: Execute Cypher on Neo4j (Failed) - took {duration_step3:.4f} seconds"
+            logger.info(msg)
+            print(msg, flush=True)
             steps.append(QAProcessStep(
                 step=3, label="Eksekusi Cypher di Neo4j",
                 detail=f"Execution error: {str(e)[:200]}",
                 status="error",
                 data={"type": "results", "columns": [], "rows": [], "total": 0, "error": str(e)[:200]},
+                duration=round(duration_step3, 4),
             ))
     else:
+        t3_end = time.perf_counter()
+        duration_step3 = t3_end - t3_start
+        msg = f"Step 3: Execute Cypher on Neo4j (Skipped) - took {duration_step3:.4f} seconds"
+        logger.info(msg)
+        print(msg, flush=True)
         steps.append(QAProcessStep(
             step=3, label="Eksekusi Cypher di Neo4j",
             detail="Skipped — tidak ada Cypher query",
             status="skipped",
             data={"type": "results", "columns": [], "rows": [], "total": 0},
+            duration=round(duration_step3, 4),
         ))
 
-    # Step 4: Search KG by keywords (existing flow, unchanged)
+    # Step 4: Search KG by keywords
+    t4_start = time.perf_counter()
     search_results = _search_kg_by_keywords(question, doc_ids=doc_ids)
     search_labels = [r.get("label", "?") for r in search_results]
+    t4_end = time.perf_counter()
+    duration_step4 = t4_end - t4_start
+    msg = f"Step 4: Search KG by keywords - took {duration_step4:.4f} seconds"
+    logger.info(msg)
+    print(msg, flush=True)
 
     steps.append(QAProcessStep(
         step=4, label="Pencarian Knowledge Graph",
         detail=f"{len(search_results)} node ditemukan: {', '.join(search_labels[:5])}{'...' if len(search_labels) > 5 else ''}",
         status="done" if search_results else "error",
+        duration=round(duration_step4, 4),
     ))
 
     # Step 5: Enrich with relations
+    t5_start = time.perf_counter()
     enriched = []
     if search_results:
         enriched, mini_graph = _enrich_with_relations(search_results)
-        steps.append(QAProcessStep(
-            step=5, label="Memperkaya konteks dengan relasi",
-            detail=f"Mengambil detail dan relasi dari {len(enriched)} node → {len(mini_graph['nodes'])} nodes, {len(mini_graph['edges'])} edges",
-            status="done",
-        ))
+        step5_detail = f"Mengambil detail dan relasi dari {len(enriched)} node → {len(mini_graph['nodes'])} nodes, {len(mini_graph['edges'])} edges"
+        step5_status = "done"
     else:
-        steps.append(QAProcessStep(
-            step=5, label="Memperkaya konteks dengan relasi",
-            detail="Skipped — tidak ada node ditemukan",
-            status="skipped",
-        ))
+        step5_detail = "Skipped — tidak ada node ditemukan"
+        step5_status = "skipped"
 
     # Build graph from Cypher results (more accurate) — replaces keyword graph
     if cypher_results_raw:
@@ -460,7 +507,21 @@ async def ask_question(request: QARequest):
     # Connect all nodes in the mini graph to their parent Regulasi
     mini_graph = _connect_to_regulasi(mini_graph)
 
+    t5_end = time.perf_counter()
+    duration_step5 = t5_end - t5_start
+    msg = f"Step 5: Enrich context & build graph - took {duration_step5:.4f} seconds"
+    logger.info(msg)
+    print(msg, flush=True)
+
+    steps.append(QAProcessStep(
+        step=5, label="Memperkaya konteks dengan relasi",
+        detail=step5_detail,
+        status=step5_status,
+        duration=round(duration_step5, 4),
+    ))
+
     # Step 6: Generate response
+    t6_start = time.perf_counter()
     # Merge BOTH cypher results and keyword search results into context
     context_parts = []
     if cypher_results_raw:
@@ -480,15 +541,26 @@ async def ask_question(request: QARequest):
 
     response_result = await LLMService.generate_response(question, kg_context_text)
     answer = response_result.get("answer", "Maaf, terjadi kesalahan saat memproses pertanyaan.")
+    t6_end = time.perf_counter()
+    duration_step6 = t6_end - t6_start
+    msg = f"Step 6: Generate response - took {duration_step6:.4f} seconds"
+    logger.info(msg)
+    print(msg, flush=True)
 
     steps.append(QAProcessStep(
         step=6, label="Menyusun jawaban",
         detail="Jawaban berhasil dibuat" if response_result["status"] == "ok" else f"Error: {response_result.get('error', '')}",
         status="done" if response_result["status"] == "ok" else "error",
+        duration=round(duration_step6, 4),
     ))
 
     # Extract references
     references = _extract_references(answer)
+
+    total_duration = time.perf_counter() - start_total_time
+    msg = f"=== QA Pipeline Completed in {total_duration:.4f} seconds ==="
+    logger.info(msg)
+    print(msg, flush=True)
 
     return QAResponse(
         answer=answer,
