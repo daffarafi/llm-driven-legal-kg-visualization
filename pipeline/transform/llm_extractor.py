@@ -53,7 +53,7 @@ Given a chunk of legal text, extract entities (nodes) and relationships (edges) 
 
 | Type | Description | Example Labels |
 |------|-------------|----------------|
-| Regulasi | The regulation being processed. Create exactly ONE per document. Include a "jenis" property: one of [Undang-Undang, POJK, PP, Perpres, Perda, Permen]. | "Undang-Undang tentang Informasi dan Transaksi Elektronik", "Peraturan OJK tentang Penyelenggaraan Teknologi Informasi oleh Bank Umum" |
+| Regulasi | The regulation being processed. Create exactly ONE per document. | "Undang-Undang tentang Informasi dan Transaksi Elektronik", "Peraturan OJK tentang Penyelenggaraan Teknologi Informasi oleh Bank Umum" |
 | Bab | A chapter (Bab) within the regulation. | "BAB VII PERBUATAN YANG DILARANG", "BAB II TATA KELOLA TI BANK" |
 | Bagian | A section (Bagian) within a Bab. Only create if explicitly present in the text. | "Bagian Kedua Penyelenggaraan Sistem Elektronik", "Bagian Kesatu Umum" |
 | Pasal | An article (Pasal) within the regulation. | "Pasal 27", "Pasal 45" |
@@ -90,17 +90,25 @@ Given a chunk of legal text, extract entities (nodes) and relationships (edges) 
 8. Every `Sanksi` node must contain the FULL penalty text including duration and/or fine amount.
 
 ### Hierarchy
-9. Maintain strict hierarchy: Regulasi → Bab → Bagian (if exists) → Pasal → Ayat.
-10. Every Pasal should be connected to its parent Bab (or Bagian) via MEMUAT if the Bab/Bagian is known from the text.
-11. If a Pasal has multiple ayat, create Ayat nodes and connect them via MEMILIKI_AYAT.
+9. Strict hierarchy: Regulasi → Bab → Bagian (if exists) → Pasal → Ayat.
+10. Regulasi MEMUAT Bab ONLY. Do NOT create a Regulasi→Pasal edge directly — always route through Bab.
+11. If a Pasal has multiple numbered ayat, create Ayat nodes and use MEMILIKI_AYAT (NOT MEMUAT) to connect them.
+12. Bagian is optional: only create if the text explicitly names a "Bagian" section.
 
 ### Relationships
-12. Each Pasal/Ayat that regulates an action MUST have a MENGATUR edge.
-13. Each Pasal/Ayat that specifies a sanction MUST have both MENGATUR (to the prohibited act) and MENETAPKAN_SANKSI (to the penalty).
-14. MERUJUK edges should only be created for **explicit cross-references** (e.g., "sebagaimana dimaksud dalam Pasal 27").
+13. BERLAKU_UNTUK target MUST be EntitasHukum. NEVER create BERLAKU_UNTUK to KonsepHukum, PerbuatanHukum, or Regulasi.
+14. MENGATUR target MUST be PerbuatanHukum. NEVER create MENGATUR to KonsepHukum.
+15. MERUJUK target MUST be Pasal or Ayat. NEVER create MERUJUK to Regulasi nodes.
+16. When an Ayat exists under a Pasal, prefer attaching semantic edges (MENGATUR, BERLAKU_UNTUK, MENETAPKAN_SANKSI, MERUJUK) to the Ayat node, not the parent Pasal — because the specific ayat carries the provision.
+17. Sanction articles (e.g., "Pasal 45 ayat (1) ... dipidana ...") should have ALL of:
+    - MERUJUK → the prohibition Pasal/Ayat it references ("sebagaimana dimaksud dalam Pasal 27")
+    - MENETAPKAN_SANKSI → the Sanksi node
+    - MENGATUR → a PerbuatanHukum describing the sanctioned act
+    - BERLAKU_UNTUK → EntitasHukum ("Setiap Orang") if explicitly stated
+18. MERUJUK edges should only be created for **explicit cross-references** (e.g., "sebagaimana dimaksud dalam Pasal 27").
 
 ### Amendment Detection
-15. If the document is an amendment law (title contains "Perubahan atas"):
+19. If the document is an amendment law (title contains "Perubahan atas"):
     - Determine `jenis_perubahan` for each Pasal/Ayat/Bab node:
       - "mengubah": text contains "diubah sehingga berbunyi", "diubah", "ditambah ayat/huruf"
       - "menyisipkan": text contains "disisipkan", or the label is a new article (e.g., Pasal 45A, Pasal 45B)
@@ -114,14 +122,23 @@ Output MUST be valid JSON:
 ```json
 {
   "nodes": [
-    {"id": "Regulasi_UU_ITE", "type": "Regulasi", "jenis": "Undang-Undang", "label": "UU tentang ITE", "content": "..."},
-    {"id": "Pasal_27", "type": "Pasal", "label": "Pasal 27", "content": "...", "jenis_perubahan": "mengubah"},
-    {"id": "Pasal_45A", "type": "Pasal", "label": "Pasal 45A", "content": "...", "jenis_perubahan": "menyisipkan"}
+    {"id": "Regulasi_UU_ITE", "type": "Regulasi", "label": "Undang-Undang tentang Informasi dan Transaksi Elektronik", "content": "..."},
+    {"id": "Bab_VII", "type": "Bab", "label": "BAB VII PERBUATAN YANG DILARANG", "content": ""},
+    {"id": "Pasal_27", "type": "Pasal", "label": "Pasal 27", "content": "Setiap Orang dengan sengaja..."},
+    {"id": "Ayat_Pasal27_1", "type": "Ayat", "label": "Pasal 27 ayat (1)", "content": "..."},
+    {"id": "EntitasHukum_setiap_orang", "type": "EntitasHukum", "label": "Setiap Orang", "content": ""},
+    {"id": "PerbuatanHukum_mendistribusikan_konten_kesusilaan", "type": "PerbuatanHukum", "label": "mendistribusikan informasi yang memiliki muatan melanggar kesusilaan", "content": "..."},
+    {"id": "Pasal_45", "type": "Pasal", "label": "Pasal 45", "content": "...", "jenis_perubahan": "mengubah"}
   ],
   "edges": [
-    {"source": "Pasal_27", "target": "PerbuatanHukum_distribusi_konten_ilegal", "type": "MENGATUR"}
+    {"source": "Regulasi_UU_ITE", "target": "Bab_VII", "type": "MEMUAT"},
+    {"source": "Bab_VII", "target": "Pasal_27", "type": "MEMUAT"},
+    {"source": "Pasal_27", "target": "Ayat_Pasal27_1", "type": "MEMILIKI_AYAT"},
+    {"source": "Ayat_Pasal27_1", "target": "PerbuatanHukum_mendistribusikan_konten_kesusilaan", "type": "MENGATUR"},
+    {"source": "Ayat_Pasal27_1", "target": "EntitasHukum_setiap_orang", "type": "BERLAKU_UNTUK"}
   ]
 }"""
+
 
 
 USER_PROMPT_TEMPLATE = """Extract all entities and relationships from the following Indonesian legal text.

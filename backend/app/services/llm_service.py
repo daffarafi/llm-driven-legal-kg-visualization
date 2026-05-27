@@ -169,7 +169,9 @@ MATCH (r1:Regulasi {{source_document_id:'UU_11_2008'}})<-[:MENGAMANDEMEN]-(r2:Re
 - Do NOT include regulation names ("UU ITE", "UU No. 11 Tahun 2008") in label filters — labels only contain "Pasal X" or "BAB X"
 - When asked about sanctions/penalties, ALWAYS use the MERUJUK pattern (Pattern 2a/2b)
 - When listing Pasal in a Bab, handle BOTH direct (Bab)-[:MEMUAT]->(Pasal) and indirect (Bab)-[:MEMUAT]->(Bagian)-[:MEMUAT]->(Pasal) hierarchies
-- Add ORDER BY when listing multiple Pasal/Ayat to ensure consistent ordering"""
+- Add ORDER BY when listing multiple Pasal/Ayat to ensure consistent ordering
+- Do NOT use UNWIND/CASE to combine Pasal and Ayat into a single variable for relationship traversal. Instead, use separate OPTIONAL MATCH clauses for Pasal and Ayat relationships (e.g., `OPTIONAL MATCH (p)-[:MENGATUR]->(ph_p:PerbuatanHukum)` and `OPTIONAL MATCH (a)-[:MENGATUR]->(ph_a:PerbuatanHukum)`).
+- Do NOT place WHERE directly after UNWIND — this is invalid Cypher syntax and will cause a SyntaxError. If you need to filter after UNWIND, use `WITH ... WHERE` instead. But prefer OPTIONAL MATCH over UNWIND entirely."""
 
 RESPONSE_SYSTEM = """You are an Indonesian legal assistant. Answer the user's question based ONLY on the Knowledge Graph data provided.
 
