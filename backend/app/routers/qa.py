@@ -59,11 +59,24 @@ def _format_kg_context(records: list[dict]) -> str:
             pass
 
     lines = []
+    seen_large_strings = []
     for i, r in enumerate(records[:300], 1):
         parts = []
         for k, v in r.items():
             if v is not None and k != "error":
                 val = str(v)
+                if len(val) > 50:
+                    is_redundant = False
+                    val_clean = "".join(val.split()).lower()
+                    for seen in seen_large_strings:
+                        seen_clean = "".join(seen.split()).lower()
+                        if val_clean in seen_clean or seen_clean in val_clean:
+                            is_redundant = True
+                            break
+                    if is_redundant:
+                        val = "(sudah termuat di atas)"
+                    else:
+                        seen_large_strings.append(val)
                 parts.append(f"{k}: {val}")
         lines.append(f"{i}. " + " | ".join(parts))
     return "\n".join(lines)
@@ -86,54 +99,136 @@ def _extract_references(text: str) -> list[str]:
 
 
 def _search_kg_by_keywords(question: str, doc_ids: list[str] | None = None) -> list[dict]:
-    """Search KG using multiple keyword strategies to find relevant nodes."""
+    """Search KG using multiple keyword and phrase strategies to find relevant nodes."""
     all_results = {}
 
-    # Strategy 1: Extract key phrases
-    cleaned = re.sub(
-        r'\b(apa|siapa|bagaimana|mengapa|dimana|kapan|berapa|yang|di|dan|atau|itu|ini|adalah|menurut|dalam|untuk|dari|ke|pada|dengan|oleh|tentang|saja)\b',
-        ' ', question.lower()
-    )
-    keywords = [w.strip() for w in cleaned.split() if len(w.strip()) > 2]
+    # Stopwords list
+    stopwords = {
+        'apa', 'apakah', 'adakah', 'siapa', 'bagaimana', 'mengapa', 'dimana', 'kapan', 'berapa', 
+        'yang', 'di', 'dan', 'atau', 'itu', 'ini', 'adalah', 'menurut', 'dalam', 'untuk', 'dari', 
+        'ke', 'pada', 'dengan', 'oleh', 'tentang', 'saja', 'ketentuan', 'persyaratan', 'syarat', 
+        'minimum', 'maksimum', 'aturan', 'hukum', 'regulasi', 'pasal', 'ayat', 'bab', 'terkait',
+        'ada', 'bisa', 'boleh', 'jika', 'kalau', 'seperti', 'sebagaimana', 'saya', 'secara'
+    }
 
-    # Strategy 2: Search for pasal references (e.g. "Pasal 27")
-    pasal_matches = re.findall(r'[Pp]asal\s+\d+', question)
+    # Generic legal words that are very common in the database
+    generic_words = {
+        'sistem', 'elektronik', 'penyelenggara', 'penyelenggaraan', 'informasi', 'dokumen', 
+        'transaksi', 'teknologi', 'terhadap', 'tentang', 'melalui', 'penggunaan', 'pemanfaatan',
+        'kegiatan', 'pelaksanaan', 'berdasarkan', 'sistem elektronik'
+    }
 
-    # Collect search queries for Batch 1 (Strategy 1 & 2)
-    batch1_queries = []
-    for kw in keywords[:5]:
-        batch1_queries.append({"term": kw})
-    for pm in pasal_matches:
-        batch1_queries.append({"term": pm})
+    # 1. Strategy 1: Extract Pasal matches (e.g. "Pasal 27")
+    pasal_matches = re.findall(r'(?i)pasal\s+\d+', question)
+    pasal_terms = [p.capitalize() for p in pasal_matches]
 
-    # Run Batch 1
-    if batch1_queries:
-        results = Neo4jService.batch_keyword_search(batch1_queries)
+    # Clean question
+    cleaned_q = re.sub(r'[^\w\s]', ' ', question.lower())
+    words = [w.strip() for w in cleaned_q.split() if w.strip()]
+
+    # 2. Extract single-word keywords (excluding stopwords)
+    keywords = [w for w in words if w not in stopwords and len(w) > 2]
+
+    # Prioritize keywords: non-generic first, sorted by length DESC; then generic words
+    non_generic_keywords = [w for w in keywords if w not in generic_words]
+    generic_keywords = [w for w in keywords if w in generic_words]
+
+    non_generic_keywords = sorted(non_generic_keywords, key=len, reverse=True)
+    generic_keywords = sorted(generic_keywords, key=len, reverse=True)
+
+    prioritized_keywords = non_generic_keywords + generic_keywords
+
+    # 3. Extract 2-word and 3-word phrases
+    phrases_2 = []
+    for i in range(len(words) - 1):
+        w1, w2 = words[i], words[i+1]
+        if (w1 in stopwords and w2 in stopwords) or len(w1) <= 2 or len(w2) <= 2:
+            continue
+        phrases_2.append(f"{w1} {w2}")
+
+    phrases_3 = []
+    for i in range(len(words) - 2):
+        w1, w2, w3 = words[i], words[i+1], words[i+2]
+        if (w1 in stopwords and w2 in stopwords and w3 in stopwords) or len(w1) <= 2 or len(w3) <= 2:
+            continue
+        phrases_3.append(f"{w1} {w2} {w3}")
+
+    # Prioritize phrases: those containing non-generic keywords first
+    def contains_non_generic(phrase):
+        phrase_words = phrase.split()
+        return any(w in non_generic_keywords for w in phrase_words)
+
+    non_generic_phrases_3 = [p for p in phrases_3 if contains_non_generic(p)]
+    generic_phrases_3 = [p for p in phrases_3 if not contains_non_generic(p)]
+
+    non_generic_phrases_2 = [p for p in phrases_2 if contains_non_generic(p)]
+    generic_phrases_2 = [p for p in phrases_2 if not contains_non_generic(p)]
+
+    # Sort phrases by length
+    non_generic_phrases_3 = sorted(non_generic_phrases_3, key=len, reverse=True)
+    generic_phrases_3 = sorted(generic_phrases_3, key=len, reverse=True)
+    non_generic_phrases_2 = sorted(non_generic_phrases_2, key=len, reverse=True)
+    generic_phrases_2 = sorted(generic_phrases_2, key=len, reverse=True)
+
+    # Combine search terms in order of priority:
+    # 1. Pasal matches
+    # 2. Top 2 non-generic 3-word phrases
+    # 3. Top 2 non-generic 2-word phrases
+    # 4. Top 3 non-generic keywords (highly specific single words)
+    # 5. Generic phrases/keywords
+    search_terms = []
+    for p in pasal_terms:
+        if p not in search_terms:
+            search_terms.append(p)
+
+    for p in non_generic_phrases_3[:2]:
+        if p not in search_terms:
+            search_terms.append(p)
+
+    for p in non_generic_phrases_2[:2]:
+        if p not in search_terms:
+            search_terms.append(p)
+
+    for k in prioritized_keywords:
+        if k not in search_terms:
+            search_terms.append(k)
+
+    # Add rest
+    for p in non_generic_phrases_3[2:]:
+        if p not in search_terms:
+            search_terms.append(p)
+    for p in non_generic_phrases_2[2:]:
+        if p not in search_terms:
+            search_terms.append(p)
+    for p in generic_phrases_3:
+        if p not in search_terms:
+            search_terms.append(p)
+    for p in generic_phrases_2:
+        if p not in search_terms:
+            search_terms.append(p)
+
+    # Collect search queries
+    batch_queries = [{"term": t} for t in search_terms[:8]]
+
+    if batch_queries:
+        results = Neo4jService.batch_keyword_search(batch_queries)
         for r in results:
             if r.get("id") and r["id"] not in all_results:
                 if doc_ids and r.get("source_document_id") and r["source_document_id"] not in doc_ids:
                     continue
                 all_results[r["id"]] = r
 
-    # Strategy 3: Search full question if few results
-    if len(all_results) < 3:
-        # Try 2-word phrases from the question
-        words = [w for w in question.split() if len(w) > 2]
-        batch2_queries = []
-        for i in range(len(words) - 1):
-            phrase = f"{words[i]} {words[i+1]}"
-            batch2_queries.append({"term": phrase})
-        
-        # Run Batch 2
-        if batch2_queries:
-            results = Neo4jService.batch_keyword_search(batch2_queries[:5])  # limit to first 5 phrases to avoid too large query
-            for r in results:
-                if r.get("id") and r["id"] not in all_results:
-                    if doc_ids and r.get("source_document_id") and r["source_document_id"] not in doc_ids:
-                        continue
-                    all_results[r["id"]] = r
+    # Safety fallback: if very few results, try simple word-by-word search for any remaining keywords
+    if len(all_results) < 3 and len(search_terms) > 8:
+        extra_queries = [{"term": t} for t in search_terms[8:12]]
+        results = Neo4jService.batch_keyword_search(extra_queries)
+        for r in results:
+            if r.get("id") and r["id"] not in all_results:
+                if doc_ids and r.get("source_document_id") and r["source_document_id"] not in doc_ids:
+                    continue
+                all_results[r["id"]] = r
 
-    return list(all_results.values())[:10]
+    return list(all_results.values())[:15]
 
 
 def _build_graph_from_cypher(cypher_query: str, cypher_results: list[dict]) -> dict:

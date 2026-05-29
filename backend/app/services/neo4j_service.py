@@ -306,8 +306,8 @@ class Neo4jService:
             return []
         
         # Subquery CALL (q) requires Neo4j 5.x.
-        # queries is a list of dicts: [{'term': '...', 'limit': 5}, ...]
-        # We use a static LIMIT 5 in the subquery to comply with Neo4j rules.
+        # queries is a list of dicts: [{'term': '...', 'limit': 15}, ...]
+        # We use a static LIMIT 15 in the subquery to comply with Neo4j rules.
         cypher = """
             UNWIND $queries AS q
             CALL (q) {
@@ -319,7 +319,7 @@ class Neo4jService:
                        n.label AS label,
                        n.source_document_id AS source_document_id,
                        substring(coalesce(n.content, ''), 0, 200) AS content
-                LIMIT 5
+                LIMIT 15
             }
             RETURN DISTINCT id, labels, label, source_document_id, content
         """

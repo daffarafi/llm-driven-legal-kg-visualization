@@ -89,6 +89,22 @@ Note: Pasal labels like "Pasal 1" can appear in multiple regulations, so filteri
     - Document-wide listing/enumeration: "sebutkan semua pasal", "daftar pasal beserta ayat", "list pasal yang lengkap"
     - Document-wide bulk explanation: "jelaskan pasal-pasal yang ada satu persatu", "jelaskan semua pasal", "uraikan pasal-pasal di sistem"
     CRITICAL DISTINCTION: You SHOULD return `.content` properties when the user asks about a SPECIFIC, SINGLE article (e.g., "jelaskan Pasal 27", "apa isi Pasal 1") OR a SPECIFIC, SINGLE chapter/section (e.g., "detailkan Bab V", "pasal apa saja di Bab kelima", "apa isi Bagian Kedua"). Since a single chapter or section contains a localized, small number of articles, returning their content (e.g. `p.content` and `a.content`) is necessary to detail the chapter and does not exceed limits.
+8. NUMERIC SORTING FOR ARTICLES: When the user asks for the "terakhir" (last), "pertama" (first) article, or needs to sort or list articles in numeric order (e.g. "urutkan", "daftar pasal", "terakhir"), do NOT sort alphabetically by p.label (since alphabetically "Pasal 9" > "Pasal 54"). Instead, extract the number from the label and sort numerically.
+   In Cypher, use this exact pattern to sort numerically:
+   - For descending (e.g., to find the last article):
+     MATCH (p:Pasal) WHERE p.source_document_id = 'UU_11_2008'
+     WITH p, split(p.label, ' ')[1] AS sec
+     WITH p, sec, toInteger(replace(replace(sec, 'A', ''), 'B', '')) AS base_num
+     ORDER BY CASE WHEN sec = 'II' THEN 9999 ELSE base_num END DESC, p.label DESC
+     RETURN p.label AS pasal, p.content AS isi, p.source_document_id AS regulasi LIMIT 1
+   - For ascending (e.g., to list in order):
+     MATCH (p:Pasal) WHERE p.source_document_id = 'UU_11_2008'
+     WITH p, split(p.label, ' ')[1] AS sec
+     WITH p, sec, toInteger(replace(replace(sec, 'A', ''), 'B', '')) AS base_num
+     ORDER BY CASE WHEN sec = 'II' THEN 9999 ELSE base_num END ASC, p.label ASC
+     RETURN p.label AS pasal, p.content AS isi, p.source_document_id AS regulasi LIMIT 100
+9. AVOID OVER-RESTRICTIVE CONTAINS FILTERS: When translating questions containing adjectives, verbs, or qualifiers (such as "aman", "minimum", "syarat", "cara", "dampak", "tujuan") into Cypher string filters (like `CONTAINS 'aman'`), do NOT include these qualifiers in the `CONTAINS` or exact match filters. The actual database text may use synonyms (e.g. "persyaratan" instead of "syarat") or not contain the adjective directly. Keep string filters strictly focused on the core legal concepts (e.g. `CONTAINS 'tanda tangan elektronik'`) and let the RAG LLM reader analyze the retrieved content.
+10. HANDLE MULTI-WORD PHRASES IN FILTERS CAREFULLY: If a user question contains multi-word concepts that might contain connecting words (e.g., "gugatan perwakilan" might appear in the database as "gugatan secara perwakilan"), do NOT use a single literal `CONTAINS` string for the entire phrase (like `CONTAINS 'gugatan perwakilan'`). Instead, either query for the most unique keyword (e.g. `CONTAINS 'perwakilan'`) or split it into separate logical conditions combined with AND (e.g., `CONTAINS 'gugatan' AND CONTAINS 'perwakilan'`).
 
 ## QUERY PATTERNS
 
@@ -158,6 +174,14 @@ MATCH (p {{source_document_id:'UU_19_2016'}}) WHERE p.jenis_perubahan IS NOT NUL
 ### Pattern 13: Has this article been amended?
 Question: "Apakah Pasal 27 sudah diubah?"
 MATCH (r1:Regulasi {{source_document_id:'UU_11_2008'}})<-[:MENGAMANDEMEN]-(r2:Regulasi) MATCH (p2 {{source_document_id: r2.source_document_id}}) WHERE p2.label CONTAINS 'Pasal 27' AND p2.jenis_perubahan IS NOT NULL RETURN r2.source_document_id AS dokumen_pengubah, p2.label AS pasal, p2.jenis_perubahan AS jenis, p2.content AS isi_baru LIMIT 100
+
+### Pattern 14: Find the last/first article of a regulation (Numeric Sorting)
+Question: "Apa isi pasal terakhir UU 11 2008?"
+MATCH (p:Pasal) WHERE p.source_document_id = 'UU_11_2008'
+WITH p, split(p.label, ' ')[1] AS sec
+WITH p, sec, toInteger(replace(replace(sec, 'A', ''), 'B', '')) AS base_num
+ORDER BY CASE WHEN sec = 'II' THEN 9999 ELSE base_num END DESC, p.label DESC
+RETURN p.label AS pasal, p.content AS isi, p.source_document_id AS regulasi LIMIT 1
 
 ## COMMON MISTAKES TO AVOID
 - CAUTION with CONTAINS for single-digit Pasal: WHERE p.label CONTAINS 'Pasal 3' also matches 'Pasal 30'-'Pasal 39'. This is ACCEPTABLE for MENGATUR/BERLAKU_UNTUK/MENETAPKAN_SANKSI/MERUJUK queries (returns more data, better recall). For structural queries (MEMUAT, content read), use exact match: toLower(p.label) = 'pasal 3'.
