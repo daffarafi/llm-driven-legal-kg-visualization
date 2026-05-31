@@ -183,8 +183,32 @@ WITH p, sec, toInteger(replace(replace(sec, 'A', ''), 'B', '')) AS base_num
 ORDER BY CASE WHEN sec = 'II' THEN 9999 ELSE base_num END DESC, p.label DESC
 RETURN p.label AS pasal, p.content AS isi, p.source_document_id AS regulasi LIMIT 1
 
+### Pattern 15: Document/Regulation Overview (What does a regulation regulate?)
+Question: "Mau nanya dong, POJK Nomor 11/POJK.03/2022 itu sebenarnya ngatur tentang apa sih?" or "Apa saja yang diatur dalam UU ITE?" or "Jelaskan secara garis besar isi dari regulasi POJK 11/2022"
+MATCH (r:Regulasi) WHERE r.source_document_id = 'POJK_11_2022'
+OPTIONAL MATCH (r)-[:MEMUAT]->(b:Bab)
+RETURN r.label AS regulasi, r.content AS detail, b.label AS daftar_bab, r.source_document_id AS regulasi_id
+ORDER BY b.label
+LIMIT 100
+
+### Pattern 16: Content of a specific Section / Bagian
+Question: "Jelaskan isi bagian kedua laporan insidentil" or "Pasal apa saja di bagian kesatu umum?" or "Detailkan bagian kedua pelindungan data pribadi"
+MATCH (b:Bagian)-[:MEMUAT]->(p:Pasal)
+WHERE b.source_document_id = 'POJK_11_2022'
+  AND toLower(b.label) CONTAINS 'bagian kedua' AND toLower(b.label) CONTAINS 'laporan insidentil'
+OPTIONAL MATCH (p)-[:MEMILIKI_AYAT]->(a:Ayat)
+RETURN b.label AS bagian, p.label AS pasal, p.content AS isi_pasal, a.label AS ayat, a.content AS isi_ayat, b.source_document_id AS regulasi
+ORDER BY p.label, a.label
+LIMIT 100
+
 ## COMMON MISTAKES TO AVOID
+- NEVER use `labels(n) = ['Label']` or list equality on `labels(n)` to check for node labels. Neo4j nodes can have multiple labels (e.g. `['Entity', 'Pasal']`), so exact list equality will fail. ALWAYS check labels using the standard colon syntax: `(n:Pasal OR n:Ayat)` or `n:Pasal` or `n:Ayat`.
+- For Bagian (Section) label filters: `Bagian` node labels always contain both the section number and the title (e.g., "Bagian Kedua Laporan Insidentil"). Never use exact match (`= 'bagian kedua'`) or a single number match. ALWAYS use `CONTAINS` to match both the section number and the core title keywords (e.g. `toLower(b.label) CONTAINS 'bagian kedua' AND toLower(b.label) CONTAINS 'laporan insidentil'`) or just the specific title keyword (e.g. `toLower(b.label) CONTAINS 'laporan insidentil'`).
+- When filtering Bab or Bagian by multi-word titles/concepts from the question (e.g., "audit intern TI", "pelindungan data pribadi"), NEVER combine them into a single contiguous CONTAINS string (e.g., `CONTAINS 'audit intern ti'`). ALWAYS split the concepts into separate conditions combined with AND (e.g., `CONTAINS 'audit intern' AND CONTAINS 'ti'`) because the database label may contain intervening words (such as "Audit Intern dalam Penyelenggaraan TI").
+- PRIORITIZE STRUCTURAL BAB/PASAL MATCHES OVER DEFINITION LOOKUPS: If a question asks for a definition or explanation of a topic but specifies a specific location like a Chapter/Bab or Article/Pasal (e.g., "apa yang dimaksud ... di bab 12", "apa arti ... pada pasal 66"), do NOT use the MENDEFINISIKAN relationship. Instead, match the structural Chapter/Bab or Article/Pasal node directly and retrieve its containing articles/paragraphs.
 - CAUTION with CONTAINS for single-digit Pasal: WHERE p.label CONTAINS 'Pasal 3' also matches 'Pasal 30'-'Pasal 39'. This is ACCEPTABLE for MENGATUR/BERLAKU_UNTUK/MENETAPKAN_SANKSI/MERUJUK queries (returns more data, better recall). For structural queries (MEMUAT, content read), use exact match: toLower(p.label) = 'pasal 3'.
+- NEVER filter the content of a specific Pasal/Ayat by keywords if the article number itself is already specified in the question (e.g. for "Pasal 60 mengenai laporan insidentil", do NOT add a WHERE clause filtering the content of the Pasal or Ayat by "laporan insidentil"). Direct filtering by the Pasal label (e.g. toLower(p.label) = 'pasal 60') is already highly precise, and adding keyword filters to the text content will cause the query to return zero results if the exact string is not written inside the node content (even if the article does regulate that topic).
+- NEVER filter a Bab or Bagian by title keywords if the Bab number (e.g., "Bab 8", "Bab VIII") or Bagian number is already specified in the question (e.g., for "Bab 8 tentang pengelolaan data", do NOT add `AND toLower(b.label) CONTAINS 'pengelolaan'`). Direct filtering by the Bab label/number regex is highly precise, and adding keyword filters will cause the query to fail if there are minor spelling/terminology differences (such as "perlindungan" vs "pelindungan" in the database).
 - Do NOT forget LIMIT: Use LIMIT 100 by default. Adjust to higher limits (e.g., LIMIT 300) or omit it only when a complete list of everything is requested.
 - Do NOT assume MENGATUR and MENETAPKAN_SANKSI are on the SAME node — they are usually on DIFFERENT nodes connected by MERUJUK
 - Do NOT query only Pasal for sanctions — most MENETAPKAN_SANKSI edges are on Ayat nodes
@@ -311,13 +335,28 @@ class LLMService:
 
     @staticmethod
     def _is_valid_cypher(query: str) -> bool:
-        """Basic validation: has RETURN, balanced parens, not empty."""
+        """Basic validation: has RETURN, balanced parens/brackets/braces, not empty, and no invalid trailing syntax."""
         if not query or "RETURN" not in query.upper():
             return False
         if query.count("(") != query.count(")"):
             return False
         if query.count("[") != query.count("]"):
             return False
+        if query.count("{") != query.count("}"):
+            return False
+            
+        # Check for truncated or invalid trailing syntax
+        clean_query = query.strip()
+        if clean_query.endswith(".") or clean_query.endswith(",") or clean_query.endswith("+") or clean_query.endswith("-"):
+            return False
+        
+        # Check for trailing logical operators or incomplete clauses
+        upper_query = clean_query.upper()
+        invalid_trailing_words = [" AND", " OR", " WHERE", " MATCH", " WITH", " RETURN"]
+        for word in invalid_trailing_words:
+            if upper_query.endswith(word):
+                return False
+                
         return True
 
     @staticmethod

@@ -9,6 +9,54 @@ from app.services.llm_service import LLMService
 router = APIRouter()
 
 
+def get_indonesian_root(word: str) -> str:
+    w = word
+    for suffix in ['nya', 'lah', 'kah']:
+        if w.endswith(suffix):
+            w = w[:-len(suffix)]
+            
+    for suffix in ['kan', 'an', 'i']:
+        if w.endswith(suffix):
+            w = w[:-len(suffix)]
+            break
+            
+    if w.startswith('di'):
+        w = w[2:]
+    elif w.startswith('ter'):
+        w = w[3:]
+    elif w.startswith('se'):
+        w = w[2:]
+    elif w.startswith('ke') and w != 'ke':
+        w = w[2:]
+    elif w.startswith('me'):
+        if w.startswith('meng') or w.startswith('meny') or w.startswith('memb') or w.startswith('mend') or w.startswith('ment') or w.startswith('menc') or w.startswith('menj'):
+            if w.startswith('meng'):
+                w = w[4:]
+            elif w.startswith('meny'):
+                w = 's' + w[4:]
+            elif w.startswith('memb'):
+                w = w[3:]
+            elif w.startswith('men'):
+                w = w[3:]
+        else:
+            w = w[2:]
+    elif w.startswith('pe'):
+        if w.startswith('peng') or w.startswith('peny') or w.startswith('pemb') or w.startswith('pend') or w.startswith('pent') or w.startswith('penc') or w.startswith('penj'):
+            if w.startswith('peng'):
+                w = w[4:]
+            elif w.startswith('peny'):
+                w = 's' + w[4:]
+            elif w.startswith('pemb'):
+                w = w[3:]
+            elif w.startswith('pen'):
+                w = w[3:]
+        else:
+            w = w[2:]
+            
+    return w
+
+
+
 def _format_kg_context(records: list[dict]) -> str:
     """Format Neo4j results into readable text."""
     if not records:
@@ -100,9 +148,6 @@ def _extract_references(text: str) -> list[str]:
 
 def _search_kg_by_keywords(question: str, doc_ids: list[str] | None = None) -> list[dict]:
     """Search KG using multiple keyword and phrase strategies to find relevant nodes."""
-    all_results = {}
-
-    # Stopwords list
     stopwords = {
         'apa', 'apakah', 'adakah', 'siapa', 'bagaimana', 'mengapa', 'dimana', 'kapan', 'berapa', 
         'yang', 'di', 'dan', 'atau', 'itu', 'ini', 'adalah', 'menurut', 'dalam', 'untuk', 'dari', 
@@ -110,34 +155,40 @@ def _search_kg_by_keywords(question: str, doc_ids: list[str] | None = None) -> l
         'minimum', 'maksimum', 'aturan', 'hukum', 'regulasi', 'pasal', 'ayat', 'bab', 'terkait',
         'ada', 'bisa', 'boleh', 'jika', 'kalau', 'seperti', 'sebagaimana', 'saya', 'secara'
     }
-
-    # Generic legal words that are very common in the database
+    
+    # Common generic legal verbs and nouns
     generic_words = {
         'sistem', 'elektronik', 'penyelenggara', 'penyelenggaraan', 'informasi', 'dokumen', 
         'transaksi', 'teknologi', 'terhadap', 'tentang', 'melalui', 'penggunaan', 'pemanfaatan',
-        'kegiatan', 'pelaksanaan', 'berdasarkan', 'sistem elektronik'
+        'kegiatan', 'pelaksanaan', 'berdasarkan', 'sistem elektronik', 'lakukan', 'melakukan',
+        'dilakukan', 'laku', 'merasa', 'rasa', 'dapat', 'oleh', 'hukum'
     }
-
+    
     # 1. Strategy 1: Extract Pasal matches (e.g. "Pasal 27")
     pasal_matches = re.findall(r'(?i)pasal\s+\d+', question)
     pasal_terms = [p.capitalize() for p in pasal_matches]
-
+    
     # Clean question
     cleaned_q = re.sub(r'[^\w\s]', ' ', question.lower())
     words = [w.strip() for w in cleaned_q.split() if w.strip()]
-
+    
     # 2. Extract single-word keywords (excluding stopwords)
     keywords = [w for w in words if w not in stopwords and len(w) > 2]
-
-    # Prioritize keywords: non-generic first, sorted by length DESC; then generic words
+    
     non_generic_keywords = [w for w in keywords if w not in generic_words]
     generic_keywords = [w for w in keywords if w in generic_words]
-
+    
     non_generic_keywords = sorted(non_generic_keywords, key=len, reverse=True)
     generic_keywords = sorted(generic_keywords, key=len, reverse=True)
-
-    prioritized_keywords = non_generic_keywords + generic_keywords
-
+    
+    # Extract roots of non-generic keywords
+    roots = []
+    for k in non_generic_keywords:
+        root = get_indonesian_root(k)
+        if len(root) > 2 and root != k and root not in stopwords and root not in generic_words:
+            roots.append(root)
+    roots = sorted(roots, key=len, reverse=True)
+    
     # 3. Extract 2-word and 3-word phrases
     phrases_2 = []
     for i in range(len(words) - 1):
@@ -145,90 +196,98 @@ def _search_kg_by_keywords(question: str, doc_ids: list[str] | None = None) -> l
         if (w1 in stopwords and w2 in stopwords) or len(w1) <= 2 or len(w2) <= 2:
             continue
         phrases_2.append(f"{w1} {w2}")
-
+        
     phrases_3 = []
     for i in range(len(words) - 2):
         w1, w2, w3 = words[i], words[i+1], words[i+2]
         if (w1 in stopwords and w2 in stopwords and w3 in stopwords) or len(w1) <= 2 or len(w3) <= 2:
             continue
         phrases_3.append(f"{w1} {w2} {w3}")
-
+        
     # Prioritize phrases: those containing non-generic keywords first
     def contains_non_generic(phrase):
         phrase_words = phrase.split()
-        return any(w in non_generic_keywords for w in phrase_words)
-
-    non_generic_phrases_3 = [p for p in phrases_3 if contains_non_generic(p)]
-    generic_phrases_3 = [p for p in phrases_3 if not contains_non_generic(p)]
-
-    non_generic_phrases_2 = [p for p in phrases_2 if contains_non_generic(p)]
-    generic_phrases_2 = [p for p in phrases_2 if not contains_non_generic(p)]
-
-    # Sort phrases by length
-    non_generic_phrases_3 = sorted(non_generic_phrases_3, key=len, reverse=True)
-    generic_phrases_3 = sorted(generic_phrases_3, key=len, reverse=True)
-    non_generic_phrases_2 = sorted(non_generic_phrases_2, key=len, reverse=True)
-    generic_phrases_2 = sorted(generic_phrases_2, key=len, reverse=True)
-
-    # Combine search terms in order of priority:
-    # 1. Pasal matches
-    # 2. Top 2 non-generic 3-word phrases
-    # 3. Top 2 non-generic 2-word phrases
-    # 4. Top 3 non-generic keywords (highly specific single words)
-    # 5. Generic phrases/keywords
-    search_terms = []
+        return any(w in non_generic_keywords or w in roots for w in phrase_words)
+        
+    non_generic_phrases_3 = sorted([p for p in phrases_3 if contains_non_generic(p)], key=len, reverse=True)
+    non_generic_phrases_2 = sorted([p for p in phrases_2 if contains_non_generic(p)], key=len, reverse=True)
+    
+    # Assign weights to search terms
+    weights = {}
     for p in pasal_terms:
-        if p not in search_terms:
-            search_terms.append(p)
+        weights[p] = 10.0
+    for p in non_generic_phrases_3:
+        weights[p] = 5.0
+    for p in non_generic_phrases_2:
+        weights[p] = 4.5
+    for k in non_generic_keywords:
+        weights[k] = 4.0
+    for r in roots:
+        weights[r] = 3.5
+    for k in generic_keywords:
+        weights[k] = 1.0
+        g_root = get_indonesian_root(k)
+        if len(g_root) > 2 and g_root not in weights:
+            weights[g_root] = 0.8
+            
+    # Combine search terms in logical order
+    ordered_terms = []
+    for p in pasal_terms:
+        if p not in ordered_terms:
+            ordered_terms.append(p)
+    for k in non_generic_keywords:
+        if k not in ordered_terms:
+            ordered_terms.append(k)
+    for r in roots:
+        if r not in ordered_terms:
+            ordered_terms.append(r)
+    for p in non_generic_phrases_3:
+        if p not in ordered_terms:
+            ordered_terms.append(p)
+    for p in non_generic_phrases_2:
+        if p not in ordered_terms:
+            ordered_terms.append(p)
+    for k in generic_keywords:
+        if k not in ordered_terms:
+            ordered_terms.append(k)
+    for k in weights:
+        if k not in ordered_terms:
+            ordered_terms.append(k)
+            
+    # Collect search queries (take top 15 terms to be queried)
+    batch_queries = [{"term": t} for t in ordered_terms[:15]]
+    if not batch_queries:
+        return []
+        
+    results = Neo4jService.batch_keyword_search(batch_queries)
+    
+    # Score and Rank nodes
+    scored_nodes = []
+    for node in results:
+        if doc_ids and node.get("source_document_id") and node["source_document_id"] not in doc_ids:
+            continue
+            
+        score = 0.0
+        matched_terms = node.get("matched_terms", [])
+        matched_in_labels = node.get("matched_in_labels", [])
+        
+        for term, in_label in zip(matched_terms, matched_in_labels):
+            term_weight = weights.get(term, 1.0)
+            factor = 2.0 if in_label else 1.0
+            score += term_weight * factor
+            
+        # Structure type boost (Pasal/Ayat are main structural elements)
+        labels = node.get("labels", [])
+        if "Pasal" in labels:
+            score += 0.5
+        elif "Ayat" in labels:
+            score += 0.3
+            
+        scored_nodes.append((score, node))
+        
+    scored_nodes = sorted(scored_nodes, key=lambda x: x[0], reverse=True)
+    return [item[1] for item in scored_nodes[:15]]
 
-    for p in non_generic_phrases_3[:2]:
-        if p not in search_terms:
-            search_terms.append(p)
-
-    for p in non_generic_phrases_2[:2]:
-        if p not in search_terms:
-            search_terms.append(p)
-
-    for k in prioritized_keywords:
-        if k not in search_terms:
-            search_terms.append(k)
-
-    # Add rest
-    for p in non_generic_phrases_3[2:]:
-        if p not in search_terms:
-            search_terms.append(p)
-    for p in non_generic_phrases_2[2:]:
-        if p not in search_terms:
-            search_terms.append(p)
-    for p in generic_phrases_3:
-        if p not in search_terms:
-            search_terms.append(p)
-    for p in generic_phrases_2:
-        if p not in search_terms:
-            search_terms.append(p)
-
-    # Collect search queries
-    batch_queries = [{"term": t} for t in search_terms[:8]]
-
-    if batch_queries:
-        results = Neo4jService.batch_keyword_search(batch_queries)
-        for r in results:
-            if r.get("id") and r["id"] not in all_results:
-                if doc_ids and r.get("source_document_id") and r["source_document_id"] not in doc_ids:
-                    continue
-                all_results[r["id"]] = r
-
-    # Safety fallback: if very few results, try simple word-by-word search for any remaining keywords
-    if len(all_results) < 3 and len(search_terms) > 8:
-        extra_queries = [{"term": t} for t in search_terms[8:12]]
-        results = Neo4jService.batch_keyword_search(extra_queries)
-        for r in results:
-            if r.get("id") and r["id"] not in all_results:
-                if doc_ids and r.get("source_document_id") and r["source_document_id"] not in doc_ids:
-                    continue
-                all_results[r["id"]] = r
-
-    return list(all_results.values())[:15]
 
 
 def _build_graph_from_cypher(cypher_query: str, cypher_results: list[dict]) -> dict:
@@ -321,8 +380,8 @@ def _enrich_with_relations(nodes: list[dict]) -> tuple[list[dict], dict]:
                 "source_document_id": node.get("source_document_id") or node.get("properties", {}).get("source_document_id", ""),
             }
 
-    # Extract up to 5 node IDs to fetch in a single batch query
-    node_ids = [n.get("id") for n in nodes[:5] if n.get("id")]
+    # Extract up to 15 node IDs to fetch in a single batch query
+    node_ids = [n.get("id") for n in nodes[:15] if n.get("id")]
     if not node_ids:
         return enriched, {"nodes": list(graph_nodes.values()), "edges": graph_edges}
 
@@ -360,7 +419,7 @@ def _enrich_with_relations(nodes: list[dict]) -> tuple[list[dict], dict]:
                 "incoming": [i for i in r["incoming"] if i.get("source_id")],
             }
 
-    for node in nodes[:5]:
+    for node in nodes[:15]:
         node_id = node.get("id", "")
         if not node_id or node_id not in details_map:
             enriched.append(node)
@@ -400,8 +459,13 @@ def _enrich_with_relations(nodes: list[dict]) -> tuple[list[dict], dict]:
         in_rels = detail.get("incoming", [])
         if in_rels:
             rel_strs = []
+            dasar_hukum = []
             for r in in_rels[:8]:
-                rel_strs.append(f"{r.get('source_label', '')} → {r.get('type', '')}")
+                src_lbl = r.get('source_label', '')
+                rel_type = r.get('type', '')
+                rel_strs.append(f"{src_lbl} → {rel_type}")
+                if src_lbl and (src_lbl.startswith("Pasal") or src_lbl.startswith("Ayat") or src_lbl.lower().startswith("bab")):
+                    dasar_hukum.append(src_lbl)
                 sid = r.get("source_id", "")
                 if sid:
                     if sid not in graph_nodes:
@@ -416,6 +480,9 @@ def _enrich_with_relations(nodes: list[dict]) -> tuple[list[dict], dict]:
                         "target": node_id,
                         "type": r.get("type", ""),
                     })
+            entry["relasi_masuk"] = "; ".join(rel_strs)
+            if dasar_hukum:
+                entry["dasar_hukum"] = ", ".join(sorted(list(set(dasar_hukum))))
 
         enriched.append(entry)
 

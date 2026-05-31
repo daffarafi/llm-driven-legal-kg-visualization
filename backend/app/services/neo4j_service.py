@@ -306,8 +306,7 @@ class Neo4jService:
             return []
         
         # Subquery CALL (q) requires Neo4j 5.x.
-        # queries is a list of dicts: [{'term': '...', 'limit': 15}, ...]
-        # We use a static LIMIT 15 in the subquery to comply with Neo4j rules.
+        # We use a LIMIT 50 in the subquery to ensure enough matching candidate nodes are retrieved.
         cypher = """
             UNWIND $queries AS q
             CALL (q) {
@@ -318,10 +317,13 @@ class Neo4jService:
                        labels(n) AS labels,
                        n.label AS label,
                        n.source_document_id AS source_document_id,
-                       substring(coalesce(n.content, ''), 0, 200) AS content
-                LIMIT 15
+                       substring(coalesce(n.content, ''), 0, 200) AS content,
+                       toLower(n.label) CONTAINS toLower(q.term) AS matched_in_label
+                LIMIT 50
             }
-            RETURN DISTINCT id, labels, label, source_document_id, content
+            RETURN id, labels, label, source_document_id, content,
+                   collect(q.term) AS matched_terms,
+                   collect(matched_in_label) AS matched_in_labels
         """
         with cls.get_session() as s:
             return s.run(cypher, {"queries": queries}).data()
