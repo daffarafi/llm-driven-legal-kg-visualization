@@ -300,12 +300,18 @@ def _build_graph_from_cypher(cypher_query: str, cypher_results: list[dict]) -> d
     graph_nodes: dict[str, dict] = {}
     graph_edges: list[dict] = []
 
-    # Extract node labels from results to search for them
+    # Extract node labels and document IDs from results
     node_labels: list[str] = []
+    valid_doc_ids = set()
     for row in cypher_results:
-        for v in row.values():
+        for k, v in row.items():
             if isinstance(v, str) and v.strip():
-                node_labels.append(v.strip())
+                v_clean = v.strip()
+                node_labels.append(v_clean)
+                if k in ("regulasi_id", "source_document_id"):
+                    valid_doc_ids.add(v_clean)
+                elif re.match(r'^[A-Z0-9]{2,10}_\d+_\d+$', v_clean):
+                    valid_doc_ids.add(v_clean)
 
     if not node_labels:
         return {"nodes": [], "edges": []}
@@ -314,14 +320,25 @@ def _build_graph_from_cypher(cypher_query: str, cypher_results: list[dict]) -> d
     labels_lower = list(set(lbl.lower().strip() for lbl in node_labels if lbl and lbl.strip()))
 
     with Neo4jService.get_session() as s:
-        nodes_res = s.run("""
-            MATCH (n)
-            WHERE toLower(n.label) IN $labels_lower
-            RETURN elementId(n) AS id,
-                   labels(n) AS labels,
-                   n.label AS label,
-                   n.source_document_id AS source_document_id
-        """, {"labels_lower": labels_lower})
+        if valid_doc_ids:
+            nodes_res = s.run("""
+                MATCH (n)
+                WHERE toLower(n.label) IN $labels_lower
+                  AND n.source_document_id IN $doc_ids
+                RETURN elementId(n) AS id,
+                       labels(n) AS labels,
+                       n.label AS label,
+                       n.source_document_id AS source_document_id
+            """, {"labels_lower": labels_lower, "doc_ids": list(valid_doc_ids)})
+        else:
+            nodes_res = s.run("""
+                MATCH (n)
+                WHERE toLower(n.label) IN $labels_lower
+                RETURN elementId(n) AS id,
+                       labels(n) AS labels,
+                       n.label AS label,
+                       n.source_document_id AS source_document_id
+            """, {"labels_lower": labels_lower})
 
         for r in nodes_res:
             nid = r["id"]
