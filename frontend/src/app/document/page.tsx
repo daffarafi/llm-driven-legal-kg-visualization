@@ -17,17 +17,17 @@ import { getDocuments } from "@/lib/api";
 import type { Regulation } from "@/lib/types";
 
 const REG_TYPE_COLORS: Record<string, string> = {
-  UU: "bg-blue-500/10 text-blue-400 border-blue-500/20",
-  PP: "bg-green-500/10 text-green-400 border-green-500/20",
-  POJK: "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
-  Perpres: "bg-orange-500/10 text-orange-400 border-orange-500/20",
-  Permen: "bg-yellow-500/10 text-yellow-400 border-yellow-500/20",
+  UU: "bg-blue-500/10 text-blue-600 dark:text-blue-400 border-blue-500/20",
+  PP: "bg-green-500/10 text-green-600 dark:text-green-400 border-green-500/20",
+  POJK: "bg-cyan-500/10 text-cyan-600 dark:text-cyan-400 border-cyan-500/20",
+  Perpres: "bg-orange-500/10 text-orange-600 dark:text-orange-400 border-orange-500/20",
+  Permen: "bg-yellow-500/10 text-yellow-600 dark:text-yellow-400 border-yellow-500/20",
 };
 
 const STATUS_CONFIG: Record<string, { icon: typeof CheckCircle2; color: string }> = {
-  berlaku: { icon: CheckCircle2, color: "text-green-400" },
-  "berlaku (diamandemen)": { icon: AlertCircle, color: "text-amber-400" },
-  dicabut: { icon: XCircle, color: "text-red-400" },
+  berlaku: { icon: CheckCircle2, color: "text-green-600 dark:text-green-400" },
+  "berlaku (diamandemen)": { icon: AlertCircle, color: "text-amber-600 dark:text-amber-400" },
+  dicabut: { icon: XCircle, color: "text-red-600 dark:text-red-400" },
 };
 
 export default function DocumentsListPage() {

@@ -1,0 +1,260 @@
+ID,Node_Type,Node_Label,Parent,Question
+1,Regulasi,Peraturan Otoritas Jasa Keuangan Nomor 11/POJK.03/2022 tentang Penyelenggaraan Teknologi Informasi oleh Bank Umum,,"Mau nanya dong, apa saja tujuan utama OJK dalam menerbitkan regulasi POJK 11/2022 tentang TI Bank?"
+2,Bab,BAB I KETENTUAN UMUM,Regulasi,Tolong buatin rangkuman sederhana dong buat aturan-aturan yang ada di BAB I KETENTUAN UMUM!
+3,Pasal,Pasal 1,BAB I KETENTUAN UMUM,Tolong jabarkan dong poin-poin wajib yang harus dipenuhi bank biar aman dari sanksi Pasal 1!
+4,Bab,BAB II TATA KELOLA TI BANK,Regulasi,"Mau nanya dong, apa maksud utama OJK mencantumkan bab khusus tentang II TATA KELOLA TI BANK ini?"
+5,Bagian,Bagian Kesatu Umum,BAB II TATA KELOLA TI BANK,"Ada yang tahu nggak, apa saja poin krusial yang dibahas di Bagian Kesatu Umum dari BAB II TATA KELOLA TI BANK?"
+6,Pasal,Pasal 2,Bagian Kesatu Umum,Pasal 2 POJK No. 11/POJK.03/2022 itu sebenarnya ngatur soal apa sih? Tolong jelasin pakai bahasa santai.
+7,Ayat,Pasal 2 ayat (1),Pasal 2,Syarat utama apa yang wajib dipenuhi bank sesuai dengan bunyi ketentuan Pasal 2 ayat (1)?
+8,Ayat,Pasal 2 ayat (2),Pasal 2,Tolong jelasin maksud operasional dari Pasal 2 ayat (2) POJK No. 11/POJK.03/2022.
+9,Ayat,Pasal 2 ayat (3),Pasal 2,Siapa saja sih pihak atau unit kerja bank yang wajib mematuhi aturan di Pasal 2 ayat (3)?
+10,Ayat,Pasal 2 ayat (4),Pasal 2,"Mau nanya dong, apa maksud dari Pasal 2 ayat (4) POJK 11 sih?"
+11,Pasal,Pasal 3,Bagian Kesatu Umum,Pasal 3 POJK No. 11/POJK.03/2022 itu sebenarnya ngatur soal apa sih? Tolong jelasin pakai bahasa santai.
+12,Ayat,Pasal 3 ayat (1),Pasal 3,Syarat utama apa yang wajib dipenuhi bank sesuai dengan bunyi ketentuan Pasal 3 ayat (1)?
+13,Ayat,Pasal 3 ayat (2),Pasal 3,Tolong jelasin maksud operasional dari Pasal 3 ayat (2) POJK No. 11/POJK.03/2022.
+14,Ayat,Pasal 3 ayat (3),Pasal 3,Siapa saja sih pihak atau unit kerja bank yang wajib mematuhi aturan di Pasal 3 ayat (3)?
+15,Ayat,Pasal 3 ayat (4),Pasal 3,"Mau nanya dong, syarat utamanya apa untuk Pasal 3 ayat (4) POJK 11 di aturan OJK?"
+16,Bagian,Bagian Kedua Penerapan Tata Kelola TI Bank,BAB II TATA KELOLA TI BANK,Tolong jelasin dong maksud dari dibuatnya Bagian Kedua Penerapan Tata Kelola TI Bank pada bab BAB II TATA KELOLA TI BANK!
+17,Pasal,Pasal 4,Bagian Kedua Penerapan Tata Kelola TI Bank,"Mau nanya dong, gimana kewajiban bank atau direksi yang tertuang di Pasal 4 POJK 11?"
+18,Pasal,Pasal 5,Bagian Kedua Penerapan Tata Kelola TI Bank,Tolong jabarkan dong poin-poin wajib yang harus dipenuhi bank biar aman dari sanksi Pasal 5!
+19,Pasal,Pasal 6,Bagian Kedua Penerapan Tata Kelola TI Bank,Apa saja konsekuensi riil kalau bank melalaikan aturan di Pasal 6 POJK TI Bank ini?
+20,Pasal,Pasal 7,Bagian Kedua Penerapan Tata Kelola TI Bank,"Mau nanya dong, apa maksud dari Pasal 7 POJK TI Bank sih?"
+21,Ayat,Pasal 7 ayat (1),Pasal 7,Maksud dari aturan di Pasal 7 ayat (1) itu apa ya buat orang awam? Tolong kasih contoh konkretnya.
+22,Ayat,Pasal 7 ayat (2),Pasal 7,Syarat utama apa yang wajib dipenuhi bank sesuai dengan bunyi ketentuan Pasal 7 ayat (2)?
+23,Ayat,Pasal 7 ayat (3),Pasal 7,Tolong jelasin maksud operasional dari Pasal 7 ayat (3) POJK No. 11/POJK.03/2022.
+24,Ayat,Pasal 7 ayat (4),Pasal 7,Siapa saja sih pihak atau unit kerja bank yang wajib mematuhi aturan di Pasal 7 ayat (4)?
+25,Pasal,Pasal 8,Bagian Kedua Penerapan Tata Kelola TI Bank,"Mau nanya dong, syarat utamanya apa untuk Pasal 8 POJK TI Bank di aturan OJK?"
+26,Ayat,Pasal 8 ayat (1),Pasal 8,Maksud dari aturan di Pasal 8 ayat (1) itu apa ya buat orang awam? Tolong kasih contoh konkretnya.
+27,Ayat,Pasal 8 ayat (2),Pasal 8,Syarat utama apa yang wajib dipenuhi bank sesuai dengan bunyi ketentuan Pasal 8 ayat (2)?
+28,Ayat,Pasal 8 ayat (3),Pasal 8,Tolong jelasin maksud operasional dari Pasal 8 ayat (3) POJK No. 11/POJK.03/2022.
+29,Pasal,Pasal 9,Bagian Kedua Penerapan Tata Kelola TI Bank,Apa saja konsekuensi riil kalau bank melalaikan aturan di Pasal 9 POJK TI Bank ini?
+30,Ayat,Pasal 9 ayat (1),Pasal 9,"Mau nanya dong, apa maksud dari Pasal 9 ayat (1) POJK 11 sih?"
+31,Ayat,Pasal 9 ayat (2),Pasal 9,Maksud dari aturan di Pasal 9 ayat (2) itu apa ya buat orang awam? Tolong kasih contoh konkretnya.
+32,Pasal,Pasal 10,Bagian Kedua Penerapan Tata Kelola TI Bank,"Mau nanya dong, gimana kewajiban bank atau direksi yang tertuang di Pasal 10 POJK 11?"
+33,Bab,BAB III ARSITEKTUR TI BANK,Regulasi,"Di dalam BAB III ARSITEKTUR TI BANK POJK TI Bank ini, fokus utamanya mengarah ke regulasi apa ya?"
+34,Bagian,Bagian Kesatu Penyusunan Arsitektur TI Bank,BAB III ARSITEKTUR TI BANK,Kira-kira gimana sih implikasi dari Bagian Kesatu Penyusunan Arsitektur TI Bank di BAB III ARSITEKTUR TI BANK terhadap kepatuhan bank?
+35,Pasal,Pasal 11,Bagian Kesatu Penyusunan Arsitektur TI Bank,"Mau nanya dong, syarat utamanya apa untuk Pasal 11 POJK TI Bank di aturan OJK?"
+36,Ayat,Pasal 11 ayat (1),Pasal 11,Maksud dari aturan di Pasal 11 ayat (1) itu apa ya buat orang awam? Tolong kasih contoh konkretnya.
+37,Ayat,Pasal 11 ayat (2),Pasal 11,Syarat utama apa yang wajib dipenuhi bank sesuai dengan bunyi ketentuan Pasal 11 ayat (2)?
+38,Ayat,Pasal 11 ayat (3),Pasal 11,Tolong jelasin maksud operasional dari Pasal 11 ayat (3) POJK No. 11/POJK.03/2022.
+39,Ayat,Pasal 11 ayat (4),Pasal 11,Siapa saja sih pihak atau unit kerja bank yang wajib mematuhi aturan di Pasal 11 ayat (4)?
+40,Ayat,Pasal 11 ayat (5),Pasal 11,"Mau nanya dong, apa maksud dari Pasal 11 ayat (5) POJK 11 sih?"
+41,Bagian,Bagian Kedua Penyusunan Rencana Strategis TI Bank,BAB III ARSITEKTUR TI BANK,Tolong jelasin dong maksud dari dibuatnya Bagian Kedua Penyusunan Rencana Strategis TI Bank pada bab BAB III ARSITEKTUR TI BANK!
+42,Pasal,Pasal 12,Bagian Kedua Penyusunan Rencana Strategis TI Bank,"Mau nanya dong, gimana kewajiban bank atau direksi yang tertuang di Pasal 12 POJK 11?"
+43,Ayat,Pasal 12 ayat (1),Pasal 12,Tolong jelasin maksud operasional dari Pasal 12 ayat (1) POJK No. 11/POJK.03/2022.
+44,Ayat,Pasal 12 ayat (2),Pasal 12,Siapa saja sih pihak atau unit kerja bank yang wajib mematuhi aturan di Pasal 12 ayat (2)?
+45,Ayat,Pasal 12 ayat (3),Pasal 12,"Mau nanya dong, syarat utamanya apa untuk Pasal 12 ayat (3) POJK 11 di aturan OJK?"
+46,Pasal,Pasal 13,Bagian Kedua Penyusunan Rencana Strategis TI Bank,Pasal 13 POJK No. 11/POJK.03/2022 itu sebenarnya ngatur soal apa sih? Tolong jelasin pakai bahasa santai.
+47,Ayat,Pasal 13 ayat (1),Pasal 13,Syarat utama apa yang wajib dipenuhi bank sesuai dengan bunyi ketentuan Pasal 13 ayat (1)?
+48,Ayat,Pasal 13 ayat (2),Pasal 13,Tolong jelasin maksud operasional dari Pasal 13 ayat (2) POJK No. 11/POJK.03/2022.
+49,Ayat,Pasal 13 ayat (3),Pasal 13,Siapa saja sih pihak atau unit kerja bank yang wajib mematuhi aturan di Pasal 13 ayat (3)?
+50,Pasal,Pasal 14,Bagian Kedua Penyusunan Rencana Strategis TI Bank,"Mau nanya dong, apa maksud dari Pasal 14 POJK TI Bank sih?"
+51,Ayat,Pasal 14 ayat (1),Pasal 14,Maksud dari aturan di Pasal 14 ayat (1) itu apa ya buat orang awam? Tolong kasih contoh konkretnya.
+52,Ayat,Pasal 14 ayat (2),Pasal 14,Syarat utama apa yang wajib dipenuhi bank sesuai dengan bunyi ketentuan Pasal 14 ayat (2)?
+53,Bab,BAB IV PENERAPAN MANAJEMEN RISIKO PENYELENGGARAAN TI BANK,Regulasi,"Di dalam BAB IV PENERAPAN MANAJEMEN RISIKO PENYELENGGARAAN TI BANK POJK TI Bank ini, fokus utamanya mengarah ke regulasi apa ya?"
+54,Bagian,Bagian Kesatu Umum,BAB IV PENERAPAN MANAJEMEN RISIKO PENYELENGGARAAN TI BANK,Kira-kira gimana sih implikasi dari Bagian Kesatu Umum di BAB IV PENERAPAN MANAJEMEN RISIKO PENYELENGGARAAN TI BANK terhadap kepatuhan bank?
+55,Pasal,Pasal 15,Bagian Kesatu Umum,"Mau nanya dong, syarat utamanya apa untuk Pasal 15 POJK TI Bank di aturan OJK?"
+56,Ayat,Pasal 15 ayat (1),Pasal 15,Maksud dari aturan di Pasal 15 ayat (1) itu apa ya buat orang awam? Tolong kasih contoh konkretnya.
+57,Ayat,Pasal 15 ayat (2),Pasal 15,Syarat utama apa yang wajib dipenuhi bank sesuai dengan bunyi ketentuan Pasal 15 ayat (2)?
+58,Ayat,Pasal 15 ayat (3),Pasal 15,Tolong jelasin maksud operasional dari Pasal 15 ayat (3) POJK No. 11/POJK.03/2022.
+59,Ayat,Pasal 15 ayat (4),Pasal 15,Siapa saja sih pihak atau unit kerja bank yang wajib mematuhi aturan di Pasal 15 ayat (4)?
+60,Ayat,Pasal 15 ayat (5),Pasal 15,"Mau nanya dong, apa maksud dari Pasal 15 ayat (5) POJK 11 sih?"
+61,Bagian,Bagian Kedua Pengamanan Informasi dalam Penyelenggaraan TI Bank,BAB IV PENERAPAN MANAJEMEN RISIKO PENYELENGGARAAN TI BANK,Tolong jelasin dong maksud dari dibuatnya Bagian Kedua Pengamanan Informasi dalam Penyelenggaraan TI Bank pada bab BAB IV PENERAPAN MANAJEMEN RISIKO PENYELENGGARAAN TI BANK!
+62,Pasal,Pasal 16,Bagian Kedua Pengamanan Informasi dalam Penyelenggaraan TI Bank,"Mau nanya dong, gimana kewajiban bank atau direksi yang tertuang di Pasal 16 POJK 11?"
+63,Ayat,Pasal 16 ayat (1),Pasal 16,Tolong jelasin maksud operasional dari Pasal 16 ayat (1) POJK No. 11/POJK.03/2022.
+64,Ayat,Pasal 16 ayat (2),Pasal 16,Siapa saja sih pihak atau unit kerja bank yang wajib mematuhi aturan di Pasal 16 ayat (2)?
+65,Ayat,Pasal 16 ayat (3),Pasal 16,"Mau nanya dong, syarat utamanya apa untuk Pasal 16 ayat (3) POJK 11 di aturan OJK?"
+66,Ayat,Pasal 16 ayat (4),Pasal 16,Maksud dari aturan di Pasal 16 ayat (4) itu apa ya buat orang awam? Tolong kasih contoh konkretnya.
+67,Pasal,Pasal 17,Bagian Kedua Pengamanan Informasi dalam Penyelenggaraan TI Bank,"Mau nanya dong, gimana kewajiban bank atau direksi yang tertuang di Pasal 17 POJK 11?"
+68,Ayat,Pasal 17 ayat (1),Pasal 17,Tolong jelasin maksud operasional dari Pasal 17 ayat (1) POJK No. 11/POJK.03/2022.
+69,Ayat,Pasal 17 ayat (2),Pasal 17,Siapa saja sih pihak atau unit kerja bank yang wajib mematuhi aturan di Pasal 17 ayat (2)?
+70,Pasal,Pasal 18,Bagian Kedua Pengamanan Informasi dalam Penyelenggaraan TI Bank,"Mau nanya dong, apa maksud dari Pasal 18 POJK TI Bank sih?"
+71,Ayat,Pasal 18 ayat (1),Pasal 18,Maksud dari aturan di Pasal 18 ayat (1) itu apa ya buat orang awam? Tolong kasih contoh konkretnya.
+72,Ayat,Pasal 18 ayat (2),Pasal 18,Syarat utama apa yang wajib dipenuhi bank sesuai dengan bunyi ketentuan Pasal 18 ayat (2)?
+73,Ayat,Pasal 18 ayat (3),Pasal 18,Tolong jelasin maksud operasional dari Pasal 18 ayat (3) POJK No. 11/POJK.03/2022.
+74,Ayat,Pasal 18 ayat (4),Pasal 18,Siapa saja sih pihak atau unit kerja bank yang wajib mematuhi aturan di Pasal 18 ayat (4)?
+75,Ayat,Pasal 18 ayat (5),Pasal 18,"Mau nanya dong, syarat utamanya apa untuk Pasal 18 ayat (5) POJK 11 di aturan OJK?"
+76,Pasal,Pasal 19,Bagian Kedua Pengamanan Informasi dalam Penyelenggaraan TI Bank,Pasal 19 POJK No. 11/POJK.03/2022 itu sebenarnya ngatur soal apa sih? Tolong jelasin pakai bahasa santai.
+77,Pasal,Pasal 20,Bagian Kedua Pengamanan Informasi dalam Penyelenggaraan TI Bank,"Mau nanya dong, gimana kewajiban bank atau direksi yang tertuang di Pasal 20 POJK 11?"
+78,Ayat,Pasal 20 ayat (1),Pasal 20,Tolong jelasin maksud operasional dari Pasal 20 ayat (1) POJK No. 11/POJK.03/2022.
+79,Ayat,Pasal 20 ayat (2),Pasal 20,Siapa saja sih pihak atau unit kerja bank yang wajib mematuhi aturan di Pasal 20 ayat (2)?
+80,Bab,BAB V KETAHANAN DAN KEAMANAN SIBER BANK,Regulasi,"Secara umum, BAB V KETAHANAN DAN KEAMANAN SIBER BANK itu ngomongin soal apa sih di aturan OJK? Tolong jelasin singkat."
+81,Pasal,Pasal 21,BAB V KETAHANAN DAN KEAMANAN SIBER BANK,Pasal 21 POJK No. 11/POJK.03/2022 itu sebenarnya ngatur soal apa sih? Tolong jelasin pakai bahasa santai.
+82,Ayat,Pasal 21 ayat (1),Pasal 21,Syarat utama apa yang wajib dipenuhi bank sesuai dengan bunyi ketentuan Pasal 21 ayat (1)?
+83,Ayat,Pasal 21 ayat (2),Pasal 21,Tolong jelasin maksud operasional dari Pasal 21 ayat (2) POJK No. 11/POJK.03/2022.
+84,Ayat,Pasal 21 ayat (3),Pasal 21,Siapa saja sih pihak atau unit kerja bank yang wajib mematuhi aturan di Pasal 21 ayat (3)?
+85,Pasal,Pasal 22,BAB V KETAHANAN DAN KEAMANAN SIBER BANK,"Mau nanya dong, syarat utamanya apa untuk Pasal 22 POJK TI Bank di aturan OJK?"
+86,Ayat,Pasal 22 ayat (1),Pasal 22,Maksud dari aturan di Pasal 22 ayat (1) itu apa ya buat orang awam? Tolong kasih contoh konkretnya.
+87,Ayat,Pasal 22 ayat (2),Pasal 22,Syarat utama apa yang wajib dipenuhi bank sesuai dengan bunyi ketentuan Pasal 22 ayat (2)?
+88,Ayat,Pasal 22 ayat (3),Pasal 22,Tolong jelasin maksud operasional dari Pasal 22 ayat (3) POJK No. 11/POJK.03/2022.
+89,Ayat,Pasal 22 ayat (4),Pasal 22,Siapa saja sih pihak atau unit kerja bank yang wajib mematuhi aturan di Pasal 22 ayat (4)?
+90,Pasal,Pasal 23,BAB V KETAHANAN DAN KEAMANAN SIBER BANK,"Mau nanya dong, apa maksud dari Pasal 23 POJK TI Bank sih?"
+91,Pasal,Pasal 24,BAB V KETAHANAN DAN KEAMANAN SIBER BANK,Pasal 24 POJK No. 11/POJK.03/2022 itu sebenarnya ngatur soal apa sih? Tolong jelasin pakai bahasa santai.
+92,Ayat,Pasal 24 ayat (1),Pasal 24,Syarat utama apa yang wajib dipenuhi bank sesuai dengan bunyi ketentuan Pasal 24 ayat (1)?
+93,Ayat,Pasal 24 ayat (2),Pasal 24,Tolong jelasin maksud operasional dari Pasal 24 ayat (2) POJK No. 11/POJK.03/2022.
+94,Pasal,Pasal 25,BAB V KETAHANAN DAN KEAMANAN SIBER BANK,Apa saja konsekuensi riil kalau bank melalaikan aturan di Pasal 25 POJK TI Bank ini?
+95,Ayat,Pasal 25 ayat (1),Pasal 25,"Mau nanya dong, syarat utamanya apa untuk Pasal 25 ayat (1) POJK 11 di aturan OJK?"
+96,Ayat,Pasal 25 ayat (2),Pasal 25,Maksud dari aturan di Pasal 25 ayat (2) itu apa ya buat orang awam? Tolong kasih contoh konkretnya.
+97,Ayat,Pasal 25 ayat (3),Pasal 25,Syarat utama apa yang wajib dipenuhi bank sesuai dengan bunyi ketentuan Pasal 25 ayat (3)?
+98,Ayat,Pasal 25 ayat (4),Pasal 25,Tolong jelasin maksud operasional dari Pasal 25 ayat (4) POJK No. 11/POJK.03/2022.
+99,Pasal,Pasal 26,BAB V KETAHANAN DAN KEAMANAN SIBER BANK,Apa saja konsekuensi riil kalau bank melalaikan aturan di Pasal 26 POJK TI Bank ini?
+100,Ayat,Pasal 26 ayat (1),Pasal 26,"Mau nanya dong, apa maksud dari Pasal 26 ayat (1) POJK 11 sih?"
+101,Ayat,Pasal 26 ayat (2),Pasal 26,Maksud dari aturan di Pasal 26 ayat (2) itu apa ya buat orang awam? Tolong kasih contoh konkretnya.
+102,Pasal,Pasal 27,BAB V KETAHANAN DAN KEAMANAN SIBER BANK,"Mau nanya dong, gimana kewajiban bank atau direksi yang tertuang di Pasal 27 POJK 11?"
+103,Ayat,Pasal 27 ayat (1),Pasal 27,Tolong jelasin maksud operasional dari Pasal 27 ayat (1) POJK No. 11/POJK.03/2022.
+104,Ayat,Pasal 27 ayat (2),Pasal 27,Siapa saja sih pihak atau unit kerja bank yang wajib mematuhi aturan di Pasal 27 ayat (2)?
+105,Pasal,Pasal 28,BAB V KETAHANAN DAN KEAMANAN SIBER BANK,"Mau nanya dong, syarat utamanya apa untuk Pasal 28 POJK TI Bank di aturan OJK?"
+106,Bab,BAB VI PENGGUNAAN PIHAK PENYEDIA JASA TI DALAM PENYELENGGARAAN TI BANK,Regulasi,"Penasaran nih, kalau kita baca BAB VI PENGGUNAAN PIHAK PENYEDIA JASA TI DALAM PENYELENGGARAAN TI BANK, topik dan poin utamanya apa saja?"
+107,Pasal,Pasal 29,BAB VI PENGGUNAAN PIHAK PENYEDIA JASA TI DALAM PENYELENGGARAAN TI BANK,"Mau nanya dong, gimana kewajiban bank atau direksi yang tertuang di Pasal 29 POJK 11?"
+108,Ayat,Pasal 29 ayat (1),Pasal 29,Tolong jelasin maksud operasional dari Pasal 29 ayat (1) POJK No. 11/POJK.03/2022.
+109,Ayat,Pasal 29 ayat (2),Pasal 29,Siapa saja sih pihak atau unit kerja bank yang wajib mematuhi aturan di Pasal 29 ayat (2)?
+110,Ayat,Pasal 29 ayat (3),Pasal 29,"Mau nanya dong, apa maksud dari Pasal 29 ayat (3) POJK 11 sih?"
+111,Pasal,Pasal 30,BAB VI PENGGUNAAN PIHAK PENYEDIA JASA TI DALAM PENYELENGGARAAN TI BANK,Pasal 30 POJK No. 11/POJK.03/2022 itu sebenarnya ngatur soal apa sih? Tolong jelasin pakai bahasa santai.
+112,Ayat,Pasal 30 ayat (1),Pasal 30,Syarat utama apa yang wajib dipenuhi bank sesuai dengan bunyi ketentuan Pasal 30 ayat (1)?
+113,Ayat,Pasal 30 ayat (2),Pasal 30,Tolong jelasin maksud operasional dari Pasal 30 ayat (2) POJK No. 11/POJK.03/2022.
+114,Ayat,Pasal 30 ayat (3),Pasal 30,Siapa saja sih pihak atau unit kerja bank yang wajib mematuhi aturan di Pasal 30 ayat (3)?
+115,Ayat,Pasal 30 ayat (4),Pasal 30,"Mau nanya dong, syarat utamanya apa untuk Pasal 30 ayat (4) POJK 11 di aturan OJK?"
+116,Ayat,Pasal 30 ayat (5),Pasal 30,Maksud dari aturan di Pasal 30 ayat (5) itu apa ya buat orang awam? Tolong kasih contoh konkretnya.
+117,Pasal,Pasal 31,BAB VI PENGGUNAAN PIHAK PENYEDIA JASA TI DALAM PENYELENGGARAAN TI BANK,"Mau nanya dong, gimana kewajiban bank atau direksi yang tertuang di Pasal 31 POJK 11?"
+118,Pasal,Pasal 32,BAB VI PENGGUNAAN PIHAK PENYEDIA JASA TI DALAM PENYELENGGARAAN TI BANK,Tolong jabarkan dong poin-poin wajib yang harus dipenuhi bank biar aman dari sanksi Pasal 32!
+119,Ayat,Pasal 32 ayat (1),Pasal 32,Siapa saja sih pihak atau unit kerja bank yang wajib mematuhi aturan di Pasal 32 ayat (1)?
+120,Ayat,Pasal 32 ayat (2),Pasal 32,"Mau nanya dong, apa maksud dari Pasal 32 ayat (2) POJK 11 sih?"
+121,Ayat,Pasal 32 ayat (3),Pasal 32,Maksud dari aturan di Pasal 32 ayat (3) itu apa ya buat orang awam? Tolong kasih contoh konkretnya.
+122,Ayat,Pasal 32 ayat (4),Pasal 32,Syarat utama apa yang wajib dipenuhi bank sesuai dengan bunyi ketentuan Pasal 32 ayat (4)?
+123,Pasal,Pasal 33,BAB VI PENGGUNAAN PIHAK PENYEDIA JASA TI DALAM PENYELENGGARAAN TI BANK,Tolong jabarkan dong poin-poin wajib yang harus dipenuhi bank biar aman dari sanksi Pasal 33!
+124,Ayat,Pasal 33 ayat (1),Pasal 33,Siapa saja sih pihak atau unit kerja bank yang wajib mematuhi aturan di Pasal 33 ayat (1)?
+125,Ayat,Pasal 33 ayat (2),Pasal 33,"Mau nanya dong, syarat utamanya apa untuk Pasal 33 ayat (2) POJK 11 di aturan OJK?"
+126,Pasal,Pasal 34,BAB VI PENGGUNAAN PIHAK PENYEDIA JASA TI DALAM PENYELENGGARAAN TI BANK,Pasal 34 POJK No. 11/POJK.03/2022 itu sebenarnya ngatur soal apa sih? Tolong jelasin pakai bahasa santai.
+127,Bab,BAB VII PENEMPATAN SISTEM ELEKTRONIK DAN PEMROSESAN TRANSAKSI BERBASIS TI,Regulasi,Tolong buatin rangkuman sederhana dong buat aturan-aturan yang ada di BAB VII PENEMPATAN SISTEM ELEKTRONIK DAN PEMROSESAN TRANSAKSI BERBASIS TI!
+128,Bagian,Bagian Kesatu Penempatan Sistem Elektronik,BAB VII PENEMPATAN SISTEM ELEKTRONIK DAN PEMROSESAN TRANSAKSI BERBASIS TI,Bagian aturan Bagian Kesatu Penempatan Sistem Elektronik yang ada di BAB VII PENEMPATAN SISTEM ELEKTRONIK DAN PEMROSESAN TRANSAKSI BERBASIS TI itu sebenarnya syarat pelaksanaannya gimana?
+129,Pasal,Pasal 35,Bagian Kesatu Penempatan Sistem Elektronik,Apa saja konsekuensi riil kalau bank melalaikan aturan di Pasal 35 POJK TI Bank ini?
+130,Ayat,Pasal 35 ayat (1),Pasal 35,"Mau nanya dong, apa maksud dari Pasal 35 ayat (1) POJK 11 sih?"
+131,Ayat,Pasal 35 ayat (2),Pasal 35,Maksud dari aturan di Pasal 35 ayat (2) itu apa ya buat orang awam? Tolong kasih contoh konkretnya.
+132,Ayat,Pasal 35 ayat (3),Pasal 35,Syarat utama apa yang wajib dipenuhi bank sesuai dengan bunyi ketentuan Pasal 35 ayat (3)?
+133,Ayat,Pasal 35 ayat (4),Pasal 35,Tolong jelasin maksud operasional dari Pasal 35 ayat (4) POJK No. 11/POJK.03/2022.
+134,Pasal,Pasal 36,Bagian Kesatu Penempatan Sistem Elektronik,Apa saja konsekuensi riil kalau bank melalaikan aturan di Pasal 36 POJK TI Bank ini?
+135,Ayat,Pasal 36 ayat (1),Pasal 36,"Mau nanya dong, syarat utamanya apa untuk Pasal 36 ayat (1) POJK 11 di aturan OJK?"
+136,Ayat,Pasal 36 ayat (2),Pasal 36,Maksud dari aturan di Pasal 36 ayat (2) itu apa ya buat orang awam? Tolong kasih contoh konkretnya.
+137,Ayat,Pasal 36 ayat (3),Pasal 36,Syarat utama apa yang wajib dipenuhi bank sesuai dengan bunyi ketentuan Pasal 36 ayat (3)?
+138,Ayat,Pasal 36 ayat (4),Pasal 36,Tolong jelasin maksud operasional dari Pasal 36 ayat (4) POJK No. 11/POJK.03/2022.
+139,Pasal,Pasal 37,Bagian Kesatu Penempatan Sistem Elektronik,Apa saja konsekuensi riil kalau bank melalaikan aturan di Pasal 37 POJK TI Bank ini?
+140,Pasal,Pasal 38,Bagian Kesatu Penempatan Sistem Elektronik,"Mau nanya dong, apa maksud dari Pasal 38 POJK TI Bank sih?"
+141,Bagian,Bagian Kedua Pemrosesan Transaksi Berbasis TI,BAB VII PENEMPATAN SISTEM ELEKTRONIK DAN PEMROSESAN TRANSAKSI BERBASIS TI,Tolong jelasin dong maksud dari dibuatnya Bagian Kedua Pemrosesan Transaksi Berbasis TI pada bab BAB VII PENEMPATAN SISTEM ELEKTRONIK DAN PEMROSESAN TRANSAKSI BERBASIS TI!
+142,Pasal,Pasal 39,Bagian Kedua Pemrosesan Transaksi Berbasis TI,"Mau nanya dong, gimana kewajiban bank atau direksi yang tertuang di Pasal 39 POJK 11?"
+143,Ayat,Pasal 39 ayat (1),Pasal 39,Tolong jelasin maksud operasional dari Pasal 39 ayat (1) POJK No. 11/POJK.03/2022.
+144,Ayat,Pasal 39 ayat (2),Pasal 39,Siapa saja sih pihak atau unit kerja bank yang wajib mematuhi aturan di Pasal 39 ayat (2)?
+145,Ayat,Pasal 39 ayat (3),Pasal 39,"Mau nanya dong, syarat utamanya apa untuk Pasal 39 ayat (3) POJK 11 di aturan OJK?"
+146,Ayat,Pasal 39 ayat (4),Pasal 39,Maksud dari aturan di Pasal 39 ayat (4) itu apa ya buat orang awam? Tolong kasih contoh konkretnya.
+147,Ayat,Pasal 39 ayat (5),Pasal 39,Syarat utama apa yang wajib dipenuhi bank sesuai dengan bunyi ketentuan Pasal 39 ayat (5)?
+148,Ayat,Pasal 39 ayat (6),Pasal 39,Tolong jelasin maksud operasional dari Pasal 39 ayat (6) POJK No. 11/POJK.03/2022.
+149,Ayat,Pasal 39 ayat (7),Pasal 39,Siapa saja sih pihak atau unit kerja bank yang wajib mematuhi aturan di Pasal 39 ayat (7)?
+150,Bagian,Bagian Ketiga Tata Cara Permohonan Izin dan Batas Waktu Pelaksanaan Setelah Memperoleh Izin,BAB VII PENEMPATAN SISTEM ELEKTRONIK DAN PEMROSESAN TRANSAKSI BERBASIS TI,"Ada yang tahu nggak, apa saja poin krusial yang dibahas di Bagian Ketiga Tata Cara Permohonan Izin dan Batas Waktu Pelaksanaan Setelah Memperoleh Izin dari BAB VII PENEMPATAN SISTEM ELEKTRONIK DAN PEMROSESAN TRANSAKSI BERBASIS TI?"
+151,Pasal,Pasal 40,Bagian Ketiga Tata Cara Permohonan Izin dan Batas Waktu Pelaksanaan Setelah Memperoleh Izin,Pasal 40 POJK No. 11/POJK.03/2022 itu sebenarnya ngatur soal apa sih? Tolong jelasin pakai bahasa santai.
+152,Ayat,Pasal 40 ayat (1),Pasal 40,Syarat utama apa yang wajib dipenuhi bank sesuai dengan bunyi ketentuan Pasal 40 ayat (1)?
+153,Ayat,Pasal 40 ayat (2),Pasal 40,Tolong jelasin maksud operasional dari Pasal 40 ayat (2) POJK No. 11/POJK.03/2022.
+154,Pasal,Pasal 41,Bagian Ketiga Tata Cara Permohonan Izin dan Batas Waktu Pelaksanaan Setelah Memperoleh Izin,Apa saja konsekuensi riil kalau bank melalaikan aturan di Pasal 41 POJK TI Bank ini?
+155,Ayat,Pasal 41 ayat (1),Pasal 41,"Mau nanya dong, syarat utamanya apa untuk Pasal 41 ayat (1) POJK 11 di aturan OJK?"
+156,Ayat,Pasal 41 ayat (2),Pasal 41,Maksud dari aturan di Pasal 41 ayat (2) itu apa ya buat orang awam? Tolong kasih contoh konkretnya.
+157,Pasal,Pasal 42,Bagian Ketiga Tata Cara Permohonan Izin dan Batas Waktu Pelaksanaan Setelah Memperoleh Izin,"Mau nanya dong, gimana kewajiban bank atau direksi yang tertuang di Pasal 42 POJK 11?"
+158,Ayat,Pasal 42 ayat (1),Pasal 42,Tolong jelasin maksud operasional dari Pasal 42 ayat (1) POJK No. 11/POJK.03/2022.
+159,Ayat,Pasal 42 ayat (2),Pasal 42,Siapa saja sih pihak atau unit kerja bank yang wajib mematuhi aturan di Pasal 42 ayat (2)?
+160,Bab,BAB VIII PENGELOLAAN DATA DAN PELINDUNGAN DATA PRIBADI DALAM PENYELENGGARAAN TI BANK,Regulasi,"Secara umum, BAB VIII PENGELOLAAN DATA DAN PELINDUNGAN DATA PRIBADI DALAM PENYELENGGARAAN TI BANK itu ngomongin soal apa sih di aturan OJK? Tolong jelasin singkat."
+161,Bagian,Bagian Kesatu Pengelolaan Data oleh Bank,BAB VIII PENGELOLAAN DATA DAN PELINDUNGAN DATA PRIBADI DALAM PENYELENGGARAAN TI BANK,Tolong jelasin dong maksud dari dibuatnya Bagian Kesatu Pengelolaan Data oleh Bank pada bab BAB VIII PENGELOLAAN DATA DAN PELINDUNGAN DATA PRIBADI DALAM PENYELENGGARAAN TI BANK!
+162,Pasal,Pasal 43,Bagian Kesatu Pengelolaan Data oleh Bank,"Mau nanya dong, gimana kewajiban bank atau direksi yang tertuang di Pasal 43 POJK 11?"
+163,Ayat,Pasal 43 ayat (1),Pasal 43,Tolong jelasin maksud operasional dari Pasal 43 ayat (1) POJK No. 11/POJK.03/2022.
+164,Ayat,Pasal 43 ayat (2),Pasal 43,Siapa saja sih pihak atau unit kerja bank yang wajib mematuhi aturan di Pasal 43 ayat (2)?
+165,Ayat,Pasal 43 ayat (3),Pasal 43,"Mau nanya dong, syarat utamanya apa untuk Pasal 43 ayat (3) POJK 11 di aturan OJK?"
+166,Bagian,Bagian Kedua Pelindungan Data Pribadi oleh Bank,BAB VIII PENGELOLAAN DATA DAN PELINDUNGAN DATA PRIBADI DALAM PENYELENGGARAAN TI BANK,Tolong jelasin dong maksud dari dibuatnya Bagian Kedua Pelindungan Data Pribadi oleh Bank pada bab BAB VIII PENGELOLAAN DATA DAN PELINDUNGAN DATA PRIBADI DALAM PENYELENGGARAAN TI BANK!
+167,Pasal,Pasal 44,Bagian Kedua Pelindungan Data Pribadi oleh Bank,"Mau nanya dong, gimana kewajiban bank atau direksi yang tertuang di Pasal 44 POJK 11?"
+168,Ayat,Pasal 44 ayat (1),Pasal 44,Tolong jelasin maksud operasional dari Pasal 44 ayat (1) POJK No. 11/POJK.03/2022.
+169,Ayat,Pasal 44 ayat (2),Pasal 44,Siapa saja sih pihak atau unit kerja bank yang wajib mematuhi aturan di Pasal 44 ayat (2)?
+170,Pasal,Pasal 45,Bagian Kedua Pelindungan Data Pribadi oleh Bank,"Mau nanya dong, apa maksud dari Pasal 45 POJK TI Bank sih?"
+171,Ayat,Pasal 45 ayat (1),Pasal 45,Maksud dari aturan di Pasal 45 ayat (1) itu apa ya buat orang awam? Tolong kasih contoh konkretnya.
+172,Ayat,Pasal 45 ayat (2),Pasal 45,Syarat utama apa yang wajib dipenuhi bank sesuai dengan bunyi ketentuan Pasal 45 ayat (2)?
+173,Pasal,Pasal 46,Bagian Kedua Pelindungan Data Pribadi oleh Bank,Tolong jabarkan dong poin-poin wajib yang harus dipenuhi bank biar aman dari sanksi Pasal 46!
+174,Ayat,Pasal 46 ayat (1),Pasal 46,Siapa saja sih pihak atau unit kerja bank yang wajib mematuhi aturan di Pasal 46 ayat (1)?
+175,Ayat,Pasal 46 ayat (2),Pasal 46,"Mau nanya dong, syarat utamanya apa untuk Pasal 46 ayat (2) POJK 11 di aturan OJK?"
+176,Pasal,Pasal 47,Bagian Kedua Pelindungan Data Pribadi oleh Bank,Pasal 47 POJK No. 11/POJK.03/2022 itu sebenarnya ngatur soal apa sih? Tolong jelasin pakai bahasa santai.
+177,Bab,BAB IX PENYEDIAAN JASA TI OLEH BANK,Regulasi,Tolong buatin rangkuman sederhana dong buat aturan-aturan yang ada di BAB IX PENYEDIAAN JASA TI OLEH BANK!
+178,Pasal,Pasal 48,BAB IX PENYEDIAAN JASA TI OLEH BANK,Tolong jabarkan dong poin-poin wajib yang harus dipenuhi bank biar aman dari sanksi Pasal 48!
+179,Ayat,Pasal 48 ayat (1),Pasal 48,Siapa saja sih pihak atau unit kerja bank yang wajib mematuhi aturan di Pasal 48 ayat (1)?
+180,Ayat,Pasal 48 ayat (2),Pasal 48,"Mau nanya dong, apa maksud dari Pasal 48 ayat (2) POJK 11 sih?"
+181,Ayat,Pasal 48 ayat (3),Pasal 48,Maksud dari aturan di Pasal 48 ayat (3) itu apa ya buat orang awam? Tolong kasih contoh konkretnya.
+182,Ayat,Pasal 48 ayat (4),Pasal 48,Syarat utama apa yang wajib dipenuhi bank sesuai dengan bunyi ketentuan Pasal 48 ayat (4)?
+183,Pasal,Pasal 49,BAB IX PENYEDIAAN JASA TI OLEH BANK,Tolong jabarkan dong poin-poin wajib yang harus dipenuhi bank biar aman dari sanksi Pasal 49!
+184,Ayat,Pasal 49 ayat (1),Pasal 49,Siapa saja sih pihak atau unit kerja bank yang wajib mematuhi aturan di Pasal 49 ayat (1)?
+185,Ayat,Pasal 49 ayat (2),Pasal 49,"Mau nanya dong, syarat utamanya apa untuk Pasal 49 ayat (2) POJK 11 di aturan OJK?"
+186,Pasal,Pasal 50,BAB IX PENYEDIAAN JASA TI OLEH BANK,Pasal 50 POJK No. 11/POJK.03/2022 itu sebenarnya ngatur soal apa sih? Tolong jelasin pakai bahasa santai.
+187,Ayat,Pasal 50 ayat (1),Pasal 50,Syarat utama apa yang wajib dipenuhi bank sesuai dengan bunyi ketentuan Pasal 50 ayat (1)?
+188,Ayat,Pasal 50 ayat (2),Pasal 50,Tolong jelasin maksud operasional dari Pasal 50 ayat (2) POJK No. 11/POJK.03/2022.
+189,Pasal,Pasal 51,BAB IX PENYEDIAAN JASA TI OLEH BANK,Apa saja konsekuensi riil kalau bank melalaikan aturan di Pasal 51 POJK TI Bank ini?
+190,Ayat,Pasal 51 ayat (1),Pasal 51,"Mau nanya dong, apa maksud dari Pasal 51 ayat (1) POJK 11 sih?"
+191,Ayat,Pasal 51 ayat (2),Pasal 51,Maksud dari aturan di Pasal 51 ayat (2) itu apa ya buat orang awam? Tolong kasih contoh konkretnya.
+192,Pasal,Pasal 52,BAB IX PENYEDIAAN JASA TI OLEH BANK,"Mau nanya dong, gimana kewajiban bank atau direksi yang tertuang di Pasal 52 POJK 11?"
+193,Bab,BAB X PENGENDALIAN DAN AUDIT INTERN DALAM PENYELENGGARAAN TI BANK,Regulasi,"Di dalam BAB X PENGENDALIAN DAN AUDIT INTERN DALAM PENYELENGGARAAN TI BANK POJK TI Bank ini, fokus utamanya mengarah ke regulasi apa ya?"
+194,Bagian,Bagian Kesatu Pengendalian Intern Bank dalam Penyelenggaraan TI,BAB X PENGENDALIAN DAN AUDIT INTERN DALAM PENYELENGGARAAN TI BANK,Kira-kira gimana sih implikasi dari Bagian Kesatu Pengendalian Intern Bank dalam Penyelenggaraan TI di BAB X PENGENDALIAN DAN AUDIT INTERN DALAM PENYELENGGARAAN TI BANK terhadap kepatuhan bank?
+195,Pasal,Pasal 53,Bagian Kesatu Pengendalian Intern Bank dalam Penyelenggaraan TI,"Mau nanya dong, syarat utamanya apa untuk Pasal 53 POJK TI Bank di aturan OJK?"
+196,Ayat,Pasal 53 ayat (1),Pasal 53,Maksud dari aturan di Pasal 53 ayat (1) itu apa ya buat orang awam? Tolong kasih contoh konkretnya.
+197,Ayat,Pasal 53 ayat (2),Pasal 53,Syarat utama apa yang wajib dipenuhi bank sesuai dengan bunyi ketentuan Pasal 53 ayat (2)?
+198,Ayat,Pasal 53 ayat (3),Pasal 53,Tolong jelasin maksud operasional dari Pasal 53 ayat (3) POJK No. 11/POJK.03/2022.
+199,Ayat,Pasal 53 ayat (4),Pasal 53,Siapa saja sih pihak atau unit kerja bank yang wajib mematuhi aturan di Pasal 53 ayat (4)?
+200,Bagian,Bagian Kedua Audit Intern dalam Penyelenggaraan TI,BAB X PENGENDALIAN DAN AUDIT INTERN DALAM PENYELENGGARAAN TI BANK,"Ada yang tahu nggak, apa saja poin krusial yang dibahas di Bagian Kedua Audit Intern dalam Penyelenggaraan TI dari BAB X PENGENDALIAN DAN AUDIT INTERN DALAM PENYELENGGARAAN TI BANK?"
+201,Pasal,Pasal 54,Bagian Kedua Audit Intern dalam Penyelenggaraan TI,Pasal 54 POJK No. 11/POJK.03/2022 itu sebenarnya ngatur soal apa sih? Tolong jelasin pakai bahasa santai.
+202,Ayat,Pasal 54 ayat (1),Pasal 54,Syarat utama apa yang wajib dipenuhi bank sesuai dengan bunyi ketentuan Pasal 54 ayat (1)?
+203,Ayat,Pasal 54 ayat (2),Pasal 54,Tolong jelasin maksud operasional dari Pasal 54 ayat (2) POJK No. 11/POJK.03/2022.
+204,Ayat,Pasal 54 ayat (3),Pasal 54,Siapa saja sih pihak atau unit kerja bank yang wajib mematuhi aturan di Pasal 54 ayat (3)?
+205,Ayat,Pasal 54 ayat (4),Pasal 54,"Mau nanya dong, syarat utamanya apa untuk Pasal 54 ayat (4) POJK 11 di aturan OJK?"
+206,Pasal,Pasal 55,Bagian Kedua Audit Intern dalam Penyelenggaraan TI,Pasal 55 POJK No. 11/POJK.03/2022 itu sebenarnya ngatur soal apa sih? Tolong jelasin pakai bahasa santai.
+207,Ayat,Pasal 55 ayat (1),Pasal 55,Syarat utama apa yang wajib dipenuhi bank sesuai dengan bunyi ketentuan Pasal 55 ayat (1)?
+208,Ayat,Pasal 55 ayat (2),Pasal 55,Tolong jelasin maksud operasional dari Pasal 55 ayat (2) POJK No. 11/POJK.03/2022.
+209,Ayat,Pasal 55 ayat (3),Pasal 55,Siapa saja sih pihak atau unit kerja bank yang wajib mematuhi aturan di Pasal 55 ayat (3)?
+210,Pasal,Pasal 56,Bagian Kedua Audit Intern dalam Penyelenggaraan TI,"Mau nanya dong, apa maksud dari Pasal 56 POJK TI Bank sih?"
+211,Ayat,Pasal 56 ayat (1),Pasal 56,Maksud dari aturan di Pasal 56 ayat (1) itu apa ya buat orang awam? Tolong kasih contoh konkretnya.
+212,Ayat,Pasal 56 ayat (2),Pasal 56,Syarat utama apa yang wajib dipenuhi bank sesuai dengan bunyi ketentuan Pasal 56 ayat (2)?
+213,Pasal,Pasal 57,Bagian Kedua Audit Intern dalam Penyelenggaraan TI,Tolong jabarkan dong poin-poin wajib yang harus dipenuhi bank biar aman dari sanksi Pasal 57!
+214,Bab,BAB XI PELAPORAN,Regulasi,"Mau nanya dong, apa maksud utama OJK mencantumkan bab khusus tentang XI PELAPORAN ini?"
+215,Bagian,Bagian Kesatu Laporan Penyelenggaraan TI,BAB XI PELAPORAN,"Ada yang tahu nggak, apa saja poin krusial yang dibahas di Bagian Kesatu Laporan Penyelenggaraan TI dari BAB XI PELAPORAN?"
+216,Pasal,Pasal 58,Bagian Kesatu Laporan Penyelenggaraan TI,Pasal 58 POJK No. 11/POJK.03/2022 itu sebenarnya ngatur soal apa sih? Tolong jelasin pakai bahasa santai.
+217,Ayat,Pasal 58 ayat (1),Pasal 58,Syarat utama apa yang wajib dipenuhi bank sesuai dengan bunyi ketentuan Pasal 58 ayat (1)?
+218,Ayat,Pasal 58 ayat (2),Pasal 58,Tolong jelasin maksud operasional dari Pasal 58 ayat (2) POJK No. 11/POJK.03/2022.
+219,Ayat,Pasal 58 ayat (3),Pasal 58,Siapa saja sih pihak atau unit kerja bank yang wajib mematuhi aturan di Pasal 58 ayat (3)?
+220,Ayat,Pasal 58 ayat (4),Pasal 58,"Mau nanya dong, apa maksud dari Pasal 58 ayat (4) POJK 11 sih?"
+221,Pasal,Pasal 59,Bagian Kesatu Laporan Penyelenggaraan TI,Pasal 59 POJK No. 11/POJK.03/2022 itu sebenarnya ngatur soal apa sih? Tolong jelasin pakai bahasa santai.
+222,Bagian,Bagian Kedua Laporan Insidentil,BAB XI PELAPORAN,"Di dalam Bagian Kedua Laporan Insidentil (BAB XI PELAPORAN), apa kewajiban teknis yang ditekankan untuk pihak bank?"
+223,Pasal,Pasal 60,Bagian Kedua Laporan Insidentil,Tolong jabarkan dong poin-poin wajib yang harus dipenuhi bank biar aman dari sanksi Pasal 60!
+224,Ayat,Pasal 60 ayat (1),Pasal 60,Siapa saja sih pihak atau unit kerja bank yang wajib mematuhi aturan di Pasal 60 ayat (1)?
+225,Ayat,Pasal 60 ayat (2),Pasal 60,"Mau nanya dong, syarat utamanya apa untuk Pasal 60 ayat (2) POJK 11 di aturan OJK?"
+226,Ayat,Pasal 60 ayat (3),Pasal 60,Maksud dari aturan di Pasal 60 ayat (3) itu apa ya buat orang awam? Tolong kasih contoh konkretnya.
+227,Ayat,Pasal 60 ayat (4),Pasal 60,Syarat utama apa yang wajib dipenuhi bank sesuai dengan bunyi ketentuan Pasal 60 ayat (4)?
+228,Ayat,Pasal 60 ayat (5),Pasal 60,Tolong jelasin maksud operasional dari Pasal 60 ayat (5) POJK No. 11/POJK.03/2022.
+229,Bagian,Bagian Ketiga Laporan Realisasi Penyelenggaraan TI Bank,BAB XI PELAPORAN,Kira-kira gimana sih implikasi dari Bagian Ketiga Laporan Realisasi Penyelenggaraan TI Bank di BAB XI PELAPORAN terhadap kepatuhan bank?
+230,Pasal,Pasal 61,Bagian Ketiga Laporan Realisasi Penyelenggaraan TI Bank,"Mau nanya dong, apa maksud dari Pasal 61 POJK TI Bank sih?"
+231,Ayat,Pasal 61 ayat (1),Pasal 61,Maksud dari aturan di Pasal 61 ayat (1) itu apa ya buat orang awam? Tolong kasih contoh konkretnya.
+232,Ayat,Pasal 61 ayat (2),Pasal 61,Syarat utama apa yang wajib dipenuhi bank sesuai dengan bunyi ketentuan Pasal 61 ayat (2)?
+233,Bagian,Bagian Keempat Tata Cara Penyampaian Laporan,BAB XI PELAPORAN,Bagian aturan Bagian Keempat Tata Cara Penyampaian Laporan yang ada di BAB XI PELAPORAN itu sebenarnya syarat pelaksanaannya gimana?
+234,Pasal,Pasal 62,Bagian Keempat Tata Cara Penyampaian Laporan,Apa saja konsekuensi riil kalau bank melalaikan aturan di Pasal 62 POJK TI Bank ini?
+235,Ayat,Pasal 62 ayat (1),Pasal 62,"Mau nanya dong, syarat utamanya apa untuk Pasal 62 ayat (1) POJK 11 di aturan OJK?"
+236,Ayat,Pasal 62 ayat (2),Pasal 62,Maksud dari aturan di Pasal 62 ayat (2) itu apa ya buat orang awam? Tolong kasih contoh konkretnya.
+237,Ayat,Pasal 62 ayat (3),Pasal 62,Syarat utama apa yang wajib dipenuhi bank sesuai dengan bunyi ketentuan Pasal 62 ayat (3)?
+238,Pasal,Pasal 63,Bagian Keempat Tata Cara Penyampaian Laporan,Tolong jabarkan dong poin-poin wajib yang harus dipenuhi bank biar aman dari sanksi Pasal 63!
+239,Ayat,Pasal 63 ayat (1),Pasal 63,Siapa saja sih pihak atau unit kerja bank yang wajib mematuhi aturan di Pasal 63 ayat (1)?
+240,Ayat,Pasal 63 ayat (2),Pasal 63,"Mau nanya dong, apa maksud dari Pasal 63 ayat (2) POJK 11 sih?"
+241,Pasal,Pasal 64,Bagian Keempat Tata Cara Penyampaian Laporan,Pasal 64 POJK No. 11/POJK.03/2022 itu sebenarnya ngatur soal apa sih? Tolong jelasin pakai bahasa santai.
+242,Pasal,Pasal 65,Bagian Keempat Tata Cara Penyampaian Laporan,"Mau nanya dong, gimana kewajiban bank atau direksi yang tertuang di Pasal 65 POJK 11?"
+243,Bab,BAB XII PENILAIAN TINGKAT MATURITAS DIGITAL BANK,Regulasi,"Di dalam BAB XII PENILAIAN TINGKAT MATURITAS DIGITAL BANK POJK TI Bank ini, fokus utamanya mengarah ke regulasi apa ya?"
+244,Pasal,Pasal 66,BAB XII PENILAIAN TINGKAT MATURITAS DIGITAL BANK,Apa saja konsekuensi riil kalau bank melalaikan aturan di Pasal 66 POJK TI Bank ini?
+245,Ayat,Pasal 66 ayat (1),Pasal 66,"Mau nanya dong, syarat utamanya apa untuk Pasal 66 ayat (1) POJK 11 di aturan OJK?"
+246,Ayat,Pasal 66 ayat (2),Pasal 66,Maksud dari aturan di Pasal 66 ayat (2) itu apa ya buat orang awam? Tolong kasih contoh konkretnya.
+247,Ayat,Pasal 66 ayat (3),Pasal 66,Syarat utama apa yang wajib dipenuhi bank sesuai dengan bunyi ketentuan Pasal 66 ayat (3)?
+248,Ayat,Pasal 66 ayat (4),Pasal 66,Tolong jelasin maksud operasional dari Pasal 66 ayat (4) POJK No. 11/POJK.03/2022.
+249,Ayat,Pasal 66 ayat (5),Pasal 66,Siapa saja sih pihak atau unit kerja bank yang wajib mematuhi aturan di Pasal 66 ayat (5)?
+250,Ayat,Pasal 66 ayat (6),Pasal 66,"Mau nanya dong, apa maksud dari Pasal 66 ayat (6) POJK 11 sih?"
+251,Bab,BAB XIII KETENTUAN PERALIHAN,Regulasi,"Penasaran nih, kalau kita baca BAB XIII KETENTUAN PERALIHAN, topik dan poin utamanya apa saja?"
+252,Pasal,Pasal 67,BAB XIII KETENTUAN PERALIHAN,"Mau nanya dong, gimana kewajiban bank atau direksi yang tertuang di Pasal 67 POJK 11?"
+253,Pasal,Pasal 68,BAB XIII KETENTUAN PERALIHAN,Tolong jabarkan dong poin-poin wajib yang harus dipenuhi bank biar aman dari sanksi Pasal 68!
+254,Pasal,Pasal 69,BAB XIII KETENTUAN PERALIHAN,Apa saja konsekuensi riil kalau bank melalaikan aturan di Pasal 69 POJK TI Bank ini?
+255,Bab,BAB XIV KETENTUAN PENUTUP,Regulasi,"Secara umum, BAB XIV KETENTUAN PENUTUP itu ngomongin soal apa sih di aturan OJK? Tolong jelasin singkat."
+256,Pasal,Pasal 70,BAB XIV KETENTUAN PENUTUP,Pasal 70 POJK No. 11/POJK.03/2022 itu sebenarnya ngatur soal apa sih? Tolong jelasin pakai bahasa santai.
+257,Pasal,Pasal 71,BAB XIV KETENTUAN PENUTUP,"Mau nanya dong, gimana kewajiban bank atau direksi yang tertuang di Pasal 71 POJK 11?"
+258,Pasal,Pasal 72,BAB XIV KETENTUAN PENUTUP,Tolong jabarkan dong poin-poin wajib yang harus dipenuhi bank biar aman dari sanksi Pasal 72!
+259,Pasal,Pasal 73,BAB XIV KETENTUAN PENUTUP,Apa saja konsekuensi riil kalau bank melalaikan aturan di Pasal 73 POJK TI Bank ini?

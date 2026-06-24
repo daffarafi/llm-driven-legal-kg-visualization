@@ -14,8 +14,9 @@ import {
 } from "lucide-react";
 import { askQuestion, getNodeDetail, getDocuments } from "@/lib/api";
 import type { ChatMessage, QAResponse, QAProcessStep, NodeDetail, Regulation } from "@/lib/types";
-import { NODE_COLORS, NODE_SIZES } from "@/lib/types";
+import { NODE_COLORS, NODE_SIZES, getNodeColor } from "@/lib/types";
 import { forceCollide } from "d3-force";
+import { useTheme } from "@/lib/theme-context";
 
 const ForceGraph2D = dynamic(() => import("react-force-graph-2d"), { ssr: false });
 
@@ -172,6 +173,9 @@ function LiveGraph({ graphNodes, graphEdges, selectTriggerRef }: {
   graphEdges: { source: string; target: string; type: string }[];
   selectTriggerRef: React.MutableRefObject<((label: string) => void) | null>;
 }) {
+  const { isDark } = useTheme();
+  const isDarkRef = useRef(isDark);
+  isDarkRef.current = isDark;
   const [selectedDetail, setSelectedDetail] = useState<NodeDetail | null>(null);
   // Use refs for state that ForceGraph2D callbacks read — avoids re-render loops
   const selectedNodeIdRef = useRef<string | null>(null);
@@ -187,7 +191,7 @@ function LiveGraph({ graphNodes, graphEdges, selectTriggerRef }: {
         id: n.id,
         label: n.label || "",
         nodeType,
-        color: NODE_COLORS[nodeType] || "#888",
+        color: getNodeColor(nodeType, isDark),
         val: NODE_SIZES[nodeType] || 3,
         source_document_id: n.source_document_id || "",
       };
@@ -201,7 +205,7 @@ function LiveGraph({ graphNodes, graphEdges, selectTriggerRef }: {
         label: e.type,
       }));
     return { nodes, links };
-  }, [graphNodes, graphEdges]);
+  }, [graphNodes, graphEdges, isDark]);
 
   const updateNeighborIds = useCallback((nodeId: string | null) => {
     if (!nodeId) {
@@ -299,7 +303,7 @@ function LiveGraph({ graphNodes, graphEdges, selectTriggerRef }: {
     if (isNeighbor) {
       ctx.beginPath();
       ctx.arc(node.x, node.y, size + 3, 0, 2 * Math.PI);
-      ctx.fillStyle = "rgba(255, 255, 255, 0.15)";
+      ctx.fillStyle = isDarkRef.current ? "rgba(255, 255, 255, 0.15)" : "rgba(0, 0, 0, 0.08)";
       ctx.fill();
     }
 
@@ -311,8 +315,8 @@ function LiveGraph({ graphNodes, graphEdges, selectTriggerRef }: {
 
     // Border
     if (isSelected) { ctx.strokeStyle = "#ffb432"; ctx.lineWidth = 2; }
-    else if (isNeighbor) { ctx.strokeStyle = "rgba(255,255,255,0.6)"; ctx.lineWidth = 1.2; }
-    else { ctx.strokeStyle = "rgba(255,255,255,0.3)"; ctx.lineWidth = 0.5; }
+    else if (isNeighbor) { ctx.strokeStyle = isDarkRef.current ? "rgba(255,255,255,0.6)" : "rgba(0,0,0,0.4)"; ctx.lineWidth = 1.2; }
+    else { ctx.strokeStyle = isDarkRef.current ? "rgba(255,255,255,0.3)" : "rgba(0,0,0,0.2)"; ctx.lineWidth = 0.5; }
     ctx.stroke();
 
     // Label
@@ -337,7 +341,9 @@ function LiveGraph({ graphNodes, graphEdges, selectTriggerRef }: {
       ctx.font = `${fontSize}px Inter, sans-serif`;
       ctx.textAlign = "center";
       ctx.textBaseline = "top";
-      ctx.fillStyle = isSelected ? "#ffb432" : isNeighbor ? "rgba(255,255,255,0.95)" : "rgba(255,255,255,0.8)";
+      ctx.fillStyle = isSelected ? "#ffb432" : isNeighbor
+        ? (isDarkRef.current ? "rgba(255,255,255,0.95)" : "rgba(0,0,0,0.85)")
+        : (isDarkRef.current ? "rgba(255,255,255,0.8)" : "rgba(0,0,0,0.7)");
       ctx.fillText(displayLabel, node.x, node.y + size + 1.5);
     }
 
@@ -391,11 +397,12 @@ function LiveGraph({ graphNodes, graphEdges, selectTriggerRef }: {
           }}
           linkColor={(link: any) => {
             const selId = selectedNodeIdRef.current;
-            if (!selId) return "rgba(255,255,255,0.35)";
+            const defaultColor = isDarkRef.current ? "rgba(255,255,255,0.35)" : "rgba(0,0,0,0.2)";
+            if (!selId) return defaultColor;
             const src = typeof link.source === "object" ? link.source.id : link.source;
             const tgt = typeof link.target === "object" ? link.target.id : link.target;
             if (src === selId || tgt === selId) return "rgba(255,180,50,0.8)";
-            return "rgba(255,255,255,0.35)";
+            return defaultColor;
           }}
           linkWidth={(link: any) => {
             const selId = selectedNodeIdRef.current;
@@ -407,7 +414,7 @@ function LiveGraph({ graphNodes, graphEdges, selectTriggerRef }: {
           }}
           linkDirectionalArrowLength={3.5}
           linkDirectionalArrowRelPos={0.9}
-          linkDirectionalArrowColor={() => "rgba(255,200,100,0.5)"}
+          linkDirectionalArrowColor={() => isDarkRef.current ? "rgba(255,200,100,0.5)" : "rgba(180,120,30,0.5)"}
           linkLabel={(link: any) => link.label || ""}
           onNodeClick={handleNodeClick}
           onBackgroundClick={handleDeselect}
@@ -432,8 +439,8 @@ function LiveGraph({ graphNodes, graphEdges, selectTriggerRef }: {
                   <div className="flex gap-1 mt-1">
                     {selectedDetail.labels?.filter((l: string) => l !== "Entity").map((l: string) => (
                       <Badge key={l} variant="outline" className="text-[10px] px-1" style={{
-                        borderColor: NODE_COLORS[l] || "#888",
-                        color: NODE_COLORS[l] || "#888",
+                        borderColor: getNodeColor(l, isDark),
+                        color: getNodeColor(l, isDark),
                       }}>
                         {l}
                       </Badge>

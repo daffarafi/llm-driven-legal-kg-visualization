@@ -10,9 +10,10 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import { Separator } from "@/components/ui/separator";
 import { Search, X, ExternalLink, Filter } from "lucide-react";
 import { getGraph, getNodeDetail, searchNodes, getDocuments } from "@/lib/api";
-import { NODE_COLORS, NODE_SIZES, DOC_COLORS } from "@/lib/types";
+import { NODE_COLORS, NODE_SIZES, DOC_COLORS, getNodeColor } from "@/lib/types";
 import type { GraphNode, GraphEdge, NodeDetail, SearchResult, Regulation } from "@/lib/types";
 import { forceCollide } from "d3-force";
+import { useTheme } from "@/lib/theme-context";
 
 // Dynamic import for react-force-graph (SSR incompatible)
 const ForceGraph2D = dynamic(
@@ -39,6 +40,7 @@ const DEFAULT_NODE_TYPES = [
 ];
 
 export default function ExplorePage() {
+  const { isDark } = useTheme();
   const [nodes, setNodes] = useState<GraphNode[]>([]);
   const [edges, setEdges] = useState<GraphEdge[]>([]);
   const [selectedNode, setSelectedNode] = useState<NodeDetail | null>(null);
@@ -225,7 +227,7 @@ export default function ExplorePage() {
   const paintNode = useCallback((node: any, ctx: CanvasRenderingContext2D, globalScale: number) => {
     const label = node.label || "";
     const nodeType = node.nodeType || "";
-    const color = node.color || NODE_COLORS[nodeType] || "#888";
+    const color = node.color || getNodeColor(nodeType, isDark);
     const size = (node.val || 3) * 1.5;
     const fontSize = Math.max(10 / globalScale, 1.5);
 
@@ -244,7 +246,7 @@ export default function ExplorePage() {
     if (isNeighbor) {
       ctx.beginPath();
       ctx.arc(node.x, node.y, size + 3, 0, 2 * Math.PI);
-      ctx.fillStyle = "rgba(255, 255, 255, 0.15)";
+      ctx.fillStyle = isDark ? "rgba(255, 255, 255, 0.15)" : "rgba(0, 0, 0, 0.08)";
       ctx.fill();
     }
 
@@ -259,10 +261,10 @@ export default function ExplorePage() {
       ctx.strokeStyle = "#ffb432";
       ctx.lineWidth = 2;
     } else if (isNeighbor) {
-      ctx.strokeStyle = "rgba(255,255,255,0.6)";
+      ctx.strokeStyle = isDark ? "rgba(255,255,255,0.6)" : "rgba(0,0,0,0.4)";
       ctx.lineWidth = 1.2;
     } else {
-      ctx.strokeStyle = "rgba(255,255,255,0.3)";
+      ctx.strokeStyle = isDark ? "rgba(255,255,255,0.3)" : "rgba(0,0,0,0.2)";
       ctx.lineWidth = 0.5;
     }
     ctx.stroke();
@@ -286,7 +288,9 @@ export default function ExplorePage() {
       ctx.font = `${fontSize}px Inter, sans-serif`;
       ctx.textAlign = "center";
       ctx.textBaseline = "top";
-      ctx.fillStyle = isSelected ? "#ffb432" : isNeighbor ? "rgba(255,255,255,0.95)" : "rgba(255,255,255,0.8)";
+      ctx.fillStyle = isSelected ? "#ffb432" : isNeighbor
+        ? (isDark ? "rgba(255,255,255,0.95)" : "rgba(0,0,0,0.85)")
+        : (isDark ? "rgba(255,255,255,0.8)" : "rgba(0,0,0,0.7)");
       ctx.fillText(displayLabel, node.x, node.y + size + 2);
     }
 
@@ -300,7 +304,7 @@ export default function ExplorePage() {
       ctx.fillStyle = "rgba(0,0,0,0.7)";
       ctx.fillText(abbr, node.x, node.y);
     }
-  }, [selectedNodeId, neighborIds]);
+  }, [selectedNodeId, neighborIds, isDark]);
 
   return (
     <div className="flex h-[calc(100vh-3.5rem)] overflow-hidden">
@@ -341,8 +345,8 @@ export default function ExplorePage() {
                     className="w-full text-left px-2 py-1 text-xs hover:bg-accent rounded truncate"
                   >
                     <Badge variant="outline" className="mr-1 text-[10px] px-1" style={{
-                      borderColor: NODE_COLORS[rType] || "#888",
-                      color: NODE_COLORS[rType] || "#888",
+                      borderColor: getNodeColor(rType, isDark),
+                      color: getNodeColor(rType, isDark),
                     }}>
                       {rType.slice(0, 3)}
                     </Badge>
@@ -398,7 +402,7 @@ export default function ExplorePage() {
               >
                 <span
                   className="w-2.5 h-2.5 rounded-full"
-                  style={{ backgroundColor: NODE_COLORS[type] || "#888" }}
+                  style={{ backgroundColor: getNodeColor(type, isDark) }}
                 />
                 {type}
               </button>
@@ -441,11 +445,12 @@ export default function ExplorePage() {
               ctx.fill();
             }}
             linkColor={(link: any) => {
-              if (!selectedNodeId) return "rgba(255,255,255,0.35)";
+              const defaultColor = isDark ? "rgba(255,255,255,0.35)" : "rgba(0,0,0,0.2)";
+              if (!selectedNodeId) return defaultColor;
               const src = typeof link.source === "object" ? link.source.id : link.source;
               const tgt = typeof link.target === "object" ? link.target.id : link.target;
               if (src === selectedNodeId || tgt === selectedNodeId) return "rgba(255,180,50,0.8)";
-              return "rgba(255,255,255,0.35)";
+              return defaultColor;
             }}
             linkWidth={(link: any) => {
               if (!selectedNodeId) return 1.2;
@@ -456,7 +461,7 @@ export default function ExplorePage() {
             }}
             linkDirectionalArrowLength={4}
             linkDirectionalArrowRelPos={0.9}
-            linkDirectionalArrowColor={() => "rgba(255,200,100,0.6)"}
+            linkDirectionalArrowColor={() => isDark ? "rgba(255,200,100,0.6)" : "rgba(180,120,30,0.6)"}
             linkLabel={(link: any) => link.label || ""}
             onNodeClick={handleNodeClick}
             onBackgroundClick={() => {
@@ -486,7 +491,7 @@ export default function ExplorePage() {
               <div className="flex items-start justify-between mb-3">
                 <div>
                   <Badge style={{
-                    backgroundColor: NODE_COLORS[selectedNode.labels?.[0] || ""] || "#888",
+                    backgroundColor: getNodeColor(selectedNode.labels?.[0] || "", isDark),
                     color: "#fff",
                   }}>
                     {selectedNode.labels?.[0]}

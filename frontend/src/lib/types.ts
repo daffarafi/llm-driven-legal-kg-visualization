@@ -172,6 +172,29 @@ export const NODE_COLORS: Record<string, string> = {
   VersiPasal: "#14b8a6",     // teal
 };
 
+export function getNodeColor(label: string, isDark: boolean = true): string {
+  const baseColor = NODE_COLORS[label] || "#888";
+  if (!isDark) {
+    switch (label) {
+      case "Ayat":
+        return "#15803d"; // Darker green (green-700) for readability
+      case "Pasal":
+        return "#16a34a"; // Darker green (green-600)
+      case "Bagian":
+        return "#7c3aed"; // Darker purple (violet-600)
+      case "KonsepHukum":
+        return "#b45309"; // Darker amber (amber-700)
+      case "EntitasHukum":
+        return "#ea580c"; // Darker orange (orange-600)
+      case "VersiPasal":
+        return "#0d9488"; // Darker teal (teal-600)
+      default:
+        return baseColor;
+    }
+  }
+  return baseColor;
+}
+
 export const NODE_SIZES: Record<string, number> = {
   Regulasi: 8,
   Bab: 5,

@@ -7,7 +7,8 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft, ChevronDown, ChevronRight, FileText } from "lucide-react";
 import Link from "next/link";
 import { getDocument } from "@/lib/api";
-import { NODE_COLORS } from "@/lib/types";
+import { NODE_COLORS, getNodeColor } from "@/lib/types";
+import { useTheme } from "@/lib/theme-context";
 import type { DocumentData, DocumentSection } from "@/lib/types";
 
 /**
@@ -88,6 +89,7 @@ function formatLegalContent(text: string, depth: number = 0) {
 
 export default function DocumentViewerPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = use(params);
+  const { isDark } = useTheme();
   const [doc, setDoc] = useState<DocumentData | null>(null);
   const [loading, setLoading] = useState(true);
   const [expandedBab, setExpandedBab] = useState<Set<string>>(new Set());
@@ -158,8 +160,8 @@ export default function DocumentViewerPage({ params }: { params: Promise<{ id: s
             <div key={ayat.id || ayat.label} className="p-2.5 rounded-lg border border-border/20">
               <Badge
                 variant="outline"
-                className="text-[10px] mb-1.5"
-                style={{ borderColor: NODE_COLORS["Ayat"], color: NODE_COLORS["Ayat"] }}
+                className="text-[10px] mb-1.5 font-medium"
+                style={{ borderColor: getNodeColor("Ayat", isDark), color: getNodeColor("Ayat", isDark) }}
               >
                 {shortLabel}
               </Badge>
@@ -193,7 +195,7 @@ export default function DocumentViewerPage({ params }: { params: Promise<{ id: s
           )}
           <span
             className="text-sm font-semibold"
-            style={{ color: NODE_COLORS["Pasal"] }}
+            style={{ color: getNodeColor("Pasal", isDark) }}
           >
             {pasal.label}
           </span>
@@ -236,7 +238,7 @@ export default function DocumentViewerPage({ params }: { params: Promise<{ id: s
           ) : (
             <ChevronRight className="h-3.5 w-3.5 text-muted-foreground" />
           )}
-          <h3 className="text-sm font-semibold text-purple-300 group-hover:text-purple-200 transition-colors">
+          <h3 className="text-sm font-semibold text-purple-600 dark:text-purple-300 group-hover:text-purple-500 dark:group-hover:text-purple-200 transition-colors">
             {bagian.label}
           </h3>
           <span className="text-[10px] text-muted-foreground ml-auto">
@@ -297,7 +299,7 @@ export default function DocumentViewerPage({ params }: { params: Promise<{ id: s
                   ) : (
                     <ChevronRight className="h-4 w-4 text-muted-foreground" />
                   )}
-                  <h2 className="text-base font-bold text-purple-400 group-hover:text-purple-300 transition-colors">
+                  <h2 className="text-base font-bold text-purple-600 dark:text-purple-400 group-hover:text-purple-500 dark:group-hover:text-purple-300 transition-colors">
                     {bab.label}
                   </h2>
                   <span className="text-xs text-muted-foreground ml-auto">

@@ -334,8 +334,18 @@ Good answer: "Menurut UU No. 11 Tahun 2008 (UU ITE), Pasal 30 mengatur tentang a
 Bad answer: "Pasal 30 mengatur akses ilegal ke Sistem Elektronik. Selain itu, Pasal 30 juga mengatur identifikasi penyedia jasa TI." (WRONG — mixes UU ITE and POJK content without user asking for POJK)"""
 
 
+import os as _os
+LLM_PROVIDER = _os.environ.get("LLM_PROVIDER", "gemini").lower()
+LLM_MODEL = _os.environ.get("LLM_MODEL", "gemini-2.5-flash")
+OLLAMA_CHAT_URL = _os.environ.get("OLLAMA_URL", "http://localhost:11434/api/chat")
+
+
 class LLMService:
-    """LLM inference service — uses Gemini API as placeholder."""
+    """LLM inference service. Provider/model swappable via env (LLM_PROVIDER, LLM_MODEL).
+
+    Default = Gemini gemini-2.5-flash (unchanged deployed behaviour). Set
+    LLM_PROVIDER=ollama and LLM_MODEL=qwen3:4b to run a local comparison model.
+    """
 
     _model = None
 
@@ -343,8 +353,37 @@ class LLMService:
     def _get_model(cls):
         if cls._model is None:
             genai.configure(api_key=settings.GEMINI_API_KEY)
-            cls._model = genai.GenerativeModel("gemini-2.5-flash")
+            cls._model = genai.GenerativeModel(LLM_MODEL)
         return cls._model
+
+    @classmethod
+    def _generate(cls, system: str, prompt: str, temperature: float, max_tokens: int) -> str:
+        """Unified completion. Gemini by default; Ollama when LLM_PROVIDER=ollama."""
+        if LLM_PROVIDER == "ollama":
+            import json, urllib.request, re as _re
+            payload = {
+                "model": LLM_MODEL,
+                "messages": [
+                    {"role": "system", "content": system},
+                    {"role": "user", "content": prompt},
+                ],
+                "stream": False,
+                "options": {"temperature": temperature, "num_predict": max_tokens},
+            }
+            if "qwen3" in LLM_MODEL.lower():
+                payload["think"] = False  # disable reasoning for clean output
+            body = json.dumps(payload).encode("utf-8")
+            req = urllib.request.Request(OLLAMA_CHAT_URL, data=body, headers={"Content-Type": "application/json"})
+            with urllib.request.urlopen(req, timeout=900) as resp:
+                data = json.loads(resp.read().decode("utf-8"))
+            text = data["message"]["content"]
+            return _re.sub(r"<think>.*?</think>", "", text, flags=_re.S | _re.I)
+        model = cls._get_model()
+        r = model.generate_content(
+            [system, prompt],
+            generation_config={"temperature": temperature, "max_output_tokens": max_tokens},
+        )
+        return r.text
 
     @classmethod
     async def generate_cypher(cls, question: str, doc_ids: list[str] | None = None) -> dict:
@@ -356,8 +395,6 @@ class LLMService:
         """
         import logging
         logger = logging.getLogger(__name__)
-
-        model = cls._get_model()
 
         doc_filter_instruction = ""
         if doc_ids:
@@ -372,11 +409,7 @@ class LLMService:
         prompt = f"Question: {question}{doc_filter_instruction}\n\nGenerate a Cypher query to answer the above question. Output ONLY the raw Cypher query, nothing else."
 
         try:
-            response = model.generate_content(
-                [QUERY_SYSTEM, prompt],
-                generation_config={"temperature": 0.0, "max_output_tokens": 4096},
-            )
-            cypher = cls._clean_cypher(response.text.strip())
+            cypher = cls._clean_cypher(cls._generate(QUERY_SYSTEM, prompt, 0.0, 4096).strip())
             logger.info(f"Generated Cypher (attempt 1): {cypher}")
 
             # Validate: must contain RETURN and have balanced parentheses
@@ -387,11 +420,7 @@ class LLMService:
                     f"Question: {question}\n\nWrite a SIMPLE Cypher query (1-3 lines) for Neo4j. "
                     f"Write MATCH ... RETURN ... LIMIT 100 directly. NO markdown, NO explanation, NO thinking."
                 )
-                response = model.generate_content(
-                    [QUERY_SYSTEM, retry_prompt],
-                    generation_config={"temperature": 0.0, "max_output_tokens": 4096},
-                )
-                cypher = cls._clean_cypher(response.text.strip())
+                cypher = cls._clean_cypher(cls._generate(QUERY_SYSTEM, retry_prompt, 0.0, 4096).strip())
                 logger.info(f"Generated Cypher (attempt 2): {cypher[:200]}")
 
             return {"cypher": cypher, "status": "ok"}
@@ -429,6 +458,7 @@ class LLMService:
     def _clean_cypher(text: str) -> str:
         """Strip markdown code blocks and extra whitespace from LLM output."""
         import re
+        text = re.sub(r"<think>.*?</think>", "", text, flags=re.DOTALL | re.IGNORECASE)
         # Remove ```cypher ... ``` or ```sql ... ``` or ``` ... ```
         pattern = r"```(?:cypher|sql|plaintext)?\s*\n?(.*?)```"
         match = re.search(pattern, text, re.DOTALL)
@@ -446,8 +476,6 @@ class LLMService:
         import logging
         logger = logging.getLogger(__name__)
 
-        model = cls._get_model()
-
         prompt = f"Question: {question}\n\nKnowledge Graph Data:\n{kg_context}\n\nAnswer the question based on the KG data above. Respond in formal Indonesian (Bahasa Indonesia)."
 
         logger.info(f"=== RESPONSE PROMPT ({len(prompt)} chars) ===")
@@ -455,11 +483,7 @@ class LLMService:
         logger.info("=== END PROMPT ===")
 
         try:
-            response = model.generate_content(
-                [RESPONSE_SYSTEM, prompt],
-                generation_config={"temperature": 0.3, "max_output_tokens": 16384},
-            )
-            answer = response.text.strip()
+            answer = cls._generate(RESPONSE_SYSTEM, prompt, 0.3, 16384).strip()
             logger.info(f"=== LLM RESPONSE ({len(answer)} chars) ===")
             logger.info(answer[:500])
             return {"answer": answer, "status": "ok"}

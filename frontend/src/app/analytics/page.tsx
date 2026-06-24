@@ -6,7 +6,8 @@ import { Badge } from "@/components/ui/badge";
 import { Database, GitBranch, Layers, TrendingUp, FileText } from "lucide-react";
 import { getStats, getDocuments } from "@/lib/api";
 import type { StatsData, TypeCount, Regulation } from "@/lib/types";
-import { NODE_COLORS, DOC_COLORS } from "@/lib/types";
+import { NODE_COLORS, DOC_COLORS, getNodeColor } from "@/lib/types";
+import { useTheme } from "@/lib/theme-context";
 import {
   BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer,
   PieChart, Pie, Cell, Legend,
@@ -22,6 +23,7 @@ export default function AnalyticsPage() {
   const [loading, setLoading] = useState(true);
   const [availableDocs, setAvailableDocs] = useState<Regulation[]>([]);
   const [selectedDocId, setSelectedDocId] = useState<string | null>(null); // null = semua
+  const { isDark } = useTheme();
 
   // Fetch documents on mount
   useEffect(() => {
@@ -72,7 +74,7 @@ export default function AnalyticsPage() {
             onClick={() => setSelectedDocId(null)}
             className={`text-xs px-3 py-1 rounded-full border transition-all ${
               selectedDocId === null
-                ? "bg-amber-500/15 border-amber-500/40 text-amber-400"
+                ? "bg-amber-500/15 border-amber-500/40 text-amber-600 dark:text-amber-400"
                 : "border-border/40 text-muted-foreground hover:text-foreground"
             }`}
           >
@@ -88,7 +90,7 @@ export default function AnalyticsPage() {
                 onClick={() => setSelectedDocId(docId)}
                 className={`text-xs px-3 py-1 rounded-full border transition-all flex items-center gap-1.5 ${
                   isActive
-                    ? "bg-amber-500/15 border-amber-500/40 text-amber-400"
+                    ? "bg-amber-500/15 border-amber-500/40 text-amber-600 dark:text-amber-400"
                     : "border-border/40 text-muted-foreground hover:text-foreground"
                 }`}
               >
@@ -167,19 +169,19 @@ export default function AnalyticsPage() {
                   interval={0}
                   tick={// eslint-disable-next-line @typescript-eslint/no-explicit-any
                   ((props: any) => (
-                    <text x={props.x} y={props.y} dy={4} textAnchor="end" fill={NODE_COLORS[props.payload?.value] || "#cbd5e1"} fontSize={11}>
+                    <text x={props.x} y={props.y} dy={4} textAnchor="end" fill={getNodeColor(props.payload?.value, isDark)} fontSize={11}>
                       {props.payload?.value}
                     </text>
                   )) as any}
                 />
                  <Tooltip
-                  contentStyle={{ backgroundColor: "#0f172a", border: "1px solid #334155", borderRadius: "8px" }}
-                  itemStyle={{ color: "#f1f5f9" }}
-                  labelStyle={{ color: "#94a3b8" }}
+                  contentStyle={{ backgroundColor: isDark ? "#0f172a" : "#ffffff", border: `1px solid ${isDark ? "#334155" : "#e2e8f0"}`, borderRadius: "8px" }}
+                  itemStyle={{ color: isDark ? "#f1f5f9" : "#1e293b" }}
+                  labelStyle={{ color: isDark ? "#94a3b8" : "#64748b" }}
                 />
                 <Bar dataKey="count" radius={[0, 4, 4, 0]}>
                   {stats.node_types.map((entry: TypeCount, i: number) => (
-                    <Cell key={i} fill={NODE_COLORS[entry.label] || CHART_COLORS[i % CHART_COLORS.length]} />
+                    <Cell key={i} fill={getNodeColor(entry.label, isDark)} />
                   ))}
                 </Bar>
               </BarChart>
@@ -209,7 +211,7 @@ export default function AnalyticsPage() {
                     <text
                       x={props.x}
                       y={props.y}
-                      fill="#f1f5f9"
+                      fill={isDark ? "#f1f5f9" : "#1e293b"}
                       textAnchor={props.x > props.cx ? "start" : "end"}
                       dominantBaseline="central"
                       fontSize={11}
@@ -217,7 +219,7 @@ export default function AnalyticsPage() {
                       {props.payload?.label} ({props.value})
                     </text>
                   )) as any}
-                  labelLine={{ stroke: "#475569" }}
+                  labelLine={{ stroke: isDark ? "#475569" : "#94a3b8" }}
                   fontSize={10}
                 >
                   {stats.edge_types.map((_: TypeCount, i: number) => (
@@ -225,8 +227,8 @@ export default function AnalyticsPage() {
                   ))}
                 </Pie>
                  <Tooltip
-                  contentStyle={{ backgroundColor: "#0f172a", border: "1px solid #334155", borderRadius: "8px" }}
-                  itemStyle={{ color: "#f1f5f9" }}
+                  contentStyle={{ backgroundColor: isDark ? "#0f172a" : "#ffffff", border: `1px solid ${isDark ? "#334155" : "#e2e8f0"}`, borderRadius: "8px" }}
+                  itemStyle={{ color: isDark ? "#f1f5f9" : "#1e293b" }}
                 />
               </PieChart>
             </ResponsiveContainer>
@@ -255,7 +257,7 @@ export default function AnalyticsPage() {
                     <td className="py-2 flex items-center gap-2">
                       <span
                         className="w-2.5 h-2.5 rounded-full"
-                        style={{ backgroundColor: NODE_COLORS[t.label] || "#888" }}
+                        style={{ backgroundColor: getNodeColor(t.label, isDark) }}
                       />
                       {t.label}
                     </td>

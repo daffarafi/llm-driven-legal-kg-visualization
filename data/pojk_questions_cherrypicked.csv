@@ -1,0 +1,62 @@
+ID,Node_Type,Node_Label,Parent,Question
+1,Regulasi,Peraturan Otoritas Jasa Keuangan Nomor 11/POJK.03/2022 tentang Penyelenggaraan Teknologi Informasi oleh Bank Umum,,"POJK Nomor 11/POJK.03/2022 itu sebenarnya ngatur tentang apa aja sih?"
+2,Bab,BAB I KETENTUAN UMUM,Regulasi,Di dalam Bab I Ketentuan Umum, poin-poin dasar apa saja yang didefinisikan?
+3,Pasal,Pasal 1,BAB I KETENTUAN UMUM,"Apa arti dari Pusat Data, Pusat Pemulihan Bencana, dan Rencana Pemulihan Bencana menurut Pasal 1?"
+4,Bab,BAB II TATA KELOLA TI BANK,Regulasi,Bagaimana aturan mengenai tata kelola teknologi informasi di bank yang dibahas dalam Bab II?
+5,Bagian,Bagian Kesatu Umum,BAB II TATA KELOLA TI BANK,Apa bahasan utama di Bagian Kesatu terkait ketentuan umum tata kelola TI?
+6,Pasal,Pasal 2,Bagian Kesatu Umum,Faktor apa saja yang harus dipertimbangkan bank saat menerapkan tata kelola TI di Pasal 2?
+7,Ayat,Pasal 2 ayat (1),Pasal 2,Kewajiban apa yang ditekankan kepada bank pada Pasal 2 ayat (1)?
+8,Pasal,Pasal 3,Bagian Kesatu Umum,Menurut Pasal 3, apa saja aspek yang wajib direncanakan atau dipetakan oleh bank dalam tata kelola TI?
+9,Ayat,Pasal 3 ayat (1),Pasal 3,Aspek minimal apa saja yang harus dipetakan bank berdasarkan Pasal 3 ayat (1)?
+10,Bagian,Bagian Kedua Penerapan Tata Kelola TI Bank,BAB II TATA KELOLA TI BANK,Hal apa saja yang diatur di Bagian Kedua tentang bagaimana penerapan tata kelola TI dijalankan?
+11,Pasal,Pasal 4,Bagian Kedua Penerapan Tata Kelola TI Bank,Pasal 4 mewajibkan bank menetapkan apa terkait wewenang dan tanggung jawab jabatan?
+12,Pasal,Pasal 5,Bagian Kedua Penerapan Tata Kelola TI Bank,Apa saja tugas dan tanggung jawab Direksi bank terkait penyelenggaraan TI sesuai Pasal 5?
+13,Pasal,Pasal 7,Bagian Kedua Penerapan Tata Kelola TI Bank,Bagaimana ketentuan mengenai pembentukan dan keanggotaan Komite Pengarah TI di Pasal 7?
+14,Pasal,Pasal 8,Bagian Kedua Penerapan Tata Kelola TI Bank,Apa kewajiban bank terkait unit kerja penyelenggara TI dan apa fungsi utamanya menurut Pasal 8?
+15,Pasal,Pasal 9,Bagian Kedua Penerapan Tata Kelola TI Bank,Sanksi administratif apa yang bisa diterima bank jika melanggar tata kelola TI di Pasal 9?
+16,Pasal,Pasal 10,Bagian Kedua Penerapan Tata Kelola TI Bank,Siapa yang berwenang menetapkan aturan lebih rinci mengenai tata kelola TI menurut Pasal 10?
+17,Bab,BAB III ARSITEKTUR TI BANK,Regulasi,Bab III mengatur tentang apa dan komponen arsitektur apa saja yang wajib dimiliki bank?
+18,Pasal,Pasal 11,Bagian Kesatu Penyusunan Arsitektur TI Bank,Aspek apa saja yang harus dijadikan pertimbangan bank dalam menyusun arsitektur TI menurut Pasal 11?
+19,Ayat,Pasal 11 ayat (1),Pasal 11,Kewajiban apa yang tertuang dalam Pasal 11 ayat (1) mengenai arsitektur TI?
+20,Pasal,Pasal 12,Bagian Kedua Penyusunan Rencana Strategis TI Bank,Ketentuan tentang rencana strategis TI jangka panjang diatur seperti apa di Pasal 12?
+21,Pasal,Pasal 14,Bagian Kedua Penyusunan Rencana Strategis TI Bank,Apa saja konsekuensi hukum atau sanksi bagi bank jika melanggar ketentuan arsitektur TI di Pasal 14?
+22,Bab,BAB IV PENERAPAN MANAJEMEN RISIKO PENYELENGGARAAN TI BANK,Regulasi,Bagaimana cara bank mengelola risiko dalam penyelenggaraan TI menurut aturan di Bab IV?
+23,Pasal,Pasal 15,Bagian Kesatu Umum,Proses manajemen risiko apa saja yang minimal harus dilakukan bank berdasarkan Pasal 15?
+24,Ayat,Pasal 15 ayat (1),Pasal 15,Kewajiban dasar apa yang diatur dalam Pasal 15 ayat (1) mengenai pengelolaan risiko TI?
+25,Pasal,Pasal 16,Bagian Kedua Pengamanan Informasi dalam Penyelenggaraan TI Bank,Bagaimana ketentuan pengamanan informasi bank yang diatur di dalam Pasal 16?
+26,Ayat,Pasal 16 ayat (1),Pasal 16,Apa yang diwajibkan kepada bank terkait keamanan informasi di Pasal 16 ayat (1)?
+27,Pasal,Pasal 18,Bagian Kedua Pengamanan Informasi dalam Penyelenggaraan TI Bank,Aturan mengenai pembuatan, uji coba, dan kaji ulang Rencana Pemulihan Bencana di Pasal 18 itu bagaimana?
+28,Ayat,Pasal 18 ayat (1),Pasal 18,Dokumen kedaruratan apa yang wajib dimiliki bank menurut Pasal 18 ayat (1)?
+29,Pasal,Pasal 20,Bagian Kedua Pengamanan Informasi dalam Penyelenggaraan TI Bank,Sanksi apa yang dihadapi bank jika melanggar ketentuan manajemen risiko dan pemulihan bencana di Pasal 20?
+30,Bab,BAB V KETAHANAN DAN KEAMANAN SIBER BANK,Regulasi,Apa saja ruang lingkup pengaturan keamanan siber bank yang dimuat di Bab V?
+31,Pasal,Pasal 21,BAB V KETAHANAN DAN KEAMANAN SIBER BANK,Langkah-langkah apa yang wajib dilakukan bank dalam menjaga ketahanan siber di Pasal 21?
+32,Ayat,Pasal 21 ayat (1),Pasal 21,Kewajiban apa yang dibebankan kepada bank di Pasal 21 ayat (1) terkait dunia siber?
+33,Pasal,Pasal 22,BAB V KETAHANAN DAN KEAMANAN SIBER BANK,Kapan bank harus melakukan penilaian mandiri maturitas keamanan siber dan ke mana hasilnya dilaporkan sesuai Pasal 22?
+34,Ayat,Pasal 22 ayat (1),Pasal 22,Apa kewajiban bank terkait tingkat maturitas keamanan siber di Pasal 22 ayat (1)?
+35,Pasal,Pasal 25,BAB V KETAHANAN DAN KEAMANAN SIBER BANK,Bagaimana ketentuan pengujian keamanan siber berbasis skenario dan pelaporannya di Pasal 25?
+36,Ayat,Pasal 25 ayat (1),Pasal 25,Seberapa sering bank harus melakukan tes keamanan siber berdasarkan skenario menurut Pasal 25 ayat (1)?
+37,Pasal,Pasal 27,BAB V KETAHANAN DAN KEAMANAN SIBER BANK,Jika bank lalai dalam menjaga ketahanan siber atau menguji sistemnya, apa sanksi di Pasal 27?
+38,Ayat,Pasal 27 ayat (1),Pasal 27,Pelanggaran pasal mana saja yang bisa dikenai sanksi administratif berupa teguran tertulis di Pasal 27 ayat (1)?
+39,Bab,BAB VI PENGGUNAAN PIHAK PENYEDIA JASA TI DALAM PENYELENGGARAAN TI BANK,Regulasi,Apa saja aturan penting mengenai penggunaan vendor atau penyedia jasa TI pihak ketiga di Bab VI?
+40,Pasal,Pasal 29,BAB VI PENGGUNAAN PIHAK PENYEDIA JASA TI DALAM PENYELENGGARAAN TI BANK,Apa saja poin minimal yang harus diatur dalam kebijakan penggunaan penyedia jasa TI di Pasal 29?
+41,Ayat,Pasal 29 ayat (1),Pasal 29,Apakah bank diperbolehkan memakai jasa pihak luar untuk menyelenggarakan TI berdasarkan Pasal 29 ayat (1)?
+42,Pasal,Pasal 30,BAB VI PENGGUNAAN PIHAK PENYEDIA JASA TI DALAM PENYELENGGARAAN TI BANK,Apa saja aspek penting yang harus diperhatikan dalam hubungan kerja sama dan kontrak dengan penyedia jasa TI di Pasal 30?
+43,Pasal,Pasal 32,BAB VI PENGGUNAAN PIHAK PENYEDIA JASA TI DALAM PENYELENGGARAAN TI BANK,Tindakan darurat apa yang harus diambil bank jika kinerja penyedia jasa TI memburuk menurut Pasal 32?
+44,Bab,BAB VII PENEMPATAN SISTEM ELEKTRONIK DAN PEMROSESAN TRANSAKSI BERBASIS TI,Regulasi,Di mana bank harus menempatkan sistem elektroniknya dan bagaimana ketentuannya menurut Bab VII?
+45,Pasal,Pasal 35,Bagian Kesatu Penempatan Sistem Elektronik,Kriteria sistem elektronik seperti apa yang diperkenankan untuk ditempatkan di luar negeri berdasarkan Pasal 35?
+46,Ayat,Pasal 35 ayat (1),Pasal 35,Di mana lokasi wajib penempatan Pusat Data dan Pusat Pemulihan Bencana bank menurut Pasal 35 ayat (1)?
+47,Pasal,Pasal 36,Bagian Kesatu Penempatan Sistem Elektronik,Syarat-syarat apa saja yang harus dipenuhi bank sebelum mengajukan izin penempatan sistem di luar negeri sesuai Pasal 36?
+48,Ayat,Pasal 36 ayat (1),Pasal 36,Bagaimana cara bank mengajukan permohonan izin penempatan sistem elektronik di luar negeri berdasarkan Pasal 36 ayat (1)?
+49,Pasal,Pasal 39,Bagian Kedua Pemrosesan Transaksi Berbasis TI,Bagaimana aturan pemrosesan transaksi perbankan berbasis TI menurut Pasal 39?
+50,Ayat,Pasal 39 ayat (1),Pasal 39,Di mana pemrosesan transaksi berbasis TI wajib dilakukan sesuai Pasal 39 ayat (1)?
+51,Pasal,Pasal 40,Bagian Ketiga Tata Cara Permohonan Izin dan Batas Waktu Pelaksanaan Setelah Memperoleh Izin,Berapa lama batas waktu pelaksanaan yang diberikan kepada bank setelah mendapat izin berdasarkan Pasal 40?
+52,Bab,BAB VIII PENGELOLAAN DATA DAN PELINDUNGAN DATA PRIBADI DALAM PENYELENGGARAAN TI BANK,Regulasi,Apa saja kewajiban bank dalam mengelola dan melindungi data pribadi nasabah menurut Bab VIII?
+53,Pasal,Pasal 43,Bagian Kesatu Pengelolaan Data oleh Bank,Bagaimana tata kelola dan pengelolaan data yang harus diimplementasikan bank menurut Pasal 43?
+54,Pasal,Pasal 44,Bagian Kedua Pelindungan Data Pribadi oleh Bank,Apa saja kewajiban perlindungan data pribadi nasabah yang harus dijalankan bank di Pasal 44?
+55,Pasal,Pasal 45,Bagian Kedua Pelindungan Data Pribadi oleh Bank,Sanksi administratif apa yang akan diberikan kepada bank jika melanggar aturan perlindungan data pribadi di Pasal 45?
+56,Ayat,Pasal 45 ayat (1),Pasal 45,Tindakan hukum atau sanksi apa yang dijatuhkan pada pelanggaran awal di Pasal 45 ayat (1)?
+57,Bab,BAB X PENGENDALIAN DAN AUDIT INTERN DALAM PENYELENGGARAAN TI BANK,Regulasi,Bagaimana aturan mengenai pengawasan, pengendalian intern, dan audit TI di dalam Bab X?
+58,Pasal,Pasal 53,Bagian Kesatu Pengendalian Intern Bank dalam Penyelenggaraan TI,Bagaimana sistem pengendalian intern TI bank harus diatur sesuai ketentuan Pasal 53?
+59,Pasal,Pasal 54,Bagian Kedua Audit Intern dalam Penyelenggaraan TI,Bagaimana ketentuan pelaksanaan audit intern teknologi informasi bank berdasarkan Pasal 54?
+60,Bab,BAB XI PELAPORAN,Regulasi,Laporan-laporan apa saja yang wajib disampaikan bank kepada OJK sesuai dengan Bab XI?
+61,Pasal,Pasal 60,Bagian Kedua Laporan Insidentil,Bagaimana mekanisme dan batas waktu penyampaian laporan insidentil jika terjadi gangguan TI di Pasal 60?\n
